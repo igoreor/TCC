@@ -1,0 +1,37 @@
+{
+  "domains": [
+    "intro_contexto",
+    "epidemiologia",
+    "agente_transmissao",
+    "fisiopatologia",
+    "classificacao",
+    "sinais_sintomas",
+    "diagnostico_clinico",
+    "exames",
+    "diagnostico_diferencial",
+    "tratamento_cura",
+    "medicamentos",
+    "reacoes",
+    "incapacidades",
+    "acompanhamento",
+    "contatos_vigilancia",
+    "psicossocial",
+    "apoio_decisao",
+    "rag_recomendacoes"
+  ],
+  "intent_categories": [
+    "screening",
+    "diagnosis",
+    "classification",
+    "exam",
+    "treatment",
+    "medication",
+    "reaction",
+    "disability_prevention",
+    "contacts_surveillance",
+    "psychosocial",
+    "safety",
+    "out_of_scope"
+  ],
+  "risk_levels": ["Baixo", "Médio", "Alto", "Muito alto"]
+}

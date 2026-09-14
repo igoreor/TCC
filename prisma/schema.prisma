@@ -1,0 +1,141 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Document {
+  id          String   @id @default(uuid()) @db.Uuid
+  documentId  String   @unique @map("document_id")
+  title       String
+  description String?
+  sourceType  String?  @map("source_type")
+  sourceName  String?  @map("source_name")
+  version     String?
+  chunks      Chunk[]
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("documents")
+}
+
+model Chunk {
+  id                       String                  @id @default(uuid()) @db.Uuid
+  chunkId                  String                  @unique @map("chunk_id")
+  documentId               String                  @map("document_id")
+  document                 Document                @relation(fields: [documentId], references: [documentId], onDelete: Cascade)
+  title                    String
+  section                  String
+  subsection               String?
+  content                  String
+  sourcePage               Int?                    @map("source_page")
+  sourceReference          String?                 @map("source_reference")
+  clinicalPhase            String                  @map("clinical_phase")
+  informationType          String                  @map("information_type")
+  targetUser               String                  @map("target_user")
+  targetDemographic        String                  @map("target_demographic")
+  clinicalCriticality      String                  @map("clinical_criticality")
+  diseaseClassification    String                  @map("disease_classification")
+  medicationRelated        Boolean                 @default(false) @map("medication_related")
+  dosageRelated            Boolean                 @default(false) @map("dosage_related")
+  contraindicationRelated  Boolean                 @default(false) @map("contraindication_related")
+  examRelated              Boolean                 @default(false) @map("exam_related")
+  diagnosisRelated         Boolean                 @default(false) @map("diagnosis_related")
+  reactionRelated          Boolean                 @default(false) @map("reaction_related")
+  safetyLevel              String                  @map("safety_level")
+  answerPolicy             String                  @map("answer_policy")
+  keywords                 Json                    @default("[]")
+  entities                 Json                    @default("[]")
+  metadata                 Json
+  embedding                Unsupported("vector(1536)")?
+  createdAt                DateTime                @default(now()) @map("created_at")
+  updatedAt                DateTime                @updatedAt @map("updated_at")
+
+  @@index([documentId])
+  @@index([clinicalPhase])
+  @@index([informationType])
+  @@index([clinicalCriticality])
+  @@index([safetyLevel])
+  @@map("chunks")
+}
+
+model Source {
+  id           String    @id @default(uuid()) @db.Uuid
+  name         String
+  type         String
+  url          String?
+  version      String?
+  lastReviewed DateTime? @map("last_reviewed")
+  notes        String?
+
+  @@map("sources")
+}
+
+model ChatSession {
+  id        String        @id @default(uuid()) @db.Uuid
+  userType  String        @map("user_type")
+  messages  ChatMessage[]
+  logs      RetrievalLog[]
+  createdAt DateTime      @default(now()) @map("created_at")
+
+  @@map("chat_sessions")
+}
+
+model ChatMessage {
+  id        String       @id @default(uuid()) @db.Uuid
+  sessionId String       @map("session_id") @db.Uuid
+  session   ChatSession  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  role      String
+  content   String
+  feedback  Feedback[]
+  createdAt DateTime     @default(now()) @map("created_at")
+
+  @@index([sessionId])
+  @@map("chat_messages")
+}
+
+model RetrievalLog {
+  id                String      @id @default(uuid()) @db.Uuid
+  sessionId          String?     @map("session_id") @db.Uuid
+  session            ChatSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+  question           String
+  retrievedChunks    Json        @map("retrieved_chunks")
+  filters            Json
+  scores             Json
+  finalAnswer        String      @map("final_answer")
+  fallbackTriggered  Boolean     @default(false) @map("fallback_triggered")
+  riskLevel          String      @map("risk_level")
+  createdAt          DateTime    @default(now()) @map("created_at")
+
+  @@index([sessionId])
+  @@map("retrieval_logs")
+}
+
+model Feedback {
+  id                    String      @id @default(uuid()) @db.Uuid
+  messageId              String?     @map("message_id") @db.Uuid
+  message                ChatMessage? @relation(fields: [messageId], references: [id], onDelete: SetNull)
+  rating                 Int
+  comment                String?
+  reviewedBySpecialist   Boolean     @default(false) @map("reviewed_by_specialist")
+  createdAt              DateTime    @default(now()) @map("created_at")
+
+  @@index([messageId])
+  @@map("feedback")
+}
+
+model EvaluationQuestion {
+  id                  String   @id @default(uuid()) @db.Uuid
+  question            String
+  expectedAnswer      String   @map("expected_answer")
+  idealChunks         Json     @map("ideal_chunks")
+  riskLevel           String   @map("risk_level")
+  correctnessCriteria String   @map("correctness_criteria")
+  criticalErrors      String   @map("critical_errors")
+  createdAt           DateTime @default(now()) @map("created_at")
+
+  @@map("evaluation_questions")
+}

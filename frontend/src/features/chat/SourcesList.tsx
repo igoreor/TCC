@@ -15,7 +15,7 @@ export function SourcesList({ sources }: SourcesListProps) {
       <ul>
         {sources.map((source) => (
           <li key={source.chunk_id}>
-            <Link to={`/base/chunks/${encodeURIComponent(source.chunk_id)}`}>{source.title}</Link>
+            <Link to={`/dashboard/base/chunks/${encodeURIComponent(source.chunk_id)}`}>{source.title}</Link>
             {' — '}
             {source.section}
             {source.source_page ? `, p. ${source.source_page}` : ''}

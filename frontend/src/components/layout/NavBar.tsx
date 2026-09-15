@@ -2,10 +2,10 @@ import { NavLink } from 'react-router-dom'
 import styles from './NavBar.module.css'
 
 const links = [
-  { to: '/chat', label: 'Chat' },
-  { to: '/recuperacao', label: 'Retrieval Explorer' },
-  { to: '/base', label: 'Base de conhecimento' },
-  { to: '/avaliacao', label: 'Avaliação' },
+  { to: '/dashboard/chat', label: 'Chat' },
+  { to: '/dashboard/recuperacao', label: 'Retrieval Explorer' },
+  { to: '/dashboard/base', label: 'Base de conhecimento' },
+  { to: '/dashboard/avaliacao', label: 'Avaliação' },
 ]
 
 export function NavBar() {

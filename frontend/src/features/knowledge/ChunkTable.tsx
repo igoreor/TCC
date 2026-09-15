@@ -42,7 +42,7 @@ export function ChunkTable({ filters, page, pageSize, onPageChange }: ChunkTable
           {data.items.map((chunk) => (
             <tr key={chunk.chunkId}>
               <td>
-                <Link to={`/base/chunks/${encodeURIComponent(chunk.chunkId)}`}>{chunk.chunkId}</Link>
+                <Link to={`/dashboard/base/chunks/${encodeURIComponent(chunk.chunkId)}`}>{chunk.chunkId}</Link>
               </td>
               <td>{chunk.title}</td>
               <td>{chunk.clinicalPhase}</td>

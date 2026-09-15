@@ -45,7 +45,7 @@ export function EvaluationResultsTable({ result }: EvaluationResultsTableProps) 
                 {item.returnedChunks.map((chunkId, index) => (
                   <span key={chunkId}>
                     {index > 0 ? ', ' : ''}
-                    <Link to={`/base/chunks/${encodeURIComponent(chunkId)}`}>{chunkId}</Link>
+                    <Link to={`/dashboard/base/chunks/${encodeURIComponent(chunkId)}`}>{chunkId}</Link>
                   </span>
                 ))}
               </td>

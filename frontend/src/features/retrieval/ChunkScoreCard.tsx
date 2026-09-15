@@ -45,7 +45,7 @@ export function ChunkScoreCard({ chunk }: ChunkScoreCardProps) {
         </button>
       ) : null}
 
-      <Link to={`/base/chunks/${encodeURIComponent(chunk.chunkId)}`} className={styles.chunkLink}>
+      <Link to={`/dashboard/base/chunks/${encodeURIComponent(chunk.chunkId)}`} className={styles.chunkLink}>
         Ver detalhe do chunk →
       </Link>
     </Card>

@@ -29,7 +29,7 @@ export function ChunkDetailPage() {
 
   return (
     <div className={styles.detailPage}>
-      <Link to="/base" className={styles.backLink}>
+      <Link to="/dashboard/base" className={styles.backLink}>
         ← Voltar para a base de conhecimento
       </Link>
       <Card className={styles.detailCard}>

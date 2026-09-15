@@ -1,0 +1,56 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-canvas: #09090b;
+  --color-surface-1: #101012;
+  --color-surface-2: #18181b;
+  --color-surface-3: #27272a;
+  --color-border: #ffffff1a;
+  --color-border-strong: #ffffff33;
+
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717f;
+
+  --color-accent: #2dd4bf;
+  --color-accent-hover: #5eead4;
+  --color-accent-fg: #06231f;
+
+  --color-risk-success: #10b981;
+  --color-risk-warning: #f59e0b;
+  --color-risk-danger: #f97316;
+  --color-risk-critical: #ef4444;
+  --color-risk-neutral: #94a3b8;
+
+  --font-sans: 'Inter Variable', Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk Variable', 'Space Grotesk', ui-sans-serif, sans-serif;
+  --text-3xl: 2rem;
+  --text-3xl--line-height: 2.5rem;
+
+  --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px -8px rgb(0 0 0 / 0.5);
+  --shadow-glow-accent: 0 0 0 1px rgb(45 212 191 / 0.4), 0 8px 28px -6px rgb(45 212 191 / 0.35);
+
+  --animate-fade-in-up: fade-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 0.4s ease-out both;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="860" viewBox="0 0 1500 860" font-family="Arial, Helvetica, sans-serif">
+  <rect width="1500" height="860" fill="#ffffff"/>
+
+  <!-- Document -->
+  <g font-size="17" fill="#111827">
+    <rect x="30" y="30" width="440" height="200" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="30" y="30" width="440" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="250" y="58" text-anchor="middle" font-size="20" font-weight="bold">Document</text>
+    <text x="48" y="100">id «PK»</text>
+    <text x="48" y="126">document_id «único»</text>
+    <text x="48" y="152">title, description</text>
+    <text x="48" y="178">source_type, source_name</text>
+    <text x="48" y="204">version</text>
+  </g>
+
+  <!-- Chunk -->
+  <g font-size="17" fill="#111827">
+    <rect x="30" y="330" width="440" height="460" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="30" y="330" width="440" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="250" y="358" text-anchor="middle" font-size="20" font-weight="bold">Chunk</text>
+    <text x="48" y="400">id «PK»</text>
+    <text x="48" y="426">chunk_id «único»</text>
+    <text x="48" y="452">document_id «FK»</text>
+    <text x="48" y="478">title, section, subsection</text>
+    <text x="48" y="504">content</text>
+    <text x="48" y="530">source_page, source_reference</text>
+    <text x="48" y="556">clinical_phase, information_type</text>
+    <text x="48" y="582">target_user, target_demographic</text>
+    <text x="48" y="608">clinical_criticality, safety_level</text>
+    <text x="48" y="634">disease_classification</text>
+    <text x="48" y="660">answer_policy</text>
+    <text x="48" y="686">seis indicadores booleanos (*_related)</text>
+    <text x="48" y="712">keywords, entities, metadata (JSON)</text>
+    <text x="48" y="738" font-weight="bold">embedding: vector(1536)</text>
+    <text x="48" y="770" font-size="14" font-style="italic" fill="#4b5563">índices: IVFFlat (cosseno); GIN (texto e metadados)</text>
+  </g>
+
+  <!-- Document 1 — 0..* Chunk -->
+  <line x1="250" y1="230" x2="250" y2="330" stroke="#1f2937" stroke-width="2"/>
+  <text x="262" y="254" font-size="17" fill="#111827">1</text>
+  <text x="262" y="318" font-size="17" fill="#111827">0..*</text>
+  <text x="180" y="286" font-size="15" font-style="italic" fill="#4b5563" text-anchor="middle">contém</text>
+
+  <!-- ChatSession -->
+  <g font-size="17" fill="#111827">
+    <rect x="560" y="30" width="400" height="120" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="560" y="30" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="760" y="58" text-anchor="middle" font-size="20" font-weight="bold">ChatSession</text>
+    <text x="578" y="100">id «PK»</text>
+    <text x="578" y="126">user_type</text>
+  </g>
+
+  <!-- ChatMessage -->
+  <g font-size="17" fill="#111827">
+    <rect x="560" y="260" width="400" height="146" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="560" y="260" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="760" y="288" text-anchor="middle" font-size="20" font-weight="bold">ChatMessage</text>
+    <text x="578" y="330">id «PK»</text>
+    <text x="578" y="356">session_id «FK»</text>
+    <text x="578" y="382">role, content</text>
+  </g>
+
+  <!-- ChatSession 1 — 0..* ChatMessage -->
+  <line x1="760" y1="150" x2="760" y2="260" stroke="#1f2937" stroke-width="2"/>
+  <text x="772" y="174" font-size="17" fill="#111827">1</text>
+  <text x="772" y="248" font-size="17" fill="#111827">0..*</text>
+
+  <!-- Feedback -->
+  <g font-size="17" fill="#111827">
+    <rect x="560" y="520" width="400" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="560" y="520" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="760" y="548" text-anchor="middle" font-size="20" font-weight="bold">Feedback</text>
+    <text x="578" y="590">id «PK»</text>
+    <text x="578" y="616">message_id «FK, opcional»</text>
+    <text x="578" y="642">rating (1 a 5), comment</text>
+    <text x="578" y="668">reviewed_by_specialist</text>
+  </g>
+
+  <!-- ChatMessage 0..1 — 0..* Feedback -->
+  <line x1="760" y1="406" x2="760" y2="520" stroke="#1f2937" stroke-width="2"/>
+  <text x="772" y="430" font-size="17" fill="#111827">0..1</text>
+  <text x="772" y="508" font-size="17" fill="#111827">0..*</text>
+
+  <!-- RetrievalLog -->
+  <g font-size="17" fill="#111827">
+    <rect x="1040" y="30" width="430" height="198" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="1040" y="30" width="430" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="1255" y="58" text-anchor="middle" font-size="20" font-weight="bold">RetrievalLog</text>
+    <text x="1058" y="100">id «PK»</text>
+    <text x="1058" y="126">session_id «FK, opcional»</text>
+    <text x="1058" y="152">question, final_answer</text>
+    <text x="1058" y="178">retrieved_chunks, scores, filters (JSON)</text>
+    <text x="1058" y="204">fallback_triggered, risk_level</text>
+  </g>
+
+  <!-- ChatSession 0..1 — 0..* RetrievalLog -->
+  <line x1="960" y1="90" x2="1040" y2="90" stroke="#1f2937" stroke-width="2"/>
+  <text x="968" y="80" font-size="17" fill="#111827">0..1</text>
+  <text x="1000" y="112" font-size="17" fill="#111827">0..*</text>
+
+  <!-- EvaluationQuestion -->
+  <g font-size="17" fill="#111827">
+    <rect x="1040" y="300" width="430" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="1040" y="300" width="430" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="1255" y="328" text-anchor="middle" font-size="20" font-weight="bold">EvaluationQuestion</text>
+    <text x="1058" y="370">id «PK»</text>
+    <text x="1058" y="396">question, expected_answer</text>
+    <text x="1058" y="422">ideal_chunks (JSON), risk_level</text>
+    <text x="1058" y="448">correctness_criteria, critical_errors</text>
+  </g>
+
+  <!-- Source -->
+  <g font-size="17" fill="#111827">
+    <rect x="1040" y="540" width="430" height="172" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="2" stroke-dasharray="8 6"/>
+    <rect x="1040" y="540" width="430" height="42" rx="4" fill="#f1f1f1" stroke="#6b7280" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="1255" y="568" text-anchor="middle" font-size="20" font-weight="bold" fill="#374151">Source <tspan font-size="15" font-weight="normal" font-style="italic">(prevista, não utilizada)</tspan></text>
+    <text x="1058" y="610" fill="#374151">id «PK»</text>
+    <text x="1058" y="636" fill="#374151">name, type, url</text>
+    <text x="1058" y="662" fill="#374151">version, last_reviewed</text>
+    <text x="1058" y="688" fill="#374151">notes</text>
+  </g>
+
+  <text x="30" y="836" font-size="15" fill="#4b5563">PK: chave primária; FK: chave estrangeira. As colunas de data de criação e de atualização foram omitidas.</text>
+</svg>

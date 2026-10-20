@@ -1,0 +1,151 @@
+# Pendências do TCC — NexoHansen
+
+Complemento da versão revisada `TCC_NexoHansen_Versao_Revisada.docx` (20/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+
+## Marcadores no documento
+
+Os pontos em aberto estão destacados em amarelo no DOCX. Para encontrá-los, use Localizar (Ctrl+L no Word) com o início do marcador, por exemplo `[PREENCHER`.
+
+| Marcador | Qtd. | Quando resolver |
+|---|---|---|
+| `[PREENCHER ...]` | 39 | Após a etapa indicada no próprio marcador: protocolo, curadoria, nova execução técnica ou coleta |
+| `[DEFINIR ...]` | 6 | Decisões de método, junto com o orientador |
+| `[ANALISAR ...]` | 5 | Após a consolidação das avaliações |
+| `[ATUALIZAR ...]` | 3 | Resumo, abstract e considerações finais, ao fim do trabalho |
+| `[VERIFICAR ...]` | 3 | Com o orientador ou com o CEP |
+| `[INSERIR ...]` | 3 | Tabelas e gráfico de resultados |
+| `[REESCREVER ...]` | 2 | Dedicatória e agradecimentos |
+| `[OPCIONAL ...]` | 1 | Epígrafe |
+
+---
+
+## 1. Bloqueantes
+
+Sem estes itens, a pesquisa não pode ser concluída. A lista está na ordem recomendada de execução.
+
+1. **Construir a base de conhecimento a partir de documentos oficiais.** A base atual tem 15 trechos redigidos para desenvolvimento. Nenhum deles tem página nem documento de origem: `source_page` é nulo em todos, e a referência é "Seed técnico local".
+   - O que fazer: extrair os trechos do PCDT (2022) e de outros documentos selecionados. Cada trecho deve ter página, versão e data de revisão.
+   - Onde fica: Seções 3.3.2 e 4.4, Tabela 1 e Apêndice B.
+   - Requisito no código: o `ChunkingService` existe, mas não é chamado por nenhuma rota. É preciso integrá-lo ou gerar o JSONL já fragmentado.
+2. **Corrigir a correspondência de padrões.** A correção vale para as regras de segurança (`safety.service.ts`), o classificador de intenção e o `clinical-risk.service.ts`.
+   - Correspondência por subcadeias (casos verificados):
+     - "Tenho dúvida…" é recusada como reação grave ("enh").
+     - "Como comparar…" é recusada como prescrição ("parar").
+     - "Escolho qual exame…" é tratada como urgência ("olho").
+     - "também" é lido como "mb".
+   - Padrões amplos demais: "voltou", por exemplo, eleva o risco clínico em qualquer frase.
+   - Ordem fixa das categorias: a pergunta sobre BCG é classificada como medicamento por conter "dose".
+   - O que fazer: usar limites de palavra, rever os padrões amplos e criar testes com frases comuns.
+   - Onde fica: Seções 4.5.1 e 4.5.4 e item g da Seção 3.6.2.
+3. **Preparar o ambiente da nova avaliação técnica.**
+   - Configurar ou conferir a `OPENAI_API_KEY` no `backend/.env`, sem compartilhá-la.
+   - Alinhar a porta do servidor: o `CONTEXTO.md` registra `PORT=3336`, mas o proxy do Vite aponta para 3333.
+   - Reindexar a base (seed ou ingestão) para gerar os *embeddings* com o novo provedor.
+   - Conferir o índice IVFFlat (`lists = 100`). Com poucas linhas e o padrão `ivfflat.probes = 1`, a busca aproximada pode retornar menos vizinhos que o esperado. Alternativas: recriar o índice depois da carga, ajustar `probes` ou dispensar o índice enquanto a base for pequena.
+4. **Executar de novo a avaliação técnica e calibrar o limiar.**
+   - Rodar `POST /api/evaluation/run` e exportar os resultados por pergunta, que hoje não são armazenados. Eles devem entrar em um apêndice.
+   - Testar valores de `MIN_RETRIEVAL_SCORE` e, se for o caso, dos pesos 0,65/0,35. Registrar a configuração usada.
+   - Onde fica: Seções 3.5, 5.2 e 6.1 (QP2), além do `[INSERIR TABELA…]` da Seção 5.2.
+5. **Implementar o Cenário B real.** A tela `/comparacao` monta a resposta "genérica" por simulação no navegador. Ela precisa ser substituída por chamadas reais a um modelo de linguagem, com os parâmetros do Quadro 3 registrados. Onde fica: Seções 3.6.2 (item a) e 4.6, Figura 8.
+6. **Definir o protocolo da avaliação comparativa.** Envolve os itens a–g da Seção 3.6.2 e as Seções 3.6.3 a 3.6.8, o Apêndice E e as medidas contra as ameaças da Seção 3.7.
+7. **Verificar o enquadramento ético antes de qualquer coleta.** Isso deve ser feito com o orientador e o CEP da UPE, com base nas Resoluções CNS 466/2012 e 510/2016 e no Ofício Circular 17/2022/CONEP. Inclui preparar o TCLE ou instrumento equivalente. O texto não afirma dispensa nem aprovação.
+8. **Proteger os dados antes de expor o sistema a participantes.** A interface precisa de um aviso contra a inserção de dados pessoais. Precisa também informar que as perguntas são registradas e, no modo com chave, enviadas a um serviço externo (LGPD). Avaliar ainda o uso de autenticação ou de um ambiente controlado.
+9. **Pedir a revisão externa das perguntas de avaliação.** As 25 perguntas de referência foram escritas junto com a base, o que favorece o Cenário A (Seção 3.6.4).
+10. **Gerar e guardar as respostas dos dois cenários antes da coleta.** As respostas não devem ser geradas em tempo real durante a sessão (Seção 3.6.5).
+11. **Redigir os resultados depois da coleta.**
+    - Preencher as Seções 5.3, 6.1 (QP3), 6.2, 6.3, 6.4 e 7, o Resumo e o Abstract.
+    - Atualizar a Figura 1 e o Quadro 2. A fonte editável está em `figuras/editaveis/fig-etapas.svg`.
+    - Refazer a captura da Figura 8 se a tela de comparação mudar.
+
+## 2. Decisões para o orientador
+
+- **Título.** O título registrado diz "Recuperação Aumentada por Geração", mas a tradução que preserva o sentido de *retrieval-augmented generation* é "Geração Aumentada por Recuperação". O texto adota esta última, com nota de rodapé na Introdução. É preciso decidir se o título pode ser ajustado.
+- **Referencial metodológico.** Confirmar a adoção da pesquisa em ciência do design (Hevner *et al.*, 2004; Peffers *et al.*, 2007).
+- **Abordagem.** Definir se a pesquisa será quantitativa, qualitativa ou mista (Seção 3.1).
+- **Cenário B.** Escolher entre o mesmo modelo sem recuperação e um assistente de propósito geral. Definir também o formato de apresentação das respostas, o cegamento e o desenho (intra ou entre participantes).
+- **Análise.** Definir os métodos estatísticos, o nível de significância e o procedimento de análise qualitativa (Seção 3.6.8).
+- **Revisões complementares.** Decidir sobre o uso de métricas automáticas (RAGAS) e sobre a revisão das respostas e da base por um profissional de saúde.
+- **Nomes.** Indicar o(a) coorientador(a) (o campo estava em branco no rascunho) e os membros da banca.
+- **Entrada do Ministério da Saúde.** A lista usa "MINISTÉRIO DA SAÚDE", como no TCC de exemplo. A NBR 6023:2018 indica a entrada pela jurisdição ("BRASIL. Ministério da Saúde"). Se essa forma for adotada, as citações passam a ser "(Brasil, 2022a)", "(Brasil, 2022b)" e assim por diante, porque já existem outras entradas "Brasil, 2022".
+- **Modelo institucional.** O documento usa Arial 12, margens de 3 e 2 cm, espaçamento 1,5 e paginação no canto superior direito a partir da Introdução (NBR 14724). Confirmar com o modelo da UPE, incluindo a capa e a folha de aprovação. A ficha catalográfica vem da biblioteca.
+- **Cronograma.** O cronograma do projeto foi retirado do corpo da monografia. Se o curso o exigir na versão final, ele deve ser reinserido.
+
+## 3. Referências
+
+### 3.1 A conferir ou completar
+
+- As datas de acesso ("Acesso em: 20 out. 2026") devem ser atualizadas na versão final.
+- A afirmação de lacuna na Seção 2.7.1 ("na literatura consultada, não foram identificados…") pede uma busca estruturada e documentada, com bases, termos e período. Sem ela, é preciso manter a ressalva.
+- A dimensão "Confiança e utilidade percebidas" do Quadro 4 ainda não tem referência. É preciso localizar uma se ela for adotada.
+
+### 3.2 Corrigidas em relação ao rascunho
+
+Os dados abaixo foram conferidos nas fontes. Lopes, Palmeira e Simões foram conferidos também no Crossref.
+
+| Rascunho | Versão revisada |
+|---|---|
+| Barbieri *et al.* "AI4Leprosy…", *PLOS NTD*, 2022 | Título e periódico corrigidos: *The Lancet Regional Health – Americas*, v. 9, 100192 |
+| Fernandes, H. *et al.*, *PLOS Computational Biology*, 2024 | Fernandes, J. R. N. *et al.*, *Journal of Clinical Medicine*, v. 13, n. 1, 180 |
+| Gama *et al.* "Machine learning for leprosy diagnosis…", 2019 | Título corrigido; *PLoS NTD*, v. 13, n. 6, e0007400 |
+| Simões, C. *et al.*, "PMC", 2025 | Simões, M. M. R. *et al.*, *Scientific Reports*, v. 15, n. 1, 6912 |
+| "IMPROVING Retrieval Augmented Generation…", *JMIR*, 2026 | Autoria incluída: Arzideh *et al.*, v. 28, e82997 |
+| "PLOS COMPUTATIONAL BIOLOGY. MEGA-RAG…", 2025 | Xu *et al.*, *Frontiers in Public Health*, v. 13 |
+| Yang, M. *et al.*, arXiv, 2024 | Versão publicada: Yang, R. *et al.*, *Cell Reports Medicine*, 2026 |
+| Es *et al.* (RAGAS), arXiv, 2023 | Versão publicada: EACL 2024 (citação passa a ser 2024) |
+| Miller; Pople; Myers, dados do *NEJM* (1982) com ano 1985 | Reimpressão de 1985 (Springer). Alternativa: citar o *NEJM* e usar 1982 no texto |
+| Shortliffe, livro sobre o MYCIN, 1977 | Artigo do SCAMC de 1977, coerente com o ano citado no texto |
+| Andrade *et al.*; Lewis; Vaswani; Thirunavukarasu; Xiong; Shortliffe; Cimino | Completadas com evento, páginas, DOI e local |
+
+### 3.3 Substituídas: confirmar se são as obras pretendidas
+
+A obra citada no rascunho não foi localizada com os dados informados. Em cada caso, usou-se o trabalho localizado do mesmo autor e ano sobre o mesmo tema.
+
+- **Lopes.** O rascunho cita "LOPES, L. *et al.* Hanseníase, estigma social e serviço social. *Revista FT*, 2020". A versão revisada cita LOPES, E. F. B. *et al.* Educação em saúde: uma troca de saberes no combate ao estigma da hanseníase. *Brazilian Journal of Development*, v. 6, n. 2, p. 5350–5368, 2020.
+- **Palmeira.** O rascunho cita "PALMEIRA, I. P. *et al.* Social impact of leprosy diagnosis. *Rev. Bras. Enferm.*, 2020". A versão revisada cita PALMEIRA, I. P. *et al.* Percepção de pacientes com hanseníase sobre suas necessidades humanas básicas alteradas… *Rev. Pesq. Cuid. Fundam. Online*, v. 12, p. 319–325, 2020.
+
+### 3.4 Retiradas da lista
+
+Estas obras deixaram de ser citadas porque as seções foram reescritas ou condensadas, ou porque vieram do TCC de exemplo. Se alguma voltar a ser usada, confira os dados completos.
+
+- **Histórico de IA e de IA aplicada à hanseníase:** Bakkar *et al.*; Baweja; Parhar; Pal *et al.*; Yasir; Rahman; Ahmed; Massachusetts General Hospital (DXplain).
+- **Contexto da doença:** Costa *et al.* (2020); Medeiros (2018). Do Ministério da Saúde: o *Manual de Condutas* (2022b), *Hanseníase: histórico e aspectos gerais* (2023) e o Boletim de 2025, este substituído pelo de 2026. Da OMS: o *Global leprosy update* (2023) e o *Global Report on NTDs* (2025).
+- **Entrada incompleta:** Zhang *et al.* (2023), sem periódico ou evento. A afirmação que a citava foi retirada.
+- **Sem relação com este trabalho (vieram do TCC de exemplo):** Wirth; Hipp (CRISP-DM); Zafar *et al.*; Zhao *et al.*
+
+## 4. Inconsistências encontradas
+
+### 4.1 Rascunho em relação ao código (já corrigidas no texto)
+
+- **Arquitetura.** O rascunho previa Flutter e microsserviços em Spring Boot. O que foi implementado é React com TypeScript (Vite) e um servidor Node.js com TypeScript (Express) em módulos, sobre PostgreSQL e pgvector.
+- **Ingestão.** O rascunho descrevia fragmentação e indexação de PDFs do PCDT. A ingestão atual recebe JSONL com trechos prontos.
+- **Avaliação.** O rascunho prometia RAGAS com metas (fidelidade > 0,95, relevância > 0,85 e outras), sem fonte para os valores. Nada disso está implementado. O sistema mede a aproximação da revocação por trecho ideal e o número de recusas.
+- **LGPD.** O rascunho afirmava que a interface orientaria a anonimização. Não há aviso nem autenticação.
+- **Resultados.** O rascunho afirmava que as respostas seriam mais precisas que as de modelos sem RAG. Não há evidência disso antes da avaliação comparativa.
+- **Palavras-chave.** Havia uma segunda linha de palavras-chave do TCC de exemplo ("prognóstico; GIF; aprendizado de máquina"). Ela foi removida.
+- **Elementos pré-textuais.** A dedicatória, os agradecimentos e a epígrafe reproduzem os do TCC de exemplo e estão marcados para reescrita, por risco de plágio. O nome da madrinha aparece como "Syanra" na dedicatória e "Synara" nos agradecimentos.
+
+### 4.2 No código e na documentação do repositório (não corrigidas)
+
+- **Origem dos trechos.** Os trechos da base inicial têm `source_type` "Protocolo oficial" (10 de 15), mas a origem real é o seed técnico. Isso deve ser corrigido para não sugerir origem oficial.
+- **Título dos documentos.** Na ingestão, `Document.title` recebe o título do último trecho ingerido de cada documento, e não o título do documento-fonte.
+- **Documentação do risco.** A seção 18 de `docs/arquitetura-backend-rag-hanseniase.md` atribui risco médio a perguntas educativas, de transmissão e de epidemiologia. O código decide pela intenção e eleva o risco para "muito alto" quando algum trecho recuperado é crítico. A Seção 4.5.1 do TCC descreve o código.
+- **Descrição da tela de comparação.** O `CONTEXTO.md` a apresenta como "RAG vs. LLM genérico", mas o lado genérico é simulado.
+
+## 5. Ordem sugerida para concluir
+
+As datas devem ser definidas com o orientador.
+
+1. Itens 1 a 4: base oficial, correções, ambiente e avaliação técnica. Juntos, respondem à QP2.
+2. Itens 5 a 9, que podem andar em paralelo com o anterior: Cenário B real, protocolo, ética, aviso de privacidade e revisão das perguntas.
+3. Item 10: gerar as respostas. Em seguida, a coleta, que só deve começar depois do item 7.
+4. Item 11: análise e redação. Por último, atualizar o resumo, o abstract, a Figura 1 e o Quadro 2.
+
+## 6. Como manter o documento
+
+- **Sumário e listas.** Foram gerados já atualizados. Depois de editar no Word, selecione tudo (Ctrl+A) e pressione F9 para atualizar os números de página.
+- **Legendas.** A numeração usa campos SEQ, mas as menções no texto ("Figura 4", "Quadro 9") são texto simples. Ao inserir uma figura ou um quadro novo, use Inserir legenda e revise as menções.
+- **Google Docs.** O sumário pode ser atualizado no próprio Google Docs. As listas de figuras, quadros e tabelas podem virar texto fixo. Nesse caso, faça a revisão final no Word.
+- **Figuras.**
+  - As capturas de tela (Figuras 5 a 9) mostram a interface em 20/10/2026, sempre no estado inicial, sem respostas simuladas.
+  - Os diagramas (Figuras 1 a 4) têm fonte editável em SVG na pasta `figuras/editaveis/`.
+  - A Figura 6 é o exemplo ilustrativo da página inicial, identificado como tal na própria interface.

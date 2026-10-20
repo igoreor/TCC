@@ -1,19 +1,16 @@
-import { useRagConversation } from '../../hooks/useRagConversation'
-import { ChatWidgetFab } from './ChatWidgetFab'
+import type { UserType } from '../../api/types'
+import type { RagConversation } from '../../hooks/useRagConversation'
 import { ChatWidgetPanel } from './ChatWidgetPanel'
 
 interface ChatWidgetProps {
   isOpen: boolean
-  onOpenChange: (isOpen: boolean) => void
+  onClose: () => void
+  conversation: RagConversation
+  userType: UserType
 }
 
-export function ChatWidget({ isOpen, onOpenChange }: ChatWidgetProps) {
-  const conversation = useRagConversation()
-
-  return (
-    <>
-      {isOpen ? <ChatWidgetPanel conversation={conversation} onClose={() => onOpenChange(false)} /> : null}
-      <ChatWidgetFab isOpen={isOpen} onToggle={() => onOpenChange(!isOpen)} />
-    </>
-  )
+/** Gaveta de consulta. O estado da conversa vive no PublicLayout, então sobrevive à troca de página. */
+export function ChatWidget({ isOpen, onClose, conversation, userType }: ChatWidgetProps) {
+  if (!isOpen) return null
+  return <ChatWidgetPanel conversation={conversation} userType={userType} onClose={onClose} />
 }

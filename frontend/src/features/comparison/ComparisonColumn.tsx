@@ -1,79 +1,85 @@
-import { useEffect, useRef } from 'react'
 import type { ReactNode } from 'react'
-import { MessageSquare, ShieldCheck } from 'lucide-react'
-import { ErrorInline } from '../../components/dark/ErrorInline'
-import { Skeleton } from '../../components/dark/Skeleton'
+import { BrandMark } from '../../components/brand/BrandMark'
+import { QuestionLine } from '../../components/rag-answer/QuestionLine'
+import { useScrollToLatest } from '../../hooks/useScrollToLatest'
+import { cx } from '../../lib/cx'
+
+interface ComparisonEntry {
+  key: string
+  question: string
+  content: ReactNode
+}
 
 interface ComparisonColumnProps {
+  id: string
   variant: 'rag' | 'generic'
   title: string
-  subtitle: string
-  isEmpty: boolean
-  isPending: boolean
-  error?: unknown
-  onRetry?: () => void
-  children: ReactNode
+  meta: string
+  emptyNote: string
+  entries: ComparisonEntry[]
+  scrollSignal: string
+  /** Abaixo de `md` só uma coluna aparece por vez; o seletor da página faz o papel do cabeçalho. */
+  hiddenOnMobile: boolean
 }
 
 export function ComparisonColumn({
+  id,
   variant,
   title,
-  subtitle,
-  isEmpty,
-  isPending,
-  error,
-  onRetry,
-  children,
+  meta,
+  emptyNote,
+  entries,
+  scrollSignal,
+  hiddenOnMobile,
 }: ComparisonColumnProps) {
-  const bottomRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ block: 'end' })
-  })
-
-  const Icon = variant === 'rag' ? ShieldCheck : MessageSquare
+  const { containerRef, latestRef } = useScrollToLatest<HTMLDivElement, HTMLLIElement>(scrollSignal)
+  const titleId = `${id}-titulo`
 
   return (
-    <div className="flex flex-1 flex-col overflow-hidden">
-      <header className="flex items-center gap-3 border-b border-white/5 px-4 py-3">
-        <div
-          className={
-            variant === 'rag' ? 'rounded-lg bg-emerald-950/50 p-1.5 text-emerald-400' : 'rounded-lg bg-zinc-800/50 p-1.5 text-zinc-500'
-          }
-        >
-          <Icon className="h-4 w-4" aria-hidden="true" />
-        </div>
-        <div>
-          <h2 className="font-display text-sm font-semibold text-text-primary">{title}</h2>
-          <p className="text-xs text-text-muted">{subtitle}</p>
-        </div>
+    <section
+      id={id}
+      aria-labelledby={titleId}
+      className={cx(
+        'min-h-0 flex-1 flex-col md:flex',
+        hiddenOnMobile ? 'hidden' : 'flex',
+        variant === 'rag' ? 'md:border-r md:border-rule' : 'bg-paper-sunken/40',
+      )}
+    >
+      <header className="hidden flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-rule px-5 py-3 sm:px-8 md:flex">
+        <h2 id={titleId} className="flex items-center gap-2.5 font-serif text-subheading font-semibold text-ink">
+          {variant === 'rag' ? (
+            <BrandMark className="size-4 text-ink" />
+          ) : (
+            <span aria-hidden="true" className="size-3 border border-rule-control" />
+          )}
+          {title}
+        </h2>
+        <p className="font-mono text-micro text-ink-faint">{meta}</p>
       </header>
-      <div className="flex-1 space-y-3 overflow-y-auto p-4">
-        {isEmpty && !isPending ? (
-          <div className="flex h-full items-center justify-center text-center text-sm text-text-muted">
-            Faça uma pergunta abaixo para comparar as respostas.
-          </div>
+
+      <div
+        ref={containerRef}
+        role="log"
+        aria-labelledby={titleId}
+        className="relative min-h-0 flex-1 overflow-y-auto px-5 py-6 sm:px-8"
+      >
+        {entries.length === 0 ? (
+          <p className="max-w-sm text-small text-pretty text-ink-faint">{emptyNote}</p>
         ) : (
-          <>
-            {children}
-            {isPending ? (
-              variant === 'rag' ? (
-                <div className="w-fit rounded-2xl border border-border bg-surface-2 px-4 py-3">
-                  <Skeleton className="h-3 w-40" />
-                </div>
-              ) : (
-                <div className="flex flex-col gap-2 rounded-lg bg-surface-1/60 p-4">
-                  <Skeleton className="h-3 w-full" />
-                  <Skeleton className="h-3 w-5/6" />
-                  <Skeleton className="h-3 w-2/3" />
-                </div>
-              )
-            ) : null}
-            {error ? <ErrorInline error={error} onRetry={onRetry} /> : null}
-          </>
+          <ol className="space-y-8">
+            {entries.map((entry, index) => (
+              <li
+                key={entry.key}
+                ref={index === entries.length - 1 ? latestRef : undefined}
+                className={cx(index > 0 && 'border-t border-rule pt-8')}
+              >
+                <QuestionLine question={entry.question} />
+                <div className="mt-5">{entry.content}</div>
+              </li>
+            ))}
+          </ol>
         )}
-        <div ref={bottomRef} />
       </div>
-    </div>
+    </section>
   )
 }

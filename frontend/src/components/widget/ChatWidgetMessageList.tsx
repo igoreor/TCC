@@ -1,88 +1,96 @@
-import { useEffect, useRef } from 'react'
+import { ArrowRight } from 'lucide-react'
 import type { RagUiMessage } from '../../hooks/useRagConversation'
-import { EmptyState } from '../dark/EmptyState'
-import { ErrorInline } from '../dark/ErrorInline'
-import { RagAnswerBubble } from '../rag-answer/RagAnswerBubble'
-import { TypingIndicator } from './TypingIndicator'
+import { useScrollToLatest } from '../../hooks/useScrollToLatest'
+import { toEntries } from '../../lib/conversation'
+import { cx } from '../../lib/cx'
+import { metaLabel } from '../primitives/classes'
+import { QuestionLine } from '../rag-answer/QuestionLine'
+import { RagEntryBody } from '../rag-answer/RagEntryBody'
 
-const EXAMPLE_QUESTIONS = ['O que é hanseníase?', 'Quais os sintomas iniciais?', 'Como é feito o diagnóstico?']
+// Perguntas do conjunto de avaliação do projeto (backend/knowledge-base/processed/qa_dataset.json).
+const EXAMPLE_QUESTIONS = [
+  'Baciloscopia negativa exclui hanseníase?',
+  'Quais são os critérios cardinais da hanseníase?',
+  'Como classificar um caso como multibacilar?',
+  'Contatos domiciliares devem ser examinados?',
+]
 
 interface ChatWidgetMessageListProps {
   messages: RagUiMessage[]
-  pendingQuestion: string | null
+  isPending: boolean
   error: unknown
-  onExampleClick: (question: string) => void
+  onAsk: (question: string) => void
   onRetry: () => void
 }
 
-export function ChatWidgetMessageList({
-  messages,
-  pendingQuestion,
-  error,
-  onExampleClick,
-  onRetry,
-}: ChatWidgetMessageListProps) {
-  const bottomRef = useRef<HTMLDivElement>(null)
+export function ChatWidgetMessageList({ messages, isPending, error, onAsk, onRetry }: ChatWidgetMessageListProps) {
+  const entries = toEntries(messages)
+  const latest = entries.at(-1)
+  const { containerRef, latestRef } = useScrollToLatest<HTMLDivElement, HTMLLIElement>(
+    `${entries.length}:${latest?.answer ? 'a' : ''}:${isPending ? 'p' : ''}:${error ? 'e' : ''}`,
+  )
 
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ block: 'end' })
-  }, [messages, pendingQuestion, error])
-
-  if (messages.length === 0 && !pendingQuestion) {
+  if (entries.length === 0) {
     return (
-      <div className="flex-1 overflow-y-auto p-4">
-        <EmptyState
-          title="Olá! Como posso ajudar?"
-          description="Pergunte sobre sintomas, diagnóstico, tratamento ou qualquer dúvida sobre hanseníase."
-          action={EXAMPLE_QUESTIONS.map((question) => (
-            <button
-              key={question}
-              type="button"
-              onClick={() => onExampleClick(question)}
-              className="rounded-full border border-border bg-surface-2 px-3 py-1.5 text-xs text-text-secondary transition-colors duration-200 hover:border-border-strong hover:text-text-primary"
-            >
-              {question}
-            </button>
+      <div className="min-h-0 flex-1 overflow-y-auto px-5 py-8 sm:px-7">
+        <p className="font-serif text-subheading font-medium text-ink">Escreva uma pergunta clínica sobre hanseníase.</p>
+        <p className="mt-2 text-ui text-pretty text-ink-soft">
+          A resposta é redigida a partir de trechos da base de conhecimento e indica as fontes usadas. Pedidos de
+          diagnóstico definitivo ou de prescrição recebem uma recusa explicada.
+        </p>
+        <p className={cx(metaLabel, 'mt-8 text-ink-faint')}>Exemplos do conjunto de avaliação</p>
+        <ul className="mt-3">
+          {EXAMPLE_QUESTIONS.map((question) => (
+            <li key={question} className="border-b border-rule first:border-t">
+              <button
+                type="button"
+                onClick={() => onAsk(question)}
+                className="group flex w-full items-center justify-between gap-4 py-3 text-left text-ui text-ink transition-colors duration-150 hover:text-accent"
+              >
+                <span>{question}</span>
+                <ArrowRight
+                  aria-hidden="true"
+                  className="size-4 shrink-0 text-ink-faint transition-transform duration-150 group-hover:translate-x-0.5 group-hover:text-accent"
+                />
+              </button>
+            </li>
           ))}
-        />
+        </ul>
       </div>
     )
   }
 
   return (
-    <div className="flex-1 space-y-3 overflow-y-auto p-4">
-      {messages.map((message) => {
-        if (message.role === 'user') {
+    <div
+      ref={containerRef}
+      role="log"
+      aria-label="Registro da consulta"
+      aria-busy={isPending}
+      className="relative min-h-0 flex-1 overflow-y-auto px-5 py-6 sm:px-7"
+    >
+      <ol className="space-y-8">
+        {entries.map((entry, index) => {
+          const isLatest = index === entries.length - 1
           return (
-            <div
-              key={message.id}
-              className="ml-auto w-fit max-w-[85%] rounded-2xl bg-accent px-4 py-2.5 text-sm text-accent-fg"
+            <li
+              key={entry.question.id}
+              ref={isLatest ? latestRef : undefined}
+              className={cx(index > 0 && 'border-t border-rule pt-8')}
             >
-              {message.content}
-            </div>
+              <QuestionLine question={entry.question.content} />
+              <div className="mt-5">
+                <RagEntryBody
+                  answer={entry.answer}
+                  isLatest={isLatest}
+                  isPending={isPending}
+                  error={error}
+                  onRetry={onRetry}
+                />
+              </div>
+            </li>
           )
-        }
-
-        if (message.safety) {
-          return (
-            <RagAnswerBubble
-              key={message.id}
-              content={message.content}
-              sources={message.sources ?? []}
-              safety={message.safety}
-            />
-          )
-        }
-
-        return (
-          <div key={message.id} className="rounded-2xl border border-border bg-surface-2 p-4 text-sm text-text-primary">
-            {message.content}
-          </div>
-        )
-      })}
-      {pendingQuestion ? <TypingIndicator /> : null}
-      {error ? <ErrorInline error={error} onRetry={onRetry} /> : null}
-      <div ref={bottomRef} />
+        })}
+      </ol>
     </div>
   )
 }

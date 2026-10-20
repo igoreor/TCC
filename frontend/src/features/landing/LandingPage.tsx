@@ -1,49 +1,41 @@
-import { useState } from 'react'
-import { Activity, Info, Pill, Stethoscope } from 'lucide-react'
-import { ChatWidget } from '../../components/widget/ChatWidget'
-import { diagnosisContent, symptomsContent, treatmentContent, whatIsContent } from './content'
-import { ContentSection } from './sections/ContentSection'
+import { useEffect, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
+import { useConsultation } from '../../components/layout/consultation'
+import { ChatWidgetFab } from '../../components/widget/ChatWidgetFab'
+import { useInView } from '../../hooks/useInView'
+import { scrollBehavior } from '../../lib/motion'
+import { ClosingSection } from './sections/ClosingSection'
 import { FooterSection } from './sections/FooterSection'
 import { HeroSection } from './sections/HeroSection'
-import { TrustSection } from './sections/TrustSection'
+import { KnowledgeBaseSection } from './sections/KnowledgeBaseSection'
+import { LimitsSection } from './sections/LimitsSection'
+import { MethodSection } from './sections/MethodSection'
 
 export function LandingPage() {
-  const [isChatOpen, setIsChatOpen] = useState(false)
+  const { isOpen, open } = useConsultation()
+  const heroCtaRef = useRef<HTMLButtonElement>(null)
+  const closingActionsRef = useRef<HTMLUListElement>(null)
+  const heroCtaInView = useInView(heroCtaRef, '-64px 0px 0px 0px')
+  const closingActionsInView = useInView(closingActionsRef)
+  const { hash, key } = useLocation()
+
+  // Os links de seção (#como-funciona, #limites, #base) também chegam de outras páginas.
+  useEffect(() => {
+    if (!hash) return
+    document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({ behavior: scrollBehavior() })
+  }, [hash, key])
 
   return (
-    <div className="font-sans">
-      <main className="pt-16">
-        <HeroSection onOpenChat={() => setIsChatOpen(true)} />
-        <ContentSection
-          id="o-que-e"
-          title={whatIsContent.title}
-          paragraphs={whatIsContent.paragraphs}
-          icon={<Info className="h-6 w-6" aria-hidden="true" />}
-        />
-        <ContentSection
-          id="sintomas"
-          title={symptomsContent.title}
-          paragraphs={symptomsContent.paragraphs}
-          icon={<Activity className="h-6 w-6" aria-hidden="true" />}
-          align="right"
-        />
-        <ContentSection
-          id="diagnostico"
-          title={diagnosisContent.title}
-          paragraphs={diagnosisContent.paragraphs}
-          icon={<Stethoscope className="h-6 w-6" aria-hidden="true" />}
-        />
-        <ContentSection
-          id="tratamento"
-          title={treatmentContent.title}
-          paragraphs={treatmentContent.paragraphs}
-          icon={<Pill className="h-6 w-6" aria-hidden="true" />}
-          align="right"
-        />
-        <TrustSection />
+    <>
+      <main id="conteudo" tabIndex={-1} className="outline-none">
+        <HeroSection ctaRef={heroCtaRef} onOpenConsultation={open} />
+        <MethodSection />
+        <LimitsSection />
+        <KnowledgeBaseSection />
+        <ClosingSection actionsRef={closingActionsRef} onOpenConsultation={() => open()} />
       </main>
       <FooterSection />
-      <ChatWidget isOpen={isChatOpen} onOpenChange={setIsChatOpen} />
-    </div>
+      <ChatWidgetFab visible={!heroCtaInView && !closingActionsInView && !isOpen} onOpen={() => open()} />
+    </>
   )
 }

@@ -1,33 +1,56 @@
+import type { Ref } from 'react'
 import { Link } from 'react-router-dom'
-import { buttonClasses } from '../../../components/dark/buttonClasses'
+import { Button } from '../../../components/primitives/Button'
+import { buttonClasses, metaLabel } from '../../../components/primitives/classes'
+import { cx } from '../../../lib/cx'
 import { heroContent } from '../content'
+import { ConsultationFigure } from './ConsultationFigure'
 
 interface HeroSectionProps {
-  onOpenChat: () => void
+  onOpenConsultation: (question?: string) => void
+  ctaRef: Ref<HTMLButtonElement>
 }
 
-export function HeroSection({ onOpenChat }: HeroSectionProps) {
+export function HeroSection({ onOpenConsultation, ctaRef }: HeroSectionProps) {
+  const { title } = heroContent
+
   return (
-    <section className="relative overflow-hidden px-6 pb-20 pt-24 md:pt-32">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(45,212,191,0.14),transparent)]"
-      />
-      <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center motion-safe:animate-fade-in-up">
-        <span className="rounded-full border border-border bg-surface-2 px-3 py-1 text-xs font-medium text-accent">
-          {heroContent.eyebrow}
-        </span>
-        <h1 className="text-balance bg-gradient-to-r from-white to-zinc-400 bg-clip-text font-display text-4xl font-bold leading-tight text-transparent md:text-5xl">
-          {heroContent.title}
+    <section aria-labelledby="hero-titulo" className="border-b border-rule">
+      <div className="mx-auto max-w-site px-4 pb-16 pt-28 sm:px-6 md:pt-32 lg:px-8 lg:pb-24">
+        <p className={cx(metaLabel, 'text-accent')}>{heroContent.eyebrow}</p>
+        <h1 id="hero-titulo" className="mt-5 max-w-[15em] font-serif text-display font-medium text-balance text-ink">
+          {title.lead}
+          <em className="font-normal">{title.emphasis}</em>
+          {title.end}
         </h1>
-        <p className="max-w-xl text-balance text-sm text-text-secondary md:text-base">{heroContent.subtitle}</p>
-        <div className="mt-2 flex flex-col gap-3 sm:flex-row">
-          <button type="button" className={buttonClasses('primary')} onClick={onOpenChat}>
-            {heroContent.primaryCta}
-          </button>
-          <Link to="/comparacao" className={buttonClasses('secondary', 'no-underline')}>
-            {heroContent.secondaryCta}
-          </Link>
+
+        <div className="mt-12 grid gap-x-10 gap-y-14 border-t border-rule pt-10 lg:mt-16 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <p className="text-lede text-pretty text-ink-soft">{heroContent.lede}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button ref={ctaRef} onClick={() => onOpenConsultation()}>
+                {heroContent.primaryCta}
+              </Button>
+              <Link to={{ hash: '#como-funciona' }} className={buttonClasses({ variant: 'secondary' })}>
+                {heroContent.secondaryCta}
+              </Link>
+            </div>
+            <dl className="mt-12">
+              {heroContent.facts.map((fact) => (
+                <div
+                  key={fact.term}
+                  className="grid grid-cols-[5rem_minmax(0,1fr)] gap-4 border-b border-rule py-3 first:border-t"
+                >
+                  <dt className={cx(metaLabel, 'pt-0.5 text-ink-faint')}>{fact.term}</dt>
+                  <dd className="text-small text-ink-soft">{fact.detail}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <div className="lg:col-span-8">
+            <ConsultationFigure onAsk={onOpenConsultation} />
+          </div>
         </div>
       </div>
     </section>

@@ -1,22 +1,25 @@
-import { MessageCircle } from 'lucide-react'
-import { IconButton } from '../dark/IconButton'
+import { BrandMark } from '../brand/BrandMark'
 
 interface ChatWidgetFabProps {
-  isOpen: boolean
-  onToggle: () => void
+  visible: boolean
+  onOpen: () => void
 }
 
-export function ChatWidgetFab({ isOpen, onToggle }: ChatWidgetFabProps) {
-  // O drawer já tem seu próprio botão de fechar — o FAB só existe pra abrir,
-  // então some por completo enquanto o drawer está aberto (evita dois "fechar" na tela).
-  if (isOpen) return null
+/**
+ * Atalho flutuante para a consulta: aparece só enquanto nenhum outro convite à consulta está
+ * na tela. A borda clara o mantém visível sobre a seção escura de limites.
+ */
+export function ChatWidgetFab({ visible, onOpen }: ChatWidgetFabProps) {
+  if (!visible) return null
 
   return (
-    <IconButton
-      onClick={onToggle}
-      aria-label="Abrir assistente virtual"
-      icon={<MessageCircle className="h-6 w-6" aria-hidden="true" />}
-      className="fixed bottom-6 right-6 z-50 h-14 w-14 bg-accent text-accent-fg shadow-glow-accent hover:bg-accent-hover"
-    />
+    <button
+      type="button"
+      onClick={onOpen}
+      className="fixed bottom-5 right-5 z-50 inline-flex h-12 items-center gap-2.5 rounded-xs border border-night-text/20 bg-night pl-4 pr-5 text-ui font-medium text-night-text shadow-raised transition-colors duration-150 hover:bg-night-raised motion-safe:animate-launcher-in sm:bottom-6 sm:right-6"
+    >
+      <BrandMark className="size-4 text-night-text" dotClassName="fill-night-accent" />
+      Consultar a base
+    </button>
   )
 }

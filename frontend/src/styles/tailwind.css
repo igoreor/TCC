@@ -1,56 +1,210 @@
+/*
+ * Ordem das camadas: legacy-reset (global.css) < theme < base < utilities.
+ * Declarada antes dos imports para que `base` fique abaixo das utilities.
+ */
+@layer theme, base, utilities;
+
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 
+/*
+ * NexoHansen — tokens da interface pública (/ e /comparacao).
+ * O dashboard interno (/dashboard/*) continua usando tokens.css + CSS Modules.
+ *
+ * Direção: editorial-clínica. Papel claro, tinta grafite e um único destaque
+ * em azul-petróleo. A tipografia indica a origem do texto:
+ *   serif  -> títulos e trechos da base (evidência)
+ *   sans   -> interface e texto redigido pelo sistema
+ *   mono   -> identificadores, metadados e pontuações
+ *
+ * Os namespaces padrão do Tailwind são zerados para que só estes tokens existam.
+ * Pontos de quebra: padrão do Tailwind (sm 40rem, md 48rem, lg 64rem, xl 80rem).
+ */
 @theme {
-  --color-canvas: #09090b;
-  --color-surface-1: #101012;
-  --color-surface-2: #18181b;
-  --color-surface-3: #27272a;
-  --color-border: #ffffff1a;
-  --color-border-strong: #ffffff33;
+  --color-*: initial;
+  --font-*: initial;
+  --text-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --animate-*: initial;
 
-  --color-text-primary: #f4f4f5;
-  --color-text-secondary: #a1a1aa;
-  --color-text-muted: #71717f;
+  /* Superfícies */
+  --color-paper: #f5f4f0;
+  --color-paper-raised: #fcfbf9;
+  --color-paper-sunken: #ebe9e3;
 
-  --color-accent: #2dd4bf;
-  --color-accent-hover: #5eead4;
-  --color-accent-fg: #06231f;
+  /* Texto — contraste sobre paper: ink 16.9:1, ink-soft 8:1, ink-faint 4.8:1 */
+  --color-ink: #15191d;
+  --color-ink-soft: #444b53;
+  --color-ink-faint: #656c74;
 
-  --color-risk-success: #10b981;
-  --color-risk-warning: #f59e0b;
-  --color-risk-danger: #f97316;
-  --color-risk-critical: #ef4444;
-  --color-risk-neutral: #94a3b8;
+  /* Linhas: rule para divisores; rule-control (3.2:1) para bordas de campos */
+  --color-rule: #dcd9d1;
+  --color-rule-strong: #bdb8ad;
+  --color-rule-control: #84898f;
 
-  --font-sans: 'Inter Variable', Inter, ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Space Grotesk Variable', 'Space Grotesk', ui-sans-serif, sans-serif;
-  --text-3xl: 2rem;
-  --text-3xl--line-height: 2.5rem;
+  /* Destaque: azul-petróleo (6.8:1 sobre paper) — citações, links e foco */
+  --color-accent: #0e5c66;
+  --color-accent-strong: #0a474f;
+  --color-accent-soft: #dfeaea;
 
-  --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.4), 0 12px 32px -8px rgb(0 0 0 / 0.5);
-  --shadow-glow-accent: 0 0 0 1px rgb(45 212 191 / 0.4), 0 8px 28px -6px rgb(45 212 191 / 0.35);
+  /* Superfície escura: seção de limites e lançador da consulta */
+  --color-night: #15191d;
+  --color-night-raised: #1f2429;
+  --color-night-rule: #343a40;
+  --color-night-text: #ecebe6;
+  --color-night-soft: #a9aeb3;
+  --color-night-accent: #8cc5c9;
 
-  --animate-fade-in-up: fade-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-  --animate-fade-in: fade-in 0.4s ease-out both;
+  /* Estados: aviso (requer avaliação profissional) e erro */
+  --color-caution: #8a5410;
+  --color-caution-soft: #f4eadb;
+  --color-critical: #9e2a2b;
+  --color-critical-soft: #f6e4e1;
+
+  /* Tipografia */
+  --font-sans: 'Inter Variable', Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Source Serif 4 Variable', 'Source Serif 4', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, 'SFMono-Regular', Menlo, monospace;
+
+  --text-display: clamp(2.5rem, 1.35rem + 3.6vw, 4.75rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.024em;
+  --text-title: clamp(2rem, 1.45rem + 1.9vw, 3.25rem);
+  --text-title--line-height: 1.06;
+  --text-title--letter-spacing: -0.018em;
+  --text-heading: 1.5rem;
+  --text-heading--line-height: 1.2;
+  --text-heading--letter-spacing: -0.01em;
+  --text-subheading: 1.1875rem;
+  --text-subheading--line-height: 1.35;
+  --text-lede: 1.125rem;
+  --text-lede--line-height: 1.6;
+  --text-body: 1rem;
+  --text-body--line-height: 1.65;
+  --text-ui: 0.9375rem;
+  --text-ui--line-height: 1.6;
+  --text-small: 0.8125rem;
+  --text-small--line-height: 1.5;
+  --text-meta: 0.75rem;
+  --text-meta--line-height: 1.45;
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1.35;
+
+  --tracking-label: 0.08em;
+
+  /* Larguras */
+  --container-site: 76rem;
+  --container-measure: 38rem;
+
+  /* Raios: discretos de propósito */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-full: 9999px;
+
+  /* Sombras: só onde separam camadas (gaveta, figura, lançador) */
+  --shadow-raised: 0 1px 0 rgb(21 25 29 / 0.04), 0 22px 44px -28px rgb(21 25 29 / 0.32);
+  --shadow-panel: -1px 0 0 0 var(--color-rule), -32px 0 64px -32px rgb(21 25 29 / 0.3);
+
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-drawer-in: drawer-in 280ms var(--ease-standard) both;
+  --animate-overlay-in: overlay-in 200ms ease-out both;
+  --animate-launcher-in: launcher-in 220ms var(--ease-standard) both;
+  --animate-progress: progress 1.6s cubic-bezier(0.45, 0, 0.25, 1) infinite;
 }
 
-@keyframes fade-in-up {
+@keyframes drawer-in {
   from {
     opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateX(32px);
   }
 }
 
-@keyframes fade-in {
+@keyframes overlay-in {
   from {
     opacity: 0;
   }
+}
+
+@keyframes launcher-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: translateX(-100%);
+  }
   to {
-    opacity: 1;
+    transform: translateX(250%);
+  }
+}
+
+/* Hachura: marca áreas de recusa, como em desenho técnico. Cor via `text-*`. */
+@utility bg-hatch {
+  background-image: repeating-linear-gradient(135deg, currentColor 0 1px, transparent 1px 5px);
+}
+
+/* Linha de pontos de sumário, apoiada na linha de base. Cor via `text-*`. */
+@utility bg-leader {
+  background-image: radial-gradient(circle, currentColor 0.75px, transparent 1.25px);
+  background-size: 6px 3px;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+}
+
+@layer base {
+  html:has([data-ui='public']),
+  body:has([data-ui='public']) {
+    background-color: var(--color-paper);
+  }
+
+  [data-ui='public'] {
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    color: var(--color-ink);
+    background-color: var(--color-paper);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [data-ui='public'] ::selection {
+    background-color: var(--color-accent-soft);
+    color: var(--color-ink);
+  }
+
+  [data-ui='public'] a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  [data-ui='public'] button {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  [data-ui='public'] button:disabled {
+    cursor: not-allowed;
+  }
+
+  [data-ui='public'] :where(ul, ol) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  [data-ui='public'] :where(dl, dd, figure, blockquote) {
+    margin: 0;
+  }
+
+  [data-ui='public'] :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
   }
 }

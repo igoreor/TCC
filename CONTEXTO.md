@@ -129,6 +129,18 @@ Como a UI já usava tokens nomeados centralizados (`src/styles/tailwind.css`), a
 
 Verificado de novo ponta a ponta com Playwright contra o backend real (drawer abrindo/fechando/perguntando, comparação com as duas colunas, mobile, dashboard antigo re-testado pra confirmar zero regressão). Build e lint limpos.
 
+### 10. Redesign NexoHansen — identidade editorial-clínica (2026-10-19)
+
+Brief do usuário: dar identidade própria à interface pública (ainda com cara de template de IA depois das seções 8–9). Nome provisório **NexoHansen**, subtítulo "Apoio à decisão clínica em hanseníase". Escopo: `/`, `/comparacao` e a gaveta de consulta. Backend, contratos de API e `/dashboard/*` ficaram intocados.
+
+- **Direção**: editorial-clínica, em tema claro. Papel (`#f5f4f0`), tinta grafite e um único destaque azul-petróleo (`#0e5c66`) para citações, links e foco; grafite escuro só na seção de limites. A tipografia indica a origem do texto: Source Serif 4 para títulos e trechos da base, Inter para interface e texto do sistema, IBM Plex Mono para identificadores, metadados e pontuações. A marca `[•]` é uma citação.
+- **Tokens** em `frontend/src/styles/tailwind.css`, com os namespaces padrão do Tailwind zerados (`--color-*: initial` etc.): só existem os tokens do projeto. Contrastes calculados (o cinza mais claro de texto dá 4,8:1 sobre o papel).
+- **Achados técnicos**: (1) `h1–h4`, `p`, `body` e `table` em `global.css` estavam fora de camada e anulavam `leading-*`/`text-*` do Tailwind — foram para `@layer legacy-reset`; (2) os tokens antigos `--color-border`/`--color-text-muted` colidiam com os de `tokens.css` do dashboard (daí as bordas claras demais dos cards escuros anteriores) — os nomes novos não colidem; (3) "Tentar novamente" nunca funcionou: `pendingQuestion` voltava a `null` no `finally` antes do retry. `useRagConversation` ganhou `retry()` (reenvia sem duplicar a pergunta) e passou a guardar `retrieval` (intenção e pontuações, que a API já devolvia e a UI descartava).
+- **Landing**: abertura editorial com a Fig. 1 (consulta anotada, renderizada com os componentes reais e dados de exemplo rotulados como ilustrativos), Método (6 etapas na ordem do `chat.service`), Limites (as 8 recusas com o texto integral de `fallback-policy.ts`), Base (sumário dos 15 trechos seed, com aviso de base de desenvolvimento), encerramento e colofão. Os textos mockados sobre a doença foram removidos: faziam afirmações clínicas sem fonte.
+- **Gaveta de consulta**: estado no `PublicLayout` (abre de qualquer página pública e a conversa sobrevive à troca de rota), formato de registro pergunta → resposta, citações `[n]` ligadas às fontes, escala de risco em 4 posições, recusa marcada com hachura, foco preso no diálogo, Esc e devolução de foco, trava de rolagem.
+- **Comparação**: mesmo formato de registro; no celular, um seletor de coluna substitui as duas metades de ~200px.
+- **Verificação**: Playwright (instalado no scratchpad da sessão, usando o Chromium já baixado em `ms-playwright`) contra o Vite em execução, com `/api/chat/ask` interceptado no formato exato do backend, porque o Docker estava parado. Desktop, notebook, tablet e celular; movimento reduzido; foco de teclado; build, lint (`--deny-warnings`) e testes do backend (13/13) limpos.
+
 ## Estado atual
 
 - Backend e frontend funcionam de ponta a ponta contra Postgres real (visto na seção 3-5 acima).
@@ -157,8 +169,9 @@ Abrir `http://localhost:5173`. A landing (`/`) é a home agora — o dashboard a
 2. **Dar push** pra `origin/main` (o commit `f1043c6` já estava pendente disso antes do redesign também).
 3. **Decidir sobre `OPENAI_API_KEY` / `MIN_RETRIEVAL_SCORE`** — ver seção 4, é o achado mais importante para o TCC.
 4. Lembrar de restaurar `chunks_embedding_cosine_idx` e `chunks_metadata_gin_idx` depois de qualquer `prisma migrate dev` futuro (ver seção 3, item 5).
-5. Conteúdo da landing (`frontend/src/features/landing/content.ts`) é mockado — trocar por texto revisado antes de qualquer uso real.
+5. O conteúdo da landing (`frontend/src/features/landing/content.ts`) espelha dados do backend — mensagens de recusa, sumário da base, pesos da busca. Se o backend mudar, atualizar à mão (cada bloco cita o arquivo de origem).
 6. Backlog já documentado pelo próprio projeto (autenticação, painel admin, upload multipart de JSONL, revisão por especialista, testes de integração com Postgres real, versionamento da base, etc.) — ver seção "Próximos passos recomendados" em [backend/docs/arquitetura-backend-rag-hanseniase.md](backend/docs/arquitetura-backend-rag-hanseniase.md).
+7. `backend/.env` local está com `PORT=3336`, mas o proxy do Vite (`frontend/vite.config.ts`) aponta para 3333: com esse `.env`, o frontend não alcança o backend. Alinhar um dos dois antes da próxima demonstração.
 
 ## Referências rápidas
 

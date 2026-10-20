@@ -45,6 +45,18 @@ const retrievalModeLabels: Record<string, string> = {
   hybrid: 'Híbrida',
 }
 
+// Códigos de `safety.reason` emitidos por backend/src/modules/safety/safety.service.ts
+const fallbackReasonLabels: Record<string, string> = {
+  out_of_scope: 'Fora do tema',
+  pregnancy: 'Gestação',
+  child: 'Criança',
+  emergency: 'Sinais de urgência',
+  severe_reaction: 'Reação grave',
+  definitive_diagnosis: 'Diagnóstico definitivo',
+  prescription: 'Prescrição ou dose',
+  insufficient_evidence: 'Evidência insuficiente',
+}
+
 function labelOr(map: Record<string, string>, key: string): string {
   return map[key] ?? key
 }
@@ -53,3 +65,4 @@ export const intentLabel = (intent: string): string => labelOr(intentLabels, int
 export const clinicalPhaseLabel = (phase: string): string => labelOr(clinicalPhaseLabels, phase)
 export const informationTypeLabel = (type: string): string => labelOr(informationTypeLabels, type)
 export const retrievalModeLabel = (mode: string): string => labelOr(retrievalModeLabels, mode)
+export const fallbackReasonLabel = (reason: string): string => labelOr(fallbackReasonLabels, reason)

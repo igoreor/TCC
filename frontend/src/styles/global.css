@@ -12,35 +12,46 @@ body,
   height: 100%;
 }
 
-body {
-  margin: 0;
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-  line-height: 1.25;
-}
-
-p {
-  margin: 0;
-}
-
+/*
+ * Resets de elemento ficam numa camada própria: estilos fora de camada sempre
+ * vencem as camadas do Tailwind (theme/base/utilities), então um `h1 { line-height }`
+ * solto aqui anularia silenciosamente qualquer `leading-*` ou `text-*` da UI pública.
+ * Os CSS Modules do dashboard continuam fora de camada e seguem vencendo como antes.
+ */
 @layer legacy-reset {
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
   button,
   input,
   select,
@@ -57,9 +68,4 @@ p {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
   }
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
 }

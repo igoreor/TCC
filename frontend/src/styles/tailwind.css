@@ -172,38 +172,47 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  [data-ui='public'] ::selection {
+  /*
+   * Componentes da interface pública usados dentro do painel interno (ex.: avaliação das respostas).
+   * Recebem a tipografia e os ajustes de base, mas não alteram o fundo da página do painel.
+   */
+  [data-ui='embedded'] {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+  }
+
+  :is([data-ui='public'], [data-ui='embedded']) ::selection {
     background-color: var(--color-accent-soft);
     color: var(--color-ink);
   }
 
-  [data-ui='public'] a {
+  :is([data-ui='public'], [data-ui='embedded']) a {
     color: inherit;
     text-decoration: none;
   }
 
-  [data-ui='public'] button {
+  :is([data-ui='public'], [data-ui='embedded']) button {
     padding: 0;
     border: 0;
     background: none;
     cursor: pointer;
   }
 
-  [data-ui='public'] button:disabled {
+  :is([data-ui='public'], [data-ui='embedded']) button:disabled {
     cursor: not-allowed;
   }
 
-  [data-ui='public'] :where(ul, ol) {
+  :is([data-ui='public'], [data-ui='embedded']) :where(ul, ol) {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  [data-ui='public'] :where(dl, dd, figure, blockquote) {
+  :is([data-ui='public'], [data-ui='embedded']) :where(dl, dd, figure, blockquote) {
     margin: 0;
   }
 
-  [data-ui='public'] :focus-visible {
+  :is([data-ui='public'], [data-ui='embedded']) :focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 3px;
   }

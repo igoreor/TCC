@@ -39,7 +39,8 @@ export class EvaluationService {
     return this.db.evaluationQuestion.findMany({ orderBy: { createdAt: 'asc' } });
   }
 
-  async run() {
+  /** Executa as perguntas de referência; as conversas geradas ficam registradas em nome de quem iniciou. */
+  async run(userId: string) {
     if (!this.chatService) {
       throw new Error('ChatService não configurado para avaliação.');
     }
@@ -52,7 +53,8 @@ export class EvaluationService {
     for (const item of questions) {
       const output = await this.chatService.ask({
         question: item.question,
-        userType: 'Profissional de saúde'
+        userType: 'Profissional de saúde',
+        userId
       });
       const returnedChunks = output.sources.map((source) => source.chunk_id);
       const idealChunks = Array.isArray(item.idealChunks) ? (item.idealChunks as string[]) : [];

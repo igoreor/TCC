@@ -25,6 +25,8 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   try {
     response = await fetch(`${BASE_URL}${path}`, {
       ...init,
+      // A sessão viaja no cookie HttpOnly definido pela API no login.
+      credentials: 'include',
       headers: { 'Content-Type': 'application/json', ...(init?.headers ?? {}) },
     })
   } catch {

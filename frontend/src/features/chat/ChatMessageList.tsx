@@ -1,13 +1,15 @@
 import { EmptyState } from '../../components/ui/EmptyState'
+import type { FeedbackState } from '../../lib/feedback'
 import { ChatMessageBubble } from './ChatMessageBubble'
 import type { ChatUiMessage } from './useChatSession'
 import styles from './Chat.module.css'
 
 interface ChatMessageListProps {
   messages: ChatUiMessage[]
+  onFeedbackChange: (messageId: string, state: FeedbackState | undefined) => void
 }
 
-export function ChatMessageList({ messages }: ChatMessageListProps) {
+export function ChatMessageList({ messages, onFeedbackChange }: ChatMessageListProps) {
   if (!messages.length) {
     return (
       <EmptyState
@@ -20,7 +22,7 @@ export function ChatMessageList({ messages }: ChatMessageListProps) {
   return (
     <div className={styles.messageList}>
       {messages.map((message) => (
-        <ChatMessageBubble key={message.id} message={message} />
+        <ChatMessageBubble key={message.id} message={message} onFeedbackChange={onFeedbackChange} />
       ))}
     </div>
   )

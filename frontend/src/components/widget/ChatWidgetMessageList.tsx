@@ -3,6 +3,8 @@ import type { RagUiMessage } from '../../hooks/useRagConversation'
 import { useScrollToLatest } from '../../hooks/useScrollToLatest'
 import { toEntries } from '../../lib/conversation'
 import { cx } from '../../lib/cx'
+import type { FeedbackState } from '../../lib/feedback'
+import { ResponseFeedback } from '../feedback/ResponseFeedback'
 import { metaLabel } from '../primitives/classes'
 import { QuestionLine } from '../rag-answer/QuestionLine'
 import { RagEntryBody } from '../rag-answer/RagEntryBody'
@@ -21,9 +23,17 @@ interface ChatWidgetMessageListProps {
   error: unknown
   onAsk: (question: string) => void
   onRetry: () => void
+  onFeedbackChange: (messageId: string, state: FeedbackState | undefined) => void
 }
 
-export function ChatWidgetMessageList({ messages, isPending, error, onAsk, onRetry }: ChatWidgetMessageListProps) {
+export function ChatWidgetMessageList({
+  messages,
+  isPending,
+  error,
+  onAsk,
+  onRetry,
+  onFeedbackChange,
+}: ChatWidgetMessageListProps) {
   const entries = toEntries(messages)
   const latest = entries.at(-1)
   const { containerRef, latestRef } = useScrollToLatest<HTMLDivElement, HTMLLIElement>(
@@ -71,6 +81,7 @@ export function ChatWidgetMessageList({ messages, isPending, error, onAsk, onRet
       <ol className="space-y-8">
         {entries.map((entry, index) => {
           const isLatest = index === entries.length - 1
+          const answer = entry.answer
           return (
             <li
               key={entry.question.id}
@@ -80,13 +91,22 @@ export function ChatWidgetMessageList({ messages, isPending, error, onAsk, onRet
               <QuestionLine question={entry.question.content} />
               <div className="mt-5">
                 <RagEntryBody
-                  answer={entry.answer}
+                  answer={answer}
                   isLatest={isLatest}
                   isPending={isPending}
                   error={error}
                   onRetry={onRetry}
                 />
               </div>
+              {/* Só respostas concluídas são avaliadas; cada avaliação fica presa à sua resposta. */}
+              {answer ? (
+                <ResponseFeedback
+                  messageId={answer.id}
+                  state={answer.feedback}
+                  onStateChange={(state) => onFeedbackChange(answer.id, state)}
+                  className="mt-6"
+                />
+              ) : null}
             </li>
           )
         })}

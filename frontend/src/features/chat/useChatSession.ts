@@ -2,8 +2,9 @@ import { useCallback, useEffect, useState } from 'react'
 import { useMutation } from '@tanstack/react-query'
 import { askChat } from '../../api/chat'
 import type { SafetyInfo, SourceCitation, UserType } from '../../api/types'
-
-const STORAGE_KEY = 'hanseniase-chat-session-v1'
+import { chatStorageKey, clearLegacyChatSession } from '../../lib/chatStorage'
+import type { FeedbackState } from '../../lib/feedback'
+import { useCurrentUser } from '../auth/useAuth'
 
 export interface ChatUiMessage {
   id: string
@@ -12,6 +13,7 @@ export interface ChatUiMessage {
   sources?: SourceCitation[]
   safety?: SafetyInfo
   messageId?: string
+  feedback?: FeedbackState
 }
 
 interface StoredSession {
@@ -19,9 +21,9 @@ interface StoredSession {
   messages: ChatUiMessage[]
 }
 
-function loadStoredSession(): StoredSession {
+function loadStoredSession(key: string): StoredSession {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
+    const raw = localStorage.getItem(key)
     if (!raw) return { messages: [] }
     const parsed = JSON.parse(raw) as StoredSession
     return { sessionId: parsed.sessionId, messages: Array.isArray(parsed.messages) ? parsed.messages : [] }
@@ -30,9 +32,9 @@ function loadStoredSession(): StoredSession {
   }
 }
 
-function saveStoredSession(session: StoredSession) {
+function saveStoredSession(key: string, session: StoredSession) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(session))
+    localStorage.setItem(key, JSON.stringify(session))
   } catch {
     // localStorage indisponível (ex: modo privado) - segue sem persistir
   }
@@ -45,12 +47,19 @@ function nextId(): string {
 }
 
 export function useChatSession() {
-  const [sessionId, setSessionId] = useState<string | undefined>(() => loadStoredSession().sessionId)
-  const [messages, setMessages] = useState<ChatUiMessage[]>(() => loadStoredSession().messages)
+  // O painel só é exibido com login, então o usuário já está carregado aqui.
+  const { data: user } = useCurrentUser()
+  const storageKey = chatStorageKey(user?.id ?? 'anonimo')
+  const [sessionId, setSessionId] = useState<string | undefined>(() => loadStoredSession(storageKey).sessionId)
+  const [messages, setMessages] = useState<ChatUiMessage[]>(() => loadStoredSession(storageKey).messages)
 
   useEffect(() => {
-    saveStoredSession({ sessionId, messages })
-  }, [sessionId, messages])
+    clearLegacyChatSession()
+  }, [])
+
+  useEffect(() => {
+    saveStoredSession(storageKey, { sessionId, messages })
+  }, [storageKey, sessionId, messages])
 
   const mutation = useMutation({
     mutationFn: askChat,
@@ -87,10 +96,17 @@ export function useChatSession() {
     mutation.reset()
   }, [mutation])
 
+  const setFeedback = useCallback((messageId: string, feedback: FeedbackState | undefined) => {
+    setMessages((current) =>
+      current.map((message) => (message.messageId === messageId ? { ...message, feedback } : message)),
+    )
+  }, [])
+
   return {
     messages,
     sendQuestion,
     startNewConversation,
+    setFeedback,
     isSending: mutation.isPending,
     error: mutation.isError ? mutation.error : null,
   }

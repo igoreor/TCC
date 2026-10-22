@@ -86,6 +86,8 @@ const reactionChunk: ChunkDTO = {
   keywords: ['reação tipo 1', 'PQT', 'neurite']
 };
 
+const TEST_USER_ID = '00000000-0000-0000-0000-0000000000aa';
+
 function createFakeRepository(chunks: ChunkDTO[]) {
   return {
     vectorSearch: async () => chunks.map((chunk, index) => ({ ...chunk, vectorScore: 0.98 - index * 0.05 })),
@@ -246,7 +248,8 @@ describe('retrieval e chat', () => {
     const chat = createChat([diagChunk]);
     const output = await chat.ask({
       question: 'Quais são os critérios cardinais da hanseníase?',
-      userType: 'Profissional de saúde'
+      userType: 'Profissional de saúde',
+      userId: TEST_USER_ID
     });
 
     expect(output.sources).toHaveLength(1);
@@ -258,7 +261,8 @@ describe('retrieval e chat', () => {
     const chat = createChat([baciloChunk]);
     const output = await chat.ask({
       question: 'Baciloscopia negativa exclui hanseníase?',
-      userType: 'Profissional de saúde'
+      userType: 'Profissional de saúde',
+      userId: TEST_USER_ID
     });
 
     expect(output.answer.toLowerCase()).toContain('não exclui');
@@ -269,7 +273,8 @@ describe('retrieval e chat', () => {
     const chat = createChat([reactionChunk]);
     const output = await chat.ask({
       question: 'Reação tipo 1 significa falha no tratamento?',
-      userType: 'Profissional de saúde'
+      userType: 'Profissional de saúde',
+      userId: TEST_USER_ID
     });
 
     expect(output.answer).toContain('não deve ser interrompida sem orientação profissional');
@@ -280,7 +285,8 @@ describe('retrieval e chat', () => {
     const chat = createChat([reactionChunk]);
     const output = await chat.ask({
       question: 'Gestante pode usar talidomida?',
-      userType: 'Profissional de saúde'
+      userType: 'Profissional de saúde',
+      userId: TEST_USER_ID
     });
 
     expect(output.safety.riskLevel).toBe('Muito alto');

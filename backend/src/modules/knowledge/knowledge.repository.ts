@@ -255,13 +255,14 @@ export class KnowledgeRepository {
     });
   }
 
-  async ensureSession(sessionId: string | undefined, userType: string) {
+  /** Reaproveita a conversa só quando ela pertence ao usuário; caso contrário, abre uma nova. */
+  async ensureSession(sessionId: string | undefined, userType: string, userId: string) {
     if (sessionId) {
-      const existing = await this.db.chatSession.findUnique({ where: { id: sessionId } });
+      const existing = await this.db.chatSession.findFirst({ where: { id: sessionId, userId } });
       if (existing) return existing;
     }
 
-    return this.db.chatSession.create({ data: { userType } });
+    return this.db.chatSession.create({ data: { userType, userId } });
   }
 
   async createChatMessage(input: { sessionId: string; role: 'user' | 'assistant'; content: string }) {

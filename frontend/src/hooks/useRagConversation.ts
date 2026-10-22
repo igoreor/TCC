@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react'
 import { useMutation } from '@tanstack/react-query'
 import { askChat } from '../api/chat'
 import type { ChatAskResult, SafetyInfo, SourceCitation, UserType } from '../api/types'
+import type { FeedbackState } from '../lib/feedback'
 
 export interface RagUiMessage {
   id: string
@@ -10,6 +11,8 @@ export interface RagUiMessage {
   sources?: SourceCitation[]
   safety?: SafetyInfo
   retrieval?: ChatAskResult['retrieval']
+  /** Avaliação desta resposta pela pessoa; o `id` da resposta é o identificador persistido no servidor. */
+  feedback?: FeedbackState
 }
 
 interface FailedRequest {
@@ -80,11 +83,16 @@ export function useRagConversation() {
     mutation.reset()
   }, [mutation])
 
+  const setFeedback = useCallback((messageId: string, feedback: FeedbackState | undefined) => {
+    setMessages((current) => current.map((message) => (message.id === messageId ? { ...message, feedback } : message)))
+  }, [])
+
   return {
     messages,
     send,
     retry,
     reset,
+    setFeedback,
     pendingQuestion,
     isPending: mutation.isPending,
     error: mutation.isError ? mutation.error : null,

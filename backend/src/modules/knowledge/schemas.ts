@@ -58,11 +58,21 @@ export const askSchema = z.object({
   filters: searchFiltersSchema.optional().default({})
 });
 
+// O usuário vem da sessão: campos como `userId` no corpo são descartados pela validação.
 export const feedbackSchema = z.object({
-  messageId: z.string().uuid().optional(),
-  rating: z.number().int().min(1).max(5),
-  comment: z.string().max(2000).optional(),
-  reviewedBySpecialist: z.boolean().default(false)
+  messageId: z.string().uuid(),
+  rating: z.number().int().min(0).max(10),
+  comment: z
+    .string()
+    .trim()
+    .max(1000)
+    .optional()
+    .transform((value) => value || undefined)
+});
+
+export const loginSchema = z.object({
+  username: z.string().trim().min(1).max(64),
+  password: z.string().min(1).max(256)
 });
 
 export type RawChunkInput = z.input<typeof rawChunkSchema>;

@@ -1,4 +1,7 @@
 import { prisma } from './config/database';
+import { env } from './config/env';
+import { AuthService } from './modules/auth/auth.service';
+import { LoginRateLimiter } from './modules/auth/login-rate-limiter';
 import { ChatService } from './modules/chat/chat.service';
 import { PromptBuilderService } from './modules/chat/prompt-builder.service';
 import { ChunksService } from './modules/chunks/chunks.service';
@@ -38,8 +41,12 @@ export function createServices() {
   const chatService = new ChatService(retrievalService, safetyService, promptBuilder, knowledgeRepository);
   const evaluationService = new EvaluationService(chatService, prisma);
   const feedbackService = new FeedbackService(prisma);
+  const authService = new AuthService(prisma, { sessionTtlHours: env.AUTH_SESSION_TTL_HOURS });
+  const loginRateLimiter = new LoginRateLimiter();
 
   return {
+    authService,
+    loginRateLimiter,
     knowledgeRepository,
     embeddingsService,
     chunkingService,

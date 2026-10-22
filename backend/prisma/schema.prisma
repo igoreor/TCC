@@ -74,13 +74,47 @@ model Source {
   @@map("sources")
 }
 
+// Usuários são cadastrados manualmente via SQL (ver scripts/hash-password.ts). Por isso `id` e as
+// datas têm default no próprio banco, e não só no Prisma Client.
+model User {
+  id           String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  username     String        @unique
+  passwordHash String        @map("password_hash")
+  active       Boolean       @default(true)
+  authSessions AuthSession[]
+  chatSessions ChatSession[]
+  feedback     Feedback[]
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @default(now()) @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+// Sessão de login. Guarda apenas o hash SHA-256 do token entregue no cookie.
+model AuthSession {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String   @unique @map("token_hash")
+  expiresAt DateTime @map("expires_at")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([userId])
+  @@map("auth_sessions")
+}
+
 model ChatSession {
   id        String        @id @default(uuid()) @db.Uuid
   userType  String        @map("user_type")
+  // Opcional apenas para as conversas criadas antes da autenticação; as novas sempre têm dono.
+  userId    String?       @map("user_id") @db.Uuid
+  user      User?         @relation(fields: [userId], references: [id], onDelete: Restrict)
   messages  ChatMessage[]
   logs      RetrievalLog[]
+  feedback  Feedback[]
   createdAt DateTime      @default(now()) @map("created_at")
 
+  @@index([userId])
   @@map("chat_sessions")
 }
 
@@ -93,6 +127,8 @@ model ChatMessage {
   feedback  Feedback[]
   createdAt DateTime     @default(now()) @map("created_at")
 
+  // Alvo da chave estrangeira composta de Feedback (resposta + conversa).
+  @@unique([id, sessionId])
   @@index([sessionId])
   @@map("chat_messages")
 }
@@ -114,16 +150,25 @@ model RetrievalLog {
   @@map("retrieval_logs")
 }
 
+// Avaliação de uma resposta da IA para a pesquisa. A nota (0 a 10) também é verificada por uma
+// restrição CHECK criada na migração. A chave composta (message_id, session_id) garante que a
+// conversa registrada é a da própria resposta. Registros não são apagados em cascata.
 model Feedback {
-  id                    String      @id @default(uuid()) @db.Uuid
-  messageId              String?     @map("message_id") @db.Uuid
-  message                ChatMessage? @relation(fields: [messageId], references: [id], onDelete: SetNull)
-  rating                 Int
-  comment                String?
-  reviewedBySpecialist   Boolean     @default(false) @map("reviewed_by_specialist")
-  createdAt              DateTime    @default(now()) @map("created_at")
+  id        String      @id @default(uuid()) @db.Uuid
+  userId    String      @map("user_id") @db.Uuid
+  user      User        @relation(fields: [userId], references: [id], onDelete: Restrict)
+  sessionId String      @map("session_id") @db.Uuid
+  session   ChatSession @relation(fields: [sessionId], references: [id], onDelete: Restrict)
+  messageId String      @map("message_id") @db.Uuid
+  message   ChatMessage @relation(fields: [messageId, sessionId], references: [id, sessionId], onDelete: Restrict)
+  rating    Int
+  comment   String?
+  createdAt DateTime    @default(now()) @map("created_at")
 
-  @@index([messageId])
+  // Uma avaliação por usuário para cada resposta.
+  @@unique([messageId, userId])
+  @@index([sessionId])
+  @@index([userId])
   @@map("feedback")
 }
 

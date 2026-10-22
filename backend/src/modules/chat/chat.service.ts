@@ -17,10 +17,11 @@ export class ChatService {
   async ask(input: {
     question: string;
     userType: UserType;
+    userId: string;
     sessionId?: string;
     filters?: SearchFilters;
   }) {
-    const session = await this.repository.ensureSession(input.sessionId, input.userType);
+    const session = await this.repository.ensureSession(input.sessionId, input.userType, input.userId);
     await this.repository.createChatMessage({
       sessionId: session.id,
       role: 'user',

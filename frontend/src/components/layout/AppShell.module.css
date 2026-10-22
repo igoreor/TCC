@@ -25,6 +25,21 @@
   font-size: 18px;
 }
 
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
 .main {
   flex: 1;
   padding: var(--space-5);

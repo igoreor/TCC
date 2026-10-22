@@ -19,7 +19,7 @@ interface ChatWidgetPanelProps {
 }
 
 export function ChatWidgetPanel({ conversation, userType, onClose }: ChatWidgetPanelProps) {
-  const { messages, send, retry, reset, isPending, error } = conversation
+  const { messages, send, retry, reset, setFeedback, isPending, error } = conversation
   const panelRef = useRef<HTMLElement>(null)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
@@ -96,6 +96,7 @@ export function ChatWidgetPanel({ conversation, userType, onClose }: ChatWidgetP
           error={error}
           onAsk={ask}
           onRetry={() => void retry()}
+          onFeedbackChange={setFeedback}
         />
 
         <QuestionComposer

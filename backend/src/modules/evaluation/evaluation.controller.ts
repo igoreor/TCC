@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { getAuthUser } from '../auth/auth.middleware';
 import { EvaluationService } from './evaluation.service';
 
 export function createEvaluationRouter(service: EvaluationService) {
@@ -20,9 +21,9 @@ export function createEvaluationRouter(service: EvaluationService) {
     }
   });
 
-  router.post('/run', async (_request, response, next) => {
+  router.post('/run', async (request, response, next) => {
     try {
-      response.json(await service.run());
+      response.json(await service.run(getAuthUser(request).id));
     } catch (error) {
       next(error);
     }

@@ -168,17 +168,27 @@ export interface EvaluationRunResult {
 }
 
 export interface FeedbackInput {
-  messageId?: string
+  messageId: string
+  /** Inteiro de 0 (pior) a 10 (melhor). */
   rating: number
   comment?: string
-  reviewedBySpecialist?: boolean
 }
 
 export interface FeedbackResult {
   id: string
-  messageId: string | null
+  messageId: string
+  sessionId: string
   rating: number
   comment: string | null
-  reviewedBySpecialist: boolean
   createdAt: string
+}
+
+export interface AuthUser {
+  id: string
+  username: string
+}
+
+export interface LoginInput {
+  username: string
+  password: string
 }

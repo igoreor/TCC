@@ -1,4 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
+import { LogOut } from 'lucide-react'
+import type { LoginLocationState } from '../../features/auth/loginNavigation'
+import { useCurrentUser, useLogout } from '../../features/auth/useAuth'
 import { cx } from '../../lib/cx'
 import { Wordmark } from '../brand/BrandMark'
 import { Button } from '../primitives/Button'
@@ -16,8 +19,11 @@ interface GlobalHeaderProps {
 }
 
 export function GlobalHeader({ onOpenConsultation }: GlobalHeaderProps) {
-  const { pathname } = useLocation()
+  const { pathname, search, hash } = useLocation()
   const onComparison = pathname === '/comparacao'
+  const { data: user } = useCurrentUser()
+  const logout = useLogout()
+  const loginState: LoginLocationState = { from: { pathname, search, hash } }
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 h-16 border-b border-rule bg-paper">
@@ -55,6 +61,21 @@ export function GlobalHeader({ onOpenConsultation }: GlobalHeaderProps) {
             <span className="sm:hidden">Consultar</span>
             <span className="hidden sm:inline">Abrir consulta</span>
           </Button>
+          {user ? (
+            <div className="flex items-center gap-1 border-l border-rule pl-2">
+              <span className="hidden max-w-36 truncate font-mono text-meta text-ink-faint lg:inline" title="Usuário conectado">
+                {user.username}
+              </span>
+              <Button variant="quiet" size="sm" onClick={() => logout.mutate()} disabled={logout.isPending}>
+                <LogOut aria-hidden="true" className="size-4" />
+                <span className="sr-only sm:not-sr-only">Sair</span>
+              </Button>
+            </div>
+          ) : user === null ? (
+            <Link to="/login" state={loginState} className={navLinkClasses}>
+              Entrar
+            </Link>
+          ) : null}
         </nav>
       </div>
     </header>

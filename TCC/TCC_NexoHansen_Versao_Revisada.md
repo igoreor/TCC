@@ -70,13 +70,13 @@ GARANHUNS<br>2026
 
 # RESUMO
 
-A hanseníase permanece como problema de saúde pública no Brasil, segundo país em número de casos novos da doença no mundo, com proporção crescente de casos multibacilares e de diagnósticos realizados com incapacidade física já instalada. Na atenção primária à saúde, a consulta a orientações técnicas durante o atendimento é uma necessidade recorrente, e os modelos de linguagem de grande escala surgem como meio de localizar e sintetizar informação clínica, embora estejam sujeitos a alucinações e não indiquem a origem do que afirmam. Este trabalho apresenta o desenvolvimento do NexoHansen, um sistema de apoio informacional à decisão clínica em hanseníase baseado em Geração Aumentada por Recuperação (RAG), e o planejamento de uma avaliação comparativa entre respostas produzidas com e sem recuperação. A pesquisa, de natureza aplicada, foi organizada segundo a metodologia de pesquisa em ciência do design. O sistema foi implementado em Node.js e TypeScript, com PostgreSQL e pgvector, e combina classificação de intenção, estimativa de risco clínico, busca híbrida vetorial e textual, reordenação por critérios clínicos, regras explícitas de segurança aplicadas antes da geração, respostas restritas aos trechos recuperados com indicação das fontes e registro das consultas para auditoria, além de uma interface web em React. A base de conhecimento atual é um conjunto inicial de 15 trechos, elaborado para desenvolvimento e teste, e o sistema conta com 13 testes automatizados e um conjunto de 25 perguntas de referência. Uma avaliação técnica preliminar, executada com *embeddings* determinísticos locais, resultou na recusa de todas as perguntas, porque nenhum trecho atingiu a pontuação mínima de relevância configurada; a análise do resultado mostrou que o limiar adotado é incompatível com a escala de pontuação desse provedor e motiva nova execução com *embeddings* semânticos e calibração do limiar. [ATUALIZAR APÓS A AVALIAÇÃO COMPARATIVA: síntese dos resultados obtidos com os participantes e conclusão principal, sem extrapolar para eficácia clínica.]
+A hanseníase permanece como problema de saúde pública no Brasil, segundo país em número de casos novos da doença no mundo, com proporção crescente de casos multibacilares e de diagnósticos realizados com incapacidade física já instalada. Na atenção primária à saúde, a consulta a orientações técnicas durante o atendimento é uma necessidade recorrente, e os modelos de linguagem de grande escala surgem como meio de localizar e sintetizar informação clínica, embora estejam sujeitos a alucinações e não indiquem a origem do que afirmam. Este trabalho apresenta o desenvolvimento do NexoHansen, um sistema de apoio informacional à decisão clínica em hanseníase baseado em Geração Aumentada por Recuperação (RAG), e o planejamento de uma avaliação comparativa entre respostas produzidas com e sem recuperação. A pesquisa, de natureza aplicada, foi organizada segundo a metodologia de pesquisa em ciência do design. O sistema foi implementado em Node.js e TypeScript, com PostgreSQL e pgvector, e combina classificação de intenção, estimativa de risco clínico, busca híbrida vetorial e textual, reordenação por critérios clínicos, regras explícitas de segurança aplicadas antes da geração, respostas restritas aos trechos recuperados com indicação das fontes e registro das consultas para auditoria, além de uma interface web em React. O acesso exige autenticação por usuário e senha, e cada resposta pode ser avaliada pelo usuário em escala de 0 a 10, com registro vinculado ao usuário e à resposta, mecanismo destinado a apoiar a avaliação com participantes. A base de conhecimento atual é um conjunto inicial de 15 trechos, elaborado para desenvolvimento e teste, e o sistema conta com 69 testes automatizados e um conjunto de 25 perguntas de referência. Uma avaliação técnica preliminar, executada com *embeddings* determinísticos locais, resultou na recusa de todas as perguntas, porque nenhum trecho atingiu a pontuação mínima de relevância configurada; a análise do resultado mostrou que o limiar adotado é incompatível com a escala de pontuação desse provedor e motiva nova execução com *embeddings* semânticos e calibração do limiar. [ATUALIZAR APÓS A AVALIAÇÃO COMPARATIVA: síntese dos resultados obtidos com os participantes e conclusão principal, sem extrapolar para eficácia clínica.]
 
 **Palavras-chave**: hanseníase; geração aumentada por recuperação; apoio à decisão clínica; modelos de linguagem; engenharia de software.
 
 # ABSTRACT
 
-Leprosy remains a public health problem in Brazil, the country with the second highest number of new cases in the world, with a growing proportion of multibacillary cases and of diagnoses made after physical disability has already developed. In primary health care, consulting technical guidance during consultations is a recurring need, and large language models have emerged as a means of locating and summarizing clinical information, although they are prone to hallucinations and do not indicate the origin of their statements. This work presents the development of NexoHansen, an informational clinical decision support system for leprosy based on Retrieval-Augmented Generation (RAG), and the planning of a comparative evaluation between answers produced with and without retrieval. The research is applied in nature and was organized according to the design science research methodology. The system was implemented in Node.js and TypeScript, with PostgreSQL and pgvector, and combines intent classification, clinical risk estimation, hybrid vector and full-text search, reranking based on clinical criteria, explicit safety rules applied before generation, answers restricted to the retrieved passages with source attribution, and query logging for auditing, in addition to a React web interface. The current knowledge base is an initial set of 15 passages created for development and testing, and the system has 13 automated tests and a set of 25 reference questions. A preliminary technical evaluation, run with local deterministic embeddings, resulted in the refusal of all questions because no passage reached the configured minimum relevance score; the analysis showed that the threshold is incompatible with the score scale of that provider and motivates a new run with semantic embeddings and threshold calibration. [ATUALIZAR APÓS A AVALIAÇÃO COMPARATIVA: traduzir para o inglês a síntese dos resultados e a conclusão incluídas no resumo.]
+Leprosy remains a public health problem in Brazil, the country with the second highest number of new cases in the world, with a growing proportion of multibacillary cases and of diagnoses made after physical disability has already developed. In primary health care, consulting technical guidance during consultations is a recurring need, and large language models have emerged as a means of locating and summarizing clinical information, although they are prone to hallucinations and do not indicate the origin of their statements. This work presents the development of NexoHansen, an informational clinical decision support system for leprosy based on Retrieval-Augmented Generation (RAG), and the planning of a comparative evaluation between answers produced with and without retrieval. The research is applied in nature and was organized according to the design science research methodology. The system was implemented in Node.js and TypeScript, with PostgreSQL and pgvector, and combines intent classification, clinical risk estimation, hybrid vector and full-text search, reranking based on clinical criteria, explicit safety rules applied before generation, answers restricted to the retrieved passages with source attribution, and query logging for auditing, in addition to a React web interface. Access requires username and password authentication, and users can rate each answer on a scale from 0 to 10, with the rating linked to the user and to the answer, a mechanism intended to support the evaluation with participants. The current knowledge base is an initial set of 15 passages created for development and testing, and the system has 69 automated tests and a set of 25 reference questions. A preliminary technical evaluation, run with local deterministic embeddings, resulted in the refusal of all questions because no passage reached the configured minimum relevance score; the analysis showed that the threshold is incompatible with the score scale of that provider and motivates a new run with semantic embeddings and threshold calibration. [ATUALIZAR APÓS A AVALIAÇÃO COMPARATIVA: traduzir para o inglês a síntese dos resultados e a conclusão incluídas no resumo.]
 
 **Keywords**: leprosy; retrieval-augmented generation; clinical decision support; language models; software engineering.
 
@@ -86,11 +86,13 @@ Leprosy remains a public health problem in Brazil, the country with the second h
 - Figura 2 – Arquitetura geral do sistema
 - Figura 3 – Modelo de dados do sistema
 - Figura 4 – Fluxo de processamento de uma consulta
-- Figura 5 – Página inicial do sistema
-- Figura 6 – Exemplo ilustrativo de consulta exibido na página inicial
-- Figura 7 – Gaveta de consulta em seu estado inicial
-- Figura 8 – Tela de comparação em seu estado inicial
-- Figura 9 – Formulário do explorador de recuperação no painel interno
+- Figura 5 – Componente de avaliação de uma resposta, após a escolha da nota
+- Figura 6 – Página inicial do sistema
+- Figura 7 – Exemplo ilustrativo de consulta exibido na página inicial
+- Figura 8 – Tela de login
+- Figura 9 – Gaveta de consulta em seu estado inicial
+- Figura 10 – Tela de comparação em seu estado inicial
+- Figura 11 – Formulário do explorador de recuperação no painel interno
 
 # LISTA DE QUADROS
 
@@ -103,7 +105,7 @@ Leprosy remains a public health problem in Brazil, the country with the second h
 - Quadro 7 – Principais metadados dos trechos
 - Quadro 8 – Critérios de reordenação dos trechos recuperados
 - Quadro 9 – Regras da camada de segurança
-- Quadro 10 – Testes automatizados do servidor
+- Quadro 10 – Testes automatizados do servidor e da interface
 - Quadro 11 – Perguntas de referência da avaliação técnica
 - Quadro 12 – Trechos da base inicial de desenvolvimento
 - Quadro 13 – Mensagens de recusa da camada de segurança
@@ -130,6 +132,7 @@ Leprosy remains a public health problem in Brazil, the country with the second h
 | DTN | Doenças Tropicais Negligenciadas |
 | FTS | Busca Textual Completa (*Full-Text Search*) |
 | HTTP | Protocolo de Transferência de Hipertexto (*Hypertext Transfer Protocol*) |
+| HTTPS | Protocolo de Transferência de Hipertexto Seguro (*Hypertext Transfer Protocol Secure*) |
 | IA | Inteligência Artificial |
 | JSON | *JavaScript Object Notation* |
 | JSONL | Linhas JSON (*JSON Lines*) |
@@ -144,6 +147,7 @@ Leprosy remains a public health problem in Brazil, the country with the second h
 | RAG | Geração Aumentada por Recuperação (*Retrieval-Augmented Generation*) |
 | RAGAS | *Retrieval Augmented Generation Assessment* |
 | RRF | Fusão por Posição Recíproca (*Reciprocal Rank Fusion*) |
+| SHA | Algoritmo de *Hash* Seguro (*Secure Hash Algorithm*) |
 | SQL | *Structured Query Language* |
 | SUS | Sistema Único de Saúde |
 | TCLE | Termo de Consentimento Livre e Esclarecido |
@@ -207,8 +211,11 @@ Leprosy remains a public health problem in Brazil, the country with the second h
     - 4.5.4 Camada de segurança
     - 4.5.5 Geração da resposta
     - 4.5.6 Registro para rastreabilidade e auditoria
-  - 4.6 INTERFACE WEB
-  - 4.7 VERIFICAÇÃO DO SOFTWARE
+  - 4.6 CONTROLE DE ACESSO E AVALIAÇÃO DAS RESPOSTAS
+    - 4.6.1 Autenticação e sessões
+    - 4.6.2 Registro da avaliação das respostas
+  - 4.7 INTERFACE WEB
+  - 4.8 VERIFICAÇÃO DO SOFTWARE
 - 5 RESULTADOS
   - 5.1 ARTEFATO DESENVOLVIDO
   - 5.2 AVALIAÇÃO TÉCNICA PRELIMINAR
@@ -442,7 +449,7 @@ A Figura 1 apresenta as etapas da pesquisa, adaptadas do processo de Peffers *et
 
 Fonte: Elaborado pelo autor com base em Peffers *et al.* (2007).
 
-Na etapa 1, identificação do problema e motivação, foram levantados o contexto epidemiológico da hanseníase, as necessidades de informação na APS e as limitações dos modelos de linguagem em saúde, apresentados nos Capítulos 1 e 2. Na etapa 2, definição dos objetivos da solução, esses elementos foram convertidos em requisitos: responder perguntas com base em uma base curada, indicar as fontes, recusar situações de risco e registrar as consultas (Seção 4.1). A etapa 3, projeto e desenvolvimento, compreendeu a construção da base inicial e a implementação do sistema (Seções 3.3 e 3.4). A etapa 4, demonstração, corresponde ao uso do sistema por meio da interface web, com perguntas de exemplo. A etapa 5, avaliação, divide-se em avaliação técnica, executada de forma preliminar (Seção 3.5), e avaliação comparativa com participantes, planejada (Seção 3.6). A etapa 6, comunicação, corresponde a esta monografia. Como prevê o processo de Peffers *et al.* (2007), os resultados da avaliação podem motivar o retorno às etapas de definição dos objetivos e de desenvolvimento; é o caso dos ajustes de configuração e das correções identificados na avaliação técnica preliminar, que deverão ser realizados antes da avaliação comparativa.
+Na etapa 1, identificação do problema e motivação, foram levantados o contexto epidemiológico da hanseníase, as necessidades de informação na APS e as limitações dos modelos de linguagem em saúde, apresentados nos Capítulos 1 e 2. Na etapa 2, definição dos objetivos da solução, esses elementos foram convertidos em requisitos: responder perguntas com base em uma base curada, indicar as fontes, recusar situações de risco e registrar as consultas (Seção 4.1). A etapa 3, projeto e desenvolvimento, compreendeu a construção da base inicial e a implementação do sistema (Seções 3.3 e 3.4). A etapa 4, demonstração, corresponde ao uso do sistema por meio da interface web, com perguntas de exemplo. A etapa 5, avaliação, divide-se em avaliação técnica, executada de forma preliminar (Seção 3.5), e avaliação comparativa com participantes, planejada (Seção 3.6). A etapa 6, comunicação, corresponde a esta monografia. Como prevê o processo de Peffers *et al.* (2007), os resultados da avaliação podem motivar o retorno às etapas de definição dos objetivos e de desenvolvimento; é o caso dos ajustes de configuração e das correções identificados na avaliação técnica preliminar, que deverão ser realizados antes da avaliação comparativa. Da mesma forma, o planejamento da avaliação comparativa motivou o retorno ao desenvolvimento para incluir a autenticação dos usuários e o registro da avaliação das respostas (Seção 4.6).
 
 O Quadro 2 relaciona os objetivos específicos às etapas e indica a situação de cada um.
 
@@ -452,7 +459,7 @@ O Quadro 2 relaciona os objetivos específicos às etapas e indica a situação 
 |---|---|---|
 | a) Base de conhecimento | 3 | Parcial: estrutura, esquema de metadados, ingestão e base inicial com 15 trechos concluídos; curadoria a partir de documentos oficiais pendente |
 | b) *Pipeline* RAG | 3 | Implementado e verificado por testes automatizados; validação com banco de dados real e *embeddings* semânticos pendente |
-| c) Interface web | 3 e 4 | Implementada como protótipo; a tela de comparação ainda usa uma simulação local no lugar do Cenário B |
+| c) Interface web | 3 e 4 | Implementada como protótipo, com acesso por login e avaliação das respostas de 0 a 10; a tela de comparação ainda usa uma simulação local no lugar do Cenário B |
 | d) Avaliação técnica | 5 | Execução preliminar realizada com *embeddings* determinísticos; nova execução pendente |
 | e) Avaliação comparativa | 5 | Planejada; protocolo, verificação ética e coleta pendentes |
 | f) Limitações | 5 e 6 | Limitações técnicas identificadas; limitações da avaliação comparativa pendentes |
@@ -477,11 +484,11 @@ A estratégia de fragmentação documentada no projeto estabelece trechos com ta
 
 ## 3.4 DESENVOLVIMENTO DO SISTEMA
 
-O desenvolvimento ocorreu de forma incremental entre junho e outubro de 2026. A primeira versão implementou o servidor, com a base inicial, o *pipeline* de consulta e os testes automatizados; as versões seguintes acrescentaram a interface web, corrigiram falhas identificadas na execução contra o banco de dados real e reformularam a interface pública. Os requisitos foram derivados do problema e da política de segurança clínica documentada no projeto e são apresentados na Seção 4.1.
+O desenvolvimento ocorreu de forma incremental entre junho e outubro de 2026. A primeira versão implementou o servidor, com a base inicial, o *pipeline* de consulta e os testes automatizados; as versões seguintes acrescentaram a interface web, corrigiram falhas identificadas na execução contra o banco de dados real e reformularam a interface pública; a mais recente, de outubro de 2026, acrescentou a autenticação dos usuários e o registro da avaliação das respostas em escala de 0 a 10. Os requisitos foram derivados do problema e da política de segurança clínica documentada no projeto e são apresentados na Seção 4.1.
 
 O servidor foi implementado em Node.js com TypeScript, com o *framework* Express para a interface de programação de aplicações (API, do inglês *application programming interface*) HTTP, o Prisma como ferramenta de mapeamento objeto-relacional (ORM), o PostgreSQL 16 com a extensão pgvector como banco de dados, a biblioteca Zod para a validação de dados e configurações e o Vitest para os testes automatizados. A interface web foi implementada em React com TypeScript, utilizando Vite, Tailwind CSS, TanStack Query e React Router. O uso de TypeScript nas duas camadas buscou manter contratos explícitos entre elas, e a escolha do PostgreSQL com pgvector, concentrar dados relacionais, texto indexado e vetores em um único banco de dados, sem serviço vetorial separado.
 
-A verificação do software combinou análise estática, com ESLint no servidor e oxlint na interface, verificação de tipos, compilação e testes automatizados. Os testes utilizam dublês em memória para o repositório e para o provedor de *embeddings*, o que permite exercitar a lógica de classificação, recuperação, segurança e montagem das respostas sem depender do banco de dados nem de serviços externos (Seção 4.7).
+A verificação do software combinou análise estática, com ESLint no servidor e oxlint na interface, verificação de tipos, compilação e testes automatizados. Os testes utilizam dublês em memória para o repositório e para o provedor de *embeddings*, o que permite exercitar a lógica de classificação, recuperação, segurança e montagem das respostas sem depender do banco de dados nem de serviços externos. Com a inclusão da autenticação e do registro das avaliações, somaram-se testes da API por requisições HTTP, testes de integração com o banco de dados, restritos às tabelas de usuários, sessões e avaliações, e testes de componentes da interface, escritos com Vitest e Testing Library (Seção 4.8).
 
 ## 3.5 AVALIAÇÃO TÉCNICA DO *PIPELINE*
 
@@ -505,7 +512,7 @@ A avaliação comparativa tem por objetivo responder à QP3, investigando como p
 
 A comparação só será interpretável se os dois cenários forem definidos de forma consistente e documentada. A diferença entre eles deve residir, tanto quanto possível, no uso da recuperação e dos mecanismos associados, e não em fatores alheios ao objeto do estudo. Para isso, os seguintes elementos precisam ser definidos antes da coleta:
 
-a) mecanismo do Cenário B: a implementação atual da tela de comparação produz a resposta sem RAG por meio de uma simulação executada no navegador, que monta um texto padronizado a partir da pergunta, sem consultar nenhum modelo de linguagem (Seção 4.6). Essa simulação não pode ser usada como Cenário B e deverá ser substituída por chamadas reais a um modelo de linguagem, com registro das configurações;
+a) mecanismo do Cenário B: a implementação atual da tela de comparação produz a resposta sem RAG por meio de uma simulação executada no navegador, que monta um texto padronizado a partir da pergunta, sem consultar nenhum modelo de linguagem (Seção 4.7). Essa simulação não pode ser usada como Cenário B e deverá ser substituída por chamadas reais a um modelo de linguagem, com registro das configurações;
 
 b) modelo do Cenário B: usar o mesmo modelo gerador do Cenário A, sem recuperação, isola o efeito da recuperação e da camada de segurança, enquanto usar um assistente de propósito geral aproxima a comparação do uso cotidiano dessas ferramentas, com menor controle sobre as diferenças entre os cenários;
 
@@ -547,11 +554,11 @@ As perguntas apresentadas aos participantes devem contemplar situações em que 
 
 ### 3.6.5 Procedimento de apresentação das respostas
 
-As respostas dos dois cenários deverão ser geradas antes da coleta, armazenadas e apresentadas aos participantes sempre na mesma forma, para que todos avaliem o mesmo conteúdo e os resultados possam ser reproduzidos. A geração em tempo real durante a sessão é desaconselhada, porque modelos de linguagem podem produzir respostas diferentes para a mesma pergunta. [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: meio de aplicação, como formulário ou interface do próprio sistema; formato de apresentação das respostas; ordem de exposição; instruções fornecidas aos participantes; tempo estimado da sessão.]
+As respostas dos dois cenários deverão ser geradas antes da coleta, armazenadas e apresentadas aos participantes sempre na mesma forma, para que todos avaliem o mesmo conteúdo e os resultados possam ser reproduzidos. A geração em tempo real durante a sessão é desaconselhada, porque modelos de linguagem podem produzir respostas diferentes para a mesma pergunta. Caso a interface do próprio sistema seja adotada como meio de aplicação, ela já oferece acesso individual por usuário e senha, com contas criadas pelo pesquisador, e um componente de avaliação exibido após cada resposta (Seção 4.6). Esse componente, porém, avalia respostas geradas no momento da consulta e apenas do Cenário A; para seguir o procedimento acima, a interface precisaria ser adaptada para apresentar respostas previamente geradas, dos dois cenários. [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: meio de aplicação, como formulário ou interface do próprio sistema; formato de apresentação das respostas; ordem de exposição; instruções fornecidas aos participantes; tempo estimado da sessão.]
 
 ### 3.6.6 Instrumento de avaliação e dimensões analisadas
 
-O instrumento deverá definir as dimensões avaliadas, a escala de resposta e os campos para comentários. As dimensões candidatas, derivadas da literatura discutida na Seção 2.6, estão listadas no Quadro 4; sua seleção final, assim como a escala, depende do protocolo. [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: dimensões adotadas, com a definição operacional de cada uma; escala de resposta; questões abertas; validação prévia do instrumento, por exemplo em teste piloto.] A estrutura prevista do instrumento encontra-se no Apêndice E.
+O instrumento deverá definir as dimensões avaliadas, a escala de resposta e os campos para comentários. As dimensões candidatas, derivadas da literatura discutida na Seção 2.6, estão listadas no Quadro 4; sua seleção final, assim como a escala, depende do protocolo. [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: dimensões adotadas, com a definição operacional de cada uma; escala de resposta; questões abertas; validação prévia do instrumento, por exemplo em teste piloto.] A estrutura prevista do instrumento encontra-se no Apêndice E. O sistema já registra, para cada resposta, uma nota global de 0 a 10 e um comentário opcional (Seção 4.6.2). Trata-se de uma medida única, que não substitui a avaliação por dimensões, mas pode compor o instrumento, por exemplo como avaliação geral de cada resposta, se o protocolo a adotar. [DEFINIR COM O ORIENTADOR: uso da nota global de 0 a 10 registrada pelo sistema no instrumento de avaliação.]
 
 **Quadro 4 – Dimensões candidatas para o instrumento de avaliação**
 
@@ -570,7 +577,7 @@ Fonte: Elaboração própria (2026), com base nas referências indicadas.
 
 ### 3.6.7 Coleta e organização dos dados
 
-Cada participante deverá receber um código não identificável, e as avaliações deverão ser registradas em formato estruturado, com uma linha por combinação de participante, pergunta e cenário, contendo as notas por dimensão e os comentários. O vínculo entre cada resposta avaliada e as condições registradas no Quadro 3 deve ser preservado. Os dados deverão ser armazenados com acesso restrito ao pesquisador e ao orientador. [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: ferramenta de coleta; local e período de armazenamento; procedimento de exportação e de verificação de consistência; tratamento de respostas incompletas.]
+Cada participante deverá receber um código não identificável, e as avaliações deverão ser registradas em formato estruturado, com uma linha por combinação de participante, pergunta e cenário, contendo as notas por dimensão e os comentários. O vínculo entre cada resposta avaliada e as condições registradas no Quadro 3 deve ser preservado. Os dados deverão ser armazenados com acesso restrito ao pesquisador e ao orientador. Se as avaliações forem registradas pelo próprio sistema, cada uma ficará vinculada ao usuário, à conversa e à resposta avaliada, sem possibilidade de duplicidade (Seção 4.6.2). Para que esse vínculo seja compatível com o anonimato dos participantes, os nomes de usuário deverão ser códigos não identificáveis, sem nome, matrícula ou endereço de *e-mail*, e a correspondência entre código e pessoa, se necessária, deverá ser mantida fora do sistema. [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: ferramenta de coleta; local e período de armazenamento; procedimento de exportação e de verificação de consistência; tratamento de respostas incompletas.]
 
 ### 3.6.8 Métodos de análise
 
@@ -580,7 +587,7 @@ A análise deverá comparar as avaliações dos dois cenários por dimensão, in
 
 Por envolver participantes humanos e conteúdo relacionado à saúde, a avaliação comparativa deverá observar as normas de ética em pesquisa vigentes no Brasil, em especial as Resoluções nº 466/2012 e nº 510/2016 do Conselho Nacional de Saúde (CNS) (Brasil, 2012; Brasil, 2016). A Resolução nº 510/2016 prevê, em seu artigo 1º, situações que não são registradas nem avaliadas pelo sistema formado pelos Comitês de Ética em Pesquisa (CEP) e pela Comissão Nacional de Ética em Pesquisa (CONEP), como a pesquisa de opinião pública com participantes não identificados; orientação da CONEP esclarece, porém, que essa dispensa se aplica apenas quando todos os procedimentos do protocolo se enquadram nessas hipóteses (Brasil, 2022). Como o protocolo ainda não está definido, a necessidade de submissão ao CEP não pode ser determinada nesta versão e deverá ser verificada com o orientador e com o CEP da instituição antes de qualquer coleta. [VERIFICAR COM O ORIENTADOR E O CEP INSTITUCIONAL: enquadramento ético do estudo e procedimentos necessários.]
 
-Independentemente do enquadramento, o estudo deverá adotar participação voluntária, com possibilidade de desistência a qualquer momento; registro de consentimento, por meio de Termo de Consentimento Livre e Esclarecido (TCLE) ou instrumento equivalente; coleta mínima de dados pessoais e apresentação apenas de resultados agregados; e tratamento dos dados conforme a LGPD (Brasil, 2018). As perguntas e as respostas utilizadas não devem conter dados de pacientes. Deve-se considerar, ainda, que as consultas ao sistema são registradas no banco de dados para auditoria e que, no modo com modelo de linguagem, as perguntas são enviadas a um serviço externo, aspectos que precisam constar das informações fornecidas aos participantes, caso eles interajam diretamente com o sistema.
+Independentemente do enquadramento, o estudo deverá adotar participação voluntária, com possibilidade de desistência a qualquer momento; registro de consentimento, por meio de Termo de Consentimento Livre e Esclarecido (TCLE) ou instrumento equivalente; coleta mínima de dados pessoais e apresentação apenas de resultados agregados; e tratamento dos dados conforme a LGPD (Brasil, 2018). As perguntas e as respostas utilizadas não devem conter dados de pacientes. Deve-se considerar, ainda, que as consultas ao sistema são registradas no banco de dados para auditoria, vinculadas ao usuário, e que, no modo com modelo de linguagem, as perguntas são enviadas a um serviço externo, aspectos que precisam constar das informações fornecidas aos participantes, caso eles interajam diretamente com o sistema. Se o sistema for publicado em serviço de hospedagem externo, os dados dos participantes ficarão armazenados nesse serviço, possivelmente fora do Brasil, situação tratada pela LGPD nas regras sobre transferência internacional de dados (Brasil, 2018) e que também deverá ser informada aos participantes.
 
 ## 3.7 AMEAÇAS À VALIDADE
 
@@ -598,7 +605,7 @@ d) validade de conclusão: amostras pequenas reduzem o poder estatístico, e com
 
 # 4 DESENVOLVIMENTO DO SISTEMA
 
-Este capítulo descreve o sistema desenvolvido, denominado provisoriamente NexoHansen, conforme implementado no repositório do projeto. A Seção 4.1 apresenta os requisitos e princípios de projeto; as Seções 4.2 e 4.3, a arquitetura e o modelo de dados; a Seção 4.4, a base de conhecimento e a ingestão; a Seção 4.5, o *pipeline* de consulta; a Seção 4.6, a interface web; e a Seção 4.7, a verificação do software.
+Este capítulo descreve o sistema desenvolvido, denominado provisoriamente NexoHansen, conforme implementado no repositório do projeto. A Seção 4.1 apresenta os requisitos e princípios de projeto; as Seções 4.2 e 4.3, a arquitetura e o modelo de dados; a Seção 4.4, a base de conhecimento e a ingestão; a Seção 4.5, o *pipeline* de consulta; a Seção 4.6, o controle de acesso e o registro da avaliação das respostas; a Seção 4.7, a interface web; e a Seção 4.8, a verificação do software.
 
 ## 4.1 REQUISITOS E PRINCÍPIOS DE PROJETO
 
@@ -613,21 +620,25 @@ Os requisitos do sistema foram derivados do problema descrito no Capítulo 1 e d
 | RF03. Indicar as fontes de cada resposta | Lista de fontes com identificador do trecho, documento, título, seção e página | `ChatService`; componente de fontes da interface |
 | RF04. Recusar situações que ultrapassam os limites de segurança | Regras explícitas avaliadas antes da geração | `SafetyService` |
 | RF05. Sinalizar risco clínico e necessidade de avaliação presencial | Classificação de risco em quatro níveis e aviso anexado a todas as respostas | `ClinicalRiskService`, `SafetyService` |
-| RF06. Registrar consultas para auditoria | Persistência de sessões, mensagens e registros de recuperação | Entidades `ChatSession`, `ChatMessage` e `RetrievalLog` |
+| RF06. Registrar consultas para auditoria | Persistência das conversas, vinculadas ao usuário, das mensagens e dos registros de recuperação | Entidades `ChatSession`, `ChatMessage` e `RetrievalLog` |
 | RF07. Ingerir trechos com metadados validados | Ingestão de arquivos JSONL com validação de esquema | `KnowledgeService`; esquema Zod de metadados |
 | RF08. Permitir a inspeção da recuperação, da base e da avaliação | Rotas de busca, listagem e avaliação e painel interno | Módulos `retrieval`, `chunks` e `evaluation` |
-| RF09. Registrar a avaliação dos usuários sobre as respostas | Nota de 1 a 5, comentário e indicação de revisão por especialista | Módulo `feedback` |
+| RF09. Registrar a avaliação dos usuários sobre as respostas | Nota inteira de 0 a 10 e comentário opcional, vinculados ao usuário, à conversa e à resposta, com uma avaliação por usuário e resposta | Módulo `feedback`; componente de avaliação da interface |
+| RF10. Restringir o uso do sistema a usuários cadastrados | Login por usuário e senha, sessão em *cookie* e exigência de sessão nas rotas `/api`, exceto as de autenticação | Módulo `auth` |
 | RNF01. Funcionar sem serviços externos | Provedor local de *embeddings* e resposta extrativa | `DeterministicEmbeddingsProvider`, `ChatService` |
-| RNF02. Validar configurações e entradas | Esquemas de validação para variáveis de ambiente e requisições | `env.ts`; esquemas Zod |
-| RNF03. Ser testável sem infraestrutura | Serviços com dependências injetadas e testes com dublês em memória | `services.ts`; `tests/core.test.ts` |
+| RNF02. Validar configurações e entradas | Esquemas de validação para variáveis de ambiente e requisições; restrições no banco de dados | `env.ts`; esquemas Zod; migrações |
+| RNF03. Ser testável sem infraestrutura | Serviços com dependências injetadas e testes com dublês em memória | `services.ts`; testes do servidor |
+| RNF04. Proteger credenciais e sessões | Senhas com *hash* scrypt e sal aleatório; *token* de sessão guardado apenas como *hash*; *cookie* HttpOnly; limite de tentativas de login | Módulo `auth` |
 
 Fonte: Elaboração própria (2026), com base no código-fonte do sistema.
 
 Três princípios orientaram as decisões de projeto. O primeiro é que a segurança deve ser controlada em código: as regras que bloqueiam diagnóstico definitivo, prescrição e situações de urgência são aplicadas por um serviço determinístico antes da geração, e não apenas descritas no *prompt*. O segundo é que a rastreabilidade integra a segurança: toda resposta informa os trechos utilizados, e toda consulta é registrada com os trechos, as pontuações e as decisões de segurança. O terceiro é a preferência, nesta versão, por componentes previsíveis e explicáveis, como a classificação de intenção por palavras-chave, que podem ser testados e ajustados com facilidade, ainda que com menor capacidade de generalização do que modelos treinados.
 
+Os requisitos RF10 e RNF04 e a forma atual do RF09 foram incorporados depois da avaliação técnica preliminar, para preparar o uso do sistema por participantes: a autenticação restringe o acesso às pessoas cadastradas pelo pesquisador, e o registro da avaliação associa cada nota à resposta avaliada e a quem a atribuiu (Seção 4.6).
+
 ## 4.2 ARQUITETURA GERAL
 
-O sistema segue uma arquitetura cliente-servidor em camadas, representada na Figura 2. A interface web, executada no navegador, comunica-se com a API do servidor por requisições HTTP com dados em JSON. O servidor é uma aplicação Express organizada em módulos de domínio, que tratam da base de conhecimento, dos trechos, dos *embeddings*, da recuperação, da segurança, da consulta, da avaliação e do retorno dos usuários (*feedback*), e cujas dependências são instanciadas e conectadas em um único ponto de composição. O acesso aos dados combina o Prisma, nas operações relacionais, com consultas SQL diretas nas operações que dependem do pgvector e da busca textual. O banco de dados é o PostgreSQL 16 com a extensão pgvector, executado em contêiner Docker. A API da OpenAI é uma dependência opcional, usada para gerar *embeddings* e respostas quando há chave de acesso configurada.
+O sistema segue uma arquitetura cliente-servidor em camadas, representada na Figura 2. A interface web, executada no navegador, comunica-se com a API do servidor por requisições HTTP com dados em JSON. O servidor é uma aplicação Express organizada em módulos de domínio, que tratam da base de conhecimento, dos trechos, dos *embeddings*, da recuperação, da segurança, da consulta, da avaliação técnica e da avaliação das respostas pelos usuários (*feedback*), e cujas dependências são instanciadas e conectadas em um único ponto de composição. Um módulo de autenticação antecede os módulos de domínio: ele trata do login e do encerramento da sessão e verifica, em cada requisição às demais rotas da API, se há uma sessão válida. O acesso aos dados combina o Prisma, nas operações relacionais, com consultas SQL diretas nas operações que dependem do pgvector e da busca textual. O banco de dados é o PostgreSQL 16 com a extensão pgvector, executado em contêiner Docker. A API da OpenAI é uma dependência opcional, usada para gerar *embeddings* e respostas quando há chave de acesso configurada.
 
 **Figura 2 – Arquitetura geral do sistema**
 
@@ -635,13 +646,14 @@ O sistema segue uma arquitetura cliente-servidor em camadas, representada na Fig
 
 Fonte: Elaboração própria (2026).
 
-O Quadro 6 resume as rotas da API.
+O Quadro 6 resume as rotas da API. Com exceção de `GET /health` e das rotas de autenticação, todas exigem uma sessão de login válida (Seção 4.6.1).
 
 **Quadro 6 – Rotas da API do servidor**
 
 | Rota | Função |
 |---|---|
 | `GET /health` | Verifica a disponibilidade da API, do banco de dados e da extensão pgvector |
+| `POST /api/auth/login`, `POST /api/auth/logout` e `GET /api/auth/me` | Abrem e encerram a sessão de login e informam o usuário da sessão atual |
 | `POST /api/knowledge/ingest/jsonl` | Ingere trechos em JSONL, a partir de um arquivo ou do corpo da requisição |
 | `POST /api/knowledge/seed` | Carrega a base inicial de desenvolvimento |
 | `GET /api/documents` | Lista os documentos lógicos e o número de trechos de cada um |
@@ -649,13 +661,15 @@ O Quadro 6 resume as rotas da API.
 | `POST /api/retrieval/search` | Executa apenas a recuperação e retorna o ranqueamento anterior à reordenação |
 | `POST /api/chat/ask` | Executa o fluxo completo de consulta |
 | `POST /api/evaluation/seed`, `GET /api/evaluation/questions` e `POST /api/evaluation/run` | Carregam, listam e executam as perguntas de referência |
-| `POST /api/feedback` | Registra a avaliação de um usuário sobre uma resposta |
+| `POST /api/feedback` | Registra a avaliação de 0 a 10 do usuário da sessão sobre uma resposta |
 
 Fonte: Elaboração própria (2026), com base no código-fonte do sistema.
 
+O repositório inclui, ainda, a configuração necessária para publicar a interface e a API como dois projetos na plataforma Vercel, com o banco de dados PostgreSQL com pgvector em serviço gerenciado. Nessa configuração, a interface repassa as requisições `/api` à API pelo mesmo endereço, o que permite usar o *cookie* de sessão sem compartilhá-lo entre domínios. Até a redação desta versão, essa publicação não havia sido realizada.
+
 ## 4.3 MODELO DE DADOS
 
-O modelo de dados, representado na Figura 3, possui oito entidades. `Document` representa um documento lógico da base, e `Chunk`, a unidade de recuperação, com texto, metadados clínicos, palavras-chave, entidades e o *embedding* de 1.536 dimensões. `Source` foi prevista para registrar fontes bibliográficas, mas ainda não é utilizada pelo sistema. `ChatSession` agrupa as mensagens de uma interação e registra o perfil do usuário; `ChatMessage` guarda as perguntas e as respostas; e `RetrievalLog` registra, para cada consulta, os trechos recuperados com suas pontuações, os filtros, a resposta final, o acionamento de recusa e o nível de risco. `Feedback` armazena as avaliações dos usuários, e `EvaluationQuestion`, as perguntas de referência.
+O modelo de dados, representado na Figura 3, possui dez entidades. `Document` representa um documento lógico da base, e `Chunk`, a unidade de recuperação, com texto, metadados clínicos, palavras-chave, entidades e o *embedding* de 1.536 dimensões. `Source` foi prevista para registrar fontes bibliográficas, mas ainda não é utilizada pelo sistema. `User` representa as pessoas autorizadas a usar o sistema, e `AuthSession`, as sessões de login (Seção 4.6.1). `ChatSession` representa uma conversa: agrupa as mensagens, registra o perfil escolhido para a consulta e identifica o usuário que a iniciou, campo opcional apenas para as conversas registradas antes da implementação da autenticação. `ChatMessage` guarda as perguntas e as respostas, e `RetrievalLog` registra, para cada consulta, os trechos recuperados com suas pontuações, os filtros, a resposta final, o acionamento de recusa e o nível de risco. `Feedback` armazena as avaliações das respostas, vinculadas ao usuário, à conversa e à resposta avaliada (Seção 4.6.2), e `EvaluationQuestion`, as perguntas de referência.
 
 **Figura 3 – Modelo de dados do sistema**
 
@@ -663,7 +677,7 @@ O modelo de dados, representado na Figura 3, possui oito entidades. `Document` r
 
 Fonte: Elaboração própria (2026), com base no esquema do banco de dados.
 
-Como o Prisma não oferece suporte nativo ao tipo `vector`, a coluna de *embedding* é declarada como tipo não suportado, e as operações sobre ela são realizadas por SQL direto. Pelo mesmo motivo, dois índices, o índice vetorial IVFFlat por distância de cosseno e o índice GIN sobre os metadados, não são representáveis no esquema do Prisma e precisaram ser recriados por migração própria depois que uma migração gerada automaticamente os removeu. Há, ainda, um índice GIN para a busca textual. O índice IVFFlat foi criado com 100 listas, parâmetro dimensionado para tabelas muito maiores que a base atual; a adequação dessa configuração ao volume de dados deverá ser verificada na nova avaliação técnica (Seção 3.5).
+Como o Prisma não oferece suporte nativo ao tipo `vector`, a coluna de *embedding* é declarada como tipo não suportado, e as operações sobre ela são realizadas por SQL direto. Pelo mesmo motivo, dois índices, o índice vetorial IVFFlat por distância de cosseno e o índice GIN sobre os metadados, não são representáveis no esquema do Prisma e precisaram ser recriados por migração própria depois que uma migração gerada automaticamente os removeu. Há, ainda, um índice GIN para a busca textual. O índice IVFFlat foi criado com 100 listas, parâmetro dimensionado para tabelas muito maiores que a base atual; a adequação dessa configuração ao volume de dados deverá ser verificada na nova avaliação técnica (Seção 3.5). Também foram criadas diretamente nas migrações, por não serem representáveis no esquema do Prisma, as restrições de verificação (CHECK) sobre a faixa da nota e o tamanho do comentário das avaliações, o formato do nome de usuário e o formato do *hash* da senha.
 
 ## 4.4 BASE DE CONHECIMENTO E INGESTÃO
 
@@ -709,7 +723,7 @@ Fonte: Elaboração própria (2026), com base no arquivo `hanseniase_chunks.seed
 
 ## 4.5 *PIPELINE* DE CONSULTA
 
-A Figura 4 representa o processamento de uma pergunta enviada à rota `POST /api/chat/ask`. O serviço de consulta cria ou reutiliza a sessão, registra a pergunta e aciona o serviço de recuperação, que classifica a intenção, executa a busca híbrida, estima o risco clínico, reordena os candidatos e aplica o limiar mínimo de relevância. Em seguida, a camada de segurança decide se a pergunta deve ser recusada; não havendo recusa, a resposta é gerada a partir dos trechos selecionados. Por fim, a resposta é registrada e devolvida com as fontes, as informações de segurança e o resumo da recuperação. As subseções a seguir detalham cada etapa.
+A Figura 4 representa o processamento de uma pergunta enviada à rota `POST /api/chat/ask`. Verificada a sessão de login, o serviço de consulta abre ou retoma a conversa do usuário, registra a pergunta e aciona o serviço de recuperação, que classifica a intenção, executa a busca híbrida, estima o risco clínico, reordena os candidatos e aplica o limiar mínimo de relevância. Em seguida, a camada de segurança decide se a pergunta deve ser recusada; não havendo recusa, a resposta é gerada a partir dos trechos selecionados. Por fim, a resposta é registrada e devolvida com as fontes, as informações de segurança, o resumo da recuperação e os identificadores da conversa e da resposta, este último usado no registro da avaliação. As subseções a seguir detalham cada etapa.
 
 **Figura 4 – Fluxo de processamento de uma consulta**
 
@@ -787,66 +801,109 @@ Sem chave configurada, o sistema produz uma resposta extrativa, que apresenta o 
 
 ### 4.5.6 Registro para rastreabilidade e auditoria
 
-Cada consulta gera registros persistentes: a sessão, com o perfil do usuário; a pergunta e a resposta, como mensagens da sessão; e um registro de recuperação com a pergunta, os trechos recuperados e suas pontuações vetorial, textual e final, os filtros aplicados, a resposta final, o acionamento de recusa e o nível de risco. Esses registros permitem reconstituir por que uma resposta foi dada ou recusada e quais trechos a sustentaram. O módulo de *feedback* complementa a rastreabilidade ao associar a uma resposta a nota de 1 a 5 atribuída pelo usuário, um comentário e a indicação de revisão por especialista. Por outro lado, o registro das perguntas impõe cuidados de privacidade, discutidos na Seção 3.6.9.
+Cada consulta gera registros persistentes: a conversa, com o perfil escolhido e o usuário autenticado; a pergunta e a resposta, como mensagens da conversa; e um registro de recuperação com a pergunta, os trechos recuperados e suas pontuações vetorial, textual e final, os filtros aplicados, a resposta final, o acionamento de recusa e o nível de risco. Esses registros permitem reconstituir por que uma resposta foi dada ou recusada e quais trechos a sustentaram. O registro da avaliação das respostas (Seção 4.6.2) complementa a rastreabilidade ao associar a cada resposta a nota atribuída por quem a recebeu. Por outro lado, o registro das perguntas, agora vinculadas a um usuário, impõe cuidados de privacidade, discutidos nas Seções 3.6.7 e 3.6.9.
 
-## 4.6 INTERFACE WEB
+## 4.6 CONTROLE DE ACESSO E AVALIAÇÃO DAS RESPOSTAS
 
-A interface web foi organizada em uma área pública e um painel interno. A área pública compreende a página inicial e a tela de comparação, que compartilham um cabeçalho com acesso à consulta. A página inicial (Figura 5) apresenta a finalidade do sistema, o método de construção das respostas, os limites de segurança, com as mensagens de recusa definidas no servidor, e a composição da base de conhecimento, acompanhada do aviso de que se trata de um conjunto inicial de desenvolvimento. A página também exibe um exemplo de consulta, identificado como ilustrativo e montado com os mesmos componentes usados para exibir respostas reais (Figura 6).
+Dois mecanismos foram incorporados ao sistema em outubro de 2026, depois da avaliação técnica preliminar, para preparar seu uso por participantes: a autenticação dos usuários e o registro da avaliação das respostas. Nenhum deles altera o *pipeline* de consulta descrito na Seção 4.5.
 
-**Figura 5 – Página inicial do sistema**
+### 4.6.1 Autenticação e sessões
+
+O acesso é feito por nome de usuário e senha. Não há cadastro pela interface nem recuperação de senha: as contas são criadas pelo pesquisador diretamente no banco de dados, com o auxílio de um comando do projeto que lê a senha sem exibi-la, calcula seu *hash* e produz a instrução SQL de inserção. As senhas são armazenadas apenas na forma de *hash*, calculado com a função scrypt, que exige tempo de processamento e memória em cada cálculo e, com isso, encarece tentativas de descobrir senhas por força bruta, inclusive com *hardware* especializado (Percival; Josefsson, 2016). Cada senha recebe um sal aleatório, de modo que senhas iguais resultam em *hashes* diferentes, e a comparação é feita em tempo constante. Restrições no banco de dados rejeitam nomes de usuário fora do formato definido, composto por letras minúsculas, algarismos, ponto, hífen e sublinhado, e senhas gravadas fora do formato de *hash* adotado, o que impede o armazenamento acidental de uma senha em texto puro. Uma conta pode ser desativada sem ser excluída.
+
+Quando o login é aceito, o servidor gera um *token* aleatório de 32 *bytes* e o entrega ao navegador em um *cookie* com o atributo HttpOnly, que impede sua leitura por *scripts* da página, e com o atributo SameSite no modo Lax, que restringe seu envio em requisições originadas de outros sites; em produção, o *cookie* recebe também o atributo Secure, que limita seu envio a conexões HTTPS. O banco de dados guarda apenas o *hash* SHA-256 do *token*, com a data de expiração da sessão, de oito horas por padrão, de modo que o acesso à tabela de sessões não permite reutilizar uma sessão ativa. O encerramento da sessão (*logout*) remove o registro no servidor e apaga o *cookie*, e uma sessão expirada ou pertencente a uma conta desativada deixa de ser aceita.
+
+Todas as rotas sob o prefixo `/api`, exceto as de autenticação, exigem uma sessão válida; sem ela, a API responde com o código 401 (não autenticado). A rota de verificação de disponibilidade permanece pública. O usuário associado a uma consulta ou a uma avaliação é sempre obtido da sessão, e nunca de dados enviados pelo navegador, o que impede que alguém registre consultas ou avaliações em nome de outra pessoa; pelo mesmo motivo, o identificador de uma conversa de outro usuário não é reaproveitado, e uma nova conversa é aberta. Para dificultar tentativas sucessivas de adivinhação de senha, após cinco tentativas malsucedidas em 15 minutos para a mesma combinação de endereço de origem e nome de usuário, novas tentativas são recusadas até o fim desse intervalo. As mensagens de erro não indicam se o usuário existe, e o servidor executa o cálculo do *hash* também quando o usuário não existe, para que o tempo de resposta não revele essa informação. O controle de tentativas é mantido na memória do servidor e, por isso, vale separadamente para cada instância em execução.
+
+### 4.6.2 Registro da avaliação das respostas
+
+Após cada resposta concluída, inclusive as recusas, a interface exibe um componente de avaliação (Figura 5) com uma escala de 0 a 10, em que 0 corresponde à pior avaliação e 10, à melhor, e um campo de comentário opcional, de até 1.000 caracteres, apresentado depois da escolha da nota. O usuário pode enviar a avaliação ou dispensá-la e reabri-la depois. O envio é confirmado na própria interface, e, em caso de falha, a nota e o comentário são preservados para nova tentativa.
+
+**Figura 5 – Componente de avaliação de uma resposta, após a escolha da nota**
+
+![Componente de avaliação de uma resposta, após a escolha da nota](figuras/fig-avaliacao.png)
+
+Fonte: Elaboração própria (2026).
+
+Cada avaliação é gravada com a identificação do usuário da sessão, da conversa e da resposta avaliada. A faixa da nota e o tamanho do comentário são validados na API e verificados novamente por restrições do banco de dados, e uma chave estrangeira composta garante que a resposta avaliada pertence à conversa registrada. Uma restrição de unicidade impede que o mesmo usuário avalie mais de uma vez a mesma resposta; a nova tentativa recebe o código 409 (conflito), e a interface a trata como avaliação já registrada. A API aceita apenas a avaliação de respostas do sistema, e não de perguntas, e somente em conversas do próprio usuário. As avaliações não são excluídas em cascata: o banco de dados recusa a exclusão de uma conversa que possua avaliações, o que protege esses registros contra remoções acidentais.
+
+A escala de 0 a 10 substituiu a nota de 1 a 5 e a indicação de revisão por especialista da versão anterior do módulo. Para não descartar dados, a migração do banco de dados que efetua essa mudança é interrompida caso encontre avaliações no formato anterior, em vez de convertê-las ou removê-las. A nota registrada é uma avaliação global da resposta; sua relação com as dimensões previstas para o instrumento da avaliação comparativa é discutida na Seção 3.6.6.
+
+## 4.7 INTERFACE WEB
+
+A interface web foi organizada em uma área pública e um painel interno. A área pública compreende a página inicial, a tela de login, a gaveta de consulta e a tela de comparação, que compartilham um cabeçalho com acesso à consulta. Apenas a página inicial e a tela de login são de acesso livre; a consulta, a tela de comparação e o painel interno exigem login. A página inicial (Figura 6) apresenta a finalidade do sistema, o método de construção das respostas, os limites de segurança, com as mensagens de recusa definidas no servidor, e a composição da base de conhecimento, acompanhada do aviso de que se trata de um conjunto inicial de desenvolvimento. A página também exibe um exemplo de consulta, identificado como ilustrativo e montado com os mesmos componentes usados para exibir respostas reais (Figura 7).
+
+**Figura 6 – Página inicial do sistema**
 
 ![Página inicial do sistema](figuras/fig-inicio.png)
 
 Fonte: Elaboração própria (2026).
 
-**Figura 6 – Exemplo ilustrativo de consulta exibido na página inicial**
+**Figura 7 – Exemplo ilustrativo de consulta exibido na página inicial**
 
 ![Exemplo ilustrativo de consulta exibido na página inicial](figuras/fig-exemplo.png)
 
 Fonte: Elaboração própria (2026), com dados de exemplo identificados como tal na própria interface.
 
-A consulta é realizada em uma gaveta lateral (Figura 7), acessível a partir de qualquer página pública. Cada interação é apresentada como um registro composto pela pergunta e pela resposta. A resposta exibe o estado da consulta, isto é, resposta ou recusa segura, com o respectivo motivo; a intenção identificada; o texto, com marcadores numerados que remetem às fontes; uma nota de segurança com a escala de risco clínico e a necessidade de avaliação presencial; e a lista de fontes, com título, identificador, seção e pontuação de relevância. Nas recusas, os trechos eventualmente recuperados são apresentados como não utilizados. Nessa área, o perfil do usuário é fixado como profissional de saúde.
+Quando uma pessoa sem sessão tenta abrir a consulta ou acessar uma tela restrita, a interface a conduz à tela de login (Figura 8) e, após a autenticação, a devolve ao ponto em que estava, com a consulta reaberta quando era esse o caso. Com a sessão ativa, o cabeçalho exibe o nome do usuário e a opção de sair. Ao sair, a sessão é encerrada no servidor, e as conversas mantidas pela interface, inclusive a do painel interno guardada no navegador, são descartadas, para que não fiquem visíveis a quem usar o mesmo navegador em seguida. Se a sessão expirar durante o uso, a primeira requisição recusada pela API desfaz o login também na interface.
 
-**Figura 7 – Gaveta de consulta em seu estado inicial**
+**Figura 8 – Tela de login**
+
+![Tela de login](figuras/fig-login.png)
+
+Fonte: Elaboração própria (2026).
+
+A consulta é realizada em uma gaveta lateral (Figura 9), acessível a partir de qualquer página pública. Cada interação é apresentada como um registro composto pela pergunta e pela resposta. A resposta exibe o estado da consulta, isto é, resposta ou recusa segura, com o respectivo motivo; a intenção identificada; o texto, com marcadores numerados que remetem às fontes; uma nota de segurança com a escala de risco clínico e a necessidade de avaliação presencial; e a lista de fontes, com título, identificador, seção e pontuação de relevância. Nas recusas, os trechos eventualmente recuperados são apresentados como não utilizados. Ao final de cada resposta, é exibido o componente de avaliação descrito na Seção 4.6.2. Nessa área, o perfil do usuário é fixado como profissional de saúde.
+
+**Figura 9 – Gaveta de consulta em seu estado inicial**
 
 ![Gaveta de consulta em seu estado inicial](figuras/fig-gaveta.png)
 
 Fonte: Elaboração própria (2026).
 
-A tela de comparação (Figura 8) apresenta, lado a lado, a resposta do NexoHansen e uma resposta identificada como de um modelo genérico. Na versão atual, essa segunda resposta é produzida por uma simulação executada no próprio navegador, que monta um texto padronizado a partir da pergunta, com atraso artificial, sem consultar nenhum modelo de linguagem; a interface a identifica como simulação, sem fontes e sem regras de segurança. A tela tem, portanto, função demonstrativa e não constitui, em sua forma atual, o Cenário B da avaliação comparativa (Seção 3.6.2).
+A tela de comparação (Figura 10) apresenta, lado a lado, a resposta do NexoHansen e uma resposta identificada como de um modelo genérico. Na versão atual, essa segunda resposta é produzida por uma simulação executada no próprio navegador, que monta um texto padronizado a partir da pergunta, com atraso artificial, sem consultar nenhum modelo de linguagem; a interface a identifica como simulação, sem fontes e sem regras de segurança. A tela tem, portanto, função demonstrativa e não constitui, em sua forma atual, o Cenário B da avaliação comparativa (Seção 3.6.2).
 
-**Figura 8 – Tela de comparação em seu estado inicial**
+**Figura 10 – Tela de comparação em seu estado inicial**
 
 ![Tela de comparação em seu estado inicial](figuras/fig-comparacao.png)
 
 Fonte: Elaboração própria (2026).
 
-O painel interno, acessível por endereço próprio e sem ligação a partir da área pública, reúne ferramentas de inspeção: uma tela de consulta com seleção de perfil, entre profissional de saúde, paciente e desenvolvedor, e registro de *feedback*; um explorador de recuperação, que executa apenas a busca, com escolha do modo (híbrido, vetorial ou textual), dos parâmetros *top-K* e *top-N* e de filtros por metadados, e exibe as pontuações anteriores à reordenação (Figura 9); um navegador da base de conhecimento, com documentos, trechos paginados e filtráveis e o detalhe de cada trecho; e um painel de avaliação, que carrega e executa as perguntas de referência e apresenta os indicadores descritos na Seção 3.5.
+O painel interno, acessível por endereço próprio e sem ligação a partir da área pública, reúne ferramentas de inspeção: uma tela de consulta com seleção de perfil, entre profissional de saúde, paciente e desenvolvedor, e com o mesmo componente de avaliação das respostas; um explorador de recuperação, que executa apenas a busca, com escolha do modo (híbrido, vetorial ou textual), dos parâmetros *top-K* e *top-N* e de filtros por metadados, e exibe as pontuações anteriores à reordenação (Figura 11); um navegador da base de conhecimento, com documentos, trechos paginados e filtráveis e o detalhe de cada trecho; e um painel de avaliação, que carrega e executa as perguntas de referência e apresenta os indicadores descritos na Seção 3.5.
 
-**Figura 9 – Formulário do explorador de recuperação no painel interno**
+**Figura 11 – Formulário do explorador de recuperação no painel interno**
 
 ![Formulário do explorador de recuperação no painel interno](figuras/fig-explorador.png)
 
 Fonte: Elaboração própria (2026).
 
-A interface foi implementada em React com TypeScript. A área pública utiliza Tailwind CSS, com um conjunto próprio de padrões visuais, e o painel interno, CSS Modules. As requisições à API são gerenciadas com TanStack Query, e a navegação, com React Router. A interface não possui autenticação, o que é compatível com seu uso como protótipo local, mas precisará ser revisto caso o sistema seja disponibilizado a participantes externos.
+A interface foi implementada em React com TypeScript. A área pública utiliza Tailwind CSS, com um conjunto próprio de padrões visuais, e o painel interno, CSS Modules. As requisições à API são gerenciadas com TanStack Query, e a navegação, com React Router. As telas restritas são protegidas por um componente que consulta a sessão atual na API antes de exibir o conteúdo; essa proteção orienta a navegação, mas o controle de acesso efetivo é o da API (Seção 4.6.1). Não há distinção de perfis de acesso: todos os usuários cadastrados acessam também o painel interno e, por meio dele, as rotas de carga da base e de execução da avaliação técnica.
 
-## 4.7 VERIFICAÇÃO DO SOFTWARE
+## 4.8 VERIFICAÇÃO DO SOFTWARE
 
-O servidor conta com 13 testes automatizados, escritos com Vitest e agrupados conforme o Quadro 10. Os testes utilizam dublês em memória para o repositório e para o provedor de *embeddings*, o que permite verificar a lógica do *pipeline* de forma rápida e determinística.
+O sistema conta com 69 testes automatizados, escritos com Vitest: 53 no servidor e 16 na interface, agrupados conforme o Quadro 10. No servidor, os testes utilizam dublês em memória para o repositório e para o provedor de *embeddings*, o que permite verificar a lógica do *pipeline*, da autenticação e do registro das avaliações de forma rápida e determinística; parte deles exercita a API por requisições HTTP, verificando, por exemplo, o bloqueio das rotas sem sessão e os atributos do *cookie*. Seis testes de integração são executados contra um banco de dados PostgreSQL com as migrações do projeto aplicadas, quando o endereço de um banco de testes é configurado, e são ignorados na ausência dele. Na interface, os testes utilizam a biblioteca Testing Library e simulam as respostas da API.
 
-**Quadro 10 – Testes automatizados do servidor**
+**Quadro 10 – Testes automatizados do servidor e da interface**
 
-| Grupo | Comportamentos verificados | Testes |
-|---|---|---|
-| Esquemas e ingestão | Validação dos metadados com valores padrão; ingestão de JSONL com *embeddings* simulados | 2 |
-| Intenção e risco clínico | Classificação de intenção por palavras-chave; risco muito alto para dose, gestação, criança, reação e talidomida | 2 |
-| Segurança | Recusa sem trechos; recusa fora do escopo; bloqueio de prescrição individualizada | 3 |
-| Recuperação e consulta | Recuperação de trechos de diagnóstico e de tratamento; resposta com fontes; baciloscopia negativa não exclui hanseníase; não orientar a interrupção da PQT em reação; talidomida e gestação como alto risco | 6 |
+| Camada | Grupo | Comportamentos verificados | Testes |
+|---|---|---|---|
+| Servidor | Esquemas e ingestão | Validação dos metadados com valores padrão; ingestão de JSONL com *embeddings* simulados | 2 |
+| Servidor | Intenção e risco clínico | Classificação de intenção por palavras-chave; risco muito alto para dose, gestação, criança, reação e talidomida | 2 |
+| Servidor | Segurança | Recusa sem trechos; recusa fora do escopo; bloqueio de prescrição individualizada | 3 |
+| Servidor | Recuperação e consulta | Recuperação de trechos de diagnóstico e de tratamento; resposta com fontes; baciloscopia negativa não exclui hanseníase; não orientar a interrupção da PQT em reação; talidomida e gestação como alto risco | 6 |
+| Servidor | Senhas e sessões | *Hash* com sal aleatório e rejeição de formatos inválidos; recusa de senha errada, de usuário inexistente e de conta desativada; expiração e encerramento da sessão; limite de tentativas | 10 |
+| Servidor | Registro das avaliações | Notas inteiras de 0 a 10 e comentário opcional; vínculo com usuário, conversa e resposta; uma avaliação por usuário e resposta; recusa de respostas de outros usuários e de perguntas; falha na gravação; reaproveitamento apenas da conversa do próprio usuário | 12 |
+| Servidor | API HTTP | Rotas bloqueadas sem sessão ou com *cookie* inválido; login com *cookie* HttpOnly sem exposição do *token*; *logout*; limite de tentativas; consulta e avaliação vinculadas ao usuário da sessão; respostas de erro de validação, de conflito e de falha interna | 12 |
+| Servidor | Integração com PostgreSQL | Cadastro manual por SQL seguido de login; restrições de formato do usuário e da senha; gravação e unicidade das avaliações; faixa da nota e coerência entre resposta e conversa; bloqueio da exclusão em cascata | 6 |
+| Interface | Login e rotas protegidas | Redirecionamento sem sessão; erro de credenciais e indisponibilidade da API; retorno à página de origem; *logout*; sessão expirada | 7 |
+| Interface | Componente de avaliação | Escala de 0 a 10; envio com e sem comentário; falha e nova tentativa; avaliação repetida; dispensa e reabertura; exigência de nota | 7 |
+| Interface | Avaliação na consulta | Exibição após cada resposta concluída; avaliações independentes para respostas da mesma conversa | 2 |
 
-Fonte: Elaboração própria (2026), com base no arquivo `tests/core.test.ts`.
+Fonte: Elaboração própria (2026), com base nos arquivos de teste do servidor e da interface.
 
-Em 20 de outubro de 2026, os 13 testes foram executados com sucesso, e a análise estática e a compilação do servidor e da interface foram concluídas sem erros. A verificação tem, entretanto, limites relevantes: como os testes não utilizam o PostgreSQL, não exercitam as consultas SQL do pgvector e da busca textual, nem os provedores reais de *embeddings* e de geração; tampouco cobrem os acionamentos indevidos por subcadeias descritos na Seção 4.5.4. Um exemplo concreto dessa limitação ocorreu durante o desenvolvimento: as consultas de busca selecionavam todas as colunas da tabela de trechos, incluindo a coluna vetorial, que o Prisma não consegue converter em consultas diretas, e falhavam contra o banco de dados real, embora todos os testes passassem. A falha foi corrigida com a seleção explícita das colunas, e a lacuna motivou a recomendação de testes de integração com o banco de dados (Capítulo 6).
+Em 23 de outubro de 2026, os 47 testes do servidor que não dependem do banco de dados e os 16 testes da interface foram executados com sucesso, assim como a análise estática e a compilação das duas camadas. Na mesma data, os seis testes de integração foram executados com sucesso contra o PGlite, distribuição do PostgreSQL executada no próprio processo de teste, com as extensões pgvector e pgcrypto e com as migrações do projeto aplicadas a um banco de dados vazio. Na véspera, em 22 de outubro, o fluxo completo de cadastro manual, login, consulta, avaliação, dispensa da avaliação e *logout* foi verificado em navegador, com o servidor e a interface em execução sobre o mesmo tipo de banco.
+
+A verificação tem, entretanto, limites relevantes. Os testes não exercitam as consultas SQL do pgvector e da busca textual, nem os provedores reais de *embeddings* e de geração; os testes de integração cobrem apenas as tabelas de usuários, sessões e avaliações, e o PGlite, embora derive do PostgreSQL, não reproduz o ambiente em que o sistema seria publicado. Tampouco há testes para os acionamentos indevidos por subcadeias descritos na Seção 4.5.4. Um exemplo concreto dessa limitação ocorreu durante o desenvolvimento: as consultas de busca selecionavam todas as colunas da tabela de trechos, incluindo a coluna vetorial, que o Prisma não consegue converter em consultas diretas, e falhavam contra o banco de dados real, embora todos os testes passassem. A falha foi corrigida com a seleção explícita das colunas, e a lacuna motivou a recomendação de testes de integração com o banco de dados (Capítulo 6), até aqui implementados apenas para a autenticação e o registro das avaliações.
 
 # 5 RESULTADOS
 
@@ -854,7 +911,7 @@ Este capítulo reúne três tipos de resultado, que não devem ser confundidos. 
 
 ## 5.1 ARTEFATO DESENVOLVIDO
 
-O sistema desenvolvido atende, em sua versão atual, aos requisitos apresentados no Quadro 5. O servidor implementa oito módulos de domínio, expõe as rotas descritas no Quadro 6, persiste oito entidades e executa o *pipeline* completo de consulta, com classificação de intenção, estimativa de risco, busca híbrida, reordenação, limiar de relevância, camada de segurança com oito regras de recusa, geração com indicação de fontes e registro para auditoria. A base inicial contém 15 trechos em 11 documentos lógicos, e o conjunto de referência, 25 perguntas. A interface web oferece a consulta pública, a tela de comparação, em caráter demonstrativo, e o painel interno de inspeção.
+O sistema desenvolvido atende, em sua versão atual, aos requisitos apresentados no Quadro 5. O servidor implementa oito módulos de domínio e um módulo de autenticação, expõe as rotas descritas no Quadro 6, persiste dez entidades e executa o *pipeline* completo de consulta, com classificação de intenção, estimativa de risco, busca híbrida, reordenação, limiar de relevância, camada de segurança com oito regras de recusa, geração com indicação de fontes e registro para auditoria. O acesso exige login, e cada resposta pode ser avaliada pelo usuário em escala de 0 a 10, com registro vinculado ao usuário, à conversa e à resposta. A base inicial contém 15 trechos em 11 documentos lógicos, e o conjunto de referência, 25 perguntas. A interface web oferece a página inicial, a tela de login, a consulta com avaliação das respostas, a tela de comparação, em caráter demonstrativo, e o painel interno de inspeção. O sistema conta com 69 testes automatizados, executados com sucesso (Seção 4.8).
 
 Em relação aos objetivos específicos, os objetivos b e c foram atendidos na versão atual, e o objetivo a, parcialmente, pois a base ainda não foi construída a partir de documentos oficiais. Esses resultados respondem à QP1 no plano do projeto, uma vez que as decisões de arquitetura que permitem indicar a origem das respostas e recusar situações de risco estão implementadas e descritas no Capítulo 4; sua efetividade, contudo, só poderá ser avaliada com a base definitiva e com as avaliações descritas no Capítulo 3.
 
@@ -954,7 +1011,7 @@ O resultado da avaliação técnica preliminar converge com a observação de Xi
 
 ## 6.3 IMPLICAÇÕES PARA O PROJETO DE SISTEMAS RAG EM SAÚDE
 
-O desenvolvimento do sistema permite registrar observações de engenharia que independem da avaliação comparativa. A primeira é que limiares e pesos de recuperação não são transferíveis entre provedores de *embeddings*: valores definidos sem calibração podem fazer o sistema recusar todas as perguntas, como ocorreu na avaliação preliminar, ou responder com base em trechos pouco relacionados, no caso oposto. A segunda é que regras de segurança implementadas em código são verificáveis por testes, mas exigem cuidado na correspondência de padrões, como mostram os acionamentos indevidos por subcadeias descritos na Seção 4.5.4; testes que contemplem frases comuns da língua, e não apenas os termos-alvo, ajudariam a detectar esse tipo de falha. A terceira é que testes com dublês em memória, embora úteis, não substituem testes de integração com o banco de dados e com os provedores reais, como evidenciou a falha nas consultas vetoriais descrita na Seção 4.7. A quarta é que a rastreabilidade depende de dados de origem completos: sem documento oficial e página associados a cada trecho, a citação de fontes indica a origem dentro da base, mas não permite ao usuário conferir a informação no documento original.
+O desenvolvimento do sistema permite registrar observações de engenharia que independem da avaliação comparativa. A primeira é que limiares e pesos de recuperação não são transferíveis entre provedores de *embeddings*: valores definidos sem calibração podem fazer o sistema recusar todas as perguntas, como ocorreu na avaliação preliminar, ou responder com base em trechos pouco relacionados, no caso oposto. A segunda é que regras de segurança implementadas em código são verificáveis por testes, mas exigem cuidado na correspondência de padrões, como mostram os acionamentos indevidos por subcadeias descritos na Seção 4.5.4; testes que contemplem frases comuns da língua, e não apenas os termos-alvo, ajudariam a detectar esse tipo de falha. A terceira é que testes com dublês em memória, embora úteis, não substituem testes de integração com o banco de dados e com os provedores reais, como evidenciou a falha nas consultas vetoriais descrita na Seção 4.8. A quarta é que a rastreabilidade depende de dados de origem completos: sem documento oficial e página associados a cada trecho, a citação de fontes indica a origem dentro da base, mas não permite ao usuário conferir a informação no documento original. A quinta é que dados de pesquisa coletados pelo próprio sistema exigem garantias de integridade semelhantes às dos registros de auditoria: no registro das avaliações, a obtenção do usuário a partir da sessão, as restrições no banco de dados e a ausência de exclusão em cascata foram adotadas para que uma avaliação não possa ser atribuída a outra pessoa, duplicada ou perdida em uma operação de limpeza (Seção 4.6.2).
 
 [ANALISAR APÓS A CONSOLIDAÇÃO DAS AVALIAÇÕES: implicações adicionais decorrentes da avaliação comparativa.]
 
@@ -972,15 +1029,19 @@ d) a avaliação técnica foi executada apenas com *embeddings* determinísticos
 
 e) os pesos da busca híbrida e o limiar mínimo de relevância não foram calibrados;
 
-f) os testes automatizados não exercitam o banco de dados nem os provedores reais de *embeddings* e de geração;
+f) os testes automatizados não exercitam as consultas vetoriais e textuais no banco de dados nem os provedores reais de *embeddings* e de geração, e os testes de integração com o banco cobrem apenas usuários, sessões e avaliações;
 
 g) o componente de fragmentação de documentos não está integrado à ingestão;
 
 h) a tela de comparação utiliza uma simulação local no lugar de um modelo de linguagem sem recuperação;
 
-i) o modo semântico depende de um serviço externo, ao qual as perguntas são enviadas, e o sistema não possui autenticação nem aviso, na interface, contra a inserção de dados pessoais;
+i) o modo semântico depende de um serviço externo, ao qual as perguntas são enviadas, e a interface não exibe aviso contra a inserção de dados pessoais nas perguntas;
 
-j) o sistema não foi validado clinicamente e não se destina ao uso assistencial.
+j) não há perfis de acesso: todos os usuários cadastrados acessam o painel interno e as rotas de carga da base e de execução da avaliação técnica, e o limite de tentativas de login é mantido na memória de cada instância do servidor;
+
+k) a avaliação registrada pelo sistema é uma nota global de 0 a 10, sem as dimensões previstas para o instrumento da avaliação comparativa, e se aplica apenas a respostas geradas no momento da consulta;
+
+l) o sistema não foi validado clinicamente e não se destina ao uso assistencial.
 
 [PREENCHER APÓS A AVALIAÇÃO COMPARATIVA: limitações da avaliação com participantes, como o tamanho e a composição da amostra, o desenho adotado e as condições de aplicação.]
 
@@ -988,7 +1049,7 @@ j) o sistema não foi validado clinicamente e não se destina ao uso assistencia
 
 [ATUALIZAR APÓS A AVALIAÇÃO COMPARATIVA: as considerações a seguir refletem o estágio atual do trabalho e deverão ser revistas após a conclusão das avaliações.]
 
-Este trabalho teve como objetivo desenvolver um sistema de apoio informacional à decisão clínica em hanseníase baseado na arquitetura RAG e avaliar suas respostas tecnicamente e em comparação com as de um modelo de linguagem sem recuperação. No estágio atual, foi desenvolvido o NexoHansen, um protótipo que combina classificação de intenção, estimativa de risco clínico, recuperação híbrida, reordenação por critérios clínicos, regras de segurança aplicadas antes da geração, geração restrita aos trechos recuperados com indicação das fontes e registro das consultas para auditoria, acompanhado de uma interface web para consulta e inspeção.
+Este trabalho teve como objetivo desenvolver um sistema de apoio informacional à decisão clínica em hanseníase baseado na arquitetura RAG e avaliar suas respostas tecnicamente e em comparação com as de um modelo de linguagem sem recuperação. No estágio atual, foi desenvolvido o NexoHansen, um protótipo que combina classificação de intenção, estimativa de risco clínico, recuperação híbrida, reordenação por critérios clínicos, regras de segurança aplicadas antes da geração, geração restrita aos trechos recuperados com indicação das fontes e registro das consultas para auditoria, acompanhado de uma interface web para consulta e inspeção. Para preparar a avaliação com participantes, o acesso foi restrito a usuários cadastrados, e cada resposta pode ser avaliada em escala de 0 a 10, com registro vinculado ao usuário, à conversa e à resposta.
 
 Do ponto de vista da Engenharia de Software, a principal contribuição desta etapa é a documentação de uma arquitetura em que a rastreabilidade e a segurança são tratadas como requisitos de projeto, e não apenas como instruções ao modelo de linguagem. A avaliação técnica preliminar mostrou que essa arquitetura prioriza a recusa quando a evidência recuperada é considerada insuficiente e revelou a dependência entre o provedor de *embeddings*, a escala das pontuações e o limiar de resposta, aspecto que deve orientar a calibração de sistemas semelhantes.
 
@@ -996,7 +1057,7 @@ O trabalho tem limitações que condicionam o alcance de suas conclusões, discu
 
 [PREENCHER APÓS A AVALIAÇÃO COMPARATIVA: síntese dos resultados da avaliação com participantes, resposta à questão de pesquisa e contribuições confirmadas, sem atribuir benefícios clínicos ao sistema.]
 
-Como trabalhos futuros, recomendam-se a validação do conteúdo e das respostas por profissionais de saúde; a substituição das regras baseadas em padrões textuais por mecanismos mais robustos, mantendo a possibilidade de verificação; a integração do componente de fragmentação à ingestão de documentos; a adoção de métricas automáticas de avaliação da geração, como as do RAGAS; a realização de testes de integração com o banco de dados e com os provedores reais; a avaliação de modelos de *embedding* adequados a textos clínicos em português; e a implementação de autenticação e de avisos sobre dados pessoais, necessários para qualquer disponibilização mais ampla do sistema.
+Como trabalhos futuros, recomendam-se a validação do conteúdo e das respostas por profissionais de saúde; a substituição das regras baseadas em padrões textuais por mecanismos mais robustos, mantendo a possibilidade de verificação; a integração do componente de fragmentação à ingestão de documentos; a adoção de métricas automáticas de avaliação da geração, como as do RAGAS; a ampliação dos testes de integração às consultas vetoriais e textuais e aos provedores reais; a avaliação de modelos de *embedding* adequados a textos clínicos em português; e a implementação de avisos sobre dados pessoais e de perfis de acesso que separem participantes e administradores, necessários para qualquer disponibilização mais ampla do sistema.
 
 # REFERÊNCIAS
 
@@ -1059,6 +1120,8 @@ OPENAI. **New embedding models and API updates**. [*S. l.*], 25 jan. 2024. Dispo
 PALMEIRA, Iací Proença *et al.* Percepção de pacientes com hanseníase sobre suas necessidades humanas básicas alteradas: indícios para o autocuidado. **Revista de Pesquisa Cuidado é Fundamental Online**, v. 12, p. 319–325, 2020. DOI: 10.9789/2175-5361.rpcfo.v12.7069.
 
 PEFFERS, Ken *et al.* A design science research methodology for information systems research. **Journal of Management Information Systems**, v. 24, n. 3, p. 45–77, 2007. DOI: 10.2753/MIS0742-1222240302.
+
+PERCIVAL, Colin; JOSEFSSON, Simon. **The scrypt password-based key derivation function**. RFC 7914. [*S. l.*]: Internet Engineering Task Force, ago. 2016. Disponível em: https://www.rfc-editor.org/rfc/rfc7914. Acesso em: 23 out. 2026.
 
 POSTGRESQL GLOBAL DEVELOPMENT GROUP. **PostgreSQL documentation**: controlling text search. [*S. l.*], 2026. Disponível em: https://www.postgresql.org/docs/current/textsearch-controls.html. Acesso em: 20 out. 2026.
 

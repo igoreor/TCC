@@ -7,19 +7,62 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Documento de origem. Os metadados bibliográficos vêm do manifesto (knowledge-base/manifest.json)
+// e aparecem nas fontes das respostas. `active = false` tira o documento da busca sem apagá-lo:
+// é o caso da base inicial de desenvolvimento, que não é documento oficial.
 model Document {
-  id          String   @id @default(uuid()) @db.Uuid
-  documentId  String   @unique @map("document_id")
-  title       String
-  description String?
-  sourceType  String?  @map("source_type")
-  sourceName  String?  @map("source_name")
-  version     String?
-  chunks      Chunk[]
-  createdAt   DateTime @default(now()) @map("created_at")
-  updatedAt   DateTime @updatedAt @map("updated_at")
+  id              String         @id @default(uuid()) @db.Uuid
+  documentId      String         @unique @map("document_id")
+  title           String
+  description     String?
+  sourceType      String?        @map("source_type")
+  sourceName      String?        @map("source_name")
+  version         String?
+  shortTitle      String?        @map("short_title")
+  institution     String?
+  authorship      String?
+  publicationYear Int?           @map("publication_year")
+  edition         String?
+  isbn            String?
+  language        String?
+  jurisdiction    String?
+  documentType    String?        @map("document_type")
+  status          String         @default("vigente")
+  active          Boolean        @default(true)
+  officialUrl     String?        @map("official_url")
+  downloadUrl     String?        @map("download_url")
+  fileSha256      String?        @map("file_sha256")
+  pageCount       Int?           @map("page_count")
+  license         String?
+  notes           String?
+  ingestedAt      DateTime?      @map("ingested_at")
+  chunks          Chunk[]
+  ingestionRuns   IngestionRun[]
+  createdAt       DateTime       @default(now()) @map("created_at")
+  updatedAt       DateTime       @updatedAt @map("updated_at")
 
   @@map("documents")
+}
+
+// Histórico de cada ingestão de documento: quantos trechos foram gerados, reaproveitados e
+// removidos, com que modelo de embeddings e a partir de qual arquivo.
+model IngestionRun {
+  id              String    @id @default(uuid()) @db.Uuid
+  documentId      String    @map("document_id")
+  document        Document  @relation(fields: [documentId], references: [documentId], onDelete: Cascade)
+  status          String
+  embeddingModel  String    @map("embedding_model")
+  fileSha256      String?   @map("file_sha256")
+  chunksTotal     Int       @default(0) @map("chunks_total")
+  chunksEmbedded  Int       @default(0) @map("chunks_embedded")
+  chunksUnchanged Int       @default(0) @map("chunks_unchanged")
+  chunksRemoved   Int       @default(0) @map("chunks_removed")
+  error           String?
+  startedAt       DateTime  @default(now()) @map("started_at")
+  finishedAt      DateTime? @map("finished_at")
+
+  @@index([documentId])
+  @@map("ingestion_runs")
 }
 
 model Chunk {
@@ -50,11 +93,26 @@ model Chunk {
   keywords                 Json                    @default("[]")
   entities                 Json                    @default("[]")
   metadata                 Json
+  // Localização no documento: páginas do PDF (para o link #page) e números impressos (para a citação).
+  chunkIndex               Int?                    @map("chunk_index")
+  sectionPath              Json                    @default("[]") @map("section_path")
+  pageStart                Int?                    @map("page_start")
+  pageEnd                  Int?                    @map("page_end")
+  pageLabelStart           String?                 @map("page_label_start")
+  pageLabelEnd             String?                 @map("page_label_end")
+  // Hash do texto indexado e modelo que gerou o embedding: a busca só compara vetores do mesmo
+  // modelo, e a reindexação pula trechos que não mudaram.
+  contentHash              String?                 @map("content_hash")
+  embeddingModel           String?                 @map("embedding_model")
+  // Texto sem acentos usado na busca textual (índice GIN criado na migração).
+  searchText               String?                 @map("search_text")
   embedding                Unsupported("vector(1536)")?
   createdAt                DateTime                @default(now()) @map("created_at")
   updatedAt                DateTime                @updatedAt @map("updated_at")
 
   @@index([documentId])
+  @@index([documentId, chunkIndex])
+  @@index([embeddingModel])
   @@index([clinicalPhase])
   @@index([informationType])
   @@index([clinicalCriticality])

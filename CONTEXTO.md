@@ -141,6 +141,16 @@ Brief do usuário: dar identidade própria à interface pública (ainda com cara
 - **Comparação**: mesmo formato de registro; no celular, um seletor de coluna substitui as duas metades de ~200px.
 - **Verificação**: Playwright (instalado no scratchpad da sessão, usando o Chromium já baixado em `ms-playwright`) contra o Vite em execução, com `/api/chat/ask` interceptado no formato exato do backend, porque o Docker estava parado. Desktop, notebook, tablet e celular; movimento reduzido; foco de teclado; build, lint (`--deny-warnings`) e testes do backend (13/13) limpos.
 
+### 11. Login e avaliação das respostas para a pesquisa (2026-10-22)
+
+Brief do usuário: autenticação por usuário e senha (usuários cadastrados manualmente no banco, sem CRUD) e um feedback de 0 a 10 com comentário opcional, ao fim de cada resposta da IA, gravado para a pesquisa.
+
+- **Sessão**: token opaco aleatório em cookie `HttpOnly`/`SameSite=Lax` (`nexohansen_sessao`), com só o SHA-256 dele na tabela `auth_sessions`, para o logout encerrar a sessão de fato. Validade de 8 h (`AUTH_SESSION_TTL_HOURS`). Senhas com scrypt nativo do Node (`src/modules/auth/password.ts`, sem dependência nova). Limite de tentativas em memória por IP + usuário. Todo `/api/*` exige login, exceto `/api/auth/*`; `/health` segue público.
+- **Banco** (migrations `20261022133500_users_and_auth_sessions`, `20261022133600_chat_sessions_owner` e `20261022133700_research_feedback`): tabelas `users` e `auth_sessions`; `chat_sessions.user_id` (nulo só nas conversas antigas); `feedback` reestruturada com `user_id`, `session_id` e `message_id` obrigatórios, chave única `(message_id, user_id)`, chave estrangeira composta `(message_id, session_id)` e `CHECK` de nota 0–10, comentário até 1000, formato do usuário e hash começando por `scrypt$`. A coluna `reviewed_by_specialist` saiu (não era usada pela interface). A migration para de propósito se houver feedback antigo (1–5), em vez de apagá-lo.
+- **Cadastro manual**: `npm run auth:hash-password -- --username <usuario>` imprime o hash e o `INSERT` para colar no psql (ver `backend/README.md`).
+- **Frontend**: `/login`; a landing segue pública, e a gaveta, `/comparacao` e `/dashboard/*` exigem login (sem sessão, vai ao login e volta para onde estava; a gaveta reabre com a pergunta pedida). Componente único `components/feedback/ResponseFeedback.tsx`, usado na gaveta e no chat do painel (substituiu o `FeedbackWidget` de estrelas). O estado da avaliação fica na própria mensagem, então sobrevive ao fechamento da gaveta. A conversa salva do painel passou a ser por usuário e é apagada no logout.
+- **Verificação**: o Docker deste projeto foi parado durante a sessão, então as migrations e os testes de integração rodaram num PostgreSQL em processo (PGlite com pgvector e pgcrypto, no scratchpad), via `prisma migrate deploy`. Backend com 53 testes, sendo 6 de integração com banco via `TEST_DATABASE_URL`. Frontend com 16 testes (Vitest + Testing Library). Um roteiro Playwright ponta a ponta percorreu o fluxo completo: login, consulta, avaliação, painel e logout, com o usuário criado pelo procedimento manual.
+
 ## Estado atual
 
 - Backend e frontend funcionam de ponta a ponta contra Postgres real (visto na seção 3-5 acima).
@@ -172,6 +182,9 @@ Abrir `http://localhost:5173`. A landing (`/`) é a home agora — o dashboard a
 5. O conteúdo da landing (`frontend/src/features/landing/content.ts`) espelha dados do backend — mensagens de recusa, sumário da base, pesos da busca. Se o backend mudar, atualizar à mão (cada bloco cita o arquivo de origem).
 6. Backlog já documentado pelo próprio projeto (autenticação, painel admin, upload multipart de JSONL, revisão por especialista, testes de integração com Postgres real, versionamento da base, etc.) — ver seção "Próximos passos recomendados" em [backend/docs/arquitetura-backend-rag-hanseniase.md](backend/docs/arquitetura-backend-rag-hanseniase.md).
 7. `backend/.env` local está com `PORT=3336`, mas o proxy do Vite (`frontend/vite.config.ts`) aponta para 3333: com esse `.env`, o frontend não alcança o backend. Alinhar um dos dois antes da próxima demonstração.
+8. **Aplicar a migration de autenticação no banco local** (`npm run prisma:deploy` em `backend/`, com o contêiner de pé) e cadastrar os usuários. Sem isso, o backend novo não sobe contra o banco atual.
+9. Todos os usuários autenticados têm o mesmo nível de acesso: qualquer um alcança `/dashboard` e as rotas de seed, ingestão e execução da avaliação. Antes de abrir para participantes externos, avaliar um papel de administrador.
+10. O texto do TCC (Quadro de requisitos RF09, Seções 4.3, 4.5.6, 4.6 e 4.7, Figura 3 e limitação "sem autenticação") descreve o feedback antigo de 1 a 5 e a ausência de login: precisa ser atualizado.
 
 ## Referências rápidas
 

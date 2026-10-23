@@ -79,6 +79,46 @@ export function AnswerText({
             </p>
           )
         }
+        if (block.kind === 'heading') {
+          return (
+            <h4 key={index} className="pt-1 font-serif text-ui font-semibold text-ink">
+              {renderInline(block.tokens)}
+            </h4>
+          )
+        }
+        if (block.kind === 'table') {
+          return (
+            <div key={index} className="overflow-x-auto">
+              <table className="w-full border-collapse text-small">
+                {block.header.length ? (
+                  <thead>
+                    <tr>
+                      {block.header.map((cell, cellIndex) => (
+                        <th
+                          key={cellIndex}
+                          className="border-b border-rule-control px-2 py-1.5 text-left align-bottom font-semibold"
+                        >
+                          {renderInline(cell)}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                ) : null}
+                <tbody>
+                  {block.rows.map((row, rowIndex) => (
+                    <tr key={rowIndex} className="border-b border-rule">
+                      {row.map((cell, cellIndex) => (
+                        <td key={cellIndex} className="px-2 py-1.5 align-top">
+                          {renderInline(cell)}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )
+        }
         const ListTag = block.ordered ? 'ol' : 'ul'
         return (
           <ListTag

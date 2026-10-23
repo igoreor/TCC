@@ -8,11 +8,14 @@ interface EvaluationSummaryCardsProps {
 }
 
 export function EvaluationSummaryCards({ result }: EvaluationSummaryCardsProps) {
+  const overall = result.summary?.overall ?? {}
+  const percent = (value: number | null | undefined) => (typeof value === 'number' ? formatPercent(value) : '—')
   const items = [
     { label: 'Perguntas', value: String(result.total) },
-    { label: 'Chunk ideal encontrado', value: String(result.matchedIdealChunkCount) },
-    { label: 'Recall aproximado', value: formatPercent(result.idealChunkRecallApproximation) },
-    { label: 'Fallbacks acionados', value: String(result.fallbackCount) },
+    { label: 'Comportamento esperado', value: percent(overall.correctBehaviour) },
+    { label: 'Recall@8 da evidência', value: formatPercent(result.idealChunkRecallApproximation) },
+    { label: 'Fatos-chave na resposta', value: percent(overall.keyFactCoverage) },
+    { label: 'Recusas', value: String(result.fallbackCount) },
   ]
 
   return (

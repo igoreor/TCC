@@ -20,7 +20,7 @@ export function EvaluationResultsTable({ result }: EvaluationResultsTableProps) 
         <thead>
           <tr>
             <th>Pergunta</th>
-            <th>Chunk ideal?</th>
+            <th>Evidência recuperada?</th>
             <th>Risco</th>
             <th>Fallback</th>
             <th>Chunks retornados</th>

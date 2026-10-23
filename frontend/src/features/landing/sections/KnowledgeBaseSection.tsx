@@ -46,9 +46,8 @@ export function KnowledgeBaseSection() {
                     <span aria-hidden="true" className="hidden h-0.75 flex-1 bg-leader text-rule-strong sm:block" />
                   </p>
                   <p className="mt-1 text-small text-ink-soft">{topic.detail}</p>
-                  <p className="mt-1.5 break-words font-mono text-micro text-ink-faint">{topic.chunks.join(' · ')}</p>
                 </div>
-                <span className="text-right font-mono text-meta tabular-nums text-ink">{topic.chunks.length}</span>
+                <span className="text-right font-mono text-meta tabular-nums text-ink">{topic.chunks}</span>
               </li>
             ))}
           </ol>

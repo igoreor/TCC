@@ -21,7 +21,7 @@ export function DocumentsList({ onSelectDocument, selectedDocumentId }: Document
     return (
       <EmptyState
         title="Nenhum documento na base"
-        description='Use o botão "Popular base (seed)" acima para carregar os 15 chunks iniciais sobre hanseníase.'
+        description='Use o botão "Carregar base oficial" acima, ou o comando npm run kb:ingest no backend.'
       />
     )
   }
@@ -33,10 +33,10 @@ export function DocumentsList({ onSelectDocument, selectedDocumentId }: Document
           <tr>
             <th>Documento</th>
             <th>Título</th>
-            <th>Fonte</th>
-            <th>Versão</th>
-            <th>Chunks</th>
-            <th>Atualizado</th>
+            <th>Instituição e ano</th>
+            <th>Situação</th>
+            <th>Trechos</th>
+            <th>Indexado</th>
           </tr>
         </thead>
         <tbody>
@@ -49,11 +49,20 @@ export function DocumentsList({ onSelectDocument, selectedDocumentId }: Document
               <td>
                 <code>{doc.documentId}</code>
               </td>
-              <td>{doc.title}</td>
-              <td>{doc.sourceName ?? '—'}</td>
-              <td>{doc.version ?? '—'}</td>
+              <td>
+                {doc.officialUrl ? (
+                  <a href={doc.officialUrl} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
+                    {doc.title}
+                  </a>
+                ) : (
+                  doc.title
+                )}
+                {doc.language === 'en' ? ' (inglês)' : ''}
+              </td>
+              <td>{[doc.institution, doc.publicationYear].filter(Boolean).join(', ') || '—'}</td>
+              <td title={doc.notes ?? undefined}>{doc.active ? doc.status : `${doc.status} (fora da busca)`}</td>
               <td>{doc._count.chunks}</td>
-              <td>{formatDateTime(doc.updatedAt)}</td>
+              <td>{formatDateTime(doc.ingestedAt ?? doc.updatedAt)}</td>
             </tr>
           ))}
         </tbody>

@@ -8,9 +8,14 @@ export type InlineToken =
 export type AnswerBlock =
   | { kind: 'paragraph'; lines: InlineToken[][] }
   | { kind: 'list'; ordered: boolean; items: InlineToken[][] }
+  | { kind: 'heading'; tokens: InlineToken[] }
+  | { kind: 'table'; header: InlineToken[][]; rows: InlineToken[][][] }
 
 const BULLET = /^[-*•]\s+/
 const NUMBERED = /^\d+[.)]\s+/
+const HEADING = /^#{1,4}\s+/
+const TABLE_ROW = /^\|.*\|$/
+const TABLE_SEPARATOR = /^:?-{3,}:?$/
 const INLINE = /(\*\*[^*]+\*\*|\[[^\]\s]+\])/g
 
 /** O backend anexa o aviso clínico ao fim de toda resposta; a nota de segurança já o exibe. */
@@ -62,17 +67,61 @@ function parseInline(text: string, sources: SourceCitation[]): InlineToken[] {
   return tokens
 }
 
-/** Parágrafos, listas com marcador ou numeradas e negrito — o suficiente para respostas de LLM e extrativas. */
+function tableCells(line: string): string[] {
+  return line
+    .replace(/^\||\|$/g, '')
+    .split('|')
+    .map((cell) => cell.trim())
+}
+
+/** Tabela em Markdown: a segunda linha, de traços, separa o cabeçalho das demais. */
+function parseTable(lines: string[], sources: SourceCitation[]): AnswerBlock {
+  const rows = lines.map(tableCells)
+  const hasHeader = rows.length > 1 && rows[1].every((cell) => TABLE_SEPARATOR.test(cell))
+  const header = hasHeader ? rows[0] : []
+  const body = hasHeader ? rows.slice(2) : rows
+  return {
+    kind: 'table',
+    header: header.map((cell) => parseInline(cell, sources)),
+    rows: body.map((row) => row.map((cell) => parseInline(cell, sources))),
+  }
+}
+
+/** Parágrafos, subtítulos, listas, tabelas e negrito — o suficiente para respostas de LLM e extrativas. */
 export function parseAnswer(content: string, sources: SourceCitation[]): AnswerBlock[] {
   const blocks: AnswerBlock[] = []
 
   for (const section of content.split(/\n\s*\n/)) {
     let paragraph: InlineToken[][] = []
     let list: { ordered: boolean; items: InlineToken[][] } | null = null
+    let table: string[] | null = null
+
+    const flushText = () => {
+      if (paragraph.length > 0) blocks.push({ kind: 'paragraph', lines: paragraph })
+      if (list) blocks.push({ kind: 'list', ...list })
+      paragraph = []
+      list = null
+    }
 
     for (const rawLine of section.split('\n')) {
       const line = rawLine.trim()
       if (!line) continue
+
+      if (TABLE_ROW.test(line)) {
+        flushText()
+        table = table ?? []
+        table.push(line)
+        continue
+      }
+      if (table) {
+        blocks.push(parseTable(table, sources))
+        table = null
+      }
+      if (HEADING.test(line)) {
+        flushText()
+        blocks.push({ kind: 'heading', tokens: parseInline(line.replace(HEADING, ''), sources) })
+        continue
+      }
 
       const marker = BULLET.test(line) ? BULLET : NUMBERED.test(line) ? NUMBERED : null
       if (marker) {
@@ -96,8 +145,8 @@ export function parseAnswer(content: string, sources: SourceCitation[]): AnswerB
       }
     }
 
-    if (paragraph.length > 0) blocks.push({ kind: 'paragraph', lines: paragraph })
-    if (list) blocks.push({ kind: 'list', ...list })
+    if (table) blocks.push(parseTable(table, sources))
+    flushText()
   }
 
   return blocks

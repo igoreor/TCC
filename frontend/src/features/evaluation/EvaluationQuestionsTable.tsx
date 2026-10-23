@@ -32,8 +32,8 @@ export function EvaluationQuestionsTable() {
           <tr>
             <th>Pergunta</th>
             <th>Resposta esperada</th>
-            <th>Risco</th>
-            <th>Chunks ideais</th>
+            <th>Categoria</th>
+            <th>Evidências</th>
           </tr>
         </thead>
         <tbody>

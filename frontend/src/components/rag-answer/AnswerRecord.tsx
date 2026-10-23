@@ -1,4 +1,3 @@
-import { useMemo } from 'react'
 import type { ChatAskResult, SafetyInfo, SourceCitation } from '../../api/types'
 import { AnswerStatus } from './AnswerStatus'
 import { AnswerText } from './AnswerText'
@@ -22,10 +21,6 @@ export function AnswerRecord({ content, sources, safety, retrieval }: AnswerReco
   const highlight = useSourceHighlight()
   const refused = safety.fallbackTriggered
   const text = stripDisclaimer(content, safety.disclaimer)
-  const scores = useMemo(
-    () => new Map(retrieval?.chunks.map((chunk) => [chunk.chunk_id, chunk.score] as const)),
-    [retrieval],
-  )
 
   return (
     <article className="@container">
@@ -50,7 +45,6 @@ export function AnswerRecord({ content, sources, safety, retrieval }: AnswerReco
           sources={sources}
           variant={refused ? 'retrieved' : 'cited'}
           idPrefix={highlight.idPrefix}
-          scores={scores}
           activeSource={highlight.active}
           onSourceHover={highlight.setActive}
           listRef={highlight.listRef}

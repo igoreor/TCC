@@ -15,10 +15,15 @@ export function SourcesList({ sources }: SourcesListProps) {
       <ul>
         {sources.map((source) => (
           <li key={source.chunk_id}>
-            <Link to={`/dashboard/base/chunks/${encodeURIComponent(source.chunk_id)}`}>{source.title}</Link>
-            {' — '}
-            {source.section}
-            {source.source_page ? `, p. ${source.source_page}` : ''}
+            [{source.index}] {source.reference}{' '}
+            {source.url ? (
+              <a href={source.url} target="_blank" rel="noreferrer">
+                abrir documento
+              </a>
+            ) : null}
+            {' · '}
+            <Link to={`/dashboard/base/chunks/${encodeURIComponent(source.chunk_id)}`}>trecho {source.chunk_id}</Link>
+            {source.verified === false ? ' · relação não confirmada automaticamente' : ''}
           </li>
         ))}
       </ul>

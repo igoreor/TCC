@@ -16,6 +16,7 @@ export type IntentCategory =
   | 'contacts_surveillance'
   | 'psychosocial'
   | 'safety'
+  | 'general'
   | 'out_of_scope'
 
 export interface ChunkDTO {
@@ -64,12 +65,44 @@ export interface SearchFilters {
   safetyLevel?: string
 }
 
+/** Documento de origem de uma fonte, como consta do manifesto da base. */
+export interface SourceDocument {
+  title: string
+  short_title: string | null
+  institution: string | null
+  year: number | null
+  edition: string | null
+  isbn: string | null
+  language: string | null
+  jurisdiction: string | null
+  document_type: string | null
+  status: string
+  official_url: string | null
+  notes: string | null
+}
+
+/** Fonte de uma resposta: a referência documental, com o trecho para conferência. */
 export interface SourceCitation {
+  /** Número usado no texto da resposta. */
+  index: number
   chunk_id: string
   document_id: string
+  /** Seção mais específica do trecho. */
   title: string
   section: string
+  section_path: string[]
   source_page: number | null
+  /** Páginas impressas ("44–45"), quando o documento tem numeração confiável. */
+  page_label: string | null
+  pdf_page: number | null
+  pdf_page_end: number | null
+  document: SourceDocument | null
+  /** PDF oficial aberto na página do trecho. */
+  url: string | null
+  reference: string
+  excerpt: string
+  /** Verificação automática de que o trecho sustenta a frase que o cita; nulo quando não citado. */
+  verified: boolean | null
 }
 
 export interface DocumentDTO {
@@ -80,6 +113,18 @@ export interface DocumentDTO {
   sourceType: string | null
   sourceName: string | null
   version: string | null
+  shortTitle: string | null
+  institution: string | null
+  publicationYear: number | null
+  edition: string | null
+  language: string | null
+  jurisdiction: string | null
+  status: string
+  active: boolean
+  officialUrl: string | null
+  downloadUrl: string | null
+  notes: string | null
+  ingestedAt: string | null
   createdAt: string
   updatedAt: string
   _count: { chunks: number }
@@ -131,7 +176,14 @@ export interface ChatAskResult {
   safety: SafetyInfo
   retrieval: {
     intent: IntentCategory
-    chunks: Array<{ chunk_id: string; score: number }>
+    /** Pergunta interpretada no contexto da conversa. */
+    standaloneQuestion?: string
+    isFollowUp?: boolean
+    searchQueries?: string[]
+    broadened?: boolean
+    /** O modelo não indicou quais trechos sustentam o texto. */
+    citationsMissing?: boolean
+    chunks: Array<{ chunk_id: string; score: number; document_id?: string; page_start?: number | null; page_end?: number | null }>
   }
 }
 
@@ -139,8 +191,10 @@ export interface EvaluationQuestion {
   id: string
   question: string
   expectedAnswer: string
+  /** Referências da evidência esperada (documento e páginas do PDF). */
   idealChunks: string[]
-  riskLevel: ClinicalRiskLevel
+  /** Categoria da pergunta no conjunto de referência. */
+  riskLevel: string
   correctnessCriteria: string
   criticalErrors: string
   createdAt: string
@@ -148,11 +202,17 @@ export interface EvaluationQuestion {
 
 export interface EvaluationSeedResult {
   created: number
+  removed?: number
   total: number
 }
 
 export interface EvaluationRunResultItem {
   question: string
+  category?: string
+  expected?: string
+  correctBehaviour?: boolean
+  keyFactCoverage?: number | null
+  citationPrecision?: number | null
   matchedIdealChunk: boolean
   returnedChunks: string[]
   fallbackTriggered: boolean
@@ -164,6 +224,7 @@ export interface EvaluationRunResult {
   matchedIdealChunkCount: number
   idealChunkRecallApproximation: number
   fallbackCount: number
+  summary?: { overall: Record<string, number | null> }
   results: EvaluationRunResultItem[]
 }
 

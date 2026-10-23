@@ -9,11 +9,11 @@ export function SeedKnowledgeButton() {
   return (
     <div className={styles.seedBox}>
       <Button variant="secondary" onClick={() => mutation.mutate()} disabled={mutation.isPending}>
-        {mutation.isPending ? 'Carregando base seed...' : 'Popular base (seed)'}
+        {mutation.isPending ? 'Indexando documentos...' : 'Carregar base oficial'}
       </Button>
       {mutation.isSuccess ? (
         <span className={styles.seedResult}>
-          {mutation.data.inserted} inseridos / {mutation.data.total} linhas processadas
+          {mutation.data.total} trechos indexados ({mutation.data.inserted} com embedding novo)
         </span>
       ) : null}
       {mutation.isError ? <ErrorState error={mutation.error} /> : null}

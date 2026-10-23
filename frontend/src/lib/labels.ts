@@ -10,6 +10,7 @@ const intentLabels: Record<string, string> = {
   contacts_surveillance: 'Contatos e vigilância',
   psychosocial: 'Psicossocial',
   safety: 'Segurança do sistema',
+  general: 'Geral',
   out_of_scope: 'Fora de escopo',
 }
 
@@ -48,13 +49,10 @@ const retrievalModeLabels: Record<string, string> = {
 // Códigos de `safety.reason` emitidos por backend/src/modules/safety/safety.service.ts
 const fallbackReasonLabels: Record<string, string> = {
   out_of_scope: 'Fora do tema',
-  pregnancy: 'Gestação',
-  child: 'Criança',
   emergency: 'Sinais de urgência',
-  severe_reaction: 'Reação grave',
-  definitive_diagnosis: 'Diagnóstico definitivo',
-  prescription: 'Prescrição ou dose',
-  insufficient_evidence: 'Evidência insuficiente',
+  definitive_diagnosis: 'Diagnóstico de caso específico',
+  prescription: 'Prescrição individual',
+  insufficient_evidence: 'Sem evidência nos documentos',
 }
 
 function labelOr(map: Record<string, string>, key: string): string {

@@ -151,6 +151,13 @@ Brief do usuário: autenticação por usuário e senha (usuários cadastrados ma
 - **Frontend**: `/login`; a landing segue pública, e a gaveta, `/comparacao` e `/dashboard/*` exigem login (sem sessão, vai ao login e volta para onde estava; a gaveta reabre com a pergunta pedida). Componente único `components/feedback/ResponseFeedback.tsx`, usado na gaveta e no chat do painel (substituiu o `FeedbackWidget` de estrelas). O estado da avaliação fica na própria mensagem, então sobrevive ao fechamento da gaveta. A conversa salva do painel passou a ser por usuário e é apagada no logout.
 - **Verificação**: o Docker deste projeto foi parado durante a sessão, então as migrations e os testes de integração rodaram num PostgreSQL em processo (PGlite com pgvector e pgcrypto, no scratchpad), via `prisma migrate deploy`. Backend com 53 testes, sendo 6 de integração com banco via `TEST_DATABASE_URL`. Frontend com 16 testes (Vitest + Testing Library). Um roteiro Playwright ponta a ponta percorreu o fluxo completo: login, consulta, avaliação, painel e logout, com o usuário criado pelo procedimento manual.
 
+### 12. Preparação para deploy na Vercel (2026-10-22)
+
+- Dois projetos Vercel a partir do mesmo repositório: a API (Root Directory `backend`, preset Express) e o site (`frontend`, preset Vite). O banco fica na Neon, com pgvector, pela integração da Vercel. O passo a passo está em [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md).
+- `backend/index.ts` é a entrada da função: sem ela, a Vercel escolhia `src/app.ts`, que só exporta a fábrica `createApp`, e a função quebrava. O `postinstall` roda `prisma generate`. `NODE_ENV` passa a ser produção quando a variável `VERCEL` existe, porque definir `NODE_ENV` no projeto faria o build pular as devDependencies.
+- `frontend/vercel.json` repassa `/api` e `/health` ao backend pela mesma origem, para o cookie de sessão funcionar, e devolve `index.html` nas rotas do React. É preciso trocar `SEU-BACKEND` pela URL da API.
+- **Verificação**: `vercel build` local nos dois projetos e smoke test do artefato da função (login, chat e feedback) contra Postgres, só com `VERCEL=1`.
+
 ## Estado atual
 
 - Backend e frontend funcionam de ponta a ponta contra Postgres real (visto na seção 3-5 acima).
@@ -185,6 +192,7 @@ Abrir `http://localhost:5173`. A landing (`/`) é a home agora — o dashboard a
 8. **Aplicar a migration de autenticação no banco local** (`npm run prisma:deploy` em `backend/`, com o contêiner de pé) e cadastrar os usuários. Sem isso, o backend novo não sobe contra o banco atual.
 9. Todos os usuários autenticados têm o mesmo nível de acesso: qualquer um alcança `/dashboard` e as rotas de seed, ingestão e execução da avaliação. Antes de abrir para participantes externos, avaliar um papel de administrador.
 10. O texto do TCC (Quadro de requisitos RF09, Seções 4.3, 4.5.6, 4.6 e 4.7, Figura 3 e limitação "sem autenticação") descreve o feedback antigo de 1 a 5 e a ausência de login: precisa ser atualizado.
+11. Deploy: seguir [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md). O primeiro passo é criar o projeto da API e trocar `SEU-BACKEND` em `frontend/vercel.json` pela URL dela.
 
 ## Referências rápidas
 

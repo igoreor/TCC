@@ -140,7 +140,18 @@ export const FOLLOW_UP_OPENINGS = [
   'e em',
   'tambem',
   'entao',
-  'e sobre'
+  'e sobre',
+  // aceite de uma oferta da resposta anterior ("Posso apresentar os esquemas..." → "sim, descreva")
+  'sim',
+  'pode',
+  'claro',
+  'ok',
+  'quero',
+  'por favor',
+  'descreva',
+  'explique',
+  'detalhe',
+  'mostre'
 ] as const;
 
 /** Referências ao assunto anterior. */

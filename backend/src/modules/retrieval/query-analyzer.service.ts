@@ -44,8 +44,39 @@ const DOMAIN_CONSTANT_WORDS = new Set([
   'pessoa',
   'pessoas'
 ]);
+// Palavras de conversa e de instrução ("sim, descreva o que tem na base"): não são o assunto, e
+// na busca textual encontram trechos sem relação ("com base nesta Estratégia").
+const CONVERSATIONAL_WORDS = new Set([
+  'sim',
+  'ok',
+  'pode',
+  'claro',
+  'quero',
+  'favor',
+  'descreva',
+  'descrever',
+  'explique',
+  'explicar',
+  'detalhe',
+  'detalhar',
+  'mostre',
+  'mostrar',
+  'fale',
+  'diga',
+  'base',
+  'documento',
+  'documentos',
+  'informacao',
+  'informacoes',
+  'resposta',
+  'responda'
+]);
 const MAX_QUERIES = 4;
 const MAX_LEXICAL_TERMS = 30;
+
+function subjectWords(text: string) {
+  return contentWords(text).filter((word) => !CONVERSATIONAL_WORDS.has(word));
+}
 
 function startsWithOpening(question: string) {
   const normalized = normalizeText(question).replace(/^[^\p{L}]+/u, '');
@@ -65,7 +96,7 @@ export function glossaryExpansions(text: string) {
 
 function lexicalTermsFor(texts: string[]) {
   const words = texts
-    .flatMap((text) => contentWords(text))
+    .flatMap((text) => subjectWords(text))
     .filter((word) => !DOMAIN_CONSTANT_WORDS.has(word));
   return [...new Set(words)].slice(0, MAX_LEXICAL_TERMS);
 }
@@ -115,9 +146,10 @@ export class QueryAnalyzerService {
       isFollowUp && previousQuestion
         ? `${question} (continuação da pergunta anterior: "${previousQuestion}")`
         : question;
+    // Na continuação, a busca usa o assunto das duas perguntas, sem as palavras de conversa.
     const primary =
       isFollowUp && previousQuestion
-        ? `${question} ${contentWords(previousQuestion).join(' ')}`
+        ? [...subjectWords(question), ...subjectWords(previousQuestion)].join(' ')
         : question;
     const expansions = glossaryExpansions(primary);
     const searchQueries = unique([

@@ -214,6 +214,24 @@ describe('análise da pergunta', () => {
     expect(analysis.lexicalTerms).not.toContain('hanseniase');
   });
 
+  it('entende o aceite de uma oferta da resposta anterior como continuação do assunto', () => {
+    const analysis = analyzer.analyzeHeuristically('sim descreva o que tem na base', [
+      { role: 'user', content: 'Qual dose de rifampicina devo prescrever?' },
+      { role: 'assistant', content: 'Não indico dose nem conduta para um paciente específico...' }
+    ]);
+    expect(analysis.isFollowUp).toBe(true);
+    expect(analysis.inDomain).toBe(true);
+    expect(analysis.lexicalTerms).toEqual(expect.arrayContaining(['dose', 'rifampicina']));
+    // o aceite não é um pedido de prescrição: segue para a resposta com os esquemas documentados
+    const decision = new SafetyService().evaluate({
+      question: 'sim descreva o que tem na base',
+      inDomain: analysis.inDomain,
+      hasEvidence: true,
+      riskLevel: 'Muito alto'
+    });
+    expect(decision.fallbackTriggered).toBe(false);
+  });
+
   it('usa o modelo quando disponível e cai para a análise local se ele falhar', async () => {
     const llm: LlmClient = {
       model: 'teste',

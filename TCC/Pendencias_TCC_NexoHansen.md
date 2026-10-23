@@ -1,6 +1,21 @@
 # Pendências do TCC — NexoHansen
 
-Complemento da versão revisada `TCC_NexoHansen_Versao_Revisada.docx` (20/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+Complemento da versão revisada `TCC_NexoHansen_Versao_Revisada.docx` (20/10/2026, atualizada em 23/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+
+## Atualização de 23/10/2026
+
+O texto foi atualizado para refletir o login e a avaliação das respostas, implementados em 22/10/2026:
+
+- **Seção 4.6, nova.** Trata do controle de acesso e da avaliação das respostas. A antiga 4.6 (Interface web) passou a 4.7, e a antiga 4.7 (Verificação) passou a 4.8.
+- **Quadros.** Quadro 5 com RF09 reescrito, RF10 e RNF04. Quadro 6 com as rotas `/api/auth/*`. Quadro 10 com os 69 testes (53 no servidor e 16 na interface).
+- **Figuras.**
+  - Figuras 2, 3 e 4 refeitas: arquitetura com o módulo de autenticação, modelo de dados com dez entidades e fluxo com a verificação da sessão.
+  - Figuras 5 (componente de avaliação) e 8 (tela de login) são novas.
+  - As demais capturas foram refeitas.
+- **Capítulo 3.** Ajustes nas Seções 3.2, 3.4, 3.6.5, 3.6.6, 3.6.7 e 3.6.9 e no Quadro 2.
+- **Capítulos 5 a 7.** Ajustes na Seção 5.1, nas Seções 6.3 e 6.4 (limitações f e i reescritas, j e k novas) e no Capítulo 7.
+- **Resumo e abstract.** Incluem o login, a avaliação de 0 a 10 e os 69 testes.
+- **Referências.** Nova referência: Percival e Josefsson (2016), RFC 7914, sobre o scrypt, conferida em rfc-editor.org.
 
 ## Marcadores no documento
 
@@ -9,7 +24,7 @@ Os pontos em aberto estão destacados em amarelo no DOCX. Para encontrá-los, us
 | Marcador | Qtd. | Quando resolver |
 |---|---|---|
 | `[PREENCHER ...]` | 39 | Após a etapa indicada no próprio marcador: protocolo, curadoria, nova execução técnica ou coleta |
-| `[DEFINIR ...]` | 6 | Decisões de método, junto com o orientador |
+| `[DEFINIR ...]` | 7 | Decisões de método, junto com o orientador |
 | `[ANALISAR ...]` | 5 | Após a consolidação das avaliações |
 | `[ATUALIZAR ...]` | 3 | Resumo, abstract e considerações finais, ao fim do trabalho |
 | `[VERIFICAR ...]` | 3 | Com o orientador ou com o CEP |
@@ -46,16 +61,21 @@ Sem estes itens, a pesquisa não pode ser concluída. A lista está na ordem rec
    - Rodar `POST /api/evaluation/run` e exportar os resultados por pergunta, que hoje não são armazenados. Eles devem entrar em um apêndice.
    - Testar valores de `MIN_RETRIEVAL_SCORE` e, se for o caso, dos pesos 0,65/0,35. Registrar a configuração usada.
    - Onde fica: Seções 3.5, 5.2 e 6.1 (QP2), além do `[INSERIR TABELA…]` da Seção 5.2.
-5. **Implementar o Cenário B real.** A tela `/comparacao` monta a resposta "genérica" por simulação no navegador. Ela precisa ser substituída por chamadas reais a um modelo de linguagem, com os parâmetros do Quadro 3 registrados. Onde fica: Seções 3.6.2 (item a) e 4.6, Figura 8.
+5. **Implementar o Cenário B real.** A tela `/comparacao` monta a resposta "genérica" por simulação no navegador. Ela precisa ser substituída por chamadas reais a um modelo de linguagem, com os parâmetros do Quadro 3 registrados. Onde fica: Seções 3.6.2 (item a) e 4.7, Figura 10.
 6. **Definir o protocolo da avaliação comparativa.** Envolve os itens a–g da Seção 3.6.2 e as Seções 3.6.3 a 3.6.8, o Apêndice E e as medidas contra as ameaças da Seção 3.7.
 7. **Verificar o enquadramento ético antes de qualquer coleta.** Isso deve ser feito com o orientador e o CEP da UPE, com base nas Resoluções CNS 466/2012 e 510/2016 e no Ofício Circular 17/2022/CONEP. Inclui preparar o TCLE ou instrumento equivalente. O texto não afirma dispensa nem aprovação.
-8. **Proteger os dados antes de expor o sistema a participantes.** A interface precisa de um aviso contra a inserção de dados pessoais. Precisa também informar que as perguntas são registradas e, no modo com chave, enviadas a um serviço externo (LGPD). Avaliar ainda o uso de autenticação ou de um ambiente controlado.
+8. **Proteger os dados antes de expor o sistema a participantes.** A autenticação já foi implementada (Seção 4.6). Ainda falta:
+   - um aviso, na interface, contra a inserção de dados pessoais;
+   - informar que as perguntas ficam registradas e vinculadas ao usuário e que, no modo com chave, são enviadas a um serviço externo (LGPD);
+   - se o sistema for publicado na Vercel com banco na Neon, informar também a transferência internacional de dados (Seção 3.6.9);
+   - criar as contas dos participantes com códigos não identificáveis, sem nome nem *e-mail* (Seção 3.6.7);
+   - separar perfis de acesso: hoje, todo usuário cadastrado entra também no painel interno (`/dashboard`) e nas rotas de carga e de avaliação técnica (Seção 6.4, item j).
 9. **Pedir a revisão externa das perguntas de avaliação.** As 25 perguntas de referência foram escritas junto com a base, o que favorece o Cenário A (Seção 3.6.4).
-10. **Gerar e guardar as respostas dos dois cenários antes da coleta.** As respostas não devem ser geradas em tempo real durante a sessão (Seção 3.6.5).
+10. **Gerar e guardar as respostas dos dois cenários antes da coleta.** As respostas não devem ser geradas em tempo real durante a sessão (Seção 3.6.5). O componente de avaliação de 0 a 10 avalia apenas respostas geradas na hora e só do Cenário A. Se a interface do sistema for o meio de aplicação, ela precisa ser adaptada para apresentar respostas pré-geradas dos dois cenários.
 11. **Redigir os resultados depois da coleta.**
     - Preencher as Seções 5.3, 6.1 (QP3), 6.2, 6.3, 6.4 e 7, o Resumo e o Abstract.
     - Atualizar a Figura 1 e o Quadro 2. A fonte editável está em `figuras/editaveis/fig-etapas.svg`.
-    - Refazer a captura da Figura 8 se a tela de comparação mudar.
+    - Refazer a captura da Figura 10 se a tela de comparação mudar.
 
 ## 2. Decisões para o orientador
 
@@ -64,6 +84,7 @@ Sem estes itens, a pesquisa não pode ser concluída. A lista está na ordem rec
 - **Abordagem.** Definir se a pesquisa será quantitativa, qualitativa ou mista (Seção 3.1).
 - **Cenário B.** Escolher entre o mesmo modelo sem recuperação e um assistente de propósito geral. Definir também o formato de apresentação das respostas, o cegamento e o desenho (intra ou entre participantes).
 - **Análise.** Definir os métodos estatísticos, o nível de significância e o procedimento de análise qualitativa (Seção 3.6.8).
+- **Nota de 0 a 10.** Decidir se a nota global registrada pelo sistema entra no instrumento, por exemplo como avaliação geral ao lado das dimensões do Quadro 4 (Seção 3.6.6).
 - **Revisões complementares.** Decidir sobre o uso de métricas automáticas (RAGAS) e sobre a revisão das respostas e da base por um profissional de saúde.
 - **Nomes.** Indicar o(a) coorientador(a) (o campo estava em branco no rascunho) e os membros da banca.
 - **Entrada do Ministério da Saúde.** A lista usa "MINISTÉRIO DA SAÚDE", como no TCC de exemplo. A NBR 6023:2018 indica a entrada pela jurisdição ("BRASIL. Ministério da Saúde"). Se essa forma for adotada, as citações passam a ser "(Brasil, 2022a)", "(Brasil, 2022b)" e assim por diante, porque já existem outras entradas "Brasil, 2022".
@@ -119,7 +140,7 @@ Estas obras deixaram de ser citadas porque as seções foram reescritas ou conde
 - **Arquitetura.** O rascunho previa Flutter e microsserviços em Spring Boot. O que foi implementado é React com TypeScript (Vite) e um servidor Node.js com TypeScript (Express) em módulos, sobre PostgreSQL e pgvector.
 - **Ingestão.** O rascunho descrevia fragmentação e indexação de PDFs do PCDT. A ingestão atual recebe JSONL com trechos prontos.
 - **Avaliação.** O rascunho prometia RAGAS com metas (fidelidade > 0,95, relevância > 0,85 e outras), sem fonte para os valores. Nada disso está implementado. O sistema mede a aproximação da revocação por trecho ideal e o número de recusas.
-- **LGPD.** O rascunho afirmava que a interface orientaria a anonimização. Não há aviso nem autenticação.
+- **LGPD.** O rascunho afirmava que a interface orientaria a anonimização. Não há aviso. A autenticação foi implementada em 22/10/2026.
 - **Resultados.** O rascunho afirmava que as respostas seriam mais precisas que as de modelos sem RAG. Não há evidência disso antes da avaliação comparativa.
 - **Palavras-chave.** Havia uma segunda linha de palavras-chave do TCC de exemplo ("prognóstico; GIF; aprendizado de máquina"). Ela foi removida.
 - **Elementos pré-textuais.** A dedicatória, os agradecimentos e a epígrafe reproduzem os do TCC de exemplo e estão marcados para reescrita, por risco de plágio. O nome da madrinha aparece como "Syanra" na dedicatória e "Synara" nos agradecimentos.
@@ -130,6 +151,8 @@ Estas obras deixaram de ser citadas porque as seções foram reescritas ou conde
 - **Título dos documentos.** Na ingestão, `Document.title` recebe o título do último trecho ingerido de cada documento, e não o título do documento-fonte.
 - **Documentação do risco.** A seção 18 de `docs/arquitetura-backend-rag-hanseniase.md` atribui risco médio a perguntas educativas, de transmissão e de epidemiologia. O código decide pela intenção e eleva o risco para "muito alto" quando algum trecho recuperado é crítico. A Seção 4.5.1 do TCC descreve o código.
 - **Descrição da tela de comparação.** O `CONTEXTO.md` a apresenta como "RAG vs. LLM genérico", mas o lado genérico é simulado.
+- **Migrações no banco local.** As três migrações do login e da avaliação ainda precisam ser aplicadas ao banco de desenvolvimento (`npm run prisma:deploy` em `backend/`, com o contêiner do PostgreSQL ativo). A migração da avaliação é interrompida se houver avaliações antigas, de 1 a 5, para não apagá-las.
+- **Publicação.** O repositório está pronto para a Vercel (`DEPLOY-VERCEL.md`), mas a publicação não foi feita. O texto do TCC registra isso no fim da Seção 4.2.
 
 ## 5. Ordem sugerida para concluir
 
@@ -146,6 +169,8 @@ As datas devem ser definidas com o orientador.
 - **Legendas.** A numeração usa campos SEQ, mas as menções no texto ("Figura 4", "Quadro 9") são texto simples. Ao inserir uma figura ou um quadro novo, use Inserir legenda e revise as menções.
 - **Google Docs.** O sumário pode ser atualizado no próprio Google Docs. As listas de figuras, quadros e tabelas podem virar texto fixo. Nesse caso, faça a revisão final no Word.
 - **Figuras.**
-  - As capturas de tela (Figuras 5 a 9) mostram a interface em 20/10/2026, sempre no estado inicial, sem respostas simuladas.
+  - As capturas de tela (Figuras 5 a 11) mostram a interface em 23/10/2026, em estado inicial e sem respostas simuladas. A Figura 6 (página inicial) foi capturada sem login.
+  - As Figuras 9 a 11 foram capturadas com o usuário de teste `usuario.teste`, criado pelo procedimento manual em um banco descartável.
+  - A Figura 5 mostra só o componente de avaliação, depois da escolha de uma nota, sem o texto da resposta.
   - Os diagramas (Figuras 1 a 4) têm fonte editável em SVG na pasta `figuras/editaveis/`.
-  - A Figura 6 é o exemplo ilustrativo da página inicial, identificado como tal na própria interface.
+  - A Figura 7 é o exemplo ilustrativo da página inicial, identificado como tal na própria interface.

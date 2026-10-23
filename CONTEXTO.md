@@ -161,7 +161,7 @@ Brief do usuário: autenticação por usuário e senha (usuários cadastrados ma
 ## Estado atual
 
 - Backend e frontend funcionam de ponta a ponta contra Postgres real (visto na seção 3-5 acima).
-- Repositório git em `projetoTcc/.git`, branch `main`, remote `origin` → `github.com/igoreor/TCC.git`, **1 commit à frente do `origin/main`** (não enviado ainda).
+- Repositório git em `projetoTcc/.git`, branch `main`, remote `origin` → `github.com/igoreor/TCC.git`. O `main` está igual ao `origin/main`; as mudanças novas vão em branches com pull request.
 - `git config user.name` **global** não está definido nesta máquina (só localmente neste repo, herdado do commit que o usuário já tinha feito). Isso pode dar problema em outros repositórios git nesta máquina que não tenham a config local própria.
 - `backend/.env` existe localmente (não versionado) com a porta 5433 e sem `OPENAI_API_KEY`.
 
@@ -182,8 +182,8 @@ Abrir `http://localhost:5173`. A landing (`/`) é a home agora — o dashboard a
 
 ## Decisões pendentes / próximos passos
 
-1. **Commitar o redesign do frontend** (seção 8) — ainda está tudo só no working tree, nada commitado desde `f1043c6`.
-2. **Dar push** pra `origin/main` (o commit `f1043c6` já estava pendente disso antes do redesign também).
+1. ~~Commitar o redesign do frontend~~ — feito em `ba9c111`.
+2. ~~Dar push pra `origin/main`~~ — feito; o trabalho novo segue em branches com pull request.
 3. **Decidir sobre `OPENAI_API_KEY` / `MIN_RETRIEVAL_SCORE`** — ver seção 4, é o achado mais importante para o TCC.
 4. Lembrar de restaurar `chunks_embedding_cosine_idx` e `chunks_metadata_gin_idx` depois de qualquer `prisma migrate dev` futuro (ver seção 3, item 5).
 5. O conteúdo da landing (`frontend/src/features/landing/content.ts`) espelha dados do backend — mensagens de recusa, sumário da base, pesos da busca. Se o backend mudar, atualizar à mão (cada bloco cita o arquivo de origem).
@@ -191,7 +191,7 @@ Abrir `http://localhost:5173`. A landing (`/`) é a home agora — o dashboard a
 7. `backend/.env` local está com `PORT=3336`, mas o proxy do Vite (`frontend/vite.config.ts`) aponta para 3333: com esse `.env`, o frontend não alcança o backend. Alinhar um dos dois antes da próxima demonstração.
 8. **Aplicar a migration de autenticação no banco local** (`npm run prisma:deploy` em `backend/`, com o contêiner de pé) e cadastrar os usuários. Sem isso, o backend novo não sobe contra o banco atual.
 9. Todos os usuários autenticados têm o mesmo nível de acesso: qualquer um alcança `/dashboard` e as rotas de seed, ingestão e execução da avaliação. Antes de abrir para participantes externos, avaliar um papel de administrador.
-10. O texto do TCC (Quadro de requisitos RF09, Seções 4.3, 4.5.6, 4.6 e 4.7, Figura 3 e limitação "sem autenticação") descreve o feedback antigo de 1 a 5 e a ausência de login: precisa ser atualizado.
+10. ~~Atualizar o texto do TCC para o login e a avaliação de 0 a 10.~~ Feito em 23/10/2026: nova Seção 4.6, Figuras 2 a 5 e 8, Quadros 5, 6 e 10, limitações e resumo. O detalhe está em [TCC/Pendencias_TCC_NexoHansen.md](TCC/Pendencias_TCC_NexoHansen.md).
 11. Deploy: seguir [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md). O primeiro passo é criar o projeto da API e trocar `SEU-BACKEND` em `frontend/vercel.json` pela URL dela.
 
 ## Referências rápidas

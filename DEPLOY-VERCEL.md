@@ -52,7 +52,9 @@ Em **Settings › Environment Variables** do projeto `nexohansen-api`:
 | `DATABASE_URL` | já criada pela Neon | não altere |
 | `OPENAI_API_KEY` | sua chave | opcional; sem ela, embeddings determinísticos e resposta extrativa |
 | `AUTH_SESSION_TTL_HOURS` | `8` | opcional; duração do login em horas |
-| `MIN_RETRIEVAL_SCORE` | `0.65` | opcional; ajuste ao valor calibrado na avaliação técnica |
+| `MIN_VECTOR_SIMILARITY` | vazio | opcional; similaridade mínima do melhor trecho (padrão 0,25 com a OpenAI) |
+
+Se o projeto tiver `MIN_RETRIEVAL_SCORE` de uma versão anterior, pode removê-la: ela é ignorada.
 
 Não defina:
 
@@ -74,14 +76,16 @@ npm run prisma:deploy
 # Se a API usar OpenAI em produção, defina a MESMA chave antes do seed
 $env:OPENAI_API_KEY = "sk-..."
 
-# Carrega os 15 trechos da base e as 25 perguntas de referência
+# Indexa os documentos oficiais (328 trechos) e o conjunto de referência (32 perguntas)
 npm run prisma:seed
 
 # Limpa as variáveis desta janela, para não apontar o desenvolvimento local para o banco de produção
 Remove-Item Env:DATABASE_URL, Env:OPENAI_API_KEY -ErrorAction SilentlyContinue
 ```
 
-> **Importante:** o seed calcula os embeddings com o provedor disponível no momento em que roda. Se a API em produção usa `OPENAI_API_KEY`, o seed precisa rodar com a mesma chave; se não usa, rode o seed sem ela. Misturar os dois provedores torna a busca vetorial sem sentido.
+> **Importante:** o seed calcula os embeddings com o provedor disponível no momento em que roda. Se a API em produção usa `OPENAI_API_KEY`, o seed precisa rodar com a mesma chave; se não usa, rode o seed sem ela. A busca só compara vetores do mesmo modelo: trechos indexados com outro provedor ficam fora da busca vetorial.
+
+Para reindexar depois de mudar os documentos, rode `npm run kb:ingest` com a mesma conexão e a mesma chave: só os trechos novos ou alterados geram embedding. Detalhes em `backend/knowledge-base/README.md`.
 
 ## 5. Cadastrar os usuários de produção
 
@@ -147,10 +151,11 @@ Para testar, clique em **Entrar**, faça o login, abra a consulta, envie uma per
 | O login funciona, mas a tela volta para o login | o site não está usando o repasse de `/api`: confira o endereço no `frontend/vercel.json` e se `VITE_API_BASE_URL` está vazia |
 | 404 ao recarregar uma página como `/comparacao` | falta a última regra (`/(.*)` → `/index.html`) do `frontend/vercel.json` |
 | A busca não encontra os trechos esperados | o seed e a API usam provedores de embedding diferentes (veja o aviso do passo 4) |
+| Toda pergunta é respondida com "Não encontrei, nos documentos oficiais da base..." | a base oficial não foi indexada nesse banco (passo 4) |
 
 ## Limites desta configuração
 
-- **Duração das funções:** no plano Hobby, cada requisição pode durar até 5 minutos. A execução da avaliação técnica (25 perguntas) precisa caber nesse tempo.
+- **Duração das funções:** no plano Hobby, cada requisição pode durar até 5 minutos. A execução da avaliação pelo painel (32 perguntas, cada uma com duas chamadas ao modelo) pode passar desse tempo; prefira `npm run eval:rag` no seu computador, apontando para o banco de produção (o comando não grava nada).
 - **Limite de tentativas de login:** fica em memória de cada instância da função, então protege menos do que em um servidor único.
 - **Acesso:** todos os usuários cadastrados acessam também o painel interno (`/dashboard`) e as rotas de seed e de avaliação. Cadastre apenas quem deve ter esse acesso.
 - **Dados:** as perguntas, as respostas e as avaliações dos participantes ficam no banco da Neon, por padrão nos Estados Unidos. Registre isso no protocolo da pesquisa e no TCLE, por se tratar de transferência internacional de dados (LGPD).

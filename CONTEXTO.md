@@ -158,6 +158,18 @@ Brief do usuário: autenticação por usuário e senha (usuários cadastrados ma
 - `frontend/vercel.json` repassa `/api` e `/health` ao backend pela mesma origem, para o cookie de sessão funcionar, e devolve `index.html` nas rotas do React. É preciso trocar `SEU-BACKEND` pela URL da API.
 - **Verificação**: `vercel build` local nos dois projetos e smoke test do artefato da função (login, chat e feedback) contra Postgres, só com `VERCEL=1`.
 
+### 13. Refatoração do RAG com documentos oficiais (2026-10-23)
+
+Diagnóstico completo, mudanças e resultados em [backend/docs/rag-diagnostico-e-refatoracao.md](backend/docs/rag-diagnostico-e-refatoracao.md). Em resumo:
+
+- **Causa principal das recusas**: limiar fixo de 0,65 sobre a soma ponderada de pontuações em escalas diferentes, com busca textual que exigia todos os termos (`plainto_tsquery`). Confirmado no banco de produção: "Baciloscopia negativa exclui hanseníase?" foi recusada sem nenhum trecho.
+- **Base oficial** (`backend/knowledge-base/`): PCDT 2022 e Estratégia Nacional 2024–2030 (Ministério da Saúde) e três documentos da OMS, processados com `pdftotext` em 328 trechos com seção e página. A base inicial de 15 trechos ficou no banco, fora da busca.
+- **Recuperação**: pergunta lida no domínio da hanseníase por padrão, continuações completadas com a conversa, glossário de siglas, busca textual sem acentos (OU), fusão RRF, segunda busca antes de recusar, índice HNSW, vetores comparados só dentro do mesmo modelo.
+- **Regras** por palavra inteira; recusa só para diagnóstico ou prescrição de caso específico, assunto alheio e ausência de evidência. Crianças, gestação e reações são respondidas com base nos documentos.
+- **Fontes** como referências documentais (instituição, documento, ano, seção, página, link para a página do PDF e trecho original), com verificação automática das citações.
+- **Avaliação**: conjunto de 32 perguntas com evidência conferida (`npm run eval:rag`). Em modo local (sem chave da OpenAI), o comportamento esperado subiu de 15,6% para 93,8% e o Recall@5, de 0 para 0,84.
+- **Achados nos documentos**: o PCDT descreve só a imunoprofilaxia com BCG para contatos, enquanto a OMS recomenda dose única de rifampicina; para um único nervo comprometido, o PCDT aceita classificar como PB e a OMS, como MB. O ISBN do PCDT é 978-65-5993-397-6 (a referência do TCC traz 978-65-5993-387-7).
+
 ## Estado atual
 
 - Backend e frontend funcionam de ponta a ponta contra Postgres real (visto na seção 3-5 acima).
@@ -184,8 +196,8 @@ Abrir `http://localhost:5173`. A landing (`/`) é a home agora — o dashboard a
 
 1. ~~Commitar o redesign do frontend~~ — feito em `ba9c111`.
 2. ~~Dar push pra `origin/main`~~ — feito; o trabalho novo segue em branches com pull request.
-3. **Decidir sobre `OPENAI_API_KEY` / `MIN_RETRIEVAL_SCORE`** — ver seção 4, é o achado mais importante para o TCC.
-4. Lembrar de restaurar `chunks_embedding_cosine_idx` e `chunks_metadata_gin_idx` depois de qualquer `prisma migrate dev` futuro (ver seção 3, item 5).
+3. ~~Decidir sobre `MIN_RETRIEVAL_SCORE`~~ — substituído pela fusão RRF e por `MIN_VECTOR_SIMILARITY` (seção 13). A `OPENAI_API_KEY` local continua pendente: sem ela não é possível indexar a produção nem medir a versão nova com embeddings semânticos.
+4. Lembrar de restaurar os índices manuais (`chunks_embedding_hnsw_idx`, `chunks_metadata_gin_idx` e os de busca textual) depois de qualquer `prisma migrate dev` futuro.
 5. O conteúdo da landing (`frontend/src/features/landing/content.ts`) espelha dados do backend — mensagens de recusa, sumário da base, pesos da busca. Se o backend mudar, atualizar à mão (cada bloco cita o arquivo de origem).
 6. Backlog já documentado pelo próprio projeto (autenticação, painel admin, upload multipart de JSONL, revisão por especialista, testes de integração com Postgres real, versionamento da base, etc.) — ver seção "Próximos passos recomendados" em [backend/docs/arquitetura-backend-rag-hanseniase.md](backend/docs/arquitetura-backend-rag-hanseniase.md).
 7. `backend/.env` local está com `PORT=3336`, mas o proxy do Vite (`frontend/vite.config.ts`) aponta para 3333: com esse `.env`, o frontend não alcança o backend. Alinhar um dos dois antes da próxima demonstração.
@@ -193,6 +205,8 @@ Abrir `http://localhost:5173`. A landing (`/`) é a home agora — o dashboard a
 9. Todos os usuários autenticados têm o mesmo nível de acesso: qualquer um alcança `/dashboard` e as rotas de seed, ingestão e execução da avaliação. Antes de abrir para participantes externos, avaliar um papel de administrador.
 10. ~~Atualizar o texto do TCC para o login e a avaliação de 0 a 10.~~ Feito em 23/10/2026: nova Seção 4.6, Figuras 2 a 5 e 8, Quadros 5, 6 e 10, limitações e resumo. O detalhe está em [TCC/Pendencias_TCC_NexoHansen.md](TCC/Pendencias_TCC_NexoHansen.md).
 11. Deploy: seguir [DEPLOY-VERCEL.md](DEPLOY-VERCEL.md). O primeiro passo é criar o projeto da API e trocar `SEU-BACKEND` em `frontend/vercel.json` pela URL dela.
+12. **Produção da refatoração do RAG**, nesta ordem: aplicar a migração `20261023120000_official_documents_and_search` (`npm run prisma:deploy` com a conexão direta da Neon), indexar com a mesma `OPENAI_API_KEY` da API (`npm run prisma:seed`) e só então publicar o código. Depois, `npm run eval:rag` contra o banco de produção.
+13. Atualizar o Capítulo 4 do TCC: o *pipeline* descrito (soma ponderada, limiar 0,65, regras por subcadeia, base de 15 trechos) mudou. Corrigir também o ISBN do PCDT nas referências.
 
 ## Referências rápidas
 

@@ -1,0 +1,24 @@
+{
+  "documentId": "oms-reacoes-incapacidades-2020",
+  "processedOn": "2026-10-23",
+  "pages": 78,
+  "pagesWithPrintedNumber": 70,
+  "sections": 33,
+  "sectionsNotLocated": [
+    "Annex 1: ENLIST ENL Severity Scale (pdf 62)",
+    "Annex 2: Model Leprosy Patient Card (pdf 65)",
+    "Annex 3: Further guidance on thalidomide for the treatment of ENL reactions (pdf 73)"
+  ],
+  "excludedSections": [
+    "References",
+    "Annex 1: ENLIST ENL Severity Scale",
+    "Annex 2: Model Leprosy Patient Card"
+  ],
+  "chunks": 63,
+  "tokens": {
+    "min": 96,
+    "mean": 347,
+    "max": 449
+  },
+  "chunksWithoutSection": 0
+}

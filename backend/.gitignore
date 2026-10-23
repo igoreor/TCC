@@ -3,3 +3,6 @@ dist
 .env
 coverage
 *.log
+
+# PDFs originais: baixados por npm run kb:download (o manifesto guarda a origem e o SHA-256)
+knowledge-base/raw/

@@ -1,0 +1,18 @@
+{
+  "documentId": "ms-pcdt-hanseniase-2022",
+  "processedOn": "2026-10-23",
+  "pages": 156,
+  "pagesWithPrintedNumber": 142,
+  "sections": 87,
+  "sectionsNotLocated": [],
+  "excludedSections": [
+    "Referências"
+  ],
+  "chunks": 131,
+  "tokens": {
+    "min": 42,
+    "mean": 303,
+    "max": 569
+  },
+  "chunksWithoutSection": 0
+}

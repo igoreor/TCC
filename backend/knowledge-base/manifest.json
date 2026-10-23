@@ -1,0 +1,1363 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "documentId": "ms-pcdt-hanseniase-2022",
+      "title": "Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase",
+      "shortTitle": "PCDT da Hanseníase",
+      "institution": "Ministério da Saúde (Brasil)",
+      "authorship": "Secretaria de Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde; Secretaria de Vigilância em Saúde",
+      "publicationYear": 2022,
+      "edition": "1ª edição – 2022 – versão eletrônica",
+      "isbn": "978-65-5993-397-6",
+      "language": "pt",
+      "jurisdiction": "nacional",
+      "documentType": "Protocolo clínico",
+      "sourceType": "Protocolo oficial",
+      "status": "vigente",
+      "officialUrl": "https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_diretrizes_terapeuticas_hanseniase.pdf",
+      "downloadUrl": "https://www.gov.br/conitec/pt-br/midias/protocolos/publicacoes_ms/copy_of_20230131_PCDT_Hanseniase_2022_eletronica_ISBN.pdf/@@download/file",
+      "sha256": "1e2ee0c56f924a03b00c22a1491da4bd5894539651aaee877c54a9f22dcd9933",
+      "pageCount": 156,
+      "license": "CC BY-NC-SA 4.0",
+      "notes": "Aprovado pela Portaria SCTIE/MS nº 67, de 7 de julho de 2022 (Anexo A do documento). Arquivo obtido no portal da Conitec em 23/10/2026; o endereço da BVS indicado na ficha catalográfica respondeu com erro (HTTP 503) nessa data. Excluídos da base: referências, apêndices (fluxogramas e metodologia de busca) e anexos (portaria, painel GRADE e formulários).",
+      "extraction": {
+        "contentPages": [
+          15,
+          114
+        ],
+        "stripReferenceNumbers": true
+      },
+      "outline": [
+        {
+          "title": "Apresentação",
+          "level": 1,
+          "page": "13",
+          "pdfPage": 15
+        },
+        {
+          "number": "1",
+          "title": "Introdução",
+          "level": 1,
+          "page": "15",
+          "pdfPage": 17
+        },
+        {
+          "number": "2",
+          "title": "Metodologia",
+          "level": 1,
+          "page": "17",
+          "pdfPage": 19
+        },
+        {
+          "number": "3",
+          "title": "Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde (CID-10)",
+          "level": 1,
+          "page": "19",
+          "pdfPage": 21
+        },
+        {
+          "number": "4",
+          "title": "Aspectos epidemiológicos",
+          "level": 1,
+          "page": "21",
+          "pdfPage": 23
+        },
+        {
+          "number": "4.1",
+          "title": "Cenário mundial",
+          "level": 2,
+          "page": "21",
+          "pdfPage": 23
+        },
+        {
+          "number": "4.2",
+          "title": "Cenário nacional",
+          "level": 2,
+          "page": "21",
+          "pdfPage": 23
+        },
+        {
+          "number": "5",
+          "title": "Aspectos imunológicos",
+          "level": 1,
+          "page": "23",
+          "pdfPage": 25
+        },
+        {
+          "number": "6",
+          "title": "Aspectos clínicos",
+          "level": 1,
+          "page": "25",
+          "pdfPage": 27
+        },
+        {
+          "number": "6.1",
+          "title": "Suspeição diagnóstica",
+          "level": 2,
+          "page": "25",
+          "pdfPage": 27
+        },
+        {
+          "number": "6.2",
+          "title": "Definição de caso",
+          "level": 2,
+          "page": "26",
+          "pdfPage": 28
+        },
+        {
+          "number": "6.3",
+          "title": "Classificação operacional",
+          "level": 2,
+          "page": "26",
+          "pdfPage": 28
+        },
+        {
+          "number": "6.3.1",
+          "title": "Hanseníase paucibacilar (PB)",
+          "level": 3,
+          "page": "27",
+          "pdfPage": 29
+        },
+        {
+          "number": "6.3.2",
+          "title": "Hanseníase multibacilar (MB)",
+          "level": 3,
+          "page": "27",
+          "pdfPage": 29
+        },
+        {
+          "number": "6.4",
+          "title": "Formas clínicas",
+          "level": 2,
+          "page": "27",
+          "pdfPage": 29
+        },
+        {
+          "number": "6.4.1",
+          "title": "Hanseníase tuberculoide",
+          "level": 3,
+          "page": "28",
+          "pdfPage": 30
+        },
+        {
+          "number": "6.4.2",
+          "title": "Hanseníase virchowiana",
+          "level": 3,
+          "page": "29",
+          "pdfPage": 31
+        },
+        {
+          "number": "6.4.3",
+          "title": "Hanseníase dimorfa",
+          "level": 3,
+          "page": "30",
+          "pdfPage": 32
+        },
+        {
+          "number": "6.4.4",
+          "title": "Hanseníase indeterminada",
+          "level": 3,
+          "page": "31",
+          "pdfPage": 33
+        },
+        {
+          "number": "6.4.5",
+          "title": "Hanseníase neural pura (ou neurítica primária)",
+          "level": 3,
+          "page": "32",
+          "pdfPage": 34
+        },
+        {
+          "number": "6.5",
+          "title": "Reações hansênicas",
+          "level": 2,
+          "page": "33",
+          "pdfPage": 35
+        },
+        {
+          "number": "6.5.1",
+          "title": "Reação hansênica tipo 1 (reação reversa)",
+          "level": 3,
+          "page": "34",
+          "pdfPage": 36
+        },
+        {
+          "number": "6.5.2",
+          "title": "Reação hansênica tipo 2 (eritema nodoso hansênico)",
+          "level": 3,
+          "page": "35",
+          "pdfPage": 37
+        },
+        {
+          "number": "6.5.3",
+          "title": "Fatores associados ou precipitantes das reações hansênicas",
+          "level": 3,
+          "page": "37",
+          "pdfPage": 39
+        },
+        {
+          "number": "6.6",
+          "title": "Manifestações neurológicas",
+          "level": 2,
+          "page": "37",
+          "pdfPage": 39
+        },
+        {
+          "number": "6.6.1",
+          "title": "Neuropatia periférica",
+          "level": 3,
+          "page": "38",
+          "pdfPage": 40
+        },
+        {
+          "number": "6.6.2",
+          "title": "Neurite",
+          "level": 3,
+          "page": "38",
+          "pdfPage": 40
+        },
+        {
+          "number": "6.6.3",
+          "title": "Dor neuropática",
+          "level": 3,
+          "page": "40",
+          "pdfPage": 42
+        },
+        {
+          "number": "6.7",
+          "title": "Manifestações oculares",
+          "level": 2,
+          "page": "41",
+          "pdfPage": 43
+        },
+        {
+          "number": "7",
+          "title": "Exames de apoio ao diagnóstico",
+          "level": 1,
+          "page": "43",
+          "pdfPage": 45
+        },
+        {
+          "number": "7.1",
+          "title": "Avaliação neurológica simplificada (ANS)",
+          "level": 2,
+          "page": "43",
+          "pdfPage": 45
+        },
+        {
+          "number": "7.2",
+          "title": "Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR)",
+          "level": 2,
+          "page": "44",
+          "pdfPage": 46
+        },
+        {
+          "number": "7.3",
+          "title": "Histopatologia",
+          "level": 2,
+          "page": "45",
+          "pdfPage": 47
+        },
+        {
+          "number": "7.4",
+          "title": "Ultrassom de nervos periféricos",
+          "level": 2,
+          "page": "47",
+          "pdfPage": 49
+        },
+        {
+          "number": "7.5",
+          "title": "Eletroneuromiograma",
+          "level": 2,
+          "page": "47",
+          "pdfPage": 49
+        },
+        {
+          "number": "7.6",
+          "title": "Teste rápido imunocromatográfico para detecção de anticorpos IgM contra o M. leprae",
+          "level": 2,
+          "page": "48",
+          "pdfPage": 50
+        },
+        {
+          "number": "7.7",
+          "title": "Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR)",
+          "level": 2,
+          "page": "49",
+          "pdfPage": 51
+        },
+        {
+          "number": "8",
+          "title": "Critérios de inclusão",
+          "level": 1,
+          "page": "51",
+          "pdfPage": 53
+        },
+        {
+          "number": "9",
+          "title": "Critérios de exclusão",
+          "level": 1,
+          "page": "53",
+          "pdfPage": 55
+        },
+        {
+          "number": "10",
+          "title": "Abordagem terapêutica",
+          "level": 1,
+          "page": "55",
+          "pdfPage": 57
+        },
+        {
+          "number": "10.1",
+          "title": "Tratamento farmacológico",
+          "level": 2,
+          "page": "55",
+          "pdfPage": 57
+        },
+        {
+          "number": "10.1.1",
+          "title": "Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia",
+          "level": 3,
+          "page": "56",
+          "pdfPage": 58
+        },
+        {
+          "number": "10.1.2",
+          "title": "Tratamento farmacológico das reações hansênicas",
+          "level": 3,
+          "page": "60",
+          "pdfPage": 62
+        },
+        {
+          "number": "10.1.3",
+          "title": "Tratamento farmacológico das reações hansênicas em crianças",
+          "level": 3,
+          "page": "62",
+          "pdfPage": 64
+        },
+        {
+          "number": "10.1.4",
+          "title": "Medicamentos",
+          "level": 3,
+          "page": "63",
+          "pdfPage": 65
+        },
+        {
+          "number": "10.1.5",
+          "title": "Informações sobre os medicamentos",
+          "level": 3,
+          "page": "63",
+          "pdfPage": 65
+        },
+        {
+          "number": "10.1.6",
+          "title": "Eventos adversos e interações medicamentosas",
+          "level": 3,
+          "page": "71",
+          "pdfPage": 73
+        },
+        {
+          "number": "10.1.7",
+          "title": "Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U",
+          "level": 3,
+          "page": "76",
+          "pdfPage": 78
+        },
+        {
+          "number": "10.2",
+          "title": "Tratamento não farmacológico",
+          "level": 2,
+          "page": "79",
+          "pdfPage": 81
+        },
+        {
+          "number": "10.2.1",
+          "title": "Abordagem psicossocial",
+          "level": 3,
+          "page": "79",
+          "pdfPage": 81
+        },
+        {
+          "number": "10.2.2",
+          "title": "Prevenção de incapacidades físicas",
+          "level": 3,
+          "page": "85",
+          "pdfPage": 87
+        },
+        {
+          "number": "10.2.3",
+          "title": "Autocuidado",
+          "level": 3,
+          "page": "85",
+          "pdfPage": 87
+        },
+        {
+          "number": "10.2.4",
+          "title": "Cuidado com as lesões traumáticas e neuropáticas – curativos",
+          "level": 3,
+          "page": "86",
+          "pdfPage": 88
+        },
+        {
+          "number": "10.2.5",
+          "title": "Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados",
+          "level": 3,
+          "page": "86",
+          "pdfPage": 88
+        },
+        {
+          "number": "10.2.6",
+          "title": "Intervenções cirúrgicas preventivas e reabilitadoras",
+          "level": 3,
+          "page": "87",
+          "pdfPage": 89
+        },
+        {
+          "number": "10.2.7",
+          "title": "Reabilitação física",
+          "level": 3,
+          "page": "87",
+          "pdfPage": 89
+        },
+        {
+          "number": "11",
+          "title": "Resistência do M. leprae a antimicrobianos",
+          "level": 1,
+          "page": "89",
+          "pdfPage": 91
+        },
+        {
+          "number": "11.1",
+          "title": "Investigação laboratorial de resistência do M. leprae a antimicrobianos",
+          "level": 2,
+          "page": "90",
+          "pdfPage": 92
+        },
+        {
+          "number": "11.2",
+          "title": "Critério para investigação da resistência primária do M. leprae a antimicrobianos",
+          "level": 2,
+          "page": "90",
+          "pdfPage": 92
+        },
+        {
+          "number": "11.3",
+          "title": "Critérios para investigação da resistência secundária do M. leprae a antimicrobianos, após PQT-U",
+          "level": 2,
+          "page": "91",
+          "pdfPage": 93
+        },
+        {
+          "number": "11.4",
+          "title": "Tratamento farmacológico de segunda linha na detecção de M. leprae resistente",
+          "level": 2,
+          "page": "91",
+          "pdfPage": 93
+        },
+        {
+          "number": "11.4.1",
+          "title": "Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina",
+          "level": 3,
+          "page": "91",
+          "pdfPage": 93
+        },
+        {
+          "number": "11.4.2",
+          "title": "Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina e ao ofloxacino",
+          "level": 3,
+          "page": "92",
+          "pdfPage": 94
+        },
+        {
+          "number": "11.4.3",
+          "title": "Tratamento farmacológico de segunda linha na detecção de M. leprae resistente ao ofloxacino",
+          "level": 3,
+          "page": "93",
+          "pdfPage": 95
+        },
+        {
+          "number": "11.5",
+          "title": "Monitoramento do tratamento em casos de resistência medicamentosa",
+          "level": 2,
+          "page": "93",
+          "pdfPage": 95
+        },
+        {
+          "number": "12",
+          "title": "Casos especiais",
+          "level": 1,
+          "page": "95",
+          "pdfPage": 97
+        },
+        {
+          "number": "12.1",
+          "title": "Mães e filhos com hanseníase",
+          "level": 2,
+          "page": "95",
+          "pdfPage": 97
+        },
+        {
+          "number": "12.1.1",
+          "title": "Concepção",
+          "level": 3,
+          "page": "95",
+          "pdfPage": 97
+        },
+        {
+          "number": "12.1.2",
+          "title": "Amamentação",
+          "level": 3,
+          "page": "96",
+          "pdfPage": 98
+        },
+        {
+          "number": "12.1.3",
+          "title": "Episódios reacionais durante a gestação",
+          "level": 3,
+          "page": "96",
+          "pdfPage": 98
+        },
+        {
+          "number": "12.2",
+          "title": "Hanseníase em menores de 15 anos de idade",
+          "level": 2,
+          "page": "96",
+          "pdfPage": 98
+        },
+        {
+          "number": "12.3",
+          "title": "Imunossupressão e hanseníase",
+          "level": 2,
+          "page": "97",
+          "pdfPage": 99
+        },
+        {
+          "number": "12.4",
+          "title": "Comorbidades em pacientes com hanseníase",
+          "level": 2,
+          "page": "98",
+          "pdfPage": 100
+        },
+        {
+          "number": "12.5",
+          "title": "Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha",
+          "level": 2,
+          "page": "99",
+          "pdfPage": 101
+        },
+        {
+          "number": "13",
+          "title": "Investigação de contatos",
+          "level": 1,
+          "page": "101",
+          "pdfPage": 103
+        },
+        {
+          "number": "13.1",
+          "title": "Imunoprofilaxia e monitoramento de contatos",
+          "level": 2,
+          "page": "101",
+          "pdfPage": 103
+        },
+        {
+          "number": "14",
+          "title": "Monitoramento",
+          "level": 1,
+          "page": "103",
+          "pdfPage": 105
+        },
+        {
+          "number": "14.1",
+          "title": "Monitoramento durante o tratamento farmacológico com PQT-U",
+          "level": 2,
+          "page": "103",
+          "pdfPage": 105
+        },
+        {
+          "number": "14.2",
+          "title": "Monitoramento após o tratamento farmacológico com PQT-U",
+          "level": 2,
+          "page": "103",
+          "pdfPage": 105
+        },
+        {
+          "number": "14.3",
+          "title": "A caderneta de saúde da pessoa acometida pela hanseníase",
+          "level": 2,
+          "page": "104",
+          "pdfPage": 106
+        },
+        {
+          "number": "15",
+          "title": "Resultados esperados",
+          "level": 1,
+          "page": "105",
+          "pdfPage": 107
+        },
+        {
+          "number": "16",
+          "title": "Gestão, regulação e controle",
+          "level": 1,
+          "page": "107",
+          "pdfPage": 109
+        },
+        {
+          "number": "17",
+          "title": "Indicadores de implementação",
+          "level": 1,
+          "page": "109",
+          "pdfPage": 111
+        },
+        {
+          "number": "17.1",
+          "title": "Indicadores de monitoramento do controle da hanseníase enquanto problema de saúde pública",
+          "level": 2,
+          "page": "109",
+          "pdfPage": 111
+        },
+        {
+          "number": "17.2",
+          "title": "Indicadores de avaliação da qualidade dos serviços de hanseníase",
+          "level": 2,
+          "page": "109",
+          "pdfPage": 111
+        },
+        {
+          "number": "18",
+          "title": "Esclarecimentos e responsabilidades",
+          "level": 1,
+          "page": "111",
+          "pdfPage": 113
+        },
+        {
+          "title": "Referências",
+          "level": 1,
+          "page": "113",
+          "pdfPage": 115,
+          "exclude": true
+        }
+      ]
+    },
+    {
+      "documentId": "ms-estrategia-nacional-hanseniase-2024-2030",
+      "title": "Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030",
+      "shortTitle": "Estratégia Nacional 2024–2030",
+      "institution": "Ministério da Saúde (Brasil)",
+      "authorship": "Secretaria de Vigilância em Saúde e Ambiente; Departamento de Doenças Transmissíveis",
+      "publicationYear": 2024,
+      "edition": "1ª edição – 2024 – versão eletrônica",
+      "isbn": "978-65-5993-565-9",
+      "language": "pt",
+      "jurisdiction": "nacional",
+      "documentType": "Estratégia",
+      "sourceType": "Documento técnico",
+      "status": "vigente",
+      "officialUrl": "https://bvsms.saude.gov.br/bvs/publicacoes/estrategia_nacional_enfrentamento_hansen%C3%ADase_2024-2030.pdf",
+      "downloadUrl": "https://prefeitura.sp.gov.br/documents/d/saude/estrategia-de-enfrentamente-hanseniase-pdf",
+      "sha256": "d85ea09891e0fb74a73561bafe74abf03a359b01ed2d13284dadc435e988655f",
+      "pageCount": 64,
+      "license": "CC BY-NC-SA 4.0",
+      "notes": "Arquivo hospedado pela Prefeitura de São Paulo; a ficha catalográfica do próprio arquivo identifica a edição do Ministério da Saúde (ISBN 978-65-5993-565-9). O endereço oficial da BVS respondeu com erro (HTTP 503) em 23/10/2026. Excluídos da base: referências e anexos.",
+      "extraction": {
+        "contentPages": [
+          10,
+          52
+        ],
+        "stripReferenceNumbers": false
+      },
+      "outline": [
+        {
+          "title": "Apresentação",
+          "level": 1,
+          "page": "9",
+          "pdfPage": 10
+        },
+        {
+          "title": "Contexto geral",
+          "level": 1,
+          "page": "11",
+          "pdfPage": 12
+        },
+        {
+          "title": "Dados epidemiológicos",
+          "level": 2,
+          "page": "12",
+          "pdfPage": 13
+        },
+        {
+          "title": "No mundo e nas Américas",
+          "level": 3,
+          "page": "12",
+          "pdfPage": 13
+        },
+        {
+          "title": "No Brasil",
+          "level": 3,
+          "page": "14",
+          "pdfPage": 15
+        },
+        {
+          "title": "Estratégia Global",
+          "level": 2,
+          "page": "17",
+          "pdfPage": 18
+        },
+        {
+          "title": "Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030",
+          "level": 1,
+          "page": "20",
+          "pdfPage": 21
+        },
+        {
+          "title": "Metas",
+          "level": 2,
+          "page": "23",
+          "pdfPage": 24
+        },
+        {
+          "title": "Meta 1 – Interrupção da transmissão em 99% dos municípios até 2030",
+          "level": 3,
+          "page": "23",
+          "pdfPage": 24
+        },
+        {
+          "title": "Meta 2 – Eliminação da doença em 75% dos municípios até 2030",
+          "level": 3,
+          "page": "24",
+          "pdfPage": 25
+        },
+        {
+          "title": "Meta 3 – Reduzir em 20% o número absoluto de casos novos com GIF2 no momento do diagnóstico de hanseníase até 2030",
+          "level": 3,
+          "page": "25",
+          "pdfPage": 26
+        },
+        {
+          "title": "Meta 4 – Dar providência a 100% das manifestações sobre práticas discriminatórias em hanseníase registradas nas Ouvidorias do SUS",
+          "level": 3,
+          "page": "26",
+          "pdfPage": 27
+        },
+        {
+          "title": "Definição das ações estratégicas",
+          "level": 2,
+          "page": "26",
+          "pdfPage": 27
+        },
+        {
+          "title": "Ações estratégicas gerais",
+          "level": 2,
+          "page": "31",
+          "pdfPage": 32
+        },
+        {
+          "title": "Ações estratégicas por grupos de municípios",
+          "level": 2,
+          "page": "43",
+          "pdfPage": 44
+        },
+        {
+          "title": "Monitoramento",
+          "level": 2,
+          "page": "49",
+          "pdfPage": 50
+        },
+        {
+          "title": "Próximos passos",
+          "level": 2,
+          "page": "51",
+          "pdfPage": 52
+        },
+        {
+          "title": "Referências",
+          "level": 1,
+          "page": "52",
+          "pdfPage": 53,
+          "exclude": true
+        }
+      ]
+    },
+    {
+      "documentId": "oms-diretrizes-hanseniase-2018",
+      "title": "Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase",
+      "shortTitle": "Diretrizes da OMS",
+      "institution": "Organização Mundial da Saúde (OMS)",
+      "authorship": "Escritório Regional para o Sudeste Asiático",
+      "publicationYear": 2019,
+      "edition": "Tradução para o português (© OMS 2019) da edição original em inglês de 2018",
+      "isbn": "978-92-9022-707-6",
+      "language": "pt",
+      "jurisdiction": "internacional",
+      "documentType": "Diretriz",
+      "sourceType": "Diretriz",
+      "status": "vigente",
+      "officialUrl": "https://iris.who.int/handle/10665/274127",
+      "downloadUrl": "https://iris.who.int/server/api/core/bitstreams/6cfe5bfe-4603-4706-bb14-7003af1bf46b/content",
+      "sha256": "04a776108abbc81ffbf60f48c3d62f16cf4b63b7a8e3cf837900bdda8abfae94",
+      "pageCount": 110,
+      "license": "CC BY-NC-SA 3.0 IGO",
+      "notes": "Segundo o próprio documento, esta tradução não foi criada pela OMS, que não se responsabiliza por seu conteúdo ou exatidão; a edição original em inglês (ISBN 978-92-9022-638-3) é a autêntica. A citação sugerida no documento indica o ano de 2017. Excluídos da base: referências e anexos (conflitos de interesse, tabelas de evidência e GRADE, roteiro de grupo focal).",
+      "extraction": {
+        "contentPages": [
+          13,
+          48
+        ],
+        "stripReferenceNumbers": false
+      },
+      "outline": [
+        {
+          "title": "Sumário executivo",
+          "level": 1,
+          "page": "xi",
+          "pdfPage": 13
+        },
+        {
+          "title": "Parte I: Processo de desenvolvimento de diretrizes",
+          "level": 1,
+          "page": "1",
+          "pdfPage": 19
+        },
+        {
+          "number": "1",
+          "title": "Introdução",
+          "level": 2,
+          "page": "1",
+          "pdfPage": 19
+        },
+        {
+          "number": "2",
+          "title": "Fundamentação",
+          "level": 2,
+          "page": "4",
+          "pdfPage": 22
+        },
+        {
+          "number": "3",
+          "title": "Público-alvo",
+          "level": 2,
+          "page": "4",
+          "pdfPage": 22
+        },
+        {
+          "number": "4",
+          "title": "Metas e objetivos",
+          "level": 2,
+          "page": "5",
+          "pdfPage": 23
+        },
+        {
+          "number": "5",
+          "title": "Métodos",
+          "level": 2,
+          "page": "5",
+          "pdfPage": 23
+        },
+        {
+          "number": "6",
+          "title": "Questões-chave",
+          "level": 2,
+          "page": "8",
+          "pdfPage": 26
+        },
+        {
+          "number": "7",
+          "title": "Métodos de revisão sistemática",
+          "level": 2,
+          "page": "11",
+          "pdfPage": 29
+        },
+        {
+          "number": "8",
+          "title": "Avaliação da qualidade da evidência",
+          "level": 2,
+          "page": "12",
+          "pdfPage": 30
+        },
+        {
+          "number": "9",
+          "title": "Valores, preferências e considerações éticas",
+          "level": 2,
+          "page": "12",
+          "pdfPage": 30
+        },
+        {
+          "number": "10",
+          "title": "Formulação de recomendações",
+          "level": 2,
+          "page": "14",
+          "pdfPage": 32
+        },
+        {
+          "title": "Parte II: Recomendações",
+          "level": 1,
+          "page": "17",
+          "pdfPage": 35
+        },
+        {
+          "number": "1",
+          "title": "Diagnóstico",
+          "level": 2,
+          "page": "17",
+          "pdfPage": 35
+        },
+        {
+          "number": "2",
+          "title": "Tratamento para a hanseníase",
+          "level": 2,
+          "page": "19",
+          "pdfPage": 37
+        },
+        {
+          "number": "3",
+          "title": "Profilaxia",
+          "level": 2,
+          "page": "24",
+          "pdfPage": 42
+        },
+        {
+          "number": "4",
+          "title": "Implementação e avaliação",
+          "level": 2,
+          "page": "27",
+          "pdfPage": 45
+        },
+        {
+          "number": "5",
+          "title": "Atualizando",
+          "level": 2,
+          "page": "28",
+          "pdfPage": 46
+        },
+        {
+          "title": "Parte III: Prioridades de pesquisa",
+          "level": 1,
+          "page": "29",
+          "pdfPage": 47
+        },
+        {
+          "number": "1",
+          "title": "Diagnóstico da hanseníase",
+          "level": 2,
+          "page": "29",
+          "pdfPage": 47
+        },
+        {
+          "number": "2",
+          "title": "Tratamento da hanseníase",
+          "level": 2,
+          "page": "29",
+          "pdfPage": 47
+        },
+        {
+          "number": "3",
+          "title": "Prevenção da hanseníase",
+          "level": 2,
+          "page": "30",
+          "pdfPage": 48
+        },
+        {
+          "title": "Referências",
+          "level": 1,
+          "page": "31",
+          "pdfPage": 49,
+          "exclude": true
+        }
+      ]
+    },
+    {
+      "documentId": "oms-reacoes-incapacidades-2020",
+      "title": "Leprosy/Hansen disease: management of reactions and prevention of disabilities. Technical guidance",
+      "shortTitle": "Manejo das reações e prevenção de incapacidades (OMS)",
+      "institution": "Organização Mundial da Saúde (OMS)",
+      "authorship": "Escritório Regional para o Sudeste Asiático",
+      "publicationYear": 2020,
+      "edition": "Edição original em inglês (© OMS 2020)",
+      "isbn": "978-92-9022-759-5",
+      "language": "en",
+      "jurisdiction": "internacional",
+      "documentType": "Orientação técnica",
+      "sourceType": "Documento técnico",
+      "status": "vigente",
+      "officialUrl": "https://iris.who.int/handle/10665/332022",
+      "downloadUrl": "https://iris.who.int/server/api/core/bitstreams/c3ad484c-764d-4675-a049-da90bc83643c/content",
+      "sha256": "e7cd6eb6304c9bbc3586806f6df2ca7db556ec3813d62303f1e3114272c553b4",
+      "pageCount": 78,
+      "license": "CC BY-NC-SA 3.0 IGO",
+      "notes": "Documento em inglês, sem tradução oficial para o português: os trechos são mostrados no idioma original. A citação sugerida no documento indica o ano de 2017. Excluídos da base: referências, escala ENLIST e modelo de cartão do paciente (anexos 1 e 2); o anexo 3, sobre talidomida, foi mantido.",
+      "extraction": {
+        "contentPages": [
+          10,
+          78
+        ],
+        "stripReferenceNumbers": false
+      },
+      "outline": [
+        {
+          "title": "Executive summary",
+          "level": 1,
+          "page": "viii",
+          "pdfPage": 10
+        },
+        {
+          "number": "1",
+          "title": "An introduction to leprosy reactions and neuritis",
+          "level": 1,
+          "page": "1",
+          "pdfPage": 13
+        },
+        {
+          "number": "1.1",
+          "title": "Background",
+          "level": 2,
+          "page": "1",
+          "pdfPage": 13
+        },
+        {
+          "number": "1.2",
+          "title": "Definitions of terms",
+          "level": 2,
+          "page": "2",
+          "pdfPage": 14
+        },
+        {
+          "number": "1.3",
+          "title": "Type 1 reactions and neuritis",
+          "level": 2,
+          "page": "3",
+          "pdfPage": 15
+        },
+        {
+          "number": "1.4",
+          "title": "Type 2 reaction",
+          "level": 2,
+          "page": "8",
+          "pdfPage": 20
+        },
+        {
+          "number": "1.5",
+          "title": "Neuropathic pain",
+          "level": 2,
+          "page": "10",
+          "pdfPage": 22
+        },
+        {
+          "number": "1.6",
+          "title": "Disability-adjusted life years in leprosy",
+          "level": 2,
+          "page": "10",
+          "pdfPage": 22
+        },
+        {
+          "number": "2",
+          "title": "Nerve function assessment in leprosy",
+          "level": 1,
+          "page": "11",
+          "pdfPage": 23
+        },
+        {
+          "number": "2.1",
+          "title": "Introduction to nerve function assessment",
+          "level": 2,
+          "page": "11",
+          "pdfPage": 23
+        },
+        {
+          "number": "2.2",
+          "title": "Sensory testing",
+          "level": 2,
+          "page": "13",
+          "pdfPage": 25
+        },
+        {
+          "number": "2.3",
+          "title": "Voluntary muscle testing",
+          "level": 2,
+          "page": "15",
+          "pdfPage": 27
+        },
+        {
+          "number": "3",
+          "title": "Medical management of reactions and neuritis in leprosy",
+          "level": 1,
+          "page": "17",
+          "pdfPage": 29
+        },
+        {
+          "number": "3.1",
+          "title": "Treatment of Type 1 reaction and neuritis",
+          "level": 2,
+          "page": "17",
+          "pdfPage": 29
+        },
+        {
+          "number": "3.2",
+          "title": "Treatment of Type 2 reaction",
+          "level": 2,
+          "page": "21",
+          "pdfPage": 33
+        },
+        {
+          "number": "3.3",
+          "title": "Treatment of reactions: summary",
+          "level": 2,
+          "page": "25",
+          "pdfPage": 37
+        },
+        {
+          "number": "4",
+          "title": "Managing reactions and neuritis: Step-by-step approach",
+          "level": 1,
+          "page": "26",
+          "pdfPage": 38
+        },
+        {
+          "number": "4.1",
+          "title": "Principals of managing reactions and neuritis",
+          "level": 2,
+          "page": "26",
+          "pdfPage": 38
+        },
+        {
+          "number": "4.2",
+          "title": "The four steps in managing leprosy reactions",
+          "level": 2,
+          "page": "28",
+          "pdfPage": 40
+        },
+        {
+          "number": "4.3",
+          "title": "Counseling and health promotion",
+          "level": 2,
+          "page": "30",
+          "pdfPage": 42
+        },
+        {
+          "number": "5",
+          "title": "Algorithms for managing persons with leprosy in a clinical setting",
+          "level": 1,
+          "page": "31",
+          "pdfPage": 43
+        },
+        {
+          "number": "5.1",
+          "title": "Algorithm 1: Recognizing when a reaction is present",
+          "level": 2,
+          "page": "31",
+          "pdfPage": 43
+        },
+        {
+          "number": "5.2",
+          "title": "Algorithm 2: Knowing whether a reaction is Type 1 or Type 2",
+          "level": 2,
+          "page": "32",
+          "pdfPage": 44
+        },
+        {
+          "number": "5.3",
+          "title": "Algorithm 3: Testing nerve function",
+          "level": 2,
+          "page": "33",
+          "pdfPage": 45
+        },
+        {
+          "number": "5.4",
+          "title": "Algorithm 4: Treating Type 1 reaction and neuritis",
+          "level": 2,
+          "page": "34",
+          "pdfPage": 46
+        },
+        {
+          "number": "5.5",
+          "title": "Algorithm 5: Follow up of patients with Type 1 reaction and neuritis",
+          "level": 2,
+          "page": "35",
+          "pdfPage": 47
+        },
+        {
+          "number": "5.6",
+          "title": "Algorithm 6: Starting treatment for Type 2 reaction",
+          "level": 2,
+          "page": "37",
+          "pdfPage": 49
+        },
+        {
+          "number": "5.7",
+          "title": "Algorithm 7: Follow up of patients with Type 2 reaction",
+          "level": 2,
+          "page": "39",
+          "pdfPage": 51
+        },
+        {
+          "number": "6",
+          "title": "Key facts to remember",
+          "level": 1,
+          "page": "40",
+          "pdfPage": 52
+        },
+        {
+          "number": "7",
+          "title": "References",
+          "level": 1,
+          "page": "42",
+          "pdfPage": 54,
+          "exclude": true
+        },
+        {
+          "level": 1,
+          "page": "50",
+          "pdfPage": 62,
+          "title": "Annex 1: ENLIST ENL Severity Scale",
+          "exclude": true
+        },
+        {
+          "level": 1,
+          "page": "53",
+          "pdfPage": 65,
+          "title": "Annex 2: Model Leprosy Patient Card",
+          "exclude": true
+        },
+        {
+          "level": 1,
+          "page": "61",
+          "pdfPage": 73,
+          "title": "Annex 3: Further guidance on thalidomide for the treatment of ENL reactions"
+        }
+      ]
+    },
+    {
+      "documentId": "oms-estrategia-global-hanseniase-2021-2030",
+      "title": "Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030",
+      "shortTitle": "Estratégia Global da OMS 2021–2030",
+      "institution": "Organização Mundial da Saúde (OMS)",
+      "authorship": "Escritório Regional para o Sudeste Asiático",
+      "publicationYear": 2021,
+      "edition": "Tradução para o português (© OMS 2021)",
+      "isbn": "978-92-9022-842-4",
+      "language": "pt",
+      "jurisdiction": "internacional",
+      "documentType": "Estratégia",
+      "sourceType": "Documento técnico",
+      "status": "vigente",
+      "officialUrl": "https://iris.who.int/handle/10665/341501",
+      "downloadUrl": "https://iris.who.int/server/api/core/bitstreams/b5d8049b-0659-4b78-a839-742a66e24d52/content",
+      "sha256": "0c2b30da9807b5ae780dbe5a6282cf0c723cd46f847acb03dc936ac793f0762f",
+      "pageCount": 30,
+      "license": "CC BY-NC-SA 3.0 IGO",
+      "notes": "Segundo o próprio documento, esta tradução não foi criada pela OMS; a edição original em inglês é a autêntica. O documento não tem sumário: as seções foram identificadas pelos títulos das páginas. Excluídos da base: abreviações e referências.",
+      "extraction": {
+        "contentPages": [
+          4,
+          27
+        ],
+        "stripReferenceNumbers": true
+      },
+      "outline": [
+        {
+          "title": "Prefácio",
+          "level": 1,
+          "page": "4",
+          "pdfPage": 4
+        },
+        {
+          "title": "Abreviações",
+          "level": 1,
+          "page": "5",
+          "pdfPage": 5,
+          "exclude": true
+        },
+        {
+          "title": "A estratégia em resumo",
+          "level": 1,
+          "page": "6",
+          "pdfPage": 6
+        },
+        {
+          "title": "Desenvolvimento",
+          "level": 1,
+          "page": "7",
+          "pdfPage": 7
+        },
+        {
+          "title": "Visão geral e contexto",
+          "level": 1,
+          "page": "8",
+          "pdfPage": 8
+        },
+        {
+          "title": "Realizações e situação atual",
+          "level": 1,
+          "page": "9",
+          "pdfPage": 9
+        },
+        {
+          "title": "Grandes desafios",
+          "level": 1,
+          "page": "11",
+          "pdfPage": 11
+        },
+        {
+          "title": "Visão, meta, alvos e pilares",
+          "level": 1,
+          "page": "12",
+          "pdfPage": 12
+        },
+        {
+          "title": "Principais áreas de pesquisa",
+          "level": 1,
+          "page": "13",
+          "pdfPage": 13
+        },
+        {
+          "title": "Medindo o progresso e o impacto",
+          "level": 1,
+          "page": "13",
+          "pdfPage": 13
+        },
+        {
+          "title": "Pilar estratégico 1",
+          "level": 1,
+          "page": "15",
+          "pdfPage": 15
+        },
+        {
+          "title": "Pilar estratégico 2",
+          "level": 1,
+          "page": "16",
+          "pdfPage": 16
+        },
+        {
+          "title": "Pilar estratégico 3",
+          "level": 1,
+          "page": "17",
+          "pdfPage": 17
+        },
+        {
+          "title": "Pilar estratégico 4",
+          "level": 1,
+          "page": "18",
+          "pdfPage": 18
+        },
+        {
+          "title": "Referências",
+          "level": 1,
+          "page": "19",
+          "pdfPage": 19,
+          "exclude": true
+        },
+        {
+          "title": "Anexo 1 – Roteiro da OMS para DTN de 2021–2030: perfil da hanseníase",
+          "level": 1,
+          "page": "20",
+          "pdfPage": 20
+        },
+        {
+          "title": "Anexo 2 – Princípios e diretrizes para a eliminação da discriminação",
+          "level": 1,
+          "page": "24",
+          "pdfPage": 24
+        }
+      ]
+    }
+  ]
+}

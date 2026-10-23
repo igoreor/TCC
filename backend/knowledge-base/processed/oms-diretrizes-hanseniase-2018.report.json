@@ -1,0 +1,18 @@
+{
+  "documentId": "oms-diretrizes-hanseniase-2018",
+  "processedOn": "2026-10-23",
+  "pages": 110,
+  "pagesWithPrintedNumber": 104,
+  "sections": 23,
+  "sectionsNotLocated": [],
+  "excludedSections": [
+    "Referências"
+  ],
+  "chunks": 49,
+  "tokens": {
+    "min": 88,
+    "mean": 346,
+    "max": 447
+  },
+  "chunksWithoutSection": 0
+}

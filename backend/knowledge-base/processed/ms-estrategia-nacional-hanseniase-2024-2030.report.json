@@ -1,0 +1,18 @@
+{
+  "documentId": "ms-estrategia-nacional-hanseniase-2024-2030",
+  "processedOn": "2026-10-23",
+  "pages": 64,
+  "pagesWithPrintedNumber": 55,
+  "sections": 18,
+  "sectionsNotLocated": [],
+  "excludedSections": [
+    "Referências"
+  ],
+  "chunks": 39,
+  "tokens": {
+    "min": 111,
+    "mean": 357,
+    "max": 450
+  },
+  "chunksWithoutSection": 0
+}

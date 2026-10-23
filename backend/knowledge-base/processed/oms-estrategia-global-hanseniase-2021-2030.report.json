@@ -1,0 +1,22 @@
+{
+  "documentId": "oms-estrategia-global-hanseniase-2021-2030",
+  "processedOn": "2026-10-23",
+  "pages": 30,
+  "pagesWithPrintedNumber": 30,
+  "sections": 17,
+  "sectionsNotLocated": [
+    "Anexo 1 – Roteiro da OMS para DTN de 2021–2030: perfil da hanseníase (pdf 20)",
+    "Anexo 2 – Princípios e diretrizes para a eliminação da discriminação (pdf 24)"
+  ],
+  "excludedSections": [
+    "Abreviações",
+    "Referências"
+  ],
+  "chunks": 46,
+  "tokens": {
+    "min": 88,
+    "mean": 360,
+    "max": 765
+  },
+  "chunksWithoutSection": 0
+}

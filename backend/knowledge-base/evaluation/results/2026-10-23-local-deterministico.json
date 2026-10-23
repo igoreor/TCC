@@ -1,0 +1,1253 @@
+{
+  "configuration": {
+    "label": "local-deterministico",
+    "date": "2026-10-23T19:30:21.453Z",
+    "embeddingModel": "deterministic-hash-v1",
+    "semanticEmbeddings": false,
+    "llm": "nenhum (resposta extrativa)",
+    "topK": 12,
+    "topN": 5,
+    "minVectorSimilarity": 0.08
+  },
+  "summary": {
+    "overall": {
+      "cases": 32,
+      "correctBehaviour": 0.938,
+      "recallAt5": 0.84,
+      "recallAt8": 0.84,
+      "evidenceRecall": 0.693,
+      "citationPrecision": 0.3,
+      "verifiedCitations": 1,
+      "keyFactCoverage": 0.627
+    },
+    "byCategory": {
+      "predefinida": {
+        "cases": 6,
+        "correctBehaviour": 1,
+        "recallAt5": 1,
+        "recallAt8": 1,
+        "evidenceRecall": 0.833,
+        "citationPrecision": 0.313,
+        "verifiedCitations": 1,
+        "keyFactCoverage": 0.5
+      },
+      "direta": {
+        "cases": 5,
+        "correctBehaviour": 1,
+        "recallAt5": 1,
+        "recallAt8": 1,
+        "evidenceRecall": 0.9,
+        "citationPrecision": 0.4,
+        "verifiedCitations": 1,
+        "keyFactCoverage": 0.4
+      },
+      "combinacao": {
+        "cases": 2,
+        "correctBehaviour": 1,
+        "recallAt5": 1,
+        "recallAt8": 1,
+        "evidenceRecall": 0.5,
+        "citationPrecision": 0.375,
+        "verifiedCitations": 1,
+        "keyFactCoverage": 0.833
+      },
+      "sinonimo": {
+        "cases": 3,
+        "correctBehaviour": 1,
+        "recallAt5": 0.667,
+        "recallAt8": 0.667,
+        "evidenceRecall": 0.5,
+        "citationPrecision": 0.333,
+        "verifiedCitations": 1,
+        "keyFactCoverage": 0.833
+      },
+      "continuacao": {
+        "cases": 2,
+        "correctBehaviour": 1,
+        "recallAt5": 0.5,
+        "recallAt8": 0.5,
+        "evidenceRecall": 0.5,
+        "citationPrecision": 0.125,
+        "verifiedCitations": 1,
+        "keyFactCoverage": 0.5
+      },
+      "dificil": {
+        "cases": 4,
+        "correctBehaviour": 1,
+        "recallAt5": 0.75,
+        "recallAt8": 0.75,
+        "evidenceRecall": 0.5,
+        "citationPrecision": 0.25,
+        "verifiedCitations": 1,
+        "keyFactCoverage": 0.5
+      },
+      "sem_resposta": {
+        "cases": 2,
+        "correctBehaviour": 0,
+        "recallAt5": null,
+        "recallAt8": null,
+        "evidenceRecall": null,
+        "citationPrecision": null,
+        "verifiedCitations": 1,
+        "keyFactCoverage": null
+      },
+      "divergencia": {
+        "cases": 2,
+        "correctBehaviour": 1,
+        "recallAt5": 1,
+        "recallAt8": 1,
+        "evidenceRecall": 1,
+        "citationPrecision": 0.375,
+        "verifiedCitations": 1,
+        "keyFactCoverage": 1
+      },
+      "seguranca": {
+        "cases": 3,
+        "correctBehaviour": 1,
+        "recallAt5": null,
+        "recallAt8": null,
+        "evidenceRecall": null,
+        "citationPrecision": null,
+        "verifiedCitations": null,
+        "keyFactCoverage": null
+      },
+      "regressao": {
+        "cases": 3,
+        "correctBehaviour": 1,
+        "recallAt5": 0.667,
+        "recallAt8": 0.667,
+        "evidenceRecall": 0.667,
+        "citationPrecision": 0.167,
+        "verifiedCitations": 1,
+        "keyFactCoverage": 0.833
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "P01",
+      "category": "predefinida",
+      "question": "Baciloscopia negativa exclui hanseníase?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 575,
+      "standaloneQuestion": "Baciloscopia negativa exclui hanseníase?",
+      "searchQueries": [
+        "Baciloscopia negativa exclui hanseníase?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.3.2 Hanseníase multibacilar (MB) (p. 26–27):** Após a conclusão diagnóstica a partir do exame clínico e/ou baciloscópico, os casos de hanseníase devem ser classificados para fins de tratamento, de acordo com os critérios definidos pela OMS. Caracteriza-se pela presença de uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa. [1]\n- **Estratégia Nacional 2024–2030, Ações estratégicas gerais (p. 34–35):** aprimorar a gestão do programa de hanseníase nas esferas municipal, estadual e federal Inclusão da hanseníase como prioridade de pesquisa nas agendas das agências de fomento nacionais, regionais, estaduais e municipais. [2]\n- **PCDT da Hanseníase, 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR) (p. 44–45):** Embora a baciloscopia se caracterize por alta especificidade, baixo custo e execução relativamente simples quando realizada por profissionais capacitados, o exame tem baixa sensibilidade, resultando negativo nos casos paucibacilares, o que absolutamente não exclui o diagnóstico da hanseníase. No entanto, a interpretação da presença de bacilos no exame histopatológico não é a mesma com relação à classificação do caso, uma vez que bacilos podem ser encontrados no interior de macrófagos, em pequenas quantidades mesmo em casos paucibacilares, inclusive na hanseníase indeterminada. [3]\n- **PCDT da Hanseníase, 3 Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde (CID-10) (p. 17–21):** Este PCDT foi desenvolvido de acordo com as Diretrizes Metodológicas estabelecidas pelo Ministério da Saúde. Hanseníase indeterminada Hanseníase tuberculoide Hanseníase tuberculoide borderline Hanseníase dimorfa Hanseníase virchowiana borderline Hanseníase virchowiana Outras formas de hanseníase Hanseníase não especificada Sequelas da hanseníase [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.3.2 Hanseníase multibacilar (MB). p. 26–27.",
+        "[2] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas gerais. p. 34–35.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR). p. 44–45.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 3 Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde (CID-10). p. 17–21."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0015 (pdf 28-29)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0023 (pdf 35-36)",
+        "ms-pcdt-hanseniase-2022:0039 (pdf 46-47)",
+        "ms-pcdt-hanseniase-2022:0006 (pdf 19-23)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0013 (pdf 21-23)"
+      ]
+    },
+    {
+      "id": "P02",
+      "category": "predefinida",
+      "question": "Quais são os critérios cardinais da hanseníase?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 0.3333333333333333,
+      "citationPrecision": 0,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0,
+      "cited": 4,
+      "milliseconds": 765,
+      "standaloneQuestion": "Quais são os critérios cardinais da hanseníase?",
+      "searchQueries": [
+        "Quais são os critérios cardinais da hanseníase?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Estratégia Nacional 2024–2030, Estratégia Global (p. 19):** conjunto de critérios para que Ministérios da Saúde e seus Programas Nacionais de Hanseníase realizem avaliação do programa e de serviços relacionados à doença. informações básicas sobre o sistema de saúde e o contexto de desenvolvimento no país, detalhes do programa de hanseníase e suas atividades e evidências do cum­ primento dos critérios de eliminação da doença. [1]\n- **Estratégia Global da OMS 2021–2030, Desenvolvimento (p. 7):** Tropicais Negligenciadas (DTN) de 2021–2030 e Estratégia Global para Hanseníase enviada ao Grupo Consultivo Técnico (GCT) da OMS sobre hanseníase e parceiros Criação da força-tarefa da OMS sobre definições, critérios e indicadores para transmissão e eliminação da hanseníase [2]\n- **Estratégia Nacional 2024–2030, Ações estratégicas gerais (p. 34–35):** aprimorar a gestão do programa de hanseníase nas esferas municipal, estadual e federal Inclusão da hanseníase como prioridade de pesquisa nas agendas das agências de fomento nacionais, regionais, estaduais e municipais. [3]\n- **PCDT da Hanseníase, 3 Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde (CID-10) (p. 17–21):** Este PCDT foi desenvolvido de acordo com as Diretrizes Metodológicas estabelecidas pelo Ministério da Saúde. Hanseníase indeterminada Hanseníase tuberculoide Hanseníase tuberculoide borderline Hanseníase dimorfa Hanseníase virchowiana borderline Hanseníase virchowiana Outras formas de hanseníase Hanseníase não especificada Sequelas da hanseníase [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Estratégia Global. p. 19.",
+        "[2] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Desenvolvimento. p. 7.",
+        "[3] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas gerais. p. 34–35.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 3 Classificação Estatística Internacional de Doenças e Problemas Relacionados à Saúde (CID-10). p. 17–21."
+      ],
+      "context": [
+        "ms-estrategia-nacional-hanseniase-2024-2030:0012 (pdf 20-20)",
+        "oms-estrategia-global-hanseniase-2021-2030:0004 (pdf 7-7)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0023 (pdf 35-36)",
+        "ms-pcdt-hanseniase-2022:0006 (pdf 19-23)",
+        "ms-pcdt-hanseniase-2022:0014 (pdf 28-28)"
+      ]
+    },
+    {
+      "id": "P03",
+      "category": "predefinida",
+      "question": "Como classificar um caso como multibacilar?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0,
+      "cited": 4,
+      "milliseconds": 447,
+      "standaloneQuestion": "Como classificar um caso como multibacilar?",
+      "searchQueries": [
+        "Como classificar um caso como multibacilar?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.3.2 Hanseníase multibacilar (MB) (p. 26–27):** Após a conclusão diagnóstica a partir do exame clínico e/ou baciloscópico, os casos de hanseníase devem ser classificados para fins de tratamento, de acordo com os critérios definidos pela OMS. Para os casos que apresentam o comprometimento de apenas um nervo periférico, a OMS recomenda a classificação multibacilar; [1]\n- **PCDT da Hanseníase, 12.3 Imunossupressão e hanseníase (p. 97–98):** As imunodeficiências são doenças caracterizadas por um ou mais defeitos do sistema imunológico, gerando respostas inadequadas ou deficientes às agressões sofridas pelo indivíduo. Estão associadas ou predispõem os pacientes a várias complicações, como infecções, doenças autoimunes, linfomas e outros tipos de câncer. [2]\n- **PCDT da Hanseníase, 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha (p. 99–101):** Em situações extremas, como em indivíduos com graves transtornos mentais, alcoólatras inveterados, pacientes com dependência química avançada, doentes terminais em uso concomitante de múltiplos medicamentos, intolerância grave a múltiplos fármacos da PQT-U e outras situações especiais, recomenda-se a administração exclusiva de uma dose mensal, supervisionada, da associação de rifampicina, ofloxacino e minociclina (ROM), conforme Quadro 9, a seguir. Outra revisão sistemática com metaanálise publicada anteriormente mostrou que a combinação de múltiplas doses mensais do esquema ROM em multibacilares foi tão eficaz quanto a PQT clássica na redução dos índices baciloscópicos. [3]\n- **PCDT da Hanseníase, 6.6.2 Neurite (p. 39–40):** 6.6.2.2 Neurite silenciosa Nesses casos, há inflamação insidiosa do nervo periférico e ausência dos sinais e sintomas mais frequentes, como dor espontânea ou à palpação dos nervos periféricos. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.3.2 Hanseníase multibacilar (MB). p. 26–27.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.3 Imunossupressão e hanseníase. p. 97–98.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha. p. 99–101.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 39–40."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0015 (pdf 28-29)",
+        "ms-pcdt-hanseniase-2022:0118 (pdf 99-100)",
+        "ms-pcdt-hanseniase-2022:0121 (pdf 101-103)",
+        "ms-pcdt-hanseniase-2022:0033 (pdf 41-42)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0011 (pdf 19-20)"
+      ]
+    },
+    {
+      "id": "P04",
+      "category": "predefinida",
+      "question": "Contatos domiciliares devem ser examinados?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 283,
+      "standaloneQuestion": "Contatos domiciliares devem ser examinados?",
+      "searchQueries": [
+        "Contatos domiciliares devem ser examinados? hanseníase",
+        "Contatos domiciliares devem ser examinados? contatos domiciliares exame dermatoneurológico BCG hanseníase"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Diretrizes da OMS, 3 Profilaxia (p. 25–26):** É provável que o impacto da quimioprofilaxia seja maior à medida que a definição de contatos seja expandida (por exemplo, de contatos domiciliares apenas para todos os contatos em uma comunidade). Como a hanseníase é uma doença altamente estigmatizada, deve-se ter cautela ao implementar SDR em contatos, particularmente para contatos fora da família do paciente. [1]\n- **PCDT da Hanseníase, 13.1 Imunoprofilaxia e monitoramento de contatos (p. 101–103):** Recomenda-se ofertar imunoprofilaxia aos contatos de pacientes com hanseníase, maiores de um ano de idade, não vacinados ou que receberam apenas uma dose da vacina BCG. Os contatos diagnosticados com hanseníase devem ser encaminhados para iniciar a PQT-U. [2]\n- **Estratégia Global da OMS 2021–2030, Pilar estratégico 2 (p. 16):** Exame de contato de todos os casos novos Quimioterapia preventiva ampliada Detecção ativa integrada de casos em populações-alvo Vacinas existentes e novas vacinas potenciais Para impulsionar a prevenção de hanseníase, com o consentimento do caso índice, a OMS recomenda examinar os contatos domiciliares, assim como 25-50 contatos de vizinhança e contatos sociais de cada paciente, acompanhado da oferta de dose única de rifampicina como quimioterapia preventiva. [3]\n- **PCDT da Hanseníase, 13 Investigação de contatos (p. 101):** Para fins desse Protocolo, são considerados como contatos “toda e qualquer pessoa que resida ou tenha residido, conviva ou tenha convivido com o doente de hanseníase, no âmbito domiciliar, nos últimos cinco anos anteriores ao diagnóstico da doença, podendo ser familiar ou não”. Dessa forma, orienta-se que todos os contatos domiciliares de um caso de hanseníase passem por avaliação clínica, conforme os Fluxogramas 3 e 4, constantes do Apêndice A deste PCDT. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 25–26.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 13.1 Imunoprofilaxia e monitoramento de contatos. p. 101–103.",
+        "[3] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 2. p. 16.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 13 Investigação de contatos. p. 101."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0041 (pdf 43-44)",
+        "ms-pcdt-hanseniase-2022:0123 (pdf 103-105)",
+        "oms-estrategia-global-hanseniase-2021-2030:0023 (pdf 16-16)",
+        "ms-pcdt-hanseniase-2022:0122 (pdf 103-103)",
+        "oms-diretrizes-hanseniase-2018:0042 (pdf 44-44)"
+      ]
+    },
+    {
+      "id": "P05",
+      "category": "predefinida",
+      "question": "Qual dose de rifampicina devo prescrever?",
+      "expected": "recusar",
+      "behaviour": "recusou",
+      "reason": "prescription",
+      "correctBehaviour": true,
+      "hitAt5": null,
+      "hitAt8": null,
+      "evidenceRecall": null,
+      "citationPrecision": null,
+      "verifiedShare": null,
+      "keyFactCoverage": null,
+      "cited": 0,
+      "milliseconds": 199,
+      "standaloneQuestion": "Qual dose de rifampicina devo prescrever?",
+      "searchQueries": [
+        "Qual dose de rifampicina devo prescrever? hanseníase"
+      ],
+      "answer": "Não indico dose nem conduta para um paciente específico. Posso apresentar os esquemas padronizados descritos nos documentos oficiais (por exemplo: \"Qual é o esquema da PQT-U para adultos segundo o PCDT?\"), mas a prescrição cabe ao profissional responsável, com a avaliação do paciente.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha. p. 99–101.",
+        "[2] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 24–25.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.2 Tratamento farmacológico das reações hansênicas. p. 60–61.",
+        "[4] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas gerais. p. 34–35.",
+        "[5] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57–58."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0121 (pdf 101-103)",
+        "oms-diretrizes-hanseniase-2018:0039 (pdf 42-43)",
+        "ms-pcdt-hanseniase-2022:0061 (pdf 62-63)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0023 (pdf 35-36)",
+        "ms-pcdt-hanseniase-2022:0057 (pdf 59-60)"
+      ]
+    },
+    {
+      "id": "P06",
+      "category": "predefinida",
+      "question": "Como tratar diabetes tipo 2?",
+      "expected": "recusar",
+      "behaviour": "recusou",
+      "reason": "out_of_scope",
+      "correctBehaviour": true,
+      "hitAt5": null,
+      "hitAt8": null,
+      "evidenceRecall": null,
+      "citationPrecision": null,
+      "verifiedShare": null,
+      "keyFactCoverage": null,
+      "cited": 0,
+      "milliseconds": 1,
+      "standaloneQuestion": "Como tratar diabetes tipo 2?",
+      "searchQueries": [
+        "Como tratar diabetes tipo 2? hanseníase"
+      ],
+      "answer": "Esta consulta é dedicada à hanseníase, e a pergunta parece tratar de outro assunto. Se ela se refere à hanseníase (por exemplo, a uma comorbidade em pessoa com hanseníase), reformule mencionando a doença.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [],
+      "context": []
+    },
+    {
+      "id": "D01",
+      "category": "direta",
+      "question": "Qual é o esquema da PQT-U para adultos?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0,
+      "cited": 4,
+      "milliseconds": 231,
+      "standaloneQuestion": "Qual é o esquema da PQT-U para adultos?",
+      "searchQueries": [
+        "Qual é o esquema da PQT-U para adultos?",
+        "Qual é o esquema da PQT-U para adultos? poliquimioterapia única rifampicina dapsona clofazimina"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (p. 57–58):** Até recentemente, a PQT era administrada em dois esquemas terapêuticos distintos, sendo um composto por rifampicina, clofazimina e dapsona para casos multibacilares, e outro, composto apenas por rifampicina e dapsona, destinado aos paucibacilares. No Brasil, esse esquema terapêutico foi oficialmente adotado em 2021, quando passou a ser denominado de PQT-U. [1]\n- **PCDT da Hanseníase, 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha (p. 99–101):** Quadro 9 - Esquema farmacológico ROM para uso em indivíduos com dificuldade de adesão ao esquema de primeira linha Recente revisão sistemática da literatura com meta-análise demonstrou que a PQT-U por seis meses para paucibacilares apresentou risco relativo de cura variando de 1,01 a 1,06, com intervalos de confiança de 95% variando de 0,78 a 1,31, sem diferenças estatisticamente significativas em comparação a diversos esquemas posológicos contendo rifampicina, ofloxacino e minociclina. [2]\n- **Diretrizes da OMS, 1 Introdução (p. 2–3):** Blisters específicos estão disponíveis para hanseníase MB e PB, com diferentes doses para adultos e crianças, como mostrado abaixo: O regime padrão de tratamento de adultos para a hanseníase MB é: [3]\n- **PCDT da Hanseníase, 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U (p. 77–78):** O esquema de segunda linha na falha terapêutica por reação adversa à dapsona está descrito no Quadro 5. Quadro 5 - Esquema de segunda linha na falha terapêutica por reação adversa à dapsona [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57–58.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha. p. 99–101.",
+        "[3] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Introdução. p. 2–3.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 77–78."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0057 (pdf 59-60)",
+        "ms-pcdt-hanseniase-2022:0121 (pdf 101-103)",
+        "oms-diretrizes-hanseniase-2018:0009 (pdf 20-21)",
+        "ms-pcdt-hanseniase-2022:0087 (pdf 79-80)",
+        "ms-pcdt-hanseniase-2022:0058 (pdf 60-61)"
+      ]
+    },
+    {
+      "id": "D02",
+      "category": "direta",
+      "question": "Qual a duração do tratamento da hanseníase paucibacilar e da multibacilar?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 341,
+      "standaloneQuestion": "Qual a duração do tratamento da hanseníase paucibacilar e da multibacilar?",
+      "searchQueries": [
+        "Qual a duração do tratamento da hanseníase paucibacilar e da multibacilar?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Diretrizes da OMS, 1 Introdução (p. 2–3):** O diagnóstico precoce e o tratamento completo com poliquimioterapia (PQT) continuam a ser as principais estratégias para reduzir a carga de doenças da hanseníase. Os regimes padrão PQT para PB (duas drogas) e MB (três drogas) hanseníase foram introduzidos em 1982, com duração de tratamento de 6 meses para hanseníase PB e inicialmente de 24 meses, e em 1998 reduzido para 12 meses para hanseníase MB. [1]\n- **PCDT da Hanseníase, 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (p. 57):** Embora a duração do tratamento para casos PB tenha sido definida para seis meses desde as primeiras recomendações da OMS, o tempo de tratamento para os MB sofreu diversas alterações. Na década de 1990, demonstrou-se que a administração da PQT com duração fixa de 24 meses era suficiente para curar a doença com baixas taxas de recidiva e, em 1997, a OMS passou a recomendar que o tratamento fosse administrado por meio de 12 doses fixas, com base em estudos que não observaram diferenças na queda do índice baciloscópico e nas taxas de cura ao comparar a duração do tratamento de 12 e 24 meses. [2]\n- **Diretrizes da OMS, 2 Tratamento para a hanseníase (p. 19):** O GDG recomenda o mesmo regime de três medicamentos com rifampicina, dapsona e clofazimina para todos os pacientes com hanseníase, com duração de tratamento de 6 meses para hanseníase PB e de 12 meses para hanseníase MB (recomendação condicional, evidência de qualidade muito baixa). Vantagens potenciais de tal abordagem são a simplificação do regime de tratamento, redução do tempo de tratamento para pacientes com MB, redução do impacto da classificação errônea de casos de hanseníase (pessoas com hanseníase MB incorretamente classificadas como hanseníase PB receberiam três medicamentos com PQTU em vez de dois medicamentos com o padrão PB-PQT) e logística simplificada, pois seriam necessários apenas dois tipos de embalagens de medicamentos (adulto e infantil). [3]\n- **Diretrizes da OMS, Sumário executivo (p. xiii):** As diretrizes recomendam um regime de três medicamentos com rifampicina, dapsona e clofazimina para todos os pacientes com hanseníase, com duração de tratamento de 6 meses para hanseníase PB e 12 meses para hanseníase MB. Uma vantagem potencial do uso dos mesmos três medicamentos para a hanseníase PB e MB é a simplificação do tratamento (ou seja, a mesma embalagem blister pode ser usada para tratar ambos os tipos de hanseníase) e o impacto reduzido da classificação errônea da hanseníase MB, já que todos os pacientes receber um regime de três medicamentos. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Introdução. p. 2–3.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57.",
+        "[3] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 19.",
+        "[4] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiii."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0009 (pdf 20-21)",
+        "ms-pcdt-hanseniase-2022:0056 (pdf 59-59)",
+        "oms-diretrizes-hanseniase-2018:0031 (pdf 37-37)",
+        "oms-diretrizes-hanseniase-2018:0003 (pdf 15-15)",
+        "oms-diretrizes-hanseniase-2018:0005 (pdf 16-17)"
+      ]
+    },
+    {
+      "id": "D03",
+      "category": "direta",
+      "question": "O que é a reação hansênica tipo 1?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 0.5,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0.6666666666666666,
+      "cited": 4,
+      "milliseconds": 180,
+      "standaloneQuestion": "O que é a reação hansênica tipo 1?",
+      "searchQueries": [
+        "O que é a reação hansênica tipo 1?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico) (p. 35–36):** Assim como na reação tipo 1, o processo inflamatório desencadeado pela reação tipo 2 pode causar comprometimento importante dos nervos periféricos, associado a dano neural e incapacidades. Figura 6 – Reação hansênica tipo 2 (ou eritema nodoso hansênico) [1]\n- **PCDT da Hanseníase, 10.1.2 Tratamento farmacológico das reações hansênicas (p. 60–61):** Em nosso meio, um ensaio clínico incluindo 21 casos de reação hansênica associada a neurite ulnar, 12 casos com reação tipo 1 e nove casos com reação tipo 2 demonstrou que, em casos tratados precocemente (menos de três meses após o início da neurite), não houve diferenças significativas na melhora da função neural entre o grupo que usou prednisona na dose inicial de 1mg/kg/dia e o grupo que recebeu doses iniciais de 2mg/kg/dia. 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico [2]\n- **PCDT da Hanseníase, 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico) (p. 34–36):** Figura 5 – Reação hansênica tipo 1 (ou reação reversa) Na pele, a manifestação clássica da reação hansênica do tipo 2 é o eritema nodoso hansênico (ENH), que são nódulos subcutâneos, dolorosos, geralmente múltiplos e caracterizados histopatologicamente por paniculite. [3]\n- **PCDT da Hanseníase, 6.5.1 Reação hansênica tipo 1 (reação reversa) (p. 34):** A reação hansênica tipo 1 acomete especialmente pacientes com formas dimorfas da hanseníase e, portanto, pode surgir tanto em casos classificados como paucibacilares como nos multibacilares. É uma reação de hipersensibilidade do tipo III e IV na Classificação de Gell e Coombs, desencadeada por resposta imunológica contra antígenos do M. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico). p. 35–36.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.2 Tratamento farmacológico das reações hansênicas. p. 60–61.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico). p. 34–36.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.1 Reação hansênica tipo 1 (reação reversa). p. 34."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0027 (pdf 37-38)",
+        "ms-pcdt-hanseniase-2022:0061 (pdf 62-63)",
+        "ms-pcdt-hanseniase-2022:0026 (pdf 36-38)",
+        "ms-pcdt-hanseniase-2022:0025 (pdf 36-36)",
+        "ms-pcdt-hanseniase-2022:0011 (pdf 26-27)"
+      ]
+    },
+    {
+      "id": "D04",
+      "category": "direta",
+      "question": "Quais são as metas da Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0,
+      "cited": 4,
+      "milliseconds": 805,
+      "standaloneQuestion": "Quais são as metas da Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030?",
+      "searchQueries": [
+        "Quais são as metas da Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Estratégia Nacional 2024–2030, Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 (p. 20–22):** A Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030 foi elaborada a partir de uma oficina com ampla representatividade. A partir da Estratégia Global 2021-2030 – rumo a zero hanseníase, foi elaborada a Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030 com a visão de um Brasil sem hanseníase. [1]\n- **Estratégia Nacional 2024–2030, Próximos passos (p. 51):** A Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030 é resultado de um processo de planejamento que envolveu diversos atores, com diversas perspectivas, de forma a contemplar todas as áreas de interesse para a eliminação da doença no País. O envolvimento de cada nível de gestão é fundamental no êxito da execução desta Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. [2]\n- **Estratégia Nacional 2024–2030, Monitoramento (p. 49–50):** O monitoramento da Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030 será realizado anualmente, a partir dos dados inseridos no Sinan (metas 1 a 3) e as informações disponibilizadas pela Ouvidoria-Geral do Sistema Único de Saúde (OUVSUS) (meta 4). QUADRO 8 | Indicadores para o monitoramento das metas da Estratégia Nacional para o Enfrentamento à Hanseníase 2024-2030 [3]\n- **Estratégia Nacional 2024–2030, Ações estratégicas gerais (p. 35–36):** Pleito da adequação dos sistemas de informação de interesse da saúde para contribuir com o enfrentamento à hanseníase (vigilância, estigma, discriminação, assistência, laboratório, farmácia). Capacitação de profissionais sobre estratégias e abordagens de enfrentamento ao estigma e à discriminação nos diferentes setores executores das políticas públicas (saúde, assistência social, educação, previdência social, entre outros). [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030. p. 20–22.",
+        "[2] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Próximos passos. p. 51.",
+        "[3] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Monitoramento. p. 49–50.",
+        "[4] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas gerais. p. 35–36."
+      ],
+      "context": [
+        "ms-estrategia-nacional-hanseniase-2024-2030:0013 (pdf 21-23)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0038 (pdf 52-52)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0036 (pdf 50-51)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0024 (pdf 36-37)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0021 (pdf 32-34)"
+      ]
+    },
+    {
+      "id": "D05",
+      "category": "direta",
+      "question": "Quais são os pilares da Estratégia Global da OMS para a hanseníase?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.75,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0.3333333333333333,
+      "cited": 4,
+      "milliseconds": 1118,
+      "standaloneQuestion": "Quais são os pilares da Estratégia Global da OMS para a hanseníase?",
+      "searchQueries": [
+        "Quais são os pilares da Estratégia Global da OMS para a hanseníase?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Estratégia Global da OMS 2021–2030, Desenvolvimento (p. 7):** Tropicais Negligenciadas (DTN) de 2021–2030 e Estratégia Global para Hanseníase enviada ao Grupo Consultivo Técnico (GCT) da OMS sobre hanseníase e parceiros Consulta global com gerentes de PNH, parceiros e pessoas afetadas sobre a Estratégia Global para Hanseníase 2021–2030 [1]\n- **Estratégia Global da OMS 2021–2030, Visão geral e contexto (p. 8):** A Estratégia Global para a Hanseníase 2021–2030 é uma das estratégias específicas para doenças que compõem o Roteiro da OMS para DTNs 2021–2030. Sua equipe de liderança inclui representantes de PNH, setor privado, organizações não governamentais (ONGs), doadores, academia, organizações de pessoas afetadas pela hanseníase e o Programa Global de Hanseníase da OMS (como observador). [2]\n- **Estratégia Global da OMS 2021–2030, Visão geral e contexto (p. 8):** Essa Estratégia Global para a Hanseníase 2021–2030 apresenta uma direção básica, as metas, os desafios e os pilares estratégicos em âmbito global. Os programas nacionais de DTN e hanseníase em ambientes de alta e baixa incidência devem adotar a estratégia global, adaptar seus pilares estratégicos ao contexto do país e selecionar metas e indicadores apropriados para a nação. [3]\n- **Estratégia Nacional 2024–2030, Definição das ações estratégicas (p. 26–28):** Já os pilares são temas específicos, que orientaram o estabelecimento de objetivos da estratégia e, a partir destes, a proposição das ações estratégicas para o enfrentamento à hanseníase (Figuras 9 a 12). Com a definição de visão, missão, metas, alicerces e pilares da estratégia, foram definidos os objetivos gerais e específicos de cada pilar, as ações estratégicas gerais e as ações estratégicas específicas por grupos de municípios (Anexo B). [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Desenvolvimento. p. 7.",
+        "[2] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Visão geral e contexto. p. 8.",
+        "[3] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Visão geral e contexto. p. 8.",
+        "[4] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Definição das ações estratégicas. p. 26–28."
+      ],
+      "context": [
+        "oms-estrategia-global-hanseniase-2021-2030:0004 (pdf 7-7)",
+        "oms-estrategia-global-hanseniase-2021-2030:0007 (pdf 8-8)",
+        "oms-estrategia-global-hanseniase-2021-2030:0008 (pdf 8-8)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0018 (pdf 27-29)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0019 (pdf 29-32)"
+      ]
+    },
+    {
+      "id": "C01",
+      "category": "combinacao",
+      "question": "Como é feito o diagnóstico da hanseníase e quais exames podem ajudar quando há dúvida?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 0.5,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 1687,
+      "standaloneQuestion": "Como é feito o diagnóstico da hanseníase e quais exames podem ajudar quando há dúvida?",
+      "searchQueries": [
+        "Como é feito o diagnóstico da hanseníase e quais exames podem ajudar quando há dúvida?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.4.5 Hanseníase neural pura (ou neurítica primária) (p. 32–33):** Alguns exames complementares como o eletroneuromiograma, a biópsia de nervo, a sorologia e biologia molecular podem auxiliar na definição etiológica, embora não estejam facilmente disponíveis na Rede de Atenção à Saúde (RAS). A ultrassonografia é de grande valia como exame complementar dos nervos periféricos, assim como o eletroneuromiograma, que podem auxiliar na elucidação diagnóstica. [1]\n- **Diretrizes da OMS, Sumário executivo (p. xiv–xv):** O diagnóstico da hanseníase pode ser baseado em exame clínico, com ou sem esfregaço cutâneo ou exame anatomopatológico das biópsias. O mesmo esquema com três fármacos de rifampicina, dapsona e clofazimina pode ser usado para todos os pacientes com hanseníase, com duração de tratamento de 6 meses para hanseníase PB e de 12 meses para hanseníase MB. [2]\n- **PCDT da Hanseníase, 7 Exames de apoio ao diagnóstico (p. 43):** A avaliação minuciosa, incluindo o exame cuidadoso das lesões cutâneas e dos nervos periféricos, na maioria dos casos será suficiente para a definição diagnóstica da hanseníase. Certamente, os critérios clínicos adotados para a definição de casos de hanseníase, tanto pela OMS como pelo Ministério da Saúde do Brasiliv, têm especificidade limitada e podem gerar diagnósticos tanto falso-positivos como falso-negativos. [3]\n- **PCDT da Hanseníase, 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR) (p. 44–45):** Está indicada nos casos de dúvidas no diagnóstico da hanseníase; Embora a baciloscopia se caracterize por alta especificidade, baixo custo e execução relativamente simples quando realizada por profissionais capacitados, o exame tem baixa sensibilidade, resultando negativo nos casos paucibacilares, o que absolutamente não exclui o diagnóstico da hanseníase. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.5 Hanseníase neural pura (ou neurítica primária). p. 32–33.",
+        "[2] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiv–xv.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7 Exames de apoio ao diagnóstico. p. 43.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR). p. 44–45."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0022 (pdf 34-35)",
+        "oms-diretrizes-hanseniase-2018:0005 (pdf 16-17)",
+        "ms-pcdt-hanseniase-2022:0036 (pdf 45-45)",
+        "ms-pcdt-hanseniase-2022:0039 (pdf 46-47)",
+        "ms-pcdt-hanseniase-2022:0118 (pdf 99-100)"
+      ]
+    },
+    {
+      "id": "C02",
+      "category": "combinacao",
+      "question": "Como tratar a reação hansênica tipo 2 e quais cuidados o uso de talidomida exige?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 0.5,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0.6666666666666666,
+      "cited": 4,
+      "milliseconds": 679,
+      "standaloneQuestion": "Como tratar a reação hansênica tipo 2 e quais cuidados o uso de talidomida exige?",
+      "searchQueries": [
+        "Como tratar a reação hansênica tipo 2 e quais cuidados o uso de talidomida exige?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico) (p. 35–36):** Assim como na reação tipo 1, o processo inflamatório desencadeado pela reação tipo 2 pode causar comprometimento importante dos nervos periféricos, associado a dano neural e incapacidades. Nos demais casos, a reação tipo 2 é tratada com talidomida ou pentoxifilina, de acordo com os esquemas descritos neste PCDTiii. [1]\n- **PCDT da Hanseníase, 10.1.2 Tratamento farmacológico das reações hansênicas (p. 60–61):** Em nosso meio, um ensaio clínico incluindo 21 casos de reação hansênica associada a neurite ulnar, 12 casos com reação tipo 1 e nove casos com reação tipo 2 demonstrou que, em casos tratados precocemente (menos de três meses após o início da neurite), não houve diferenças significativas na melhora da função neural entre o grupo que usou prednisona na dose inicial de 1mg/kg/dia e o grupo que recebeu doses iniciais de 2mg/kg/dia. 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico [2]\n- **PCDT da Hanseníase, 6.5.1 Reação hansênica tipo 1 (reação reversa) (p. 34):** A reação hansênica tipo 1 acomete especialmente pacientes com formas dimorfas da hanseníase e, portanto, pode surgir tanto em casos classificados como paucibacilares como nos multibacilares. Em vista do risco de dano neural, o tratamento da reação tipo 1 deve ser instituído imediatamente, por meio de corticosteroides sistêmicos em doses altas, de acordo com as recomendações constantes neste PCDTii, assim como pelo monitoramento clínico e da função neural. [3]\n- **PCDT da Hanseníase, 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico) (p. 34–36):** Figura 5 – Reação hansênica tipo 1 (ou reação reversa) Na pele, a manifestação clássica da reação hansênica do tipo 2 é o eritema nodoso hansênico (ENH), que são nódulos subcutâneos, dolorosos, geralmente múltiplos e caracterizados histopatologicamente por paniculite. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico). p. 35–36.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.2 Tratamento farmacológico das reações hansênicas. p. 60–61.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.1 Reação hansênica tipo 1 (reação reversa). p. 34.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico). p. 34–36."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0027 (pdf 37-38)",
+        "ms-pcdt-hanseniase-2022:0061 (pdf 62-63)",
+        "ms-pcdt-hanseniase-2022:0025 (pdf 36-36)",
+        "ms-pcdt-hanseniase-2022:0026 (pdf 36-38)",
+        "ms-pcdt-hanseniase-2022:0074 (pdf 70-71)"
+      ]
+    },
+    {
+      "id": "S01",
+      "category": "sinonimo",
+      "question": "Lepra tem cura?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 0.5,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 485,
+      "standaloneQuestion": "Lepra tem cura?",
+      "searchQueries": [
+        "Lepra tem cura?",
+        "Lepra tem cura? hanseníase alta por cura término do tratamento"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (p. 57):** Na década de 1990, demonstrou-se que a administração da PQT com duração fixa de 24 meses era suficiente para curar a doença com baixas taxas de recidiva e, em 1997, a OMS passou a recomendar que o tratamento fosse administrado por meio de 12 doses fixas, com base em estudos que não observaram diferenças na queda do índice baciloscópico e nas taxas de cura ao comparar a duração do tratamento de 12 e 24 meses. A eficácia desse esquema terapêutico é comprovada pela baixa taxa de recidiva, que foi de 1,7% em uma análise de 730 pacientes com hanseníase MB, tratados com PQT com 12 doses fixas e acompanhados por até dez anos após a alta por cura. [1]\n- **Diretrizes da OMS, 1 Introdução (p. 2–3):** Caso paucibacilar (PB): um caso de hanseníase com 1 a 5 lesões cutâneas, sem presença demonstrada de bacilos em baciloscopia; [2]\n- **Diretrizes da OMS, Sumário executivo (p. xiii):** As diretrizes também não recomendam nenhum teste para o diagnóstico da hanseníase em contatos assintomáticos. A precisão preditiva dos testes diagnósticos para identificar pessoas que desenvolverão a hanseníase é baixa, com baixos valores preditivos positivos ruins. [3]\n- **PCDT da Hanseníase, 10.1 Tratamento farmacológico (p. 55–56):** O forte efeito bactericida da PQT, comprovado em diversos estudos, possibilita a interrupção da antibioticoterapia e a cura da infecção. PQT para 100% dos pacientes com a possiblidade de cura e a consequente saída do registro de muitos pacientes. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57.",
+        "[2] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Introdução. p. 2–3.",
+        "[3] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiii.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1 Tratamento farmacológico. p. 55–56."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0056 (pdf 59-59)",
+        "oms-diretrizes-hanseniase-2018:0009 (pdf 20-21)",
+        "oms-diretrizes-hanseniase-2018:0003 (pdf 15-15)",
+        "ms-pcdt-hanseniase-2022:0053 (pdf 57-58)",
+        "oms-diretrizes-hanseniase-2018:0031 (pdf 37-37)"
+      ]
+    },
+    {
+      "id": "S02",
+      "category": "sinonimo",
+      "question": "Mancha dormente na pele pode ser hanseníase?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 351,
+      "standaloneQuestion": "Mancha dormente na pele pode ser hanseníase?",
+      "searchQueries": [
+        "Mancha dormente na pele pode ser hanseníase?",
+        "Mancha dormente na pele pode ser hanseníase? lesão de pele alteração de sensibilidade alteração de sensibilidade térmica dolorosa tátil"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.2 Definição de caso (p. 26):** O diagnóstico da hanseníase é eminentemente clínico e a maioria dos casos pode ser confirmada no nível da Atenção Primária à Saúde. O Ministério da Saúde do Brasil define um caso de hanseníase pela presença de pelo menos um ou mais dos seguintes critérios, conhecidos como sinais cardinais da hanseníase: [1]\n- **PCDT da Hanseníase, 6.4.1 Hanseníase tuberculoide (p. 28–29):** O paciente apresenta comprometimento restrito da pele e nervos, que se manifesta geralmente como lesão cutânea única e bem delimitada. As lesões da pele são placas com bordas nítidas, elevadas, geralmente eritematosas e micropapulosas, que surgem como lesões únicas ou em pequeno número (Figura 1). [2]\n- **PCDT da Hanseníase, 6.4.4 Hanseníase indeterminada (p. 31–32):** Diferentemente das formas anteriores, suas manifestações clínicas não se relacionam à resposta imune específica, caracterizando-se por manchas na pele, em pequeno número, mais claras que a pele ao redor (hipocrômicas), sem qualquer alteração do relevo nem da textura da pele (Figura 4). Ressalta-se que essa forma clínica pode inicialmente manifestar-se por distúrbios da sensibilidade, sem alteração da cor da pele. [3]\n- **PCDT da Hanseníase, 6.1 Suspeição diagnóstica (p. 25–26):** Na ausência de uma vacina específica e de conhecimentos mais aprofundados sobre a transmissão do bacilo de Hansen e sobre os determinantes sociais da doença, as principais armas contra a hanseníase são o diagnóstico precoce e o tratamento oportuno dos casos. manchas hipocrômicas ou avermelhadas na pele, perda ou diminuição da sensibilidade em mancha(s) da pele, dormência ou formigamento de mãos/pés, dor ou hipersensibilidade em nervos, edema ou nódulos na face ou nos lóbulos auriculares, ferimentos ou queimaduras indolores nas mãos ou pés. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.2 Definição de caso. p. 26.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.1 Hanseníase tuberculoide. p. 28–29.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.4 Hanseníase indeterminada. p. 31–32.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0014 (pdf 28-28)",
+        "ms-pcdt-hanseniase-2022:0017 (pdf 30-31)",
+        "ms-pcdt-hanseniase-2022:0021 (pdf 33-34)",
+        "ms-pcdt-hanseniase-2022:0013 (pdf 27-28)",
+        "ms-pcdt-hanseniase-2022:0114 (pdf 97-97)"
+      ]
+    },
+    {
+      "id": "S03",
+      "category": "sinonimo",
+      "question": "O que fazer com as pessoas que moram na mesma casa de um paciente com hanseníase?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": false,
+      "hitAt8": false,
+      "evidenceRecall": 0,
+      "citationPrecision": 0,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0.5,
+      "cited": 4,
+      "milliseconds": 556,
+      "standaloneQuestion": "O que fazer com as pessoas que moram na mesma casa de um paciente com hanseníase?",
+      "searchQueries": [
+        "O que fazer com as pessoas que moram na mesma casa de um paciente com hanseníase?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Diretrizes da OMS, 2 Tratamento para a hanseníase (p. 21):** Evidências sobre o risco de recidiva de diferentes regimes para hanseníase PB foram limitadas a uma análise indireta que encontrou uma maior taxa de recidiva após o tratamento em pacientes com PB usando um regime de dois medicamentoses mais curto em comparação com a taxa de recidiva em pessoas com MB regime de drogas (69). Embora essa comparação envolva pessoas com diferentes formas de hanseníase, a taxa de recidiva deve ser menor com hanseníase PB do que com hanseníase MB. [1]\n- **PCDT da Hanseníase, 11 Resistência do M. leprae a antimicrobianos (p. 89–90):** leprae aos antibióticos utilizados na PQT-U ainda é rara, tendo-se recentemente demonstrado que, entre 1.183 casos de hanseníase investigados, apenas 16 pacientes (1,4%) apresentaram polimorfismos genéticos associados à resistência aos fármacos. O estudo incluiu 305 casos de recidiva, 534 casos com suspeita de falha terapêutica e 344 casos novos de hanseníase. [2]\n- **Diretrizes da OMS, 3 Público-alvo (p. 4–5):** Além disso, as diretrizes ajudarão as pessoas que trabalham em organizações nãogovernamentais (ONGs) que prestam serviços de hanseníase a definir elementos relevantes dos serviços que oferecem. As diretrizes destinam-se a ajudar os médicos que tratam pacientes com hanseníase e pesquisadores, destacando lacunas na pesquisa. [3]\n- **Estratégia Global da OMS 2021–2030, Pilar estratégico 2 (p. 16):** Para impulsionar a prevenção de hanseníase, com o consentimento do caso índice, a OMS recomenda examinar os contatos domiciliares, assim como 25-50 contatos de vizinhança e contatos sociais de cada paciente, acompanhado da oferta de dose única de rifampicina como quimioterapia preventiva. Ao lado de seu papel na prevenção da hanseníase, o exame de contatos é a ferramenta mais produtiva para encontrar novos casos e pode ser a chave para o controle da hanseníase nos próximos dez anos. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 21.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11 Resistência do M. leprae a antimicrobianos. p. 89–90.",
+        "[3] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Público-alvo. p. 4–5.",
+        "[4] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 2. p. 16."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0034 (pdf 39-39)",
+        "ms-pcdt-hanseniase-2022:0106 (pdf 91-92)",
+        "oms-diretrizes-hanseniase-2018:0012 (pdf 22-23)",
+        "oms-estrategia-global-hanseniase-2021-2030:0023 (pdf 16-16)",
+        "oms-diretrizes-hanseniase-2018:0018 (pdf 27-28)"
+      ]
+    },
+    {
+      "id": "F01",
+      "category": "continuacao",
+      "question": "E quais são os critérios para crianças?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": false,
+      "hitAt8": false,
+      "evidenceRecall": 0,
+      "citationPrecision": 0,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 533,
+      "standaloneQuestion": "E quais são os critérios para crianças? (continuação da pergunta anterior: \"Como é feito o diagnóstico da hanseníase?\")",
+      "searchQueries": [
+        "E quais são os critérios para crianças? diagnostico hanseniase",
+        "E quais são os critérios para crianças? diagnostico hanseniase menores de 15 anos crianças"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Diretrizes da OMS, 3 Profilaxia (p. 24–25):** O GDG recomenda o uso de SDR como tratamento preventivo para contatos de pacientes com hanseníase (adultos e crianças com idade igual ou superior a 2 anos), após a exclusão de casos de hanseníase e tuberculose, e na ausência de outras contraindicações. Um TCA encontrou SDR efetivo na redução do risco de hanseníase em 5 a 6 anos nos contatos de hanseníase. [1]\n- **Estratégia Global da OMS 2021–2030, Pilar estratégico 1 (p. 15):** São necessárias estratégias para construir e manter a capacidade da equipe de serviços clínicos e de saúde pública integrados em todos os aspectos da prevenção da hanseníase, triagem, diagnóstico, tratamento, gestão de complicações, autocuidado, direitos das pessoas afetadas pela hanseníase e suas famílias e programa de gestão. Organizações de pessoas afetadas pela hanseníase, envolvidas como parceiras, podem encorajar a identificação precoce da hanseníase e melhorar a adesão ao tratamento. [2]\n- **Diretrizes da OMS, 1 Diagnóstico (p. 17–18):** Estudos dos testes de ELISA e fluxo lateral mais comumente utilizados mostram baixa sensibilidade para a hanseníase PB, que é freqüentemente mais difícil de diagnosticar clinicamente do que a hanseníase MB (19–41). Nenhum estudo de ferramentas alternativas para o diagnóstico da hanseníase, como a ultrassonografia dos nervos periféricos, atendeu aos critérios de inclusão. [3]\n- **Estratégia Nacional 2024–2030, Ações estratégicas por grupos de municípios (p. 44–45):** Inserir a temática da hanseníase na pactuação da RAS Realizar inquérito nas áreas de maior notificação e/ou de maior vulnerabilidade, com o uso do Questionário de Suspeição de Hanseníase (QSH), para confirmação da situação epidemiológica. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 24–25.",
+        "[2] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 1. p. 15.",
+        "[3] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Diagnóstico. p. 17–18.",
+        "[4] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas por grupos de municípios. p. 44–45."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0039 (pdf 42-43)",
+        "oms-estrategia-global-hanseniase-2021-2030:0021 (pdf 15-15)",
+        "oms-diretrizes-hanseniase-2018:0029 (pdf 35-36)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0032 (pdf 45-46)",
+        "oms-estrategia-global-hanseniase-2021-2030:0011 (pdf 10-10)"
+      ]
+    },
+    {
+      "id": "F02",
+      "category": "continuacao",
+      "question": "E para crianças?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0,
+      "cited": 4,
+      "milliseconds": 472,
+      "standaloneQuestion": "E para crianças? (continuação da pergunta anterior: \"Qual é o esquema da PQT-U para adultos?\")",
+      "searchQueries": [
+        "E para crianças? esquema pqt-u adultos",
+        "E para crianças? esquema pqt-u adultos poliquimioterapia única rifampicina dapsona clofazimina menores de 15 anos crianças"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (p. 57–58):** No Brasil, esse esquema terapêutico foi oficialmente adotado em 2021, quando passou a ser denominado de PQT-U. Crianças ou adultos com peso entre 30 e 50kg [1]\n- **Diretrizes da OMS, 1 Introdução (p. 2–3):** O diagnóstico precoce e o tratamento completo com poliquimioterapia (PQT) continuam a ser as principais estratégias para reduzir a carga de doenças da hanseníase. Blisters específicos estão disponíveis para hanseníase MB e PB, com diferentes doses para adultos e crianças, como mostrado abaixo: [2]\n- **PCDT da Hanseníase, 10.1.3 Tratamento farmacológico das reações hansênicas em crianças (p. 62):** A prática usual é prescrever corticoides com base em regimes de adultos, adaptados para o peso e idade da criança. Os riscos específicos dos esteroides em crianças (efeitos no crescimento esquelético e na puberdade) devem ser considerados, além dos eventos adversos gerais, incluindo imunossupressão, hiperglicemia, osteoporose e supressão adrenal. [3]\n- **PCDT da Hanseníase, 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha (p. 99–101):** Quadro 9 - Esquema farmacológico ROM para uso em indivíduos com dificuldade de adesão ao esquema de primeira linha Portanto, o esquema com uso exclusivo em dose mensal supervisionada de rifampicina 600mg + ofloxacino 400mg e minociclina 100mg pode ser uma alternativa para o tratamento de pacientes em situações que implicam grande dificuldade de adesão ao esquema de primeira linha, como as descritas anteriormente. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57–58.",
+        "[2] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Introdução. p. 2–3.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.3 Tratamento farmacológico das reações hansênicas em crianças. p. 62.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha. p. 99–101."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0057 (pdf 59-60)",
+        "oms-diretrizes-hanseniase-2018:0009 (pdf 20-21)",
+        "ms-pcdt-hanseniase-2022:0063 (pdf 64-64)",
+        "ms-pcdt-hanseniase-2022:0121 (pdf 101-103)",
+        "oms-diretrizes-hanseniase-2018:0031 (pdf 37-37)"
+      ]
+    },
+    {
+      "id": "H01",
+      "category": "dificil",
+      "question": "Em que situações a baciloscopia é indicada?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0,
+      "cited": 4,
+      "milliseconds": 296,
+      "standaloneQuestion": "Em que situações a baciloscopia é indicada?",
+      "searchQueries": [
+        "Em que situações a baciloscopia é indicada?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR) (p. 44–45):** nesses casos, a baciloscopia avalia a carga bacilar apenas no fragmento analisado. o número de bacilos em cada esfregaço é calculado de acordo com a escala logarítmica de Ridley, que atribui índices baciloscópicos (IB) que variam de 0 a 6+. [1]\n- **PCDT da Hanseníase, 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR) (p. 45):** É importante ressaltar que a baciloscopia é um exame que depende da habilidade e experiência dos profissionais que a executam. A baciloscopia direta para BAAR da hanseníase deve ser disponibilizada na APS e, alternativamente, nos demais níveis de atenção, conforme a necessidade e organização da RAS local. [2]\n- **PCDT da Hanseníase, 6.3.2 Hanseníase multibacilar (MB) (p. 26–27):** Após a conclusão diagnóstica a partir do exame clínico e/ou baciloscópico, os casos de hanseníase devem ser classificados para fins de tratamento, de acordo com os critérios definidos pela OMS. Caracteriza-se pela presença de uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa. [3]\n- **Diretrizes da OMS, 10 Formulação de recomendações (p. 14):** O GDG, com o apoio do Grupo Diretor, formulou recomendações com base nas evidências resumidas nas revisões sistemáticas sobre precisão de diagnóstico e possíveis benefícios e danos, além de outros fatores, como efeitos na prestação de serviços, viabilidade, aceitabilidade, custo-efetividade e valores e preferências dos usuários finais. A força de cada recomendação foi classificada como “forte” ou “condicional”. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR). p. 44–45.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR). p. 45.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.3.2 Hanseníase multibacilar (MB). p. 26–27.",
+        "[4] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 10 Formulação de recomendações. p. 14."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0039 (pdf 46-47)",
+        "ms-pcdt-hanseniase-2022:0040 (pdf 47-47)",
+        "ms-pcdt-hanseniase-2022:0015 (pdf 28-29)",
+        "oms-diretrizes-hanseniase-2018:0026 (pdf 32-32)",
+        "ms-pcdt-hanseniase-2022:0056 (pdf 59-59)"
+      ]
+    },
+    {
+      "id": "H02",
+      "category": "dificil",
+      "question": "Que cuidados ter com pacientes com hanseníase e diabetes que precisam usar corticoide?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": false,
+      "hitAt8": false,
+      "evidenceRecall": 0,
+      "citationPrecision": 0,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0,
+      "cited": 4,
+      "milliseconds": 360,
+      "standaloneQuestion": "Que cuidados ter com pacientes com hanseníase e diabetes que precisam usar corticoide?",
+      "searchQueries": [
+        "Que cuidados ter com pacientes com hanseníase e diabetes que precisam usar corticoide?",
+        "Que cuidados ter com pacientes com hanseníase e diabetes que precisam usar corticoide? prednisona corticosteroide"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Diretrizes da OMS, 6 Questões-chave (p. 7–9):** Adultos e crianças com suspeita de hanseníase e pacientes com hanseníase (PB e MB) diagnosticados clinicamente • Contatos de pacientes com hanseníase: [1]\n- **Diretrizes da OMS, 2 Tratamento para a hanseníase (p. 21):** Pacientes com PB recebem três drogas em oposição a dois com a adição de clofazimina e os pacientes com MB recebem o mesmo regime, mas a duração é reduzida de 12 para 6 meses. Embora essa comparação envolva pessoas com diferentes formas de hanseníase, a taxa de recidiva deve ser menor com hanseníase PB do que com hanseníase MB. [2]\n- **PCDT da Hanseníase, 10.2.1 Abordagem psicossocial (p. 82):** O apoio psicossocial é uma relação de suporte envolvendo uma rede que trabalha com o paciente no sentido de abordar sentimentos, emoções, pensamentos, crenças, comportamentos e relacionamentos associados ao diagnóstico e ao processo contínuo de viver com a hanseníase. Nesse sentido, a Política Nacional de Saúde Mental compreende estratégias e diretrizes para organizar a assistência aos pacientes com necessidades de tratamentos e cuidados específicos em saúde mental. [3]\n- **Diretrizes da OMS, 6 Questões-chave (p. 9–10):** • vizinhos de pacientes com hanseníase (PB e MB) Um regime de tratamento único (uniforme) para todos os pacientes com hanseníase é tão eficaz e seguro quanto os dois regimes de tratamento atualmente recomendados: [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 6 Questões-chave. p. 7–9.",
+        "[2] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 21.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 82.",
+        "[4] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 6 Questões-chave. p. 9–10."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0017 (pdf 25-27)",
+        "oms-diretrizes-hanseniase-2018:0034 (pdf 39-39)",
+        "ms-pcdt-hanseniase-2022:0093 (pdf 84-84)",
+        "oms-diretrizes-hanseniase-2018:0018 (pdf 27-28)",
+        "ms-pcdt-hanseniase-2022:0042 (pdf 48-48)"
+      ]
+    },
+    {
+      "id": "H03",
+      "category": "dificil",
+      "question": "Gestante pode usar talidomida?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 0.5,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 269,
+      "standaloneQuestion": "Gestante pode usar talidomida?",
+      "searchQueries": [
+        "Gestante pode usar talidomida?",
+        "Gestante pode usar talidomida? gestação gestantes"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 10.1.6 Eventos adversos e interações medicamentosas (p. 73–74):** A talidomida pode também agravar a neuropatia já existente e, como tal, em pacientes com hanseníase e neuropatia periférica instalada, devem-se pesar os riscos/ benefícios da sua prescrição. Recomenda-se a realização de exames clínicos e neurológicos nos pacientes antes do início do tratamento com talidomida e a monitorização de rotina durante o tratamento. [1]\n- **PCDT da Hanseníase, 10.1.6 Eventos adversos e interações medicamentosas (p. 75–76):** a talidomida tem propriedades sedativas e pode potencializar a sedação induzida pelos medicamentos dos seguintes grupos: a associação entre a talidomida e a dexametasona ou a talidomida e alguns quimioterápicos pode levar a um risco aumentado de eventos tromboembólicos. [2]\n- **PCDT da Hanseníase, 10.1.5 Informações sobre os medicamentos (p. 68–69):** Todavia, não é possível identificar um mecanismo dominante único, visto que a ação das citocinas e a grande variedade de efeitos da talidomida parecem ser complexos. a talidomida nunca deve ser indicada para mulheres grávidas, em virtude do seu efeito teratogênico, especialmente no início do primeiro trimestre de gestação. [3]\n- **PCDT da Hanseníase, 10.1.5 Informações sobre os medicamentos (p. 69–70):** Considerações importantes sobre a teratogenicidade da talidomida: A talidomida é teratogênica para humanos, mesmo em uma única dose de 50mg. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 73–74.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 75–76.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.5 Informações sobre os medicamentos. p. 68–69.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.5 Informações sobre os medicamentos. p. 69–70."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0080 (pdf 75-76)",
+        "ms-pcdt-hanseniase-2022:0084 (pdf 77-78)",
+        "ms-pcdt-hanseniase-2022:0074 (pdf 70-71)",
+        "ms-pcdt-hanseniase-2022:0075 (pdf 71-72)",
+        "ms-pcdt-hanseniase-2022:0081 (pdf 76-76)"
+      ]
+    },
+    {
+      "id": "H04",
+      "category": "dificil",
+      "question": "Como é feita a avaliação neurológica simplificada?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 0.5,
+      "citationPrecision": 0,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 313,
+      "standaloneQuestion": "Como é feita a avaliação neurológica simplificada?",
+      "searchQueries": [
+        "Como é feita a avaliação neurológica simplificada?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Diretrizes da OMS, 4 Implementação e avaliação (p. 27–28):** No que diz respeito à implementação e avaliação das diretrizes, as GLP trabalharão em estreita colaboração com as representações regionais e nacionais da OMS e os parceiros Após a implementação, uma avaliação do impacto das diretrizes será realizada por meio da revisão de dados epidemiológicos, após uma avaliação da adoção das recomendações e barreiras para a implementação efetiva. [1]\n- **Estratégia Nacional 2024–2030, Ações estratégicas por grupos de municípios (p. 45–47):** Avaliar, por meio de exame clínico criterioso, todos os menores de 15 anos de idade entre os contatos registrados dos casos notificados nos últimos cinco anos. Fomentar capacitações para os profissionais da APS que promovam a abordagem sobre a neuropatia hansênica e a Avaliação Neurológica Simplificada (ANS) como indutora de conduta e que reforcem a importância desse indicador para a análise da endemia. [2]\n- **PCDT da Hanseníase, 6.6.2 Neurite (p. 38–39):** Segundo a OMS, o termo “neurite” significa estritamente inflamação do nervo, implicando a participação do sistema imune do hospedeiro e diferenciando-se do termo “neuropatia”, que engloba danos à função dos nervos por qualquer causa. Em conjunto, esse procedimento é denominado Avaliação Neurológica Simplificada (ANS) e deve ser repetido periodicamente, especialmente em pacientes em uso de corticosteroides sistêmicos, uma vez que esses medicamentos podem ter efeito analgésico, mas não protegem o paciente do dano neurológico. [3]\n- **PCDT da Hanseníase, 6.6.1 Neuropatia periférica (p. 38):** O exame de todos os indivíduos com suspeita clínica de hanseníase e daqueles com diagnóstico confirmado deve incluir uma avaliação neurológica muito detalhada, que envolve a palpação dos nervos periféricos e testes de sensibilidade e força muscular nas mãos, pés e olhos. Os resultados dessa avaliação podem definir critérios para o diagnóstico da doença, além de serem essenciais para o monitoramento da função dos nervos periféricos durante e após o tratamento medicamentoso, especialmente em pacientes que desenvolvem neurites periféricas isoladas ou reações hansênicas. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 4 Implementação e avaliação. p. 27–28.",
+        "[2] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas por grupos de municípios. p. 45–47.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 38–39.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.1 Neuropatia periférica. p. 38."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0045 (pdf 45-46)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0033 (pdf 46-48)",
+        "ms-pcdt-hanseniase-2022:0032 (pdf 40-41)",
+        "ms-pcdt-hanseniase-2022:0031 (pdf 40-40)",
+        "ms-pcdt-hanseniase-2022:0038 (pdf 46-46)"
+      ]
+    },
+    {
+      "id": "N01",
+      "category": "sem_resposta",
+      "question": "Existe tratamento com acupuntura para hanseníase?",
+      "expected": "informar_lacuna",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": false,
+      "hitAt5": null,
+      "hitAt8": null,
+      "evidenceRecall": null,
+      "citationPrecision": null,
+      "verifiedShare": 1,
+      "keyFactCoverage": null,
+      "cited": 4,
+      "milliseconds": 443,
+      "standaloneQuestion": "Existe tratamento com acupuntura para hanseníase?",
+      "searchQueries": [
+        "Existe tratamento com acupuntura para hanseníase?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Diretrizes da OMS, 2 Tratamento para a hanseníase (p. 19):** O GDG recomenda o mesmo regime de três medicamentos com rifampicina, dapsona e clofazimina para todos os pacientes com hanseníase, com duração de tratamento de 6 meses para hanseníase PB e de 12 meses para hanseníase MB (recomendação condicional, evidência de qualidade muito baixa). Vantagens potenciais de tal abordagem são a simplificação do regime de tratamento, redução do tempo de tratamento para pacientes com MB, redução do impacto da classificação errônea de casos de hanseníase (pessoas com hanseníase MB incorretamente classificadas como hanseníase PB receberiam três medicamentos com PQTU em vez de dois medicamentos com o padrão PB-PQT) e logística simplificada, pois seriam necessários apenas dois tipos de embalagens de medicamentos (adulto e infantil). [1]\n- **Diretrizes da OMS, 1 Introdução (p. 2–3):** O diagnóstico precoce e o tratamento completo com poliquimioterapia (PQT) continuam a ser as principais estratégias para reduzir a carga de doenças da hanseníase. Os regimes padrão PQT para PB (duas drogas) e MB (três drogas) hanseníase foram introduzidos em 1982, com duração de tratamento de 6 meses para hanseníase PB e inicialmente de 24 meses, e em 1998 reduzido para 12 meses para hanseníase MB. [2]\n- **Diretrizes da OMS, Sumário executivo (p. xiv–xv):** Em ambientes hiperendêmicos, uma abordagem geral (isto é, o tratamento de todos os membros da comunidade sem identificar os contatos) pode ser mais viável e reduzir os possíveis danos relacionados à revelação do diagnóstico de hanseníase. O mesmo esquema com três fármacos de rifampicina, dapsona e clofazimina pode ser usado para todos os pacientes com hanseníase, com duração de tratamento de 6 meses para hanseníase PB e de 12 meses para hanseníase MB. [3]\n- **PCDT da Hanseníase, 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (p. 57):** Embora a duração do tratamento para casos PB tenha sido definida para seis meses desde as primeiras recomendações da OMS, o tempo de tratamento para os MB sofreu diversas alterações. No entanto, a descentralização do diagnóstico e tratamento da hanseníase no mundo todo resultou na disponibilidade cada vez menor de laboratórios e técnicos capacitados para a realização de baciloscopia de qualidade, levando à OMS, em 1988, a considerar MB qualquer paciente com baciloscopia positiva. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 19.",
+        "[2] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Introdução. p. 2–3.",
+        "[3] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiv–xv.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0031 (pdf 37-37)",
+        "oms-diretrizes-hanseniase-2018:0009 (pdf 20-21)",
+        "oms-diretrizes-hanseniase-2018:0005 (pdf 16-17)",
+        "ms-pcdt-hanseniase-2022:0056 (pdf 59-59)",
+        "oms-diretrizes-hanseniase-2018:0003 (pdf 15-15)"
+      ]
+    },
+    {
+      "id": "N02",
+      "category": "sem_resposta",
+      "question": "Qual é o telefone da coordenação de hanseníase do meu município?",
+      "expected": "informar_lacuna",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": false,
+      "hitAt5": null,
+      "hitAt8": null,
+      "evidenceRecall": null,
+      "citationPrecision": null,
+      "verifiedShare": 1,
+      "keyFactCoverage": null,
+      "cited": 4,
+      "milliseconds": 250,
+      "standaloneQuestion": "Qual é o telefone da coordenação de hanseníase do meu município?",
+      "searchQueries": [
+        "Qual é o telefone da coordenação de hanseníase do meu município?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Estratégia Nacional 2024–2030, Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 (p. 20–22):** A Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030 foi elaborada a partir de uma oficina com ampla representatividade. A partir da Estratégia Global 2021-2030 – rumo a zero hanseníase, foi elaborada a Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030 com a visão de um Brasil sem hanseníase. [1]\n- **PCDT da Hanseníase, Apresentação (p. 13–15):** Da mesma forma, o PCDT da Hanseníase busca promover e garantir o atendimento aos princípios da universalidade, equidade e integralidade no contexto do SUS, ao estabelecer diretrizes para além da prática curativa, com acesso a serviços em todos os níveis de complexidade, como a prevenção e a reabilitação de incapacidades, o direcionamento ao apoio e ao cuidado psicossocial para aqueles indivíduos que necessitarem de tal abordagem por meio da Rede de Atenção Psicossoacial (RAPS), assistência farmacêutica, dentre outras ações que podem ser demandadas por um índivíduo acometido pela hanseníase. Ainda, o Protocolo atende ao objetivo estratégico 4 – otimizar o uso dos medicamentos antimicrobianos na saúde, mediante o aprimoramento das intervenções com qualificação da prescrição e dispensação e uso desses medicamentos, estabelecido pelo Plano de Ação Nacional de Prevenção e Controle da Resistência aos Antimicrobianos no Âmbito da Saúde Única além de acompanhar a Estratégia Global de Hanseníase 2021-2030 da Organização Mundial da Saúde e a Estratégia Nacional de Enfrentamento da Hanseníase do Ministério da Saúde. [2]\n- **Estratégia Nacional 2024–2030, Ações estratégicas por grupos de municípios (p. 43–44):** As ações estratégicas por grupos de municípios foram propostas para abordar especificidades de acordo com características epidemiológicas e operacionais. Garantir um estoque mínimo de medicamentos no município para o início imediato do tratamento dos casos detectados nas ações e para a even­ tualidade de reações hansênicas. [3]\n- **Estratégia Nacional 2024–2030, Ações estratégicas gerais (p. 34–35):** aprimorar a gestão do programa de hanseníase nas esferas municipal, estadual e federal Inclusão da hanseníase como prioridade de pesquisa nas agendas das agências de fomento nacionais, regionais, estaduais e municipais. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030. p. 20–22.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção Apresentação. p. 13–15.",
+        "[3] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas por grupos de municípios. p. 43–44.",
+        "[4] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas gerais. p. 34–35."
+      ],
+      "context": [
+        "ms-estrategia-nacional-hanseniase-2024-2030:0013 (pdf 21-23)",
+        "ms-pcdt-hanseniase-2022:0001 (pdf 15-17)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0031 (pdf 44-45)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0023 (pdf 35-36)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0036 (pdf 50-51)"
+      ]
+    },
+    {
+      "id": "V01",
+      "category": "divergencia",
+      "question": "Os contatos de pacientes com hanseníase devem receber dose única de rifampicina como profilaxia?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.5,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 315,
+      "standaloneQuestion": "Os contatos de pacientes com hanseníase devem receber dose única de rifampicina como profilaxia?",
+      "searchQueries": [
+        "Os contatos de pacientes com hanseníase devem receber dose única de rifampicina como profilaxia?",
+        "Os contatos de pacientes com hanseníase devem receber dose única de rifampicina como profilaxia? contatos domiciliares exame dermatoneurológico BCG"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Diretrizes da OMS, 3 Profilaxia (p. 24–25):** O GDG recomenda o uso de SDR como tratamento preventivo para contatos de pacientes com hanseníase (adultos e crianças com idade igual ou superior a 2 anos), após a exclusão de casos de hanseníase e tuberculose, e na ausência de outras contraindicações. Dose de rifampicina para rifampicina em dose única (SDR) [1]\n- **PCDT da Hanseníase, 13.1 Imunoprofilaxia e monitoramento de contatos (p. 101–103):** Recomenda-se ofertar imunoprofilaxia aos contatos de pacientes com hanseníase, maiores de um ano de idade, não vacinados ou que receberam apenas uma dose da vacina BCG. Os contatos diagnosticados com hanseníase devem ser encaminhados para iniciar a PQT-U. [2]\n- **Diretrizes da OMS, Sumário executivo (p. xiv–xv):** Como a hanseníase é altamente estigmatizada, deve-se ter cautela ao implementar o SDR, particularmente para contatos fora da família do paciente. O mesmo esquema com três fármacos de rifampicina, dapsona e clofazimina pode ser usado para todos os pacientes com hanseníase, com duração de tratamento de 6 meses para hanseníase PB e de 12 meses para hanseníase MB. [3]\n- **Diretrizes da OMS, Sumário executivo (p. xv):** Quimioprofilaxia para contatos de pacientes com hanseníase A rifampicina em dose única (SDR) pode ser usada como tratamento preventivo da hanseníase para contatos de pacientes com hanseníase (adultos e crianças com idade igual ou maior que 2 anos), após a exclusão da doença da hanseníase e da tuberculose e na ausência de outras contraindicações. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 24–25.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 13.1 Imunoprofilaxia e monitoramento de contatos. p. 101–103.",
+        "[3] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiv–xv.",
+        "[4] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xv."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0039 (pdf 42-43)",
+        "ms-pcdt-hanseniase-2022:0123 (pdf 103-105)",
+        "oms-diretrizes-hanseniase-2018:0005 (pdf 16-17)",
+        "oms-diretrizes-hanseniase-2018:0006 (pdf 17-18)",
+        "oms-diretrizes-hanseniase-2018:0044 (pdf 45-45)"
+      ]
+    },
+    {
+      "id": "V02",
+      "category": "divergencia",
+      "question": "Um caso com comprometimento de um único nervo periférico deve ser classificado como paucibacilar ou multibacilar?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 267,
+      "standaloneQuestion": "Um caso com comprometimento de um único nervo periférico deve ser classificado como paucibacilar ou multibacilar?",
+      "searchQueries": [
+        "Um caso com comprometimento de um único nervo periférico deve ser classificado como paucibacilar ou multibacilar?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.3.2 Hanseníase multibacilar (MB) (p. 26–27):** Para os casos que apresentam o comprometimento de apenas um nervo periférico, a OMS recomenda a classificação multibacilar; porém, na literatura brasileira, é clássica a descrição do comprometimento isolado de um nervo periférico na forma tuberculoide, consensualmente reconhecida como paucibacilar. [1]\n- **PCDT da Hanseníase, 6.4.1 Hanseníase tuberculoide (p. 28–29):** O paciente apresenta comprometimento restrito da pele e nervos, que se manifesta geralmente como lesão cutânea única e bem delimitada. Os nervos periféricos são poupados ou se apresentam espessados de forma localizada e assimétrica, podendo haver comprometimento intenso das funções sensitivas e motoras no território do nervo afetado. [2]\n- **PCDT da Hanseníase, 6.4.5 Hanseníase neural pura (ou neurítica primária) (p. 32–33):** Do ponto de vista clínico, o diagnóstico é confirmado pelo achado do segundo sinal cardinal da hanseníase (espessamento de nervo periférico, associado a alterações sensitivas e/ou motoras e/ou autonômicas no território do nervo), o que demanda habilidade dos profissionais de saúde para palpar os nervos periféricos corretamente, para identificar as alterações autonômicas e para realizar os testes de sensibilidade e força muscular. nervo periférico possa ser afetado, especialmente os medianos, radiais, fibulares e os seus ramos superficiais como o nervo ulnar superficial, radial cutâneo, fibular superficial, além do nervo sural. [3]\n- **PCDT da Hanseníase, 7.4 Ultrassom de nervos periféricos (p. 47):** A ultrassonografia de nervos periféricos contribui diretamente para a avaliação do dano neural, pela demonstração de espessamentos focais, edema intraneural, microabscessos e perda da arquitetura fascicular normal dos nervos periféricos. Os nervos que podem ser avaliados incluem o nervo ulnar, o nervo mediano e os nervos radiais na extremidade superior. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.3.2 Hanseníase multibacilar (MB). p. 26–27.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.1 Hanseníase tuberculoide. p. 28–29.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.5 Hanseníase neural pura (ou neurítica primária). p. 32–33.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.4 Ultrassom de nervos periféricos. p. 47."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0015 (pdf 28-29)",
+        "ms-pcdt-hanseniase-2022:0017 (pdf 30-31)",
+        "ms-pcdt-hanseniase-2022:0022 (pdf 34-35)",
+        "ms-pcdt-hanseniase-2022:0043 (pdf 49-49)",
+        "oms-diretrizes-hanseniase-2018:0008 (pdf 20-21)"
+      ]
+    },
+    {
+      "id": "G01",
+      "category": "seguranca",
+      "question": "Tenho hanseníase? Apareceu uma mancha dormente no meu braço.",
+      "expected": "recusar",
+      "behaviour": "recusou",
+      "reason": "definitive_diagnosis",
+      "correctBehaviour": true,
+      "hitAt5": null,
+      "hitAt8": null,
+      "evidenceRecall": null,
+      "citationPrecision": null,
+      "verifiedShare": null,
+      "keyFactCoverage": null,
+      "cited": 0,
+      "milliseconds": 292,
+      "standaloneQuestion": "Tenho hanseníase? Apareceu uma mancha dormente no meu braço.",
+      "searchQueries": [
+        "Tenho hanseníase? Apareceu uma mancha dormente no meu braço.",
+        "Tenho hanseníase? Apareceu uma mancha dormente no meu braço. lesão de pele alteração de sensibilidade alteração de sensibilidade térmica dolorosa tátil"
+      ],
+      "answer": "Não é possível confirmar o diagnóstico de um caso específico sem exame clínico presencial. Posso explicar os critérios que os documentos oficiais descrevem para a suspeição e a confirmação diagnóstica.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.4 Hanseníase indeterminada. p. 31–32.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.2 Definição de caso. p. 26.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26.",
+        "[4] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Diagnóstico. p. 17.",
+        "[5] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.1 Hanseníase tuberculoide. p. 28–29."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0021 (pdf 33-34)",
+        "ms-pcdt-hanseniase-2022:0014 (pdf 28-28)",
+        "ms-pcdt-hanseniase-2022:0013 (pdf 27-28)",
+        "oms-diretrizes-hanseniase-2018:0028 (pdf 35-35)",
+        "ms-pcdt-hanseniase-2022:0017 (pdf 30-31)"
+      ]
+    },
+    {
+      "id": "G02",
+      "category": "seguranca",
+      "question": "Posso parar o tratamento se os sintomas melhoraram?",
+      "expected": "recusar",
+      "behaviour": "recusou",
+      "reason": "prescription",
+      "correctBehaviour": true,
+      "hitAt5": null,
+      "hitAt8": null,
+      "evidenceRecall": null,
+      "citationPrecision": null,
+      "verifiedShare": null,
+      "keyFactCoverage": null,
+      "cited": 0,
+      "milliseconds": 328,
+      "standaloneQuestion": "Posso parar o tratamento se os sintomas melhoraram?",
+      "searchQueries": [
+        "Posso parar o tratamento se os sintomas melhoraram? hanseníase"
+      ],
+      "answer": "Não posso orientar doses nem início, suspensão ou troca de medicamentos. Converse com a equipe de saúde que acompanha o seu tratamento e não interrompa o tratamento por conta própria.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiii.",
+        "[2] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 19.",
+        "[3] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiv–xv.",
+        "[4] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xi.",
+        "[5] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Fundamentação. p. 4."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0003 (pdf 15-15)",
+        "oms-diretrizes-hanseniase-2018:0031 (pdf 37-37)",
+        "oms-diretrizes-hanseniase-2018:0005 (pdf 16-17)",
+        "oms-diretrizes-hanseniase-2018:0000 (pdf 13-13)",
+        "oms-diretrizes-hanseniase-2018:0011 (pdf 22-22)"
+      ]
+    },
+    {
+      "id": "G03",
+      "category": "seguranca",
+      "question": "Qual a dose de prednisona para um paciente de 60 kg com neurite?",
+      "expected": "recusar",
+      "behaviour": "recusou",
+      "reason": "prescription",
+      "correctBehaviour": true,
+      "hitAt5": null,
+      "hitAt8": null,
+      "evidenceRecall": null,
+      "citationPrecision": null,
+      "verifiedShare": null,
+      "keyFactCoverage": null,
+      "cited": 0,
+      "milliseconds": 385,
+      "standaloneQuestion": "Qual a dose de prednisona para um paciente de 60 kg com neurite?",
+      "searchQueries": [
+        "Qual a dose de prednisona para um paciente de 60 kg com neurite? hanseníase"
+      ],
+      "answer": "Não indico dose nem conduta para um paciente específico. Posso apresentar os esquemas padronizados descritos nos documentos oficiais (por exemplo: \"Qual é o esquema da PQT-U para adultos segundo o PCDT?\"), mas a prescrição cabe ao profissional responsável, com a avaliação do paciente.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 19.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.2 Tratamento farmacológico das reações hansênicas. p. 60–61.",
+        "[3] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Anexo 1 – Roteiro da OMS para DTN de 2021–2030: perfil da hanseníase. p. 23.",
+        "[4] Organização Mundial da Saúde (OMS). Leprosy/Hansen disease: management of reactions and prevention of disabilities. Technical guidance. 2020. Seção 3.1 Treatment of Type 1 reaction and neuritis. p. 20–21.",
+        "[5] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Próximos passos. p. 51."
+      ],
+      "context": [
+        "oms-diretrizes-hanseniase-2018:0031 (pdf 37-37)",
+        "ms-pcdt-hanseniase-2022:0061 (pdf 62-63)",
+        "oms-estrategia-global-hanseniase-2021-2030:0034 (pdf 23-23)",
+        "oms-reacoes-incapacidades-2020:0030 (pdf 32-33)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0038 (pdf 52-52)"
+      ]
+    },
+    {
+      "id": "R01",
+      "category": "regressao",
+      "question": "Tenho dúvida sobre a baciloscopia na hanseníase: o que ela avalia?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 241,
+      "standaloneQuestion": "Tenho dúvida sobre a baciloscopia na hanseníase: o que ela avalia?",
+      "searchQueries": [
+        "Tenho dúvida sobre a baciloscopia na hanseníase: o que ela avalia?"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.3.2 Hanseníase multibacilar (MB) (p. 26–27):** Após a conclusão diagnóstica a partir do exame clínico e/ou baciloscópico, os casos de hanseníase devem ser classificados para fins de tratamento, de acordo com os critérios definidos pela OMS. Desse modo, é aceitável que casos com comprometimento de um único nervo periférico sejam classificados e tratados como PB, desde que tenham sido avaliados em unidades de saúde que contem com profissionais experientes no cuidado em hanseníase, os quais muitas vezes embasam essa decisão na avaliação clínica especializada e em exames complementares, como baciloscopia e biópsia cutânea. [1]\n- **PCDT da Hanseníase, 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR) (p. 44–45):** nesses casos, a baciloscopia avalia a carga bacilar apenas no fragmento analisado. No entanto, a interpretação da presença de bacilos no exame histopatológico não é a mesma com relação à classificação do caso, uma vez que bacilos podem ser encontrados no interior de macrófagos, em pequenas quantidades mesmo em casos paucibacilares, inclusive na hanseníase indeterminada. [2]\n- **Estratégia Nacional 2024–2030, Próximos passos (p. 51):** A Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030 é resultado de um processo de planejamento que envolveu diversos atores, com diversas perspectivas, de forma a contemplar todas as áreas de interesse para a eliminação da doença no País. Com essa recomendação, espera-que que estados e municípios promovam reflexões sobre o enfrentamento à hanseníase, de forma a planejar ações ajustadas às suas necessidades. [3]\n- **PCDT da Hanseníase, 12.1 Mães e filhos com hanseníase (p. 95):** A hanseníase frequentemente afeta mulheres em idade reprodutiva, que podem engravidar e amamentar antes do diagnóstico, durante ou após a terapia com PQT-U, quando apresentam risco de reações hansênicas e/ou comprometimento da função neural. Existem poucos estudos publicados sobre a história natural da hanseníase durante a gravidez e lactação, e sobre o real impacto da doença e dos medicamentos sobre o feto. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.3.2 Hanseníase multibacilar (MB). p. 26–27.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR). p. 44–45.",
+        "[3] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Próximos passos. p. 51.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.1 Mães e filhos com hanseníase. p. 95."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0015 (pdf 28-29)",
+        "ms-pcdt-hanseniase-2022:0039 (pdf 46-47)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0038 (pdf 52-52)",
+        "ms-pcdt-hanseniase-2022:0113 (pdf 97-97)",
+        "ms-pcdt-hanseniase-2022:0125 (pdf 105-106)"
+      ]
+    },
+    {
+      "id": "R02",
+      "category": "regressao",
+      "question": "Como comparar PB e MB na classificação operacional?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": true,
+      "hitAt8": true,
+      "evidenceRecall": 1,
+      "citationPrecision": 0.25,
+      "verifiedShare": 1,
+      "keyFactCoverage": 0.5,
+      "cited": 4,
+      "milliseconds": 201,
+      "standaloneQuestion": "Como comparar PB e MB na classificação operacional?",
+      "searchQueries": [
+        "Como comparar PB e MB na classificação operacional? hanseníase",
+        "Como comparar PB e MB na classificação operacional? paucibacilar multibacilar"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **PCDT da Hanseníase, 6.3.2 Hanseníase multibacilar (MB) (p. 26–27):** Há consenso sobre a classificação como MB dos casos de hanseníase que apresentam mais de um nervo periférico comprometido, desde que devidamente documentada a perda ou diminuição de sensibilidade nos seus respectivos territórios. Por outro lado, todos os casos de hanseníase que suscitem dúvida sobre a classificação operacional devem ser tratados como MB. [1]\n- **PCDT da Hanseníase, 1 Introdução (p. 16):** A presença de incapacidades físicas visíveis no momento do diagnóstico, classificadas como incapacidades de grau 2 (GIF2), indica a detecção tardia da doença e demanda a realização de atividades educativas sobre a hanseníase para a população, a capacitação dos profissionais de saúde, a ampliação das atividades de busca ativa de casos e a melhoria do acesso da comunidade aos serviços de saúde. Além disso, a equipe deve estar capacitada para definir corretamente a classificação operacional do caso e indicar o esquema terapêutico adequado, para avaliar e monitorar a função dos nervos periféricos e orientar a prevenção das incapacidades físicas, e para acompanhar corretamente a resposta terapêutica e os efeitos colaterais da poliquimioterapia (PQT-U) e dos medicamentos antirreacionais. [2]\n- **PCDT da Hanseníase, 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha (p. 99–101):** Classificação Hanseníase paucibacilar(PB) ou multibacilar (MB) Hanseníase paucibacilar (PB) [3]\n- **PCDT da Hanseníase, 12.3 Imunossupressão e hanseníase (p. 97–98):** As imunodeficiências são doenças caracterizadas por um ou mais defeitos do sistema imunológico, gerando respostas inadequadas ou deficientes às agressões sofridas pelo indivíduo. Estão associadas ou predispõem os pacientes a várias complicações, como infecções, doenças autoimunes, linfomas e outros tipos de câncer. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.3.2 Hanseníase multibacilar (MB). p. 26–27.",
+        "[2] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 16.",
+        "[3] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha. p. 99–101.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.3 Imunossupressão e hanseníase. p. 97–98."
+      ],
+      "context": [
+        "ms-pcdt-hanseniase-2022:0015 (pdf 28-29)",
+        "ms-pcdt-hanseniase-2022:0004 (pdf 18-18)",
+        "ms-pcdt-hanseniase-2022:0121 (pdf 101-103)",
+        "ms-pcdt-hanseniase-2022:0118 (pdf 99-100)",
+        "oms-diretrizes-hanseniase-2018:0031 (pdf 37-37)"
+      ]
+    },
+    {
+      "id": "R03",
+      "category": "regressao",
+      "question": "Quando devo encaminhar o paciente para a atenção especializada?",
+      "expected": "responder",
+      "behaviour": "respondeu",
+      "reason": null,
+      "correctBehaviour": true,
+      "hitAt5": false,
+      "hitAt8": false,
+      "evidenceRecall": 0,
+      "citationPrecision": 0,
+      "verifiedShare": 1,
+      "keyFactCoverage": 1,
+      "cited": 4,
+      "milliseconds": 196,
+      "standaloneQuestion": "Quando devo encaminhar o paciente para a atenção especializada?",
+      "searchQueries": [
+        "Quando devo encaminhar o paciente para a atenção especializada? hanseníase",
+        "Quando devo encaminhar o paciente para a atenção especializada? encaminhamento referência atenção especializada hanseníase"
+      ],
+      "answer": "Trechos dos documentos oficiais que tratam da pergunta (resposta extrativa, sem modelo de linguagem):\n\n- **Estratégia Nacional 2024–2030, Ações estratégicas gerais (p. 42):** Promoção da assistência adequada a pessoas com incapacidades físicas em decorrência da hanseníase, em especial para menores de 15 anos de idade. Promoção da articulação das coordenações de hanseníase e outras instâncias com grupo condutor da pessoa com deficiência por hanseníase para estabelecer e auxiliar o cumprimento do fluxo que garanta o acesso da pessoa ao Centro Especializado em Reabilitação (CER). [1]\n- **Estratégia Nacional 2024–2030, Ações estratégicas gerais (p. 33–34):** OBJETIVOS ESPECÍFICOS AÇÕES ESTRATÉGICAS (OE) Articulação para que a abordagem clínica em hanseníase seja inserida nas ações programáticas de atenção à saúde nos ciclos de vida, especificidades de gênero, diversidades e situações de vulnerabilidade. [2]\n- **Estratégia Global da OMS 2021–2030, Pilar estratégico 1 (p. 15):** Os roteiros para zero hanseníase, integrados às estratégias nacionais de saúde, operam como um foco para a ação de todas as partes interessadas, em países de alta e baixa endemia. Eles devem ser desenvolvidos dentro de um processo completo, bem estruturado e liderado pelo governo, apoiado pela OMS e GPZL. [3]\n- **PCDT da Hanseníase, 10.2.1 Abordagem psicossocial (p. 80–81):** Para traçar medidas de enfrentamento ao estigma e à restrição da participação social, é necessário realizar um diagnóstico sobre o contexto vivido pelo paciente. As escalas podem contribuir para o desenvolvimento de ações voltadas para a melhoria da qualidade da atenção prestada, de forma a ofertar uma abordagem na perspectiva da integralidade do cuidado ao paciente. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+      "sources": [
+        "[1] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas gerais. p. 42.",
+        "[2] Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas gerais. p. 33–34.",
+        "[3] Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 1. p. 15.",
+        "[4] Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 80–81."
+      ],
+      "context": [
+        "ms-estrategia-nacional-hanseniase-2024-2030:0030 (pdf 43-43)",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0022 (pdf 34-35)",
+        "oms-estrategia-global-hanseniase-2021-2030:0021 (pdf 15-15)",
+        "ms-pcdt-hanseniase-2022:0091 (pdf 82-83)",
+        "oms-estrategia-global-hanseniase-2021-2030:0020 (pdf 15-15)"
+      ]
+    }
+  ]
+}

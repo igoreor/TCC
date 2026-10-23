@@ -5,8 +5,8 @@ async function main() {
   const knowledge = await knowledgeService.seedFromDefaultFile();
   const evaluation = await evaluationService.seedDefaultQuestions();
 
-  console.log(`Seed de chunks: ${knowledge.inserted + knowledge.updated} registros processados.`);
-  console.log(`Seed de avaliacao: ${evaluation.created} perguntas criadas.`);
+  console.log(`Base oficial: ${knowledge.total} trechos em ${knowledge.documents.length} documentos (${knowledge.inserted} com embedding novo).`);
+  console.log(`Conjunto de referência: ${evaluation.created} perguntas criadas, ${evaluation.removed} substituídas.`);
 }
 
 main().catch((error) => {

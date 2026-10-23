@@ -8,7 +8,7 @@ import { KnowledgeService } from '../src/modules/knowledge/knowledge.service';
 import { ClinicalRiskService } from '../src/modules/retrieval/clinical-risk.service';
 import { HybridSearchService } from '../src/modules/retrieval/hybrid-search.service';
 import { IntentClassifierService } from '../src/modules/retrieval/intent-classifier.service';
-import { RerankingService } from '../src/modules/retrieval/reranking.service';
+import { QueryAnalyzerService } from '../src/modules/retrieval/query-analyzer.service';
 import { RetrievalService } from '../src/modules/retrieval/retrieval.service';
 import { SafetyService } from '../src/modules/safety/safety.service';
 import { ChunkDTO } from '../src/shared/types';
@@ -94,7 +94,8 @@ function createFakeRepository(chunks: ChunkDTO[]) {
     textSearch: async () => chunks.map((chunk) => ({ ...chunk, keywordScore: 0.9 })),
     upsertDocument: async () => undefined,
     upsertChunk: async () => undefined,
-    ensureSession: async () => ({ id: '00000000-0000-0000-0000-000000000001', userType: 'Profissional de saúde' }),
+    ensureSession: async () => ({ id: '00000000-0000-0000-0000-000000000001', userType: 'Profissional de saúde', reused: false }),
+    findRecentMessages: async () => [],
     createChatMessage: async () => ({ id: '00000000-0000-0000-0000-000000000002' }),
     createRetrievalLog: async () => undefined
   };
@@ -107,7 +108,7 @@ function createRetrievalService(chunks: ChunkDTO[]) {
     new HybridSearchService(repository as any, embeddings),
     new IntentClassifierService(),
     new ClinicalRiskService(),
-    new RerankingService()
+    new QueryAnalyzerService()
   );
 }
 
@@ -166,13 +167,17 @@ describe('schemas e ingestão', () => {
 });
 
 describe('intenção e risco clínico', () => {
-  it('classifica intenção por palavras-chave', () => {
+  it('classifica intenção por palavras inteiras', () => {
     const classifier = new IntentClassifierService();
 
     expect(classifier.classify('mancha com dormência')).toBe('screening');
     expect(classifier.classify('baciloscopia negativa')).toBe('exam');
     expect(classifier.classify('rifampicina muda urina')).toBe('medication');
-    expect(classifier.classify('bolsa de valores')).toBe('out_of_scope');
+    // "enh" dentro de "tenho" não é eritema nodoso hansênico
+    expect(classifier.classify('Tenho dúvida sobre a baciloscopia')).toBe('exam');
+    // sem palavra-chave, a pergunta é geral; o escopo é decidido pela análise da pergunta
+    expect(classifier.classify('Quando devo encaminhar?')).toBe('screening');
+    expect(classifier.classify('bolsa de valores')).toBe('general');
   });
 
   it('detecta risco muito alto para dose, gestação, criança, reação e talidomida', () => {
@@ -182,46 +187,44 @@ describe('intenção e risco clínico', () => {
     expect(risk.detectClinicalRisk('Gestante pode usar talidomida?')).toBe('Muito alto');
     expect(risk.detectClinicalRisk('Criança com suspeita de hanseníase')).toBe('Muito alto');
     expect(risk.detectClinicalRisk('Paciente com neurite e déficit motor')).toBe('Muito alto');
+    expect(risk.detectClinicalRisk('Quais são as metas da estratégia nacional?', 'contacts_surveillance')).toBe('Baixo');
   });
 });
 
 describe('safety', () => {
-  it('aciona fallback quando não há chunks', () => {
-    const safety = new SafetyService();
-    const decision = safety.evaluate({
+  it('recusa quando não há evidência nos documentos', () => {
+    const decision = new SafetyService().evaluate({
       question: 'O que é hanseníase?',
-      chunks: [],
-      intent: 'screening',
+      inDomain: true,
+      hasEvidence: false,
       riskLevel: 'Alto'
     });
 
     expect(decision.fallbackTriggered).toBe(true);
-    expect(decision.answer).toContain('não contém informação suficiente');
+    expect(decision.answer).toContain('informação suficiente');
   });
 
   it('recusa pergunta fora do escopo', () => {
-    const safety = new SafetyService();
-    const decision = safety.evaluate({
+    const decision = new SafetyService().evaluate({
       question: 'Como investir em ações?',
-      chunks: [],
-      intent: 'out_of_scope',
+      inDomain: false,
+      hasEvidence: false,
       riskLevel: 'Médio'
     });
 
-    expect(decision.answer).toContain('restrita à hanseníase');
+    expect(decision.answer).toContain('dedicada à hanseníase');
   });
 
   it('bloqueia prescrição individualizada', () => {
-    const safety = new SafetyService();
-    const decision = safety.evaluate({
+    const decision = new SafetyService().evaluate({
       question: 'Qual dose eu devo tomar de rifampicina?',
-      chunks: [treatmentChunk],
-      intent: 'medication',
+      inDomain: true,
+      hasEvidence: true,
       riskLevel: 'Muito alto'
     });
 
     expect(decision.fallbackTriggered).toBe(true);
-    expect(decision.answer).toContain('Não posso prescrever');
+    expect(decision.answer).toContain('Não indico dose');
   });
 });
 
@@ -254,7 +257,8 @@ describe('retrieval e chat', () => {
 
     expect(output.sources).toHaveLength(1);
     expect(output.sources[0].chunk_id).toBe('hans_diag_001');
-    expect(output.answer).toContain('Fontes usadas');
+    expect(output.answer).toContain('Trechos dos documentos oficiais');
+    expect(output.answer).toContain('[1]');
   });
 
   it('responde que baciloscopia negativa não exclui hanseníase', async () => {
@@ -281,7 +285,7 @@ describe('retrieval e chat', () => {
     expect(output.sources[0].chunk_id).toBe('hans_reac_tipo1_001');
   });
 
-  it('trata talidomida e gestação como alto risco', async () => {
+  it('responde sobre talidomida e gestação com base nos documentos, como risco muito alto', async () => {
     const chat = createChat([reactionChunk]);
     const output = await chat.ask({
       question: 'Gestante pode usar talidomida?',
@@ -290,7 +294,8 @@ describe('retrieval e chat', () => {
     });
 
     expect(output.safety.riskLevel).toBe('Muito alto');
-    expect(output.safety.fallbackTriggered).toBe(true);
-    expect(output.answer).toContain('gestação');
+    expect(output.safety.fallbackTriggered).toBe(false);
+    expect(output.safety.requiresProfessionalEvaluation).toBe(true);
+    expect(output.sources).toHaveLength(1);
   });
 });

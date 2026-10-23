@@ -1,20 +1,17 @@
 import { openAIConfig } from '../../config/openai';
+import { tokenize } from '../../shared/text';
 
 export interface EmbeddingsProvider {
+  /** Identifica o espaço vetorial: vetores de modelos diferentes nunca são comparados. */
+  readonly modelId: string;
+  /** Verdadeiro quando a similaridade capta sentido, e não só sobreposição de palavras. */
+  readonly semantic: boolean;
   embed(text: string): Promise<number[]>;
+  embedMany(texts: string[]): Promise<number[][]>;
 }
 
-const EMBEDDING_DIMENSIONS = 1536;
-
-function normalizeText(text: string) {
-  return text
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/\p{Diacritic}/gu, '')
-    .replace(/[^\p{L}\p{N}\s-]/gu, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
+export const EMBEDDING_DIMENSIONS = 1536;
+export const DETERMINISTIC_MODEL_ID = 'deterministic-hash-v1';
 
 function hashToken(token: string) {
   let hash = 2166136261;
@@ -25,12 +22,14 @@ function hashToken(token: string) {
   return Math.abs(hash);
 }
 
+/** Vetor por dispersão de palavras: permite rodar e testar sem serviço externo, sem captar sentido. */
 export class DeterministicEmbeddingsProvider implements EmbeddingsProvider {
+  readonly modelId = DETERMINISTIC_MODEL_ID;
+  readonly semantic = false;
+
   async embed(text: string): Promise<number[]> {
     const vector = new Array<number>(EMBEDDING_DIMENSIONS).fill(0);
-    const tokens = normalizeText(text)
-      .split(' ')
-      .filter((token) => token.length > 2);
+    const tokens = tokenize(text).filter((token) => token.length > 2);
 
     for (const token of tokens) {
       const index = hashToken(token) % EMBEDDING_DIMENSIONS;
@@ -40,10 +39,33 @@ export class DeterministicEmbeddingsProvider implements EmbeddingsProvider {
     const norm = Math.sqrt(vector.reduce((sum, value) => sum + value * value, 0)) || 1;
     return vector.map((value) => Number((value / norm).toFixed(8)));
   }
+
+  async embedMany(texts: string[]) {
+    return Promise.all(texts.map((text) => this.embed(text)));
+  }
 }
 
+// Limite seguro de entradas por requisição à API de embeddings.
+const OPENAI_BATCH_SIZE = 96;
+
 export class OpenAIEmbeddingsProvider implements EmbeddingsProvider {
+  readonly modelId = openAIConfig.embeddingModel;
+  readonly semantic = true;
+
   async embed(text: string): Promise<number[]> {
+    const [embedding] = await this.request([text]);
+    return embedding;
+  }
+
+  async embedMany(texts: string[]) {
+    const vectors: number[][] = [];
+    for (let start = 0; start < texts.length; start += OPENAI_BATCH_SIZE) {
+      vectors.push(...(await this.request(texts.slice(start, start + OPENAI_BATCH_SIZE))));
+    }
+    return vectors;
+  }
+
+  private async request(input: string[]) {
     if (!openAIConfig.apiKey) {
       throw new Error('OPENAI_API_KEY nao configurada.');
     }
@@ -54,18 +76,18 @@ export class OpenAIEmbeddingsProvider implements EmbeddingsProvider {
         Authorization: `Bearer ${openAIConfig.apiKey}`,
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        model: openAIConfig.embeddingModel,
-        input: text
-      })
+      body: JSON.stringify({ model: openAIConfig.embeddingModel, input }),
+      signal: AbortSignal.timeout(60_000)
     });
 
     if (!response.ok) {
       throw new Error(`Falha ao gerar embedding na OpenAI: ${response.status}`);
     }
 
-    const payload = (await response.json()) as { data: Array<{ embedding: number[] }> };
-    return payload.data[0].embedding;
+    const payload = (await response.json()) as {
+      data: Array<{ index: number; embedding: number[] }>;
+    };
+    return [...payload.data].sort((a, b) => a.index - b.index).map((item) => item.embedding);
   }
 }
 

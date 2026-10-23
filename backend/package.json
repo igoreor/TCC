@@ -16,7 +16,11 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "tsx prisma/seed.ts",
     "prisma:deploy": "prisma migrate deploy",
-    "auth:hash-password": "tsx scripts/hash-password.ts"
+    "auth:hash-password": "tsx scripts/hash-password.ts",
+    "kb:toc": "tsx scripts/kb/toc-outline.ts",
+    "kb:build": "tsx scripts/kb/build.ts",
+    "kb:ingest": "tsx scripts/kb/ingest.ts",
+    "eval:rag": "tsx scripts/eval/run-golden.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.8.2",

@@ -18,6 +18,17 @@ export const rawChunkSchema = z.object({
   metadata: chunkMetadataSchema
 });
 
+// Trecho de documento oficial gerado por npm run kb:build: o formato da base inicial mais a
+// localização no documento (páginas do PDF, números impressos e caminho de seções).
+export const documentChunkSchema = rawChunkSchema.extend({
+  chunk_index: z.number().int().min(0),
+  section_path: z.array(z.string()),
+  page_start: z.number().int().positive(),
+  page_end: z.number().int().positive(),
+  page_label_start: z.string().nullable(),
+  page_label_end: z.string().nullable()
+});
+
 export const ingestJsonlSchema = z
   .object({
     filePath: z.string().optional(),

@@ -20,7 +20,9 @@ export function createRetrievalRouter(service: RetrievalService) {
       response.json({
         intent: result.intent,
         riskLevel: result.riskLevel,
-        chunks: result.rawChunks
+        analysis: result.analysis,
+        hasEvidence: result.hasEvidence,
+        chunks: result.rawChunks.slice(0, input.topK ?? result.rawChunks.length)
       });
     } catch (error) {
       next(error);

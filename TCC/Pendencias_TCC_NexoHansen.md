@@ -1,6 +1,36 @@
 # Pendências do TCC — NexoHansen
 
-Complemento da versão revisada `TCC_NexoHansen_Versao_Revisada.docx` (20/10/2026, atualizada em 23/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+Complemento da versão revisada `TCC_NexoHansen_Versao_Revisada.docx` (20/10/2026, atualizada em 23 e 24/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+
+## Atualização de 24/10/2026
+
+O texto foi atualizado para a versão do sistema com a base oficial, a nova recuperação e a escolha do modelo gerador. Os bloqueantes 1 a 4 foram concluídos (ver a seção 1).
+
+- **Capítulo 3.**
+  - Seção 3.3.2 preenchida: documentos, critérios, processamento, fragmentação, conferência e versão da base. Quadro novo com os cinco documentos.
+  - Seção 3.5 reescrita, com as subseções 3.5.1 (conjunto de 32 perguntas e métricas) e 3.5.2 (comparação de modelos).
+  - Ajustes nas Seções 3.2, 3.4, 3.6.2 (item g e quadro de parâmetros), 3.6.4, 3.6.9 (banco nos EUA) e 3.7.
+- **Capítulo 4.** Seções 4.4 e 4.5 reescritas:
+  - interpretação da pergunta;
+  - fusão por posição recíproca, com a equação nova;
+  - verificação de evidência;
+  - segurança com seis regras;
+  - geração com verificação das citações.
+  
+  Seção 4.9 nova, com o quadro de problemas e alterações. Quadro de testes com 113 testes. Publicação na Vercel registrada na Seção 4.2.
+- **Capítulo 5.** Seção 5.2 dividida em 5.2.1 (execução preliminar, texto mantido), 5.2.2 (avaliação com a base oficial) e 5.2.3 (comparação de modelos e escolha do `gpt-6-luna`). Tabelas novas: resultados por versão, comparação de modelos, e tempo e custo.
+- **Capítulos 6 e 7.** QP2 respondida; Seção 6.3 com a sexta e a sétima observações; limitações reescritas; considerações e trabalhos futuros atualizados.
+- **Figuras.**
+  - Refeitas: etapas, arquitetura, modelo de dados (com `IngestionRun`), fluxo da consulta, página inicial e exemplo ilustrativo.
+  - Novas: resposta na gaveta e lista de fontes, capturadas com resposta real do `gpt-6-luna` em banco descartável.
+- **Apêndices.** A, B e D passam a se referir à avaliação preliminar; C traz as mensagens de recusa atuais; F (conjunto de referência) e G (resultados por pergunta) são novos.
+- **Referências.**
+  - ISBN do PCDT corrigido para 978-65-5993-397-6, conforme a ficha catalográfica.
+  - Novas: Estratégia Nacional 2024–2030, Diretrizes da OMS (2019), *Management of reactions* (OMS, 2020b), Estratégia Global (OMS, 2021) e a tabela de preços da OpenAI.
+  - O roteiro de DTN da OMS passou a 2020a.
+- **Resumo, abstract, objetivos e siglas.** Atualizados; siglas novas: BCG, HNSW, ISBN, PDF e PQT-U.
+
+O relatório técnico da comparação de modelos está em `backend/docs/avaliacao-modelos.md`, e os relatórios por execução, em `backend/knowledge-base/evaluation/results/`.
 
 ## Atualização de 23/10/2026
 
@@ -23,12 +53,12 @@ Os pontos em aberto estão destacados em amarelo no DOCX. Para encontrá-los, us
 
 | Marcador | Qtd. | Quando resolver |
 |---|---|---|
-| `[PREENCHER ...]` | 39 | Após a etapa indicada no próprio marcador: protocolo, curadoria, nova execução técnica ou coleta |
+| `[PREENCHER ...]` | 35 | Após a etapa indicada no próprio marcador: protocolo ou coleta |
 | `[DEFINIR ...]` | 7 | Decisões de método, junto com o orientador |
 | `[ANALISAR ...]` | 5 | Após a consolidação das avaliações |
 | `[ATUALIZAR ...]` | 3 | Resumo, abstract e considerações finais, ao fim do trabalho |
 | `[VERIFICAR ...]` | 3 | Com o orientador ou com o CEP |
-| `[INSERIR ...]` | 3 | Tabelas e gráfico de resultados |
+| `[INSERIR ...]` | 2 | Tabela e gráfico da avaliação comparativa |
 | `[REESCREVER ...]` | 2 | Dedicatória e agradecimentos |
 | `[OPCIONAL ...]` | 1 | Epígrafe |
 
@@ -38,44 +68,29 @@ Os pontos em aberto estão destacados em amarelo no DOCX. Para encontrá-los, us
 
 Sem estes itens, a pesquisa não pode ser concluída. A lista está na ordem recomendada de execução.
 
-1. **Construir a base de conhecimento a partir de documentos oficiais.** A base atual tem 15 trechos redigidos para desenvolvimento. Nenhum deles tem página nem documento de origem: `source_page` é nulo em todos, e a referência é "Seed técnico local".
-   - O que fazer: extrair os trechos do PCDT (2022) e de outros documentos selecionados. Cada trecho deve ter página, versão e data de revisão.
-   - Onde fica: Seções 3.3.2 e 4.4, Tabela 1 e Apêndice B.
-   - Requisito no código: o `ChunkingService` existe, mas não é chamado por nenhuma rota. É preciso integrá-lo ou gerar o JSONL já fragmentado.
-2. **Corrigir a correspondência de padrões.** A correção vale para as regras de segurança (`safety.service.ts`), o classificador de intenção e o `clinical-risk.service.ts`.
-   - Correspondência por subcadeias (casos verificados):
-     - "Tenho dúvida…" é recusada como reação grave ("enh").
-     - "Como comparar…" é recusada como prescrição ("parar").
-     - "Escolho qual exame…" é tratada como urgência ("olho").
-     - "também" é lido como "mb".
-   - Padrões amplos demais: "voltou", por exemplo, eleva o risco clínico em qualquer frase.
-   - Ordem fixa das categorias: a pergunta sobre BCG é classificada como medicamento por conter "dose".
-   - O que fazer: usar limites de palavra, rever os padrões amplos e criar testes com frases comuns.
-   - Onde fica: Seções 4.5.1 e 4.5.4 e item g da Seção 3.6.2.
-3. **Preparar o ambiente da nova avaliação técnica.**
-   - Configurar ou conferir a `OPENAI_API_KEY` no `backend/.env`, sem compartilhá-la.
-   - Alinhar a porta do servidor: o `CONTEXTO.md` registra `PORT=3336`, mas o proxy do Vite aponta para 3333.
-   - Reindexar a base (seed ou ingestão) para gerar os *embeddings* com o novo provedor.
-   - Conferir o índice IVFFlat (`lists = 100`). Com poucas linhas e o padrão `ivfflat.probes = 1`, a busca aproximada pode retornar menos vizinhos que o esperado. Alternativas: recriar o índice depois da carga, ajustar `probes` ou dispensar o índice enquanto a base for pequena.
-4. **Executar de novo a avaliação técnica e calibrar o limiar.**
-   - Rodar `POST /api/evaluation/run` e exportar os resultados por pergunta, que hoje não são armazenados. Eles devem entrar em um apêndice.
-   - Testar valores de `MIN_RETRIEVAL_SCORE` e, se for o caso, dos pesos 0,65/0,35. Registrar a configuração usada.
-   - Onde fica: Seções 3.5, 5.2 e 6.1 (QP2), além do `[INSERIR TABELA…]` da Seção 5.2.
-5. **Implementar o Cenário B real.** A tela `/comparacao` monta a resposta "genérica" por simulação no navegador. Ela precisa ser substituída por chamadas reais a um modelo de linguagem, com os parâmetros do Quadro 3 registrados. Onde fica: Seções 3.6.2 (item a) e 4.7, Figura 10.
+1. **Construir a base de conhecimento a partir de documentos oficiais.** *Concluído em 23–24/10/2026.*
+   - Cinco documentos (PCDT, Estratégia Nacional, três da OMS) foram processados em 328 trechos com seção e páginas e indexados em produção.
+   - Pendente: a revisão do conteúdo por profissional de saúde, a decidir com o orientador.
+2. **Corrigir a correspondência de padrões.** *Concluído.* Regras, intenção e risco passaram a usar palavras inteiras, sem acentos. As perguntas de regressão (R01 a R03) e os testes verificam os casos "Tenho…", "comparar" e "também". O risco depende só da pergunta.
+3. **Preparar o ambiente da nova avaliação técnica.** *Concluído.* Chave configurada no `backend/.env` (não versionado). Base reindexada com `text-embedding-3-small`. O IVFFlat foi trocado por HNSW.
+4. **Executar de novo a avaliação técnica.** *Concluído em 24/10/2026*, com 32 perguntas, seis configurações de modelo e duas execuções cada. Resultados por pergunta no Apêndice G e em `backend/knowledge-base/evaluation/results/`.
+   - O limiar antigo foi substituído pela fusão por posição recíproca e pela similaridade mínima de 0,25.
+   - Pendente: calibrar os limiares de evidência, hoje registrado como limitação (Seção 6.4, item c).
+5. **Implementar o Cenário B real.** A tela `/comparacao` monta a resposta "genérica" por simulação no navegador. Ela precisa ser substituída por chamadas reais a um modelo de linguagem, com os parâmetros do Quadro 3 registrados. Onde fica: Seções 3.6.2 (item a) e 4.7, Figura 12.
 6. **Definir o protocolo da avaliação comparativa.** Envolve os itens a–g da Seção 3.6.2 e as Seções 3.6.3 a 3.6.8, o Apêndice E e as medidas contra as ameaças da Seção 3.7.
 7. **Verificar o enquadramento ético antes de qualquer coleta.** Isso deve ser feito com o orientador e o CEP da UPE, com base nas Resoluções CNS 466/2012 e 510/2016 e no Ofício Circular 17/2022/CONEP. Inclui preparar o TCLE ou instrumento equivalente. O texto não afirma dispensa nem aprovação.
 8. **Proteger os dados antes de expor o sistema a participantes.** A autenticação já foi implementada (Seção 4.6). Ainda falta:
    - um aviso, na interface, contra a inserção de dados pessoais;
    - informar que as perguntas ficam registradas e vinculadas ao usuário e que, no modo com chave, são enviadas a um serviço externo (LGPD);
-   - se o sistema for publicado na Vercel com banco na Neon, informar também a transferência internacional de dados (Seção 3.6.9);
+   - informar também a transferência internacional de dados: o sistema foi publicado na Vercel, com o banco na Neon, em servidores nos Estados Unidos (Seção 3.6.9);
    - criar as contas dos participantes com códigos não identificáveis, sem nome nem *e-mail* (Seção 3.6.7);
    - separar perfis de acesso: hoje, todo usuário cadastrado entra também no painel interno (`/dashboard`) e nas rotas de carga e de avaliação técnica (Seção 6.4, item j).
-9. **Pedir a revisão externa das perguntas de avaliação.** As 25 perguntas de referência foram escritas junto com a base, o que favorece o Cenário A (Seção 3.6.4).
+9. **Pedir a revisão externa das perguntas de avaliação.** As 32 perguntas do conjunto atual (Apêndice F) foram escritas pelo desenvolvedor, com conhecimento da base, o que favorece o Cenário A (Seção 3.6.4). A leitura das respostas mostrou um erro não captado pelas métricas (F02, tabela do PCDT), o que reforça a revisão por especialista.
 10. **Gerar e guardar as respostas dos dois cenários antes da coleta.** As respostas não devem ser geradas em tempo real durante a sessão (Seção 3.6.5). O componente de avaliação de 0 a 10 avalia apenas respostas geradas na hora e só do Cenário A. Se a interface do sistema for o meio de aplicação, ela precisa ser adaptada para apresentar respostas pré-geradas dos dois cenários.
 11. **Redigir os resultados depois da coleta.**
     - Preencher as Seções 5.3, 6.1 (QP3), 6.2, 6.3, 6.4 e 7, o Resumo e o Abstract.
     - Atualizar a Figura 1 e o Quadro 2. A fonte editável está em `figuras/editaveis/fig-etapas.svg`.
-    - Refazer a captura da Figura 10 se a tela de comparação mudar.
+    - Refazer a captura da Figura 12 se a tela de comparação mudar.
 
 ## 2. Decisões para o orientador
 
@@ -147,19 +162,19 @@ Estas obras deixaram de ser citadas porque as seções foram reescritas ou conde
 
 ### 4.2 No código e na documentação do repositório (não corrigidas)
 
-- **Origem dos trechos.** Os trechos da base inicial têm `source_type` "Protocolo oficial" (10 de 15), mas a origem real é o seed técnico. Isso deve ser corrigido para não sugerir origem oficial.
-- **Título dos documentos.** Na ingestão, `Document.title` recebe o título do último trecho ingerido de cada documento, e não o título do documento-fonte.
-- **Documentação do risco.** A seção 18 de `docs/arquitetura-backend-rag-hanseniase.md` atribui risco médio a perguntas educativas, de transmissão e de epidemiologia. O código decide pela intenção e eleva o risco para "muito alto" quando algum trecho recuperado é crítico. A Seção 4.5.1 do TCC descreve o código.
+- **Origem dos trechos.** *Resolvido.* A base inicial ficou com situação "desenvolvimento" e fora da busca. Os documentos oficiais têm os metadados do manifesto.
+- **Título dos documentos.** *Resolvido.* O título vem do manifesto, e não do último trecho ingerido.
+- **Documentação do risco.** A seção 18 de `docs/arquitetura-backend-rag-hanseniase.md` ainda descreve o risco antigo. O código decide só pela pergunta (Seção 4.5.2 do TCC).
 - **Descrição da tela de comparação.** O `CONTEXTO.md` a apresenta como "RAG vs. LLM genérico", mas o lado genérico é simulado.
-- **Migrações no banco local.** As três migrações do login e da avaliação ainda precisam ser aplicadas ao banco de desenvolvimento (`npm run prisma:deploy` em `backend/`, com o contêiner do PostgreSQL ativo). A migração da avaliação é interrompida se houver avaliações antigas, de 1 a 5, para não apagá-las.
-- **Publicação.** O repositório está pronto para a Vercel (`DEPLOY-VERCEL.md`), mas a publicação não foi feita. O texto do TCC registra isso no fim da Seção 4.2.
+- **Migrações.** Aplicadas ao banco de produção (Neon) em 24/10/2026; no banco local, aplicar com `npm run prisma:deploy`.
+- **Publicação.** O sistema está publicado na Vercel. A versão com a base oficial entra no ar com o merge do branch `feat/rag-documentos-oficiais` na `main`.
 
 ## 5. Ordem sugerida para concluir
 
 As datas devem ser definidas com o orientador.
 
-1. Itens 1 a 4: base oficial, correções, ambiente e avaliação técnica. Juntos, respondem à QP2.
-2. Itens 5 a 9, que podem andar em paralelo com o anterior: Cenário B real, protocolo, ética, aviso de privacidade e revisão das perguntas.
+1. Itens 1 a 4: concluídos em 24/10/2026; a QP2 está respondida na Seção 6.1.
+2. Itens 5 a 9: Cenário B real, protocolo, ética, aviso de privacidade e revisão das perguntas e da base.
 3. Item 10: gerar as respostas. Em seguida, a coleta, que só deve começar depois do item 7.
 4. Item 11: análise e redação. Por último, atualizar o resumo, o abstract, a Figura 1 e o Quadro 2.
 
@@ -169,8 +184,11 @@ As datas devem ser definidas com o orientador.
 - **Legendas.** A numeração usa campos SEQ, mas as menções no texto ("Figura 4", "Quadro 9") são texto simples. Ao inserir uma figura ou um quadro novo, use Inserir legenda e revise as menções.
 - **Google Docs.** O sumário pode ser atualizado no próprio Google Docs. As listas de figuras, quadros e tabelas podem virar texto fixo. Nesse caso, faça a revisão final no Word.
 - **Figuras.**
-  - As capturas de tela (Figuras 5 a 11) mostram a interface em 23/10/2026, em estado inicial e sem respostas simuladas. A Figura 6 (página inicial) foi capturada sem login.
-  - As Figuras 9 a 11 foram capturadas com o usuário de teste `usuario.teste`, criado pelo procedimento manual em um banco descartável.
+  - As capturas de tela são as Figuras 5 a 13.
+    - Figuras 6, 7, 10 e 11: interface de 24/10/2026, com a base oficial.
+    - Figuras 5, 8, 9, 12 e 13: interface de 23/10/2026, cujas telas não mudaram.
+    - A Figura 6 (página inicial) foi capturada sem login.
+  - As Figuras 10 e 11 mostram uma resposta real do `gpt-6-luna` à pergunta "Baciloscopia negativa exclui hanseníase?". Foram geradas em banco descartável (PGlite) com a base oficial indexada, com usuário de teste criado pelo procedimento manual.
   - A Figura 5 mostra só o componente de avaliação, depois da escolha de uma nota, sem o texto da resposta.
   - Os diagramas (Figuras 1 a 4) têm fonte editável em SVG na pasta `figuras/editaveis/`.
-  - A Figura 7 é o exemplo ilustrativo da página inicial, identificado como tal na própria interface.
+  - A Figura 7 é o exemplo ilustrativo da página inicial, identificado como tal na própria interface, montado com trechos do PCDT.

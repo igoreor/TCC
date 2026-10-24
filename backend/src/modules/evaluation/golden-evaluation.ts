@@ -82,9 +82,15 @@ function compact(text: string) {
   return normalizeText(text).replace(/\s+/g, '');
 }
 
-// Frases com que a resposta declara a lacuna da base.
+// Frases com que a resposta declara a lacuna da base ("Os trechos não informam...", "Não há, nos
+// documentos consultados, ...").
 const GAP_PATTERN =
-  /nao (encontrei|ha |existe|tratam|trazem|mencionam|abordam|descrevem|constam|contem|apresentam|foi possivel)|nenhum dos (documentos|trechos)/;
+  /nao (encontrei|ha\b|existe|tratam|trazem|mencionam|abordam|descrevem|constam|contem|apresentam|informam|fornecem|citam|incluem|indicam|especificam|registram|foi possivel)|nenhum dos (documentos|trechos)/;
+
+/** A resposta declara que a base não trata do assunto. */
+export function declaresGap(answer: string) {
+  return GAP_PATTERN.test(normalizeText(answer));
+}
 
 export function scoreCase(question: GoldenQuestion, output: CaseOutput) {
   const behaviour = output.fallbackTriggered ? 'recusou' : 'respondeu';
@@ -94,7 +100,7 @@ export function scoreCase(question: GoldenQuestion, output: CaseOutput) {
       : question.expected === 'recusar'
         ? output.fallbackTriggered &&
           (!question.expectedReason || output.reason === question.expectedReason)
-        : output.fallbackTriggered || GAP_PATTERN.test(normalizeText(output.answer));
+        : output.fallbackTriggered || declaresGap(output.answer);
 
   const hasEvidence = question.evidence.length > 0;
   const hitAt = (k: number) =>

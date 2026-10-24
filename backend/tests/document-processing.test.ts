@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  declaresGap,
   scoreCase,
   summarize,
   type GoldenQuestion
@@ -224,5 +225,12 @@ describe('pontuação da avaliação', () => {
     );
     expect(gap.correctBehaviour).toBe(true);
     expect(summarize([gap]).overall.correctBehaviour).toBe(1);
+  });
+
+  it('reconhece as formas usuais de declarar a lacuna e não a confunde com uma resposta', () => {
+    expect(declaresGap('Não há, nos trechos consultados, recomendação de acupuntura.')).toBe(true);
+    expect(declaresGap('Os trechos fornecidos não informam o telefone da coordenação.')).toBe(true);
+    expect(declaresGap('Os documentos consultados não fornecem esse contato.')).toBe(true);
+    expect(declaresGap('A baciloscopia negativa não exclui o diagnóstico.')).toBe(false);
   });
 });

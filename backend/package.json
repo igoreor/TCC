@@ -20,7 +20,8 @@
     "kb:toc": "tsx scripts/kb/toc-outline.ts",
     "kb:build": "tsx scripts/kb/build.ts",
     "kb:ingest": "tsx scripts/kb/ingest.ts",
-    "eval:rag": "tsx scripts/eval/run-golden.ts"
+    "eval:rag": "tsx scripts/eval/run-golden.ts",
+    "eval:rescore": "tsx scripts/eval/rescore.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.8.2",

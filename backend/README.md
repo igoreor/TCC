@@ -33,7 +33,8 @@ Edite `.env` se necessário:
 DATABASE_URL=postgresql://postgres:postgres@localhost:5433/hanseniase_rag?schema=public
 OPENAI_API_KEY=
 EMBEDDING_MODEL=text-embedding-3-small
-CHAT_MODEL=gpt-4o-mini
+CHAT_MODEL=gpt-6-luna
+# CHAT_REASONING_EFFORT=
 DEFAULT_TOP_K=20
 DEFAULT_TOP_N=8
 # MIN_VECTOR_SIMILARITY=
@@ -46,6 +47,8 @@ CORS_ORIGIN=
 Sem `OPENAI_API_KEY`, o backend usa embeddings determinísticos locais, análise heurística da pergunta e uma resposta extrativa com as frases dos trechos recuperados.
 
 `DEFAULT_TOP_K` é o número de candidatos por lista de busca e `DEFAULT_TOP_N`, o de trechos enviados ao modelo. `MIN_VECTOR_SIMILARITY` é a similaridade de cosseno mínima do melhor trecho para considerar que há evidência; vazio usa o padrão do provedor (0,25 com a OpenAI e 0,08 com os embeddings determinísticos). `MIN_RETRIEVAL_SCORE`, da versão anterior, é ignorado.
+
+`CHAT_MODEL` padrão é o `gpt-6-luna`, escolhido na comparação de modelos descrita em [docs/avaliacao-modelos.md](docs/avaliacao-modelos.md). `CHAT_REASONING_EFFORT` só vale para modelos de raciocínio (GPT-5, GPT-6 e a série o): `none`, `minimal`, `low`, `medium` ou `high`, conforme o modelo aceite; vazio usa `none` com o modelo padrão e, com outro modelo, o padrão dele. Esses modelos não aceitam `max_tokens` nem temperatura diferente de 1 com o raciocínio ligado, e o cliente ajusta os parâmetros conforme o nome do modelo.
 
 `AUTH_SESSION_TTL_HOURS` define a duração da sessão de login. Em produção o cookie de sessão só trafega por HTTPS (`AUTH_COOKIE_SECURE`, ligado por padrão quando `NODE_ENV=production`). `CORS_ORIGIN` só é necessário se o frontend for servido de outra origem, sem o proxy do Vite.
 

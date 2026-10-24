@@ -53,6 +53,10 @@ Em **Settings › Environment Variables** do projeto `nexohansen-api`:
 | `OPENAI_API_KEY` | sua chave | opcional; sem ela, embeddings determinísticos e resposta extrativa |
 | `AUTH_SESSION_TTL_HOURS` | `8` | opcional; duração do login em horas |
 | `MIN_VECTOR_SIMILARITY` | vazio | opcional; similaridade mínima do melhor trecho (padrão 0,25 com a OpenAI) |
+| `CHAT_MODEL` | vazio | opcional; padrão `gpt-6-luna` (ver `backend/docs/avaliacao-modelos.md`) |
+| `CHAT_REASONING_EFFORT` | vazio | opcional; padrão `none` com o `gpt-6-luna` |
+
+Se o projeto tiver `CHAT_MODEL=gpt-4o-mini` de uma versão anterior, remova-a (ou troque por `gpt-6-luna`) **depois** que a versão nova estiver publicada: a versão anterior do servidor envia parâmetros que os modelos GPT-5 e GPT-6 recusam, e as respostas cairiam no modo extrativo.
 
 Se o projeto tiver `MIN_RETRIEVAL_SCORE` de uma versão anterior, pode removê-la: ela é ignorada.
 

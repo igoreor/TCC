@@ -7,15 +7,20 @@ const optionalNumber = z.preprocess(
   z.coerce.number().min(0).max(1).optional()
 );
 
+export const DEFAULT_CHAT_MODEL = 'gpt-6-luna';
+
 const envSchema = z.object({
   DATABASE_URL: z
     .string()
     .default('postgresql://postgres:postgres@localhost:5432/hanseniase_rag?schema=public'),
   OPENAI_API_KEY: z.string().optional().default(''),
   EMBEDDING_MODEL: z.string().default('text-embedding-3-small'),
-  CHAT_MODEL: z.string().default('gpt-4o-mini'),
-  // Esforço de raciocínio dos modelos que raciocinam (GPT-5, GPT-6, o-series). Vazio usa o padrão
-  // do modelo; "none" desliga o raciocínio (mais rápido) onde o modelo permite.
+  // Modelo escolhido na comparação de 24/10/2026 (backend/docs/avaliacao-modelos.md): mesmo
+  // desempenho dos demais no conjunto de referência, com o menor custo por pergunta.
+  CHAT_MODEL: z.string().default(DEFAULT_CHAT_MODEL),
+  // Esforço de raciocínio dos modelos que raciocinam (GPT-5, GPT-6, o-series). Vazio usa "none"
+  // com o modelo padrão e, com outro modelo, o padrão dele; "none" desliga o raciocínio onde o
+  // modelo permite.
   CHAT_REASONING_EFFORT: z.preprocess(
     (value) => (value === '' ? undefined : value),
     z.enum(['none', 'minimal', 'low', 'medium', 'high']).optional()

@@ -9,7 +9,7 @@ import {
 import { PromptBuilderService } from '../src/modules/chat/prompt-builder.service';
 import { DeterministicEmbeddingsProvider } from '../src/modules/embeddings/embeddings.provider';
 import { EmbeddingsService } from '../src/modules/embeddings/embeddings.service';
-import type { LlmClient } from '../src/modules/llm/llm.client';
+import { chatCompletionParameters, type LlmClient } from '../src/modules/llm/llm.client';
 import { ClinicalRiskService } from '../src/modules/retrieval/clinical-risk.service';
 import {
   HybridSearchService,
@@ -306,6 +306,15 @@ describe('citações', () => {
     expect(lexicallySupported('A talidomida é teratogênica', baciloscopia.content)).toBe(false);
   });
 
+  it('atribui à frase anterior os marcadores escritos depois do ponto final', () => {
+    const sentences = sentencesByCitation(
+      'A baciloscopia negativa não exclui o diagnóstico. [1][2]\n\n- O diagnóstico é clínico. [3]'
+    );
+    expect(sentences.get(1)).toEqual(['A baciloscopia negativa não exclui o diagnóstico.']);
+    expect(sentences.get(2)).toEqual(['A baciloscopia negativa não exclui o diagnóstico.']);
+    expect(sentences.get(3)).toEqual(['- O diagnóstico é clínico.']);
+  });
+
   it('monta a referência documental com seção, página impressa e link para a página do PDF', () => {
     const source = toSourceCitation(baciloscopia, 1, true);
     expect(source.reference).toBe(
@@ -403,5 +412,36 @@ describe('geração com modelo de linguagem', () => {
     expect(output.answer).toContain('resposta extrativa');
     expect(output.answer).toContain('não exclui o diagnóstico');
     expect(output.sources[0].chunk_id).toBe('pcdt:0039');
+  });
+});
+
+describe('parâmetros da OpenAI por modelo', () => {
+  it('mantém temperatura e limite de tokens nos modelos sem raciocínio', () => {
+    expect(chatCompletionParameters('gpt-4o-mini', { temperature: 0, maxTokens: 400 })).toEqual({
+      temperature: 0,
+      max_completion_tokens: 400
+    });
+  });
+
+  it('nos modelos de raciocínio, omite a temperatura e reserva tokens para o raciocínio', () => {
+    expect(
+      chatCompletionParameters('gpt-5-mini', { temperature: 0.1, maxTokens: 1400 }, 'low')
+    ).toEqual({
+      reasoning_effort: 'low',
+      max_completion_tokens: 5400
+    });
+    expect(chatCompletionParameters('gpt-6-luna', { maxTokens: 400 })).toEqual({
+      max_completion_tokens: 4400
+    });
+  });
+
+  it('com o raciocínio desligado, volta a enviar a temperatura', () => {
+    expect(
+      chatCompletionParameters('gpt-6-luna', { temperature: 0, maxTokens: 400 }, 'none')
+    ).toEqual({
+      reasoning_effort: 'none',
+      temperature: 0,
+      max_completion_tokens: 400
+    });
   });
 });

@@ -16,6 +16,34 @@ export interface LlmClient {
   }): Promise<string>;
 }
 
+export type ReasoningEffort = 'none' | 'minimal' | 'low' | 'medium' | 'high';
+
+// Modelos de raciocínio (o1/o3/o4, GPT-5 e GPT-6) recusam "max_tokens" e só aceitam temperatura
+// diferente de 1 com o raciocínio desligado ("reasoning_effort": "none").
+const REASONING_MODEL = /^(o\d|gpt-5|gpt-6)/;
+// O limite de "max_completion_tokens" inclui os tokens de raciocínio: sem folga, o modelo pode
+// gastar o limite raciocinando e devolver o texto vazio.
+const REASONING_TOKEN_ALLOWANCE = 4000;
+
+export function chatCompletionParameters(
+  model: string,
+  input: { temperature?: number; maxTokens?: number },
+  reasoningEffort?: ReasoningEffort
+) {
+  if (!REASONING_MODEL.test(model)) {
+    return { temperature: input.temperature ?? 0.1, max_completion_tokens: input.maxTokens };
+  }
+  const reasoningOff = reasoningEffort === 'none';
+  return {
+    ...(reasoningEffort ? { reasoning_effort: reasoningEffort } : {}),
+    ...(reasoningOff ? { temperature: input.temperature ?? 0.1 } : {}),
+    max_completion_tokens:
+      input.maxTokens === undefined || reasoningOff
+        ? input.maxTokens
+        : input.maxTokens + REASONING_TOKEN_ALLOWANCE
+  };
+}
+
 export class OpenAIChatClient implements LlmClient {
   readonly model = openAIConfig.chatModel;
 
@@ -34,8 +62,7 @@ export class OpenAIChatClient implements LlmClient {
       },
       body: JSON.stringify({
         model: this.model,
-        temperature: input.temperature ?? 0.1,
-        max_tokens: input.maxTokens,
+        ...chatCompletionParameters(this.model, input, openAIConfig.reasoningEffort),
         messages: input.messages,
         ...(input.json ? { response_format: { type: 'json_object' } } : {})
       }),
@@ -43,13 +70,21 @@ export class OpenAIChatClient implements LlmClient {
     });
 
     if (!response.ok) {
-      throw new Error(`Falha na OpenAI: ${response.status}`);
+      // A mensagem da OpenAI diz qual parâmetro ou modelo foi recusado; não contém a chave.
+      const detail = await response.text().catch(() => '');
+      throw new Error(`Falha na OpenAI: ${response.status} ${detail.slice(0, 300)}`);
     }
 
     const payload = (await response.json()) as {
-      choices: Array<{ message: { content: string | null } }>;
+      choices: Array<{ message: { content: string | null }; finish_reason?: string }>;
     };
-    return payload.choices[0]?.message.content ?? '';
+    const content = payload.choices[0]?.message.content ?? '';
+    if (!content.trim()) {
+      throw new Error(
+        `Resposta vazia da OpenAI (${payload.choices[0]?.finish_reason ?? 'sem motivo'})`
+      );
+    }
+    return content;
   }
 }
 

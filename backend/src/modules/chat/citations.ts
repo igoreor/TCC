@@ -55,13 +55,16 @@ export function renumberCitations(answer: string, contextSize: number) {
 export function sentencesByCitation(answer: string) {
   const result = new Map<number, string[]>();
   const sentences = answer.split(/(?<=[.!?])\s+|\n+/);
+  let previous = '';
   for (const sentence of sentences) {
     const cited = [...sentence.matchAll(/\[(\d+)\]/g)].map((match) => Number(match[1]));
-    const text = sentence.replace(/\[\d+\]/g, '').trim();
+    // Marcadores depois do ponto final ("... é clínico. [1][2]") referem-se à frase anterior.
+    const text = sentence.replace(/\[\d+\]/g, '').trim() || previous;
     if (!text) continue;
     for (const index of cited) {
       result.set(index, [...(result.get(index) ?? []), text]);
     }
+    previous = text;
   }
   return result;
 }

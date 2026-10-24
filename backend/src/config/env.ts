@@ -8,10 +8,18 @@ const optionalNumber = z.preprocess(
 );
 
 const envSchema = z.object({
-  DATABASE_URL: z.string().default('postgresql://postgres:postgres@localhost:5432/hanseniase_rag?schema=public'),
+  DATABASE_URL: z
+    .string()
+    .default('postgresql://postgres:postgres@localhost:5432/hanseniase_rag?schema=public'),
   OPENAI_API_KEY: z.string().optional().default(''),
   EMBEDDING_MODEL: z.string().default('text-embedding-3-small'),
   CHAT_MODEL: z.string().default('gpt-4o-mini'),
+  // Esforço de raciocínio dos modelos que raciocinam (GPT-5, GPT-6, o-series). Vazio usa o padrão
+  // do modelo; "none" desliga o raciocínio (mais rápido) onde o modelo permite.
+  CHAT_REASONING_EFFORT: z.preprocess(
+    (value) => (value === '' ? undefined : value),
+    z.enum(['none', 'minimal', 'low', 'medium', 'high']).optional()
+  ),
   // Candidatos por lista de busca e trechos enviados ao modelo.
   DEFAULT_TOP_K: z.coerce.number().int().positive().default(20),
   DEFAULT_TOP_N: z.coerce.number().int().positive().default(8),

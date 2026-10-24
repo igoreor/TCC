@@ -99,7 +99,7 @@
 
   <rect x="490" y="672" width="500" height="74" rx="5" fill="#ffffff" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="7 5"/>
   <text x="740" y="702" text-anchor="middle" font-size="16" font-weight="bold" fill="#374151">Modo local, sem chave da OpenAI</text>
-  <text x="740" y="727" text-anchor="middle" font-size="15" fill="#374151">embeddings determinísticos e resposta extrativa</text>
+  <text x="740" y="727" text-anchor="middle" font-size="15" fill="#374151">embeddings determinísticos, análise local e resposta extrativa</text>
 
   <!-- Servidor <-> PostgreSQL -->
   <line x1="1012" y1="610" x2="1108" y2="610" stroke="#1f2937" stroke-width="2.5" marker-start="url(#seta)" marker-end="url(#seta)"/>
@@ -107,17 +107,17 @@
 
   <!-- PostgreSQL -->
   <rect x="1110" y="300" width="270" height="470" rx="8" fill="#f8fafa" stroke="#1f2937" stroke-width="2"/>
-  <text x="1245" y="336" text-anchor="middle" font-size="20" font-weight="bold" fill="#111827">PostgreSQL 16</text>
+  <text x="1245" y="336" text-anchor="middle" font-size="20" font-weight="bold" fill="#111827">PostgreSQL</text>
   <text x="1245" y="362" text-anchor="middle" font-size="20" font-weight="bold" fill="#111827">com pgvector</text>
-  <text x="1245" y="388" text-anchor="middle" font-size="15" fill="#4b5563">contêiner Docker</text>
+  <text x="1245" y="388" text-anchor="middle" font-size="15" fill="#4b5563">Docker local ou Neon (publicação)</text>
   <g font-size="16" fill="#111827">
-    <text x="1130" y="440">• 10 tabelas</text>
-    <text x="1148" y="462" font-size="14" fill="#4b5563">(inclui usuários, sessões</text>
-    <text x="1148" y="482" font-size="14" fill="#4b5563">de login e avaliações)</text>
-    <text x="1130" y="522">• índice IVFFlat</text>
+    <text x="1130" y="440">• 11 tabelas</text>
+    <text x="1148" y="462" font-size="14" fill="#4b5563">(documentos, ingestões, trechos,</text>
+    <text x="1148" y="482" font-size="14" fill="#4b5563">usuários, conversas e avaliações)</text>
+    <text x="1130" y="522">• índice HNSW</text>
     <text x="1148" y="544" font-size="14" fill="#4b5563">(distância de cosseno)</text>
     <text x="1130" y="584">• índices GIN</text>
-    <text x="1148" y="606" font-size="14" fill="#4b5563">(busca textual e metadados)</text>
+    <text x="1148" y="606" font-size="14" fill="#4b5563">(texto sem acentos e metadados)</text>
     <text x="1130" y="646">• vetores de 1.536</text>
     <text x="1148" y="668" font-size="14" fill="#4b5563">dimensões por trecho</text>
     <text x="1130" y="708">• restrições CHECK</text>
@@ -136,8 +136,8 @@
   <g font-size="16" fill="#111827">
     <text x="1130" y="118">• Embeddings:</text>
     <text x="1148" y="140" font-size="15" fill="#374151">text-embedding-3-small</text>
-    <text x="1130" y="178">• Geração:</text>
-    <text x="1148" y="200" font-size="15" fill="#374151">gpt-4o-mini</text>
+    <text x="1130" y="178">• Análise e geração:</text>
+    <text x="1148" y="200" font-size="15" fill="#374151">gpt-6-luna</text>
   </g>
   <text x="1245" y="246" text-anchor="middle" font-size="14" font-style="italic" fill="#4b5563">usada quando há chave configurada</text>
 </svg>

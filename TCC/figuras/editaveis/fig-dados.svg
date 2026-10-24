@@ -1,173 +1,206 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1130" viewBox="0 0 1500 1130" font-family="Arial, Helvetica, sans-serif">
-  <rect width="1500" height="1130" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1440" viewBox="0 0 1500 1440" font-family="Arial, Helvetica, sans-serif">
+  <rect width="1500" height="1440" fill="#ffffff"/>
 
   <!-- Document -->
   <g font-size="17" fill="#111827">
-    <rect x="30" y="30" width="440" height="200" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="30" y="30" width="440" height="352" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
     <rect x="30" y="30" width="440" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
     <text x="250" y="58" text-anchor="middle" font-size="20" font-weight="bold">Document</text>
     <text x="48" y="100">id «PK»</text>
     <text x="48" y="126">document_id «único»</text>
-    <text x="48" y="152">title, description</text>
-    <text x="48" y="178">source_type, source_name</text>
-    <text x="48" y="204">version</text>
+    <text x="48" y="152">title, short_title, description</text>
+    <text x="48" y="178">institution, authorship</text>
+    <text x="48" y="204">publication_year, edition, isbn</text>
+    <text x="48" y="230">language, jurisdiction, document_type</text>
+    <text x="48" y="256">source_type, source_name, version</text>
+    <text x="48" y="282">status, active</text>
+    <text x="48" y="308">official_url, download_url</text>
+    <text x="48" y="334">file_sha256, page_count, license</text>
+    <text x="48" y="360">notes, ingested_at</text>
+  </g>
+
+  <!-- IngestionRun -->
+  <g font-size="17" fill="#111827">
+    <rect x="560" y="30" width="400" height="222" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="560" y="30" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="760" y="58" text-anchor="middle" font-size="20" font-weight="bold">IngestionRun</text>
+    <text x="578" y="100">id «PK»</text>
+    <text x="578" y="126">document_id «FK»</text>
+    <text x="578" y="152">status, embedding_model, file_sha256</text>
+    <text x="578" y="178">chunks_total, chunks_embedded,</text>
+    <text x="578" y="204">chunks_unchanged, chunks_removed</text>
+    <text x="578" y="230">error, started_at, finished_at</text>
+  </g>
+
+  <!-- Document 1 — 0..* IngestionRun -->
+  <g font-size="17" fill="#111827">
+    <line x1="470" y1="140" x2="560" y2="140" stroke="#1f2937" stroke-width="2"/>
+    <text x="478" y="130">1</text>
+    <text x="552" y="164" text-anchor="end">0..*</text>
+    <text x="515" y="186" font-size="15" font-style="italic" fill="#4b5563" text-anchor="middle">registra</text>
   </g>
 
   <!-- Chunk -->
   <g font-size="17" fill="#111827">
-    <rect x="30" y="330" width="440" height="460" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
-    <rect x="30" y="330" width="440" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
-    <text x="250" y="358" text-anchor="middle" font-size="20" font-weight="bold">Chunk</text>
-    <text x="48" y="400">id «PK»</text>
-    <text x="48" y="426">chunk_id «único»</text>
-    <text x="48" y="452">document_id «FK»</text>
-    <text x="48" y="478">title, section, subsection</text>
-    <text x="48" y="504">content</text>
-    <text x="48" y="530">source_page, source_reference</text>
-    <text x="48" y="556">clinical_phase, information_type</text>
-    <text x="48" y="582">target_user, target_demographic</text>
-    <text x="48" y="608">clinical_criticality, safety_level</text>
-    <text x="48" y="634">disease_classification</text>
-    <text x="48" y="660">answer_policy</text>
-    <text x="48" y="686">seis indicadores booleanos (*_related)</text>
-    <text x="48" y="712">keywords, entities, metadata (JSON)</text>
-    <text x="48" y="738" font-weight="bold">embedding: vector(1536)</text>
-    <text x="48" y="770" font-size="14" font-style="italic" fill="#4b5563">índices: IVFFlat (cosseno); GIN (texto e metadados)</text>
+    <rect x="30" y="470" width="440" height="540" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <rect x="30" y="470" width="440" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+    <text x="250" y="498" text-anchor="middle" font-size="20" font-weight="bold">Chunk</text>
+    <text x="48" y="540">id «PK»</text>
+    <text x="48" y="566">chunk_id «único»</text>
+    <text x="48" y="592">document_id «FK»</text>
+    <text x="48" y="618">chunk_index, section_path (JSON)</text>
+    <text x="48" y="644">title, section, subsection</text>
+    <text x="48" y="670">content, search_text (sem acentos)</text>
+    <text x="48" y="696">page_start, page_end (páginas do PDF)</text>
+    <text x="48" y="722">page_label_start, page_label_end</text>
+    <text x="48" y="748">source_page, source_reference</text>
+    <text x="48" y="774">clinical_phase, information_type</text>
+    <text x="48" y="800">target_user, target_demographic</text>
+    <text x="48" y="826">clinical_criticality, safety_level</text>
+    <text x="48" y="852">disease_classification, answer_policy</text>
+    <text x="48" y="878">seis indicadores booleanos (*_related)</text>
+    <text x="48" y="904">keywords, entities, metadata (JSON)</text>
+    <text x="48" y="930">content_hash, embedding_model</text>
+    <text x="48" y="956" font-weight="bold">embedding: vector(1536)</text>
+    <text x="48" y="990" font-size="14" font-style="italic" fill="#4b5563">índices: HNSW (cosseno); GIN (texto sem acentos e metadados)</text>
   </g>
 
   <!-- Document 1 — 0..* Chunk -->
-  <line x1="250" y1="230" x2="250" y2="330" stroke="#1f2937" stroke-width="2"/>
-  <text x="262" y="254" font-size="17" fill="#111827">1</text>
-  <text x="262" y="318" font-size="17" fill="#111827">0..*</text>
-  <text x="180" y="286" font-size="15" font-style="italic" fill="#4b5563" text-anchor="middle">contém</text>
+  <line x1="250" y1="382" x2="250" y2="470" stroke="#1f2937" stroke-width="2"/>
+  <text x="262" y="406" font-size="17" fill="#111827">1</text>
+  <text x="262" y="458" font-size="17" fill="#111827">0..*</text>
+  <text x="180" y="432" font-size="15" font-style="italic" fill="#4b5563" text-anchor="middle">contém</text>
 
   <!-- Source (coluna 1, abaixo de Chunk) -->
   <g font-size="17" fill="#111827">
-    <rect x="30" y="880" width="440" height="172" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="2" stroke-dasharray="8 6"/>
-    <rect x="30" y="880" width="440" height="42" rx="4" fill="#f1f1f1" stroke="#6b7280" stroke-width="2" stroke-dasharray="8 6"/>
-    <text x="250" y="908" text-anchor="middle" font-size="20" font-weight="bold" fill="#374151">Source <tspan font-size="15" font-weight="normal" font-style="italic">(prevista, não utilizada)</tspan></text>
-    <text x="48" y="950" fill="#374151">id «PK»</text>
-    <text x="48" y="976" fill="#374151">name, type, url</text>
-    <text x="48" y="1002" fill="#374151">version, last_reviewed</text>
-    <text x="48" y="1028" fill="#374151">notes</text>
+    <rect x="30" y="1090" width="440" height="172" rx="4" fill="#ffffff" stroke="#6b7280" stroke-width="2" stroke-dasharray="8 6"/>
+    <rect x="30" y="1090" width="440" height="42" rx="4" fill="#f1f1f1" stroke="#6b7280" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="250" y="1118" text-anchor="middle" font-size="20" font-weight="bold" fill="#374151">Source <tspan font-size="15" font-weight="normal" font-style="italic">(prevista, não utilizada)</tspan></text>
+    <text x="48" y="1160" fill="#374151">id «PK»</text>
+    <text x="48" y="1186" fill="#374151">name, type, url</text>
+    <text x="48" y="1212" fill="#374151">version, last_reviewed</text>
+    <text x="48" y="1238" fill="#374151">notes</text>
   </g>
 
-  <!-- RetrievalLog (coluna 2, linha 0) -->
-  <g font-size="17" fill="#111827">
-    <rect x="560" y="30" width="400" height="198" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
-    <rect x="560" y="30" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
-    <text x="760" y="58" text-anchor="middle" font-size="20" font-weight="bold">RetrievalLog</text>
-    <text x="578" y="100">id «PK»</text>
-    <text x="578" y="126">session_id «FK, opcional»</text>
-    <text x="578" y="152">question, final_answer</text>
-    <text x="578" y="178">retrieved_chunks, scores, filters</text>
-    <text x="578" y="204">fallback_triggered, risk_level</text>
+  <!-- Entidades de uso, deslocadas para baixo de IngestionRun -->
+  <g transform="translate(0,300)">
+    <!-- RetrievalLog (coluna 2, linha 0) -->
+    <g font-size="17" fill="#111827">
+      <rect x="560" y="30" width="400" height="198" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+      <rect x="560" y="30" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+      <text x="760" y="58" text-anchor="middle" font-size="20" font-weight="bold">RetrievalLog</text>
+      <text x="578" y="100">id «PK»</text>
+      <text x="578" y="126">session_id «FK, opcional»</text>
+      <text x="578" y="152">question, final_answer</text>
+      <text x="578" y="178">retrieved_chunks, scores, filters</text>
+      <text x="578" y="204">fallback_triggered, risk_level</text>
+    </g>
+
+    <!-- AuthSession (coluna 3, linha 0) -->
+    <g font-size="17" fill="#111827">
+      <rect x="1060" y="30" width="410" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+      <rect x="1060" y="30" width="410" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+      <text x="1265" y="58" text-anchor="middle" font-size="20" font-weight="bold">AuthSession</text>
+      <text x="1078" y="100">id «PK»</text>
+      <text x="1078" y="126">user_id «FK»</text>
+      <text x="1078" y="152">token_hash «único» (SHA-256)</text>
+      <text x="1078" y="178">expires_at</text>
+    </g>
+
+    <!-- ChatSession (coluna 2, linha 1) -->
+    <g font-size="17" fill="#111827">
+      <rect x="560" y="318" width="400" height="146" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+      <rect x="560" y="318" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+      <text x="760" y="346" text-anchor="middle" font-size="20" font-weight="bold">ChatSession</text>
+      <text x="578" y="388">id «PK»</text>
+      <text x="578" y="414">user_id «FK»</text>
+      <text x="578" y="440">user_type</text>
+    </g>
+
+    <!-- User (coluna 3, linha 1) -->
+    <g font-size="17" fill="#111827">
+      <rect x="1060" y="318" width="410" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+      <rect x="1060" y="318" width="410" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+      <text x="1265" y="346" text-anchor="middle" font-size="20" font-weight="bold">User</text>
+      <text x="1078" y="388">id «PK»</text>
+      <text x="1078" y="414">username «único»</text>
+      <text x="1078" y="440">password_hash (scrypt)</text>
+      <text x="1078" y="466">active</text>
+    </g>
+
+    <!-- ChatMessage (coluna 2, linha 2) -->
+    <g font-size="17" fill="#111827">
+      <rect x="560" y="580" width="400" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+      <rect x="560" y="580" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+      <text x="760" y="608" text-anchor="middle" font-size="20" font-weight="bold">ChatMessage</text>
+      <text x="578" y="650">id «PK»</text>
+      <text x="578" y="676">session_id «FK»</text>
+      <text x="578" y="702">role, content</text>
+      <text x="578" y="728">(id, session_id) «único»</text>
+    </g>
+
+    <!-- Feedback (coluna 3, linha 2) -->
+    <g font-size="17" fill="#111827">
+      <rect x="1060" y="580" width="410" height="224" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+      <rect x="1060" y="580" width="410" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+      <text x="1265" y="608" text-anchor="middle" font-size="20" font-weight="bold">Feedback</text>
+      <text x="1078" y="650">id «PK»</text>
+      <text x="1078" y="676">user_id «FK»; session_id «FK»</text>
+      <text x="1078" y="702">(message_id, session_id) «FK»</text>
+      <text x="1078" y="728">rating (0 a 10)</text>
+      <text x="1078" y="754">comment (opcional, até 1.000)</text>
+      <text x="1078" y="780">(message_id, user_id) «único»</text>
+    </g>
+
+    <!-- EvaluationQuestion (coluna 2, linha 3) -->
+    <g font-size="17" fill="#111827">
+      <rect x="560" y="880" width="400" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+      <rect x="560" y="880" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
+      <text x="760" y="908" text-anchor="middle" font-size="20" font-weight="bold">EvaluationQuestion</text>
+      <text x="578" y="950">id «PK»</text>
+      <text x="578" y="976">question, expected_answer</text>
+      <text x="578" y="1002">ideal_chunks (JSON), risk_level</text>
+      <text x="578" y="1028">correctness_criteria, critical_errors</text>
+    </g>
+
+    <g font-size="17" fill="#111827">
+      <!-- ChatSession 0..1 — 0..* RetrievalLog -->
+      <line x1="760" y1="228" x2="760" y2="318" stroke="#1f2937" stroke-width="2"/>
+      <text x="772" y="252">0..*</text>
+      <text x="772" y="308">0..1</text>
+
+      <!-- User 1 — 0..* AuthSession -->
+      <line x1="1265" y1="202" x2="1265" y2="318" stroke="#1f2937" stroke-width="2"/>
+      <text x="1277" y="226">0..*</text>
+      <text x="1277" y="308">1</text>
+
+      <!-- User 0..1 — 0..* ChatSession -->
+      <line x1="960" y1="380" x2="1060" y2="380" stroke="#1f2937" stroke-width="2"/>
+      <text x="968" y="370">0..*</text>
+      <text x="1052" y="404" text-anchor="end">0..1</text>
+
+      <!-- ChatSession 1 — 0..* ChatMessage -->
+      <line x1="760" y1="464" x2="760" y2="580" stroke="#1f2937" stroke-width="2"/>
+      <text x="772" y="488">1</text>
+      <text x="772" y="568">0..*</text>
+
+      <!-- User 1 — 0..* Feedback -->
+      <line x1="1265" y1="490" x2="1265" y2="580" stroke="#1f2937" stroke-width="2"/>
+      <text x="1277" y="514">1</text>
+      <text x="1277" y="568">0..*</text>
+
+      <!-- ChatSession 1 — 0..* Feedback -->
+      <line x1="930" y1="464" x2="1090" y2="580" stroke="#1f2937" stroke-width="2"/>
+      <text x="910" y="490">1</text>
+      <text x="1046" y="580" text-anchor="end">0..*</text>
+
+      <!-- ChatMessage 1 — 0..* Feedback -->
+      <line x1="960" y1="660" x2="1060" y2="660" stroke="#1f2937" stroke-width="2"/>
+      <text x="968" y="650">1</text>
+      <text x="1052" y="686" text-anchor="end">0..*</text>
+    </g>
   </g>
 
-  <!-- AuthSession (coluna 3, linha 0) -->
-  <g font-size="17" fill="#111827">
-    <rect x="1060" y="30" width="410" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
-    <rect x="1060" y="30" width="410" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
-    <text x="1265" y="58" text-anchor="middle" font-size="20" font-weight="bold">AuthSession</text>
-    <text x="1078" y="100">id «PK»</text>
-    <text x="1078" y="126">user_id «FK»</text>
-    <text x="1078" y="152">token_hash «único» (SHA-256)</text>
-    <text x="1078" y="178">expires_at</text>
-  </g>
-
-  <!-- ChatSession (coluna 2, linha 1) -->
-  <g font-size="17" fill="#111827">
-    <rect x="560" y="318" width="400" height="146" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
-    <rect x="560" y="318" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
-    <text x="760" y="346" text-anchor="middle" font-size="20" font-weight="bold">ChatSession</text>
-    <text x="578" y="388">id «PK»</text>
-    <text x="578" y="414">user_id «FK»</text>
-    <text x="578" y="440">user_type</text>
-  </g>
-
-  <!-- User (coluna 3, linha 1) -->
-  <g font-size="17" fill="#111827">
-    <rect x="1060" y="318" width="410" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
-    <rect x="1060" y="318" width="410" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
-    <text x="1265" y="346" text-anchor="middle" font-size="20" font-weight="bold">User</text>
-    <text x="1078" y="388">id «PK»</text>
-    <text x="1078" y="414">username «único»</text>
-    <text x="1078" y="440">password_hash (scrypt)</text>
-    <text x="1078" y="466">active</text>
-  </g>
-
-  <!-- ChatMessage (coluna 2, linha 2) -->
-  <g font-size="17" fill="#111827">
-    <rect x="560" y="580" width="400" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
-    <rect x="560" y="580" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
-    <text x="760" y="608" text-anchor="middle" font-size="20" font-weight="bold">ChatMessage</text>
-    <text x="578" y="650">id «PK»</text>
-    <text x="578" y="676">session_id «FK»</text>
-    <text x="578" y="702">role, content</text>
-    <text x="578" y="728">(id, session_id) «único»</text>
-  </g>
-
-  <!-- Feedback (coluna 3, linha 2) -->
-  <g font-size="17" fill="#111827">
-    <rect x="1060" y="580" width="410" height="224" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
-    <rect x="1060" y="580" width="410" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
-    <text x="1265" y="608" text-anchor="middle" font-size="20" font-weight="bold">Feedback</text>
-    <text x="1078" y="650">id «PK»</text>
-    <text x="1078" y="676">user_id «FK»; session_id «FK»</text>
-    <text x="1078" y="702">(message_id, session_id) «FK»</text>
-    <text x="1078" y="728">rating (0 a 10)</text>
-    <text x="1078" y="754">comment (opcional, até 1.000)</text>
-    <text x="1078" y="780">(message_id, user_id) «único»</text>
-  </g>
-
-  <!-- EvaluationQuestion (coluna 2, linha 3) -->
-  <g font-size="17" fill="#111827">
-    <rect x="560" y="880" width="400" height="172" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
-    <rect x="560" y="880" width="400" height="42" rx="4" fill="#e3eeee" stroke="#1f2937" stroke-width="2"/>
-    <text x="760" y="908" text-anchor="middle" font-size="20" font-weight="bold">EvaluationQuestion</text>
-    <text x="578" y="950">id «PK»</text>
-    <text x="578" y="976">question, expected_answer</text>
-    <text x="578" y="1002">ideal_chunks (JSON), risk_level</text>
-    <text x="578" y="1028">correctness_criteria, critical_errors</text>
-  </g>
-
-  <g font-size="17" fill="#111827">
-    <!-- ChatSession 0..1 — 0..* RetrievalLog -->
-    <line x1="760" y1="228" x2="760" y2="318" stroke="#1f2937" stroke-width="2"/>
-    <text x="772" y="252">0..*</text>
-    <text x="772" y="308">0..1</text>
-
-    <!-- User 1 — 0..* AuthSession -->
-    <line x1="1265" y1="202" x2="1265" y2="318" stroke="#1f2937" stroke-width="2"/>
-    <text x="1277" y="226">0..*</text>
-    <text x="1277" y="308">1</text>
-
-    <!-- User 0..1 — 0..* ChatSession -->
-    <line x1="960" y1="380" x2="1060" y2="380" stroke="#1f2937" stroke-width="2"/>
-    <text x="968" y="370">0..*</text>
-    <text x="1052" y="404" text-anchor="end">0..1</text>
-
-    <!-- ChatSession 1 — 0..* ChatMessage -->
-    <line x1="760" y1="464" x2="760" y2="580" stroke="#1f2937" stroke-width="2"/>
-    <text x="772" y="488">1</text>
-    <text x="772" y="568">0..*</text>
-
-    <!-- User 1 — 0..* Feedback -->
-    <line x1="1265" y1="490" x2="1265" y2="580" stroke="#1f2937" stroke-width="2"/>
-    <text x="1277" y="514">1</text>
-    <text x="1277" y="568">0..*</text>
-
-    <!-- ChatSession 1 — 0..* Feedback -->
-    <line x1="930" y1="464" x2="1090" y2="580" stroke="#1f2937" stroke-width="2"/>
-    <text x="910" y="490">1</text>
-    <text x="1046" y="580" text-anchor="end">0..*</text>
-
-    <!-- ChatMessage 1 — 0..* Feedback -->
-    <line x1="960" y1="660" x2="1060" y2="660" stroke="#1f2937" stroke-width="2"/>
-    <text x="968" y="650">1</text>
-    <text x="1052" y="686" text-anchor="end">0..*</text>
-  </g>
-
-  <text x="30" y="1088" font-size="15" fill="#4b5563">PK: chave primária; FK: chave estrangeira. As colunas de data de criação e de atualização foram omitidas.</text>
-  <text x="30" y="1112" font-size="15" fill="#4b5563">Em ChatSession, user_id é opcional apenas para as conversas registradas antes da implementação da autenticação.</text>
+  <text x="30" y="1394" font-size="15" fill="#4b5563">PK: chave primária; FK: chave estrangeira. As colunas de data de criação e de atualização foram omitidas. Em Document, active = falso retira</text>
+  <text x="30" y="1418" font-size="15" fill="#4b5563">o documento da busca. Em ChatSession, user_id é opcional apenas para as conversas registradas antes da implementação da autenticação.</text>
 </svg>

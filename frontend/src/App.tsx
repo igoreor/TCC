@@ -10,6 +10,8 @@ import { EvaluationDashboardPage } from './features/evaluation/EvaluationDashboa
 import { RetrievalExplorerPage } from './features/retrieval/RetrievalExplorerPage'
 import { LandingPage } from './features/landing/LandingPage'
 import { ComparisonPage } from './features/comparison/ComparisonPage'
+import { StudyPage } from './features/study/StudyPage'
+import { STUDY_ENABLED } from './features/study/enabled'
 
 function App() {
   return (
@@ -45,6 +47,7 @@ function App() {
         <Route path="base" element={<KnowledgeBrowserPage />} />
         <Route path="base/chunks/:chunkId" element={<ChunkDetailPage />} />
         <Route path="avaliacao" element={<EvaluationDashboardPage />} />
+        {STUDY_ENABLED ? <Route path="estudo" element={<StudyPage />} /> : null}
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />

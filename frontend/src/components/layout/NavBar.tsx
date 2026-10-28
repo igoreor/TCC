@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { STUDY_ENABLED } from '../../features/study/enabled'
 import styles from './NavBar.module.css'
 
 const links = [
@@ -6,6 +7,7 @@ const links = [
   { to: '/dashboard/recuperacao', label: 'Retrieval Explorer' },
   { to: '/dashboard/base', label: 'Base de conhecimento' },
   { to: '/dashboard/avaliacao', label: 'Avaliação' },
+  ...(STUDY_ENABLED ? [{ to: '/dashboard/estudo', label: 'Expansão semântica' }] : []),
 ]
 
 export function NavBar() {

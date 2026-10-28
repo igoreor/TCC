@@ -46,7 +46,13 @@ const envSchema = z.object({
   AUTH_COOKIE_SECURE: z.enum(['true', 'false']).optional(),
   // Origens autorizadas a chamar a API com cookies, separadas por vírgula. Vazio: mesma origem
   // (proxy do Vite), sem envio de credenciais entre origens.
-  CORS_ORIGIN: z.string().optional().default('')
+  CORS_ORIGIN: z.string().optional().default(''),
+  // Estudo de expansão de consultas (TCC do Nathan): URL do serviço local `rag-study serve`.
+  // Vazio: as rotas /api/study ficam indisponíveis. Em produção ficam sempre desligadas.
+  STUDY_SERVICE_URL: z.string().optional().default(''),
+  STUDY_SERVICE_TOKEN: z.string().optional().default(''),
+  // Abaixo dos 300 s de espera por cabeçalhos do fetch do Node, para o erro sair com mensagem clara.
+  STUDY_SERVICE_TIMEOUT_MS: z.coerce.number().int().positive().default(280_000)
 });
 
 const parsed = envSchema.parse(process.env);

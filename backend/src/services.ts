@@ -18,6 +18,7 @@ import { QueryAnalyzerService } from './modules/retrieval/query-analyzer.service
 import { createLlmClient } from './modules/llm/llm.client';
 import { RetrievalService } from './modules/retrieval/retrieval.service';
 import { SafetyService } from './modules/safety/safety.service';
+import { createStudyClient } from './modules/study/study.client';
 
 export function createServices() {
   const knowledgeRepository = new KnowledgeRepository(prisma);
@@ -53,6 +54,7 @@ export function createServices() {
   const feedbackService = new FeedbackService(prisma);
   const authService = new AuthService(prisma, { sessionTtlHours: env.AUTH_SESSION_TTL_HOURS });
   const loginRateLimiter = new LoginRateLimiter();
+  const studyClient = createStudyClient();
 
   return {
     authService,
@@ -71,6 +73,7 @@ export function createServices() {
     promptBuilder,
     chatService,
     evaluationService,
-    feedbackService
+    feedbackService,
+    studyClient
   };
 }

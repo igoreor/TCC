@@ -16,6 +16,7 @@ import { createEvaluationRouter } from './modules/evaluation/evaluation.controll
 import { createFeedbackRouter } from './modules/feedback/feedback.controller';
 import { createKnowledgeRouter } from './modules/knowledge/knowledge.controller';
 import { createRetrievalRouter } from './modules/retrieval/retrieval.controller';
+import { createStudyRouter } from './modules/study/study.controller';
 
 export type AppServices = ReturnType<typeof createServices>;
 
@@ -75,6 +76,8 @@ export function createApp(services: AppServices = createServices()) {
   app.use('/api/chat', createChatRouter(services.chatService));
   app.use('/api/evaluation', createEvaluationRouter(services.evaluationService));
   app.use('/api/feedback', createFeedbackRouter(services.feedbackService));
+  // Estudo de expansão de consultas (TCC do Nathan), servido pelo harness local; não usa o banco.
+  app.use('/api/study', createStudyRouter(services.studyClient));
 
   app.use((error: unknown, _request: express.Request, response: express.Response, _next: express.NextFunction) => {
     if (error instanceof ZodError) {

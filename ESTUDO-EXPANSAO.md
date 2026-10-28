@@ -1,6 +1,6 @@
 # Estudo de expansão semântica de consultas no NexoHansen
 
-Tela acrescentada por Nathan Dalbert para mostrar o estudo do TCC dele, "RAG com Expansão Semântica de Consultas para Apoio à Pesquisa Clínica em Hanseníase". A autoria conjunta do NexoHansen ainda está sendo combinada com o Igor e o orientador.
+O NexoHansen é um trabalho colaborativo, e cada autor conduz uma pesquisa própria. Esta tela, de Nathan Dalbert, mostra o estudo do TCC dele, "RAG com Expansão Semântica de Consultas para Apoio à Pesquisa Clínica em Hanseníase". O harness, o protocolo e os dados desse estudo estão em [`estudo-expansao/`](estudo-expansao/README.md).
 
 ## O que é
 
@@ -17,7 +17,7 @@ Cada coluna mostra a busca usada, a resposta e os trechos recuperados, com docum
 - **Resultados do experimento:** respostas já registradas pelo harness do Nathan (lotes de `research/runs`), sem nenhuma chamada nova.
 - **Comparação ao vivo:** uma pergunta livre, respondida pelo mesmo pipeline do experimento, com Claude (Claude Code) ou GPT (Codex) pela assinatura do Nathan. É demonstração, não dado do experimento.
 
-As respostas vêm do harness `software/rag-study`, que fica no workspace do Nathan (fora deste repositório), pelo serviço local `rag-study serve`. O harness usa o corpus de documentos oficiais `hanseniase-v2` e o índice BGE-M3.
+As respostas vêm do harness `estudo-expansao/software/rag-study`, pelo serviço local `rag-study serve`. O harness usa o corpus de documentos oficiais `hanseniase-v2` e o índice BGE-M3.
 
 ## O que não muda no NexoHansen
 
@@ -38,8 +38,8 @@ As respostas vêm do harness `software/rag-study`, que fica no workspace do Nath
 
 ## Como rodar (instância local do Nathan)
 
-1. No workspace do harness (`C:\TCC`), inicie o serviço. O comando completo está no `software/rag-study/README.md`:
-   - `rag-study serve --config software/rag-study/config/demo/live-v1.json --dry-run`: modo simulado, sem chamadas;
+1. Em `estudo-expansao/`, instale o harness (ver o [README da pasta](estudo-expansao/README.md)) e inicie o serviço:
+   - `software\rag-study\.venv\Scripts\rag-study --root . serve --config software/rag-study/config/demo/live-v1.json --dry-run`: modo simulado, sem chamadas;
    - `--allow-api` no lugar de `--dry-run`: Claude Code e Codex logados pela assinatura.
 2. No `backend/.env` local, defina `STUDY_SERVICE_URL=http://127.0.0.1:8765`.
 3. Rode o backend e o frontend como no `backend/README.md`, com banco próprio, e abra `/dashboard/estudo`.

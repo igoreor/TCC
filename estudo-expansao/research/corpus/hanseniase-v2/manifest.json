@@ -1,0 +1,100 @@
+{
+  "corpus_id": "hanseniase-v2",
+  "created_utc": "2026-10-23T20:28:12+00:00",
+  "snapshot_sha256": "4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663",
+  "components": [
+    {
+      "corpus_id": "pcdt2022-v1",
+      "snapshot_sha256": "f401426c28805ef5984de02210d0fa08b9ad1ec9ba1d0c8172a85404c655cc03",
+      "source": {
+        "path": "research/sources/2022 - Brasil - PCDTHanseniase.pdf",
+        "sha256": "1e2ee0c56f924a03b00c22a1491da4bd5894539651aaee877c54a9f22dcd9933",
+        "pages_total": 156,
+        "document_id": "BR-MS-PCDT-HANSENIASE-2022",
+        "title": "Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase",
+        "publisher": "Brasil. Ministério da Saúde",
+        "year": 2022,
+        "document_type": "diretriz_clinica_normativa"
+      },
+      "chunks": 206
+    },
+    {
+      "corpus_id": "portaria47-2026-v1",
+      "snapshot_sha256": "26e29fd497ec076fbb2e8367f9e9ab69a324801a04505d33c433a08d9a612fb3",
+      "source": {
+        "path": "research/sources/2026 - Brasil - DOU 2026-07-21 p167 PortariaSCTIE47-Claritromicina.pdf",
+        "sha256": "98db0db25e28ed0c2d94338924d18ea9f53c1b8b812ae77eb946ddd9c738f9a9",
+        "pages_total": 1,
+        "document_id": "BR-MS-SCTIE-PORTARIA-47-2026",
+        "title": "Portaria SCTIE/MS nº 47, de 20 de julho de 2026 (claritromicina como segunda linha)",
+        "publisher": "Brasil. Ministério da Saúde. Secretaria de Ciência, Tecnologia e Inovação em Saúde",
+        "year": 2026,
+        "document_type": "ato_normativo_atualizacao_pcdt",
+        "url": "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas",
+        "license": "ato oficial publicado no DOU",
+        "language": "pt"
+      },
+      "chunks": 2
+    },
+    {
+      "corpus_id": "portaria51-2026-v1",
+      "snapshot_sha256": "9d7ac5d8a2633ab3cdc74f9749e7c63e7939f2403b5ae0e28aa043b812c567e3",
+      "source": {
+        "path": "research/sources/2026 - Brasil - DOU 2026-08-04 p74 PortariaSCTIE51-qPCR.pdf",
+        "sha256": "5574571d418b4993497a99932888bb87a2619fe16064821e890da5f5fa42dd5c",
+        "pages_total": 1,
+        "document_id": "BR-MS-SCTIE-PORTARIA-51-2026",
+        "title": "Portaria SCTIE/MS nº 51, de 31 de julho de 2026 (teste molecular (qPCR) para M. leprae)",
+        "publisher": "Brasil. Ministério da Saúde. Secretaria de Ciência, Tecnologia e Inovação em Saúde",
+        "year": 2026,
+        "document_type": "ato_normativo_atualizacao_pcdt",
+        "url": "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas",
+        "license": "ato oficial publicado no DOU",
+        "language": "pt"
+      },
+      "chunks": 2
+    },
+    {
+      "corpus_id": "estrategia2024-v1",
+      "snapshot_sha256": "4079aed253338ae3e62059c84288cabf15ad9a79461d7f87392322aa0c09460f",
+      "source": {
+        "path": "research/sources/2024 - Brasil - EstrategiaNacionalEnfrentamentoHanseniase2024-2030.pdf",
+        "sha256": "d85ea09891e0fb74a73561bafe74abf03a359b01ed2d13284dadc435e988655f",
+        "pages_total": 64,
+        "document_id": "BR-MS-ESTRATEGIA-HANSENIASE-2024-2030",
+        "title": "Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030",
+        "publisher": "Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente",
+        "year": 2024,
+        "document_type": "estrategia_programatica_nacional",
+        "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hanseniase/estrategia-nacional-para-enfrentamento-a-hanseniase-2024-2030",
+        "license": "CC BY-NC-SA 4.0",
+        "language": "pt"
+      },
+      "chunks": 66
+    },
+    {
+      "corpus_id": "who2023-v1",
+      "snapshot_sha256": "2170362ddc75d8038fb406789b3f8284dbdf0ff28ff91b38111ab913d2d4afb9",
+      "source": {
+        "path": "research/sources/2023 - WHO - InterruptionTransmissionEliminationLeprosyTechnicalGuidance.pdf",
+        "sha256": "e4c27c66570f2613c69fba26a3817c23a6c004df6ddf846843679d10411f0bf2",
+        "pages_total": 81,
+        "document_id": "WHO-LEPROSY-ELIMINATION-TECHNICAL-GUIDANCE-2023",
+        "title": "Interruption of transmission and elimination of leprosy disease – Technical guidance",
+        "publisher": "World Health Organization",
+        "year": 2023,
+        "document_type": "orientacao_tecnica_internacional",
+        "url": "https://www.who.int/publications/i/item/9789290210467",
+        "license": "CC BY-NC-SA 3.0 IGO",
+        "language": "en"
+      },
+      "chunks": 115
+    }
+  ],
+  "stats": {
+    "chunks": 391,
+    "documents": 5,
+    "words_total": 58680,
+    "words_mean": 150.1
+  }
+}

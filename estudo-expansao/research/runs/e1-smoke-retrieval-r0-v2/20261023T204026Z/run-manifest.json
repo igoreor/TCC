@@ -1,0 +1,110 @@
+{
+  "experiment_id": "e1-smoke-retrieval-r0-v2",
+  "batch_id": "20261023T204026Z",
+  "status": "completed",
+  "dry_run": false,
+  "started_utc": "2026-10-23T20:40:26+00:00",
+  "config_path": "software/rag-study/config/experiments/e1-smoke-retrieval-r0-v2.json",
+  "config_sha256": "39a95590f6f4eda522fa92297b64bf345214ed44aa48a9feaa594630878e01c7",
+  "config": {
+    "experiment_id": "e1-smoke-retrieval-r0-v2",
+    "description": "Teste funcional de recuperação R0 no corpus hanseniase-v2 (sem LLM, custo zero).",
+    "mode": "retrieval_original_only",
+    "questions": "research/questions/smoke-v0.jsonl",
+    "splits": [
+      "smoke"
+    ],
+    "corpus_dir": "research/corpus/hanseniase-v2",
+    "index_dir": "research/corpus/hanseniase-v2/index-bge-m3",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "device": "cpu",
+      "batch_size": 16
+    },
+    "prompts_dir": "software/rag-study/prompts",
+    "prompts": {},
+    "k": 10,
+    "generation": {
+      "max_output_tokens": 10
+    },
+    "models": {},
+    "arms": [],
+    "conditions": [
+      "R0"
+    ],
+    "repetitions": 1,
+    "seed": 20261023,
+    "output_root": "research/runs"
+  },
+  "software": {
+    "package_version": "0.2.0",
+    "source_sha256": "4fb8f58b5c2ab07baa8c78d32fcfd98ef861b7c18dc1a11ebaabc7ef5442f0ef"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.5.3",
+      "pymupdf": "1.28.2",
+      "sentence-transformers": "6.1.0",
+      "torch": "2.14.1",
+      "transformers": "5.18.0",
+      "openai": "3.24.0",
+      "anthropic": "1.11.0"
+    },
+    "uv_lock_sha256": "23b3243b5f06fa3cf920312610c3d70fcccc596f81bf756fd2801b64db43cdc6"
+  },
+  "corpus_snapshot_sha256": "4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663",
+  "index": {
+    "index_id": "hanseniase-v2-bge-m3",
+    "created_utc": "2026-10-23T20:34:27+00:00",
+    "corpus_id": "hanseniase-v2",
+    "corpus_snapshot_sha256": "4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663",
+    "text_field": "embed_text",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimension": 1024,
+      "max_seq_length": 8192,
+      "normalize": true,
+      "device": "cpu",
+      "batch_size": 16,
+      "sentence_transformers_version": "6.1.0",
+      "torch_version": "2.14.1+cpu"
+    },
+    "similarity": "cosine (inner product of L2-normalized vectors)",
+    "search": "exact brute-force; ties broken by corpus order",
+    "n_vectors": 391,
+    "dimension": 1024,
+    "embeddings_sha256": "94746b0a22da314f687a8f3f0f8586f2cd276aacd7a61df384bfe5ccb2830e38",
+    "build_seconds": 321.16,
+    "platform": {
+      "python": "3.12.10",
+      "machine": "AMD64",
+      "system": "Windows"
+    }
+  },
+  "prompts": {},
+  "price_table": null,
+  "units": [
+    {
+      "condition": "R0-RETRIEVAL-NONE",
+      "arm": null
+    }
+  ],
+  "n_questions": 25,
+  "questions_sha256": "e48a98791bb3f410f68e28f50945f568d23eabdb8552f16f84cef445830b7ea9",
+  "repetitions": 1,
+  "seed": 20261023,
+  "continues": [],
+  "finished_utc": "2026-10-23T20:40:31+00:00",
+  "n_records": 25,
+  "n_skipped_already_done": 0,
+  "record_status_counts": {
+    "success": 25
+  },
+  "raw_sha256": "537d0b3969c11324af1027472ad47f69f181fdaf035c00c7fd56fc62e039d141"
+}

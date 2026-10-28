@@ -1,0 +1,31 @@
+{
+  "corpus_id": "pcdt2022-v1",
+  "source_pdf": "research/sources/2022 - Brasil - PCDTHanseniase.pdf",
+  "expected_sha256": "1e2ee0c56f924a03b00c22a1491da4bd5894539651aaee877c54a9f22dcd9933",
+  "document_id": "BR-MS-PCDT-HANSENIASE-2022",
+  "document_title": "Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase",
+  "publisher": "Brasil. Ministério da Saúde",
+  "year": 2022,
+  "document_type": "diretriz_clinica_normativa",
+  "include_pages": [[15, 113]],
+  "exclusions": [
+    {"pages": [1, 4], "reason": "capa, folha de rosto e ficha catalográfica"},
+    {"pages": [5, 14], "reason": "listas de figuras, quadros e siglas e sumário; repetem títulos e atrairiam buscas sem conteúdo"},
+    {"pages": [114, 114], "reason": "página separadora sem texto"},
+    {"pages": [115, 128], "reason": "lista de referências bibliográficas; não contém orientação clínica"},
+    {"pages": [129, 134], "reason": "Apêndice A (fluxogramas): a extração perde a ordem lógica de caixas e setas e gera texto incoerente; o conteúdo resume seções do corpo. Candidato a transcrição manual verificada no corpus v2"},
+    {"pages": [135, 138], "reason": "Apêndice B: metodologia de busca da literatura do próprio PCDT"},
+    {"pages": [139, 153], "reason": "anexos (portaria, painel GRADE, formulários, caderneta, modelo de laudo, escala); candidatos a corpus v2 após decisão do autor"},
+    {"pages": [154, 156], "reason": "contracapa"}
+  ],
+  "header_max_y": 60.0,
+  "footer_min_y": 790.0,
+  "furniture_max_size": 8.5,
+  "heading_min_size": 15.0,
+  "top_level_heading_min_size": 20.0,
+  "chapter_number_min_size": 100.0,
+  "drop_superscript_citations": true,
+  "max_words": 200,
+  "overlap_words": 40,
+  "min_words": 40
+}

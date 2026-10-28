@@ -1,0 +1,30 @@
+{
+  "index_id": "pcdt2022-v1-bge-m3",
+  "created_utc": "2026-10-03T20:11:10+00:00",
+  "corpus_id": "pcdt2022-v1",
+  "corpus_snapshot_sha256": "f401426c28805ef5984de02210d0fa08b9ad1ec9ba1d0c8172a85404c655cc03",
+  "text_field": "embed_text",
+  "embedder": {
+    "type": "sentence-transformers",
+    "model_id": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dimension": 1024,
+    "max_seq_length": 8192,
+    "normalize": true,
+    "device": "cpu",
+    "batch_size": 16,
+    "sentence_transformers_version": "6.1.0",
+    "torch_version": "2.14.1+cpu"
+  },
+  "similarity": "cosine (inner product of L2-normalized vectors)",
+  "search": "exact brute-force; ties broken by corpus order",
+  "n_vectors": 206,
+  "dimension": 1024,
+  "embeddings_sha256": "7f5d84f5777fe526cc1f41eb0fa818406290ba271e70c471e159a47d1434ae16",
+  "build_seconds": 129.21,
+  "platform": {
+    "python": "3.12.10",
+    "machine": "AMD64",
+    "system": "Windows"
+  }
+}

@@ -1,0 +1,6 @@
+{"experiment_id": "e1-smoke-retrieval-r0-v2", "description": "Teste funcional de recuperação R0 no corpus hanseniase-v2 (sem LLM, custo zero).",
+ "mode": "retrieval_original_only", "questions": "research/questions/smoke-v0.jsonl", "splits": ["smoke"],
+ "corpus_dir": "research/corpus/hanseniase-v2", "index_dir": "research/corpus/hanseniase-v2/index-bge-m3",
+ "embedder": {"type": "sentence-transformers", "model_id": "BAAI/bge-m3", "revision": "5617a9f61b028005a4858fdac845db406aefb181", "device": "cpu", "batch_size": 16},
+ "prompts_dir": "software/rag-study/prompts", "prompts": {}, "k": 10, "generation": {"max_output_tokens": 10},
+ "models": {}, "arms": [], "conditions": ["R0"], "repetitions": 1, "seed": 20261023, "output_root": "research/runs"}

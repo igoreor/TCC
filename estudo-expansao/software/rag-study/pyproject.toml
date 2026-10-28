@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hanseniase-rag-study"
+version = "0.2.0"
+description = "Experimental harness for direct and RAG chat comparisons"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pymupdf>=1.24",
+]
+
+[project.optional-dependencies]
+embeddings = ["sentence-transformers>=3.0"]
+providers = ["openai>=1.40", "anthropic>=0.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+rag-study = "rag_study.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

@@ -1,0 +1,63 @@
+{
+  "experiment_id": "e4-stage2-test-full",
+  "description": "Etapa 2 (D19): sem RAG (D) x RAG (R0) x RAG com a expansão escolhida na etapa 1, nas 50 perguntas de teste, GPT e Claude. Substituir R_ESCOLHIDA pelo código registrado em select-strategy (R1, R2 ou R3) e confirmar max_output_tokens após o smoke real (D22). Executar uma única vez. Acesso pela assinatura (D31): braço Claude via Claude Code CLI; braço GPT via Codex CLI (plano ChatGPT). Corpus hanseniase-v2 (D38) e prompt de resposta RAG v2 (D39).",
+  "mode": "full",
+  "questions": "research/questions/test-v1.jsonl",
+  "splits": [
+    "test"
+  ],
+  "corpus_dir": "research/corpus/hanseniase-v2",
+  "index_dir": "research/corpus/hanseniase-v2/index-bge-m3",
+  "embedder": {
+    "type": "sentence-transformers",
+    "model_id": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "device": "cpu",
+    "batch_size": 16
+  },
+  "prompts_dir": "software/rag-study/prompts",
+  "prompts": {
+    "direct_answer": "direct-answer-system-v1.txt",
+    "rag_answer": "rag-answer-system-v2.txt",
+    "expansion_system": "common-expansion-system-v1.txt",
+    "rewrite": "rewrite-clinical-v1.txt",
+    "keywords": "keywords-v1.txt",
+    "pseudo_document": "pseudo-document-v1.txt"
+  },
+  "max_attempts": 3,
+  "pricing": null,
+  "output_root": "research/runs",
+  "k": 5,
+  "generation": {
+    "max_output_tokens": 2000
+  },
+  "expansion": {
+    "max_output_tokens": 400,
+    "structured_output": false
+  },
+  "models": {
+    "openai": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "verbosity": "medium",
+      "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json"
+    },
+    "anthropic": {
+      "provider": "claude_cli",
+      "model": "claude-sonnet-5-5",
+      "effort": "low"
+    }
+  },
+  "arms": [
+    "openai",
+    "anthropic"
+  ],
+  "conditions": [
+    "D",
+    "R0",
+    "R_ESCOLHIDA"
+  ],
+  "repetitions": 1,
+  "seed": 20261115
+}

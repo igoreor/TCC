@@ -1,0 +1,14 @@
+{
+  "_note": "Preços de lista, nível padrão (sem batch, flex ou prioridade), conferidos nas páginas oficiais em 22/10/2026. O harness cobra todos os tokens de entrada pelo preço cheio; descontos de cache não são aplicados (o custo estimado é um limite superior). Tokens de raciocínio contam como saída nos dois provedores.",
+  "source_urls": [
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "https://platform.claude.com/docs/en/about-claude/pricing"
+  ],
+  "retrieved_on": "2026-10-22",
+  "currency": "USD",
+  "models": {
+    "openai:gpt-6.1-sol": {"input_per_mtok": 2.00, "cached_input_per_mtok": 0.10, "output_per_mtok": 10.00},
+    "anthropic:claude-sonnet-5-5": {"input_per_mtok": 2.00, "cached_input_per_mtok": 0.10, "output_per_mtok": 10.00}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_instructions": "Copie para pricing-AAAA-MM-DD.json no dia da execução e preencha com os valores das páginas oficiais de preços. Não reutilize valores de memória. Chave = provedor:id_exato_do_modelo.",
+  "source_urls": ["", ""],
+  "retrieved_on": "AAAA-MM-DD",
+  "currency": "USD",
+  "models": {
+    "openai:SET_EXACT_OPENAI_MODEL_ID": {"input_per_mtok": null, "output_per_mtok": null},
+    "anthropic:SET_EXACT_ANTHROPIC_MODEL_ID": {"input_per_mtok": null, "output_per_mtok": null}
+  }
+}

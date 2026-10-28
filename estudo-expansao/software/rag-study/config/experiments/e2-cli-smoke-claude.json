@@ -1,0 +1,57 @@
+{
+  "experiment_id": "e2-cli-smoke-claude",
+  "description": "Teste funcional do acesso por assinatura (D31): Claude Sonnet 5.5 via Claude Code CLI, prompt de sistema do estudo, sem ferramentas, esforço low. 5 perguntas smoke, 5 condições, 1 repetição. Sem valor analítico.",
+  "mode": "full",
+  "questions": "research/questions/smoke-v0-pilot5.jsonl",
+  "splits": [
+    "smoke"
+  ],
+  "corpus_dir": "research/corpus/pcdt2022-v1",
+  "index_dir": "research/corpus/pcdt2022-v1/index-bge-m3",
+  "embedder": {
+    "type": "sentence-transformers",
+    "model_id": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "device": "cpu",
+    "batch_size": 16
+  },
+  "prompts_dir": "software/rag-study/prompts",
+  "prompts": {
+    "direct_answer": "direct-answer-system-v1.txt",
+    "rag_answer": "rag-answer-system-v1.txt",
+    "expansion_system": "common-expansion-system-v1.txt",
+    "rewrite": "rewrite-clinical-v1.txt",
+    "keywords": "keywords-v1.txt",
+    "pseudo_document": "pseudo-document-v1.txt"
+  },
+  "k": 5,
+  "generation": {
+    "max_output_tokens": 800
+  },
+  "expansion": {
+    "max_output_tokens": 400,
+    "structured_output": false
+  },
+  "max_attempts": 3,
+  "models": {
+    "anthropic": {
+      "provider": "claude_cli",
+      "model": "claude-sonnet-5-5",
+      "effort": "low"
+    }
+  },
+  "arms": [
+    "anthropic"
+  ],
+  "conditions": [
+    "D",
+    "R0",
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "repetitions": 1,
+  "seed": 20261022,
+  "pricing": null,
+  "output_root": "research/runs"
+}

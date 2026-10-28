@@ -1,0 +1,131 @@
+{
+  "corpus_id": "estrategia2024-v1",
+  "created_utc": "2026-10-23T20:28:10+00:00",
+  "snapshot_sha256": "4079aed253338ae3e62059c84288cabf15ad9a79461d7f87392322aa0c09460f",
+  "source": {
+    "path": "research/sources/2024 - Brasil - EstrategiaNacionalEnfrentamentoHanseniase2024-2030.pdf",
+    "sha256": "d85ea09891e0fb74a73561bafe74abf03a359b01ed2d13284dadc435e988655f",
+    "pages_total": 64,
+    "document_id": "BR-MS-ESTRATEGIA-HANSENIASE-2024-2030",
+    "title": "Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030",
+    "publisher": "Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente",
+    "year": 2024,
+    "document_type": "estrategia_programatica_nacional",
+    "url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hanseniase/estrategia-nacional-para-enfrentamento-a-hanseniase-2024-2030",
+    "license": "CC BY-NC-SA 4.0",
+    "language": "pt"
+  },
+  "extractor": {
+    "library": "pymupdf",
+    "version": "1.28.2"
+  },
+  "config": {
+    "corpus_id": "estrategia2024-v1",
+    "source_pdf": "research/sources/2024 - Brasil - EstrategiaNacionalEnfrentamentoHanseniase2024-2030.pdf",
+    "expected_sha256": "d85ea09891e0fb74a73561bafe74abf03a359b01ed2d13284dadc435e988655f",
+    "document_id": "BR-MS-ESTRATEGIA-HANSENIASE-2024-2030",
+    "document_title": "Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030",
+    "publisher": "Brasil. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente",
+    "year": 2024,
+    "document_type": "estrategia_programatica_nacional",
+    "include_pages": [
+      [
+        10,
+        52
+      ]
+    ],
+    "exclusions": [
+      {
+        "pages": [
+          1,
+          3
+        ],
+        "reason": "capas, folha de rosto e ficha catalográfica"
+      },
+      {
+        "pages": [
+          4,
+          9
+        ],
+        "reason": "listas de figuras, quadros e siglas, sumário e página em branco"
+      },
+      {
+        "pages": [
+          53,
+          54
+        ],
+        "reason": "referências bibliográficas"
+      },
+      {
+        "pages": [
+          55,
+          60
+        ],
+        "reason": "Anexo A (participantes da oficina) e Anexo B (lista de municípios por grupo): listas sem orientação"
+      },
+      {
+        "pages": [
+          61,
+          62
+        ],
+        "reason": "tabela de municípios em página rotacionada; extração desordenada"
+      },
+      {
+        "pages": [
+          63,
+          64
+        ],
+        "reason": "pesquisa de opinião e contracapa"
+      }
+    ],
+    "header_max_y": 30.0,
+    "footer_min_y": 660.0,
+    "furniture_max_size": 8.5,
+    "heading_min_size": 12.9,
+    "top_level_heading_min_size": 25.0,
+    "chapter_number_min_size": 999.0,
+    "drop_superscript_citations": true,
+    "max_words": 200,
+    "overlap_words": 40,
+    "min_words": 40,
+    "heading_size_levels": [
+      [
+        25,
+        1
+      ],
+      [
+        15,
+        2
+      ],
+      [
+        12.9,
+        3
+      ]
+    ],
+    "heading_max_words": 25,
+    "drop_line_patterns": [
+      "\\d{1,2}",
+      "(continua|continuação|conclusão)"
+    ],
+    "excerpt_start": null,
+    "excerpt_end": null,
+    "root_section": null,
+    "sort_blocks": true,
+    "source_url": "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hanseniase/estrategia-nacional-para-enfrentamento-a-hanseniase-2024-2030",
+    "license": "CC BY-NC-SA 4.0",
+    "language": "pt"
+  },
+  "stats": {
+    "pages_included": 43,
+    "pages_without_text": [],
+    "furniture_lines_removed": 123,
+    "citation_spans_removed": 5,
+    "headings_detected": 19,
+    "sentences": 832,
+    "chunks": 66,
+    "words_total": 11168,
+    "words_min": 47,
+    "words_max": 200,
+    "words_mean": 169.2
+  }
+}

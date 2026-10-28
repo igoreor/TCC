@@ -1,0 +1,9 @@
+Pergunta original:
+{{query}}
+
+Produza uma passagem hipotética de no máximo 100 palavras, semanticamente semelhante a um trecho de documento que poderia conter informações relevantes para a pergunta.
+
+A passagem será usada somente para recuperação semântica. Não apresente recomendações ao usuário e não invente informações específicas sobre pacientes.
+
+Retorne somente JSON no formato:
+{"hypothetical_passage":"passagem"}

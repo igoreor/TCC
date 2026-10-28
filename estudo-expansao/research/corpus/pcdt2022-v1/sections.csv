@@ -1,0 +1,115 @@
+page,heading
+15,APRESENTAÇÃO
+17,1 Introdução
+19,2 METODOLOGIA
+21,3 CLASSIFICAÇÃO ESTATÍSTICA INTERNACIONAL DE DOENÇAS E PROBLEMAS RELACIONADOS À SAÚDE (CID-10)
+23,4 ASPECTOS EPIDEMIOLÓGICOS
+23,4.1 Cenário mundial
+23,4.2 Cenário nacional
+25,5 ASPECTOS IMUNOLÓGICOS
+27,6 ASPECTOS CLÍNICOS
+27,6.1 Suspeição diagnóstica
+28,6.2 Definição de caso
+28,6.3 Classificação operacional
+29,6.3.1 Hanseníase paucibacilar (PB)
+29,6.3.2 Hanseníase multibacilar (MB)
+29,6.4 Formas clínicas
+30,6.4.1 Hanseníase tuberculoide
+31,6.4.2 Hanseníase virchowiana
+32,6.4.3 Hanseníase dimorfa
+33,6.4.4 Hanseníase indeterminada
+34,6.4.5 Hanseníase neural pura (ou neurítica primária)
+35,6.5 Reações hansênicas
+36,6.5.1 Reação hansênica tipo 1 (reação reversa)
+37,6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico)
+39,6.5.3 Fatores associados ou precipitantes das reações hansênicas
+39,6.6 Manifestações neurológicas
+40,6.6.1 Neuropatia periférica
+40,6.6.2 Neurite
+41,6.6.2.1 Neurite aguda
+41,6.6.2.2 Neurite silenciosa
+42,6.6.3 Dor neuropática
+43,6.7 Manifestações oculares
+45,7 EXAMES DE APOIO AO DIAGNÓSTICO
+45,7.1 Avaliação Neurológica Simplificada (ANS)
+46,7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR)
+47,7.3 Histopatologia
+49,7.4 Ultrassom de nervos periféricos
+49,7.5 Eletroneuromiograma
+50,7.6 Teste rápido imunocromatográfico para detecção de anticorpos IgM contra o M. leprae
+51,7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR)
+53,8 CRITÉRIOS DE INCLUSÃO
+55,9 CRITÉRIOS DE EXCLUSÃO
+57,10 ABORDAGEM TERAPÊUTICA
+57,10.1 Tratamento farmacológico
+58,10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia
+62,10.1.2 Tratamento farmacológico das reações hansênicas
+62,10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa
+63,10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico
+64,10.1.3 Tratamento farmacológico das reações hansênicas em crianças
+64,10.1.3.1 Tratamento farmacológico da reação hansênica tipo 1 em crianças
+64,10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças
+65,10.1.4 Medicamentos
+65,10.1.5 Informações sobre os medicamentos
+65,10.1.5.1 Rifampicina
+66,10.1.5.2 Clofazimina
+66,10.1.5.3 Dapsona
+67,10.1.5.4 Minociclina
+68,10.1.5.5 Ofloxacino
+68,10.1.5.6 Prednisona
+69,10.1.5.7 Pentoxifilina
+70,10.1.5.8 Talidomida
+73,10.1.5.9 Claritromicina
+73,10.1.6 Eventos adversos e interações medicamentosas
+78,10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U
+79,10.1.7.1 Tratamento farmacológico de 2ª linha para casos de reações adversas à rifampicina
+79,10.1.7.2 Tratamento farmacológico de 2ª linha para casos de reações adversas à dapsona
+80,10.1.7.3 Tratamento farmacológico de 2ª linha para casos de reações adversas à clofazimina
+81,10.2 Tratamento não farmacológico
+81,10.2.1 Abordagem psicossocial
+81,10.2.1.1 Estigma e discriminação na hanseníase
+82,10.2.1.2 Estigma e discriminação nos serviços de saúde
+82,10.2.1.3 Instrumentos para avaliar os impactos psicossociais da hanseníase
+83,10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação
+83,10.2.1.5 Profissionais de saúde
+84,10.2.1.6 Suporte psicossocial
+85,10.2.1.6.1 Acolhimento
+86,10.2.1.7 Intervenções em nível coletivo
+86,10.2.1.7.1 Apoio de pares e grupos
+86,10.2.1.7.2 Direcionando uma intervenção
+87,10.2.2 Prevenção de incapacidades físicas
+87,10.2.3 Autocuidado
+88,10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos
+88,10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados
+89,10.2.6 Intervenções cirúrgicas preventivas e reabilitadoras
+89,10.2.7 Reabilitação física
+91,11 RESISTÊNCIA DO M. leprae A ANTIMICROBIANOS
+92,11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos
+92,11.2 Critério para investigação da resistência primária do M. leprae a antimicrobianos
+93,"11.3 Critérios para investigação da resistência secundária do M. leprae a antimicrobianos, após PQT-U"
+93,11.4 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente
+93,11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina
+94,11.4.2 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina e ao ofloxacino
+95,11.4.3 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente ao ofloxacino
+95,11.5 Monitoramento do tratamento em casos de resistência medicamentosa
+97,12 CASOS ESPECIAIS
+97,12.1 Mães e filhos com hanseníase
+97,12.1.1 Concepção
+98,12.1.2 Amamentação
+98,12.1.3 Episódios reacionais durante a gestação
+98,12.2 Hanseníase em menores de 15 anos de idade
+99,12.3 Imunossupressão e hanseníase
+100,12.4 Comorbidades em pacientes com hanseníase
+101,12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha
+103,13 INVESTIGAÇÃO DE CONTATOS
+103,13.1.1 Imunoprofilaxia e monitoramento de contatos
+105,14 MONITORAMENTO
+105,14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U
+105,14.1.2 Monitoramento após o tratamento farmacológico com PQT-U
+106,14.1.3 A caderneta de saúde da pessoa acometida pela hanseníase
+107,15 RESULTADOS ESPERADOS
+109,"16 GESTÃO, REGULAÇÃO E CONTROLE"
+111,17 INDICADORES DE IMPLEMENTAÇÃO
+111,17.1 Indicadores de monitoramento do controle da hanseníase enquanto problema de saúde pública
+111,17.2 Indicadores de avaliação da qualidade dos serviços de hanseníase
+113,18 ESCLARECIMENTOS E RESPONSABILIDADES

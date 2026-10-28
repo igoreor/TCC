@@ -1,0 +1,236 @@
+component,page,heading
+pcdt2022-v1,15,APRESENTAÇÃO
+pcdt2022-v1,17,1 Introdução
+pcdt2022-v1,19,2 METODOLOGIA
+pcdt2022-v1,21,3 CLASSIFICAÇÃO ESTATÍSTICA INTERNACIONAL DE DOENÇAS E PROBLEMAS RELACIONADOS À SAÚDE (CID-10)
+pcdt2022-v1,23,4 ASPECTOS EPIDEMIOLÓGICOS
+pcdt2022-v1,23,4.1 Cenário mundial
+pcdt2022-v1,23,4.2 Cenário nacional
+pcdt2022-v1,25,5 ASPECTOS IMUNOLÓGICOS
+pcdt2022-v1,27,6 ASPECTOS CLÍNICOS
+pcdt2022-v1,27,6.1 Suspeição diagnóstica
+pcdt2022-v1,28,6.2 Definição de caso
+pcdt2022-v1,28,6.3 Classificação operacional
+pcdt2022-v1,29,6.3.1 Hanseníase paucibacilar (PB)
+pcdt2022-v1,29,6.3.2 Hanseníase multibacilar (MB)
+pcdt2022-v1,29,6.4 Formas clínicas
+pcdt2022-v1,30,6.4.1 Hanseníase tuberculoide
+pcdt2022-v1,31,6.4.2 Hanseníase virchowiana
+pcdt2022-v1,32,6.4.3 Hanseníase dimorfa
+pcdt2022-v1,33,6.4.4 Hanseníase indeterminada
+pcdt2022-v1,34,6.4.5 Hanseníase neural pura (ou neurítica primária)
+pcdt2022-v1,35,6.5 Reações hansênicas
+pcdt2022-v1,36,6.5.1 Reação hansênica tipo 1 (reação reversa)
+pcdt2022-v1,37,6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico)
+pcdt2022-v1,39,6.5.3 Fatores associados ou precipitantes das reações hansênicas
+pcdt2022-v1,39,6.6 Manifestações neurológicas
+pcdt2022-v1,40,6.6.1 Neuropatia periférica
+pcdt2022-v1,40,6.6.2 Neurite
+pcdt2022-v1,41,6.6.2.1 Neurite aguda
+pcdt2022-v1,41,6.6.2.2 Neurite silenciosa
+pcdt2022-v1,42,6.6.3 Dor neuropática
+pcdt2022-v1,43,6.7 Manifestações oculares
+pcdt2022-v1,45,7 EXAMES DE APOIO AO DIAGNÓSTICO
+pcdt2022-v1,45,7.1 Avaliação Neurológica Simplificada (ANS)
+pcdt2022-v1,46,7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR)
+pcdt2022-v1,47,7.3 Histopatologia
+pcdt2022-v1,49,7.4 Ultrassom de nervos periféricos
+pcdt2022-v1,49,7.5 Eletroneuromiograma
+pcdt2022-v1,50,7.6 Teste rápido imunocromatográfico para detecção de anticorpos IgM contra o M. leprae
+pcdt2022-v1,51,7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR)
+pcdt2022-v1,53,8 CRITÉRIOS DE INCLUSÃO
+pcdt2022-v1,55,9 CRITÉRIOS DE EXCLUSÃO
+pcdt2022-v1,57,10 ABORDAGEM TERAPÊUTICA
+pcdt2022-v1,57,10.1 Tratamento farmacológico
+pcdt2022-v1,58,10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia
+pcdt2022-v1,62,10.1.2 Tratamento farmacológico das reações hansênicas
+pcdt2022-v1,62,10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa
+pcdt2022-v1,63,10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico
+pcdt2022-v1,64,10.1.3 Tratamento farmacológico das reações hansênicas em crianças
+pcdt2022-v1,64,10.1.3.1 Tratamento farmacológico da reação hansênica tipo 1 em crianças
+pcdt2022-v1,64,10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças
+pcdt2022-v1,65,10.1.4 Medicamentos
+pcdt2022-v1,65,10.1.5 Informações sobre os medicamentos
+pcdt2022-v1,65,10.1.5.1 Rifampicina
+pcdt2022-v1,66,10.1.5.2 Clofazimina
+pcdt2022-v1,66,10.1.5.3 Dapsona
+pcdt2022-v1,67,10.1.5.4 Minociclina
+pcdt2022-v1,68,10.1.5.5 Ofloxacino
+pcdt2022-v1,68,10.1.5.6 Prednisona
+pcdt2022-v1,69,10.1.5.7 Pentoxifilina
+pcdt2022-v1,70,10.1.5.8 Talidomida
+pcdt2022-v1,73,10.1.5.9 Claritromicina
+pcdt2022-v1,73,10.1.6 Eventos adversos e interações medicamentosas
+pcdt2022-v1,78,10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U
+pcdt2022-v1,79,10.1.7.1 Tratamento farmacológico de 2ª linha para casos de reações adversas à rifampicina
+pcdt2022-v1,79,10.1.7.2 Tratamento farmacológico de 2ª linha para casos de reações adversas à dapsona
+pcdt2022-v1,80,10.1.7.3 Tratamento farmacológico de 2ª linha para casos de reações adversas à clofazimina
+pcdt2022-v1,81,10.2 Tratamento não farmacológico
+pcdt2022-v1,81,10.2.1 Abordagem psicossocial
+pcdt2022-v1,81,10.2.1.1 Estigma e discriminação na hanseníase
+pcdt2022-v1,82,10.2.1.2 Estigma e discriminação nos serviços de saúde
+pcdt2022-v1,82,10.2.1.3 Instrumentos para avaliar os impactos psicossociais da hanseníase
+pcdt2022-v1,83,10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação
+pcdt2022-v1,83,10.2.1.5 Profissionais de saúde
+pcdt2022-v1,84,10.2.1.6 Suporte psicossocial
+pcdt2022-v1,85,10.2.1.6.1 Acolhimento
+pcdt2022-v1,86,10.2.1.7 Intervenções em nível coletivo
+pcdt2022-v1,86,10.2.1.7.1 Apoio de pares e grupos
+pcdt2022-v1,86,10.2.1.7.2 Direcionando uma intervenção
+pcdt2022-v1,87,10.2.2 Prevenção de incapacidades físicas
+pcdt2022-v1,87,10.2.3 Autocuidado
+pcdt2022-v1,88,10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos
+pcdt2022-v1,88,10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados
+pcdt2022-v1,89,10.2.6 Intervenções cirúrgicas preventivas e reabilitadoras
+pcdt2022-v1,89,10.2.7 Reabilitação física
+pcdt2022-v1,91,11 RESISTÊNCIA DO M. leprae A ANTIMICROBIANOS
+pcdt2022-v1,92,11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos
+pcdt2022-v1,92,11.2 Critério para investigação da resistência primária do M. leprae a antimicrobianos
+pcdt2022-v1,93,"11.3 Critérios para investigação da resistência secundária do M. leprae a antimicrobianos, após PQT-U"
+pcdt2022-v1,93,11.4 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente
+pcdt2022-v1,93,11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina
+pcdt2022-v1,94,11.4.2 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina e ao ofloxacino
+pcdt2022-v1,95,11.4.3 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente ao ofloxacino
+pcdt2022-v1,95,11.5 Monitoramento do tratamento em casos de resistência medicamentosa
+pcdt2022-v1,97,12 CASOS ESPECIAIS
+pcdt2022-v1,97,12.1 Mães e filhos com hanseníase
+pcdt2022-v1,97,12.1.1 Concepção
+pcdt2022-v1,98,12.1.2 Amamentação
+pcdt2022-v1,98,12.1.3 Episódios reacionais durante a gestação
+pcdt2022-v1,98,12.2 Hanseníase em menores de 15 anos de idade
+pcdt2022-v1,99,12.3 Imunossupressão e hanseníase
+pcdt2022-v1,100,12.4 Comorbidades em pacientes com hanseníase
+pcdt2022-v1,101,12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha
+pcdt2022-v1,103,13 INVESTIGAÇÃO DE CONTATOS
+pcdt2022-v1,103,13.1.1 Imunoprofilaxia e monitoramento de contatos
+pcdt2022-v1,105,14 MONITORAMENTO
+pcdt2022-v1,105,14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U
+pcdt2022-v1,105,14.1.2 Monitoramento após o tratamento farmacológico com PQT-U
+pcdt2022-v1,106,14.1.3 A caderneta de saúde da pessoa acometida pela hanseníase
+pcdt2022-v1,107,15 RESULTADOS ESPERADOS
+pcdt2022-v1,109,"16 GESTÃO, REGULAÇÃO E CONTROLE"
+pcdt2022-v1,111,17 INDICADORES DE IMPLEMENTAÇÃO
+pcdt2022-v1,111,17.1 Indicadores de monitoramento do controle da hanseníase enquanto problema de saúde pública
+pcdt2022-v1,111,17.2 Indicadores de avaliação da qualidade dos serviços de hanseníase
+pcdt2022-v1,113,18 ESCLARECIMENTOS E RESPONSABILIDADES
+estrategia2024-v1,10,Apresentação
+estrategia2024-v1,12,Contexto geral
+estrategia2024-v1,13,DADOS EPIDEMIOLÓGICOS
+estrategia2024-v1,13,No mundo e nas Américas
+estrategia2024-v1,15,No Brasil
+estrategia2024-v1,18,ESTRATÉGIA GLOBAL
+estrategia2024-v1,21,Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030
+estrategia2024-v1,24,METAS
+estrategia2024-v1,24,META 1 Interrupção da transmissão em 99% dos municípios até 2030
+estrategia2024-v1,25,META 2 Eliminação da doença em 75% dos municípios até 2030
+estrategia2024-v1,26,META 3 Reduzir em 20% o número absoluto de casos novos com GIF2 no momento do diagnóstico de hanseníase até 2030
+estrategia2024-v1,27,META 4 Dar providência a 100% das manifestações sobre práticas discriminatórias em hanseníase registradas nas Ouvidorias do SUS
+estrategia2024-v1,27,DEFINIÇÃO DAS AÇÕES ESTRATÉGICAS
+estrategia2024-v1,27,Alicerces
+estrategia2024-v1,28,Pilares
+estrategia2024-v1,32,AÇÕES ESTRATÉGICAS GERAIS
+estrategia2024-v1,44,AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS
+estrategia2024-v1,50,MONITORAMENTO
+estrategia2024-v1,52,PRÓXIMOS PASSOS
+who2023-v1,10,Glossary
+who2023-v1,10,Contact
+who2023-v1,10,Disability
+who2023-v1,10,Disability grade
+who2023-v1,10,EHF score
+who2023-v1,10,Exposure
+who2023-v1,10,Impairment
+who2023-v1,10,Index case
+who2023-v1,10,Infection
+who2023-v1,11,Leprosy case
+who2023-v1,11,Prophylaxis
+who2023-v1,11,prophylaxis (PEP) Post-exposure
+who2023-v1,11,of contact Prolonged duration
+who2023-v1,11,of leprosy Re-emergence
+who2023-v1,11,Secondary case
+who2023-v1,11,Source case:
+who2023-v1,11,Sporadic case
+who2023-v1,13,1. Executive summary
+who2023-v1,14,Four new tools that are introduced in this document are summarized below:
+who2023-v1,16,2. Introduction
+who2023-v1,18,3. Background
+who2023-v1,18,"2030 targets in the Road map include ‘120 countries with zero new autochthonous leprosy cases’(World Health Organization, 2020, p. 126). This implies that processes should be in place to enable verification of such achievements at the country level. The broad target for each NTD is shown in Table 1."
+who2023-v1,22,4. Concepts and definitions
+who2023-v1,23,"4.1 Generic Framework for control, elimination and eradication of neglected tropical diseases (adapted for leprosy)"
+who2023-v1,23,4.1.1 Control
+who2023-v1,23,4.1.2 Elimination as a public health problem (a term related to both infection and disease)
+who2023-v1,23,4.1.3 Elimination of transmission (also referred to as interruption of transmission)
+who2023-v1,23,4.1.4 Elimination of leprosy disease
+who2023-v1,23,4.1.5 Eradication
+who2023-v1,23,4.1.6 Extinction
+who2023-v1,24,4.2 Distinguishing interruption of transmission from elimination of leprosy disease
+who2023-v1,24,4.2.1 Autochthonous case
+who2023-v1,24,4.2.2 Non-autochthonous case
+who2023-v1,24,4.2.3 Sporadic cases
+who2023-v1,25,4.2.4 Population at risk
+who2023-v1,25,4.2.5 Interruption of transmission
+who2023-v1,25,4.2.6 Elimination of leprosy disease
+who2023-v1,26,4.2.7 Endemic
+who2023-v1,26,4.2.8 Non-endemic (for leprosy)
+who2023-v1,27,5. Phases of elimination
+who2023-v1,27,"1 below). These phases are relevant and should be applied at different levels, global, national and subnational level. Before formal verification of elimination can be done at the national level, this milestone will have to be reached at all first-level subnational administrative units. The achievement is thus a bottom-up process that acknowledges that the leprosy situation at the subnational level can be very different in different provinces/states and districts/municipalities."
+who2023-v1,28,Elimination of leprosy
+who2023-v1,28,Phase 3 Phase 1 Phase 2 Non-endemic status
+who2023-v1,29,5.1 Phase 1 – Until interruption of transmission of M. leprae
+who2023-v1,29,5.2 Phase 2 – from interruption of transmission until elimination of leprosy disease
+who2023-v1,31,5.3 Phase 3 – Post-elimination surveillance phase
+who2023-v1,32,5.4 Non-endemic status
+who2023-v1,33,6. Indicators
+who2023-v1,34,6.1 Interruption (elimination) of transmission
+who2023-v1,34,6.1.1 Child proportion among new cases
+who2023-v1,34,6.1.2 New case rate among children
+who2023-v1,35,6.1.3 Number of new autochthonous child cases (<15 years of age) detected
+who2023-v1,35,6.1.4 (Trend in) Age at detection
+who2023-v1,36,6.1.5 Seroprevalence for M. leprae infection among children
+who2023-v1,36,6.1.6 (Trend in) MB percentage among new cases
+who2023-v1,37,6.2 Elimination of leprosy disease
+who2023-v1,37,6.2.1 Number of new autochthonous cases detected
+who2023-v1,37,6.2.2 New case detection rate
+who2023-v1,38,6.2.3 Proportion of non-autochthonous among total new cases detected
+who2023-v1,38,6.2.4 New case detection rate
+who2023-v1,39,6.2.5 Rate of new cases with grade- 2 disability
+who2023-v1,39,6.2.6 Prevalence rate
+who2023-v1,40,7. Criteria for Verification
+who2023-v1,41,7.1 Political commitment
+who2023-v1,41,7.1.1 National strategic plan
+who2023-v1,41,7.1.2 Advocacy for leprosy with authorities
+who2023-v1,41,7.1.3 Enabling environment for persons affected by leprosy
+who2023-v1,42,7.1.4 Participation of stakeholders and partnerships
+who2023-v1,42,7.1.5 Inclusion of organisations and networks of persons affected by leprosy
+who2023-v1,42,7.1.6 Acknowledgement and use of the United Nations Principles and Guidelines
+who2023-v1,43,7.2 Programme implementation
+who2023-v1,43,7.2.1 Integration of leprosy into general health services
+who2023-v1,43,7.2.2 Training of health care workers
+who2023-v1,43,7.2.3 Awareness about leprosy in the general population
+who2023-v1,43,7.2.4. Implementation of the leprosy care package
+who2023-v1,44,7.2.5 Referral centres and a referral mechanism
+who2023-v1,44,7.2.6 Post-exposure prophylaxis
+who2023-v1,44,7.2.7 Access to social support and rehabilitation services
+who2023-v1,45,7.2.8 Access to mental health services
+who2023-v1,45,7.2.9 Reducing and monitoring leprosy-related stigma in communities
+who2023-v1,46,7.3 Surveillance
+who2023-v1,46,7.3.1 Data management systems
+who2023-v1,46,7.3.2 Contact tracing and other interventions for active case detection
+who2023-v1,47,7.3.3 Monitoring and evaluation
+who2023-v1,47,7.3.4 Surveillance of anti-microbial resistance
+who2023-v1,47,7.3.5 Surveillance of adverse drug reactions
+who2023-v1,48,"7.4 Criteria, interventions and indicators for Phase 1 (until interruption of transmission) and Phase 2 (until elimination of leprosy disease)"
+who2023-v1,53,7.5 Criteria for verification at the end of Phase 2: elimination of leprosy disease
+who2023-v1,56,7.5.1 Research
+who2023-v1,56,7.5.2 Recommendations for the post-elimination phase
+who2023-v1,57,8. Monitoring interrup­ tion of transmission and elimination of leprosy disease
+who2023-v1,58,8.1 Documenting and ascertaining achievement towards elimination
+who2023-v1,58,8.2 Leprosy Elimination Monitoring Tool
+who2023-v1,59,8.3 Assessing transmission level of M. leprae
+who2023-v1,59,8.4 Zoonotic and environmental sources of M. leprae
+who2023-v1,59,8.5 Leprosy Programme and Transmission Assessment
+who2023-v1,60,8.5.1 LPTA for use at the subnational level at end of Phase 1 and during Phase 2
+who2023-v1,61,8.5.2 LPTA for use at the national level at the end of Phase 2
+who2023-v1,62,9. Verification of elimination
+who2023-v1,63,9.1 Compiling evidence of elimination of leprosy: the Leprosy Elimination Dossier
+who2023-v1,63,9.2 Background
+who2023-v1,65,9.3 Outline of the Leprosy Elimination Dossier

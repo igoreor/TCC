@@ -1,0 +1,200 @@
+{
+  "experiment_id": "e2-api-smoke",
+  "batch_id": "20261023T010256Z-dryrun",
+  "status": "completed",
+  "dry_run": true,
+  "started_utc": "2026-10-23T01:02:56+00:00",
+  "config_path": "software/rag-study/config/experiments/e2-api-smoke.json",
+  "config_sha256": "585597e9fd6d0f5e7464178429ad06d5574cd5cc24d66c03bef5e04e64380d6e",
+  "config": {
+    "experiment_id": "e2-api-smoke",
+    "description": "Teste funcional com APIs reais (D19-D22): adaptadores, saída estruturada da expansão, consumo de tokens e truncamento. 5 perguntas smoke, 1 repetição. Sem valor analítico.",
+    "mode": "full",
+    "questions": "research/questions/smoke-v0-pilot5.jsonl",
+    "splits": [
+      "smoke"
+    ],
+    "corpus_dir": "research/corpus/pcdt2022-v1",
+    "index_dir": "research/corpus/pcdt2022-v1/index-bge-m3",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "device": "cpu",
+      "batch_size": 16
+    },
+    "prompts_dir": "software/rag-study/prompts",
+    "prompts": {
+      "direct_answer": "direct-answer-system-v1.txt",
+      "rag_answer": "rag-answer-system-v1.txt",
+      "expansion_system": "common-expansion-system-v1.txt",
+      "rewrite": "rewrite-clinical-v1.txt",
+      "keywords": "keywords-v1.txt",
+      "pseudo_document": "pseudo-document-v1.txt"
+    },
+    "k": 5,
+    "generation": {
+      "max_output_tokens": 800
+    },
+    "expansion": {
+      "max_output_tokens": 400,
+      "structured_output": true
+    },
+    "max_attempts": 3,
+    "models": {
+      "openai": {
+        "provider": "openai",
+        "model": "gpt-6.1-sol",
+        "temperature": null,
+        "reasoning_effort": "low"
+      },
+      "anthropic": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-5-5",
+        "effort": "low"
+      }
+    },
+    "arms": [
+      "openai"
+    ],
+    "conditions": [
+      "D",
+      "R0",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "repetitions": 1,
+    "seed": 20261022,
+    "pricing": "software/rag-study/config/pricing-2026-10-22.json",
+    "output_root": "research/runs"
+  },
+  "software": {
+    "package_version": "0.2.0",
+    "source_sha256": "84373e9ee1dfffbefb166b03fe3b65903db4e67d73cd014d1a0966c1034a4400"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.5.3",
+      "pymupdf": "1.28.2",
+      "sentence-transformers": "6.1.0",
+      "torch": "2.14.1",
+      "transformers": "5.18.0",
+      "openai": "3.24.0",
+      "anthropic": "1.11.0"
+    },
+    "uv_lock_sha256": "23b3243b5f06fa3cf920312610c3d70fcccc596f81bf756fd2801b64db43cdc6"
+  },
+  "corpus_snapshot_sha256": "f401426c28805ef5984de02210d0fa08b9ad1ec9ba1d0c8172a85404c655cc03",
+  "index": {
+    "index_id": "pcdt2022-v1-bge-m3",
+    "created_utc": "2026-10-03T20:11:10+00:00",
+    "corpus_id": "pcdt2022-v1",
+    "corpus_snapshot_sha256": "f401426c28805ef5984de02210d0fa08b9ad1ec9ba1d0c8172a85404c655cc03",
+    "text_field": "embed_text",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimension": 1024,
+      "max_seq_length": 8192,
+      "normalize": true,
+      "device": "cpu",
+      "batch_size": 16,
+      "sentence_transformers_version": "6.1.0",
+      "torch_version": "2.14.1+cpu"
+    },
+    "similarity": "cosine (inner product of L2-normalized vectors)",
+    "search": "exact brute-force; ties broken by corpus order",
+    "n_vectors": 206,
+    "dimension": 1024,
+    "embeddings_sha256": "7f5d84f5777fe526cc1f41eb0fa818406290ba271e70c471e159a47d1434ae16",
+    "build_seconds": 129.21,
+    "platform": {
+      "python": "3.12.10",
+      "machine": "AMD64",
+      "system": "Windows"
+    }
+  },
+  "prompts": {
+    "direct_answer": {
+      "prompt_id": "direct-answer-system-v1",
+      "sha256": "02f60cb25119bdfd27a0a3c9156846d4dd06ee730a4f8e5a070dcd419a96a700"
+    },
+    "rag_answer": {
+      "prompt_id": "rag-answer-system-v1",
+      "sha256": "31a6b7a051c0843379795f0f3d374ff9f700b4d6aaaa4c2bf88b74c5137c5c4a"
+    },
+    "expansion_system": {
+      "prompt_id": "common-expansion-system-v1",
+      "sha256": "8beb6bc984f096334b36616bb8b7078e7a252232d4513f21ddec7d854c822407"
+    },
+    "rewrite": {
+      "prompt_id": "rewrite-clinical-v1",
+      "sha256": "68d1bcd7df3df60be64f406c4ff0951661682e213817df406e341799b1d57b06"
+    },
+    "keywords": {
+      "prompt_id": "keywords-v1",
+      "sha256": "5fa20d1068fb1159d09211357d355fd536988cd20967507d1426c73e94354234"
+    },
+    "pseudo_document": {
+      "prompt_id": "pseudo-document-v1",
+      "sha256": "09b8817b3eea3cce4c38d1c8004bc384bc6fb0eeb8998c6e013e9125c608d831"
+    }
+  },
+  "price_table": {
+    "_note": "Preços de lista, nível padrão (sem batch, flex ou prioridade), conferidos nas páginas oficiais em 22/10/2026. O harness cobra todos os tokens de entrada pelo preço cheio; descontos de cache não são aplicados (o custo estimado é um limite superior). Tokens de raciocínio contam como saída nos dois provedores.",
+    "source_urls": [
+      "https://developers.openai.com/api/docs/pricing",
+      "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "https://platform.claude.com/docs/en/about-claude/pricing"
+    ],
+    "retrieved_on": "2026-10-22",
+    "currency": "USD",
+    "models": {
+      "openai:gpt-6.1-sol": {
+        "input_per_mtok": 2.0,
+        "cached_input_per_mtok": 0.1,
+        "output_per_mtok": 10.0
+      },
+      "anthropic:claude-sonnet-5-5": {
+        "input_per_mtok": 2.0,
+        "cached_input_per_mtok": 0.1,
+        "output_per_mtok": 10.0
+      }
+    }
+  },
+  "units": [
+    {
+      "condition": "D-FAKEOPENAI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R0-FAKEOPENAI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R1-FAKEOPENAI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R2-FAKEOPENAI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R3-FAKEOPENAI",
+      "arm": "openai"
+    }
+  ],
+  "n_questions": 5,
+  "repetitions": 1,
+  "seed": 20261022,
+  "finished_utc": "2026-10-23T01:03:01+00:00",
+  "n_records": 25,
+  "record_status_counts": {
+    "success": 25
+  },
+  "raw_sha256": "adef0c557e04834fa892568cc9d3c49ac1d48fdb556945f332679a2a37a81e8d"
+}

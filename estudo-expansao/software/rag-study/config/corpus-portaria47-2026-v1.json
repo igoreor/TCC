@@ -1,0 +1,42 @@
+{
+  "corpus_id": "portaria47-2026-v1",
+  "source_pdf": "research/sources/2026 - Brasil - DOU 2026-07-21 p167 PortariaSCTIE47-Claritromicina.pdf",
+  "expected_sha256": "98db0db25e28ed0c2d94338924d18ea9f53c1b8b812ae77eb946ddd9c738f9a9",
+  "document_id": "BR-MS-SCTIE-PORTARIA-47-2026",
+  "document_title": "Portaria SCTIE/MS nº 47, de 20 de julho de 2026 (claritromicina como segunda linha)",
+  "publisher": "Brasil. Ministério da Saúde. Secretaria de Ciência, Tecnologia e Inovação em Saúde",
+  "year": 2026,
+  "document_type": "ato_normativo_atualizacao_pcdt",
+  "source_url": "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas",
+  "license": "ato oficial publicado no DOU",
+  "language": "pt",
+  "include_pages": [
+    [
+      1,
+      1
+    ]
+  ],
+  "exclusions": [
+    {
+      "pages": [
+        1,
+        1
+      ],
+      "reason": "a página do DOU traz outros atos; só o texto entre o título da portaria e a assinatura é incluído"
+    }
+  ],
+  "header_max_y": 0.0,
+  "furniture_max_size": 8.5,
+  "chapter_number_min_size": 999.0,
+  "drop_superscript_citations": false,
+  "max_words": 200,
+  "overlap_words": 40,
+  "min_words": 10,
+  "footer_min_y": 9999.0,
+  "heading_min_size": 99.0,
+  "top_level_heading_min_size": 99.0,
+  "sort_blocks": false,
+  "excerpt_start": "PORTARIA SCTIE/MS Nº 47",
+  "excerpt_end": "FERNANDA DE NEGRI",
+  "root_section": "Portaria SCTIE/MS nº 47, de 20 de julho de 2026 (DOU nº 135, Seção 1, p. 167, 21/07/2026)"
+}

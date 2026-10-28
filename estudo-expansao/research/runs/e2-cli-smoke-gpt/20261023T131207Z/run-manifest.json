@@ -1,0 +1,177 @@
+{
+  "experiment_id": "e2-cli-smoke-gpt",
+  "batch_id": "20261023T131207Z",
+  "status": "completed",
+  "dry_run": false,
+  "started_utc": "2026-10-23T13:12:07+00:00",
+  "config_path": "software/rag-study/config/experiments/e2-cli-smoke-gpt.json",
+  "config_sha256": "9936067df2465d12ac666995cb1aa51b92b3f37917706a89c90139616a1df557",
+  "config": {
+    "experiment_id": "e2-cli-smoke-gpt",
+    "description": "Teste funcional do acesso por assinatura (D31): GPT-6.1 Sol via Codex CLI (plano ChatGPT), prompt do estudo como única instrução, sem ferramentas, esforço low, verbosidade medium. 5 perguntas smoke, 5 condições, 1 repetição. Sem valor analítico.",
+    "mode": "full",
+    "questions": "research/questions/smoke-v0-pilot5.jsonl",
+    "splits": [
+      "smoke"
+    ],
+    "corpus_dir": "research/corpus/pcdt2022-v1",
+    "index_dir": "research/corpus/pcdt2022-v1/index-bge-m3",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "device": "cpu",
+      "batch_size": 16
+    },
+    "prompts_dir": "software/rag-study/prompts",
+    "prompts": {
+      "direct_answer": "direct-answer-system-v1.txt",
+      "rag_answer": "rag-answer-system-v1.txt",
+      "expansion_system": "common-expansion-system-v1.txt",
+      "rewrite": "rewrite-clinical-v1.txt",
+      "keywords": "keywords-v1.txt",
+      "pseudo_document": "pseudo-document-v1.txt"
+    },
+    "k": 5,
+    "generation": {
+      "max_output_tokens": 2000
+    },
+    "expansion": {
+      "max_output_tokens": 400,
+      "structured_output": false
+    },
+    "max_attempts": 3,
+    "models": {
+      "openai": {
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "low",
+        "verbosity": "medium",
+        "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json"
+      }
+    },
+    "arms": [
+      "openai"
+    ],
+    "conditions": [
+      "D",
+      "R0",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "repetitions": 1,
+    "seed": 20261022,
+    "pricing": null,
+    "output_root": "research/runs"
+  },
+  "software": {
+    "package_version": "0.2.0",
+    "source_sha256": "83a4f1b2a6121255b239a5c2d0738f1a3bd3cf3a6dfc786f4775a835f7ce7534"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.5.3",
+      "pymupdf": "1.28.2",
+      "sentence-transformers": "6.1.0",
+      "torch": "2.14.1",
+      "transformers": "5.18.0",
+      "openai": "3.24.0",
+      "anthropic": "1.11.0"
+    },
+    "uv_lock_sha256": "23b3243b5f06fa3cf920312610c3d70fcccc596f81bf756fd2801b64db43cdc6"
+  },
+  "corpus_snapshot_sha256": "f401426c28805ef5984de02210d0fa08b9ad1ec9ba1d0c8172a85404c655cc03",
+  "index": {
+    "index_id": "pcdt2022-v1-bge-m3",
+    "created_utc": "2026-10-03T20:11:10+00:00",
+    "corpus_id": "pcdt2022-v1",
+    "corpus_snapshot_sha256": "f401426c28805ef5984de02210d0fa08b9ad1ec9ba1d0c8172a85404c655cc03",
+    "text_field": "embed_text",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimension": 1024,
+      "max_seq_length": 8192,
+      "normalize": true,
+      "device": "cpu",
+      "batch_size": 16,
+      "sentence_transformers_version": "6.1.0",
+      "torch_version": "2.14.1+cpu"
+    },
+    "similarity": "cosine (inner product of L2-normalized vectors)",
+    "search": "exact brute-force; ties broken by corpus order",
+    "n_vectors": 206,
+    "dimension": 1024,
+    "embeddings_sha256": "7f5d84f5777fe526cc1f41eb0fa818406290ba271e70c471e159a47d1434ae16",
+    "build_seconds": 129.21,
+    "platform": {
+      "python": "3.12.10",
+      "machine": "AMD64",
+      "system": "Windows"
+    }
+  },
+  "prompts": {
+    "direct_answer": {
+      "prompt_id": "direct-answer-system-v1",
+      "sha256": "02f60cb25119bdfd27a0a3c9156846d4dd06ee730a4f8e5a070dcd419a96a700"
+    },
+    "rag_answer": {
+      "prompt_id": "rag-answer-system-v1",
+      "sha256": "31a6b7a051c0843379795f0f3d374ff9f700b4d6aaaa4c2bf88b74c5137c5c4a"
+    },
+    "expansion_system": {
+      "prompt_id": "common-expansion-system-v1",
+      "sha256": "8beb6bc984f096334b36616bb8b7078e7a252232d4513f21ddec7d854c822407"
+    },
+    "rewrite": {
+      "prompt_id": "rewrite-clinical-v1",
+      "sha256": "68d1bcd7df3df60be64f406c4ff0951661682e213817df406e341799b1d57b06"
+    },
+    "keywords": {
+      "prompt_id": "keywords-v1",
+      "sha256": "5fa20d1068fb1159d09211357d355fd536988cd20967507d1426c73e94354234"
+    },
+    "pseudo_document": {
+      "prompt_id": "pseudo-document-v1",
+      "sha256": "09b8817b3eea3cce4c38d1c8004bc384bc6fb0eeb8998c6e013e9125c608d831"
+    }
+  },
+  "price_table": null,
+  "units": [
+    {
+      "condition": "D-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R0-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R1-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R2-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R3-CODEX_CLI",
+      "arm": "openai"
+    }
+  ],
+  "n_questions": 5,
+  "repetitions": 1,
+  "seed": 20261022,
+  "continues": [],
+  "finished_utc": "2026-10-23T13:18:16+00:00",
+  "n_records": 25,
+  "n_skipped_already_done": 0,
+  "record_status_counts": {
+    "success": 25
+  },
+  "raw_sha256": "787900be3b6583cf083f9521fa9e83ce125606c1b31c649e79143d71b49e31e6"
+}

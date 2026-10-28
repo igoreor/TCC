@@ -1,0 +1,17 @@
+page_start,page_end,reason
+1,4,"capa, folha de rosto e ficha catalográfica"
+5,14,"listas de figuras, quadros e siglas e sumário; repetem títulos e atrairiam buscas sem conteúdo"
+114,114,página separadora sem texto
+115,128,lista de referências bibliográficas; não contém orientação clínica
+129,134,Apêndice A (fluxogramas): a extração perde a ordem lógica de caixas e setas e gera texto incoerente; o conteúdo resume seções do corpo. Candidato a transcrição manual verificada no corpus v2
+135,138,Apêndice B: metodologia de busca da literatura do próprio PCDT
+139,153,"anexos (portaria, painel GRADE, formulários, caderneta, modelo de laudo, escala); candidatos a corpus v2 após decisão do autor"
+154,156,contracapa
+16,16,página incluída sem texto extraível (separador ou imagem)
+20,20,página incluída sem texto extraível (separador ou imagem)
+22,22,página incluída sem texto extraível (separador ou imagem)
+44,44,página incluída sem texto extraível (separador ou imagem)
+54,54,página incluída sem texto extraível (separador ou imagem)
+56,56,página incluída sem texto extraível (separador ou imagem)
+96,96,página incluída sem texto extraível (separador ou imagem)
+102,102,página incluída sem texto extraível (separador ou imagem)

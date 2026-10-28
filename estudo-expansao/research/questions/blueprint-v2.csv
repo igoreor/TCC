@@ -1,0 +1,51 @@
+slot_id,split,need_group,category,register,complexity,answerable_from_corpus,target_sections,design_note
+T01,test,P01,diagnóstico,leigo,simples,sim,6.1;6.2,"Par P01: mesma necessidade de informação de T02, em linguagem leiga."
+T02,test,P01,diagnóstico,técnico,simples,sim,6.1;6.2,"Par P01: mesma necessidade de T01, com terminologia do PCDT."
+T03,test,P02,diagnóstico,leigo,simples,sim,6.3,Par P02.
+T04,test,P02,diagnóstico,técnico,simples,sim,6.3,Par P02.
+T05,test,T05,diagnóstico,técnico,simples,sim,6.4.5,
+T06,test,T06,diagnóstico,leigo,simples,sim,7.2,
+T07,test,T07,diagnóstico,técnico,composta,parcial,7.6,"Uma parte respondida pela seção; outra parte fora do PCDT 2022 (por exemplo, informação local ou posterior a 2022). A resposta ideal responde à primeira e declara a falta da segunda."
+T08,test,T08,diagnóstico,técnico,composta,sim,7.2;7.3,Exige combinar informação das duas seções. (Evitar qPCR: indicações ampliadas pela Portaria SCTIE/MS 51/2026.)
+T09,test,T09,diagnóstico,leigo,simples,sim,7.1,
+T10,test,P03,tratamento,leigo,simples,sim,10.1.1,Par P03.
+T11,test,P03,tratamento,técnico,simples,sim,10.1.1,Par P03.
+T12,test,P04,tratamento,leigo,simples,sim,10.1.6,Par P04.
+T13,test,P04,tratamento,técnico,simples,sim,10.1.6,Par P04.
+T14,test,T14,tratamento,leigo,simples,sim,10.1.5.3,
+T15,test,T15,tratamento,leigo,simples,sim,10.1.5.2,
+T16,test,T16,tratamento,técnico,composta,sim,11.1;11.5,Exige combinar as duas seções. (Segunda linha por reação adversa evitada: alterada pela Portaria SCTIE/MS 47/2026.)
+T17,test,T17,tratamento,técnico,simples,sim,11.2,
+T18,test,T18,tratamento,técnico,simples,sim,11.4,
+T19,test,T19,tratamento,técnico,composta,sim,10.1.1;12.2,Necessidade diferente da do par P03.
+T20,test,P05,reações,leigo,simples,sim,6.5.1,Par P05.
+T21,test,P05,reações,técnico,simples,sim,6.5.1,Par P05.
+T22,test,P06,reações,leigo,composta,sim,10.1.2.2;10.1.5.8,Par P06; exige combinar as duas seções.
+T23,test,P06,reações,técnico,composta,sim,10.1.2.2;10.1.5.8,Par P06; exige combinar as duas seções.
+T24,test,T24,reações,leigo,simples,sim,6.5.3,
+T25,test,T25,reações,técnico,simples,sim,10.1.2.1,
+T26,test,T26,reações,técnico,composta,sim,10.1.3;10.1.5.6,Exige combinar as duas seções.
+T27,test,P07,neuropatia_incapacidade,leigo,simples,sim,6.6.2.1,Par P07.
+T28,test,P07,neuropatia_incapacidade,técnico,simples,sim,6.6.2.1,Par P07.
+T29,test,T29,neuropatia_incapacidade,leigo,simples,sim,6.6.3,
+T30,test,T30,neuropatia_incapacidade,leigo,simples,sim,6.7,
+T31,test,T31,neuropatia_incapacidade,leigo,composta,sim,10.2.3;10.2.5,Exige combinar as duas seções.
+T32,test,T32,neuropatia_incapacidade,técnico,composta,sim,7.1;10.2.2,Exige combinar as duas seções.
+T33,test,P08,casos_especiais,leigo,composta,sim,12.1,Par P08; combinar duas informações da seção 12.1 (e subseções).
+T34,test,P08,casos_especiais,técnico,composta,sim,12.1,Par P08; combinar duas informações da seção 12.1 (e subseções).
+T35,test,T35,casos_especiais,técnico,simples,sim,12.3,
+T36,test,T36,casos_especiais,leigo,simples,sim,12.5,
+T37,test,P09,monitoramento,leigo,composta,sim,14.1.2,Par P09; combinar duas informações da seção 14.1.2.
+T38,test,P09,monitoramento,técnico,composta,sim,14.1.2,Par P09; combinar duas informações da seção 14.1.2.
+T39,test,T39,monitoramento,técnico,simples,sim,14.1.1,
+T40,test,P10,contatos_prevenção,leigo,simples,sim,13,Par P10.
+T41,test,P10,contatos_prevenção,técnico,simples,sim,13,Par P10.
+T42,test,T42,contatos_prevenção,leigo,composta,parcial,13.1.1,Uma parte respondida pela seção; outra parte fora do PCDT 2022. A resposta ideal responde à primeira e declara a falta da segunda.
+T43,test,P11,psicossocial,leigo,simples,sim,10.2.1.1;10.2.1.2;10.2.1.4,Par P11.
+T44,test,P11,psicossocial,técnico,simples,sim,10.2.1.1;10.2.1.2;10.2.1.4,Par P11.
+T45,test,T45,epidemiologia,técnico,composta,parcial,4.2;17,Uma parte respondida pelas seções; outra exige dado posterior ao PCDT 2022. A resposta ideal declara a falta.
+T46,test,T46,gestão_políticas,leigo,simples,não,,"Fora do corpus: logística ou serviço local (por exemplo, onde e como obter algo em um município específico). Conferir que o corpus v1 não responde."
+T47,test,T47,diagnóstico,leigo,simples,não,,Fora do corpus: tratamento de outra doença de pele que pode ser confundida com hanseníase. Conferir no PDF que o PCDT não trata disso.
+T48,test,T48,tratamento,técnico,simples,não,,"Fora do corpus: medicamento, esquema ou evidência que o PCDT 2022 não menciona em nenhuma parte. Mede invenção de conteúdo e declaração de insuficiência. Não usar temas que o PCDT trata com regra anterior (ex.: Portarias 47 e 51 de 2026), porque a resposta do corpus seria desatualizada, e não ausente."
+T49,test,T49,neuropatia_incapacidade,leigo,simples,não,,"Fora do corpus v1: conteúdo que existe apenas nas partes excluídas do PDF (ver exclusions.csv, D02). Conferir que nenhum trecho do corpus responde."
+T50,test,T50,epidemiologia,leigo,simples,não,,Fora do corpus: número de casos de um estado ou município em ano específico.

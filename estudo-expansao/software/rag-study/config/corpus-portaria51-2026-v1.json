@@ -1,0 +1,42 @@
+{
+  "corpus_id": "portaria51-2026-v1",
+  "source_pdf": "research/sources/2026 - Brasil - DOU 2026-08-04 p74 PortariaSCTIE51-qPCR.pdf",
+  "expected_sha256": "5574571d418b4993497a99932888bb87a2619fe16064821e890da5f5fa42dd5c",
+  "document_id": "BR-MS-SCTIE-PORTARIA-51-2026",
+  "document_title": "Portaria SCTIE/MS nº 51, de 31 de julho de 2026 (teste molecular (qPCR) para M. leprae)",
+  "publisher": "Brasil. Ministério da Saúde. Secretaria de Ciência, Tecnologia e Inovação em Saúde",
+  "year": 2026,
+  "document_type": "ato_normativo_atualizacao_pcdt",
+  "source_url": "https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas",
+  "license": "ato oficial publicado no DOU",
+  "language": "pt",
+  "include_pages": [
+    [
+      1,
+      1
+    ]
+  ],
+  "exclusions": [
+    {
+      "pages": [
+        1,
+        1
+      ],
+      "reason": "a página do DOU traz outros atos; só o texto entre o título da portaria e a assinatura é incluído"
+    }
+  ],
+  "header_max_y": 0.0,
+  "furniture_max_size": 8.5,
+  "chapter_number_min_size": 999.0,
+  "drop_superscript_citations": false,
+  "max_words": 200,
+  "overlap_words": 40,
+  "min_words": 10,
+  "footer_min_y": 9999.0,
+  "heading_min_size": 99.0,
+  "top_level_heading_min_size": 99.0,
+  "sort_blocks": false,
+  "excerpt_start": "PORTARIA SCTIE/MS Nº 51",
+  "excerpt_end": "FERNANDA DE NEGRI",
+  "root_section": "Portaria SCTIE/MS nº 51, de 31 de julho de 2026 (DOU nº 145, Seção 1, p. 74, 04/08/2026)"
+}

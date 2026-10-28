@@ -1,0 +1,9 @@
+id,slot_id,text
+EXT041,T46,Qual laboratório produz o medicamento?
+EXT046,T46,Como o médico cadastrado poderá solicitar a Notificação de Receita de Talidomida?
+EXT125,T48,"No dia da tomada da dose supervisionada, o paciente deverá estar em jejum?"
+EXT127,T48,"Se o paciente esquecer de tomar o remédio um dia, deverá tomar duas doses auto-administradas no dia seguinte?"
+EXT019,T42,"Em pacientes residentes em áreas endêmicas ou contactantes domiciliares de portadores de hanseníase, o uso de quimioprofilaxia é eficaz na prevenção da doença?"
+EXT147,T42,Todas as pessoas que residem com os pacientes devem ser vacinadas?
+EXT150,T45,Qual a política que vem sendo adotada no país para controlar e eliminar a hanseníase como problema de saúde pública no Brasil?
+EXT007,T36,O que fazer quando uma pessoa diagnosticada com hanseníase se nega a fazer o tratamento?

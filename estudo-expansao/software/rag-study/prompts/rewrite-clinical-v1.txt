@@ -1,0 +1,9 @@
+Pergunta original:
+{{query}}
+
+Reescreva a pergunta como uma única consulta de busca, clara, autocontida e adequada à terminologia da literatura clínica.
+
+Não responda à pergunta.
+
+Retorne somente JSON no formato:
+{"expanded_query":"consulta reescrita"}

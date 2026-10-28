@@ -1,0 +1,120 @@
+{
+  "corpus_id": "who2023-v1",
+  "created_utc": "2026-10-23T20:28:12+00:00",
+  "snapshot_sha256": "2170362ddc75d8038fb406789b3f8284dbdf0ff28ff91b38111ab913d2d4afb9",
+  "source": {
+    "path": "research/sources/2023 - WHO - InterruptionTransmissionEliminationLeprosyTechnicalGuidance.pdf",
+    "sha256": "e4c27c66570f2613c69fba26a3817c23a6c004df6ddf846843679d10411f0bf2",
+    "pages_total": 81,
+    "document_id": "WHO-LEPROSY-ELIMINATION-TECHNICAL-GUIDANCE-2023",
+    "title": "Interruption of transmission and elimination of leprosy disease – Technical guidance",
+    "publisher": "World Health Organization",
+    "year": 2023,
+    "document_type": "orientacao_tecnica_internacional",
+    "url": "https://www.who.int/publications/i/item/9789290210467",
+    "license": "CC BY-NC-SA 3.0 IGO",
+    "language": "en"
+  },
+  "extractor": {
+    "library": "pymupdf",
+    "version": "1.28.2"
+  },
+  "config": {
+    "corpus_id": "who2023-v1",
+    "source_pdf": "research/sources/2023 - WHO - InterruptionTransmissionEliminationLeprosyTechnicalGuidance.pdf",
+    "expected_sha256": "e4c27c66570f2613c69fba26a3817c23a6c004df6ddf846843679d10411f0bf2",
+    "document_id": "WHO-LEPROSY-ELIMINATION-TECHNICAL-GUIDANCE-2023",
+    "document_title": "Interruption of transmission and elimination of leprosy disease – Technical guidance",
+    "publisher": "World Health Organization",
+    "year": 2023,
+    "document_type": "orientacao_tecnica_internacional",
+    "include_pages": [
+      [
+        10,
+        11
+      ],
+      [
+        13,
+        65
+      ]
+    ],
+    "exclusions": [
+      {
+        "pages": [
+          1,
+          9
+        ],
+        "reason": "capas, créditos, sumário, colaboradores e siglas"
+      },
+      {
+        "pages": [
+          12,
+          12
+        ],
+        "reason": "prefácio institucional"
+      },
+      {
+        "pages": [
+          66,
+          67
+        ],
+        "reason": "referências bibliográficas"
+      },
+      {
+        "pages": [
+          68,
+          81
+        ],
+        "reason": "anexos (pacote de cuidado, estudos de caso de países e mapas) e contracapa; mapas e gráficos geram texto desordenado"
+      }
+    ],
+    "header_max_y": 30.0,
+    "footer_min_y": 780.0,
+    "furniture_max_size": 8.5,
+    "heading_min_size": 11.9,
+    "top_level_heading_min_size": 40.0,
+    "chapter_number_min_size": 999.0,
+    "drop_superscript_citations": true,
+    "max_words": 200,
+    "overlap_words": 40,
+    "min_words": 40,
+    "heading_size_levels": [
+      [
+        40,
+        1
+      ],
+      [
+        17,
+        2
+      ],
+      [
+        11.9,
+        3
+      ]
+    ],
+    "heading_max_words": 12,
+    "drop_line_patterns": [
+      "\\d{1,3}"
+    ],
+    "excerpt_start": null,
+    "excerpt_end": null,
+    "root_section": null,
+    "sort_blocks": true,
+    "source_url": "https://www.who.int/publications/i/item/9789290210467",
+    "license": "CC BY-NC-SA 3.0 IGO",
+    "language": "en"
+  },
+  "stats": {
+    "pages_included": 55,
+    "pages_without_text": [],
+    "furniture_lines_removed": 99,
+    "citation_spans_removed": 54,
+    "headings_detected": 102,
+    "sentences": 864,
+    "chunks": 115,
+    "words_total": 15472,
+    "words_min": 41,
+    "words_max": 200,
+    "words_mean": 134.5
+  }
+}

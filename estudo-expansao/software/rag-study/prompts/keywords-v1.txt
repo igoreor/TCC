@@ -1,0 +1,9 @@
+Pergunta original:
+{{query}}
+
+Identifique exatamente cinco termos ou expressões úteis para recuperar documentos relacionados à pergunta. Inclua somente terminologia clínica e sinônimos diretamente relacionados.
+
+Não responda à pergunta.
+
+Retorne somente JSON no formato:
+{"search_terms":["termo 1","termo 2","termo 3","termo 4","termo 5"]}

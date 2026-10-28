@@ -1,0 +1,64 @@
+{
+  "experiment_id": "e3-stage1-test-retrieval",
+  "description": "Etapa 1 (D19, D34): só expansão e busca, nas 50 perguntas de teste. R0 x R1 x R2 x R3, expansores GPT e Claude pela assinatura (D31), 1 repetição (D32). k=10 para a sensibilidade Recall@10; desfecho P1 em @5 (família F1, 6 comparações com Holm). A melhor estratégia por select-strategy (D27) segue para a etapa 2. Executar só após o congelamento das perguntas. Corpus hanseniase-v2 (D38) e prompt de resposta RAG v2 (D39).",
+  "mode": "retrieval",
+  "questions": "research/questions/test-v1.jsonl",
+  "splits": [
+    "test"
+  ],
+  "corpus_dir": "research/corpus/hanseniase-v2",
+  "index_dir": "research/corpus/hanseniase-v2/index-bge-m3",
+  "embedder": {
+    "type": "sentence-transformers",
+    "model_id": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "device": "cpu",
+    "batch_size": 16
+  },
+  "prompts_dir": "software/rag-study/prompts",
+  "prompts": {
+    "direct_answer": "direct-answer-system-v1.txt",
+    "rag_answer": "rag-answer-system-v2.txt",
+    "expansion_system": "common-expansion-system-v1.txt",
+    "rewrite": "rewrite-clinical-v1.txt",
+    "keywords": "keywords-v1.txt",
+    "pseudo_document": "pseudo-document-v1.txt"
+  },
+  "max_attempts": 3,
+  "pricing": null,
+  "output_root": "research/runs",
+  "k": 10,
+  "generation": {
+    "max_output_tokens": 2000
+  },
+  "expansion": {
+    "max_output_tokens": 400,
+    "structured_output": false
+  },
+  "models": {
+    "openai": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "verbosity": "medium",
+      "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json"
+    },
+    "anthropic": {
+      "provider": "claude_cli",
+      "model": "claude-sonnet-5-5",
+      "effort": "low"
+    }
+  },
+  "arms": [
+    "openai",
+    "anthropic"
+  ],
+  "conditions": [
+    "R0",
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "repetitions": 1,
+  "seed": 20261101
+}

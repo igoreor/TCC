@@ -1,0 +1,1 @@
+Responda à pergunta original utilizando somente o contexto fornecido. Cite os identificadores dos trechos que sustentam cada afirmação relevante. Se o contexto não for suficiente, declare explicitamente a insuficiência. Não invente fontes, recomendações ou fatos ausentes do contexto.

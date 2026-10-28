@@ -1,0 +1,30 @@
+{
+  "index_id": "hanseniase-v2-bge-m3",
+  "created_utc": "2026-10-23T20:34:27+00:00",
+  "corpus_id": "hanseniase-v2",
+  "corpus_snapshot_sha256": "4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663",
+  "text_field": "embed_text",
+  "embedder": {
+    "type": "sentence-transformers",
+    "model_id": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dimension": 1024,
+    "max_seq_length": 8192,
+    "normalize": true,
+    "device": "cpu",
+    "batch_size": 16,
+    "sentence_transformers_version": "6.1.0",
+    "torch_version": "2.14.1+cpu"
+  },
+  "similarity": "cosine (inner product of L2-normalized vectors)",
+  "search": "exact brute-force; ties broken by corpus order",
+  "n_vectors": 391,
+  "dimension": 1024,
+  "embeddings_sha256": "94746b0a22da314f687a8f3f0f8586f2cd276aacd7a61df384bfe5ccb2830e38",
+  "build_seconds": 321.16,
+  "platform": {
+    "python": "3.12.10",
+    "machine": "AMD64",
+    "system": "Windows"
+  }
+}

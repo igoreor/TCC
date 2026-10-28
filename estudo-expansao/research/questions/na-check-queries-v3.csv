@@ -1,0 +1,8 @@
+id,slot_id,text,terms_en
+EXT041,T46,Qual laboratório produz o medicamento?,laboratory manufacturer thalidomide
+EXT125,T48,"No dia da tomada da dose supervisionada, o paciente deverá estar em jejum?",fasting supervised dose
+EXT127,T48,"Se o paciente esquecer de tomar o remédio um dia, deverá tomar duas doses auto-administradas no dia seguinte?",missed dose double dose
+EXT019,T42,"Em pacientes residentes em áreas endêmicas ou contactantes domiciliares de portadores de hanseníase, o uso de quimioprofilaxia é eficaz na prevenção da doença?",chemoprophylaxis post-exposure prophylaxis single dose rifampicin contacts
+EXT147,T42,Todas as pessoas que residem com os pacientes devem ser vacinadas?,BCG vaccination household contacts
+EXT150,T45,Qual a política que vem sendo adotada no país para controlar e eliminar a hanseníase como problema de saúde pública no Brasil?,national strategy elimination policy
+EXT007,T36,O que fazer quando uma pessoa diagnosticada com hanseníase se nega a fazer o tratamento?,refuses treatment adherence

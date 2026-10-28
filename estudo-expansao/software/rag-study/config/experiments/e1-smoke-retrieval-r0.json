@@ -1,0 +1,30 @@
+{
+  "experiment_id": "e1-smoke-retrieval-r0",
+  "description": "Teste funcional de custo zero: recuperação com a consulta original (R0) sobre o corpus PCDT 2022 v1. Perguntas smoke de autoria não verificada; não usar para análise.",
+  "mode": "retrieval_original_only",
+  "questions": "research/questions/smoke-v0.jsonl",
+  "splits": ["smoke"],
+  "corpus_dir": "research/corpus/pcdt2022-v1",
+  "index_dir": "research/corpus/pcdt2022-v1/index-bge-m3",
+  "embedder": {"type": "sentence-transformers", "model_id": "BAAI/bge-m3",
+               "revision": "5617a9f61b028005a4858fdac845db406aefb181", "device": "cpu", "batch_size": 16},
+  "prompts_dir": "software/rag-study/prompts",
+  "prompts": {
+    "direct_answer": "direct-answer-system-v1.txt",
+    "rag_answer": "rag-answer-system-v1.txt",
+    "expansion_system": "common-expansion-system-v1.txt",
+    "rewrite": "rewrite-clinical-v1.txt",
+    "keywords": "keywords-v1.txt",
+    "pseudo_document": "pseudo-document-v1.txt"
+  },
+  "k": 10,
+  "generation": {"max_output_tokens": 800},
+  "expansion": {"max_output_tokens": 400, "structured_output": true},
+  "models": {},
+  "arms": [],
+  "conditions": ["R0"],
+  "repetitions": 1,
+  "seed": 20261003,
+  "pricing": null,
+  "output_root": "research/runs"
+}

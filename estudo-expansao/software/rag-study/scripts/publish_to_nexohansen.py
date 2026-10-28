@@ -59,7 +59,8 @@ def selected_files(root: Path) -> list[Path]:
         candidates = [path] if path.is_file() else sorted(p for p in path.rglob("*") if p.is_file())
         for file in candidates:
             relative = file.relative_to(root)
-            if SKIP_PARTS & set(relative.parts) or file.suffix in SKIP_SUFFIXES:
+            if (SKIP_PARTS & set(relative.parts) or file.suffix in SKIP_SUFFIXES
+                    or any(part.endswith(".egg-info") for part in relative.parts)):
                 continue
             files.append(relative)
     return files

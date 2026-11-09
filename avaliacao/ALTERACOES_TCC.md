@@ -44,7 +44,7 @@ As validações 1 e 2 estão descritas como **avaliação automatizada por model
 | 3.8.4 | `[VÍNCULO INSTITUCIONAL E DATA DA REVISÃO]` | Preencher. |
 | 5.4 (início) | `(resultados preliminares, sujeitos à validação 3)` | Remover depois de rodar `consolidar.ts` e atualizar os números. |
 | 5.4 (fim) | `[Nº DE RESPOSTAS DE REFERÊNCIA REVISADAS E QUANTAS FORAM CORRIGIDAS]` | Usar `referencias_erratas_especialista.json`. |
-| 5.4 (fim) | `[Nº DE RESPOSTAS DA IA REVISADAS PELA ESPECIALISTA]` | 60 na ficha; confirmar quantas foram de fato preenchidas. |
+| 5.4 (fim) | `[Nº DE RESPOSTAS DA IA REVISADAS PELA ESPECIALISTA]` | 25 na ficha (uma por pergunta); confirmar quantas foram de fato preenchidas. |
 | 5.4 (fim) | `[KAPPA E % DE CONCORDÂNCIA ENTRE VALIDAÇÃO 2 E VALIDAÇÃO 3 — gerado por consolidar.ts]` | Usar `validacao_especialista/consolidacao.json`. |
 | 5.4 (fim) | `[OBSERVAÇÕES DA ESPECIALISTA: …]` | Resumir as observações da ficha. |
 | 6.5 (fim) | `[OBSERVAÇÕES DA ESPECIALISTA: …]` | Discutir as divergências entre a avaliação automatizada e a especialista. |

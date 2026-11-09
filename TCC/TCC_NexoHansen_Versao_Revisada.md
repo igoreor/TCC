@@ -708,7 +708,7 @@ As validações 1 e 2 foram feitas de forma automatizada, por um modelo de lingu
 
 As métricas foram combinadas em uma nota global de 0 a 1, com pesos de 0,35 para a correção factual, 0,30 para a cobertura dos pontos-chave, 0,15 para a precisão das afirmações e 0,10 para a pertinência e para a adequação ao registro, anulada quando há erro com potencial de dano ou incoerência; nas perguntas não respondíveis, a nota reflete apenas a abstenção. Uma resposta foi considerada correta quando não contradiz o corpus, cobre ao menos 60% dos pontos-chave, é pertinente, coerente e sem alerta de segurança; nas não respondíveis, quando reconhece a limitação sem inventar. Depois de concluídas as avaliações, o anonimato foi desfeito para medir a consistência entre as duas execuções de cada pergunta: estabilidade do veredito, diferença das notas, similaridade semântica entre as respostas, pelo cosseno dos *embeddings*, e contradição entre elas, julgada às cegas. A acurácia é apresentada com intervalo de confiança de 95% de Wilson (Wilson, 1927), e as comparações entre registros e entre origens das perguntas, pelos testes de Fisher, Mann-Whitney e Kruskal-Wallis, são exploratórias, porque as duas respostas de cada pergunta não são independentes. <mark>[REFERÊNCIA A INSERIR: testes de Fisher, Mann-Whitney e Kruskal-Wallis.</mark>]
 
-A validação 3 consiste na revisão por especialista, <mark>[NOME DA PESQUISADORA, FORMAÇÃO E TITULAÇÃO</mark>], <mark>[VÍNCULO INSTITUCIONAL E DATA DA REVISÃO</mark>], por meio de uma ficha em planilha (Apêndice J) que dispensa o acesso ao repositório. A especialista revisa as 50 respostas de referência e 60 respostas do sistema: as 40 sinalizadas pelas validações 1 e 2 (incorretas, com alerta de segurança, alucinação, recusa indevida ou veredito diferente entre as rodadas) e 20 sorteadas entre as demais, sem acesso às notas automatizadas. Nas respostas revisadas, o veredito da especialista prevalece; referências que ela considerar incorretas são corrigidas, e as respostas correspondentes, reavaliadas. A concordância entre as validações 2 e 3 é medida pelo kappa de Cohen ponderado (Cohen, 1968) e pela porcentagem de concordância.
+A validação 3 consiste na revisão por especialista, <mark>[NOME DA PESQUISADORA, FORMAÇÃO E TITULAÇÃO</mark>], <mark>[VÍNCULO INSTITUCIONAL E DATA DA REVISÃO</mark>], por meio de uma ficha em planilha (Apêndice J) que dispensa o acesso ao repositório. A especialista revisa 25 das 50 perguntas, com a resposta de referência e uma resposta do sistema para cada uma, sem acesso às notas automatizadas. Entram 7 com alerta de segurança ou alucinação em alguma execução, 1 com execuções contraditórias entre si e, por sorteio com semente fixa, 8 com alguma execução incorreta e 9 com as duas corretas; nas perguntas sinalizadas, a resposta apresentada é a da execução sinalizada. A amostra é, portanto, enriquecida de respostas problemáticas. Nas respostas revisadas, o veredito da especialista prevalece; referências que ela considerar incorretas são corrigidas, e as respostas correspondentes, reavaliadas. A concordância entre as validações 2 e 3 é medida pelo kappa de Cohen ponderado (Cohen, 1968) e pela porcentagem de concordância.
 
 # 4 DESENVOLVIMENTO DO SISTEMA
 
@@ -1318,7 +1318,7 @@ A avaliação experimental está sujeita às seguintes ameaças à validade:
 
 a) as validações 1 e 2 foram feitas por um modelo de linguagem atuando como avaliador, e o mesmo modelo construiu as respostas de referência; como mitigação, as referências foram congeladas por resumo SHA-256 antes da leitura das respostas, a avaliação foi cega quanto à rodada, a rubrica foi fixada antes da avaliação e a validação 3 mede a concordância com uma especialista;
 b) modelos avaliadores tendem a favorecer textos que eles próprios produziram (Panickssery; Bowman; Feng, 2024); o sistema avaliado usa modelos de outro fornecedor, o que reduz, sem eliminar, esse risco;
-c) a especialista revisa todas as respostas sinalizadas e uma amostra das demais, e não necessariamente todas as respostas;
+c) a especialista revisa 25 das 50 perguntas, com uma resposta cada, em amostra enriquecida de respostas problemáticas; a concordância medida vale para essa amostra, e não para o conjunto das respostas;
 d) 34 das 50 perguntas são adaptações ou redação autoral, e a T36 permaneceu em decisão na curadoria;
 e) com apenas duas execuções por pergunta, a consistência medida é indicativa, e os testes estatísticos, exploratórios;
 f) o corpus avaliado não contém as Portarias SCTIE/MS nº 47 e nº 51/2026 nem a orientação técnica da OMS de 2023 previstas no protocolo, e as divergências entre o PCDT e a OMS foram resolvidas a favor do PCDT;
@@ -1760,15 +1760,15 @@ Fonte: Elaboração própria (2026), a partir do protocolo da avaliação.
 
 # APÊNDICE J – MODELO DA FICHA DA VALIDAÇÃO POR ESPECIALISTA
 
-A ficha da validação 3 é a planilha `avaliacao/validacao_especialista/ficha_pesquisadora.xlsx`, preparada para preenchimento sem acesso ao repositório, com listas de opções nos campos de escolha. O Quadro 22 descreve suas abas. As respostas do sistema incluídas na ficha (60) são todas as sinalizadas pelas validações 1 e 2 e uma amostra aleatória de 20 das demais (semente 20261113); as notas automatizadas não são exibidas.
+A ficha da validação 3 é a planilha `avaliacao/validacao_especialista/ficha_pesquisadora.xlsx`, preparada para preenchimento sem acesso ao repositório, com listas de opções nos campos de escolha. O Quadro 22 descreve suas abas. A ficha traz 25 perguntas, cada uma com a resposta de referência e uma resposta do sistema (critérios de seleção na Seção 3.8.4; sementes a partir de 20261113); as notas automatizadas não são exibidas.
 
 **Quadro 22 – Estrutura da ficha da validação por especialista**
 
 | Aba | Conteúdo apresentado | Campos preenchidos pela especialista |
 |---|---|---|
 | Instruções | Objetivo, documentos de referência, significado de cada opção e tempo estimado, em linguagem não técnica. | — |
-| Referências | As 50 perguntas, a cobertura pelo corpus, as respostas de referência e os trechos dos documentos que as sustentam. | Referência correta? (sim, parcialmente, não); correção sugerida; comentário. |
-| Respostas da IA | Para cada uma das 60 respostas selecionadas: pergunta, execução, resposta de referência e resposta do sistema. | Veredito (correta, parcialmente correta, incorreta); risco clínico (nenhum, baixo, alto); comentário. |
+| Referências | As 25 perguntas selecionadas, a cobertura pelo corpus, as respostas de referência e os trechos dos documentos que as sustentam. | Referência correta? (sim, parcialmente, não); correção sugerida; comentário. |
+| Respostas da IA | Uma resposta do sistema para cada pergunta selecionada (25): pergunta, resposta de referência e resposta do sistema. | Veredito (correta, parcialmente correta, incorreta); risco clínico (nenhum, baixo, alto); comentário. |
 | Identificação | — | Nome, formação, titulação, vínculo institucional e data da revisão. |
 
 Fonte: Elaboração própria (2026).

@@ -33,11 +33,22 @@ async function main() {
 
   // Vereditos das respostas da IA
   const vereditos: VereditoEspecialista[] = [];
-  wb.getWorksheet('Respostas da IA')!.eachRow((row, n) => {
+  const abaRespostas = wb.getWorksheet('Respostas da IA')!;
+  // Colunas localizadas pelo cabeçalho, para aceitar fichas com ou sem a coluna "Execução".
+  const coluna = (nome: string) => {
+    let indice = 0;
+    abaRespostas.getRow(1).eachCell((c, i) => {
+      if (texto(c.value) === nome.toLowerCase()) indice = i;
+    });
+    if (!indice) throw new Error(`coluna "${nome}" não encontrada na aba Respostas da IA`);
+    return indice;
+  };
+  const [colCodigo, colVeredito, colRisco] = [coluna('Código'), coluna('Veredito'), coluna('Risco clínico')];
+  abaRespostas.eachRow((row, n) => {
     if (n === 1) return;
-    const veredito = texto(row.getCell(7).value);
+    const veredito = texto(row.getCell(colVeredito).value);
     if (!CATEGORIAS.includes(veredito as any)) return;
-    vereditos.push({ id_execucao: texto(row.getCell(1).value).toUpperCase(), veredito: veredito as VereditoEspecialista['veredito'], risco_clinico: texto(row.getCell(8).value) });
+    vereditos.push({ id_execucao: texto(row.getCell(colCodigo).value).toUpperCase(), veredito: veredito as VereditoEspecialista['veredito'], risco_clinico: texto(row.getCell(colRisco).value) });
   });
 
   // Veredito automatizado em três níveis: correta; parcialmente correta quando incorreta com NG ≥ 0,5; incorreta.

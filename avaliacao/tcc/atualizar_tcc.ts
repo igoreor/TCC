@@ -78,7 +78,7 @@ const metodo: Bloco[] = [
   },
   {
     tipo: 'paragrafo',
-    texto: `A validação 3 consiste na revisão por especialista, [[[NOME DA PESQUISADORA, FORMAÇÃO E TITULAÇÃO]]], [[[VÍNCULO INSTITUCIONAL E DATA DA REVISÃO]]], por meio de uma ficha em planilha (Apêndice J) que dispensa o acesso ao repositório. A especialista revisa as 50 respostas de referência e ${selecao.total} respostas do sistema: as ${selecao.sinalizadas.length} sinalizadas pelas validações 1 e 2 (incorretas, com alerta de segurança, alucinação, recusa indevida ou veredito diferente entre as rodadas) e ${selecao.amostra_aleatoria.length} sorteadas entre as demais, sem acesso às notas automatizadas. Nas respostas revisadas, o veredito da especialista prevalece; referências que ela considerar incorretas são corrigidas, e as respostas correspondentes, reavaliadas. A concordância entre as validações 2 e 3 é medida pelo kappa de Cohen ponderado (Cohen, 1968) e pela porcentagem de concordância.`
+    texto: `A validação 3 consiste na revisão por especialista, [[[NOME DA PESQUISADORA, FORMAÇÃO E TITULAÇÃO]]], [[[VÍNCULO INSTITUCIONAL E DATA DA REVISÃO]]], por meio de uma ficha em planilha (Apêndice J) que dispensa o acesso ao repositório. A especialista revisa ${selecao.perguntas} das 50 perguntas, com a resposta de referência e uma resposta do sistema para cada uma, sem acesso às notas automatizadas. Entram ${selecao.por_grupo.seguranca.selecionadas} com alerta de segurança ou alucinação em alguma execução, ${selecao.por_grupo.contradicao.selecionadas} com execuções contraditórias entre si e, por sorteio com semente fixa, ${selecao.por_grupo.com_incorreta.selecionadas} com alguma execução incorreta e ${selecao.por_grupo.corretas.selecionadas} com as duas corretas; nas perguntas sinalizadas, a resposta apresentada é a da execução sinalizada. A amostra é, portanto, enriquecida de respostas problemáticas. Nas respostas revisadas, o veredito da especialista prevalece; referências que ela considerar incorretas são corrigidas, e as respostas correspondentes, reavaliadas. A concordância entre as validações 2 e 3 é medida pelo kappa de Cohen ponderado (Cohen, 1968) e pela porcentagem de concordância.`
   }
 ];
 
@@ -171,7 +171,7 @@ const discussao: Bloco[] = [
     itens: [
       'as validações 1 e 2 foram feitas por um modelo de linguagem atuando como avaliador, e o mesmo modelo construiu as respostas de referência; como mitigação, as referências foram congeladas por resumo SHA-256 antes da leitura das respostas, a avaliação foi cega quanto à rodada, a rubrica foi fixada antes da avaliação e a validação 3 mede a concordância com uma especialista;',
       'modelos avaliadores tendem a favorecer textos que eles próprios produziram (Panickssery; Bowman; Feng, 2024); o sistema avaliado usa modelos de outro fornecedor, o que reduz, sem eliminar, esse risco;',
-      'a especialista revisa todas as respostas sinalizadas e uma amostra das demais, e não necessariamente todas as respostas;',
+      'a especialista revisa 25 das 50 perguntas, com uma resposta cada, em amostra enriquecida de respostas problemáticas; a concordância medida vale para essa amostra, e não para o conjunto das respostas;',
       '34 das 50 perguntas são adaptações ou redação autoral, e a T36 permaneceu em decisão na curadoria;',
       'com apenas duas execuções por pergunta, a consistência medida é indicativa, e os testes estatísticos, exploratórios;',
       'o corpus avaliado não contém as Portarias SCTIE/MS nº 47 e nº 51/2026 nem a orientação técnica da OMS de 2023 previstas no protocolo, e as divergências entre o PCDT e a OMS foram resolvidas a favor do PCDT;',
@@ -231,7 +231,7 @@ const apendices: Bloco[] = [
   { tipo: 'titulo1', texto: 'APÊNDICE J – MODELO DA FICHA DA VALIDAÇÃO POR ESPECIALISTA', apendice: true },
   {
     tipo: 'paragrafo',
-    texto: `A ficha da validação 3 é a planilha \`avaliacao/validacao_especialista/ficha_pesquisadora.xlsx\`, preparada para preenchimento sem acesso ao repositório, com listas de opções nos campos de escolha. O Quadro 22 descreve suas abas. As respostas do sistema incluídas na ficha (${selecao.total}) são todas as sinalizadas pelas validações 1 e 2 e uma amostra aleatória de ${selecao.amostra_aleatoria.length} das demais (semente ${selecao.semente_amostra}); as notas automatizadas não são exibidas.`
+    texto: `A ficha da validação 3 é a planilha \`avaliacao/validacao_especialista/ficha_pesquisadora.xlsx\`, preparada para preenchimento sem acesso ao repositório, com listas de opções nos campos de escolha. O Quadro 22 descreve suas abas. A ficha traz ${selecao.perguntas} perguntas, cada uma com a resposta de referência e uma resposta do sistema (critérios de seleção na Seção 3.8.4; sementes a partir de ${selecao.semente_amostra}); as notas automatizadas não são exibidas.`
   },
   {
     tipo: 'tabela',
@@ -241,8 +241,8 @@ const apendices: Bloco[] = [
     larguras: [16, 50, 34],
     linhas: [
       ['Instruções', 'Objetivo, documentos de referência, significado de cada opção e tempo estimado, em linguagem não técnica.', '—'],
-      ['Referências', 'As 50 perguntas, a cobertura pelo corpus, as respostas de referência e os trechos dos documentos que as sustentam.', 'Referência correta? (sim, parcialmente, não); correção sugerida; comentário.'],
-      ['Respostas da IA', `Para cada uma das ${selecao.total} respostas selecionadas: pergunta, execução, resposta de referência e resposta do sistema.`, 'Veredito (correta, parcialmente correta, incorreta); risco clínico (nenhum, baixo, alto); comentário.'],
+      ['Referências', `As ${selecao.perguntas} perguntas selecionadas, a cobertura pelo corpus, as respostas de referência e os trechos dos documentos que as sustentam.`, 'Referência correta? (sim, parcialmente, não); correção sugerida; comentário.'],
+      ['Respostas da IA', `Uma resposta do sistema para cada pergunta selecionada (${selecao.total}): pergunta, resposta de referência e resposta do sistema.`, 'Veredito (correta, parcialmente correta, incorreta); risco clínico (nenhum, baixo, alto); comentário.'],
       ['Identificação', '—', 'Nome, formação, titulação, vínculo institucional e data da revisão.']
     ],
     fonte: 'Fonte: Elaboração própria (2026).'

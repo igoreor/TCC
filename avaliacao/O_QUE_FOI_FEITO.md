@@ -22,7 +22,7 @@ A IA de produção (commit `b5acde7`, `gpt-6-luna` sem raciocínio, temperatura 
 | Validações 1 e 2 por **modelo avaliador** (Claude Opus 5.5), descritas no TCC como *LLM-as-a-judge* | O protocolo pedia avaliação automatizada; ela não foi apresentada como humana. | TCC 3.8.4 e nota de rodapé |
 | **Regras complementares da rubrica**: abstenção parcial, recusas, lacunas da referência | O protocolo era omisso nesses casos; as regras foram fixadas antes da avaliação. | `rubrica.md` |
 | **T36 fora das médias** | Estava "em decisão" na curadoria; é reportada à parte. | Relatório, seção 7 |
-| Ficha com **60 respostas**: 40 sinalizadas + 20 sorteadas | Revisar 100 respostas é pesado para uma especialista; todas as respostas problemáticas entram. | DIARIO, Fase 5 |
+| Ficha com **25 perguntas, uma resposta cada** (a pedido do autor) | Todas as 7 perguntas com alerta ou alucinação e 1 com execuções contraditórias, mais 8 sorteadas com alguma execução incorreta e 9 com as duas corretas. | DIARIO, Fase 5 |
 | **Edição direta do XML do .docx**, com realce amarelo do Word | Preserva os estilos ABNT do modelo, a numeração automática e o sumário. | `ALTERACOES_TCC.md` |
 
 ## 3. Etapas executadas
@@ -36,7 +36,7 @@ A IA de produção (commit `b5acde7`, `gpt-6-luna` sem raciocínio, temperatura 
    - a similaridade de cosseno foi calculada;
    - as afirmações corretas ausentes da referência foram registradas, sem alterar a referência.
 6. **Métricas, gráficos e relatório.** O resultado está em `resultados/`, `resultados/graficos/` (PNG a 300 dpi) e `RELATORIO_RESULTADOS.md`.
-7. **Ficha da especialista.** O arquivo é `validacao_especialista/ficha_pesquisadora.xlsx`, com instruções, referências completas, respostas da IA, listas suspensas e uma aba de identificação em branco.
+7. **Ficha da especialista.** O arquivo é `validacao_especialista/ficha_pesquisadora.xlsx`, com 25 perguntas (referência + uma resposta da IA cada; cerca de 1h30 a 2h de revisão), instruções, trechos dos documentos, respostas da IA, listas suspensas e uma aba de identificação em branco.
 8. **TCC.** Foram inseridos:
    - 3.8 (método);
    - 5.4 (resultados, com Tabelas 9 e 10 e Figuras 14 e 15);

@@ -1,205 +1,107 @@
 {
   "semente_amostra": 20261113,
-  "sinalizadas": [
-    {
-      "id_execucao": "R1-T39",
-      "motivos": [
-        "incorreta"
-      ]
+  "perguntas": 25,
+  "total": 25,
+  "por_grupo": {
+    "seguranca": {
+      "criterio": "alerta de segurança ou alucinação em alguma execução",
+      "disponiveis": 7,
+      "selecionadas": 7
     },
-    {
-      "id_execucao": "R1-T24",
-      "motivos": [
-        "incorreta",
-        "veredito diferente entre as rodadas"
-      ]
+    "contradicao": {
+      "criterio": "execuções julgadas contraditórias entre si",
+      "disponiveis": 1,
+      "selecionadas": 1
     },
-    {
-      "id_execucao": "R1-T15",
-      "motivos": [
-        "incorreta"
-      ]
+    "com_incorreta": {
+      "criterio": "ao menos uma execução incorreta",
+      "disponiveis": 12,
+      "selecionadas": 8
     },
+    "corretas": {
+      "criterio": "as duas execuções corretas",
+      "disponiveis": 29,
+      "selecionadas": 9
+    }
+  },
+  "selecionadas": [
     {
-      "id_execucao": "R1-T11",
-      "motivos": [
-        "incorreta",
-        "veredito diferente entre as rodadas"
-      ]
-    },
-    {
-      "id_execucao": "R1-T01",
-      "motivos": [
-        "veredito diferente entre as rodadas"
-      ]
-    },
-    {
-      "id_execucao": "R1-T18",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R1-T28",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R1-T48",
-      "motivos": [
-        "incorreta",
-        "recusa indevida"
-      ]
-    },
-    {
-      "id_execucao": "R1-T16",
-      "motivos": [
-        "incorreta",
-        "alerta de segurança"
-      ]
-    },
-    {
-      "id_execucao": "R1-T25",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R1-T10",
-      "motivos": [
-        "incorreta",
-        "alerta de segurança",
-        "alucinação"
-      ]
-    },
-    {
-      "id_execucao": "R1-T08",
-      "motivos": [
-        "veredito diferente entre as rodadas"
-      ]
-    },
-    {
-      "id_execucao": "R1-T32",
-      "motivos": [
-        "veredito diferente entre as rodadas"
-      ]
-    },
-    {
-      "id_execucao": "R1-T03",
-      "motivos": [
-        "incorreta",
-        "veredito diferente entre as rodadas"
-      ]
-    },
-    {
-      "id_execucao": "R1-T31",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R1-T17",
-      "motivos": [
-        "incorreta",
-        "alerta de segurança",
-        "alucinação"
-      ]
-    },
-    {
-      "id_execucao": "R1-T30",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R1-T34",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R1-T14",
-      "motivos": [
-        "incorreta",
-        "alucinação"
-      ]
-    },
-    {
-      "id_execucao": "R1-T35",
-      "motivos": [
-        "incorreta",
-        "alerta de segurança"
-      ]
-    },
-    {
-      "id_execucao": "R2-T30",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R2-T34",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R2-T32",
-      "motivos": [
-        "incorreta",
-        "veredito diferente entre as rodadas"
-      ]
-    },
-    {
-      "id_execucao": "R2-T10",
-      "motivos": [
-        "incorreta",
-        "alerta de segurança",
-        "alucinação"
-      ]
-    },
-    {
-      "id_execucao": "R2-T15",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R2-T11",
-      "motivos": [
-        "veredito diferente entre as rodadas"
-      ]
-    },
-    {
-      "id_execucao": "R2-T31",
-      "motivos": [
-        "incorreta",
-        "alucinação"
-      ]
-    },
-    {
-      "id_execucao": "R2-T35",
-      "motivos": [
-        "incorreta",
-        "alerta de segurança"
-      ]
-    },
-    {
-      "id_execucao": "R2-T03",
-      "motivos": [
-        "veredito diferente entre as rodadas"
-      ]
-    },
-    {
+      "id_pergunta": "T01",
       "id_execucao": "R2-T01",
+      "grupo": "com_incorreta",
       "motivos": [
-        "incorreta",
-        "veredito diferente entre as rodadas"
+        "incorreta"
       ]
     },
     {
+      "id_pergunta": "T03",
+      "id_execucao": "R1-T03",
+      "grupo": "com_incorreta",
+      "motivos": [
+        "incorreta"
+      ]
+    },
+    {
+      "id_pergunta": "T07",
+      "id_execucao": "R1-T07",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T08",
+      "id_execucao": "R2-T08",
+      "grupo": "seguranca",
+      "motivos": [
+        "incorreta",
+        "alerta de segurança"
+      ]
+    },
+    {
+      "id_pergunta": "T10",
+      "id_execucao": "R1-T10",
+      "grupo": "seguranca",
+      "motivos": [
+        "incorreta",
+        "alerta de segurança",
+        "alucinação"
+      ]
+    },
+    {
+      "id_pergunta": "T11",
+      "id_execucao": "R1-T11",
+      "grupo": "com_incorreta",
+      "motivos": [
+        "incorreta"
+      ]
+    },
+    {
+      "id_pergunta": "T12",
+      "id_execucao": "R1-T12",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T14",
+      "id_execucao": "R1-T14",
+      "grupo": "seguranca",
+      "motivos": [
+        "incorreta",
+        "alucinação"
+      ]
+    },
+    {
+      "id_pergunta": "T16",
+      "id_execucao": "R1-T16",
+      "grupo": "seguranca",
+      "motivos": [
+        "incorreta",
+        "alerta de segurança"
+      ]
+    },
+    {
+      "id_pergunta": "T17",
       "id_execucao": "R2-T17",
+      "grupo": "seguranca",
       "motivos": [
         "incorreta",
         "alerta de segurança",
@@ -208,85 +110,113 @@
       ]
     },
     {
-      "id_execucao": "R2-T48",
-      "motivos": [
-        "incorreta",
-        "recusa indevida"
-      ]
-    },
-    {
-      "id_execucao": "R2-T28",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
-      "id_execucao": "R2-T25",
-      "motivos": [
-        "incorreta"
-      ]
-    },
-    {
+      "id_pergunta": "T18",
       "id_execucao": "R2-T18",
+      "grupo": "contradicao",
       "motivos": [
         "incorreta"
       ]
     },
     {
-      "id_execucao": "R2-T39",
+      "id_pergunta": "T23",
+      "id_execucao": "R1-T23",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T24",
+      "id_execucao": "R1-T24",
+      "grupo": "com_incorreta",
       "motivos": [
         "incorreta"
       ]
     },
     {
-      "id_execucao": "R2-T08",
+      "id_pergunta": "T25",
+      "id_execucao": "R1-T25",
+      "grupo": "com_incorreta",
+      "motivos": [
+        "incorreta"
+      ]
+    },
+    {
+      "id_pergunta": "T26",
+      "id_execucao": "R1-T26",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T30",
+      "id_execucao": "R1-T30",
+      "grupo": "com_incorreta",
+      "motivos": [
+        "incorreta"
+      ]
+    },
+    {
+      "id_pergunta": "T31",
+      "id_execucao": "R2-T31",
+      "grupo": "seguranca",
       "motivos": [
         "incorreta",
-        "alerta de segurança",
-        "veredito diferente entre as rodadas"
+        "alucinação"
       ]
     },
     {
-      "id_execucao": "R2-T16",
+      "id_pergunta": "T35",
+      "id_execucao": "R2-T35",
+      "grupo": "seguranca",
       "motivos": [
         "incorreta",
         "alerta de segurança"
       ]
     },
     {
-      "id_execucao": "R2-T14",
+      "id_pergunta": "T37",
+      "id_execucao": "R1-T37",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T39",
+      "id_execucao": "R1-T39",
+      "grupo": "com_incorreta",
       "motivos": [
         "incorreta"
       ]
     },
     {
-      "id_execucao": "R2-T24",
+      "id_pergunta": "T40",
+      "id_execucao": "R2-T40",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T43",
+      "id_execucao": "R2-T43",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T44",
+      "id_execucao": "R1-T44",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T47",
+      "id_execucao": "R2-T47",
+      "grupo": "corretas",
+      "motivos": []
+    },
+    {
+      "id_pergunta": "T48",
+      "id_execucao": "R1-T48",
+      "grupo": "com_incorreta",
       "motivos": [
-        "veredito diferente entre as rodadas"
+        "incorreta",
+        "recusa indevida"
       ]
     }
-  ],
-  "amostra_aleatoria": [
-    "R1-T09",
-    "R2-T02",
-    "R1-T46",
-    "R1-T49",
-    "R2-T37",
-    "R1-T05",
-    "R1-T06",
-    "R2-T09",
-    "R2-T46",
-    "R1-T27",
-    "R2-T26",
-    "R2-T29",
-    "R1-T04",
-    "R2-T22",
-    "R1-T40",
-    "R1-T26",
-    "R2-T12",
-    "R2-T41",
-    "R1-T19",
-    "R2-T20"
-  ],
-  "total": 60
+  ]
 }

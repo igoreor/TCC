@@ -117,3 +117,15 @@ O autor pediu execução autônoma ("tome todas as ações recomendadas e não m
 - Os campos foram atualizados pelo Word (`tcc/word_atualizar.ps1`), com 134 páginas. Numeração conferida no PDF: 3.8 na p. 55, 5.4 na p. 98, 6.5 na p. 107, Apêndice H na p. 129.
 - Revisão visual: as colunas estreitas do Quadro 20 e da Tabela 10 quebravam palavras. As larguras foram ajustadas e a coluna "Composta" do Quadro 20 virou um asterisco no número da pergunta.
 - Marcações em amarelo para tudo o que depende da especialista ou de decisão do autor (lista em `ALTERACOES_TCC.md`).
+
+### Fase 5 — Ficha reduzida a 25 perguntas (pedido do autor)
+
+- A especialista não revisará as 100 respostas. A ficha passou a ter **25 perguntas, cada uma com a referência e uma resposta da IA**. A T36 continua fora.
+- Critério de seleção (`fase5_ficha.ts`):
+  - entram todas as 7 perguntas com alerta de segurança ou alucinação (T08, T10, T14, T16, T17, T31, T35);
+  - entram as perguntas com execuções contraditórias que ainda não estavam na lista (T18);
+  - as vagas restantes são divididas entre 8 perguntas sorteadas das 12 com alguma execução incorreta (semente 20261113) e 9 sorteadas das 29 com as duas execuções corretas (semente 20261114).
+- Em cada pergunta sinalizada, a resposta apresentada é a da execução sinalizada. Quando as duas execuções estão sinalizadas, ou nenhuma, a escolha é sorteada.
+- Resultado: 16 respostas incorretas e 9 corretas segundo a avaliação automatizada, numa amostra enriquecida. O kappa vale para essa amostra, o que foi registrado como ameaça à validade.
+- `consolidar.ts` passou a localizar as colunas pelo cabeçalho, porque a coluna "Execução" saiu da ficha. Foi testado com uma cópia preenchida com valores fictícios: leu 25 referências e 25 respostas e calculou o kappa. Os resultados reais foram restaurados em seguida.
+- Seções 3.8.4 e 6.5 e Apêndice J do TCC regerados com a nova seleção; relatório também regerado.

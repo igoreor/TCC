@@ -175,13 +175,13 @@ Latência média 9,3 s, mediana 8,9 s, p95 13,1 s. Tokens médios por pergunta (
 
 ## 11. Validação 3 (especialista)
 
-Pendente. A ficha `validacao_especialista/ficha_pesquisadora.xlsx` traz as 50 referências e 60 respostas da IA (40 sinalizadas pelas validações 1 e 2 e 20 sorteadas entre as demais, semente 20261113). Depois do preenchimento, `consolidar.ts` calcula o kappa e a concordância e recalcula este relatório.
+Pendente. A ficha `validacao_especialista/ficha_pesquisadora.xlsx` traz 25 perguntas, cada uma com a referência e uma resposta da IA: 7 com alerta de segurança ou alucinação em alguma execução, 1 com execuções contraditórias entre si e, por sorteio com semente fixa, 8 com alguma execução incorreta e 9 com as duas corretas (sementes a partir de 20261113). Depois do preenchimento, `consolidar.ts` calcula o kappa e a concordância e recalcula este relatório.
 
 ## 12. Ameaças à validade
 
 - As validações 1 e 2 foram feitas por um modelo de linguagem atuando como avaliador (Claude Opus 5.5), o mesmo modelo que construiu as referências. Mitigações: referências congeladas por SHA-256 antes da abertura das respostas da IA, avaliação cega quanto à rodada, lotes sem duas respostas da mesma pergunta, rubrica fixa e validação 3 por especialista com cálculo de concordância.
 - A IA avaliada usa modelos da OpenAI (`gpt-6-luna`), e o avaliador é de outro fornecedor (Anthropic), o que reduz, sem eliminar, o risco de viés de autopreferência.
-- A especialista revisa uma amostra das respostas da IA (todas as sinalizadas e 20 sorteadas), não necessariamente todas.
+- A especialista revisa 25 das 50 perguntas, com uma resposta cada, em amostra enriquecida de respostas problemáticas; a concordância vale para essa amostra.
 - 34 das 50 perguntas são adaptações ou redação autoral; a T36 segue em decisão na curadoria e foi excluída das médias.
 - Apenas duas execuções por pergunta: a consistência medida é indicativa. As duas respostas da mesma pergunta não são independentes, de modo que os testes estatísticos são exploratórios.
 - O corpus avaliado não contém as Portarias SCTIE/MS nº 47 e nº 51/2026 nem a orientação técnica da OMS de 2023 previstas no protocolo; perguntas formuladas a partir dessas normas foram classificadas pela cobertura real do corpus. Divergências entre PCDT e OMS foram resolvidas a favor do PCDT, norma brasileira mais recente do corpus.

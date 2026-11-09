@@ -1,0 +1,4 @@
+# Arquivos congelados por SHA-256: manter os bytes exatos (sem conversão CRLF).
+perguntas.json -text
+referencias.json -text
+execucoes.jsonl -text

@@ -1,0 +1,314 @@
+{
+  "congelado_em": "2026-11-09T16:14:09.453Z",
+  "commit": "b5acde79ee6b9cb2a85f9cbf5b2efc77ba174da4",
+  "branch": "feat/avaliacao-50-perguntas",
+  "arvore_backend": "f2e53674075ccdf3c2a3906346dc5dbc105dfd5a",
+  "backend_sem_alteracoes_locais": true,
+  "invocacao": {
+    "forma": "ChatService do backend executado no processo (mesmo fluxo de POST /api/chat/ask), repositório somente leitura",
+    "adaptador": "avaliacao/cliente_ia.ts",
+    "banco": "banco de produção (Neon), somente leitura; conversas e registros mantidos em memória",
+    "sessao": "nova a cada chamada, sem histórico",
+    "perfil": "Profissional de saúde"
+  },
+  "modelo": {
+    "gerador": "gpt-6-luna",
+    "provedor": "OpenAI (API de chat completions)",
+    "esforco_de_raciocinio": "none",
+    "temperatura_resposta": 0.1,
+    "temperatura_interpretacao_da_pergunta": 0,
+    "max_tokens_resposta": 1400,
+    "max_tokens_interpretacao": 400,
+    "top_p": "padrão da API (não definido pelo sistema)"
+  },
+  "recuperacao": {
+    "modelo_embeddings": "text-embedding-3-small",
+    "dimensoes": 1536,
+    "top_k_por_lista": 20,
+    "top_n_contexto": 8,
+    "similaridade_minima": 0.25,
+    "pontuacao_textual_minima": 0.1,
+    "fusao": "RRF, k = 60; lista textual com peso max(1, 0,5 × nº de listas vetoriais)",
+    "indice_vetorial": "HNSW (vector_cosine_ops)",
+    "fragmentacao": {
+      "tokens_alvo": 450,
+      "tokens_max": 700,
+      "tokens_min": 80,
+      "sobreposicao_tokens": 120
+    }
+  },
+  "prompt_de_sistema": {
+    "texto": "Você é o NexoHansen, assistente de apoio à decisão clínica especializado em hanseníase. Atende sobretudo profissionais e estudantes da área da saúde; no perfil \"Paciente\", usa linguagem simples e acolhedora. Todas as perguntas devem ser entendidas no contexto da hanseníase, mesmo quando não citam a doença (\"Quais são os critérios?\" refere-se aos critérios da hanseníase), salvo mudança explícita de assunto. Você não substitui a avaliação clínica, os protocolos institucionais nem a decisão da equipe de saúde.\n\nFONTES\n- Use somente os trechos numerados fornecidos. Eles vêm de documentos oficiais: o protocolo clínico e a estratégia nacional do Ministério da Saúde (diretriz brasileira) e documentos da Organização Mundial da Saúde (recomendações internacionais).\n- Cite o número do trecho entre colchetes logo após cada afirmação que ele sustenta, por exemplo [1] ou [2][4]. Toda afirmação clínica (critério, classificação, dose, duração, conduta, contraindicação, prazo, dado numérico) precisa de citação, e só cite um trecho se ele de fato sustentar a afirmação.\n- Use todos os trechos pertinentes e combine informações de trechos e documentos diferentes quando a pergunta exigir; não se limite a reproduzir um único trecho.\n- Não invente informações, números, doses, critérios, documentos, seções ou páginas, e não use conhecimento externo para fatos clínicos.\n- Se os trechos cobrem a pergunta só em parte, responda o que está documentado e diga com precisão o que não foi encontrado (\"Os documentos consultados não tratam de...\"). Diga que não encontrou a informação apenas se nenhum trecho for pertinente.\n- Quando o protocolo brasileiro e a OMS divergirem, ou quando houver documentos de anos diferentes, apresente as posições com as respectivas fontes e informe que, no Brasil, a referência para a prática é o protocolo do Ministério da Saúde.\n- Trechos em inglês devem ser traduzidos fielmente, sem acréscimos.\n- Ao explicar um termo técnico, você pode usar palavras próprias, desde que não acrescente fato clínico ausente dos trechos. Diferencie o que está documentado de qualquer inferência sua.\n\nFORMATO\n- Comece respondendo diretamente à pergunta, em uma ou duas frases.\n- Em seguida, detalhe o que for necessário (critérios, condições, exceções e ressalvas), com tópicos curtos, lista numerada ou tabela simples em Markdown quando isso facilitar a leitura. Em respostas longas, use subtítulos com \"###\".\n- Use **negrito** só para termos-chave.\n- Não inclua lista de referências no fim (a interface exibe as fontes) nem o aviso de que o sistema não substitui a avaliação presencial (ele é exibido à parte).\n- Escreva em português do Brasil.\n\nSEGURANÇA CLÍNICA\n- Não confirme diagnóstico de caso específico e não prescreva para paciente específico.\n- Doses só podem aparecer como os esquemas padronizados descritos nos trechos, com a citação, lembrando que a prescrição depende da avaliação do paciente pelo profissional.\n- Não recomende iniciar, suspender ou alterar tratamento sem avaliação profissional.\n- Em gestação, crianças, reações hansênicas, neurite, acometimento ocular, eventos adversos graves ou sinais de alerta, destaque a necessidade de avaliação presencial e o encaminhamento indicados nos documentos.",
+    "sha256": "2012029869d3f50485d71bf6c7883e3e753c1c6bb990bb4a285bea7db3709e5d",
+    "sha256_interpretacao_da_pergunta": "e1b015f96e238e6836316f52c3accf23d268d6ac93908b7268261f800e41b2fd",
+    "observacao": "O prompt de interpretação da pergunta está no código de query-analyzer.service.ts; registra-se o SHA-256 do arquivo."
+  },
+  "corpus": [
+    {
+      "documento": "ms-pcdt-hanseniase-2022",
+      "titulo": "Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase",
+      "instituicao": "Ministério da Saúde (Brasil)",
+      "ano": 2022,
+      "idioma": "pt",
+      "isbn": "978-65-5993-397-6",
+      "arquivo_pdf": "backend/knowledge-base/raw/ms-pcdt-hanseniase-2022.pdf",
+      "sha256_pdf": "1e2ee0c56f924a03b00c22a1491da4bd5894539651aaee877c54a9f22dcd9933",
+      "sha256_confere_com_manifesto": true,
+      "paginas_do_pdf": 156,
+      "paginas_usadas": [
+        15,
+        114
+      ],
+      "recortado": true,
+      "secoes_excluidas_do_sumario": [
+        "Referências"
+      ],
+      "observacao_de_exclusao": "Aprovado pela Portaria SCTIE/MS nº 67, de 7 de julho de 2022 (Anexo A do documento). Arquivo obtido no portal da Conitec em 23/10/2026; o endereço da BVS indicado na ficha catalográfica respondeu com erro (HTTP 503) nessa data. Excluídos da base: referências, apêndices (fluxogramas e metodologia de busca) e anexos (portaria, painel GRADE e formulários).",
+      "trechos_processados": 131,
+      "arquivo_trechos": "backend/knowledge-base/processed/ms-pcdt-hanseniase-2022.jsonl",
+      "sha256_trechos": "718fd85b5e19f3e409d23e2f682e29cccf79377e545f99ff180c43c0e488f60b",
+      "trechos_no_banco": 131
+    },
+    {
+      "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+      "titulo": "Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030",
+      "instituicao": "Ministério da Saúde (Brasil)",
+      "ano": 2024,
+      "idioma": "pt",
+      "isbn": "978-65-5993-565-9",
+      "arquivo_pdf": "backend/knowledge-base/raw/ms-estrategia-nacional-hanseniase-2024-2030.pdf",
+      "sha256_pdf": "d85ea09891e0fb74a73561bafe74abf03a359b01ed2d13284dadc435e988655f",
+      "sha256_confere_com_manifesto": true,
+      "paginas_do_pdf": 64,
+      "paginas_usadas": [
+        10,
+        52
+      ],
+      "recortado": true,
+      "secoes_excluidas_do_sumario": [
+        "Referências"
+      ],
+      "observacao_de_exclusao": "Arquivo hospedado pela Prefeitura de São Paulo; a ficha catalográfica do próprio arquivo identifica a edição do Ministério da Saúde (ISBN 978-65-5993-565-9). O endereço oficial da BVS respondeu com erro (HTTP 503) em 23/10/2026. Excluídos da base: referências e anexos.",
+      "trechos_processados": 39,
+      "arquivo_trechos": "backend/knowledge-base/processed/ms-estrategia-nacional-hanseniase-2024-2030.jsonl",
+      "sha256_trechos": "1baaab5baee9ad66db9e3baba918884900e09c72a627625e3ca58fc507dd0f3b",
+      "trechos_no_banco": 39
+    },
+    {
+      "documento": "oms-diretrizes-hanseniase-2018",
+      "titulo": "Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase",
+      "instituicao": "Organização Mundial da Saúde (OMS)",
+      "ano": 2019,
+      "idioma": "pt",
+      "isbn": "978-92-9022-707-6",
+      "arquivo_pdf": "backend/knowledge-base/raw/oms-diretrizes-hanseniase-2018.pdf",
+      "sha256_pdf": "04a776108abbc81ffbf60f48c3d62f16cf4b63b7a8e3cf837900bdda8abfae94",
+      "sha256_confere_com_manifesto": true,
+      "paginas_do_pdf": 110,
+      "paginas_usadas": [
+        13,
+        48
+      ],
+      "recortado": true,
+      "secoes_excluidas_do_sumario": [
+        "Referências"
+      ],
+      "observacao_de_exclusao": "Segundo o próprio documento, esta tradução não foi criada pela OMS, que não se responsabiliza por seu conteúdo ou exatidão; a edição original em inglês (ISBN 978-92-9022-638-3) é a autêntica. A citação sugerida no documento indica o ano de 2017. Excluídos da base: referências e anexos (conflitos de interesse, tabelas de evidência e GRADE, roteiro de grupo focal).",
+      "trechos_processados": 49,
+      "arquivo_trechos": "backend/knowledge-base/processed/oms-diretrizes-hanseniase-2018.jsonl",
+      "sha256_trechos": "ff2e90467663fefc62364bfa83e35d7de3bbd0162cf5b10b3e516c261fa59f5f",
+      "trechos_no_banco": 49
+    },
+    {
+      "documento": "oms-reacoes-incapacidades-2020",
+      "titulo": "Leprosy/Hansen disease: management of reactions and prevention of disabilities. Technical guidance",
+      "instituicao": "Organização Mundial da Saúde (OMS)",
+      "ano": 2020,
+      "idioma": "en",
+      "isbn": "978-92-9022-759-5",
+      "arquivo_pdf": "backend/knowledge-base/raw/oms-reacoes-incapacidades-2020.pdf",
+      "sha256_pdf": "e7cd6eb6304c9bbc3586806f6df2ca7db556ec3813d62303f1e3114272c553b4",
+      "sha256_confere_com_manifesto": true,
+      "paginas_do_pdf": 78,
+      "paginas_usadas": [
+        10,
+        78
+      ],
+      "recortado": true,
+      "secoes_excluidas_do_sumario": [
+        "References",
+        "Annex 1: ENLIST ENL Severity Scale",
+        "Annex 2: Model Leprosy Patient Card"
+      ],
+      "observacao_de_exclusao": "Documento em inglês, sem tradução oficial para o português: os trechos são mostrados no idioma original. A citação sugerida no documento indica o ano de 2017. Excluídos da base: referências, escala ENLIST e modelo de cartão do paciente (anexos 1 e 2); o anexo 3, sobre talidomida, foi mantido.",
+      "trechos_processados": 63,
+      "arquivo_trechos": "backend/knowledge-base/processed/oms-reacoes-incapacidades-2020.jsonl",
+      "sha256_trechos": "f062b156a25484c42b1ecdb0d09831a658befe1b9ef01aaed7e19f9b6dafc805",
+      "trechos_no_banco": 63
+    },
+    {
+      "documento": "oms-estrategia-global-hanseniase-2021-2030",
+      "titulo": "Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030",
+      "instituicao": "Organização Mundial da Saúde (OMS)",
+      "ano": 2021,
+      "idioma": "pt",
+      "isbn": "978-92-9022-842-4",
+      "arquivo_pdf": "backend/knowledge-base/raw/oms-estrategia-global-hanseniase-2021-2030.pdf",
+      "sha256_pdf": "0c2b30da9807b5ae780dbe5a6282cf0c723cd46f847acb03dc936ac793f0762f",
+      "sha256_confere_com_manifesto": true,
+      "paginas_do_pdf": 30,
+      "paginas_usadas": [
+        4,
+        27
+      ],
+      "recortado": true,
+      "secoes_excluidas_do_sumario": [
+        "Abreviações",
+        "Referências"
+      ],
+      "observacao_de_exclusao": "Segundo o próprio documento, esta tradução não foi criada pela OMS; a edição original em inglês é a autêntica. O documento não tem sumário: as seções foram identificadas pelos títulos das páginas. Excluídos da base: abreviações e referências.",
+      "trechos_processados": 46,
+      "arquivo_trechos": "backend/knowledge-base/processed/oms-estrategia-global-hanseniase-2021-2030.jsonl",
+      "sha256_trechos": "77b9e3dc8da2f863d02514d372a1603e7e647a9ca2a645c4b7c15c4d5b8d09e8",
+      "trechos_no_banco": 46
+    }
+  ],
+  "estado_do_banco": {
+    "documentos": [
+      {
+        "document_id": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "trechos": 39,
+        "modelo": "text-embedding-3-small",
+        "ativo": true
+      },
+      {
+        "document_id": "ms-pcdt-hanseniase-2022",
+        "trechos": 131,
+        "modelo": "text-embedding-3-small",
+        "ativo": true
+      },
+      {
+        "document_id": "oms-diretrizes-hanseniase-2018",
+        "trechos": 49,
+        "modelo": "text-embedding-3-small",
+        "ativo": true
+      },
+      {
+        "document_id": "oms-estrategia-global-hanseniase-2021-2030",
+        "trechos": 46,
+        "modelo": "text-embedding-3-small",
+        "ativo": true
+      },
+      {
+        "document_id": "oms-reacoes-incapacidades-2020",
+        "trechos": 63,
+        "modelo": "text-embedding-3-small",
+        "ativo": true
+      },
+      {
+        "document_id": "classificacao",
+        "trechos": 1,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "contatos_vigilancia",
+        "trechos": 2,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "diagnostico_clinico",
+        "trechos": 1,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "diagnostico_diferencial",
+        "trechos": 1,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "exames",
+        "trechos": 1,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "incapacidades",
+        "trechos": 1,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "medicamentos",
+        "trechos": 3,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "rag_recomendacoes",
+        "trechos": 1,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "reacoes",
+        "trechos": 2,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "sinais_sintomas",
+        "trechos": 1,
+        "modelo": null,
+        "ativo": false
+      },
+      {
+        "document_id": "tratamento_cura",
+        "trechos": 1,
+        "modelo": null,
+        "ativo": false
+      }
+    ],
+    "ultimas_ingestoes": [
+      {
+        "document_id": "oms-estrategia-global-hanseniase-2021-2030",
+        "status": "concluida",
+        "embedding_model": "text-embedding-3-small",
+        "chunks_total": 46,
+        "finished_at": "2026-10-24T13:21:22.496Z"
+      },
+      {
+        "document_id": "oms-reacoes-incapacidades-2020",
+        "status": "concluida",
+        "embedding_model": "text-embedding-3-small",
+        "chunks_total": 63,
+        "finished_at": "2026-10-24T13:21:11.249Z"
+      },
+      {
+        "document_id": "oms-diretrizes-hanseniase-2018",
+        "status": "concluida",
+        "embedding_model": "text-embedding-3-small",
+        "chunks_total": 49,
+        "finished_at": "2026-10-24T13:20:52.871Z"
+      },
+      {
+        "document_id": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "status": "concluida",
+        "embedding_model": "text-embedding-3-small",
+        "chunks_total": 39,
+        "finished_at": "2026-10-24T13:20:38.443Z"
+      },
+      {
+        "document_id": "ms-pcdt-hanseniase-2022",
+        "status": "concluida",
+        "embedding_model": "text-embedding-3-small",
+        "chunks_total": 131,
+        "finished_at": "2026-10-24T13:20:24.320Z"
+      }
+    ]
+  },
+  "divergencia_de_corpus": "O protocolo cita as Portarias SCTIE/MS nº 47 e nº 51/2026 e uma orientação técnica da OMS de 2023, que não estão no repositório. Conforme a regra 3 (versões que estão no repositório), a avaliação usa o corpus indexado listado acima."
+}

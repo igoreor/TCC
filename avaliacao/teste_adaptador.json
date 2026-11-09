@@ -1,0 +1,195 @@
+{
+  "pergunta": "O que é hanseníase?",
+  "observacao": "Chamada de teste, fora do conjunto; não entra nos resultados.",
+  "resposta": "A hanseníase é uma **doença infecciosa crônica e curável**, causada principalmente pela bactéria *Mycobacterium leprae* (bacilo de Hansen). Ela afeta sobretudo a pele e os nervos periféricos e, sem diagnóstico e tratamento oportunos, pode causar perda de função e incapacidades. [1][2]\n\nNa prática, o diagnóstico é principalmente clínico. No Brasil, considera-se caso quando há pelo menos um sinal cardinal: alteração de sensibilidade em lesão ou área da pele; espessamento de nervo periférico associado a alterações sensitivas, motoras ou autonômicas; ou confirmação do bacilo em exame. [3]\n\nA transmissão ocorre pelo contato direto entre pessoas e é facilitada pela convivência com alguém com hanseníase não tratada; a principal fonte de infecção são pessoas não tratadas com alta carga bacilar. [2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+  "recusa": false,
+  "motivo_recusa": null,
+  "risco_clinico": "Alto",
+  "intencao": "screening",
+  "pergunta_interpretada": "O que é hanseníase?",
+  "consultas_de_busca": [
+    "O que é hanseníase?",
+    "hanseníase definição Ministério da Saúde",
+    "hanseníase doença infecciosa crônica definição",
+    "hanseníase sinais e sintomas definição"
+  ],
+  "busca_ampliada": false,
+  "citacoes_ausentes": false,
+  "fontes_citadas": [
+    {
+      "indice": 1,
+      "chunk_id": "ms-pcdt-hanseniase-2022:0002",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 15.",
+      "pagina_pdf": [
+        17,
+        17
+      ],
+      "verificada": false
+    },
+    {
+      "indice": 2,
+      "chunk_id": "ms-pcdt-hanseniase-2022:0003",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 15–16.",
+      "pagina_pdf": [
+        17,
+        18
+      ],
+      "verificada": true
+    },
+    {
+      "indice": 3,
+      "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.2 Definição de caso. p. 26.",
+      "pagina_pdf": [
+        28,
+        28
+      ],
+      "verificada": true
+    }
+  ],
+  "trechos_recuperados": [
+    {
+      "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "pagina_pdf": [
+        28,
+        28
+      ],
+      "pontuacao_fusao": 1,
+      "similaridade_vetorial": 0.6627099956603347,
+      "pontuacao_textual": 0.33333334
+    },
+    {
+      "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "pagina_pdf": [
+        27,
+        28
+      ],
+      "pontuacao_fusao": 0.8334,
+      "similaridade_vetorial": 0.6530875419739604,
+      "pontuacao_textual": 0.375
+    },
+    {
+      "chunk_id": "ms-pcdt-hanseniase-2022:0004",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "pagina_pdf": [
+        18,
+        18
+      ],
+      "pontuacao_fusao": 0.8118,
+      "similaridade_vetorial": 0.6498149590093946,
+      "pontuacao_textual": 0.4117647
+    },
+    {
+      "chunk_id": "oms-diretrizes-hanseniase-2018:0007",
+      "documento": "oms-diretrizes-hanseniase-2018",
+      "pagina_pdf": [
+        19,
+        20
+      ],
+      "pontuacao_fusao": 0.7372,
+      "similaridade_vetorial": 0.6697933810095582,
+      "pontuacao_textual": 0
+    },
+    {
+      "chunk_id": "oms-diretrizes-hanseniase-2018:0008",
+      "documento": "oms-diretrizes-hanseniase-2018",
+      "pagina_pdf": [
+        20,
+        21
+      ],
+      "pontuacao_fusao": 0.6689,
+      "similaridade_vetorial": 0.6497615530401553,
+      "pontuacao_textual": 0
+    },
+    {
+      "chunk_id": "ms-pcdt-hanseniase-2022:0003",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "pagina_pdf": [
+        17,
+        18
+      ],
+      "pontuacao_fusao": 0.6539,
+      "similaridade_vetorial": 0.6664376088317133,
+      "pontuacao_textual": 0
+    },
+    {
+      "chunk_id": "ms-pcdt-hanseniase-2022:0012",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "pagina_pdf": [
+        27,
+        27
+      ],
+      "pontuacao_fusao": 0.6241,
+      "similaridade_vetorial": 0.6275863108865509,
+      "pontuacao_textual": 0
+    },
+    {
+      "chunk_id": "ms-pcdt-hanseniase-2022:0002",
+      "documento": "ms-pcdt-hanseniase-2022",
+      "pagina_pdf": [
+        17,
+        17
+      ],
+      "pontuacao_fusao": 0.5344,
+      "similaridade_vetorial": 0.6671244992955733,
+      "pontuacao_textual": 0
+    }
+  ],
+  "latencia_ms": 10938,
+  "tokens": {
+    "entrada": 4659,
+    "entrada_cache": 0,
+    "saida": 282,
+    "raciocinio": 0,
+    "por_chamada": [
+      {
+        "tipo": "analise",
+        "modelo": "gpt-6-luna",
+        "entrada": 355,
+        "entrada_cache": 0,
+        "saida": 93,
+        "raciocinio": 0
+      },
+      {
+        "tipo": "embeddings",
+        "modelo": "text-embedding-3-small",
+        "entrada": 49,
+        "entrada_cache": 0,
+        "saida": 0,
+        "raciocinio": 0
+      },
+      {
+        "tipo": "resposta",
+        "modelo": "gpt-6-luna",
+        "entrada": 4304,
+        "entrada_cache": 0,
+        "saida": 189,
+        "raciocinio": 0
+      },
+      {
+        "tipo": "embeddings",
+        "modelo": "text-embedding-3-small",
+        "entrada": 473,
+        "entrada_cache": 0,
+        "saida": 0,
+        "raciocinio": 0
+      }
+    ]
+  },
+  "modelo": "gpt-6-luna",
+  "parametros": {
+    "modelo_gerador": "gpt-6-luna",
+    "esforco_raciocinio": "none",
+    "modelo_embeddings": "text-embedding-3-small",
+    "embeddings_semanticos": true,
+    "top_k": 20,
+    "top_n": 8,
+    "similaridade_minima": 0.25,
+    "perfil": "Profissional de saúde"
+  }
+}

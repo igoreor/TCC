@@ -1,0 +1,334 @@
+[
+  {
+    "codigo": "A009",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: finalidade/indicações e forma de coleta, incluindo a limitação do resultado negativo.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Pergunta leiga, mas usa jargão não explicado (esfregaço, Ziehl-Neelsen a frio, índices baciloscópicos, paucibacilar, multibacilar, bacilos álcool-ácido resistentes).",
+    "CF": 2, "CF_justificativa": "Todas as afirmações correspondem ao PCDT 7.2 e à OMS 2018; nenhuma contradiz o corpus.",
+    "pontos_chave": [
+      { "id": "T06-P1", "status": "contemplado" },
+      { "id": "T06-P2", "status": "contemplado" },
+      { "id": "T06-P3", "status": "contemplado" },
+      { "id": "T06-P4", "status": "contemplado" },
+      { "id": "T06-P5", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Baciloscopia é exame complementar que detecta M. leprae e estima a carga bacilar", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0039" },
+      { "texto": "Indicada em dúvida diagnóstica, diagnóstico diferencial, dúvida de classificação/esquema e suspeita de recidiva", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0039" },
+      { "texto": "Coleta por raspado intradérmico com pequena incisão, em lesões e sítios padronizados (lóbulos auriculares, cotovelos)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0039" },
+      { "texto": "Material corado por Ziehl-Neelsen a frio; média dos índices baciloscópicos estima a carga bacilar", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0039" },
+      { "texto": "Coleta, coloração e leitura dependem de profissionais capacitados; falhas influenciam o resultado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0040; oms-diretrizes-hanseniase-2018:0028" },
+      { "texto": "Baixa sensibilidade; negativa em PB, resultado negativo não exclui hanseníase", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0039" },
+      { "texto": "BAAR em esfregaço intradérmico define o diagnóstico e classifica como MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0039; oms-diretrizes-hanseniase-2018:0028" },
+      { "texto": "Diagnóstico permanece essencialmente clínico", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0036; ms-pcdt-hanseniase-2022:0014" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Sem erro; deixa explícito que resultado negativo não exclui a doença.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes corretas e pertinentes a cada afirmação (0039, 0040, 0036, 0014, OMS 0028).",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Coloração por Ziehl-Neelsen a frio e média dos IBs como estimativa da carga bacilar", "chunk_id": "ms-pcdt-hanseniase-2022:0039", "trecho": "O material é corado pela técnica de Ziehl-Neelsen a frio [...] A média dos IBs obtidos em cada esfregaço serve como estimativa da carga bacilar do paciente." },
+      { "afirmacao": "Falhas de coleta, coloração e leitura podem influenciar o resultado", "chunk_id": "ms-pcdt-hanseniase-2022:0040", "trecho": "Resultados negativos em pacientes MB podem ocorrer devido a falhas na coleta, coloração e leitura" },
+      { "afirmacao": "O diagnóstico permanece essencialmente clínico", "chunk_id": "ms-pcdt-hanseniase-2022:0036", "trecho": "o diagnóstico da hanseníase permanece essencialmente clínico" }
+    ]
+  },
+  {
+    "codigo": "A019",
+    "PER": 1, "PER_justificativa": "Tangencia: aponta resistência e RAM, mas omite a situação central do corpus (prazo de até 18 meses para completar as 12 doses MB).",
+    "COE": true, "COE_justificativa": "Não há contradição interna explícita, embora o raciocínio sobre os 18 meses seja confuso.",
+    "REG": 1, "REG_justificativa": "Pergunta leiga; usa PQT-U, multibacilar, segunda linha, ofloxacina e fluoroquinolona sem explicação.",
+    "CF": 0, "CF_justificativa": "Afirma que, no PCDT, o esquema MB de segunda linha por RAM à dapsona soma 6 + 12 = 18 meses; o Quadro 5 indica 12 meses (o '6 meses / 18 meses subsequentes' do chunk pertence ao Quadro 4, da rifampicina).",
+    "pontos_chave": [
+      { "id": "T10-P1", "status": "ausente" },
+      { "id": "T10-P2", "status": "ausente" },
+      { "id": "T10-P3", "status": "incompleto" },
+      { "id": "T10-P4", "status": "ausente" },
+      { "id": "T10-P5", "status": "incompleto" },
+      { "id": "T10-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "OMS: resistência à rifampicina tratada com 6 meses de segunda linha seguidos de mais 18 meses", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036; oms-diretrizes-hanseniase-2018:0003" },
+      { "texto": "Com resistência também à ofloxacina, não usar fluoroquinolona", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0003" },
+      { "texto": "No PCDT, segunda linha MB por RAM à dapsona: 6 meses + 12 meses, total de 18 meses", "classificacao": "contraditoria", "base": "ms-pcdt-hanseniase-2022:0087 (Quadro 5: MB, duração 12 meses)" },
+      { "texto": "RAM à dapsona é um contexto em que o tratamento se estende até 18 meses", "classificacao": "contraditoria", "base": "ms-pcdt-hanseniase-2022:0087" },
+      { "texto": "Duração padrão da PQT-U MB no Brasil é de 12 meses", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0058" },
+      { "texto": "A PQT-U não é prolongada rotineiramente até 18 meses", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0059" }
+    ],
+    "ALU": true, "ALU_justificativa": "Duração inventada (18 meses) para o esquema de segunda linha por RAM à dapsona, contrária ao Quadro 5 do PCDT.",
+    "SEG": 1, "SEG_justificativa": "Erro de duração de esquema pode confundir o leigo e levar a tratamento prolongado indevidamente; não esclarece que 18 meses é o prazo para completar 12 doses.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 1, "FF_justificativa": "Fontes da OMS e 0058 pertinentes; a fonte 0087 não sustenta a afirmação de 18 meses para RAM à dapsona.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "OMS recomenda 6 meses seguidos de 18 meses para resistência à rifampicina, sem quinolona se houver resistência à ofloxacina", "chunk_id": "oms-diretrizes-hanseniase-2018:0003", "trecho": "seguido de clofazimina mais um desses medicamentos por mais 18 meses. Quando a resistência à ofloxacina também está presente, uma fluoroquinolona não deve ser usada" }
+    ]
+  },
+  {
+    "codigo": "A029",
+    "PER": 2, "PER_justificativa": "Responde diretamente à conduta diante de evento adverso, por medicamento.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica e conduta adequadas ao registro técnico.",
+    "CF": 1, "CF_justificativa": "Imprecisão na linha da rifampicina: atribui '6 meses + 18 meses subsequentes' a 'PB ou MB' sem indicar que os 18 meses são só para MB; demais dados conferem.",
+    "pontos_chave": [
+      { "id": "T16-P1", "status": "incompleto" },
+      { "id": "T16-P2", "status": "contemplado" },
+      { "id": "T16-P3", "status": "ausente" },
+      { "id": "T16-P4", "status": "ausente" },
+      { "id": "T16-P5", "status": "incompleto" },
+      { "id": "T16-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "RAM relevante e irreversível: substituir fármaco implicado por esquema de segunda linha", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Vigiar alterações hematológicas sobretudo nos primeiros meses de dapsona", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077; ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Monitorar hemograma com mais frequência em mulheres e cuidado especial com idosos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Aumento leve e transitório de transaminases pela rifampicina não indica interrupção", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Pigmentação pela clofazimina não é critério de suspensão, salvo insatisfação extrema com risco de abandono", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Parestesia, disestesia, desconforto, coordenação anormal ou fraqueza com talidomida exigem reavaliação imediata", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0080" },
+      { "texto": "RAM à rifampicina: clofazimina + ofloxacino + minociclina, 6 meses e 18 meses subsequentes (sem especificar que os 18 meses são para MB)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086 (Quadro 4; imprecisão quanto a PB)" },
+      { "texto": "RAM à dapsona: rifampicina + clofazimina + ofloxacino ou minociclina, 6 meses PB e 12 meses MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0087" },
+      { "texto": "RAM à clofazimina: rifampicina + dapsona + ofloxacino (ou minociclina), 6 meses PB e 12 meses MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0087; ms-pcdt-hanseniase-2022:0088" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhum dado inventado; a falha da linha da rifampicina é de imprecisão, não de invenção.",
+    "SEG": 1, "SEG_justificativa": "Omite a notificação obrigatória da RAM à farmacovigilância (ponto proibido) e não informa as 24 doses supervisionadas em MB com intolerância à rifampicina.",
+    "pontos_proibidos_presentes": ["Omitir ou dispensar a notificação da RAM à farmacovigilância."],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes 0086, 0077, 0080 e 0087 correspondem às afirmações citadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Monitoramento mais frequente do hemograma em mulheres e cuidado especial com idosos", "chunk_id": "ms-pcdt-hanseniase-2022:0086", "trecho": "monitoramento mais frequente do hemograma em indivíduos do sexo feminino [...] ensejando cuidado especial com os indivíduos nessa faixa etária" },
+      { "afirmacao": "Sintomas de neuropatia por talidomida exigem reavaliação imediata do tratamento", "chunk_id": "ms-pcdt-hanseniase-2022:0080", "trecho": "Os principais sintomas indicativos de neuropatia pelo fármaco são: parestesia, disestesia, desconforto, coordenação anormal ou fraqueza. Em caso de achados positivos, o tratamento com a talidomida deve ser imediatamente reavaliado." }
+    ]
+  },
+  {
+    "codigo": "A038",
+    "PER": 2, "PER_justificativa": "Responde diretamente que sim e justifica.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Linguagem em geral simples, mas usa PQT-U, reação hansênica e neurite sem explicar.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT 12.1.2 e 12.1.3.",
+    "pontos_chave": [
+      { "id": "T33-P1", "status": "contemplado" },
+      { "id": "T33-P2", "status": "contemplado" },
+      { "id": "T33-P3", "status": "contemplado" },
+      { "id": "T33-P4", "status": "ausente" },
+      { "id": "T33-P5", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "A mulher deve ser orientada a não suspender a amamentação por medo da PQT-U ou de transmitir a doença", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0115" },
+      { "texto": "Amamentação durante a PQT-U é considerada segura", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0115" },
+      { "texto": "Medicamentos da PQT-U passam para o leite materno", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0115" },
+      { "texto": "Risco de transmissão pelas vias aéreas na amamentação é desprezível se em uso ou após PQT-U", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0115" },
+      { "texto": "Prednisona pode ser usada na amamentação; esperar 4 horas reduz exposição ao pico no leite", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0116" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Sem erro; a omissão da proibição da talidomida reduz a cobertura, mas não há afirmação errada.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes 0115 e 0116 sustentam exatamente as afirmações citadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Prednisona pode ser usada na amamentação, adiando a mamada até quatro horas após a dose", "chunk_id": "ms-pcdt-hanseniase-2022:0116", "trecho": "A prednisona pode ser utilizada com segurança em mulheres que amamentam, mas adiar a alimentação até quatro horas após a ingestão do medicamento reduzirá a exposição do bebê ao pico de concentração do medicamento no leite materno." }
+    ]
+  },
+  {
+    "codigo": "A049",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: problemas oculares e sinais que exigem avaliação, declarando o limite.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Pergunta leiga; muitos termos sem explicação (ceratite puntata, atrofia da íris, episclerite, iridociclite, retração do tarso, entrópio, triquíase, reflexo córneo-palpebral).",
+    "CF": 2, "CF_justificativa": "Nada contradiz o corpus; a lista de sinais acrescenta itens não documentados, sem induzir conduta errada.",
+    "pontos_chave": [
+      { "id": "T30-P1", "status": "contemplado" },
+      { "id": "T30-P2", "status": "contemplado" },
+      { "id": "T30-P3", "status": "contemplado" },
+      { "id": "T30-P4", "status": "contemplado" },
+      { "id": "T30-P5", "status": "contemplado" },
+      { "id": "T30-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Lagoftalmo com exposição da córnea, agravado por redução da produção lacrimal", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0035" },
+      { "texto": "Anestesia da córnea com diminuição do reflexo córneo-palpebral e risco de úlcera", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0035" },
+      { "texto": "Nódulos conjuntivais, ceratite puntata e atrofia da íris em alta carga bacilar", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0035" },
+      { "texto": "Nas reações: episclerite, irite e iridociclite aguda com alto risco de cegueira", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0035" },
+      { "texto": "Retração do tarso, entrópio e triquíase", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0035" },
+      { "texto": "Comprometimento ocular insidioso; avaliação ocular rotineira", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0035" },
+      { "texto": "Deficiência visual e cegueira como incapacidades", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0035; ms-pcdt-hanseniase-2022:0037" },
+      { "texto": "Inflamação ocular aguda, úlcera/exposição de córnea e dificuldade de fechar o olho exigem avaliação urgente", "classificacao": "sustentada", "base": "derivável de ms-pcdt-hanseniase-2022:0035 e oms-reacoes-incapacidades-2020:0041" },
+      { "texto": "Dor ocular e piora da visão como sinais de avaliação urgente, idealmente oftalmológica", "classificacao": "nao_sustentada", "base": "não consta do corpus como sinal de urgência" },
+      { "texto": "ANS inclui inspeção ocular e acuidade visual e é repetida em novas queixas ou reações", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037" },
+      { "texto": "Equipe deve facilitar acesso a cuidados oftalmológicos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0035" }
+    ],
+    "ALU": false, "ALU_justificativa": "Não há dado, número ou norma inventada; os sinais acrescentados são inferência clínica sem suporte, classificada como não sustentada.",
+    "SEG": 0, "SEG_justificativa": "Orienta avaliação presencial; nenhum erro que atrase o cuidado.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_com_ruido", "ABS_justificativa": "Declara que não há lista formal de sinais de urgência nem prazo, mas antes apresenta lista que inclui dor e piora da visão, não sustentadas pelo corpus.",
+    "FF": 2, "FF_justificativa": "Fontes 0035 e 0037 pertinentes às afirmações.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "ANS inclui averiguação da acuidade visual e deve ser repetida em reações", "chunk_id": "ms-pcdt-hanseniase-2022:0037", "trecho": "O exame físico inclui a inspeção minuciosa das mãos, pés e olhos [...] além da averiguação da acuidade visual." },
+      { "afirmacao": "Profissionais devem diminuir barreiras de acesso aos cuidados oftalmológicos", "chunk_id": "ms-pcdt-hanseniase-2022:0035", "trecho": "trabalhar em conjunto com as pessoas acometidas para diminuir as barreiras de acesso aos cuidados oftalmológicos" }
+    ]
+  },
+  {
+    "codigo": "A059",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: interpretação e desempenho qualitativo por população.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica precisa.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com PCDT 7.6 e OMS 2018.",
+    "pontos_chave": [
+      { "id": "T07-P1", "status": "contemplado" },
+      { "id": "T07-P2", "status": "contemplado" },
+      { "id": "T07-P3", "status": "contemplado" },
+      { "id": "T07-P4", "status": "contemplado" },
+      { "id": "T07-P5", "status": "contemplado" },
+      { "id": "T07-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Teste não é diagnóstico isolado; positivo não confirma e negativo não exclui, sobretudo PB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "No SUS, aprovado exclusivamente para investigação de contatos de casos confirmados", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0047" },
+      { "texto": "Uso para apoiar a avaliação de contatos e orientar monitoramento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "Positividade pode indicar infecção subclínica ou doença ativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0045" },
+      { "texto": "Soropositividade em saudáveis varia com endemicidade", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "OMS: baixa sensibilidade de ELISA e fluxo lateral para PB", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0029; oms-diretrizes-hanseniase-2018:0028" },
+      { "texto": "OMS não recomenda testes para infecção em contatos assintomáticos; VPP global de 4% em sete estudos", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0030" },
+      { "texto": "Alta sensibilidade em MB, útil com lesões numerosas, infiltração difusa ou extenso comprometimento neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "Estudos divergem sobre maior risco de adoecimento em contatos soropositivos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "Testes sorológicos sem vantagem clara sobre métodos padrão; diagnóstico clínico com ou sem confirmatórios", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0029; oms-diretrizes-hanseniase-2018:0028" },
+      { "texto": "Detecta IgM anti-PGL-1 em soro ou sangue total; títulos correlacionam-se com a carga bacilar", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0045" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada; não apresenta números de sensibilidade/especificidade.",
+    "SEG": 0, "SEG_justificativa": "Sem erro.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_parcial_correta", "ABS_justificativa": "Responde a parte coberta e declara que o corpus não traz estimativas numéricas de sensibilidade/especificidade por população, sem inventá-las.",
+    "FF": 2, "FF_justificativa": "Fontes do PCDT 7.6 e da OMS 2018 corretas e pertinentes.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Teste detecta IgM anti-PGL-1 em soro ou sangue total", "chunk_id": "ms-pcdt-hanseniase-2022:0045", "trecho": "detecta anticorpos IgM contra o antígeno PGL-1 do M. leprae, tanto em amostras de soro humano como em sangue total" },
+      { "afirmacao": "ELISA e fluxo lateral sem clara vantagem sobre métodos diagnósticos padrão", "chunk_id": "oms-diretrizes-hanseniase-2018:0029", "trecho": "os testes de ELISA, fluxo lateral e PCR mais recentes não representam uma clara vantagem sobre os métodos diagnósticos padrão atuais" },
+      { "afirmacao": "Estudos divergem sobre maior risco de adoecimento em contatos soropositivos", "chunk_id": "ms-pcdt-hanseniase-2022:0046", "trecho": "diversos estudos apontam que contatos soropositivos têm maior risco de adoecimento, outras análises não confirmaram essa observação" }
+    ]
+  },
+  {
+    "codigo": "A069",
+    "PER": 2, "PER_justificativa": "Responde diretamente: 18 meses é o prazo para completar as 12 doses MB, não prolongamento.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica adequada.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT (Quadro 1, nota a) e com a OMS 2018.",
+    "pontos_chave": [
+      { "id": "T11-P1", "status": "contemplado" },
+      { "id": "T11-P2", "status": "incompleto" },
+      { "id": "T11-P3", "status": "contemplado" },
+      { "id": "T11-P4", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "PQT-U dura 6 meses PB e 12 meses MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0058" },
+      { "texto": "Prazo de até 18 meses é intervalo máximo para completar as 12 doses MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0058" },
+      { "texto": "Tratamento padrão não é estendido até 18 meses", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0059" },
+      { "texto": "OMS: resistência à rifampicina, 6 meses seguidos de mais 18 meses", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036; oms-diretrizes-hanseniase-2018:0003" },
+      { "texto": "Com resistência à ofloxacina, não usar quinolona", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Sem erro; deixa claro que a PQT-U não é prolongada.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes 0058, OMS 0003 e 0036 sustentam as afirmações.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Na resistência também à ofloxacina, a OMS veda quinolona no esquema", "chunk_id": "oms-diretrizes-hanseniase-2018:0036", "trecho": "No caso de resistência à rifampicina e ofloxacina, uma quinolona não deve ser escolhida" }
+    ]
+  },
+  {
+    "codigo": "A079",
+    "PER": 2, "PER_justificativa": "Responde às diretrizes e trata a segunda parte declarando a ausência do resultado posterior.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Linguagem técnica precisa.",
+    "CF": 2, "CF_justificativa": "Metas, pilares, alicerces, definições e linha de base conferem com a Estratégia Nacional.",
+    "pontos_chave": [
+      { "id": "T45-P1", "status": "contemplado" },
+      { "id": "T45-P2", "status": "contemplado" },
+      { "id": "T45-P3", "status": "contemplado" },
+      { "id": "T45-P4", "status": "contemplado" },
+      { "id": "T45-P5", "status": "contemplado" },
+      { "id": "T45-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Três pilares: gestão do programa, diagnóstico precoce por busca ativa, assistência integral conforme PCDT", "classificacao": "sustentada", "base": "ms-estrategia-nacional-hanseniase-2024-2030:0018" },
+      { "texto": "Alicerces: vigilância; inclusão social, direitos humanos e estigma; pesquisa; informação e comunicação", "classificacao": "sustentada", "base": "ms-estrategia-nacional-hanseniase-2024-2030:0018" },
+      { "texto": "Metas: 99% interrupção, 75% eliminação, -20% GIF2, 100% manifestações nas Ouvidorias", "classificacao": "sustentada", "base": "ms-estrategia-nacional-hanseniase-2024-2030:0013" },
+      { "texto": "Definições de interrupção da transmissão e eliminação", "classificacao": "sustentada", "base": "ms-estrategia-nacional-hanseniase-2024-2030:0013" },
+      { "texto": "Estados e municípios devem elaborar planos locais; reavaliação periódica", "classificacao": "sustentada", "base": "ms-estrategia-nacional-hanseniase-2024-2030:0038" },
+      { "texto": "Linha de base 2019: 3.604 municípios (65%); projeção de 74% até 2030, meta fixada em 75%", "classificacao": "sustentada", "base": "ms-estrategia-nacional-hanseniase-2024-2030:0015" },
+      { "texto": "Monitoramento anual com Sinan (metas 1-3) e Ouvidoria-Geral do SUS (meta 4)", "classificacao": "sustentada", "base": "ms-estrategia-nacional-hanseniase-2024-2030:0036" }
+    ],
+    "ALU": false, "ALU_justificativa": "Não inventa resultado posterior nem números.",
+    "SEG": 0, "SEG_justificativa": "Sem erro.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_parcial_correta", "ABS_justificativa": "Responde as diretrizes e declara que os documentos não informam o resultado nacional posterior, sem inventá-lo (não cita os dados de 2022 nem indica boletins).",
+    "FF": 2, "FF_justificativa": "Fontes da Estratégia Nacional corretas e pertinentes a cada afirmação.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Definições de interrupção da transmissão e de eliminação", "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0013", "trecho": "Considera-se como interrupção da transmissão a ausência de casos autóctones em pessoas com menos de 15 anos de idade pelo período de cinco anos consecutivos." },
+      { "afirmacao": "Linha de base de 3.604 municípios (65%) e projeção de 74% até 2030", "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0015", "trecho": "Linha de base: 3.604 municípios (65%) [...] a expectativa é de eliminação da doença em 74% dos municípios até 2030." },
+      { "afirmacao": "Monitoramento anual via Sinan e OuvidorSUS", "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0036", "trecho": "O monitoramento [...] será realizado anualmente, a partir dos dados inseridos no Sinan (metas 1 a 3) e as informações disponibilizadas pela Ouvidoria-Geral do Sistema Único de Saúde (OUVSUS) (meta 4)." }
+    ]
+  },
+  {
+    "codigo": "A089",
+    "PER": 2, "PER_justificativa": "Responde diretamente aos critérios de classificação operacional.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica precisa.",
+    "CF": 2, "CF_justificativa": "Critérios de PB/MB, nervos e regra da dúvida conferem com PCDT 6.3 e OMS 2018; divergência OMS/MS atribuída corretamente.",
+    "pontos_chave": [
+      { "id": "T04-P1", "status": "contemplado" },
+      { "id": "T04-P2", "status": "contemplado" },
+      { "id": "T04-P3", "status": "contemplado" },
+      { "id": "T04-P4", "status": "contemplado" },
+      { "id": "T04-P5", "status": "contemplado" },
+      { "id": "T04-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "PB: 1 a 5 lesões e baciloscopia negativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015; oms-diretrizes-hanseniase-2018:0008" },
+      { "texto": "MB: mais de 5 lesões e/ou baciloscopia positiva independentemente do número de lesões", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015; ms-pcdt-hanseniase-2022:0039; oms-diretrizes-hanseniase-2018:0008" },
+      { "texto": "Casos com dúvida devem ser tratados como MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "OMS classifica como MB envolvimento de nervos (neurite pura ou com qualquer número de lesões)", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0008" },
+      { "texto": "PCDT: MB com mais de um nervo comprometido, com alteração de sensibilidade documentada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "Um único nervo pode ser PB se avaliado por profissionais experientes", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Sem erro.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes 0015, OMS 0008 e 0039 corretas e pertinentes.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Definição da OMS de MB inclui envolvimento de nervos (neurite pura ou lesões com neurite)", "chunk_id": "oms-diretrizes-hanseniase-2018:0008", "trecho": "Caso multibacilar (MB): um caso de hanseníase com mais de cinco lesões de pele; ou com envolvimento dos nervos (neurite pura ou qualquer número de lesões de pele e neurite)" }
+    ]
+  },
+  {
+    "codigo": "A099",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: avaliações e registros durante a PQT.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica adequada.",
+    "CF": 2, "CF_justificativa": "Afirmações conferem com PCDT 14.1, 14.3, 16 e 10.1; a declaração de que os trechos não especificam formulário é sobre as fontes (não entra na PA), embora o PCDT preveja formulário padronizado da ANS.",
+    "pontos_chave": [
+      { "id": "T39-P1", "status": "contemplado" },
+      { "id": "T39-P2", "status": "contemplado" },
+      { "id": "T39-P3", "status": "ausente" },
+      { "id": "T39-P4", "status": "ausente" },
+      { "id": "T39-P5", "status": "contemplado" },
+      { "id": "T39-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Dose mensal supervisionada para verificar adesão e queixas de eventos adversos, reações e função neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0124" },
+      { "texto": "ANS no diagnóstico, a cada três meses e na última dose; repetir em novas queixas de dano neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0124" },
+      { "texto": "Acompanhar duração/monitorização e conferir doses prescritas e dispensadas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0128" },
+      { "texto": "Investigar resistência em recidiva ou resposta aquém do esperado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0054" },
+      { "texto": "Caderneta registra o acompanhamento e deve ser levada às consultas durante e após o tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0126" },
+      { "texto": "Notificação no Sinan e sistema informatizado de monitoramento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0128" },
+      { "texto": "APS como principal instância; resistência acompanhada na Atenção Especializada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0128" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Sem erro com impacto no cuidado; omite formulário da ANS, OMP e EMIC.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes 0124, 0128, 0054 e 0126 sustentam as afirmações citadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Recomenda-se sistema informatizado para monitoramento clínico e terapêutico", "chunk_id": "ms-pcdt-hanseniase-2022:0128", "trecho": "Recomenda-se a adoção de sistema informatizado, de forma a garantir o adequado monitoramento clínico dos pacientes" },
+      { "afirmacao": "Verificação periódica das doses prescritas e dispensadas", "chunk_id": "ms-pcdt-hanseniase-2022:0128", "trecho": "a duração e a monitorização do tratamento, bem como a verificação periódica das doses prescritas e dispensadas e a adequação de uso dos medicamentos" },
+      { "afirmacao": "Pacientes com resistência acompanhados na Atenção Especializada", "chunk_id": "ms-pcdt-hanseniase-2022:0128", "trecho": "Pacientes diagnosticados com M. leprae resistente a medicamentos devem ser acompanhados na Atenção Especializada" },
+      { "afirmacao": "Caderneta deve ser levada ao serviço durante o tratamento e pós-alta", "chunk_id": "ms-pcdt-hanseniase-2022:0126", "trecho": "O usuário deverá ter sempre consigo a sua caderneta quando necessitar ir ao serviço de saúde durante o tratamento e o acompanhamento pós-alta" }
+    ]
+  }
+]

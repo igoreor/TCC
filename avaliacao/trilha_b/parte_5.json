@@ -1,0 +1,468 @@
+[
+  {
+    "id": "T41",
+    "registro": "técnico",
+    "resposta_referencia": "Segundo o PCDT 2022, são contatos todas as pessoas que residam ou tenham residido, convivam ou tenham convivido no domicílio com o doente nos cinco anos anteriores ao diagnóstico, e todos os contatos domiciliares devem passar por avaliação clínica (Fluxogramas 3 e 4 do Apêndice A). Recomenda-se ofertar imunoprofilaxia com BCG aos contatos maiores de 1 ano não vacinados ou que receberam apenas uma dose, com comprovação por cartão vacinal ou cicatriz; a revacinação é contraindicada em imunodeficiência primária ou adquirida, neoplasias malignas, corticoterapia em dose elevada por mais de duas semanas e gestação. O teste rápido anti-PGL-1 é aprovado no SUS exclusivamente para a investigação de contatos, e o qPCR em biópsia de pele ou nervo é usado na avaliação de contatos na Atenção Especializada. Contatos com sorologia anti-PGL-1 positiva sem critérios clínicos ou laboratoriais de doença devem ser avaliados anualmente na UBS; os contatos devem ser orientados ao automonitoramento e ao relato imediato de sinais suspeitos, e os diagnosticados devem iniciar PQT-U. A quimioprofilaxia com rifampicina em dose única é recomendada pela OMS (2018), mas não consta do PCDT 2022.",
+    "pontos_chave": [
+      {
+        "id": "T41-P1",
+        "afirmacao": "Contato é quem reside ou residiu, convive ou conviveu com o doente no âmbito domiciliar nos cinco anos anteriores ao diagnóstico, familiar ou não.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+        "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+        "trecho": "toda e qualquer pessoa que resida ou tenha residido, conviva ou tenha convivido com o doente de hanseníase, no âmbito domiciliar, nos últimos cinco anos anteriores ao diagnóstico da doença"
+      },
+      {
+        "id": "T41-P2",
+        "afirmacao": "Todos os contatos domiciliares devem passar por avaliação clínica, conforme os fluxogramas do PCDT.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+        "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+        "trecho": "orienta-se que todos os contatos domiciliares de um caso de hanseníase passem por avaliação clínica, conforme os Fluxogramas 3 e 4"
+      },
+      {
+        "id": "T41-P3",
+        "afirmacao": "Oferta de BCG (imunoprofilaxia) a contatos maiores de 1 ano não vacinados ou com apenas uma dose de BCG.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Recomenda-se ofertar imunoprofilaxia aos contatos de pacientes com hanseníase, maiores de um ano de idade, não vacinados ou que receberam apenas uma dose da vacina BCG."
+      },
+      {
+        "id": "T41-P4",
+        "afirmacao": "Contatos com anti-PGL-1 positivo e sem critérios diagnósticos devem ser reavaliados anualmente na UBS.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Contatos de hanseníase que possuam sorologia anti-PGL-1 positiva e que não apresentem critérios para o diagnóstico clínico ou laboratorial da doença deverão ser avaliados anualmente nas unidades básicas de saúde"
+      },
+      {
+        "id": "T41-P5",
+        "afirmacao": "Contatos diagnosticados com hanseníase devem iniciar PQT-U.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Os contatos diagnosticados com hanseníase devem ser encaminhados para iniciar a PQT-U."
+      },
+      {
+        "id": "T41-P6",
+        "afirmacao": "O teste rápido anti-PGL-1 é aprovado no SUS para uso exclusivo na investigação de contatos de casos confirmados.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0047",
+        "secao_ou_pagina": "7.6 Teste rápido imunocromatográfico para detecção de anticorpos IgM contra o M. leprae, p. 49 (PDF 51)",
+        "trecho": "O uso do teste rápido da hanseníase, no âmbito do SUS, está aprovado para uso exclusivo na investigação de contatos de casos confirmados de hanseníase."
+      }
+    ],
+    "pontos_proibidos": [
+      "Indicar BCG (revacinação) para gestantes, imunodeprimidos, pacientes com neoplasia maligna ou em corticoterapia em dose elevada por mais de duas semanas.",
+      "Afirmar que contatos sem diagnóstico de hanseníase devem receber PQT-U preventivamente.",
+      "Afirmar que um teste rápido anti-PGL-1 positivo, isoladamente, confirma o diagnóstico de hanseníase no contato.",
+      "Afirmar que só contatos com sintomas precisam ser avaliados.",
+      "Afirmar que o PCDT 2022 recomenda a quimioprofilaxia com rifampicina em dose única para contatos."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (cap. 13, 13.1, 7.6 e 7.7) descreve a definição de contato, a avaliação clínica, a BCG e suas contraindicações, o uso do teste rápido e do qPCR, o seguimento anual dos soropositivos e o encaminhamento à PQT-U. Atualizações normativas posteriores (por exemplo, Portarias SCTIE/MS de 2026) não estão no corpus.",
+    "comportamento_esperado": "Responder com a conduta do PCDT 2022: avaliação clínica de todos os contatos, BCG conforme critérios e contraindicações, teste rápido e qPCR como apoio, seguimento e PQT-U se houver diagnóstico. Pode mencionar que a OMS recomenda quimioprofilaxia com rifampicina em dose única, deixando claro que o PCDT 2022 do corpus não a inclui.",
+    "divergencias_entre_documentos": "OMS 2018 recomenda rifampicina em dose única (SDR) como quimioprofilaxia para contatos (adultos e crianças com 2 anos ou mais), após excluir hanseníase e tuberculose; o PCDT 2022 não inclui essa medida, e a Estratégia Nacional 2024-2030 prevê apenas pesquisas sobre a efetividade da quimioprofilaxia em contatos. A Estratégia Global da OMS 2021-2030 afirma que a repetição da vacinação BCG para hanseníase não é recomendada, enquanto o PCDT 2022 oferta BCG a contatos que receberam apenas uma dose. A referência segue o PCDT 2022.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-diretrizes-hanseniase-2018",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "ms-estrategia-nacional-hanseniase-2024-2030"
+    ],
+    "termos_buscados": ["contato", "contatos domiciliares", "investigação de contatos", "BCG", "imunoprofilaxia", "quimioprofilaxia", "rifampicina em dose única", "SDR", "teste rápido", "anti-PGL-1", "qPCR", "revacinação"]
+  },
+  {
+    "id": "T42",
+    "registro": "leigo",
+    "resposta_referencia": "Sim: pelo protocolo brasileiro (PCDT 2022), todas as pessoas que moram ou moraram com a pessoa com hanseníase nos últimos cinco anos devem ser examinadas no serviço de saúde. A vacina BCG é oferecida a quem tem mais de 1 ano e nunca tomou ou tomou só uma dose (confirmado pelo cartão de vacina ou pela cicatriz), mas não deve ser aplicada em gestantes, em pessoas com imunidade baixa, com câncer ou que usam corticoide em dose alta por mais de duas semanas. Quanto ao remédio preventivo (quimioprofilaxia com uma dose única do antibiótico rifampicina), a OMS o recomenda para contatos a partir de 2 anos, depois de descartar hanseníase e tuberculose, mas o protocolo brasileiro de 2022 incluído nos documentos não traz essa medida, e a Estratégia Nacional prevê pesquisas sobre sua efetividade. Os documentos não trazem a cobertura dessas medidas no seu município; essa informação deve ser buscada na secretaria municipal de saúde ou nos dados oficiais de vigilância.",
+    "pontos_chave": [
+      {
+        "id": "T42-P1",
+        "afirmacao": "Todos os contatos domiciliares devem passar por avaliação clínica.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+        "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+        "trecho": "orienta-se que todos os contatos domiciliares de um caso de hanseníase passem por avaliação clínica, conforme os Fluxogramas 3 e 4"
+      },
+      {
+        "id": "T42-P2",
+        "afirmacao": "A BCG é oferecida a contatos com mais de 1 ano que não foram vacinados ou receberam apenas uma dose.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Recomenda-se ofertar imunoprofilaxia aos contatos de pacientes com hanseníase, maiores de um ano de idade, não vacinados ou que receberam apenas uma dose da vacina BCG."
+      },
+      {
+        "id": "T42-P3",
+        "afirmacao": "A revacinação BCG é contraindicada em imunodeficiência, neoplasias malignas, corticoide em dose elevada e gestação.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "A revacinação com BCG é contraindicada nas seguintes situações: › Portadores de imunodeficiência primária ou adquirida; › Pacientes acometidos por neoplasias malignas;"
+      },
+      {
+        "id": "T42-P4",
+        "afirmacao": "A OMS recomenda rifampicina em dose única como prevenção para contatos (2 anos ou mais), após excluir hanseníase e tuberculose.",
+        "documento": "oms-diretrizes-hanseniase-2018",
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0039",
+        "secao_ou_pagina": "Parte II, 3 Profilaxia (3.1 Prevenção da hanseníase por quimioprofilaxia), p. 24–25 (PDF 42–43)",
+        "trecho": "O GDG recomenda o uso de SDR como tratamento preventivo para contatos de pacientes com hanseníase (adultos e crianças com idade igual ou superior a 2 anos), após a exclusão de casos de hanseníase e tuberculose"
+      },
+      {
+        "id": "T42-P5",
+        "afirmacao": "No Brasil, a Estratégia Nacional prevê pesquisas sobre a efetividade da quimioprofilaxia em contatos (não a adota como rotina no corpus).",
+        "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0027",
+        "secao_ou_pagina": "Ações estratégicas gerais (Pilar 2), p. 38–40 (PDF 39–41)",
+        "trecho": "6. Fomento a pesquisas sobre a efetividade da quimioprofilaxia em contatos."
+      }
+    ],
+    "pontos_proibidos": [
+      "Informar números ou percentuais de cobertura de avaliação de contatos, BCG ou quimioprofilaxia no município do usuário como se viessem dos documentos.",
+      "Dizer que a BCG pode ser aplicada em gestantes ou em pessoas com imunidade baixa.",
+      "Afirmar que o protocolo brasileiro de 2022 recomenda dar rifampicina preventiva aos contatos.",
+      "Dizer que quem mora com a pessoa não precisa ser examinado se não tiver sintomas."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "A parte sobre avaliação, BCG e quimioprofilaxia é respondida pelo PCDT 2022, pelas diretrizes da OMS 2018 e pela Estratégia Nacional. A cobertura dessas medidas no município do usuário não está em nenhum documento do corpus.",
+    "comportamento_esperado": "Responder em linguagem simples sobre avaliação dos contatos, BCG (com contraindicações) e a situação da quimioprofilaxia (recomendada pela OMS, não incluída no PCDT 2022). Declarar que a cobertura municipal não consta dos documentos, sem inventar dados, e indicar a secretaria municipal de saúde ou os sistemas oficiais de informação.",
+    "divergencias_entre_documentos": "OMS 2018 e Estratégia Global 2021-2030 recomendam quimioprofilaxia com rifampicina em dose única para contatos; o PCDT 2022 não a inclui e a Estratégia Nacional 2024-2030 prevê pesquisas sobre sua efetividade. A Estratégia Global afirma que a repetição da BCG para hanseníase não é recomendada, enquanto o PCDT 2022 oferta BCG a quem recebeu apenas uma dose. A referência segue o PCDT 2022.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-diretrizes-hanseniase-2018",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "ms-estrategia-nacional-hanseniase-2024-2030"
+    ],
+    "termos_buscados": ["contato", "contatos domiciliares", "BCG", "revacinação", "imunoprofilaxia", "quimioprofilaxia", "rifampicina em dose única", "SDR", "cobertura", "município"]
+  },
+  {
+    "id": "T43",
+    "registro": "leigo",
+    "resposta_referencia": "O estigma da hanseníase se formou ao longo de muitos anos de superstições e informações erradas sobre como a doença passa de uma pessoa para outra e sobre sua cura, somadas ao medo das sequelas físicas que ela pode deixar quando é descoberta tarde. Esse estigma é feito de fantasias, medos e valores da sociedade, e esse receio pode atingir a comunidade e até os profissionais de saúde. A discriminação é o tratamento injusto ou negativo dado a alguém por ter a doença e pode trazer prejuízos à saúde física, mental e social, além de desemprego. A OMS lembra que o estigma e a discriminação contra as pessoas afetadas e suas famílias são quase tão antigos quanto os registros históricos. Por medo da rejeição, a pessoa pode esconder sintomas e se isolar, o que atrapalha o diagnóstico e o tratamento.",
+    "pontos_chave": [
+      {
+        "id": "T43-P1",
+        "afirmacao": "O estigma se desenvolveu ao longo de anos de superstições e enganos, ligados às crenças sobre transmissão e cura.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+        "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+        "trecho": "Na hanseníase, o estigma se desenvolveu ao longo de muitos anos de superstições e enganos, estabelecendo discriminação e exclusão social em virtude das crenças sobre sua transmissão e cura"
+      },
+      {
+        "id": "T43-P2",
+        "afirmacao": "O medo da incapacidade física causada pelo diagnóstico tardio contribui para o estigma.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+        "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+        "trecho": "além do temor da incapacidade física que a doença pode ocasionar em decorrência do diagnóstico tardio"
+      },
+      {
+        "id": "T43-P3",
+        "afirmacao": "O estigma envolve fantasias, medos e valores e pode causar prejuízos à saúde física, psicológica e social e desemprego.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+        "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+        "trecho": "O estigma ligado à hanseníase é representado por um conjunto de fatores: fantasias, medos, valores, entre outros, podendo causar prejuízos à saúde física, psicológica e social, assim como o desemprego"
+      },
+      {
+        "id": "T43-P4",
+        "afirmacao": "O receio associado à doença pode se estender à comunidade e aos profissionais de saúde.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+        "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+        "trecho": "Esse receio pode se estender à comunidade e aos profissionais de saúde."
+      },
+      {
+        "id": "T43-P5",
+        "afirmacao": "O estigma e a discriminação contra pessoas afetadas e suas famílias são historicamente muito antigos.",
+        "documento": "oms-estrategia-global-hanseniase-2021-2030",
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028",
+        "secao_ou_pagina": "Pilar estratégico 4, p. 18 (PDF 18)",
+        "trecho": "O estigma e a discriminação contra as pessoas afetadas pela hanseníase e suas famílias são quase tão antigos quanto os registros históricos."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que o estigma se justifica porque a hanseníase seria incurável ou que a pessoa em tratamento deve ser isolada.",
+      "Atribuir o estigma a uma culpa da própria pessoa acometida."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (10.2.1.1) explica a origem do estigma e da discriminação, e a Estratégia Global da OMS (Pilar 4) complementa com o caráter histórico e os efeitos sociais.",
+    "comportamento_esperado": "Responder em linguagem simples, explicando as causas do estigma (crenças erradas sobre transmissão e cura, medo das incapacidades, história antiga de discriminação) e suas consequências.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "ms-estrategia-nacional-hanseniase-2024-2030"
+    ],
+    "termos_buscados": ["estigma", "discriminação", "preconceito", "superstições", "exclusão social", "registros históricos", "colônias"]
+  },
+  {
+    "id": "T44",
+    "registro": "técnico",
+    "resposta_referencia": "Historicamente, o estigma se construiu ao longo de muitos anos de superstições e enganos sobre transmissão e cura, e a OMS o descreve como quase tão antigo quanto os registros históricos, incluindo leis e regulamentos que discriminam e segregam ou isolam compulsoriamente as pessoas afetadas, que devem ser revogados. Socialmente, contribuem o temor das incapacidades decorrentes do diagnóstico tardio, a vulnerabilidade social e econômica (desemprego, perda de renda) e o receio que se estende à comunidade e aos profissionais; institucionalmente, serviços públicos e privados reproduzem comportamentos discriminatórios, como negação de atendimento, abusos e transferência de cuidados. Na assistência, o PCDT 2022 propõe identificar os níveis do estigma (autoestigma, interpessoal, comunitário, organizacional/institucional e estrutural) e intervir em cada um, aplicar a Escala de Estigma EMIC-AP no segundo mês de tratamento (e no pós-alta recente ou durante reações) e a Escala de Participação. Também recomenda capacitar as equipes, praticar escuta e acolhimento, comunicar o diagnóstico de forma sensível, criar ouvidorias e espaços de educação permanente, formar grupos de autocuidado e articular a RAPS e o SUAS. A Estratégia Nacional 2024-2030 tem como meta dar providência a 100% das manifestações sobre práticas discriminatórias registradas nas Ouvidorias do SUS.",
+    "pontos_chave": [
+      {
+        "id": "T44-P1",
+        "afirmacao": "Fator histórico: o estigma resulta de muitos anos de superstições e enganos sobre transmissão e cura.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+        "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+        "trecho": "Na hanseníase, o estigma se desenvolveu ao longo de muitos anos de superstições e enganos, estabelecendo discriminação e exclusão social em virtude das crenças sobre sua transmissão e cura"
+      },
+      {
+        "id": "T44-P2",
+        "afirmacao": "Fator institucional: serviços de saúde públicos e privados reproduzem comportamentos discriminatórios.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0090",
+        "secao_ou_pagina": "10.2.1.2 Estigma e discriminação nos serviços de saúde, p. 79–80 (PDF 81–82)",
+        "trecho": "tanto os serviços públicos quanto os privados acabam por reproduzir comportamentos discriminatórios frente aos pacientes."
+      },
+      {
+        "id": "T44-P3",
+        "afirmacao": "Leis e regulamentações que permitem discriminação devem ser revogadas ou corrigidas.",
+        "documento": "oms-estrategia-global-hanseniase-2021-2030",
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028",
+        "secao_ou_pagina": "Pilar estratégico 4, p. 18 (PDF 18)",
+        "trecho": "As leis e regulamentações que permitem a discriminação contra as pessoas afetadas pela hanseníase devem ser revogadas ou corrigidas sem demora"
+      },
+      {
+        "id": "T44-P4",
+        "afirmacao": "O enfrentamento exige identificar os níveis do estigma e intervir em cada um.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0091",
+        "secao_ou_pagina": "10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação, p. 80–81 (PDF 82–83)",
+        "trecho": "Para tratá-lo, é preciso identificar os seus níveis e abordar cada um deles da melhor maneira possível."
+      },
+      {
+        "id": "T44-P5",
+        "afirmacao": "Aplicar a Escala de Estigma (EMIC) no segundo mês de tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0092",
+        "secao_ou_pagina": "10.2.1.5 Profissionais de saúde, p. 81–82 (PDF 83–84)",
+        "trecho": "Uma das estratégias pensadas em relação à atuação do profissional de saúde é a aplicação da Escala de Estigma (EMIC) no segundo mês de tratamento do paciente acometido pela hanseníase"
+      },
+      {
+        "id": "T44-P6",
+        "afirmacao": "Capacitar a equipe de saúde com informações sobre a hanseníase é estratégia de enfrentamento nos serviços.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0097",
+        "secao_ou_pagina": "10.2.1.7.2 Direcionando uma intervenção, p. 84–85 (PDF 86–87)",
+        "trecho": "capacitar a equipe de saúde, a partir do fornecimento de informações acerca das condições que envolvem direta e indiretamente a hanseníase"
+      }
+    ],
+    "pontos_proibidos": [
+      "Recomendar isolamento ou segregação de pessoas com hanseníase.",
+      "Afirmar que o enfrentamento ao estigma não faz parte do tratamento (o PCDT considera o tratamento completo apenas com essa intervenção).",
+      "Orientar a divulgação do diagnóstico a terceiros sem o consentimento do paciente."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (10.2.1) descreve os fatores históricos, sociais e institucionais e as estratégias de enfrentamento na assistência; a Estratégia Global da OMS (Pilar 4 e Anexo 2) e a Estratégia Nacional 2024-2030 (meta 4 e ações) complementam.",
+    "comportamento_esperado": "Responder com terminologia técnica, cobrindo fatores históricos, sociais e institucionais e as estratégias de enfrentamento na assistência (níveis de estigma, EMIC e Escala de Participação, capacitação, acolhimento, ouvidorias, grupos de autocuidado, RAPS e SUAS).",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "ms-estrategia-nacional-hanseniase-2024-2030",
+      "oms-diretrizes-hanseniase-2018"
+    ],
+    "termos_buscados": ["estigma", "discriminação", "preconceito", "EMIC", "Escala de Participação", "isolamento", "compulsória", "colônias", "leis discriminatórias", "ouvidorias", "acolhimento", "RAPS", "SUAS"]
+  },
+  {
+    "id": "T45",
+    "registro": "técnico",
+    "resposta_referencia": "A Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030, elaborada a partir da Estratégia Global da OMS 2021-2030, tem como objetivo geral reduzir a carga da hanseníase no Brasil e fixa três metas epidemiológicas e uma social: interrupção da transmissão em 99% dos municípios, eliminação da doença em 75% dos municípios, redução de 20% do número absoluto de casos novos com GIF2 no diagnóstico e providência a 100% das manifestações sobre práticas discriminatórias registradas nas Ouvidorias do SUS. As ações se organizam em quatro alicerces transversais (vigilância em saúde; inclusão social, direitos humanos e enfrentamento ao estigma e à discriminação; pesquisa; informação e comunicação) e três pilares (gestão do Programa Nacional, diagnóstico precoce por busca ativa de casos e contatos, e assistência integral conforme o PCDT). Os dados epidemiológicos mais recentes do corpus são de 2022: 19.635 casos novos, com taxa de detecção de 9,67 por 100 mil habitantes. O resultado epidemiológico nacional após o período coberto pelos documentos não está no corpus e deve ser buscado nos boletins epidemiológicos oficiais do Ministério da Saúde.",
+    "pontos_chave": [
+      {
+        "id": "T45-P1",
+        "afirmacao": "Meta 1: interrupção da transmissão em 99% dos municípios.",
+        "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0013",
+        "secao_ou_pagina": "Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 (Metas), p. 20–22 (PDF 21–23)",
+        "trecho": "Interrupção da transmissão em 99% dos municípios."
+      },
+      {
+        "id": "T45-P2",
+        "afirmacao": "Meta 2: eliminação da doença em 75% dos municípios.",
+        "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0013",
+        "secao_ou_pagina": "Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 (Metas), p. 20–22 (PDF 21–23)",
+        "trecho": "Eliminação da doença em 75% dos municípios."
+      },
+      {
+        "id": "T45-P3",
+        "afirmacao": "Meta 3: reduzir em 20% o número absoluto de casos novos com GIF2 no diagnóstico.",
+        "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0013",
+        "secao_ou_pagina": "Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 (Metas), p. 20–22 (PDF 21–23)",
+        "trecho": "Reduzir em 20% o número absoluto de casos novos com GIF2 no momento do diagnóstico."
+      },
+      {
+        "id": "T45-P4",
+        "afirmacao": "Pilares: gestão do programa, diagnóstico precoce por detecção ativa e assistência integral.",
+        "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0018",
+        "secao_ou_pagina": "Definição das ações estratégicas, p. 26–28 (PDF 27–29)",
+        "trecho": "◆ Gestão do Programa Nacional de Hanseníase. ◆ Diagnóstico precoce por meio da detecção ativa de casos. ◆ Assistência integral à pessoa acometida pela hanseníase."
+      },
+      {
+        "id": "T45-P5",
+        "afirmacao": "Alicerces: vigilância; inclusão social, direitos humanos e enfrentamento ao estigma; pesquisa; informação e comunicação.",
+        "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0018",
+        "secao_ou_pagina": "Definição das ações estratégicas, p. 26–28 (PDF 27–29)",
+        "trecho": "◆ Vigilância em saúde. ◆ Inclusão social, direitos humanos e enfrentamento ao estigma e à discriminação. ◆ Pesquisa. ◆ Informação e comunicação."
+      },
+      {
+        "id": "T45-P6",
+        "afirmacao": "O dado nacional mais recente do corpus é de 2022 (19.635 casos novos; 9,67/100 mil hab.).",
+        "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+        "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0007",
+        "secao_ou_pagina": "Contexto geral > Dados epidemiológicos > No Brasil, p. 14–15 (PDF 15–16)",
+        "trecho": "Em 2022, foram registrados 19.635 casos novos no País, perfazendo uma taxa de detecção de 9,67 casos novos por 100 mil habitantes"
+      }
+    ],
+    "pontos_proibidos": [
+      "Apresentar números de casos ou taxas de 2023 em diante como se constassem dos documentos.",
+      "Afirmar que as metas da Estratégia Nacional 2024-2030 já foram alcançadas.",
+      "Atribuir à Estratégia Nacional metas diferentes das quatro previstas (99%, 75%, 20% e 100%)."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "As diretrizes (missão, visão, metas, alicerces e pilares) da Estratégia Nacional 2024-2030 estão no corpus; os dados epidemiológicos vão apenas até 2022, e o resultado nacional posterior ao período dos documentos não está no corpus.",
+    "comportamento_esperado": "Descrever metas, alicerces e pilares da Estratégia Nacional; informar que os dados mais recentes do corpus são de 2022 e declarar que o resultado epidemiológico posterior não consta dos documentos, indicando os boletins epidemiológicos oficiais do Ministério da Saúde, sem inventar números.",
+    "divergencias_entre_documentos": "Inconsistência interna na Estratégia Nacional: o quadro inicial traz 'MISSÃO: Um Brasil sem hanseníase' e 'VISÃO: Reduzir a carga da hanseníase no Brasil', mas o texto seguinte fala em 'visão de um Brasil sem hanseníase' e 'missão até 2030 é reduzir a carga'. As metas 1 e 2 baseiam-se em guia técnico da OMS de 2023, que não está no corpus.",
+    "documentos_consultados": [
+      "ms-estrategia-nacional-hanseniase-2024-2030",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "ms-pcdt-hanseniase-2022"
+    ],
+    "termos_buscados": ["Estratégia Nacional", "metas", "pilares", "alicerces", "missão", "visão", "taxa de detecção", "casos novos", "2022", "2023", "2024", "GIF2"]
+  },
+  {
+    "id": "T46",
+    "registro": "leigo",
+    "resposta_referencia": "Os documentos usados como base não informam qual laboratório ou empresa fabrica os medicamentos usados no tratamento da hanseníase no Brasil. O protocolo brasileiro diz apenas que os remédios são disponibilizados exclusivamente para o tratamento da hanseníase e distribuídos pelo SUS, em apresentações para adultos e crianças, e um documento da OMS menciona, sem dar nomes, que as cartelas podem ser doadas por uma empresa farmacêutica e distribuídas pela OMS aos programas nacionais. Para saber o fabricante, é preciso consultar o Ministério da Saúde ou as informações da embalagem e da bula do medicamento.",
+    "pontos_chave": [],
+    "pontos_proibidos": [
+      "Citar o nome de qualquer laboratório, empresa ou fabricante como responsável pelos medicamentos da hanseníase no Brasil, pois nenhum documento do corpus traz essa informação.",
+      "Afirmar que o paciente precisa comprar os medicamentos da PQT-U em farmácia."
+    ],
+    "cobertura": "nao_respondivel",
+    "justificativa_cobertura": "Nenhum documento do corpus nomeia o fabricante dos medicamentos. O PCDT 2022 (10.1.1) afirma apenas que são distribuídos pelo SUS, e as diretrizes da OMS 2018 mencionam doação por 'uma empresa farmacêutica' sem nomeá-la.",
+    "comportamento_esperado": "Reconhecer que os documentos não informam o fabricante, não inventar nomes e indicar o Ministério da Saúde ou a embalagem e a bula como fontes. Pode mencionar que os medicamentos são distribuídos pelo SUS.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-diretrizes-hanseniase-2018",
+      "ms-estrategia-nacional-hanseniase-2024-2030",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "oms-reacoes-incapacidades-2020"
+    ],
+    "termos_buscados": ["fabricante", "fabrica", "laboratório", "Novartis", "Farmanguinhos", "doação", "doado", "empresa farmacêutica", "manufactured", "donation", "blister", "Assistência Farmacêutica", "Rename"]
+  },
+  {
+    "id": "T47",
+    "registro": "leigo",
+    "resposta_referencia": "Os documentos usados como base não dizem quais outras doenças de pele podem se parecer com hanseníase nem como tratá-las; eles tratam apenas da hanseníase. O protocolo brasileiro orienta que, quando houver dúvida sobre o diagnóstico na unidade básica de saúde, a pessoa seja encaminhada para um serviço especializado. O tratamento de outra doença de pele depende de qual doença é, e isso precisa ser definido por um profissional de saúde, com base em fontes próprias para essa doença.",
+    "pontos_chave": [],
+    "pontos_proibidos": [
+      "Recomendar um tratamento específico (por exemplo, pomadas, antifúngicos ou corticoides) para outra doença de pele como se estivesse nos documentos.",
+      "Recomendar iniciar a PQT-U em quem tem lesão de pele sem diagnóstico confirmado de hanseníase."
+    ],
+    "cobertura": "nao_respondivel",
+    "justificativa_cobertura": "O corpus não lista dermatoses que fazem diagnóstico diferencial com hanseníase nem os tratamentos delas. Só lista neuropatias para o diagnóstico diferencial da forma neural pura (PCDT 6.4.5) e orienta encaminhar para a Atenção Secundária em caso de dúvida diagnóstica (PCDT 6.1).",
+    "comportamento_esperado": "Reconhecer que os documentos não respondem, não inventar tratamentos e orientar a procurar avaliação profissional; pode citar o encaminhamento para atenção especializada em caso de dúvida diagnóstica.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-diretrizes-hanseniase-2018",
+      "oms-reacoes-incapacidades-2020",
+      "oms-estrategia-global-hanseniase-2021-2030"
+    ],
+    "termos_buscados": ["diagnóstico diferencial", "diferencial", "outras doenças", "dermatoses", "micose", "pitiríase", "vitiligo", "psoríase", "eczema", "differential diagnosis", "mimic", "DTNs de pele", "suspeição diagnóstica"]
+  },
+  {
+    "id": "T48",
+    "registro": "técnico",
+    "resposta_referencia": "O corpus não traz orientação explícita sobre jejum no dia da dose mensal supervisionada da PQT-U. A informação disponível no PCDT 2022 (10.1.5.1) é que a absorção da rifampicina, componente da dose supervisionada (600 mg no esquema adulto), é reduzida em cerca de 30% quando ingerida com alimentos, devendo ser administrada com o estômago vazio, uma hora antes ou duas horas após as refeições. Em contrapartida, o mesmo PCDT informa que alimentos aumentam a taxa e a extensão da absorção da clofazimina, também presente na dose supervisionada, e não define como conciliar as duas orientações na tomada conjunta.",
+    "pontos_chave": [
+      {
+        "id": "T48-P1",
+        "afirmacao": "A absorção da rifampicina cai cerca de 30% com alimentos; deve ser administrada com estômago vazio, 1 h antes ou 2 h após as refeições.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0065",
+        "secao_ou_pagina": "10.1.5.1 Rifampicina, p. 63–64 (PDF 65–66)",
+        "trecho": "A absorção da rifampicina é reduzida em cerca de 30% quando o medicamento é ingerido com alimentos e, por isso, deve ser administrada com o estômago vazio, uma hora antes ou duas horas após refeições."
+      },
+      {
+        "id": "T48-P2",
+        "afirmacao": "A dose mensal supervisionada (adulto) contém rifampicina 600 mg, clofazimina 300 mg e dapsona 100 mg.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1), p. 57–58 (PDF 59–60)",
+        "trecho": "Dose mensal supervisionada: •Rifampicina 600mg •Clofazimina 300mg •Dapsona 100mg"
+      },
+      {
+        "id": "T48-P3",
+        "afirmacao": "Alimentos aumentam a taxa e a extensão da absorção da clofazimina.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0067",
+        "secao_ou_pagina": "10.1.5.2 Clofazimina, p. 64 (PDF 66)",
+        "trecho": "As concentrações séricas máximas são geralmente atingidas em quatro a 12 horas na administração com alimentos, que aumentam a taxa e a extensão da absorção do fármaco."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a rifampicina deve ser tomada junto com refeições para melhorar a absorção.",
+      "Afirmar que o PCDT exige jejum de um número específico de horas ou desde a noite anterior.",
+      "Afirmar que o paciente deve pular a dose supervisionada se tiver se alimentado."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "O corpus não tem orientação direta sobre jejum no dia da dose supervisionada. Tem apenas a orientação farmacocinética da rifampicina (estômago vazio, 1 h antes ou 2 h após refeições) e a informação de que alimentos aumentam a absorção da clofazimina, sem uma regra única para a tomada conjunta.",
+    "comportamento_esperado": "Informar a orientação do PCDT sobre a rifampicina (estômago vazio, 1 h antes ou 2 h após refeições) e a informação sobre a clofazimina, e declarar que os documentos não trazem orientação explícita de jejum para o dia da dose supervisionada.",
+    "divergencias_entre_documentos": "Tensão interna no PCDT 2022: a rifampicina deve ser administrada com o estômago vazio, enquanto a absorção da clofazimina, que integra a mesma dose supervisionada, aumenta com alimentos. Os documentos da OMS do corpus não tratam do tema.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-diretrizes-hanseniase-2018",
+      "oms-reacoes-incapacidades-2020"
+    ],
+    "termos_buscados": ["jejum", "estômago vazio", "alimentos", "refeições", "dose supervisionada", "absorção", "food", "meal", "empty stomach", "fasting"]
+  },
+  {
+    "id": "T49",
+    "registro": "leigo",
+    "resposta_referencia": "O conteúdo detalhado das partes do PCDT da hanseníase que ficaram de fora não está no conjunto de documentos deste estudo, então não é possível descrevê-lo. O que o conjunto registra é apenas quais partes foram excluídas: as referências, os apêndices (fluxogramas e metodologia de busca) e os anexos (portaria, painel GRADE e formulários). Para conhecer esse conteúdo, é preciso consultar a versão completa do PCDT publicada pelo Ministério da Saúde.",
+    "pontos_chave": [],
+    "pontos_proibidos": [
+      "Descrever passo a passo os fluxogramas, o texto da portaria, o painel GRADE ou os formulários do PCDT como se estivessem no conjunto documental.",
+      "Afirmar que o conjunto documental contém os apêndices ou anexos do PCDT."
+    ],
+    "cobertura": "nao_respondivel",
+    "justificativa_cobertura": "O cabeçalho do corpus do PCDT registra que foram excluídos referências, apêndices (fluxogramas e metodologia de busca) e anexos (portaria, painel GRADE e formulários), mas o conteúdo dessas seções não está no corpus. O texto do PCDT apenas remete a eles (por exemplo, 'Fluxogramas 3 e 4 do Apêndice A', 'Anexo E', 'Anexo F').",
+    "comportamento_esperado": "Reconhecer que o conteúdo das seções excluídas não está disponível, podendo dizer quais seções foram excluídas, sem inventar o conteúdo, e indicar a versão integral do PCDT publicada pelo Ministério da Saúde.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022"
+    ],
+    "termos_buscados": ["Exclusões", "Apêndice A", "Fluxograma", "Anexo", "Anexo E", "Anexo F", "painel GRADE", "metodologia de busca", "referências"]
+  },
+  {
+    "id": "T50",
+    "registro": "leigo",
+    "resposta_referencia": "Os documentos usados como base não trazem o número de casos novos de hanseníase no seu município em 2026; os dados mais recentes que eles apresentam são nacionais e estaduais de 2022. Para saber esse número, procure a secretaria municipal de saúde ou os dados oficiais de notificação de doenças (Sinan) divulgados pelo Ministério da Saúde.",
+    "pontos_chave": [],
+    "pontos_proibidos": [
+      "Informar qualquer número de casos novos de hanseníase em um município em 2026.",
+      "Apresentar dados nacionais ou estaduais de 2022 como se fossem do município do usuário em 2026."
+    ],
+    "cobertura": "nao_respondivel",
+    "justificativa_cobertura": "O corpus não contém dados municipais nem dados de 2026. A Estratégia Nacional 2024-2030 traz apenas dados nacionais e estaduais até 2022.",
+    "comportamento_esperado": "Reconhecer que os documentos não respondem, não inventar números e indicar a secretaria municipal de saúde e o Sinan/Ministério da Saúde como fontes.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-estrategia-nacional-hanseniase-2024-2030",
+      "ms-pcdt-hanseniase-2022",
+      "oms-estrategia-global-hanseniase-2021-2030"
+    ],
+    "termos_buscados": ["município", "municípios", "casos novos", "2026", "2025", "2024", "2023", "Sinan", "taxa de detecção"]
+  }
+]

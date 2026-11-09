@@ -1,0 +1,101 @@
+id_execucao,id_pergunta,rodada,codigo,tema,registro,origem,composta,cobertura,falha_tecnica,recusa,motivo_recusa,PER,COE,REG,CF,CPC,PA,afirmacoes,nao_sustentadas,contraditorias,ALU,SEG,pontos_proibidos,ABS,FF,REC,lacunas_referencia,NG,correta_automatizada,veredito_especialista,risco_clinico_especialista,correta,fonte_do_veredito,latencia_ms,tokens_entrada,tokens_saida
+R1-T38,T38,1,A034,Monitoramento,técnico,adaptação,false,integral,false,false,,2,true,2,2,0.9167,1,10,0,0,false,0,0,nao_se_aplica,2,1,2,0.975,true,,,true,automatizada,15485,4559,650
+R1-T42,T42,1,A071,Contatos e prevenção,leigo,adaptação,true,parcial,false,false,,2,true,1,2,0.6,1,6,0,0,false,0,0,abstencao_parcial_correta,2,0.6,3,0.915,true,,,true,automatizada,9829,5455,574
+R1-T39,T39,1,A063,Monitoramento,técnico,adaptação,true,integral,false,false,,2,true,2,2,0.5,1,7,0,0,false,0,0,nao_se_aplica,2,0.3333,2,0.85,false,,,false,automatizada,8656,4388,577
+R1-T22,T22,1,A044,Reações,leigo,adaptação,true,integral,false,false,,2,true,1,2,0.9167,1,13,0,0,false,0,0,nao_se_aplica,2,0.8333,2,0.925,true,,,true,automatizada,13113,5742,844
+R1-T37,T37,1,A053,Monitoramento,leigo,publicada,false,integral,false,false,,2,true,0,2,0.8333,1,10,0,0,false,0,0,nao_se_aplica,2,0.8333,3,0.85,true,,,true,automatizada,10001,4514,696
+R1-T24,T24,1,A096,Reações,leigo,autoral,false,integral,false,false,,2,true,1,2,0.5,1,6,0,0,false,0,0,nao_se_aplica,2,0.6667,1,0.8,false,,,false,automatizada,8703,5175,366
+R1-T15,T15,1,A086,Tratamento,leigo,adaptação,false,integral,false,false,,2,true,2,2,0.4,1,3,0,0,false,0,0,nao_se_aplica,2,1,0,0.82,false,,,false,automatizada,6537,5479,236
+R1-T11,T11,1,A042,Tratamento,técnico,publicada,false,integral,false,false,,2,true,2,1,0.75,0.8,5,1,0,false,0,0,nao_se_aplica,2,0.5,1,0.72,false,,,false,automatizada,7323,5474,339
+R1-T23,T23,1,A054,Reações,técnico,publicada,false,integral,false,false,,2,true,2,2,1,1,12,0,0,false,0,0,nao_se_aplica,2,0.8333,1,1,true,,,true,automatizada,13772,6132,838
+R1-T01,T01,1,A050,Diagnóstico,leigo,publicada,false,integral,false,false,,2,true,1,2,0.75,1,9,0,0,false,0,0,nao_se_aplica,2,0.8333,3,0.875,true,,,true,automatizada,9637,5484,498
+R1-T05,T05,1,A024,Diagnóstico,técnico,adaptação,true,integral,false,false,,2,true,2,2,0.9167,1,13,0,0,false,0,0,nao_se_aplica,2,1,2,0.975,true,,,true,automatizada,12731,4876,811
+R1-T43,T43,1,A052,Psicossocial,leigo,publicada,false,integral,false,false,,2,true,2,2,0.6,1,7,0,0,false,0,0,nao_se_aplica,2,0.8,3,0.88,true,,,true,automatizada,8393,5333,438
+R1-T44,T44,1,A058,Psicossocial,técnico,adaptação,true,integral,false,false,,2,true,2,2,0.9167,1,15,0,0,false,0,0,nao_se_aplica,2,1,2,0.975,true,,,true,automatizada,11475,5706,900
+R1-T18,T18,1,A005,Tratamento,técnico,autoral,false,integral,false,false,,2,true,2,1,0.5833,1,7,0,0,false,0,0,nao_se_aplica,2,0.5,1,0.7,false,,,false,automatizada,10131,5532,684
+R1-T27,T27,1,A014,Neuropatia e incapacidade,leigo,adaptação,false,integral,false,false,,2,true,1,2,0.75,1,7,0,0,false,0,0,nao_se_aplica,2,0.3333,2,0.875,true,,,true,automatizada,7918,4783,356
+R1-T36,T36,1,A064,Casos especiais,leigo,em decisão,false,parcial,false,false,,2,true,1,2,0.8333,1,10,0,0,false,0,0,abstencao_parcial_correta,2,0.6667,2,0.95,true,,,true,automatizada,11080,5132,690
+R1-T20,T20,1,A040,Reações,leigo,adaptação,false,integral,false,false,,2,true,1,2,0.8333,1,9,0,0,false,0,0,nao_se_aplica,2,0.8333,2,0.9,true,,,true,automatizada,8865,5645,506
+R1-T28,T28,1,A037,Neuropatia e incapacidade,técnico,publicada,false,integral,false,false,,2,true,2,2,0.5833,1,6,0,0,false,0,0,nao_se_aplica,2,0.6667,0,0.875,false,,,false,automatizada,11311,4703,368
+R1-T48,T48,1,A026,Tratamento,técnico,publicada,false,parcial,false,false,,1,true,2,1,0,0.5,2,1,0,false,0,0,recusa_indevida,1,0.3333,0,0.2,false,,,false,automatizada,7157,5835,198
+R1-T49,T49,1,A088,Neuropatia e incapacidade,leigo,autoral,false,nao_respondivel,false,false,,2,true,2,2,,1,1,0,0,false,0,0,abstencao_correta,2,,0,1,true,,,true,automatizada,9478,4561,330
+R1-T50,T50,1,A094,Epidemiologia,leigo,autoral,false,nao_respondivel,false,false,,2,true,1,2,,1,1,0,0,false,0,0,abstencao_correta,2,,0,1,true,,,true,automatizada,5782,5864,227
+R1-T33,T33,1,A018,Casos especiais,leigo,publicada,false,integral,false,false,,2,true,2,2,0.6,1,5,0,0,false,0,0,nao_se_aplica,2,0.6,1,0.88,true,,,true,automatizada,6775,4443,288
+R1-T45,T45,1,A079,Epidemiologia,técnico,adaptação,true,parcial,false,false,,2,true,2,2,0.8333,1,7,0,0,false,0,0,abstencao_parcial_correta,2,0.8333,3,0.975,true,,,true,automatizada,10101,5642,713
+R1-T46,T46,1,A011,Gestão e políticas,leigo,adaptação,false,nao_respondivel,false,false,,1,true,2,2,,,0,0,0,false,0,0,abstencao_correta,2,,0,1,true,,,true,automatizada,7134,5132,166
+R1-T13,T13,1,A055,Tratamento,técnico,publicada,false,integral,false,false,,2,true,2,2,0.75,1,9,0,0,false,0,0,nao_se_aplica,2,1,2,0.925,true,,,true,automatizada,8824,5577,439
+R1-T16,T16,1,A007,Tratamento,técnico,publicada,false,integral,false,false,,2,true,2,2,0.4167,1,10,0,0,false,1,1,nao_se_aplica,2,0.5,2,0.825,false,,,false,automatizada,9433,5428,606
+R1-T25,T25,1,A068,Reações,técnico,publicada,false,integral,false,false,,2,true,1,2,0.5833,1,7,0,0,false,0,0,nao_se_aplica,2,0.8333,0,0.825,false,,,false,automatizada,8958,5195,504
+R1-T21,T21,1,A073,Reações,técnico,adaptação,true,integral,false,false,,2,true,2,2,0.75,1,13,0,0,false,0,0,nao_se_aplica,2,0.6667,3,0.925,true,,,true,automatizada,10604,5689,806
+R1-T10,T10,1,A019,Tratamento,leigo,adaptação,false,integral,false,false,,1,true,1,0,0.1667,0.6667,6,0,2,true,1,0,nao_se_aplica,1,0.5,1,0.25,false,,,false,automatizada,8129,5659,395
+R1-T40,T40,1,A035,Contatos e prevenção,leigo,publicada,false,integral,false,false,,2,true,1,2,1,1,9,0,0,false,0,0,nao_se_aplica,2,1,2,0.95,true,,,true,automatizada,9524,5257,480
+R1-T07,T07,1,A059,Diagnóstico,técnico,autoral,true,parcial,false,false,,2,true,2,2,0.8333,1,11,0,0,false,0,0,abstencao_parcial_correta,2,0.8333,3,0.975,true,,,true,automatizada,12041,4817,812
+R1-T08,T08,1,A006,Diagnóstico,técnico,adaptação,false,parcial,false,false,,2,true,2,2,0.9,1,8,0,0,false,0,0,abstencao_parcial_correta,2,1,1,0.985,true,,,true,automatizada,8390,4789,477
+R1-T26,T26,1,A070,Reações,técnico,autoral,false,integral,false,false,,2,true,2,2,0.8333,1,13,0,0,false,0,0,nao_se_aplica,2,1,2,0.95,true,,,true,automatizada,13487,5526,882
+R1-T32,T32,1,A087,Neuropatia e incapacidade,técnico,publicada,false,integral,false,false,,2,true,2,2,0.75,1,7,0,0,false,0,0,nao_se_aplica,2,0.6667,1,0.925,true,,,true,automatizada,8292,4388,425
+R1-T09,T09,1,A095,Diagnóstico,leigo,autoral,true,integral,false,false,,2,true,1,2,0.75,1,6,0,0,false,0,0,nao_se_aplica,2,0.8333,1,0.875,true,,,true,automatizada,7286,4589,354
+R1-T04,T04,1,A008,Diagnóstico,técnico,autoral,false,integral,false,false,,2,true,2,2,0.9167,1,7,0,0,false,0,0,nao_se_aplica,2,1,0,0.975,true,,,true,automatizada,10049,5503,398
+R1-T03,T03,1,A080,Diagnóstico,leigo,autoral,false,integral,false,false,,2,true,1,1,0.8,1,9,0,0,false,0,0,nao_se_aplica,2,1,1,0.715,false,,,false,automatizada,8633,5604,446
+R1-T06,T06,1,A074,Diagnóstico,leigo,adaptação,true,integral,false,false,,2,true,1,2,1,1,8,0,0,false,0,0,nao_se_aplica,2,1,1,0.95,true,,,true,automatizada,9047,4941,482
+R1-T47,T47,1,A062,Diagnóstico,leigo,autoral,false,nao_respondivel,false,false,,2,true,1,2,,1,2,0,0,false,0,0,abstencao_correta,2,,1,1,true,,,true,automatizada,6176,5376,213
+R1-T31,T31,1,A028,Neuropatia e incapacidade,leigo,autoral,false,parcial,false,false,,2,true,1,1,0.75,0.9,10,1,0,false,0,0,falha_de_abstencao,2,0.8333,0,0.3425,false,,,false,automatizada,8719,4126,459
+R1-T17,T17,1,A065,Tratamento,técnico,autoral,false,integral,false,false,,1,true,2,0,0.4,0.875,8,0,1,true,1,1,nao_se_aplica,1,0.6,2,0.4012,false,,,false,automatizada,10868,5081,516
+R1-T41,T41,1,A013,Contatos e prevenção,técnico,publicada,false,integral,false,false,,2,true,2,2,0.8333,1,10,0,0,false,0,0,nao_se_aplica,2,0.8333,2,0.95,true,,,true,automatizada,8493,5433,501
+R1-T30,T30,1,A051,Neuropatia e incapacidade,leigo,autoral,true,parcial,false,false,,2,true,1,2,0.75,0.9091,11,1,0,false,0,0,abstencao_com_ruido,1,0.6667,1,0.6807,false,,,false,automatizada,10088,5333,630
+R1-T02,T02,1,A047,Diagnóstico,técnico,adaptação,false,integral,false,false,,2,true,2,2,0.8333,1,11,0,0,false,0,0,nao_se_aplica,2,0.6667,2,0.95,true,,,true,automatizada,11268,5510,654
+R1-T34,T34,1,A021,Casos especiais,técnico,adaptação,false,integral,false,false,,2,true,2,2,0.5,1,3,0,0,false,0,0,nao_se_aplica,2,0.5,0,0.85,false,,,false,automatizada,6339,4996,226
+R1-T19,T19,1,A045,Tratamento,técnico,publicada,false,integral,false,false,,2,true,2,2,0.8333,1,7,0,0,false,0,0,nao_se_aplica,2,1,1,0.95,true,,,true,automatizada,8447,5721,515
+R1-T14,T14,1,A067,Tratamento,leigo,autoral,true,integral,false,false,,2,true,1,0,0.75,0.9286,14,0,1,true,0,0,nao_se_aplica,1,0.6667,3,0.5143,false,,,false,automatizada,10186,5771,622
+R1-T35,T35,1,A060,Casos especiais,técnico,publicada,false,integral,false,false,,2,true,2,2,0.3333,1,2,0,0,false,1,1,nao_se_aplica,2,0.5,0,0.8,false,,,false,automatizada,6387,4609,225
+R1-T12,T12,1,A043,Tratamento,leigo,adaptação,false,integral,false,false,,2,true,1,2,0.9167,1,9,0,0,false,0,0,nao_se_aplica,2,1,3,0.925,true,,,true,automatizada,10639,6067,541
+R1-T29,T29,1,A030,Neuropatia e incapacidade,leigo,autoral,true,parcial,false,false,,2,true,1,2,0.6667,1,14,0,0,false,0,0,abstencao_parcial_correta,2,0.6667,3,0.925,true,,,true,automatizada,11311,4412,815
+R2-T30,T30,2,A049,Neuropatia e incapacidade,leigo,autoral,true,parcial,false,false,,2,true,1,2,0.8333,0.9091,11,1,0,false,0,0,abstencao_com_ruido,2,0.6667,2,0.6932,false,,,false,automatizada,9289,5610,570
+R2-T43,T43,2,A093,Psicossocial,leigo,publicada,false,integral,false,false,,2,true,2,2,0.7,1,7,0,0,false,0,0,nao_se_aplica,2,1,2,0.91,true,,,true,automatizada,7809,5679,381
+R2-T21,T21,2,A078,Reações,técnico,adaptação,true,integral,false,false,,2,true,2,2,0.6667,1,12,0,0,false,0,0,nao_se_aplica,2,0.6667,2,0.9,true,,,true,automatizada,13144,5739,900
+R2-T19,T19,2,A015,Tratamento,técnico,publicada,false,integral,false,false,,2,true,2,2,0.75,1,8,0,0,false,0,0,nao_se_aplica,2,1,1,0.925,true,,,true,automatizada,9357,5731,558
+R2-T20,T20,2,A012,Reações,leigo,adaptação,false,integral,false,false,,2,true,1,2,0.8333,1,11,0,0,false,0,0,nao_se_aplica,2,0.8333,3,0.9,true,,,true,automatizada,8950,5642,531
+R2-T34,T34,2,A072,Casos especiais,técnico,adaptação,false,integral,false,false,,2,true,2,2,0.5,1,3,0,0,false,0,0,nao_se_aplica,2,0.5,0,0.85,false,,,false,automatizada,9165,4663,263
+R2-T09,T09,2,A100,Diagnóstico,leigo,autoral,true,integral,false,false,,2,true,1,2,0.8333,1,7,0,0,false,0,0,nao_se_aplica,2,0.8333,2,0.9,true,,,true,automatizada,7608,4589,386
+R2-T40,T40,2,A075,Contatos e prevenção,leigo,publicada,false,integral,false,false,,2,true,1,2,1,1,10,0,0,false,0,0,nao_se_aplica,2,1,3,0.95,true,,,true,automatizada,9832,5257,478
+R2-T26,T26,2,A084,Reações,técnico,autoral,false,integral,false,false,,2,true,2,2,0.9167,1,11,0,0,false,0,0,nao_se_aplica,2,1,2,0.975,true,,,true,automatizada,11751,5526,890
+R2-T32,T32,2,A061,Neuropatia e incapacidade,técnico,publicada,false,integral,false,false,,2,true,2,2,0.5833,1,8,0,0,false,0,0,nao_se_aplica,2,0.6667,1,0.875,false,,,false,automatizada,7284,4459,410
+R2-T27,T27,2,A003,Neuropatia e incapacidade,leigo,adaptação,false,integral,false,false,,2,true,1,2,0.9167,1,8,0,0,false,0,0,nao_se_aplica,2,0.3333,2,0.925,true,,,true,automatizada,8281,4800,334
+R2-T36,T36,2,A066,Casos especiais,leigo,em decisão,false,parcial,false,false,,2,true,1,2,0.8333,1,11,0,0,false,0,0,abstencao_parcial_correta,2,0.6667,5,0.95,true,,,true,automatizada,10242,4767,598
+R2-T37,T37,2,A092,Monitoramento,leigo,publicada,false,integral,false,false,,2,true,0,2,0.8333,1,10,0,0,false,0,0,nao_se_aplica,2,0.8333,3,0.85,true,,,true,automatizada,10584,4852,747
+R2-T49,T49,2,A022,Neuropatia e incapacidade,leigo,autoral,false,nao_respondivel,false,false,,2,true,1,2,,1,1,0,0,false,0,0,abstencao_correta,2,,1,1,true,,,true,automatizada,6855,4594,313
+R2-T10,T10,2,A097,Tratamento,leigo,adaptação,false,integral,false,false,,2,true,1,0,0.3333,0.8,5,0,1,true,1,0,nao_se_aplica,1,0.5,1,0.37,false,,,false,automatizada,8183,5659,394
+R2-T15,T15,2,A098,Tratamento,leigo,adaptação,false,integral,false,false,,2,true,2,2,0.4,1,2,0,0,false,0,0,nao_se_aplica,2,1,0,0.82,false,,,false,automatizada,8098,5800,235
+R2-T13,T13,2,A017,Tratamento,técnico,publicada,false,integral,false,false,,2,true,2,2,0.75,1,10,0,0,false,0,0,nao_se_aplica,2,1,2,0.925,true,,,true,automatizada,7365,5577,468
+R2-T11,T11,2,A069,Tratamento,técnico,publicada,false,integral,false,false,,2,true,2,2,0.625,1,5,0,0,false,0,0,nao_se_aplica,2,0.5,1,0.8875,true,,,true,automatizada,6942,5474,302
+R2-T31,T31,2,A002,Neuropatia e incapacidade,leigo,autoral,false,parcial,false,false,,2,true,1,1,0.8333,0.9,10,1,0,true,0,0,falha_de_abstencao,1,0.8333,2,0.355,false,,,false,automatizada,9341,4548,508
+R2-T42,T42,2,A041,Contatos e prevenção,leigo,adaptação,true,parcial,false,false,,2,true,1,2,0.9,1,9,0,0,false,0,0,abstencao_parcial_correta,2,0.6,3,0.96,true,,,true,automatizada,13815,5364,677
+R2-T35,T35,2,A076,Casos especiais,técnico,publicada,false,integral,false,false,,2,true,2,1,0.0833,1,3,0,0,false,1,1,nao_se_aplica,1,0,0,0.55,false,,,false,automatizada,7473,4728,291
+R2-T45,T45,2,A016,Epidemiologia,técnico,adaptação,true,parcial,false,false,,2,true,2,2,0.8333,1,9,0,0,false,0,0,abstencao_parcial_correta,2,0.8333,2,0.975,true,,,true,automatizada,8832,5750,604
+R2-T33,T33,2,A038,Casos especiais,leigo,publicada,false,integral,false,false,,2,true,1,2,0.6,1,5,0,0,false,0,0,nao_se_aplica,2,0.6,1,0.83,true,,,true,automatizada,7794,4443,307
+R2-T12,T12,2,A001,Tratamento,leigo,adaptação,false,integral,false,false,,2,true,1,2,0.9167,1,13,0,0,false,0,0,nao_se_aplica,2,1,4,0.925,true,,,true,automatizada,9396,6218,632
+R2-T03,T03,2,A048,Diagnóstico,leigo,autoral,false,integral,false,false,,2,true,1,2,0.8,1,7,0,0,false,0,0,nao_se_aplica,2,1,0,0.89,true,,,true,automatizada,8166,5604,437
+R2-T29,T29,2,A081,Neuropatia e incapacidade,leigo,autoral,true,parcial,false,false,,2,true,1,2,0.6667,1,12,0,0,false,0,0,abstencao_parcial_correta,2,0.6667,3,0.925,true,,,true,automatizada,10457,4193,733
+R2-T05,T05,2,A090,Diagnóstico,técnico,adaptação,true,integral,false,false,,2,true,2,2,0.9167,1,11,0,0,false,0,0,nao_se_aplica,2,1,2,0.975,true,,,true,automatizada,10744,4876,787
+R2-T47,T47,2,A046,Diagnóstico,leigo,autoral,false,nao_respondivel,false,false,,2,true,1,2,,1,1,0,0,false,0,0,abstencao_correta,2,,0,1,true,,,true,automatizada,6517,5359,205
+R2-T01,T01,2,A091,Diagnóstico,leigo,publicada,false,integral,false,false,,2,true,1,2,0.5833,1,8,0,0,false,0,0,nao_se_aplica,2,1,3,0.825,false,,,false,automatizada,8384,5304,411
+R2-T23,T23,2,A039,Reações,técnico,publicada,false,integral,false,false,,2,true,2,2,1,1,14,0,0,false,0,0,nao_se_aplica,2,0.8333,2,1,true,,,true,automatizada,11915,6011,850
+R2-T41,T41,2,A083,Contatos e prevenção,técnico,publicada,false,integral,false,false,,2,true,2,2,0.6667,1,8,0,0,false,0,0,nao_se_aplica,2,0.8333,1,0.9,true,,,true,automatizada,8868,5284,509
+R2-T17,T17,2,A057,Tratamento,técnico,autoral,false,integral,false,false,,1,true,2,0,0.7,0.8889,9,1,0,true,1,1,recusa_indevida,1,0.6,2,0.4933,false,,,false,automatizada,7911,5103,528
+R2-T07,T07,2,A010,Diagnóstico,técnico,autoral,true,parcial,false,false,,2,true,2,2,0.75,1,11,0,0,false,0,0,abstencao_parcial_correta,2,0.8333,2,0.9625,true,,,true,automatizada,12712,4817,738
+R2-T44,T44,2,A077,Psicossocial,técnico,adaptação,true,integral,false,false,,2,true,2,2,0.6667,1,13,0,0,false,0,0,nao_se_aplica,2,0.8333,2,0.9,true,,,true,automatizada,12221,5601,957
+R2-T48,T48,2,A004,Tratamento,técnico,publicada,false,parcial,false,false,,1,true,2,1,0,1,1,0,0,false,0,0,recusa_indevida,1,0,0,0.2375,false,,,false,automatizada,6425,5553,212
+R2-T28,T28,2,A023,Neuropatia e incapacidade,técnico,publicada,false,integral,false,false,,2,true,2,2,0.5833,1,8,0,0,false,0,0,nao_se_aplica,2,0.6667,1,0.875,false,,,false,automatizada,7998,4925,427
+R2-T25,T25,2,A033,Reações,técnico,publicada,false,integral,false,false,,2,true,1,2,0.4167,1,8,0,0,false,0,0,nao_se_aplica,2,0.6667,1,0.775,false,,,false,automatizada,8692,5214,493
+R2-T46,T46,2,A031,Gestão e políticas,leigo,adaptação,false,nao_respondivel,false,false,,2,true,2,2,,,0,0,0,false,0,0,abstencao_correta,2,,0,1,true,,,true,automatizada,6204,5183,174
+R2-T50,T50,2,A036,Epidemiologia,leigo,autoral,false,nao_respondivel,false,false,,2,true,1,2,,1,2,0,0,false,0,0,abstencao_correta,2,,0,1,true,,,true,automatizada,6065,5784,211
+R2-T06,T06,2,A009,Diagnóstico,leigo,adaptação,true,integral,false,false,,2,true,1,2,1,1,8,0,0,false,0,0,nao_se_aplica,2,1,3,0.95,true,,,true,automatizada,8849,4457,478
+R2-T18,T18,2,A027,Tratamento,técnico,autoral,false,integral,false,false,,2,true,2,2,0.4167,1,6,0,0,false,0,0,nao_se_aplica,2,0,1,0.825,false,,,false,automatizada,8245,5733,460
+R2-T39,T39,2,A099,Monitoramento,técnico,adaptação,true,integral,false,false,,2,true,2,2,0.5,1,7,0,0,false,0,0,nao_se_aplica,2,0.3333,4,0.85,false,,,false,automatizada,9009,4485,573
+R2-T02,T02,2,A025,Diagnóstico,técnico,adaptação,false,integral,false,false,,2,true,2,2,0.6667,1,14,0,0,false,0,0,nao_se_aplica,2,0.8333,2,0.9,true,,,true,automatizada,12912,5407,765
+R2-T08,T08,2,A085,Diagnóstico,técnico,adaptação,false,parcial,false,false,,1,true,2,2,0.8,1,8,0,0,false,1,1,falha_de_abstencao,2,1,2,0.445,false,,,false,automatizada,8735,4650,419
+R2-T04,T04,2,A089,Diagnóstico,técnico,autoral,false,integral,false,false,,2,true,2,2,1,1,6,0,0,false,0,0,nao_se_aplica,2,1,1,1,true,,,true,automatizada,7304,5368,413
+R2-T16,T16,2,A029,Tratamento,técnico,publicada,false,integral,false,false,,2,true,2,1,0.5,1,9,0,0,false,1,1,nao_se_aplica,2,0.5,2,0.675,false,,,false,automatizada,11454,5851,705
+R2-T14,T14,2,A082,Tratamento,leigo,autoral,true,integral,false,false,,2,true,1,2,0.3333,1,8,0,0,false,0,0,nao_se_aplica,2,0,3,0.75,false,,,false,automatizada,9303,5435,561
+R2-T38,T38,2,A032,Monitoramento,técnico,adaptação,false,integral,false,false,,2,true,2,2,1,1,12,0,0,false,0,0,nao_se_aplica,2,1,2,1,true,,,true,automatizada,10887,4592,721
+R2-T22,T22,2,A020,Reações,leigo,adaptação,true,integral,false,false,,1,true,1,2,0.8333,1,15,0,0,false,0,0,nao_se_aplica,2,0.8333,4,0.85,true,,,true,automatizada,10932,6054,780
+R2-T24,T24,2,A056,Reações,leigo,autoral,false,integral,false,false,,2,true,1,2,0.6667,1,11,0,0,false,0,0,nao_se_aplica,2,0.6667,3,0.85,true,,,true,automatizada,9819,5175,495

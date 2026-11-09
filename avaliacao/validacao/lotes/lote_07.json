@@ -1,0 +1,977 @@
+[
+  {
+    "codigo": "A007",
+    "pergunta": "Como proceder em casos de efeito adverso medicamentoso no tratamento da hanseníase?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "A conduta depende do medicamento envolvido, da gravidade e de a reação ser reversível. **Avalie o paciente e identifique o fármaco suspeito; reações relevantes e consideradas irreversíveis podem caracterizar falha terapêutica e exigir substituição por esquema de segunda linha**, conforme a classificação PB ou MB e o medicamento implicado. [1]\n\n### Como proceder\n\n- **Avalie e monitore:** a dapsona é o componente mais frequentemente associado a reações adversas, sobretudo alterações hematológicas, muitas vezes no primeiro trimestre. O protocolo recomenda, sempre que possível, monitorar parâmetros hematológicos nos primeiros meses; a vigilância do hemograma deve ser mais frequente em mulheres, e idosos requerem cuidado especial. [2][1]\n- **Considere o quadro clínico:** a dapsona pode causar hemólise e, mais raramente, anemia significativa; também são descritos casos raros de hepatopatia, nefropatia, agranulocitose e psicose. [2] A clofazimina pode causar pigmentação da pele, coloração rosada de urina, suor ou expectoração, ictiose e efeitos gastrointestinais. [2]\n- **Não suspenda automaticamente por efeitos esperados:** o protocolo informa que o leve aumento transitório das transaminases associado à rifampicina não é, por si só, indicação para interromper o tratamento; a pigmentação da pele pela clofazimina também não é critério de suspensão, exceto se houver insatisfação extrema com risco de abandono. [2]\n- **Se a reação for relevante e considerada irreversível:** o protocolo brasileiro prevê esquemas de segunda linha para reações à rifampicina, dapsona ou clofazimina. A escolha depende da classificação PB ou MB e deve ser feita pela equipe responsável, após avaliação do caso. [1][3]\n- **Informe o paciente:** explique os riscos, benefícios e possíveis efeitos adversos dos medicamentos, além dos critérios para interrupção do tratamento. [4]\n\nOs trechos fornecidos não detalham um algoritmo geral de manejo imediato para cada evento adverso nem esquemas de segunda linha para reações a todos os demais componentes da PQT-U. Portanto, não é possível especificar aqui uma conduta ou substituição para cada reação sem extrapolar o protocolo. [1][3]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 76–77."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 71–72."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0087",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 77–78."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0130",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 18 Esclarecimentos e responsabilidades. p. 111."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Pelo PCDT 2022, a reação adversa a medicamento (RAM) deve ser avaliada criteriosamente, para evitar a substituição inadequada da PQT-U, o que pode levar a resistência medicamentosa; vários eventos não justificam interromper o fármaco (leve aumento transitório de transaminases pela rifampicina, pigmentação pela clofazimina salvo insatisfação extrema com risco de abandono) e, para a prednisona, a redução da dose é preferível à interrupção. Quando a RAM é relevante e considerada irreversível, caracteriza falha terapêutica e o fármaco implicado é substituído por esquema de segunda linha: na RAM à rifampicina, clofazimina + ofloxacino + minociclina por 6 meses e, para MB, mais 18 meses de clofazimina + ofloxacino (ou minociclina); na RAM à dapsona, rifampicina + clofazimina + ofloxacino (ou minociclina) por 6 (PB) ou 12 meses (MB); na RAM à clofazimina, rifampicina + dapsona + ofloxacino (ou minociclina) por 6 (PB) ou 12 meses (MB). Os critérios de monitoramento e alta permanecem os do esquema PQT-U, exceto nos casos MB com intolerância à rifampicina, que passam a 24 doses supervisionadas. Em situações extremas, como intolerância grave a múltiplos fármacos da PQT-U, pode-se usar o esquema ROM (rifampicina 600 mg + ofloxacino 400 mg + minociclina 100 mg) em dose mensal supervisionada, por 6 meses (PB) ou 24 meses (MB). Toda RAM deve ser notificada para fins de farmacovigilância.",
+      "pontos_chave": [
+        {
+          "id": "T16-P1",
+          "afirmacao": "As RAM devem ser avaliadas criteriosamente para evitar a substituição inadequada da PQT-U, que pode gerar resistência medicamentosa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U (Observações), p. 78 (PDF 80)",
+          "trecho": "As reações adversas a medicamentos (RAM) devem ser avaliadas criteriosamente, a fim de evitar que o tratamento preconizado como primeira linha (PQT-U) seja substituído de forma inadequada"
+        },
+        {
+          "id": "T16-P2",
+          "afirmacao": "RAM relevante e irreversível caracteriza falha terapêutica, e o fármaco implicado é substituído por esquema de segunda linha.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+          "trecho": "Quando as reações adversas são relevantes e consideradas irreversíveis, elas caracterizam falha terapêutica, e os medicamentos implicados podem ser substituídos por outros considerados de segunda linha"
+        },
+        {
+          "id": "T16-P3",
+          "afirmacao": "Nos esquemas alternativos, os critérios de monitoramento e alta são os da PQT-U, exceto MB com intolerância à rifampicina, que passa a 24 doses supervisionadas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U (Observações), p. 78 (PDF 80)",
+          "trecho": "os critérios de monitoramento e alta permanecem os mesmos do esquema PQT-U, exceto para os casos MB com intolerância à rifampicina, quando o número de doses supervisionadas passa a ser de 24."
+        },
+        {
+          "id": "T16-P4",
+          "afirmacao": "Toda RAM deve ser notificada para fins de farmacovigilância.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U (Observações), p. 78 (PDF 80)",
+          "trecho": "3) Toda RAM deve ser notificada para fins de farmacovigilância."
+        },
+        {
+          "id": "T16-P5",
+          "afirmacao": "Na RAM à dapsona, o esquema alternativo é rifampicina 600 mg + clofazimina 300 mg + ofloxacino 400 mg (ou minociclina 100 mg) mensal, com clofazimina 50 mg + ofloxacino 400 mg (ou minociclina) diários.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0087",
+          "secao_ou_pagina": "10.1.7.2 Tratamento farmacológico de 2ª linha para casos de reações adversas à dapsona (Quadro 5), p. 77–78 (PDF 79–80)",
+          "trecho": "Rifampicina 600mg + clofazimina 300mg + ofloxacino 400mg (ou minociclina 100mg)"
+        },
+        {
+          "id": "T16-P6",
+          "afirmacao": "Nem todo evento adverso exige suspensão: o leve aumento transitório de transaminases pela rifampicina não é indicação para interromper o tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, rifampicina), p. 71–72 (PDF 73–74)",
+          "trecho": "essa reação é rara na dosagem e nos intervalos recomendados para hanseníase, não sendo uma indicação para interromper o tratamento."
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar suspender definitivamente toda a PQT-U diante de qualquer evento adverso, sem avaliação e sem esquema substituto.",
+        "Recomendar trocar a PQT-U por esquema alternativo diante de qualquer queixa leve, sem avaliação criteriosa da RAM.",
+        "Afirmar que a pigmentação pela clofazimina ou o leve aumento transitório de transaminases pela rifampicina obrigam a suspender o medicamento.",
+        "Afirmar que, nos casos MB com intolerância à rifampicina, o esquema alternativo mantém 12 doses (o PCDT indica 24 doses supervisionadas).",
+        "Omitir ou dispensar a notificação da RAM à farmacovigilância."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O item 10.1.7 do PCDT 2022 (Quadros 4 a 6 e Observações) define a conduta diante de RAM aos componentes da PQT-U; o Quadro 2 (10.1.6) traz orientações por medicamento e o item 12.5 traz o esquema ROM para intolerância grave a múltiplos fármacos.",
+      "comportamento_esperado": "Responder com a conduta do PCDT: avaliação criteriosa, substituição por esquema de segunda linha conforme o fármaco implicado, manutenção dos critérios de alta (24 doses em MB com intolerância à rifampicina) e notificação de toda RAM.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A017",
+    "pergunta": "Quais os efeitos colaterais mais comuns causados pelos medicamentos da PQT?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Os efeitos mais comuns ou mais característicos da PQT-U são **pigmentação da pele e ressecamento/descamação da pele pela clofazimina**, além de **alterações hematológicas pela dapsona**, especialmente hemólise e anemia. A frequência varia entre os medicamentos; o protocolo destaca a dapsona como a mais frequentemente associada a reações adversas. [1][2]\n\n- **Clofazimina:** pigmentação da pele, que pode variar de vermelho a castanho-escuro; coloração rosada da urina, do suor ou da expectoração; pele seca e descamativa (ictiose), sobretudo nas pernas e antebraços. Também podem ocorrer cólicas, diarreia e perda de peso, especialmente com uso contínuo de doses elevadas. [2]\n- **Dapsona:** pode causar hemólise e, mais raramente, anemia significativa. O protocolo também descreve casos raros de hepatopatia, nefropatia, agranulocitose e psicose. [2]\n- **Rifampicina:** pode ocorrer aumento leve e transitório das transaminases, mas hepatotoxicidade é rara nas doses e nos intervalos usados para hanseníase. [2]\n\nO protocolo recomenda, sempre que possível, monitorar os níveis hematológicos nos primeiros meses de tratamento. [2] A pigmentação da pele pela clofazimina, por si só, não é critério para suspender o medicamento, exceto se causar insatisfação extrema com risco de abandono do tratamento. [2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 76–77."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 71–72."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Segundo o PCDT 2022, a dapsona é o componente da PQT-U mais frequentemente associado a reações adversas, sobretudo hematológicas (hemólise e, mais raramente, anemia significativa), registradas principalmente no primeiro trimestre do tratamento; a anemia é mais frequente em mulheres e as reações adversas à PQT são mais relatadas em idosos, e a reação mais grave à dapsona é a síndrome sulfônica. Recomenda-se, sempre que possível, monitorar o hemograma nos primeiros meses, sem necessidade de dosagem rotineira de G6PD antes de iniciar a PQT-U. O efeito mais comum e perceptível da clofazimina é a pigmentação cutânea (vermelho a castanho-escuro), acompanhada de coloração rosada de urina, suor e expectoração, ictiose em pernas e antebraços e efeitos gastrointestinais (cólicas, diarreia, perda de peso) por deposição de cristais na parede intestinal. Com a rifampicina, em dose mensal, os eventos adversos são raros; pode haver leve aumento transitório de transaminases, que não indica interrupção do tratamento.",
+      "pontos_chave": [
+        {
+          "id": "T13-P1",
+          "afirmacao": "A dapsona é o medicamento mais frequentemente associado a reações adversas, especialmente alterações hematológicas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+          "trecho": "Dentre os medicamentos utilizados para o tratamento da hanseníase, o mais frequentemente associado a reações adversas é a dapsona, especialmente as alterações hematológicas."
+        },
+        {
+          "id": "T13-P2",
+          "afirmacao": "As principais reações adversas à dapsona ocorrem no primeiro trimestre do tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+          "trecho": "Na maioria dos estudos, as principais reações adversas à dapsona são registradas no primeiro trimestre do tratamento."
+        },
+        {
+          "id": "T13-P3",
+          "afirmacao": "A dapsona pode causar hemólise e, mais raramente, anemia significativa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+          "trecho": "A dapsona geralmente é bem tolerada nas doses recomendadas para a hanseníase, mas pode causar hemólise e, mais raramente, anemia significativa."
+        },
+        {
+          "id": "T13-P4",
+          "afirmacao": "O efeito adverso mais comum e perceptível da clofazimina é a pigmentação da pele (vermelho a castanho-escuro).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "O efeito mais comum e perceptível é a pigmentação da pele, variando de vermelho a castanho-escuro, dependendo da dosagem."
+        },
+        {
+          "id": "T13-P5",
+          "afirmacao": "A clofazimina também causa ictiose em pernas e antebraços e pode causar efeitos gastrointestinais.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "A clofazimina também produz ictiose característica nas pernas e antebraços."
+        },
+        {
+          "id": "T13-P6",
+          "afirmacao": "A hepatotoxicidade da rifampicina (leve aumento transitório de transaminases) é rara na posologia da hanseníase e não indica interrupção.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, rifampicina), p. 71–72 (PDF 73–74)",
+          "trecho": "Pode ocorrer hepatotoxicidade com leve aumento transitório das transaminases hepáticas, mas essa reação é rara na dosagem e nos intervalos recomendados para hanseníase"
+        }
+      ],
+      "pontos_proibidos": [
+        "Apontar a rifampicina como o medicamento da PQT-U mais associado a reações adversas ou afirmar que a hepatotoxicidade é comum no esquema mensal.",
+        "Afirmar que é obrigatório dosar G6PD rotineiramente antes de iniciar a PQT-U.",
+        "Afirmar que a pigmentação pela clofazimina é critério para suspender o medicamento.",
+        "Afirmar que leve aumento transitório de transaminases pela rifampicina exige interromper o tratamento."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 descreve os eventos adversos por medicamento (Quadro 2, item 10.1.6) e indica a frequência relativa e o período de maior ocorrência das reações à dapsona (item 10.1.7).",
+      "comportamento_esperado": "Responder com terminologia técnica, destacando dapsona (hematológicos, primeiro trimestre, síndrome sulfônica como mais grave), clofazimina (pigmentação, ictiose, gastrointestinais) e rifampicina (eventos raros em dose mensal).",
+      "divergencias_entre_documentos": "Não há divergência normativa. A OMS (Diretrizes 2018) registra que nenhum estudo da revisão relatou eventos adversos com clofazimina no esquema de três medicamentos para PB, mas cita a coloração da pele como preocupação e estigma; o PCDT descreve a pigmentação como o efeito mais comum."
+    }
+  },
+  {
+    "codigo": "A027",
+    "pergunta": "Quais alternativas terapêuticas são indicadas quando há resistência aos medicamentos de primeira linha para hanseníase?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Quando há **resistência à rifampicina**, a OMS recomenda um esquema de segunda linha com clofazimina e outros antimicrobianos, por **24 meses**. Se também houver resistência à ofloxacina, não se deve usar quinolona; no Brasil, a referência para a prática é o protocolo do Ministério da Saúde. [1][2]\n\n- **Resistência à rifampicina:** nos primeiros 6 meses, usar diariamente clofazimina mais pelo menos dois entre claritromicina, minociclina e uma quinolona (ofloxacina, levofloxacina ou moxifloxacina). Nos 18 meses seguintes, manter clofazimina mais um desses medicamentos diariamente. [1][2]\n- **Resistência à rifampicina e à ofloxacina:** nos primeiros 6 meses, usar diariamente clofazimina, claritromicina e minociclina; nos 18 meses seguintes, clofazimina mais claritromicina ou minociclina diariamente. Não se deve escolher uma quinolona nesse cenário. [1][2]\n\nA OMS informa que essas recomendações são condicionais e se baseiam em opinião de especialistas, pois não foram recuperadas evidências sobre a eficácia dos esquemas para hanseníase resistente. [3][1][2] Os trechos do protocolo brasileiro fornecidos descrevem esquemas de segunda linha para reações adversas aos medicamentos da PQT-U, mas não apresentam um esquema específico para resistência medicamentosa. [4][5]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0036",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 22."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0004",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiii–xiv."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0037",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 22–23."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 76–77."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0087",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 77–78."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "No PCDT 2022, na resistência comprovada à rifampicina há dois esquemas de segunda linha para MB, com duração máxima de 24 meses: (1) ofloxacino 400 mg + minociclina 100 mg + clofazimina 50 mg diariamente por 6 meses, seguidos de clofazimina 50 mg + ofloxacino 400 mg (ou minociclina 100 mg) diariamente por 18 meses; ou (2) ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg por 6 meses, seguidos de ofloxacino 400 mg + clofazimina 50 mg por 18 meses. Na resistência à rifampicina e ao ofloxacino, usa-se claritromicina 500 mg + minociclina 100 mg + clofazimina 50 mg por 6 meses, seguidos de clofazimina 50 mg + claritromicina 500 mg (ou minociclina 100 mg) por 18 meses. A resistência isolada ao ofloxacino não indica falha da PQT-U (o fármaco não a compõe); nesse caso, o paciente é excluído do protocolo e investigado na Atenção Especializada, e casos com RAM que exigiriam ofloxacino mas com resistência a ele são tratados com minociclina. Os pacientes em segunda linha são acompanhados na Atenção Especializada com consultas mensais e registro no SIRH; a OMS acrescenta investigar tuberculose antes de iniciar fluoroquinolona e realizar farmacovigilância com monitorização eletrocardiográfica (risco de prolongamento do QT).",
+      "pontos_chave": [
+        {
+          "id": "T18-P1",
+          "afirmacao": "Na resistência à rifampicina há duas opções de esquema de segunda linha, com duração máxima de 24 meses.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+          "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+          "trecho": "Quando a resistência à rifampicina está presente, são recomendadas duas possibilidades de esquemas farmacológicos com duração máxima de 24 meses, conforme o Quadro 7."
+        },
+        {
+          "id": "T18-P2",
+          "afirmacao": "Esquema 1 para resistência à rifampicina: ofloxacino 400 mg + minociclina 100 mg + clofazimina 50 mg diários por 6 meses, seguidos de clofazimina + ofloxacino (ou minociclina) por 18 meses.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+          "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+          "trecho": "Ofloxacino 400mg + minociclina 100mg + clofazimina 50mg"
+        },
+        {
+          "id": "T18-P3",
+          "afirmacao": "Esquema 2 para resistência à rifampicina: ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg por 6 meses, seguidos de ofloxacino + clofazimina por 18 meses.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+          "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+          "trecho": "Ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg"
+        },
+        {
+          "id": "T18-P4",
+          "afirmacao": "Na resistência à rifampicina e ao ofloxacino: claritromicina 500 mg + minociclina 100 mg + clofazimina 50 mg por 6 meses, seguidos de clofazimina + claritromicina (ou minociclina) por 18 meses.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0110",
+          "secao_ou_pagina": "11.4.2 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina e ao ofloxacino (Quadro 8), p. 92 (PDF 94)",
+          "trecho": "Claritromicina 500mg + minociclina 100mg + clofazimina 50mg"
+        },
+        {
+          "id": "T18-P5",
+          "afirmacao": "A resistência isolada ao ofloxacino não indica falha da PQT-U, pois o ofloxacino não faz parte do esquema de primeira linha.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0111",
+          "secao_ou_pagina": "11.4.3 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente ao ofloxacino, p. 93 (PDF 95)",
+          "trecho": "A detecção da resistência ao ofloxacino isoladamente não é indicativa de falha do tratamento de primeira linha, tendo em vista que o fármaco não é um componente da PQT-U."
+        },
+        {
+          "id": "T18-P6",
+          "afirmacao": "O paciente em esquema de segunda linha por resistência é acompanhado na Atenção Especializada, com consultas mensais durante todo o tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0112",
+          "secao_ou_pagina": "11.5 Monitoramento do tratamento em casos de resistência medicamentosa, p. 93–95 (PDF 95–97)",
+          "trecho": "deve ser acompanhado na Atenção Especializada, com consultas mensais durante todo o período de tratamento"
+        }
+      ],
+      "pontos_proibidos": [
+        "Incluir uma quinolona (ofloxacino) no esquema quando há resistência ao ofloxacino.",
+        "Recomendar repetir ou prolongar a PQT-U como tratamento da resistência à rifampicina.",
+        "Indicar esquema de resistência à rifampicina com duração total de apenas 6 ou 12 meses (o PCDT prevê 6 meses + 18 meses, até 24 meses).",
+        "Recomendar monoterapia com um único fármaco de segunda linha."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (itens 11.4.1 a 11.5, Quadros 7 e 8) e as Diretrizes da OMS 2018 (item 2.2, Tabela 4) definem os esquemas de segunda linha para resistência à rifampicina, à rifampicina + ofloxacino e ao ofloxacino. Observação: o corpus não define um esquema específico para resistência isolada à dapsona ou à clofazimina; a resposta não deve inventá-lo.",
+      "comportamento_esperado": "Responder com os esquemas do PCDT por tipo de resistência e a conduta de acompanhamento; não inventar esquemas para resistência isolada à dapsona ou à clofazimina, que não estão no corpus.",
+      "divergencias_entre_documentos": "As Diretrizes da OMS (2018) admitem substituir o ofloxacino 400 mg por levofloxacino 500 mg ou moxifloxacino 400 mg e formulam a regra geral de 'pelo menos dois' fármacos de segunda linha (claritromicina, minociclina ou quinolona) + clofazimina; o PCDT 2022, norma brasileira seguida na referência, lista apenas ofloxacino como quinolona e dois esquemas fixos. A OMS ainda recomenda investigar tuberculose e monitorar ECG, pontos não detalhados no PCDT."
+    }
+  },
+  {
+    "codigo": "A037",
+    "pergunta": "Quando o paciente apresentar queixa de dores no braço e fraqueza nas mãos, qual a conduta a ser adotada?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Dor no braço associada à fraqueza nas mãos exige **avaliação neurológica presencial e pronta**, pois pode indicar neurite com perda da função motora. Faça a Avaliação Neurológica Simplificada (ANS) e, se houver suspeita de neurite aguda, o protocolo brasileiro indica imobilização do membro afetado e corticosteroide sob supervisão profissional. [1][2]\n\n- Investigue a dor e outras queixas neurológicas; examine e palpe os nervos periféricos e avalie sensibilidade e força muscular das mãos. A ANS deve ser repetida sempre que surgirem novas queixas. [1][3][2]\n- Se a avaliação confirmar neurite aguda, conduza o caso com supervisão clínica; o protocolo descreve dor espontânea ou à palpação do nervo acompanhada de perda funcional sensitiva, motora e/ou autonômica. [1]\n- Se a neurite não responder ao tratamento clínico em quatro semanas, entre outras situações previstas, pode ser considerado encaminhamento para avaliação cirúrgica. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 38–39."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.1 Avaliação neurológica simplificada (ANS). p. 43–44."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0102",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.6 Intervenções cirúrgicas preventivas e reabilitadoras. p. 87."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Dor em membro superior com fraqueza nas mãos em paciente com hanseníase sugere neurite aguda, frequentemente associada à reação tipo 1 mas possível de forma isolada, durante a PQT-U ou após ela (em geral até cinco anos), caracterizada por dor espontânea ou à palpação dos nervos e perda funcional sensitiva, motora e/ou autonômica. A conduta inicial é a avaliação neurológica simplificada: inspeção, palpação dos nervos periféricos e testes de sensibilidade e de força muscular comparados com avaliações anteriores, verificando se a perda de função é recente (menos de seis meses), situação em que é potencialmente reversível com corticoide. Confirmada a neurite, indicam-se imobilização do membro afetado e corticoterapia supervisionada com prednisona 1 mg/kg/dia, com redução gradual conforme o esquema do PCDT por no mínimo seis meses em média, profilaxia da estrongiloidíase no início e manutenção da PQT-U se o paciente ainda não tiver alta. A função neural deve ser reavaliada periodicamente com a ANS durante a corticoterapia, já que o corticoide pode aliviar a dor sem proteger o nervo. O encaminhamento cirúrgico pode ser considerado em contraindicação formal ao corticoide, abscesso de nervo ou neurite sem resposta clínica em quatro semanas, entre outras situações.",
+      "pontos_chave": [
+        {
+          "id": "T28-P1",
+          "afirmacao": "O quadro sugere neurite aguda: dor espontânea ou à palpação dos nervos com perda funcional sensitiva, motora e/ou autonômica.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+          "secao_ou_pagina": "6.6.2.1 Neurite aguda, p. 38–39 (PDF 40–41)",
+          "trecho": "A neurite aguda caracteriza-se clinicamente por dor espontânea ou à palpação dos nervos periféricos, muitas vezes com limitação álgica da mobilidade dos cotovelos e tornozelos, acompanhada de sinais e sintomas de perda funcional sensitiva, motora e/ou autonômica."
+        },
+        {
+          "id": "T28-P2",
+          "afirmacao": "Realizar avaliação neurológica (inspeção, palpação de nervos, testes de sensibilidade e força em mãos, pés e olhos).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+          "secao_ou_pagina": "6.6.2.1 Neurite aguda, p. 38–39 (PDF 40–41)",
+          "trecho": "O exame físico deve incluir a inspeção cuidadosa para verificar o surgimento de lesões traumáticas, amiotrofias ou deformidades, a palpação dos nervos periféricos e a realização de testes de sensibilidade e força muscular, especialmente nas mãos, nos pés e nos olhos."
+        },
+        {
+          "id": "T28-P3",
+          "afirmacao": "A neurite aguda requer imobilização do membro afetado e corticoterapia supervisionada.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+          "secao_ou_pagina": "6.6.2.1 Neurite aguda, p. 38–39 (PDF 40–41)",
+          "trecho": "Requer imobilização do membro afetado e o uso supervisionado de corticosteroides."
+        },
+        {
+          "id": "T28-P4",
+          "afirmacao": "Prednisona VO 1 mg/kg/dia com redução gradual (esquema do PCDT).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+          "secao_ou_pagina": "10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa, p. 60–61 (PDF 62–63)",
+          "trecho": "No Brasil, recomenda-se a corticoterapia com prednisona, administrada por via oral, na dose inicial de 1mg/kg/dia, com redução gradual da dose diária em torno de 10mg a cada 15 dias."
+        },
+        {
+          "id": "T28-P5",
+          "afirmacao": "Dano neural com menos de seis meses é potencialmente reversível com corticoide.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0011",
+          "secao_ou_pagina": "1.3 Type 1 reactions and neuritis, p. 6–7 (PDF 18–19)",
+          "trecho": "The simple message is that any NFI that has been present for less than six months can potentially be reversed with steroid treatment, thus preventing permanent disability."
+        },
+        {
+          "id": "T28-P6",
+          "afirmacao": "Considerar avaliação cirúrgica em contraindicação ao corticoide, abscesso de nervo ou neurite sem resposta em quatro semanas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0102",
+          "secao_ou_pagina": "10.2.6 Intervenções cirúrgicas preventivas e reabilitadoras, p. 87 (PDF 89)",
+          "trecho": "O encaminhamento para avaliação por um cirurgião pode ser considerado nas seguintes situações: contraindicação formal do uso de corticosteroides, abscesso de nervo, neurite que não responde ao tratamento clínico em quatro semanas"
+        }
+      ],
+      "pontos_proibidos": [
+        "Tratar apenas com analgésicos/AINE, sem avaliação da função neural e sem corticoide quando há perda de função recente.",
+        "Suspender a PQT-U por causa da neurite.",
+        "Indicar talidomida como tratamento da neurite.",
+        "Considerar o alívio da dor com corticoide suficiente, dispensando a reavaliação periódica da função neural."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (6.5.1, 6.6.2, 7.1, 10.1.2.1, 10.2.6) define neurite aguda, avaliação neurológica, imobilização, esquema de prednisona, profilaxia e critérios de encaminhamento cirúrgico. A OMS 2020 (1.3, 3.1, algoritmos 3–5) acrescenta a janela de seis meses e o seguimento.",
+      "comportamento_esperado": "Responder: suspeita de neurite, ANS imediata, imobilização e prednisona 1 mg/kg/dia supervisionada com desmame, profilaxia da estrongiloidíase, manutenção da PQT-U, reavaliação periódica e critérios de encaminhamento cirúrgico.",
+      "divergencias_entre_documentos": "Na dose e duração do corticoide, a OMS 2020 propõe prednisolona de 0,5 a 1 mg/kg (em geral 30–40 mg/dia) por 20 semanas e reavaliação da função neural a cada 2 semanas durante o corticoide; o PCDT indica prednisona 1 mg/kg/dia por no mínimo cerca de 6 meses. Prevalece o PCDT. A OMS diz ainda que a cirurgia não mostrou benefício adicional significativo sobre o corticoide isolado em ensaios clínicos, e o PCDT lista situações para considerar o encaminhamento cirúrgico."
+    }
+  },
+  {
+    "codigo": "A047",
+    "pergunta": "Quais achados clínicos em uma lesão cutânea devem levantar suspeita de hanseníase e orientar a avaliação diagnóstica?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Devem levantar suspeita manchas mais claras ou avermelhadas, sobretudo quando há **diminuição ou perda de sensibilidade**. A avaliação deve incluir exame cuidadoso da pele e testes de sensibilidade; a aparência da lesão, isoladamente, não confirma o diagnóstico. [1][2]\n\n### Achados na lesão cutânea\n\n- **Alteração da sensibilidade:** perda ou diminuição da sensibilidade térmica, dolorosa e/ou tátil é um achado cardinal. Pode ser acentuada em placas bem delimitadas ou discreta — por exemplo, apenas térmica — em manchas hipocrômicas iniciais. [3][4]\n- **Mancha hipocrômica ou avermelhada:** pode ser plana, sem alteração de relevo ou textura, e ocorrer em pequeno número; a forma inicial também pode se manifestar por alteração sensitiva sem mudança visível da cor da pele. [1][4]\n- **Placa bem delimitada, elevada e geralmente avermelhada**, às vezes com centro hipocrômico ou atrófico; pode haver redução de pelos e de sudorese na área. [3]\n- **Lesões de aspecto variável:** manchas ou placas hipocrômicas, acastanhadas ou violáceas; algumas têm bordas internas nítidas e bordas externas infiltradas e imprecisas. [5]\n\n### Como orientar a avaliação\n\nExamine toda a superfície cutânea sob boa iluminação e teste a sensibilidade nas lesões e também em áreas que a pessoa relata como alteradas, mesmo sem lesão visível. Investigue queixas neurológicas e avalie nervos periféricos, sensibilidade e força muscular. [1] Dormência ou formigamento em mãos ou pés, dor ou hipersensibilidade nos nervos e ferimentos ou queimaduras indolores também reforçam a suspeita, embora não sejam achados da lesão cutânea em si. [1]\n\nA OMS descreve como sinais cardinais a perda definitiva de sensibilidade em área hipocrômica ou avermelhada, o espessamento de nervo periférico associado a alteração sensitiva e/ou fraqueza muscular, ou a presença de bacilos em esfregaço intradérmico. [2] No Brasil, o protocolo do Ministério da Saúde orienta encaminhar à Atenção Secundária quando houver dúvida diagnóstica na Atenção Primária. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0028",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Diagnóstico. p. 17."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0017",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.1 Hanseníase tuberculoide. p. 28–29."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.4 Hanseníase indeterminada. p. 31–32."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0020",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.3 Hanseníase dimorfa. p. 30–31."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Deve-se suspeitar de hanseníase diante de manchas hipocrômicas ou eritematosas com perda ou diminuição da sensibilidade térmica, dolorosa e/ou tátil, que constitui o primeiro sinal cardinal; hipo/anidrose e rarefação de pelos na lesão reforçam a suspeita. Na forma indeterminada as máculas são poucas, sem alteração de relevo, com hipoestesia geralmente apenas térmica e tato preservado; na tuberculoide, placas de bordas nítidas e elevadas com acentuada hipoestesia ou anestesia; na dimorfa, lesões infiltradas e foveolares; e na virchowiana as lesões podem ter sensibilidade normal, apoiando-se o diagnóstico no espessamento neural e na baciloscopia. A avaliação deve incluir inspeção de toda a superfície cutânea sob boa iluminação, testes de sensibilidade nas lesões e em áreas referidas, palpação dos nervos periféricos e testes de força muscular em mãos, pés e olhos, valorizando queixas neurológicas e o histórico de contato. O diagnóstico é eminentemente clínico; em caso de dúvida, complementa-se com baciloscopia (cujo resultado negativo não exclui a doença) e referencia-se à Atenção Especializada.",
+      "pontos_chave": [
+        {
+          "id": "T02-P1",
+          "afirmacao": "Manchas hipocrômicas ou avermelhadas e perda ou diminuição da sensibilidade em manchas da pele são sinais de suspeição.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+          "trecho": "deve-se suspeitar de hanseníase em pessoas com qualquer um dos seguintes sintomas e sinais: manchas hipocrômicas ou avermelhadas na pele, perda ou diminuição da sensibilidade em mancha(s) da pele"
+        },
+        {
+          "id": "T02-P2",
+          "afirmacao": "Lesão de pele com alteração da sensibilidade térmica, dolorosa e/ou tátil é sinal cardinal (critério de definição de caso).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+          "secao_ou_pagina": "6.2 Definição de caso, p. 26 (PDF 28)",
+          "trecho": "Lesão(ões) e/ou áreas(s) da pele com alteração de sensibilidade térmica e/ou dolorosa e/ou tátil"
+        },
+        {
+          "id": "T02-P3",
+          "afirmacao": "Na forma indeterminada, a hipoestesia costuma ser apenas térmica, com sensibilidade tátil preservada.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+          "secao_ou_pagina": "6.4.4 Hanseníase indeterminada, p. 31–32 (PDF 33–34)",
+          "trecho": "geralmente com hipoestesia térmica apenas; mais raramente, há diminuição da sensibilidade dolorosa, enquanto a sensibilidade tátil é preservada"
+        },
+        {
+          "id": "T02-P4",
+          "afirmacao": "Na forma tuberculoide há acentuada hipoestesia ou anestesia nas lesões, demonstrável pelos testes de sensibilidade.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0017",
+          "secao_ou_pagina": "6.4.1 Hanseníase tuberculoide, p. 28–29 (PDF 30–31)",
+          "trecho": "acentuada hipoestesia ou anestesia nas lesões dermatológicas, facilmente demonstrada pelos testes de sensibilidade térmica, tátil e dolorosa"
+        },
+        {
+          "id": "T02-P5",
+          "afirmacao": "Na forma virchowiana as lesões cutâneas podem ter sensibilidade normal, de modo que sensibilidade preservada não exclui hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0018",
+          "secao_ou_pagina": "6.4.2 Hanseníase virchowiana, p. 29 (PDF 31)",
+          "trecho": "Portanto, ao contrário da forma tuberculoide, na forma virchowiana as lesões de pele podem apresentar sensibilidade normal."
+        },
+        {
+          "id": "T02-P6",
+          "afirmacao": "A avaliação inclui palpação dos nervos periféricos e testes de sensibilidade e força muscular em mãos, pés e olhos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+          "trecho": "A avaliação neurológica deve incluir a palpação dos nervos periféricos e os testes de sensibilidade e de força muscular nas mãos, pés e olhos."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que lesão com sensibilidade preservada exclui hanseníase.",
+        "Afirmar que baciloscopia negativa exclui o diagnóstico de hanseníase.",
+        "Afirmar que o diagnóstico exige obrigatoriamente confirmação laboratorial (o PCDT define o diagnóstico como eminentemente clínico).",
+        "Indicar teste sorológico ou PCR como exame isolado para confirmar ou excluir hanseníase em lesão suspeita."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 descreve os sinais de suspeição (6.1), os sinais cardinais (6.2), as características das lesões por forma clínica (6.4) e a conduta de avaliação e referência; a OMS 2018 confirma os sinais cardinais.",
+      "comportamento_esperado": "Responder com terminologia técnica, listando achados cutâneos e sensitivos sugestivos, variações por forma clínica e os passos da avaliação diagnóstica.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A057",
+    "pergunta": "Quais critérios clínicos e laboratoriais indicam investigação de resistência primária aos antimicrobianos na hanseníase?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "A investigação de **resistência primária** é pertinente em casos novos quando há suspeita clínica de persistência de infecção ativa; porém, os trechos fornecidos **não especificam critérios clínicos próprios para selecionar casos novos** nem um algoritmo laboratorial distinto para resistência primária. [1][2]\n\n- **Critério clínico documentado:** ao final da PQT-U, se houver suspeita de persistência de infecção ativa, deve-se investigar resistência; se parâmetros clínicos e baciloscópicos permanecerem inalterados em relação ao diagnóstico, o protocolo também orienta investigar resistência medicamentosa. [2]\n- **Contexto dos casos novos:** em uma série brasileira, foi identificada resistência em apenas um dos 344 casos novos investigados, com resistência isolada à dapsona; o protocolo ressalta que a resistência no Brasil é rara. [1]\n- **Investigação laboratorial:** o teste incorporado ao SUS detecta alterações genéticas associadas à resistência à rifampicina (*rpoB*), ao ofloxacino ou outras fluoroquinolonas (*gyrA*) e à dapsona (*folP1*). A amostra indicada é biópsia da lesão de pele, encaminhada ao Laboratório Central de Saúde Pública conforme o fluxo local. [3][4]\n- **Limite da interpretação:** a presença de mutações em genes relacionados aos alvos dos medicamentos não necessariamente significa resistência; a comprovação laboratorial e o acompanhamento devem ocorrer na Atenção Especializada. [1][3]\n\nAssim, os trechos sustentam a investigação diante de suspeita de persistência ativa e descrevem o teste molecular, mas não apresentam critérios clínicos específicos para definir resistência **primária** em um caso novo. No Brasil, a referência para a prática é o protocolo do Ministério da Saúde. [1][2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0106",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11 Resistência do M. leprae a antimicrobianos. p. 89–90."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 59."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0105",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11 Resistência do M. leprae a antimicrobianos. p. 89."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0107",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos. p. 90."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Segundo o PCDT 2022, deve ser investigado para resistência todo paciente diagnosticado como caso novo de hanseníase que apresente, no diagnóstico inicial, índice baciloscópico (IB) ≥ 2,0; este é o critério previsto para casos novos (resistência primária), distinto dos critérios de resistência secundária após PQT-U (persistência de hansenomas ou lesões infiltradas inalteradas, IB inalterado ou em aumento após pelo menos um ano, reações reentrantes por mais de três anos após a alta e não responsivas, abandono de PQT-U por mais de seis meses em MB e recidiva). A investigação laboratorial usa o teste molecular incorporado ao SUS em 2022 (amplificação de DNA e hibridização reversa em fita de nitrocelulose), que identifica mutações nos genes rpoB (rifampicina), gyrA (ofloxacino e outras fluoroquinolonas) e folP1 (dapsona). A amostra é uma biópsia da lesão de pele, encaminhada ao Laboratório Central de Saúde Pública conforme o fluxo local, e a comprovação laboratorial, o tratamento e o acompanhamento ocorrem na Atenção Especializada.",
+      "pontos_chave": [
+        {
+          "id": "T17-P1",
+          "afirmacao": "Deve ser investigado para resistência todo caso novo de hanseníase com índice baciloscópico ≥ 2,0 no diagnóstico inicial.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+          "secao_ou_pagina": "11 Resistência do M. leprae a antimicrobianos (critério para casos novos, antes do item 11.3), p. 90–91 (PDF 92–93)",
+          "trecho": "Deve ser investigado qualquer paciente diagnosticado como caso novo de hanseníase e que, no diagnóstico inicial apresente IB ≥2,0."
+        },
+        {
+          "id": "T17-P2",
+          "afirmacao": "O teste laboratorial incorporado ao SUS detecta mutações associadas à resistência à rifampicina (rpoB), ao ofloxacino/fluoroquinolonas (gyrA) e à dapsona (folP1).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0107",
+          "secao_ou_pagina": "11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos, p. 90 (PDF 92)",
+          "trecho": "auxiliando no diagnóstico da resistência da micobactéria à rifampicina (gene rpoB), ao ofloxacino ou outras fluoroquinolonas (gene gyrA) e à dapsona (gene folP1)"
+        },
+        {
+          "id": "T17-P3",
+          "afirmacao": "A amostra para o teste é biópsia de lesão de pele, encaminhada ao Laboratório Central de Saúde Pública.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0107",
+          "secao_ou_pagina": "11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos, p. 90 (PDF 92)",
+          "trecho": "Uma amostra biológica (biópsia da lesão de pele) deve ser coletada e encaminhada para análise no Laboratório Central de Saúde Pública, conforme definição de fluxo local."
+        },
+        {
+          "id": "T17-P4",
+          "afirmacao": "A comprovação laboratorial da resistência, o tratamento e o acompanhamento são feitos na Atenção Especializada.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0106",
+          "secao_ou_pagina": "11 Resistência do M. leprae a antimicrobianos, p. 89–90 (PDF 91–92)",
+          "trecho": "A comprovação laboratorial da resistência medicamentosa do M. leprae, bem como o diagnóstico laboratorial, o tratamento e o acompanhamento devem ser realizados na Atenção Especializada"
+        },
+        {
+          "id": "T17-P5",
+          "afirmacao": "Critérios como persistência de hansenomas/lesões infiltradas após a PQT-U referem-se à resistência secundária (após tratamento), não à primária.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+          "secao_ou_pagina": "11.3 Critérios para investigação da resistência secundária do M. leprae a antimicrobianos, após PQT-U, p. 90–91 (PDF 92–93)",
+          "trecho": "1) Persistência de hansenomas e/ou lesões infiltradas após o término da PQT-U, com aspecto clínico inalterado em relação ao momento do diagnóstico;"
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a resistência primária deve ser investigada em todos os casos novos, independentemente do índice baciloscópico.",
+        "Usar como critério de resistência primária os critérios de resistência secundária (falha após PQT-U, recidiva, abandono), sem distinguir os dois cenários.",
+        "Recomendar estender ou repetir a PQT-U como forma de investigar ou tratar suspeita de resistência.",
+        "Afirmar que a resistência pode ser confirmada apenas clinicamente, sem teste laboratorial."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (cap. 11) traz o critério para casos novos (IB ≥ 2,0 no diagnóstico) e descreve o teste molecular, a amostra e o local de realização. Ressalva: no texto extraído, o rótulo do item 11.2 não aparece; a frase do critério está no início do trecho rotulado 11.3, mas refere-se explicitamente a caso novo e o item 10.1.1 remete a 'critérios definidos no item 11.2'.",
+      "comportamento_esperado": "Responder: investigar caso novo com IB ≥ 2,0 no diagnóstico inicial, por teste molecular (rpoB, gyrA, folP1) em biópsia de pele enviada ao LACEN, com condução na Atenção Especializada, distinguindo dos critérios de resistência secundária.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A067",
+    "pergunta": "O que é a dapsona, para que serve no tratamento da hanseníase e quais cuidados ela exige?",
+    "registro": "leigo",
+    "composta": true,
+    "resposta_da_ia": "A **dapsona** é um medicamento da poliquimioterapia da hanseníase. Ela age interferindo na síntese de ácido fólico pela bactéria e tem ação fracamente bactericida; também possui efeito imunomodulador, que pode ser útil nas neurites hansênicas. [1]\n\n### Cuidados principais\n\n- **Vigilância hematológica:** pode causar hemólise e, mais raramente, anemia significativa; alterações hematológicas estão entre as reações adversas mais associadas à dapsona e ocorrem com maior frequência nos primeiros meses. Recomenda-se, sempre que possível, monitorar os níveis hematológicos nesse período. [2][3]\n- **Maior atenção a alguns pacientes:** observar sinais e sintomas de hemólise, especialmente em pessoas com deficiência de G6PD, metemoglobina redutase ou hemoglobina M, e em uso concomitante de antimaláricos. A deficiência de G6PD raramente aumenta o risco, e o protocolo não recomenda testagem rotineira antes da PQT-U. [1][3]\n- **Outras reações:** a síndrome sulfônica é descrita como a reação mais grave; também há relatos raros de hepatopatia, nefropatia, agranulocitose e psicose. [2][3]\n- **Interações:** evitar uso simultâneo com medicamentos potencialmente depressores da medula óssea ou causadores de hemólise. A dapsona pode reduzir o efeito de anticoncepcionais orais, sendo necessário substituí-los e/ou associar métodos contraceptivos adicionais. [4]\n- **Gestação:** o protocolo recomenda manter a dapsona durante a gravidez em pacientes com hanseníase, embora informe que não há estudos controlados em mulheres e que seu uso deve considerar os benefícios potenciais para a mãe e os riscos para o feto. [1]\n- **Outros pontos:** foram relatados casos de infertilidade em alguns homens, potencialmente reversível após a suspensão; acetiladores lentos podem ter maior propensão a eventos adversos, particularmente hematológicos. [1]\n\nSe houver reação adversa relevante, a equipe deve avaliar cuidadosamente a conduta: o protocolo prevê esquemas alternativos para reações à dapsona e recomenda notificar toda reação adversa para farmacovigilância. [5][6]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.5 Informações sobre os medicamentos. p. 64–65."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 76–77."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 71–72."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0081",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 74."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0087",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 77–78."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 78."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A dapsona é um antibiótico, um dos três remédios que formam o tratamento da hanseníase (junto com a rifampicina e a clofazimina), chamado PQT-U. Ela atrapalha a bactéria de produzir uma substância de que precisa para crescer (o ácido fólico); sozinha tem efeito fraco, por isso é sempre usada junto com os outros remédios. No adulto, a dose é de 100 mg por dia, tomada em casa, além da dose do mês tomada na unidade de saúde. O principal cuidado é com o sangue: ela pode destruir glóbulos vermelhos e, mais raramente, causar anemia importante, sobretudo nos primeiros meses, por isso se recomenda acompanhar com exames de sangue e ficar atento a sinais de anemia, com mais atenção para mulheres e idosos. Também exige cuidado quem usa remédios para malária ou tem deficiência de uma enzima chamada G6PD, e qualquer reação deve ser contada à equipe de saúde; na gravidez, o PCDT recomenda manter a dapsona.",
+      "pontos_chave": [
+        {
+          "id": "T14-P1",
+          "afirmacao": "A dapsona é um dos três medicamentos (rifampicina, dapsona e clofazimina) da poliquimioterapia usada para curar a hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0055",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 56 (PDF 58)",
+          "trecho": "Consiste na associação de três antimicrobianos (rifampicina, dapsona e clofazimina), que leva à cura em até 98% dos casos tratados"
+        },
+        {
+          "id": "T14-P2",
+          "afirmacao": "A dapsona impede a bactéria de usar o PABA para produzir ácido fólico, tendo ação fracamente bactericida.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+          "secao_ou_pagina": "10.1.5.3 Dapsona, p. 64–65 (PDF 66–67)",
+          "trecho": "A dapsona é um antagonista competitivo do ácido paraminobenzoico (PABA) que impede a sua utilização pela bactéria para a síntese do ácido fólico, de modo que é fracamente bactericida."
+        },
+        {
+          "id": "T14-P3",
+          "afirmacao": "No adulto (acima de 50 kg), a dapsona é tomada diariamente na dose de 100 mg, além da dose mensal supervisionada.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1), p. 57–58 (PDF 59–60)",
+          "trecho": "Dose diária autoadministrada: •Clofazimina 50mg diariamente •Dapsona 100mg diariamente"
+        },
+        {
+          "id": "T14-P4",
+          "afirmacao": "A dapsona pode causar hemólise (destruição de glóbulos vermelhos) e, mais raramente, anemia importante.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+          "trecho": "A dapsona geralmente é bem tolerada nas doses recomendadas para a hanseníase, mas pode causar hemólise e, mais raramente, anemia significativa."
+        },
+        {
+          "id": "T14-P5",
+          "afirmacao": "Recomenda-se acompanhar os exames de sangue nos primeiros meses de tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+          "trecho": "Recomenda-se, sempre que possível, o monitoramento dos níveis hematológicos nos primeiros meses de tratamento."
+        },
+        {
+          "id": "T14-P6",
+          "afirmacao": "É preciso atenção a sinais de hemólise especialmente em quem usa remédios contra malária ou tem deficiência de G6PD.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+          "secao_ou_pagina": "10.1.5.3 Dapsona, p. 64–65 (PDF 66–67)",
+          "trecho": "Deve-se monitorar cuidadosamente o surgimento de sinais e sintomas de reações hemolíticas, particularmente em pacientes em uso concomitante de agentes antimaláricos"
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a dapsona pode ser usada sozinha para tratar a hanseníase.",
+        "Afirmar que é obrigatório fazer o exame de G6PD antes de começar o tratamento (o PCDT diz que não é necessário testar rotineiramente).",
+        "Orientar a suspender a dapsona durante a gravidez (o PCDT recomenda mantê-la).",
+        "Orientar a parar a dapsona por conta própria ao surgir algum sintoma, em vez de procurar a equipe de saúde."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 descreve a dapsona (10.1.5.3), sua posição na PQT-U e posologia (Quadro 1) e os eventos adversos, monitoramento e interações (Quadros 2 e 3, item 10.1.7), cobrindo as três partes da pergunta composta.",
+      "comportamento_esperado": "Responder às três partes (o que é, para que serve, cuidados) em linguagem simples, sem jargão não explicado.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A077",
+    "pergunta": "Quais fatores históricos, sociais e institucionais contribuem para o estigma associado à hanseníase e como enfrentá-lo na assistência?",
+    "registro": "técnico",
+    "composta": true,
+    "resposta_da_ia": "O estigma associado à hanseníase resulta de crenças e medos acumulados historicamente, mas também é mantido por desigualdades sociais e por práticas institucionais discriminatórias. Enfrentá-lo exige ações articuladas com a pessoa afetada, a equipe de saúde, a comunidade e os serviços públicos. [1][2][3][4]\n\n### Fatores que contribuem para o estigma\n\n- **Históricos e culturais:** superstições e informações equivocadas sobre transmissão e cura, além do medo de incapacidades físicas — especialmente quando há diagnóstico tardio — alimentam fantasias, receios e exclusão. [1] A OMS observa que o estigma e a discriminação contra pessoas afetadas e suas famílias são antigos e profundamente enraizados em muitas comunidades. [3][5]\n- **Sociais e econômicos:** o estigma pode levar à exclusão social, perda de renda, desemprego, menor acesso à saúde e à educação e prejuízo ao bem-estar mental; esses efeitos podem ampliar a vulnerabilidade da pessoa e de sua família. [1][3] Medo, ansiedade e solidão também podem afetar a qualidade de vida e o autocuidado. [1][2]\n- **Institucionais:** serviços de saúde podem reproduzir discriminação, inclusive com negação de atendimento ou cuidados, transferência do caso para outros profissionais e abusos verbais ou físicos. Isso cria barreiras à assistência. [2] A qualificação inadequada de profissionais também dificulta o diagnóstico precoce e o tratamento oportuno. [4]\n- **Efeitos sobre o cuidado:** o receio de revelar sintomas pode contribuir para subnotificação e não adesão ao tratamento; o estigma também dificulta a detecção precoce e pode comprometer a qualidade da assistência e os programas de controle. [6][4]\n\n### Como enfrentar na assistência\n\n1. **Avaliar o contexto psicossocial:** investigar como o estigma e a restrição da participação social afetam a pessoa. O PCDT recomenda a Escala de Estigma para Pessoas Acometidas pela Hanseníase (EMIC-AP) e a Escala de Participação; os resultados podem orientar intervenções psicossociais e de saúde mental. [7]\n2. **Qualificar e apoiar a equipe:** oferecer capacitação e educação permanente sobre hanseníase, discriminação e desigualdades sociais, e desenvolver competências para uma escuta atenta, acolhimento e atendimento humanizado. [8][2]\n3. **Garantir acesso sem discriminação:** criar canais de comunicação entre usuários e gestores, como ouvidorias e linhas telefônicas de orientação, e estabelecer meios para registrar e responder a denúncias de discriminação. [2][3]\n4. **Construir intervenções com as pessoas afetadas:** envolver pacientes e profissionais no planejamento das ações; apoiar aconselhamento individual, grupal ou familiar para trabalhar autoestigma, autoestima, empoderamento e estratégias de enfrentamento. [8][7]\n5. **Fortalecer vínculos e inclusão social:** articular ações com familiares, redes de apoio e comunidade; apoiar grupos de autoajuda e organizações de pessoas afetadas, além de iniciativas de inclusão socioeconômica e acesso à proteção social. [6][3][7]\n6. **Promover informação e direitos:** desenvolver ações comunitárias para reduzir preconceitos e apoiar políticas e normas que protejam os direitos das pessoas afetadas e de seus familiares. A OMS ressalta que ações informativas baseadas apenas em conhecimento podem ser insuficientes para mudar atitudes, sendo importante também envolver lideranças e facilitar o contato entre pessoas afetadas e a comunidade. [3][5]\n\nNa prática brasileira, essas ações devem ser orientadas pelo PCDT do Ministério da Saúde; as recomendações da OMS complementam a abordagem com ênfase em direitos, participação social e monitoramento do estigma. [8][2][3][7]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 79."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0090",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 79–80."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 4. p. 18."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0003",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 15–16."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0013",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Grandes desafios. p. 11."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0095",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 83."
+      },
+      {
+        "indice": 7,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0091",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 80–81."
+      },
+      {
+        "indice": 8,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0097",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 84–85."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Historicamente, o estigma se construiu ao longo de muitos anos de superstições e enganos sobre transmissão e cura, e a OMS o descreve como quase tão antigo quanto os registros históricos, incluindo leis e regulamentos que discriminam e segregam ou isolam compulsoriamente as pessoas afetadas, que devem ser revogados. Socialmente, contribuem o temor das incapacidades decorrentes do diagnóstico tardio, a vulnerabilidade social e econômica (desemprego, perda de renda) e o receio que se estende à comunidade e aos profissionais; institucionalmente, serviços públicos e privados reproduzem comportamentos discriminatórios, como negação de atendimento, abusos e transferência de cuidados. Na assistência, o PCDT 2022 propõe identificar os níveis do estigma (autoestigma, interpessoal, comunitário, organizacional/institucional e estrutural) e intervir em cada um, aplicar a Escala de Estigma EMIC-AP no segundo mês de tratamento (e no pós-alta recente ou durante reações) e a Escala de Participação. Também recomenda capacitar as equipes, praticar escuta e acolhimento, comunicar o diagnóstico de forma sensível, criar ouvidorias e espaços de educação permanente, formar grupos de autocuidado e articular a RAPS e o SUAS. A Estratégia Nacional 2024-2030 tem como meta dar providência a 100% das manifestações sobre práticas discriminatórias registradas nas Ouvidorias do SUS.",
+      "pontos_chave": [
+        {
+          "id": "T44-P1",
+          "afirmacao": "Fator histórico: o estigma resulta de muitos anos de superstições e enganos sobre transmissão e cura.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+          "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+          "trecho": "Na hanseníase, o estigma se desenvolveu ao longo de muitos anos de superstições e enganos, estabelecendo discriminação e exclusão social em virtude das crenças sobre sua transmissão e cura"
+        },
+        {
+          "id": "T44-P2",
+          "afirmacao": "Fator institucional: serviços de saúde públicos e privados reproduzem comportamentos discriminatórios.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0090",
+          "secao_ou_pagina": "10.2.1.2 Estigma e discriminação nos serviços de saúde, p. 79–80 (PDF 81–82)",
+          "trecho": "tanto os serviços públicos quanto os privados acabam por reproduzir comportamentos discriminatórios frente aos pacientes."
+        },
+        {
+          "id": "T44-P3",
+          "afirmacao": "Leis e regulamentações que permitem discriminação devem ser revogadas ou corrigidas.",
+          "documento": "oms-estrategia-global-hanseniase-2021-2030",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028",
+          "secao_ou_pagina": "Pilar estratégico 4, p. 18 (PDF 18)",
+          "trecho": "As leis e regulamentações que permitem a discriminação contra as pessoas afetadas pela hanseníase devem ser revogadas ou corrigidas sem demora"
+        },
+        {
+          "id": "T44-P4",
+          "afirmacao": "O enfrentamento exige identificar os níveis do estigma e intervir em cada um.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0091",
+          "secao_ou_pagina": "10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação, p. 80–81 (PDF 82–83)",
+          "trecho": "Para tratá-lo, é preciso identificar os seus níveis e abordar cada um deles da melhor maneira possível."
+        },
+        {
+          "id": "T44-P5",
+          "afirmacao": "Aplicar a Escala de Estigma (EMIC) no segundo mês de tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0092",
+          "secao_ou_pagina": "10.2.1.5 Profissionais de saúde, p. 81–82 (PDF 83–84)",
+          "trecho": "Uma das estratégias pensadas em relação à atuação do profissional de saúde é a aplicação da Escala de Estigma (EMIC) no segundo mês de tratamento do paciente acometido pela hanseníase"
+        },
+        {
+          "id": "T44-P6",
+          "afirmacao": "Capacitar a equipe de saúde com informações sobre a hanseníase é estratégia de enfrentamento nos serviços.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0097",
+          "secao_ou_pagina": "10.2.1.7.2 Direcionando uma intervenção, p. 84–85 (PDF 86–87)",
+          "trecho": "capacitar a equipe de saúde, a partir do fornecimento de informações acerca das condições que envolvem direta e indiretamente a hanseníase"
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar isolamento ou segregação de pessoas com hanseníase.",
+        "Afirmar que o enfrentamento ao estigma não faz parte do tratamento (o PCDT considera o tratamento completo apenas com essa intervenção).",
+        "Orientar a divulgação do diagnóstico a terceiros sem o consentimento do paciente."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (10.2.1) descreve os fatores históricos, sociais e institucionais e as estratégias de enfrentamento na assistência; a Estratégia Global da OMS (Pilar 4 e Anexo 2) e a Estratégia Nacional 2024-2030 (meta 4 e ações) complementam.",
+      "comportamento_esperado": "Responder com terminologia técnica, cobrindo fatores históricos, sociais e institucionais e as estratégias de enfrentamento na assistência (níveis de estigma, EMIC e Escala de Participação, capacitação, acolhimento, ouvidorias, grupos de autocuidado, RAPS e SUAS).",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A087",
+    "pergunta": "Por que realizar avaliação neurológica?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "A avaliação neurológica na hanseníase serve para **detectar e monitorar precocemente o dano aos nervos**, orientar o diagnóstico e ajudar a prevenir ou limitar incapacidades físicas. [1][2][3]\n\n- **Apoia o diagnóstico:** os achados podem contribuir para definir critérios diagnósticos da hanseníase. [3]\n- **Identifica alterações da função neural:** avalia funções autonômicas, sensibilidade e força muscular, além de procurar sinais como lesões traumáticas, atrofias e deformidades. [1][4][2]\n- **Detecta e acompanha incapacidades:** permite identificar o grau de incapacidade física e acompanhar mudanças durante e após o tratamento. [1][3]\n- **Ajuda a reconhecer neurites e reações hansênicas:** a avaliação periódica pode revelar perda funcional e apoiar o monitoramento da resposta ao tratamento; é especialmente importante porque corticosteroides podem aliviar a dor sem proteger contra dano neurológico. [4]\n- **Orienta o acompanhamento e o encaminhamento:** reconhecer sinais de reação ou neurite permite tratar ou encaminhar prontamente, conforme a necessidade. [5]\n\nA Avaliação Neurológica Simplificada (ANS) é obrigatória. O protocolo brasileiro recomenda realizá-la no diagnóstico, a cada três meses durante a PQT-U e na última dose supervisionada; deve ser repetida diante de novas queixas sugestivas de dano neural e antes e depois de cirurgias de descompressão neural ou reabilitação física. [1][6]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.1 Avaliação neurológica simplificada (ANS). p. 43–44."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0004",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 16."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0031",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.1 Neuropatia periférica. p. 38."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 38–39."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0025",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 3. p. 17."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0124",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 14.1 Monitoramento durante o tratamento farmacológico com PQT-U. p. 103."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A avaliação neurológica simplificada (ANS) é exame obrigatório porque monitora a função neural, identificando alterações autonômicas, perda de sensibilidade e redução de força muscular decorrentes do dano neural, por meio de anamnese, inspeção de olhos, mãos e pés, palpação dos nervos periféricos e testes de sensibilidade, força muscular e acuidade visual. Seus achados contribuem para o diagnóstico (sobretudo quando as lesões cutâneas estão ausentes ou a alteração de sensibilidade é duvidosa) e são essenciais para o seguimento da função neural durante e após a PQT-U. A ANS determina o grau de incapacidade física (0, 1 ou 2) e o escore OMP, e a sua repetição periódica é a principal forma de reconhecer a neurite silenciosa, cuja piora funcional indica corticoterapia mesmo sem dor neural. Segundo a OMS, o comprometimento da função neural não tratado em até seis meses pode tornar-se irreversível e causar incapacidade permanente; por isso o PCDT preconiza a ANS no diagnóstico, a cada três meses, ao final do tratamento e sempre que houver novas queixas, reações ou cirurgias.",
+      "pontos_chave": [
+        {
+          "id": "T32-P1",
+          "afirmacao": "A ANS é obrigatória e tem por objetivo monitorar a função neural do paciente com hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "A ANS é um exame de caráter obrigatório e tem por objetivo monitorar a função neural do paciente acometido pela hanseníase"
+        },
+        {
+          "id": "T32-P2",
+          "afirmacao": "A ANS verifica alterações autonômicas, comprometimento da sensibilidade e diminuição da força muscular resultantes do dano neural.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "verificando se há alterações autonômicas, comprometimento da sensibilidade ou diminuição da força muscular como resultado do dano neural"
+        },
+        {
+          "id": "T32-P3",
+          "afirmacao": "Os resultados da avaliação neurológica contribuem para o diagnóstico e são essenciais para monitorar a função dos nervos durante e após o tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0031",
+          "secao_ou_pagina": "6.6.1 Neuropatia periférica, p. 38 (PDF 40)",
+          "trecho": "Os resultados dessa avaliação podem definir critérios para o diagnóstico da doença, além de serem essenciais para o monitoramento da função dos nervos periféricos durante e após o tratamento medicamentoso"
+        },
+        {
+          "id": "T32-P4",
+          "afirmacao": "A ANS permite determinar o grau de incapacidade física do paciente.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "Por meio da ANS, é possível detectar o grau de incapacidade física apresentado pelo paciente."
+        },
+        {
+          "id": "T32-P5",
+          "afirmacao": "A ANS periódica é a principal forma de reconhecer a neurite silenciosa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0033",
+          "secao_ou_pagina": "6.6.2 Neurite (6.6.2.2 Neurite silenciosa), p. 39–40 (PDF 41–42)",
+          "trecho": "o monitoramento sistemático dos pacientes com hanseníase pela ANS periódica é a principal forma de reconhecer esse quadro clínico"
+        },
+        {
+          "id": "T32-P6",
+          "afirmacao": "O comprometimento da função neural não tratado em até seis meses do início pode tornar-se irreversível e causar incapacidade permanente, o que torna essencial a avaliação periódica.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0018",
+          "secao_ou_pagina": "2.1 Introduction to nerve function assessment, p. 11 (PDF 23)",
+          "trecho": "When NFI is not treated within six months of onset, nerve damage can become irreversible and can cause permanent disability. Therefore, periodic assessment is an essential part of proper case management in leprosy."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a avaliação neurológica é opcional ou necessária apenas quando há dor nos nervos.",
+        "Afirmar que o uso de corticosteroide dispensa a repetição da ANS ou protege o paciente do dano neural.",
+        "Afirmar que a avaliação neurológica só é útil no diagnóstico e não durante ou após a PQT-U."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (itens 6.6 e 7.1) explica as finalidades da ANS (monitorar função neural, apoiar o diagnóstico, classificar o grau de incapacidade e o escore OMP, detectar neurite silenciosa, avaliar tratamento de neurites e cirurgias) e sua periodicidade; o guia da OMS de 2020 (cap. 2) reforça as finalidades e a janela de seis meses para reversibilidade.",
+      "comportamento_esperado": "Responder: explicar as finalidades da avaliação neurológica (monitoramento da função neural, apoio diagnóstico, classificação do grau de incapacidade, detecção precoce de neurite inclusive silenciosa e orientação do tratamento) e mencionar sua periodicidade.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A096",
+    "pergunta": "Quais fatores podem desencadear reações hansênicas durante ou após o tratamento?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os fatores associados ao desencadeamento ou à manutenção de reações hansênicas incluem **gravidez — especialmente o pós-parto —, alterações hormonais da adolescência, coinfecções, parasitoses intestinais, focos de infecção dentária, uso de vacinas e estresse físico ou psicológico**. A reação pode ocorrer antes, durante ou após o tratamento da hanseníase. [1][2]\n\nO protocolo também aponta maior risco em pessoas com saúde oral comprometida, especialmente na presença de cáries, periodontite, sangramento gengival, cálculo dentário ou bolsa periodontal. [2]\n\n**Cuidados e encaminhamento:** recomenda-se avaliação odontológica e tratamento adequado, além de avaliação clínica ampla para identificar e tratar comorbidades; a associação entre tuberculose e hanseníase merece atenção porque pode exigir ajuste dos esquemas terapêuticos. [2] Como as reações podem causar dano neural e incapacidades, dor nos nervos, piora da sensibilidade ou da força, ou outros sinais de comprometimento neural exigem avaliação clínica e monitoramento da função neural. [1][3]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5 Reações hansênicas. p. 33–34."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0028",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.3 Fatores associados ou precipitantes das reações hansênicas. p. 37."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.1 Reação hansênica tipo 1 (reação reversa). p. 34."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "As reações hansênicas são inflamações causadas pela própria defesa do corpo contra o bacilo e podem aparecer antes, durante ou depois do tratamento, inclusive porque restos de bacilos mortos continuam no corpo por muito tempo. Alguns fatores podem provocar ou manter essas reações: gravidez (principalmente depois do parto), mudanças hormonais da adolescência, outras infecções ao mesmo tempo, vermes no intestino, infecções nos dentes e problemas de gengiva, vacinas e estresse físico ou emocional. O começo do tratamento com os remédios da hanseníase também pode desencadear a reação tipo 1, provavelmente porque a morte rápida dos bacilos faz o sistema de defesa reagir com mais força; durante a reação, o tratamento da hanseníase deve ser mantido. Parar de repente alguns remédios que diminuem a imunidade (como os anti-TNF usados em doenças reumáticas) também pode desencadear ou piorar reações. Por isso, recomendam-se avaliação com dentista, tratamento de outras doenças e infecções e procurar a unidade de saúde ao notar sinais de reação.",
+      "pontos_chave": [
+        {
+          "id": "T24-P1",
+          "afirmacao": "Fatores associados ao desencadeamento das reações: gravidez (sobretudo pós-parto), alterações hormonais da adolescência, coinfecções, parasitoses intestinais, focos de infecção dentária, vacinas e estresse físico e psicológico.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0028",
+          "secao_ou_pagina": "6.5.3 Fatores associados ou precipitantes das reações hansênicas, p. 37 (PDF 39)",
+          "trecho": "dentre os quais a gravidez (especialmente o período pós-parto), as alterações hormonais da adolescência, coinfecções, parasitoses intestinais, focos de infecção dentária e uso de vacinas, além de estresse físico e psicológico."
+        },
+        {
+          "id": "T24-P2",
+          "afirmacao": "Saúde bucal comprometida (cáries, doença de gengiva) aumenta o risco de reações, e recomenda-se avaliação odontológica.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0028",
+          "secao_ou_pagina": "6.5.3 Fatores associados ou precipitantes das reações hansênicas, p. 37 (PDF 39)",
+          "trecho": "Alguns estudos demonstram que há risco aumentado de desenvolvimento de reações hansênicas em pacientes com saúde oral comprometida, especialmente na presença de cáries, periodontite, sangramento gengival"
+        },
+        {
+          "id": "T24-P3",
+          "afirmacao": "As reações podem ocorrer antes, durante ou depois do tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+          "secao_ou_pagina": "6.5 Reações hansênicas, p. 33–34 (PDF 35–36)",
+          "trecho": "Resultam da ativação de resposta imune contra o M. leprae e podem ocorrer antes, durante ou após o tratamento da infecção."
+        },
+        {
+          "id": "T24-P4",
+          "afirmacao": "Após o tratamento, a reação pode ser dirigida contra bacilos mortos ou fragmentos que permanecem no corpo por muito tempo.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "pode ser direcionada contra bacilos mortos ou fragmentos bacilares que permanecem no organismo por períodos longos após a antibioticoterapia."
+        },
+        {
+          "id": "T24-P5",
+          "afirmacao": "O início da poliquimioterapia pode precipitar a reação tipo 1.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0009",
+          "secao_ou_pagina": "1.3 Type 1 reactions and neuritis, p. 5–6 (PDF 17–18)",
+          "trecho": "Starting treatment with MDT often appears to precipitate a Type 1 reaction, perhaps because the rapid killing of bacilli allows the immune system to recover."
+        },
+        {
+          "id": "T24-P6",
+          "afirmacao": "A interrupção de imunobiológicos anti-TNF pode desencadear ou piorar reações hansênicas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0118",
+          "secao_ou_pagina": "12.3 Imunossupressão e hanseníase, p. 97–98 (PDF 99–100)",
+          "trecho": "resultando no desencadeamento ou piora das reações hansênicas quando esses medicamentos são interrompidos."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a reação significa que o tratamento falhou e que os remédios da hanseníase devem ser interrompidos.",
+        "Afirmar que, após a alta por cura, não há mais risco de reação.",
+        "Atribuir a reação a contágio ou a culpa do paciente, ou recomendar evitar o tratamento para não ter reação."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 tem seção específica (6.5.3) sobre fatores associados ou precipitantes, além de 6.5, 6.5.1, 12.1.3 e 12.3. A OMS 2020 (1.3) acrescenta o início da PQT como possível desencadeante da reação tipo 1.",
+      "comportamento_esperado": "Responder em linguagem simples, listando os fatores desencadeantes do corpus, explicando que a reação pode ocorrer antes, durante ou após o tratamento e orientando manter a PQT e procurar a unidade de saúde.",
+      "divergencias_entre_documentos": null
+    }
+  }
+]

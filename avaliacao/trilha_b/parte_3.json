@@ -1,0 +1,826 @@
+[
+  {
+    "id": "T21",
+    "registro": "técnico",
+    "resposta_referencia": "A reação hansênica tipo 1 (reação reversa) é uma reação de hipersensibilidade celular que acomete sobretudo as formas dimorfas (PB ou MB) e pode ocorrer antes, durante ou após a PQT-U. Instala-se abruptamente, com piora das lesões cutâneas preexistentes, que se tornam eritemato-vinhosas, edemaciadas e por vezes dolorosas (podendo ulcerar), e surgimento de lesões aparentemente novas, frequentemente com neurite: dor espontânea ou à palpação de nervos periféricos e comprometimento sensitivo, motor e/ou autonômico (piora da dor nos membros, queda de objetos das mãos, dormência em mãos e pés); a febre, quando presente, é discreta. Diferencia-se da reação tipo 2 (eritema nodoso hansênico), exclusiva de multibacilares, na qual surgem nódulos subcutâneos dolorosos não relacionados às lesões prévias, com quadro sistêmico (febre alta, artralgias, edema, linfadenomegalia, irite, orquite, nefrite) e alterações laboratoriais inflamatórias. Diferencia-se também da dor neuropática, com formigamento ou queimação tardios (em geral 3 a 5 anos após o tratamento) sem dor à palpação do nervo e sem nova perda de função neural, e da neurite silenciosa, em que há perda de função sem dor, detectável pela avaliação neurológica simplificada periódica. O diagnóstico é essencialmente clínico e deve ser sempre complementado pela avaliação da função neural.",
+    "pontos_chave": [
+      {
+        "id": "T21-P1",
+        "afirmacao": "A reação tipo 1 surge de forma abrupta, com piora das lesões preexistentes e aparecimento de novas lesões, muitas vezes com inflamação de nervos periféricos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "Ocorre abruptamente, com piora das lesões de pele preexistentes e aparecimento de novas lesões, muitas vezes acompanhada por intensa inflamação de nervos periféricos."
+      },
+      {
+        "id": "T21-P2",
+        "afirmacao": "As lesões cutâneas na reação tipo 1 tornam-se eritemato-vinhosas, edemaciadas e por vezes dolorosas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "As lesões cutâneas tornam-se mais visíveis, com coloração eritemato-vinhosa, edemaciadas, algumas vezes dolorosas."
+      },
+      {
+        "id": "T21-P3",
+        "afirmacao": "A reação tipo 1 frequentemente acompanha-se de neurite, com dor aguda espontânea ou à palpação de nervos periféricos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "Qualquer nervo periférico e ramos nervosos cutâneos podem ser afetados, gerando dor aguda, que pode ser de forte intensidade, espontânea ou à palpação dessas estruturas"
+      },
+      {
+        "id": "T21-P4",
+        "afirmacao": "Diferencia-se da reação tipo 2, cujos nódulos subcutâneos (eritema nodoso) aparecem em qualquer área e não se relacionam às lesões prévias de hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0026",
+        "secao_ou_pagina": "6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico), p. 34–36 (PDF 36–38)",
+        "trecho": "Os nódulos podem aparecer em qualquer área da pele e não se relacionam à localização de lesões prévias de hanseníase."
+      },
+      {
+        "id": "T21-P5",
+        "afirmacao": "Na reação tipo 1 as lesões antigas inflamam e a febre, se houver, é discreta, sem grande comprometimento do estado geral (ao contrário da tipo 2, com febre alta e mal-estar).",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0041",
+        "secao_ou_pagina": "4.2 The four steps in managing leprosy reactions, p. 28–29 (PDF 40–41)",
+        "trecho": "Type 1 reaction: – The leprosy skin lesions are inflamed; – There may be a slight fever, but the patient doesn’t feel too ill."
+      },
+      {
+        "id": "T21-P6",
+        "afirmacao": "Formigamento/queimação tardios sem dor à palpação do nervo e sem nova perda de função neural sugerem dor neuropática, e não reação.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0016",
+        "secao_ou_pagina": "1.5 Neuropathic pain, p. 10 (PDF 22)",
+        "trecho": "In the absence of nerve tenderness and new NFI, the diagnosis of neuropathic pain should be considered, especially if the original diagnosis of leprosy was made more than 3–5 years earlier."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a reação tipo 1 indica falha ou resistência do tratamento e que a PQT-U deve ser suspensa.",
+      "Descrever a reação tipo 1 como nódulos subcutâneos dolorosos fora das lesões prévias (característica da reação tipo 2).",
+      "Afirmar que a reação tipo 1 só ocorre durante o tratamento ou acomete apenas multibacilares.",
+      "Dispensar a avaliação da função neural por ausência de dor (ignorando a neurite silenciosa)."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (6.5.1, 6.5.2, 6.6) descreve os achados clínicos da reação tipo 1 e da tipo 2, e o guia técnico da OMS 2020 (1.3, 1.5, 4.2, algoritmo 2) traz critérios práticos para distinguir reação tipo 1, tipo 2, neurite silenciosa e dor neuropática. A diferenciação em relação a outras intercorrências não hansênicas não é sistematizada no corpus; a resposta cobre as intercorrências da própria hanseníase.",
+    "comportamento_esperado": "Responder: descrever os achados da reação tipo 1 (lesões preexistentes inflamadas, lesões novas, neurite, febre discreta) e diferenciá-la da reação tipo 2, da dor neuropática e da neurite silenciosa, reforçando a avaliação da função neural.",
+    "divergencias_entre_documentos": "Quanto à conduta, o PCDT 2022 indica corticoterapia sistêmica em doses altas imediatamente em toda reação tipo 1, enquanto a OMS 2020 admite AINE/paracetamol na reação tipo 1 leve sem neurite. Na classificação imunológica, o PCDT fala em hipersensibilidade tipos III e IV de Gell e Coombs, e a OMS em hipersensibilidade tardia. Prevalece o PCDT.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "oms-estrategia-global-hanseniase-2021-2030"
+    ],
+    "termos_buscados": [
+      "reação tipo 1",
+      "reação reversa",
+      "eritemato-vinhosa",
+      "neurite",
+      "eritema nodoso",
+      "Type 1 reaction",
+      "reversal reaction",
+      "neuropathic pain",
+      "silent neuritis",
+      "diagnóstico diferencial",
+      "recidiva"
+    ]
+  },
+  {
+    "id": "T22",
+    "registro": "leigo",
+    "resposta_referencia": "A talidomida é usada na reação hansênica tipo 2, chamada eritema nodoso hansênico (caroços doloridos sob a pele, às vezes com febre e mal-estar), porque é um remédio que acalma a resposta exagerada do sistema de defesa do corpo e é muito eficaz para controlar esse tipo de reação; no Brasil ela é a opção preferida nesses casos, mas, quando a reação atinge os nervos, os olhos ou os testículos, o tratamento é feito com corticoide. O cuidado mais importante é que ela causa malformações graves no bebê, mesmo com um único comprimido: é proibida para grávidas e para quem está amamentando, e mulheres que podem engravidar só podem usá-la com teste de gravidez negativo e usando ao mesmo tempo dois métodos para evitar a gravidez (pelo menos um de alta eficácia), começando quatro semanas antes e mantendo até quatro semanas depois de parar o remédio. Homens que tomam talidomida devem usar camisinha nas relações com mulheres que podem engravidar, mesmo se tiverem feito vasectomia. No SUS ela só é autorizada para maiores de 18 anos, nunca deve ser emprestada ou dividida com outra pessoa e pode causar sonolência e problemas nos nervos (formigamento, fraqueza), por isso exige acompanhamento médico regular. A dose é definida e reduzida aos poucos pela equipe de saúde e, quando usada junto com corticoide, também se receita AAS para prevenir trombose.",
+    "pontos_chave": [
+      {
+        "id": "T22-P1",
+        "afirmacao": "A talidomida é o tratamento preferencial da reação hansênica tipo 2 (eritema nodoso hansênico).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "secao_ou_pagina": "10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico, p. 61 (PDF 63)",
+        "trecho": "O tratamento é feito preferencialmente com talidomida, administrada por via oral na dose de 100 a 400mg/dia, conforme a intensidade do quadro."
+      },
+      {
+        "id": "T22-P2",
+        "afirmacao": "A talidomida age modulando a resposta imune e reduz a inflamação no eritema nodoso hansênico (menos neutrófilos e células T na pele, menos TNF-α).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0073",
+        "secao_ou_pagina": "10.1.5.8 Talidomida, p. 68 (PDF 70)",
+        "trecho": "O medicamento leva ao decréscimo da infiltração dérmica de neutrófilos e células T, além da redução de níveis de TNF-α em pacientes com ENH."
+      },
+      {
+        "id": "T22-P3",
+        "afirmacao": "A talidomida é proibida para mulheres grávidas ou que estejam amamentando, por causar malformações no bebê.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0075",
+        "secao_ou_pagina": "10.1.5.8 Talidomida – considerações sobre teratogenicidade, p. 69–70 (PDF 71–72)",
+        "trecho": "› É proibido o uso da talidomida por mulheres grávidas ou que estejam amamentando."
+      },
+      {
+        "id": "T22-P4",
+        "afirmacao": "Mulheres que podem engravidar precisam usar dois métodos contraceptivos ao mesmo tempo (um de alta eficácia) e fazer teste de gravidez.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0075",
+        "secao_ou_pagina": "10.1.5.8 Talidomida – considerações sobre teratogenicidade, p. 69–70 (PDF 71–72)",
+        "trecho": "A paciente deve ser orientada a aderir concomitantemente a dois métodos contraceptivos. Pelo menos um deles deve ser de alta eficácia"
+      },
+      {
+        "id": "T22-P5",
+        "afirmacao": "Homens em uso de talidomida devem usar preservativo nas relações com mulheres que possam engravidar, mesmo vasectomizados.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0074",
+        "secao_ou_pagina": "10.1.5.8 Talidomida, p. 68–69 (PDF 70–71)",
+        "trecho": "homens em tratamento com talidomida devem utilizar métodos contraceptivos de barreira se tiverem relação sexual com mulheres com risco de engravidar, mesmo que tenham sido submetidos à vasectomia."
+      },
+      {
+        "id": "T22-P6",
+        "afirmacao": "No SUS, a talidomida não é autorizada para menores de 18 anos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "secao_ou_pagina": "10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças, p. 62 (PDF 64)",
+        "trecho": "A talidomida produzida no Brasil e disponibilizada no SUS tem registro em bula destinado somente para adultos. Portanto, não está autorizada neste PCDT a administração de talidomida em menores de 18 anos."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar ou sugerir que gestantes, lactantes ou mulheres em idade fértil sem contracepção dupla e teste de gravidez podem usar talidomida.",
+      "Recomendar talidomida para crianças ou adolescentes menores de 18 anos.",
+      "Indicar talidomida para a reação tipo 1 ou como tratamento da neurite, em substituição ao corticoide.",
+      "Sugerir compartilhar, emprestar ou usar talidomida sem prescrição e acompanhamento médico.",
+      "Afirmar que a talidomida trata a infecção pelo bacilo ou substitui a poliquimioterapia."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (10.1.2.2, 10.1.3.2, 10.1.5.8, 10.1.6, 12.1) explica a indicação na reação tipo 2, o mecanismo imunomodulador e todos os cuidados (teratogenicidade, contracepção, teste de gravidez, uso masculino, restrição etária, neuropatia, sedação, AAS na associação com corticoide); a OMS 2020 (3.2 e anexo 3) complementa com o não compartilhamento dos comprimidos.",
+    "comportamento_esperado": "Responder em linguagem simples: explicar que a talidomida controla a reação tipo 2 e detalhar os cuidados, com ênfase absoluta na proibição em gestantes e lactantes e na contracepção dupla para mulheres que podem engravidar.",
+    "divergencias_entre_documentos": "A OMS 2020 trata o corticoide como primeira escolha também na reação tipo 2 e reserva a talidomida como fármaco adicional ou de segunda linha, para casos de não resposta ou dependência de corticoide e sob supervisão estrita em centros de referência. O PCDT 2022 a coloca como tratamento preferencial. A OMS cita ainda a posição histórica de 1997, segundo a qual não deveria ser dada a mulheres em idade fértil, e considera desconhecida a presença da talidomida no sêmen, enquanto o PCDT afirma que ela está presente no esperma. Prevalece o PCDT.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020"
+    ],
+    "termos_buscados": [
+      "talidomida",
+      "thalidomide",
+      "eritema nodoso hansênico",
+      "ENH",
+      "ENL",
+      "teratogên",
+      "contracept",
+      "gravidez",
+      "amamentação",
+      "menores de 18 anos",
+      "TNF"
+    ]
+  },
+  {
+    "id": "T23",
+    "registro": "técnico",
+    "resposta_referencia": "Segundo o PCDT (2022), a talidomida é o tratamento preferencial da reação hansênica tipo 2 (eritema nodoso hansênico), por via oral, na dose de 100 a 400 mg/dia conforme a intensidade do quadro, com redução gradativa conforme a resposta; quadros com orquite, episclerite e/ou neurite aguda devem ser tratados com corticosteroides (prednisona nas doses da reação tipo 1), e na associação talidomida + corticoide deve-se prescrever AAS 100 mg/dia como profilaxia de tromboembolismo. É de uso exclusivo em adultos, não sendo autorizada em menores de 18 anos, e é proibida em gestantes e lactantes por ser teratogênica mesmo em dose única de 50 mg. Em mulheres com potencial reprodutivo, só pode ser prescrita com exclusão de gravidez por exame sensível (teste até 24 h antes do início e a cada nova dispensação, semanal no primeiro mês) e com uso concomitante de dois métodos contraceptivos, ao menos um de alta eficácia, iniciados quatro semanas antes e mantidos até quatro semanas após a suspensão; homens devem usar método de barreira, mesmo vasectomizados. Recomendam-se exame clínico e neurológico antes e durante o tratamento, pelo risco de neuropatia periférica; não se deve iniciar com neutrófilos abaixo de 750/mm³, e é preciso atentar para sedação, bradicardia e risco tromboembólico. O controle da dispensação e a farmacovigilância são compulsórios, e qualquer suspeita de exposição fetal deve ser notificada à Anvisa (Vigimed).",
+    "pontos_chave": [
+      {
+        "id": "T23-P1",
+        "afirmacao": "Talidomida é o tratamento preferencial da reação tipo 2, VO, 100 a 400 mg/dia conforme a intensidade, com redução gradativa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "secao_ou_pagina": "10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico, p. 61 (PDF 63)",
+        "trecho": "O tratamento é feito preferencialmente com talidomida, administrada por via oral na dose de 100 a 400mg/dia, conforme a intensidade do quadro."
+      },
+      {
+        "id": "T23-P2",
+        "afirmacao": "Na reação tipo 2 com orquite, episclerite e/ou neurite aguda, o tratamento deve ser feito com corticosteroides.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "secao_ou_pagina": "10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico, p. 61 (PDF 63)",
+        "trecho": "Nos pacientes que apresentam quadros associados a orquite, episclerite e/ou neurite aguda (definida pela palpação dos nervos periféricos e pela avaliação da função neural), o tratamento deverá ser feito com corticosteroides"
+      },
+      {
+        "id": "T23-P3",
+        "afirmacao": "Na associação de talidomida com corticoide, deve-se prescrever AAS 100 mg/dia como profilaxia de tromboembolismo.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "secao_ou_pagina": "10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico, p. 61 (PDF 63)",
+        "trecho": "Na associação de talidomida e corticoide, deve-se prescrever ácido acetilsalicílico 100mg/dia como profilaxia para tromboembolismo."
+      },
+      {
+        "id": "T23-P4",
+        "afirmacao": "Para mulheres com potencial reprodutivo, a prescrição exige exclusão de gravidez por exame sensível e no mínimo dois métodos contraceptivos, um de alta eficácia; é proibida na gestação.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0116",
+        "secao_ou_pagina": "12.1.3 Episódios reacionais durante a gestação, p. 96 (PDF 98)",
+        "trecho": "No Brasil, a prescrição de talidomida para mulheres com potencial reprodutivo é permitida, desde que haja avaliação médica com exclusão de gravidez por meio de exames sensíveis e comprovação de, no mínimo, dois métodos contraceptivos, sendo pelo menos um de alta eficácia."
+      },
+      {
+        "id": "T23-P5",
+        "afirmacao": "A talidomida não é autorizada em menores de 18 anos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "secao_ou_pagina": "10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças, p. 62 (PDF 64)",
+        "trecho": "Portanto, não está autorizada neste PCDT a administração de talidomida em menores de 18 anos."
+      },
+      {
+        "id": "T23-P6",
+        "afirmacao": "Pelo risco de neuropatia periférica, recomendam-se exames clínicos e neurológicos antes e durante o tratamento com talidomida.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2 – Talidomida), p. 73–74 (PDF 75–76)",
+        "trecho": "Recomenda-se a realização de exames clínicos e neurológicos nos pacientes antes do início do tratamento com talidomida e a monitorização de rotina durante o tratamento."
+      }
+    ],
+    "pontos_proibidos": [
+      "Prescrever ou admitir talidomida para gestantes ou lactantes, ou para mulheres com potencial reprodutivo sem exclusão de gravidez e contracepção dupla.",
+      "Indicar talidomida para menores de 18 anos.",
+      "Indicar talidomida, e não corticoide, para reação tipo 2 com neurite, orquite ou episclerite, ou para a reação tipo 1.",
+      "Informar doses de talidomida acima de 400 mg/dia para a reação tipo 2.",
+      "Omitir a profilaxia com AAS na associação de talidomida com corticoide."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 traz indicação, dose, redução, exceções com corticoide, profilaxia com AAS, restrição etária, exigências de contracepção e testagem, monitorização neurológica e hematológica e farmacovigilância (10.1.2.2, 10.1.3.2, 10.1.5.8, 10.1.6, 12.1.3, 16). A OMS 2020 (3.2 e anexo 3) complementa. Eventuais atualizações normativas posteriores ao PCDT 2022, como as Portarias SCTIE/MS nº 47 e 51/2026, não fazem parte do corpus.",
+    "comportamento_esperado": "Responder com as recomendações do PCDT (indicação, dose, exceções, AAS, restrição a adultos, programa de prevenção da gravidez, monitorização) e registrar que a OMS a posiciona como fármaco de segunda linha.",
+    "divergencias_entre_documentos": "A OMS 2020 recomenda iniciar a reação tipo 2 grave com prednisolona 30–40 mg/dia e reserva a talidomida para não resposta ou dependência de corticoide e comorbidade grave, sob supervisão estrita em serviços de referência. Cita o esquema indiano de 300 mg/dia, reduzido a 100 mg/dia em 2–3 semanas, e pede teste de gravidez mensal. O PCDT 2022 coloca a talidomida como primeira escolha (100–400 mg/dia) e exige teste até 24 h antes do início, a cada dispensação e semanal no primeiro mês. Prevalece o PCDT.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020"
+    ],
+    "termos_buscados": [
+      "talidomida",
+      "thalidomide",
+      "ácido acetilsalicílico",
+      "tromboembolismo",
+      "neutrófilos",
+      "neuropatia periférica",
+      "potencial reprodutivo",
+      "teste de gravidez",
+      "farmacovigilância",
+      "Vigimed",
+      "ENL",
+      "steroid-sparing"
+    ]
+  },
+  {
+    "id": "T24",
+    "registro": "leigo",
+    "resposta_referencia": "As reações hansênicas são inflamações causadas pela própria defesa do corpo contra o bacilo e podem aparecer antes, durante ou depois do tratamento, inclusive porque restos de bacilos mortos continuam no corpo por muito tempo. Alguns fatores podem provocar ou manter essas reações: gravidez (principalmente depois do parto), mudanças hormonais da adolescência, outras infecções ao mesmo tempo, vermes no intestino, infecções nos dentes e problemas de gengiva, vacinas e estresse físico ou emocional. O começo do tratamento com os remédios da hanseníase também pode desencadear a reação tipo 1, provavelmente porque a morte rápida dos bacilos faz o sistema de defesa reagir com mais força; durante a reação, o tratamento da hanseníase deve ser mantido. Parar de repente alguns remédios que diminuem a imunidade (como os anti-TNF usados em doenças reumáticas) também pode desencadear ou piorar reações. Por isso, recomendam-se avaliação com dentista, tratamento de outras doenças e infecções e procurar a unidade de saúde ao notar sinais de reação.",
+    "pontos_chave": [
+      {
+        "id": "T24-P1",
+        "afirmacao": "Fatores associados ao desencadeamento das reações: gravidez (sobretudo pós-parto), alterações hormonais da adolescência, coinfecções, parasitoses intestinais, focos de infecção dentária, vacinas e estresse físico e psicológico.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0028",
+        "secao_ou_pagina": "6.5.3 Fatores associados ou precipitantes das reações hansênicas, p. 37 (PDF 39)",
+        "trecho": "dentre os quais a gravidez (especialmente o período pós-parto), as alterações hormonais da adolescência, coinfecções, parasitoses intestinais, focos de infecção dentária e uso de vacinas, além de estresse físico e psicológico."
+      },
+      {
+        "id": "T24-P2",
+        "afirmacao": "Saúde bucal comprometida (cáries, doença de gengiva) aumenta o risco de reações, e recomenda-se avaliação odontológica.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0028",
+        "secao_ou_pagina": "6.5.3 Fatores associados ou precipitantes das reações hansênicas, p. 37 (PDF 39)",
+        "trecho": "Alguns estudos demonstram que há risco aumentado de desenvolvimento de reações hansênicas em pacientes com saúde oral comprometida, especialmente na presença de cáries, periodontite, sangramento gengival"
+      },
+      {
+        "id": "T24-P3",
+        "afirmacao": "As reações podem ocorrer antes, durante ou depois do tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+        "secao_ou_pagina": "6.5 Reações hansênicas, p. 33–34 (PDF 35–36)",
+        "trecho": "Resultam da ativação de resposta imune contra o M. leprae e podem ocorrer antes, durante ou após o tratamento da infecção."
+      },
+      {
+        "id": "T24-P4",
+        "afirmacao": "Após o tratamento, a reação pode ser dirigida contra bacilos mortos ou fragmentos que permanecem no corpo por muito tempo.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "pode ser direcionada contra bacilos mortos ou fragmentos bacilares que permanecem no organismo por períodos longos após a antibioticoterapia."
+      },
+      {
+        "id": "T24-P5",
+        "afirmacao": "O início da poliquimioterapia pode precipitar a reação tipo 1.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0009",
+        "secao_ou_pagina": "1.3 Type 1 reactions and neuritis, p. 5–6 (PDF 17–18)",
+        "trecho": "Starting treatment with MDT often appears to precipitate a Type 1 reaction, perhaps because the rapid killing of bacilli allows the immune system to recover."
+      },
+      {
+        "id": "T24-P6",
+        "afirmacao": "A interrupção de imunobiológicos anti-TNF pode desencadear ou piorar reações hansênicas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0118",
+        "secao_ou_pagina": "12.3 Imunossupressão e hanseníase, p. 97–98 (PDF 99–100)",
+        "trecho": "resultando no desencadeamento ou piora das reações hansênicas quando esses medicamentos são interrompidos."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a reação significa que o tratamento falhou e que os remédios da hanseníase devem ser interrompidos.",
+      "Afirmar que, após a alta por cura, não há mais risco de reação.",
+      "Atribuir a reação a contágio ou a culpa do paciente, ou recomendar evitar o tratamento para não ter reação."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 tem seção específica (6.5.3) sobre fatores associados ou precipitantes, além de 6.5, 6.5.1, 12.1.3 e 12.3. A OMS 2020 (1.3) acrescenta o início da PQT como possível desencadeante da reação tipo 1.",
+    "comportamento_esperado": "Responder em linguagem simples, listando os fatores desencadeantes do corpus, explicando que a reação pode ocorrer antes, durante ou após o tratamento e orientando manter a PQT e procurar a unidade de saúde.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "oms-estrategia-global-hanseniase-2021-2030"
+    ],
+    "termos_buscados": [
+      "fatores precipitantes",
+      "desencade",
+      "precipitate",
+      "gravidez",
+      "pós-parto",
+      "saúde oral",
+      "vacinas",
+      "estresse",
+      "anti-TNF",
+      "coinfecções",
+      "after treatment"
+    ]
+  },
+  {
+    "id": "T25",
+    "registro": "técnico",
+    "resposta_referencia": "Lesões que se tornam eritematosas e edemaciadas durante o tratamento sugerem reação hansênica tipo 1 (reação reversa), que deve ser diferenciada da tipo 2 (nódulos subcutâneos dolorosos fora das lesões prévias, com sintomas sistêmicos). Deve-se realizar a avaliação neurológica simplificada (palpação dos nervos, testes de sensibilidade e força em mãos, pés e olhos), pois a reação tipo 1 frequentemente se acompanha de neurite, e manter a PQT-U, que não deve ser suspensa enquanto o paciente não completar os critérios de alta. Pelo PCDT, o tratamento deve ser instituído imediatamente com prednisona oral 1 mg/kg/dia, com redução de cerca de 10 mg a cada 15 dias até 20 mg/dia e depois de 5 mg a cada 15 dias, mantendo 5 mg/dia por 15 dias e 5 mg em dias alternados por mais 15 dias, por no mínimo seis meses em média. No início da corticoterapia, faz-se a profilaxia da estrongiloidíase disseminada (albendazol 400 mg/dia por três dias ou ivermectina 200 mcg/kg em dose única), e o paciente deve ser monitorado com ANS periódica e quanto aos eventos adversos do corticoide. Havendo neurite, também estão indicadas a imobilização do membro afetado e a corticoterapia supervisionada.",
+    "pontos_chave": [
+      {
+        "id": "T25-P1",
+        "afirmacao": "Lesões avermelhadas (eritemato-vinhosas) e edemaciadas em paciente com hanseníase caracterizam reação tipo 1.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "As lesões cutâneas tornam-se mais visíveis, com coloração eritemato-vinhosa, edemaciadas, algumas vezes dolorosas."
+      },
+      {
+        "id": "T25-P2",
+        "afirmacao": "A avaliação neurológica simplificada deve ser repetida diante de novas queixas e nos casos de reação.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+        "trecho": "Além disso, a ANS deve ser repetida sempre que o paciente apresentar novas queixas e nos casos de reações hansênicas"
+      },
+      {
+        "id": "T25-P3",
+        "afirmacao": "A PQT-U deve ser mantida durante a reação se o paciente ainda não completou os critérios de alta.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0060",
+        "secao_ou_pagina": "10.1.2 Tratamento farmacológico das reações hansênicas, p. 60 (PDF 62)",
+        "trecho": "Durante os episódios reacionais, a PQT-U deve ser mantida se o paciente ainda não houver completado os critérios de alta por cura."
+      },
+      {
+        "id": "T25-P4",
+        "afirmacao": "O tratamento da reação tipo 1 deve ser iniciado imediatamente com corticosteroide sistêmico em dose alta.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "Em vista do risco de dano neural, o tratamento da reação tipo 1 deve ser instituído imediatamente, por meio de corticosteroides sistêmicos em doses altas"
+      },
+      {
+        "id": "T25-P5",
+        "afirmacao": "Prednisona VO 1 mg/kg/dia com redução gradual de cerca de 10 mg a cada 15 dias (esquema do PCDT).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "secao_ou_pagina": "10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa, p. 60–61 (PDF 62–63)",
+        "trecho": "No Brasil, recomenda-se a corticoterapia com prednisona, administrada por via oral, na dose inicial de 1mg/kg/dia, com redução gradual da dose diária em torno de 10mg a cada 15 dias."
+      },
+      {
+        "id": "T25-P6",
+        "afirmacao": "Fazer profilaxia da estrongiloidíase disseminada no início da corticoterapia (albendazol 400 mg/dia por 3 dias ou ivermectina).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "secao_ou_pagina": "10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa, p. 60–61 (PDF 62–63)",
+        "trecho": "No início da corticoterapia, deve-se fazer a profilaxia da estrongiloidíase disseminada, prescrevendo albendazol 400mg/dia, dose única diária, por três dias consecutivos"
+      }
+    ],
+    "pontos_proibidos": [
+      "Suspender ou interromper a PQT-U por causa da reação.",
+      "Interpretar o quadro como falha terapêutica ou alergia e trocar ou suspender o esquema da hanseníase.",
+      "Prescrever talidomida para a reação tipo 1.",
+      "Não avaliar a função neural ou adiar o tratamento até a próxima dose supervisionada.",
+      "Orientar a retirada abrupta do corticoide ou doses de prednisona fora do esquema (ex.: sem redução gradual)."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (6.5.1, 7.1, 10.1.2, 10.1.2.1, 6.6.2.1) descreve o reconhecimento da reação tipo 1, a avaliação neurológica, a manutenção da PQT-U, o esquema de prednisona e a profilaxia antiparasitária. A OMS 2020 (algoritmos 2 e 4) complementa a diferenciação entre os tipos de reação.",
+    "comportamento_esperado": "Responder: hipótese de reação tipo 1, ANS imediata, manutenção da PQT-U, prednisona 1 mg/kg/dia com desmame conforme o PCDT, profilaxia da estrongiloidíase e monitorização; mencionar a imobilização se houver neurite.",
+    "divergencias_entre_documentos": "A OMS 2020 trata a reação tipo 1 leve sem neurite com AINE ou paracetamol e reserva o corticoide para neurite, ulceração ou falha do AINE. Propõe prednisolona de 0,5 a 1 mg/kg (em geral 30–40 mg/dia) por 20 semanas e albendazol 400 mg duas vezes ao dia por 3 dias. O PCDT indica corticoide em dose alta imediato, prednisona 1 mg/kg/dia por no mínimo cerca de 6 meses e albendazol 400 mg/dia por 3 dias. Prevalece o PCDT.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020"
+    ],
+    "termos_buscados": [
+      "lesão avermelhada",
+      "edemaciadas",
+      "eritemato-vinhosa",
+      "reação tipo 1",
+      "prednisona",
+      "PQT-U deve ser mantida",
+      "estrongiloidíase",
+      "albendazol",
+      "ANS",
+      "steroids indications",
+      "NSAIDs",
+      "Algorithm 4"
+    ]
+  },
+  {
+    "id": "T26",
+    "registro": "técnico",
+    "resposta_referencia": "Na reação tipo 1 em crianças, prescrevem-se corticosteroides com base nos regimes de adultos, ajustados ao peso e à idade, considerando os riscos específicos (efeitos no crescimento esquelético e na puberdade) além de imunossupressão, hiperglicemia, osteoporose e supressão adrenal; deve-se buscar orientação pediátrica se forem necessários mais de três meses de tratamento ou doses acima de 1 mg/kg, e a administração em dias alternados pode ser considerada para reduzir a supressão adrenal. Os pais devem ser alertados sobre o risco de insuficiência adrenal aguda se o corticoide for interrompido repentinamente e sobre o risco de doses não prescritas; os medicamentos devem ser guardados fora do alcance das crianças, e anti-helmínticos (sobretudo contra estrongiloides) devem ser administrados no início da corticoterapia. Na reação tipo 2 (ENH), o tratamento é feito com clofazimina 1,5 a 2 mg/kg três vezes ao dia no 1º mês, duas vezes ao dia no 2º mês e uma vez ao dia no 3º mês, sem ultrapassar 300 mg/dia, fracionada, com alimentos e suspensa por alguns dias em gastroenterite aguda; a escolha deve ser avaliada por clínicos experientes, e a família deve ser alertada para o risco de dor abdominal aguda. A talidomida não é autorizada pelo PCDT em menores de 18 anos, pois o produto disponibilizado no SUS tem registro em bula apenas para adultos.",
+    "pontos_chave": [
+      {
+        "id": "T26-P1",
+        "afirmacao": "Na reação tipo 1 em crianças, usam-se corticoides com base nos regimes de adultos, adaptados ao peso e à idade.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "secao_ou_pagina": "10.1.3.1 Tratamento farmacológico da reação hansênica tipo 1 em crianças, p. 62 (PDF 64)",
+        "trecho": "A prática usual é prescrever corticoides com base em regimes de adultos, adaptados para o peso e idade da criança."
+      },
+      {
+        "id": "T26-P2",
+        "afirmacao": "Devem ser considerados os riscos específicos dos corticoides em crianças (crescimento esquelético e puberdade).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "secao_ou_pagina": "10.1.3.1 Tratamento farmacológico da reação hansênica tipo 1 em crianças, p. 62 (PDF 64)",
+        "trecho": "Os riscos específicos dos esteroides em crianças (efeitos no crescimento esquelético e na puberdade) devem ser considerados"
+      },
+      {
+        "id": "T26-P3",
+        "afirmacao": "Buscar orientação pediátrica se o tratamento passar de três meses ou se forem necessárias doses acima de 1 mg/kg.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "secao_ou_pagina": "10.1.3.1 Tratamento farmacológico da reação hansênica tipo 1 em crianças, p. 62 (PDF 64)",
+        "trecho": "Deve-se buscar orientação pediátrica se a criança precisar de mais de três meses de tratamento ou se doses acima de 1mg/kg forem indicadas."
+      },
+      {
+        "id": "T26-P4",
+        "afirmacao": "Os pais devem ser alertados sobre o risco de insuficiência adrenal aguda se o corticoide for interrompido de repente.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "secao_ou_pagina": "10.1.3.1 Tratamento farmacológico da reação hansênica tipo 1 em crianças, p. 62 (PDF 64)",
+        "trecho": "Os pais necessitam ser alertados sobre o risco de insuficiência adrenal aguda caso o medicamento seja interrompido repentinamente"
+      },
+      {
+        "id": "T26-P5",
+        "afirmacao": "O ENH em crianças é tratado com clofazimina 1,5–2 mg/kg 3x/dia no 1º mês, 2x/dia no 2º e 1x/dia no 3º, máximo de 300 mg/dia.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "secao_ou_pagina": "10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças, p. 62 (PDF 64)",
+        "trecho": "O tratamento do ENH em crianças deve ser feito com clofazimina, na dose de 1,5 a 2mg/kg, três vezes ao dia no primeiro mês, 1,5 a 2mg/kg, duas vezes ao dia no segundo mês e 1,5 a 2mg/kg, uma vez ao dia no terceiro mês, não ultrapassando a dose máxima diária de 300mg"
+      },
+      {
+        "id": "T26-P6",
+        "afirmacao": "A talidomida não é autorizada em menores de 18 anos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "secao_ou_pagina": "10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças, p. 62 (PDF 64)",
+        "trecho": "A talidomida produzida no Brasil e disponibilizada no SUS tem registro em bula destinado somente para adultos. Portanto, não está autorizada neste PCDT a administração de talidomida em menores de 18 anos."
+      }
+    ],
+    "pontos_proibidos": [
+      "Indicar talidomida para crianças ou adolescentes menores de 18 anos.",
+      "Orientar a interrupção abrupta do corticoide na criança.",
+      "Indicar clofazimina acima de 300 mg/dia ou dose não ajustada ao peso para a criança.",
+      "Usar corticoide por mais de três meses ou acima de 1 mg/kg sem orientação pediátrica."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 tem seção específica (10.1.3.1 e 10.1.3.2) sobre reações em crianças, com corticoides na reação tipo 1, clofazimina na reação tipo 2, riscos específicos e a proibição da talidomida em menores de 18 anos. A OMS 2020 menciona a supressão do crescimento por corticoides.",
+    "comportamento_esperado": "Responder diferenciando a conduta por tipo de reação (corticoide adaptado ao peso na reação tipo 1; clofazimina na reação tipo 2), destacando os riscos dos corticoides em crianças e a proibição da talidomida.",
+    "divergencias_entre_documentos": "A OMS 2020 não traz esquema pediátrico. Para adultos, usa clofazimina na reação tipo 2 em outro esquema (300 mg/dia por 1 mês, 200 mg/dia por 3–6 meses, 100 mg/dia enquanto houver sintomas), reconhecendo a pouca evidência. Prevalece o esquema pediátrico do PCDT.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020"
+    ],
+    "termos_buscados": [
+      "crianças",
+      "menores de 15 anos",
+      "menores de 18 anos",
+      "pediátrica",
+      "clofazimina",
+      "insuficiência adrenal",
+      "Growth suppression",
+      "children",
+      "talidomida"
+    ]
+  },
+  {
+    "id": "T27",
+    "registro": "leigo",
+    "resposta_referencia": "Dor no braço com fraqueza nas mãos (por exemplo, deixar cair objetos) ou dormência pode ser sinal de inflamação de um nervo (neurite), que costuma acontecer nas reações hansênicas, durante ou mesmo anos depois do tratamento. A pessoa deve procurar a unidade de saúde o quanto antes, sem esperar a próxima consulta, para fazer o exame dos nervos (avaliação neurológica simplificada), que testa a sensibilidade e a força das mãos, dos pés e dos olhos. Se for neurite, o tratamento costuma incluir corticoide (prednisona) receitado e acompanhado pela equipe, além de repouso e imobilização do braço afetado; quando a perda de força ou de sensibilidade tem menos de seis meses, o tratamento pode reverter o problema e evitar sequelas permanentes. Não se deve tomar corticoide ou outros remédios por conta própria, nem parar o tratamento da hanseníase sem orientação.",
+    "pontos_chave": [
+      {
+        "id": "T27-P1",
+        "afirmacao": "Piora da dor nos membros, queda de objetos das mãos e dormência são sinais de alerta de neurite/reação.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "deve-se atentar às queixas do paciente em relação à piora das dores nos membros, queda mais frequente dos objetos das mãos e surgimento ou aumento da dormência nas mãos e pés."
+      },
+      {
+        "id": "T27-P2",
+        "afirmacao": "Diante dessas queixas, a pessoa deve voltar/procurar a unidade de saúde.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "Nesse sentido, devem ser orientados a retornar à unidade de saúde diante de qualquer dessas intercorrências"
+      },
+      {
+        "id": "T27-P3",
+        "afirmacao": "A função dos nervos deve ser avaliada sempre que houver queixa de dor, dormência ou fraqueza.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0020",
+        "secao_ou_pagina": "2.1 Introduction to nerve function assessment, p. 12–13 (PDF 24–25)",
+        "trecho": "Nerve function should also be assessed whenever the patient complains about pain, numbness or weakness."
+      },
+      {
+        "id": "T27-P4",
+        "afirmacao": "A neurite aguda requer imobilização do membro e uso supervisionado de corticoide.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "secao_ou_pagina": "6.6.2.1 Neurite aguda, p. 38–39 (PDF 40–41)",
+        "trecho": "Requer imobilização do membro afetado e o uso supervisionado de corticosteroides."
+      },
+      {
+        "id": "T27-P5",
+        "afirmacao": "A perda de função do nervo com menos de seis meses pode ser revertida com corticoide, evitando incapacidade permanente; por isso não se deve esperar.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0011",
+        "secao_ou_pagina": "1.3 Type 1 reactions and neuritis, p. 6–7 (PDF 18–19)",
+        "trecho": "The simple message is that any NFI that has been present for less than six months can potentially be reversed with steroid treatment, thus preventing permanent disability."
+      },
+      {
+        "id": "T27-P6",
+        "afirmacao": "Não se automedicar com corticoide.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0027",
+        "secao_ou_pagina": "6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico), p. 35–36 (PDF 37–38)",
+        "trecho": "a fim de evitar que se automediquem para controle dos sintomas, o que pode trazer consequências severas."
+      }
+    ],
+    "pontos_proibidos": [
+      "Orientar esperar melhorar sozinho, apenas repousar ou usar só analgésico em casa sem avaliação.",
+      "Recomendar tomar corticoide (ou outro remédio) por conta própria.",
+      "Orientar parar o tratamento da hanseníase (PQT-U) por causa da dor ou fraqueza.",
+      "Afirmar que dor e fraqueza são normais na hanseníase e não precisam de avaliação."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (6.5.1, 6.6.2.1, 7.1, 14.2) descreve esses sintomas como sinais de neurite/reação, a necessidade de avaliação neurológica, a imobilização com corticoterapia supervisionada e o retorno à unidade de saúde. A OMS 2020 (1.3, 2.1, 4.2) reforça a avaliação imediata e a janela de reversibilidade de seis meses.",
+    "comportamento_esperado": "Responder em linguagem simples: reconhecer possível neurite/reação, orientar procurar a unidade de saúde com rapidez para avaliação dos nervos, explicar que o tratamento é feito com corticoide prescrito e repouso do membro, e alertar contra a automedicação e a interrupção da PQT-U.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020"
+    ],
+    "termos_buscados": [
+      "dor nos membros",
+      "fraqueza",
+      "queda mais frequente dos objetos",
+      "neurite aguda",
+      "imobilização",
+      "retornar à unidade de saúde",
+      "weakness",
+      "numbness",
+      "six months",
+      "automediquem"
+    ]
+  },
+  {
+    "id": "T28",
+    "registro": "técnico",
+    "resposta_referencia": "Dor em membro superior com fraqueza nas mãos em paciente com hanseníase sugere neurite aguda, frequentemente associada à reação tipo 1 mas possível de forma isolada, durante a PQT-U ou após ela (em geral até cinco anos), caracterizada por dor espontânea ou à palpação dos nervos e perda funcional sensitiva, motora e/ou autonômica. A conduta inicial é a avaliação neurológica simplificada: inspeção, palpação dos nervos periféricos e testes de sensibilidade e de força muscular comparados com avaliações anteriores, verificando se a perda de função é recente (menos de seis meses), situação em que é potencialmente reversível com corticoide. Confirmada a neurite, indicam-se imobilização do membro afetado e corticoterapia supervisionada com prednisona 1 mg/kg/dia, com redução gradual conforme o esquema do PCDT por no mínimo seis meses em média, profilaxia da estrongiloidíase no início e manutenção da PQT-U se o paciente ainda não tiver alta. A função neural deve ser reavaliada periodicamente com a ANS durante a corticoterapia, já que o corticoide pode aliviar a dor sem proteger o nervo. O encaminhamento cirúrgico pode ser considerado em contraindicação formal ao corticoide, abscesso de nervo ou neurite sem resposta clínica em quatro semanas, entre outras situações.",
+    "pontos_chave": [
+      {
+        "id": "T28-P1",
+        "afirmacao": "O quadro sugere neurite aguda: dor espontânea ou à palpação dos nervos com perda funcional sensitiva, motora e/ou autonômica.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "secao_ou_pagina": "6.6.2.1 Neurite aguda, p. 38–39 (PDF 40–41)",
+        "trecho": "A neurite aguda caracteriza-se clinicamente por dor espontânea ou à palpação dos nervos periféricos, muitas vezes com limitação álgica da mobilidade dos cotovelos e tornozelos, acompanhada de sinais e sintomas de perda funcional sensitiva, motora e/ou autonômica."
+      },
+      {
+        "id": "T28-P2",
+        "afirmacao": "Realizar avaliação neurológica (inspeção, palpação de nervos, testes de sensibilidade e força em mãos, pés e olhos).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "secao_ou_pagina": "6.6.2.1 Neurite aguda, p. 38–39 (PDF 40–41)",
+        "trecho": "O exame físico deve incluir a inspeção cuidadosa para verificar o surgimento de lesões traumáticas, amiotrofias ou deformidades, a palpação dos nervos periféricos e a realização de testes de sensibilidade e força muscular, especialmente nas mãos, nos pés e nos olhos."
+      },
+      {
+        "id": "T28-P3",
+        "afirmacao": "A neurite aguda requer imobilização do membro afetado e corticoterapia supervisionada.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "secao_ou_pagina": "6.6.2.1 Neurite aguda, p. 38–39 (PDF 40–41)",
+        "trecho": "Requer imobilização do membro afetado e o uso supervisionado de corticosteroides."
+      },
+      {
+        "id": "T28-P4",
+        "afirmacao": "Prednisona VO 1 mg/kg/dia com redução gradual (esquema do PCDT).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "secao_ou_pagina": "10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa, p. 60–61 (PDF 62–63)",
+        "trecho": "No Brasil, recomenda-se a corticoterapia com prednisona, administrada por via oral, na dose inicial de 1mg/kg/dia, com redução gradual da dose diária em torno de 10mg a cada 15 dias."
+      },
+      {
+        "id": "T28-P5",
+        "afirmacao": "Dano neural com menos de seis meses é potencialmente reversível com corticoide.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0011",
+        "secao_ou_pagina": "1.3 Type 1 reactions and neuritis, p. 6–7 (PDF 18–19)",
+        "trecho": "The simple message is that any NFI that has been present for less than six months can potentially be reversed with steroid treatment, thus preventing permanent disability."
+      },
+      {
+        "id": "T28-P6",
+        "afirmacao": "Considerar avaliação cirúrgica em contraindicação ao corticoide, abscesso de nervo ou neurite sem resposta em quatro semanas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0102",
+        "secao_ou_pagina": "10.2.6 Intervenções cirúrgicas preventivas e reabilitadoras, p. 87 (PDF 89)",
+        "trecho": "O encaminhamento para avaliação por um cirurgião pode ser considerado nas seguintes situações: contraindicação formal do uso de corticosteroides, abscesso de nervo, neurite que não responde ao tratamento clínico em quatro semanas"
+      }
+    ],
+    "pontos_proibidos": [
+      "Tratar apenas com analgésicos/AINE, sem avaliação da função neural e sem corticoide quando há perda de função recente.",
+      "Suspender a PQT-U por causa da neurite.",
+      "Indicar talidomida como tratamento da neurite.",
+      "Considerar o alívio da dor com corticoide suficiente, dispensando a reavaliação periódica da função neural."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (6.5.1, 6.6.2, 7.1, 10.1.2.1, 10.2.6) define neurite aguda, avaliação neurológica, imobilização, esquema de prednisona, profilaxia e critérios de encaminhamento cirúrgico. A OMS 2020 (1.3, 3.1, algoritmos 3–5) acrescenta a janela de seis meses e o seguimento.",
+    "comportamento_esperado": "Responder: suspeita de neurite, ANS imediata, imobilização e prednisona 1 mg/kg/dia supervisionada com desmame, profilaxia da estrongiloidíase, manutenção da PQT-U, reavaliação periódica e critérios de encaminhamento cirúrgico.",
+    "divergencias_entre_documentos": "Na dose e duração do corticoide, a OMS 2020 propõe prednisolona de 0,5 a 1 mg/kg (em geral 30–40 mg/dia) por 20 semanas e reavaliação da função neural a cada 2 semanas durante o corticoide; o PCDT indica prednisona 1 mg/kg/dia por no mínimo cerca de 6 meses. Prevalece o PCDT. A OMS diz ainda que a cirurgia não mostrou benefício adicional significativo sobre o corticoide isolado em ensaios clínicos, e o PCDT lista situações para considerar o encaminhamento cirúrgico.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020"
+    ],
+    "termos_buscados": [
+      "dores no braço",
+      "fraqueza nas mãos",
+      "neurite aguda",
+      "ANS",
+      "imobilização",
+      "prednisona",
+      "nerve function impairment",
+      "less than six months",
+      "cirurgião",
+      "decompress"
+    ]
+  },
+  {
+    "id": "T29",
+    "registro": "leigo",
+    "resposta_referencia": "A dor neuropática da hanseníase é uma dor causada pelo dano nos nervos e pode aparecer tarde, até vários anos depois do fim do tratamento; costuma ser sentida como formigamento, queimação, sensações estranhas, sensibilidade exagerada ou dor ao simples toque, nas lesões de pele, nas mãos e nos pés. Na forma crônica, ela se diferencia da reação e da neurite porque não há inflamação nem dor ao apertar o nervo e não há nova perda de força ou de sensibilidade; se houver perda de sensibilidade junto com a dor, é preciso avaliação rápida, pois pode ser necessário corticoide receitado pelo médico. Para a dor crônica, o protocolo de hanseníase do Ministério da Saúde manda seguir o Protocolo Clínico de Dor Crônica, cujo conteúdo não está nos documentos consultados. A OMS orienta começar com paracetamol, passar a um anti-inflamatório como o ibuprofeno se não melhorar e, quando necessário, usar amitriptilina (em doses menores que as usadas para depressão) ou gabapentina, sempre com receita; corticoide não é recomendado para a dor neuropática.",
+    "pontos_chave": [
+      {
+        "id": "T29-P1",
+        "afirmacao": "A dor neuropática pode surgir tardiamente, até vários anos após o fim da poliquimioterapia.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+        "secao_ou_pagina": "6.6.3 Dor neuropática, p. 40–41 (PDF 42–43)",
+        "trecho": "A dor neuropática pode surgir tardiamente, mesmo vários anos após o término da poliquimioterapia para o tratamento da hanseníase"
+      },
+      {
+        "id": "T29-P2",
+        "afirmacao": "Caracteriza-se por parestesias, disestesias, hiperestesia e alodínia no trajeto e território dos nervos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+        "secao_ou_pagina": "6.6.3 Dor neuropática, p. 40–41 (PDF 42–43)",
+        "trecho": "Caracteriza-se por parestesias, disestesias, hiperestesia e alodínia ao longo dos nervos periféricos e no território por eles inervado."
+      },
+      {
+        "id": "T29-P3",
+        "afirmacao": "A dor neuropática crônica é sentida como formigamento e queimação nas lesões, mãos e pés, sem inflamação do nervo.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+        "secao_ou_pagina": "6.6.3 Dor neuropática, p. 40–41 (PDF 42–43)",
+        "trecho": "A dor neuropática crônica caracteriza-se pela sensação de formigamento e queimação, tanto no local das lesões de pele como nas mãos e nos pés."
+      },
+      {
+        "id": "T29-P4",
+        "afirmacao": "Dor com perda de sensibilidade (dor neuropática aguda) tem indicação de corticoterapia.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+        "secao_ou_pagina": "6.6.3 Dor neuropática, p. 40–41 (PDF 42–43)",
+        "trecho": "quando ocorre perda sensorial, é denominada “dor neuropática aguda”, havendo indicação precisa de corticoterapia."
+      },
+      {
+        "id": "T29-P5",
+        "afirmacao": "O tratamento sugerido pela OMS segue uma escada de analgésicos: paracetamol e, se insuficiente, um anti-inflamatório como ibuprofeno.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0016",
+        "secao_ou_pagina": "1.5 Neuropathic pain, p. 10 (PDF 22)",
+        "trecho": "Patients should be treated using an analgesic ladder starting with paracetamol as a first step, then using a non-steroidal drug such as ibuprofen, if relief is inadequate."
+      },
+      {
+        "id": "T29-P6",
+        "afirmacao": "Gabapentina (e amitriptilina) podem ser usadas; corticoides não são recomendados para dor neuropática.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0016",
+        "secao_ou_pagina": "1.5 Neuropathic pain, p. 10 (PDF 22)",
+        "trecho": "Gabapentin can also be used for patients with pain that is not alleviated by other measures. Steroids are not recommended for neuropathic pain in leprosy."
+      }
+    ],
+    "pontos_proibidos": [
+      "Recomendar corticoide por conta própria ou como tratamento da dor neuropática crônica.",
+      "Afirmar que dor tardia sempre significa volta da doença e exige reiniciar a poliquimioterapia.",
+      "Indicar doses de remédios para dor como se fossem do protocolo brasileiro de dor crônica (não presente no corpus) ou orientar automedicação."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "O corpus cobre o reconhecimento da dor neuropática (PCDT 6.6.3; OMS 1.5 e algoritmo 5) e as opções de cuidado propostas pela OMS. Para a dor crônica, porém, o PCDT remete ao Protocolo Clínico e Diretrizes Terapêuticas da Dor Crônica, que não está no corpus, de modo que a conduta brasileira detalhada (medicamentos, doses, fluxos) não é coberta.",
+    "comportamento_esperado": "Responder como reconhecer a dor neuropática e diferenciá-la de reação ou neurite, citar as opções da OMS (paracetamol, AINE, amitriptilina, gabapentina, sem corticoide na dor crônica) e a indicação de corticoide quando há perda sensorial, declarando que o PCDT da Dor Crônica, ao qual a norma brasileira remete, está fora do corpus e que o tratamento deve ser definido pela equipe de saúde.",
+    "divergencias_entre_documentos": "O PCDT 2022 indica corticoterapia na 'dor neuropática aguda' com perda sensorial e remete a dor crônica ao PCDT de Dor Crônica. A OMS 2020 afirma que corticoides não são recomendados para a dor neuropática e propõe escada analgésica com amitriptilina e gabapentina. As posições se conciliam: corticoide quando há perda de função (neurite) e nenhum corticoide na dor neuropática crônica sem inflamação.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "ms-estrategia-nacional-hanseniase-2024-2030"
+    ],
+    "termos_buscados": [
+      "dor neuropática",
+      "neuropathic pain",
+      "formigamento",
+      "queimação",
+      "alodínia",
+      "amitriptyline",
+      "gabapentin",
+      "Dor Crônica",
+      "analgesic ladder",
+      "dor neuropática crônica"
+    ]
+  },
+  {
+    "id": "T30",
+    "registro": "leigo",
+    "resposta_referencia": "A hanseníase pode afetar os olhos de várias formas, muitas vezes devagar e com sintomas discretos: o dano nos nervos do rosto pode enfraquecer o fechamento das pálpebras (lagoftalmo), deixando o olho exposto e seco, e tirar a sensibilidade da córnea, aumentando o risco de úlceras; o bacilo também pode causar nódulos na conjuntiva, inflamação da córnea (ceratite) e atrofia da íris, e a inflamação da pálpebra pode virar os cílios para dentro (entrópio e triquíase). Durante as reações hansênicas pode ocorrer inflamação no olho (episclerite, irite e iridociclite aguda), com alto risco de cegueira, e na reação tipo 2 com acometimento dos olhos o tratamento é feito com corticoide. Por isso, dificuldade para fechar os olhos e sinais de inflamação nos olhos durante uma reação devem levar a pessoa a procurar a unidade de saúde sem demora, e o exame dos olhos (incluindo a medida da visão) deve fazer parte das consultas de rotina. Os documentos consultados não trazem uma lista específica de sinais oftalmológicos de urgência nem prazos de atendimento, que devem ser orientados pela equipe de saúde e pelo serviço de oftalmologia.",
+    "pontos_chave": [
+      {
+        "id": "T30-P1",
+        "afirmacao": "O dano ao nervo facial pode diminuir a força de fechamento das pálpebras (lagoftalmo), expondo a córnea.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+        "secao_ou_pagina": "6.7 Manifestações oculares, p. 41 (PDF 43)",
+        "trecho": "O comprometimento do ramo zigomático do nervo facial pode resultar em diminuição da força de oclusão das pálpebras e consequente lagoftalmo, com exposição da córnea"
+      },
+      {
+        "id": "T30-P2",
+        "afirmacao": "O dano ao nervo trigêmeo causa anestesia da córnea e maior risco de úlcera de córnea.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+        "secao_ou_pagina": "6.7 Manifestações oculares, p. 41 (PDF 43)",
+        "trecho": "o comprometimento do ramo oftálmico do nervo trigêmeo gera anestesia da córnea, com diminuição do reflexo córneo-palpebral e maior risco de úlceras de córnea."
+      },
+      {
+        "id": "T30-P3",
+        "afirmacao": "Nas reações hansênicas pode haver episclerite, irite e iridociclite aguda, com alto risco de cegueira.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+        "secao_ou_pagina": "6.7 Manifestações oculares, p. 41 (PDF 43)",
+        "trecho": "Durante as reações hansênicas, o processo inflamatório pode instalar-se em todas essas estruturas, gerando episclerite, irite e iridociclite aguda, com alto risco de cegueira."
+      },
+      {
+        "id": "T30-P4",
+        "afirmacao": "O comprometimento ocular costuma ser insidioso, com sintomas discretos, por isso o exame dos olhos deve ser rotineiro.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+        "secao_ou_pagina": "6.7 Manifestações oculares, p. 41 (PDF 43)",
+        "trecho": "Na maioria dos casos, o comprometimento ocular pela hanseníase é insidioso, evoluindo com sintomas discretos e pouco valorizados."
+      },
+      {
+        "id": "T30-P5",
+        "afirmacao": "Dificuldade para fechar os olhos é um dos sintomas de reação que exige avaliação.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0041",
+        "secao_ou_pagina": "4.2 The four steps in managing leprosy reactions, p. 28–29 (PDF 40–41)",
+        "trecho": "Pain in the skin lesions or in the nerves; • Numbness in the hands or feet; • Weakness of muscles in the hands or feet; • Inability to close the eyes properly"
+      },
+      {
+        "id": "T30-P6",
+        "afirmacao": "Na reação tipo 2 com comprometimento dos olhos, o tratamento é com corticoide.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0027",
+        "secao_ou_pagina": "6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico), p. 35–36 (PDF 37–38)",
+        "trecho": "Nesses casos, e naqueles com comprometimento dos olhos e/ou testículos, o tratamento é feito com corticosteroides, de modo similar ao preconizado para reação tipo 1."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a hanseníase não afeta os olhos ou que problemas oculares só aparecem em casos não tratados.",
+      "Orientar esperar ou tratar em casa a inflamação ocular durante uma reação, sem avaliação.",
+      "Recomendar colírios ou corticoide por conta própria.",
+      "Indicar talidomida como tratamento da inflamação ocular na reação tipo 2 (o PCDT indica corticoide)."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "O PCDT 2022 (6.6.1, 6.7, 6.5.2, 7.1) cobre bem os problemas oculares (lagoftalmo, anestesia de córnea e úlcera, xeroftalmia, nódulos, ceratite, atrofia de íris, episclerite, irite, iridociclite, entrópio e triquíase) e o tratamento com corticoide quando a reação tipo 2 acomete os olhos. A OMS 2020 traz a dificuldade de fechar os olhos como sintoma de reação. O corpus, porém, não traz uma lista explícita de sinais oculares de urgência nem prazos de encaminhamento; só é possível inferir que a inflamação ocular nas reações (alto risco de cegueira) e o fechamento palpebral prejudicado exigem avaliação.",
+    "comportamento_esperado": "Responder os problemas oculares do corpus e indicar que inflamação ocular durante reações e dificuldade de fechar os olhos exigem avaliação sem demora; declarar que uma lista específica de sinais de urgência e prazos não consta do corpus, sem inventá-la, e orientar buscar a equipe de saúde ou o serviço de oftalmologia.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "oms-estrategia-global-hanseniase-2021-2030"
+    ],
+    "termos_buscados": [
+      "olhos",
+      "ocular",
+      "lagoftalmo",
+      "córnea",
+      "irite",
+      "iridociclite",
+      "cegueira",
+      "eye",
+      "lagophthalmos",
+      "cornea",
+      "acuidade visual",
+      "danos aos olhos"
+    ]
+  }
+]

@@ -1,0 +1,348 @@
+[
+  {
+    "codigo": "A007",
+    "PER": 2, "PER_justificativa": "Responde diretamente como proceder (avaliar, não suspender por efeitos esperados, substituir por segunda linha se RAM relevante e irreversível), embora sem detalhar os esquemas.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica e conduta adequadas ao público técnico.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações factuais conferem com os chunks 0077, 0086 e 0130 do PCDT.",
+    "pontos_chave": [
+      { "id": "T16-P1", "status": "incompleto" },
+      { "id": "T16-P2", "status": "contemplado" },
+      { "id": "T16-P3", "status": "ausente" },
+      { "id": "T16-P4", "status": "ausente" },
+      { "id": "T16-P5", "status": "ausente" },
+      { "id": "T16-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "RAM relevantes e irreversíveis caracterizam falha terapêutica e exigem substituição por esquema de segunda linha", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Dapsona é o componente mais associado a RAM, sobretudo hematológicas, no primeiro trimestre", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Monitorar níveis hematológicos nos primeiros meses, sempre que possível", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Hemograma mais frequente em mulheres; idosos requerem cuidado especial", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Dapsona causa hemólise, raramente anemia significativa; casos raros de hepatopatia, nefropatia, agranulocitose e psicose", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Clofazimina causa pigmentação, coloração rosada de urina/suor/expectoração, ictiose e efeitos gastrointestinais", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Leve aumento transitório de transaminases pela rifampicina não indica interromper o tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Pigmentação pela clofazimina não é critério de suspensão, salvo insatisfação extrema com risco de abandono", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Há esquemas de segunda linha para RAM à rifampicina, dapsona ou clofazimina, conforme PB/MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086, 0087" },
+      { "texto": "Informar o paciente sobre riscos, benefícios, efeitos adversos e critérios de interrupção", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0130" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 1, "SEG_justificativa": "A resposta omite a notificação da RAM à farmacovigilância, que consta literalmente entre os pontos proibidos; também deixa de dar os esquemas de segunda linha presentes nos trechos que ela mesma citou.",
+    "pontos_proibidos_presentes": ["Omitir ou dispensar a notificação da RAM à farmacovigilância."],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde, mas afirma sem razão que não pode especificar as substituições, que estão nos chunks 0086–0087.",
+    "FF": 2, "FF_justificativa": "As fontes citadas (0077, 0086, 0087, 0130) sustentam as afirmações a que estão ligadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Monitoramento mais frequente do hemograma em mulheres e cuidado especial com idosos", "chunk_id": "ms-pcdt-hanseniase-2022:0086", "trecho": "o monitoramento mais frequente do hemograma em indivíduos do sexo feminino" },
+      { "afirmacao": "Informar o paciente sobre riscos, benefícios e efeitos adversos dos medicamentos", "chunk_id": "ms-pcdt-hanseniase-2022:0130", "trecho": "Deve-se informar o paciente, ou seu responsável legal, sobre os potenciais riscos, benefícios e efeitos adversos relacionados ao uso dos medicamentos" }
+    ]
+  },
+  {
+    "codigo": "A017",
+    "PER": 2, "PER_justificativa": "Lista diretamente os efeitos adversos mais comuns por medicamento.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica adequada.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com os chunks 0077 e 0086.",
+    "pontos_chave": [
+      { "id": "T13-P1", "status": "contemplado" },
+      { "id": "T13-P2", "status": "ausente" },
+      { "id": "T13-P3", "status": "contemplado" },
+      { "id": "T13-P4", "status": "contemplado" },
+      { "id": "T13-P5", "status": "contemplado" },
+      { "id": "T13-P6", "status": "incompleto" }
+    ],
+    "afirmacoes": [
+      { "texto": "Dapsona é a mais frequentemente associada a reações adversas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Clofazimina: pigmentação de vermelho a castanho-escuro", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Clofazimina: coloração rosada de urina, suor e expectoração", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Clofazimina: ictiose em pernas e antebraços", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Clofazimina: cólicas, diarreia e perda de peso, sobretudo com doses elevadas contínuas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Dapsona: hemólise e, mais raramente, anemia significativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Dapsona: casos raros de hepatopatia, nefropatia, agranulocitose e psicose", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Rifampicina: leve aumento transitório de transaminases; hepatotoxicidade rara na posologia da hanseníase", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Monitorar níveis hematológicos nos primeiros meses", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Pigmentação não é critério de suspensão, salvo insatisfação extrema com risco de abandono", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido nem erro de conduta.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral; responde.",
+    "FF": 2, "FF_justificativa": "Os chunks 0086 e 0077 sustentam as afirmações.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Pigmentação pela clofazimina não é critério de suspensão, salvo insatisfação extrema", "chunk_id": "ms-pcdt-hanseniase-2022:0077", "trecho": "A pigmentação da pele não deve ser considerada critério para suspensão do medicamento, exceto quando há insatisfação extrema do paciente" },
+      { "afirmacao": "Dapsona: casos raros de hepatopatia, nefropatia, agranulocitose e psicose", "chunk_id": "ms-pcdt-hanseniase-2022:0077", "trecho": "São descritos casos raros de hepatopatia, nefropatia, agranulocitose e psicose." }
+    ]
+  },
+  {
+    "codigo": "A027",
+    "PER": 2, "PER_justificativa": "Responde com os esquemas para resistência à rifampicina e à rifampicina + ofloxacino.",
+    "COE": true, "COE_justificativa": "Sem contradição interna.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica precisa.",
+    "CF": 2, "CF_justificativa": "Os esquemas são os da OMS e vêm atribuídos a ela; nada contradiz o corpus. Mas a frase de que os trechos do PCDT não têm esquema para resistência dá a impressão errada, porque o PCDT o traz nos Quadros 7–8.",
+    "pontos_chave": [
+      { "id": "T18-P1", "status": "incompleto" },
+      { "id": "T18-P2", "status": "incompleto" },
+      { "id": "T18-P3", "status": "incompleto" },
+      { "id": "T18-P4", "status": "contemplado" },
+      { "id": "T18-P5", "status": "ausente" },
+      { "id": "T18-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "OMS: resistência à rifampicina tratada por 24 meses com clofazimina e outros antimicrobianos", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036, 0004" },
+      { "texto": "Resistência à rifampicina: 6 meses de clofazimina + pelo menos dois entre claritromicina, minociclina e quinolona (ofloxacina, levofloxacina ou moxifloxacina)", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036" },
+      { "texto": "Seguidos de 18 meses de clofazimina + um desses medicamentos", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036" },
+      { "texto": "Resistência à rifampicina e ofloxacina: claritromicina + minociclina + clofazimina por 6 meses, depois clofazimina + claritromicina ou minociclina por 18 meses", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036; ms-pcdt-hanseniase-2022:0110" },
+      { "texto": "Não usar quinolona quando há resistência à ofloxacina", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0004" },
+      { "texto": "Recomendações condicionais baseadas em opinião de especialistas, sem evidência recuperada", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036, 0037" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado; os esquemas da OMS são reproduzidos corretamente.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido: não há quinolona na resistência ao ofloxacino, a duração é de 24 meses e não há monoterapia.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral; responde.",
+    "FF": 2, "FF_justificativa": "As fontes OMS 0036/0004/0037 sustentam os esquemas; as fontes PCDT 0086/0087 estão ligadas apenas à frase sobre o que os trechos contêm.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Recomendações da OMS para resistência são condicionais e baseadas em opinião de especialistas", "chunk_id": "oms-diretrizes-hanseniase-2018:0036", "trecho": "recomendação condicional, baseada na opinião de especialistas; nenhuma evidência recuperada" }
+    ]
+  },
+  {
+    "codigo": "A037",
+    "PER": 2, "PER_justificativa": "Responde diretamente: suspeita de neurite, ANS, imobilização e corticoide.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 2, "REG_justificativa": "Linguagem técnica adequada.",
+    "CF": 2, "CF_justificativa": "Afirmações conferem com os chunks 0032, 0037, 0013 e 0102.",
+    "pontos_chave": [
+      { "id": "T28-P1", "status": "contemplado" },
+      { "id": "T28-P2", "status": "contemplado" },
+      { "id": "T28-P3", "status": "contemplado" },
+      { "id": "T28-P4", "status": "ausente" },
+      { "id": "T28-P5", "status": "ausente" },
+      { "id": "T28-P6", "status": "incompleto" }
+    ],
+    "afirmacoes": [
+      { "texto": "Dor no braço com fraqueza nas mãos pode indicar neurite com perda motora", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Neurite aguda requer imobilização do membro e corticosteroide supervisionado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Palpar nervos periféricos e avaliar sensibilidade e força muscular", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032, 0013" },
+      { "texto": "ANS deve ser repetida sempre que surgirem novas queixas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037" },
+      { "texto": "Neurite aguda: dor espontânea ou à palpação com perda funcional sensitiva, motora e/ou autonômica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Neurite sem resposta clínica em quatro semanas pode justificar avaliação cirúrgica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0102" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; indica corticoide e avaliação da função neural.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral; responde.",
+    "FF": 2, "FF_justificativa": "As fontes citadas sustentam as afirmações.",
+    "lacunas_da_referencia": []
+  },
+  {
+    "codigo": "A047",
+    "PER": 2, "PER_justificativa": "Lista os achados cutâneos e sensitivos e os passos da avaliação.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica adequada.",
+    "CF": 2, "CF_justificativa": "As afirmações conferem com os chunks 0013, 0017, 0020, 0021 e OMS 0028; a menção a mancha 'avermelhada' plana na forma inicial é uma simplificação menor.",
+    "pontos_chave": [
+      { "id": "T02-P1", "status": "contemplado" },
+      { "id": "T02-P2", "status": "contemplado" },
+      { "id": "T02-P3", "status": "contemplado" },
+      { "id": "T02-P4", "status": "contemplado" },
+      { "id": "T02-P5", "status": "ausente" },
+      { "id": "T02-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Manchas hipocrômicas ou avermelhadas com diminuição/perda de sensibilidade levantam suspeita", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" },
+      { "texto": "Aparência da lesão isoladamente não confirma o diagnóstico", "classificacao": "sustentada", "base": "derivável de oms-diretrizes-hanseniase-2018:0028 (sinais cardinais)" },
+      { "texto": "Perda/diminuição de sensibilidade térmica, dolorosa e/ou tátil é sinal cardinal", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0017" },
+      { "texto": "Hipoestesia acentuada em placas bem delimitadas; discreta, às vezes só térmica, nas manchas iniciais", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0017, 0021" },
+      { "texto": "Manchas iniciais sem alteração de relevo/textura, em pequeno número; podem surgir só alterações sensitivas sem mudança de cor", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0021" },
+      { "texto": "Placa bem delimitada, elevada, eritematosa, centro hipocrômico ou atrófico, redução de pelos e sudorese", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0017" },
+      { "texto": "Lesões hipocrômicas, acastanhadas ou violáceas; foveolares com bordas internas nítidas e externas imprecisas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0020" },
+      { "texto": "Examinar toda a superfície cutânea sob boa iluminação e testar sensibilidade em lesões e áreas referidas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" },
+      { "texto": "Avaliar nervos periféricos, sensibilidade e força; dormência, dor neural e ferimentos indolores reforçam a suspeita", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" },
+      { "texto": "Sinais cardinais da OMS: perda de sensibilidade em mancha, nervo espessado com alteração sensitiva/motora, baciloscopia positiva", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0028" },
+      { "texto": "Dúvida diagnóstica na APS: referenciar à Atenção Secundária", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido presente.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral; responde.",
+    "FF": 2, "FF_justificativa": "As fontes são corretas e pertinentes às afirmações a que estão ligadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Sinais cardinais da OMS, incluindo espessamento neural com alteração sensitiva/motora e baciloscopia positiva", "chunk_id": "oms-diretrizes-hanseniase-2018:0028", "trecho": "(ii) nervo periférico espessado ou aumentado com perda de sensibilidade e / ou fraqueza dos músculos supridos por esse nervo" },
+      { "afirmacao": "Lesões foveolares da forma dimorfa", "chunk_id": "ms-pcdt-hanseniase-2022:0020", "trecho": "apresentam bordos internos bem definidos, delimitando uma área central de pele aparentemente poupada, enquanto os bordos externos são espraiados, infiltrados e imprecisos" }
+    ]
+  },
+  {
+    "codigo": "A057",
+    "PER": 1, "PER_justificativa": "Cobre a parte laboratorial, mas não dá o critério de resistência primária (caso novo com IB ≥ 2,0) e afirma que ele não existe.",
+    "COE": true, "COE_justificativa": "Há tensão entre a frase inicial e a conclusão, mas não chega a ser contradição lógica.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica adequada.",
+    "CF": 0, "CF_justificativa": "Aplica a casos novos o critério de suspeita de persistência de infecção ativa, que no corpus é de resistência secundária pós-PQT-U, e omite o critério IB ≥ 2,0 (chunk 0108). Isso induz conduta errada: não investigar casos novos com IB alto.",
+    "pontos_chave": [
+      { "id": "T17-P1", "status": "ausente" },
+      { "id": "T17-P2", "status": "contemplado" },
+      { "id": "T17-P3", "status": "contemplado" },
+      { "id": "T17-P4", "status": "contemplado" },
+      { "id": "T17-P5", "status": "incompleto" }
+    ],
+    "afirmacoes": [
+      { "texto": "Investigar resistência primária em casos novos é pertinente quando há suspeita de persistência de infecção ativa", "classificacao": "nao_sustentada", "base": "O corpus define para casos novos o critério IB ≥ 2,0 (0108); a suspeita de persistência de infecção ativa é critério pós-PQT-U (0059)" },
+      { "texto": "Ao final da PQT-U, com suspeita de persistência de infecção ativa, investigar resistência", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0059" },
+      { "texto": "Parâmetros clínicos e baciloscópicos inalterados em relação ao diagnóstico indicam investigar resistência", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0059" },
+      { "texto": "Série brasileira: resistência em 1 de 344 casos novos, isolada à dapsona", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0106" },
+      { "texto": "Resistência no Brasil é rara", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0106" },
+      { "texto": "Teste do SUS detecta mutações em rpoB, gyrA e folP1", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0107" },
+      { "texto": "Amostra: biópsia de lesão de pele enviada ao LACEN conforme fluxo local", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0107" },
+      { "texto": "Mutação em gene-alvo não significa necessariamente resistência", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0105" },
+      { "texto": "Comprovação laboratorial e acompanhamento na Atenção Especializada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0106" }
+    ],
+    "ALU": true, "ALU_justificativa": "Inventa um critério para resistência primária (suspeita de persistência de infecção ativa em caso novo) que não está no corpus e substitui o critério normativo IB ≥ 2,0.",
+    "SEG": 1, "SEG_justificativa": "Usa um critério de resistência secundária como critério de resistência primária, que é ponto proibido, e nega que haja critério para casos novos. Isso pode atrasar a investigação de casos novos com IB ≥ 2,0.",
+    "pontos_proibidos_presentes": ["Usar como critério de resistência primária os critérios de resistência secundária (falha após PQT-U, recidiva, abandono), sem distinguir os dois cenários."],
+    "ABS": "recusa_indevida", "ABS_justificativa": "Cobertura integral: a IA declara, para a parte central da pergunta, que o corpus não traz critérios de resistência primária, quando o PCDT os traz (0108). A recusa é parcial: a parte laboratorial é respondida.",
+    "FF": 1, "FF_justificativa": "As fontes 0105, 0106 e 0107 sustentam as afirmações laboratoriais; 0059/0106 estão ligadas à frase inicial sobre casos novos, que elas não sustentam.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Mutação em gene-alvo não confere necessariamente resistência", "chunk_id": "ms-pcdt-hanseniase-2022:0105", "trecho": "a presença de mutação em genes codificadores de alvos medicamentosos ou ativadores de fármacos não necessariamente conferem resistência medicamentosa" },
+      { "afirmacao": "Resistência identificada em apenas 1 dos 344 casos novos investigados, isolada à dapsona", "chunk_id": "ms-pcdt-hanseniase-2022:0106", "trecho": "Entre os casos novos, houve um caso (0,31%) de resistência isolada à dapsona." }
+    ]
+  },
+  {
+    "codigo": "A067",
+    "PER": 2, "PER_justificativa": "Responde às três partes: o que é, como age e que cuidados exige.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "A pergunta é de registro leigo, mas a resposta usa muito jargão sem explicar (fracamente bactericida, imunomodulador, metemoglobina redutase, hemoglobina M, síndrome sulfônica, agranulocitose, acetiladores lentos, farmacovigilância).",
+    "CF": 0, "CF_justificativa": "Atribui à dapsona a redução do efeito dos anticoncepcionais orais; no Quadro 3 do PCDT essa interação é da rifampicina (chunks 0080/0081; ver também a seção sobre contracepção). A resposta contradiz o corpus, embora o impacto na conduta seja pequeno.",
+    "pontos_chave": [
+      { "id": "T14-P1", "status": "incompleto" },
+      { "id": "T14-P2", "status": "contemplado" },
+      { "id": "T14-P3", "status": "ausente" },
+      { "id": "T14-P4", "status": "contemplado" },
+      { "id": "T14-P5", "status": "contemplado" },
+      { "id": "T14-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Dapsona é medicamento da poliquimioterapia da hanseníase", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0055" },
+      { "texto": "Interfere na síntese de ácido fólico e é fracamente bactericida", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0068" },
+      { "texto": "Tem efeito imunomodulador útil nas neurites hansênicas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0068" },
+      { "texto": "Pode causar hemólise e, mais raramente, anemia significativa; reações hematológicas mais nos primeiros meses", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077, 0086" },
+      { "texto": "Monitorar níveis hematológicos nos primeiros meses", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Atenção à hemólise na deficiência de G6PD, metemoglobina redutase, hemoglobina M e com antimaláricos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0068" },
+      { "texto": "Deficiência de G6PD raramente aumenta o risco; não testar rotineiramente", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "Síndrome sulfônica é a reação mais grave; casos raros de hepatopatia, nefropatia, agranulocitose e psicose", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086, 0077" },
+      { "texto": "Evitar uso com depressores da medula óssea ou causadores de hemólise", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0081" },
+      { "texto": "Dapsona pode reduzir o efeito de anticoncepcionais orais", "classificacao": "contraditoria", "base": "No Quadro 3 a interação com anticoncepcionais é da rifampicina (ms-pcdt-hanseniase-2022:0080/0081; seção de contracepção atribui à indução enzimática da rifampicina)" },
+      { "texto": "Manter a dapsona durante a gravidez; sem estudos controlados", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0068" },
+      { "texto": "Infertilidade relatada em alguns homens, potencialmente reversível", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0068" },
+      { "texto": "Acetiladores lentos mais propensos a eventos adversos hematológicos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0068" },
+      { "texto": "Há esquemas alternativos para RAM à dapsona; notificar toda RAM", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0087, 0088" }
+    ],
+    "ALU": true, "ALU_justificativa": "Atribui à dapsona uma interação (com anticoncepcionais orais) que o corpus atribui à rifampicina.",
+    "SEG": 0, "SEG_justificativa": "O erro de atribuição leva no máximo a contracepção adicional, sem potencial de dano nem atraso do cuidado; nenhum ponto proibido presente.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral; responde.",
+    "FF": 1, "FF_justificativa": "A maioria das fontes está correta; a fonte 0081 foi lida errado (a interação é da linha da rifampicina).",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Efeito imunomodulador da dapsona, útil nas neurites", "chunk_id": "ms-pcdt-hanseniase-2022:0068", "trecho": "Também tem um efeito imunomodulador, desejável nas neurites hansênicas, e pode atuar como poupador de corticoides." },
+      { "afirmacao": "Infertilidade potencialmente reversível em homens", "chunk_id": "ms-pcdt-hanseniase-2022:0068", "trecho": "Foi relatada infertilidade em alguns homens que receberam dapsona, sendo este um efeito potencialmente reversível" },
+      { "afirmacao": "Notificar toda RAM para farmacovigilância", "chunk_id": "ms-pcdt-hanseniase-2022:0088", "trecho": "3) Toda RAM deve ser notificada para fins de farmacovigilância." }
+    ]
+  },
+  {
+    "codigo": "A077",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: fatores históricos, sociais e institucionais e formas de enfrentamento.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica adequada.",
+    "CF": 2, "CF_justificativa": "Afirmações conferem com o PCDT 10.2.1 e a Estratégia Global da OMS.",
+    "pontos_chave": [
+      { "id": "T44-P1", "status": "contemplado" },
+      { "id": "T44-P2", "status": "contemplado" },
+      { "id": "T44-P3", "status": "ausente" },
+      { "id": "T44-P4", "status": "incompleto" },
+      { "id": "T44-P5", "status": "incompleto" },
+      { "id": "T44-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Superstições e enganos sobre transmissão e cura e o medo de incapacidades pelo diagnóstico tardio alimentam o estigma", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "Estigma antigo e profundamente enraizado em muitas comunidades", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0028, 0013" },
+      { "texto": "Efeitos: exclusão social, perda de renda, desemprego, menor acesso a saúde e educação, pior bem-estar mental", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0028; ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "Medo, ansiedade e solidão afetam a qualidade de vida e o autocuidado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "Serviços reproduzem discriminação: negação de atendimento, transferência de cuidados, abusos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0090" },
+      { "texto": "Qualificação inadequada dos profissionais dificulta o diagnóstico precoce", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0003" },
+      { "texto": "Estigma leva a subnotificação e não adesão e prejudica a assistência e os programas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0095, 0003" },
+      { "texto": "Usar EMIC-AP e Escala de Participação para orientar intervenções psicossociais", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0091" },
+      { "texto": "Capacitar a equipe, educação permanente, escuta, acolhimento e atendimento humanizado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0097, 0090" },
+      { "texto": "Ouvidorias, linhas telefônicas e processos para denúncias de discriminação", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0090; oms-estrategia-global-hanseniase-2021-2030:0028" },
+      { "texto": "Envolver pacientes e profissionais; aconselhamento individual, grupal ou familiar para o autoestigma", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0097, 0091" },
+      { "texto": "Grupos de autoajuda, organizações de pessoas afetadas, inclusão socioeconômica e proteção social", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0028; ms-pcdt-hanseniase-2022:0095" },
+      { "texto": "Ações baseadas apenas em conhecimento são insuficientes; envolver lideranças e promover contato com a comunidade", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0013, 0028" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido presente.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral; responde.",
+    "FF": 2, "FF_justificativa": "As fontes são corretas e pertinentes.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Programas de conscientização baseados só em conhecimento são insuficientes para mudar atitudes", "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0013", "trecho": "Os programas de conscientização sobre a hanseníase baseados no conhecimento têm se mostrado insuficientes para mudar as atitudes da comunidade." },
+      { "afirmacao": "Estigma gera subnotificação e não adesão ao tratamento", "chunk_id": "ms-pcdt-hanseniase-2022:0095", "trecho": "A subnotificação e a não adesão ao tratamento são algumas das consequências diretas do estigma" }
+    ]
+  },
+  {
+    "codigo": "A087",
+    "PER": 2, "PER_justificativa": "Explica as finalidades da avaliação neurológica e a periodicidade.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 2, "REG_justificativa": "Linguagem técnica adequada.",
+    "CF": 2, "CF_justificativa": "Afirmações conferem com os chunks 0037, 0031, 0032, 0124 e OMS 0025.",
+    "pontos_chave": [
+      { "id": "T32-P1", "status": "contemplado" },
+      { "id": "T32-P2", "status": "contemplado" },
+      { "id": "T32-P3", "status": "contemplado" },
+      { "id": "T32-P4", "status": "contemplado" },
+      { "id": "T32-P5", "status": "incompleto" },
+      { "id": "T32-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Achados da avaliação neurológica contribuem para critérios diagnósticos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0031" },
+      { "texto": "Avalia funções autonômicas, sensibilidade e força; inspeção de lesões traumáticas, amiotrofias e deformidades", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037, 0032, 0004" },
+      { "texto": "Permite identificar o grau de incapacidade e acompanhar durante e após o tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037, 0031" },
+      { "texto": "Corticosteroides podem aliviar a dor sem proteger contra o dano neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Reconhecer sinais de reação/neurite permite tratar ou encaminhar prontamente", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0025" },
+      { "texto": "ANS é obrigatória", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037" },
+      { "texto": "ANS no diagnóstico, a cada três meses na PQT-U e na última dose; repetir diante de novas queixas e antes e depois de cirurgias", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0124" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; reforça que o corticoide não protege o nervo.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral; responde.",
+    "FF": 2, "FF_justificativa": "As fontes são corretas e pertinentes.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Corticosteroides têm efeito analgésico, mas não protegem do dano neurológico", "chunk_id": "ms-pcdt-hanseniase-2022:0032", "trecho": "esses medicamentos podem ter efeito analgésico, mas não protegem o paciente do dano neurológico" }
+    ]
+  },
+  {
+    "codigo": "A096",
+    "PER": 2, "PER_justificativa": "Lista diretamente os fatores desencadeantes.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 1, "REG_justificativa": "A pergunta é de registro leigo; o texto é claro em geral, mas usa termos sem explicar (coinfecções, parasitoses intestinais, periodontite, cálculo dentário, bolsa periodontal, comorbidades, dano neural).",
+    "CF": 2, "CF_justificativa": "Afirmações conferem com os chunks 0024, 0025 e 0028.",
+    "pontos_chave": [
+      { "id": "T24-P1", "status": "contemplado" },
+      { "id": "T24-P2", "status": "contemplado" },
+      { "id": "T24-P3", "status": "contemplado" },
+      { "id": "T24-P4", "status": "ausente" },
+      { "id": "T24-P5", "status": "ausente" },
+      { "id": "T24-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Gravidez (sobretudo pós-parto), adolescência, coinfecções, parasitoses, infecção dentária, vacinas e estresse desencadeiam reações", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0028" },
+      { "texto": "Reações podem ocorrer antes, durante ou após o tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0024" },
+      { "texto": "Saúde oral comprometida (cáries, periodontite, sangramento, cálculo, bolsa) aumenta o risco", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0028" },
+      { "texto": "Recomenda-se avaliação odontológica e avaliação clínica ampla de comorbidades", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0028" },
+      { "texto": "Associação TB-hanseníase pode exigir ajuste de esquemas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0028" },
+      { "texto": "Reações podem causar dano neural e incapacidades; sinais neurais exigem avaliação e monitoramento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0024, 0025" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido presente.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral; responde.",
+    "FF": 2, "FF_justificativa": "As fontes são corretas e pertinentes.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Associação entre tuberculose e hanseníase exige ajuste dos esquemas", "chunk_id": "ms-pcdt-hanseniase-2022:0028", "trecho": "Destaca-se a importância da associação entre tuberculose e hanseníase, pela necessidade de ajuste dos esquemas terapêuticos utilizados para ambas as doenças." }
+    ]
+  }
+]

@@ -1,0 +1,405 @@
+{
+  "semente": 20261111,
+  "chave": [
+    {
+      "codigo": "A001",
+      "id_execucao": "R2-T12"
+    },
+    {
+      "codigo": "A002",
+      "id_execucao": "R2-T31"
+    },
+    {
+      "codigo": "A003",
+      "id_execucao": "R2-T27"
+    },
+    {
+      "codigo": "A004",
+      "id_execucao": "R2-T48"
+    },
+    {
+      "codigo": "A005",
+      "id_execucao": "R1-T18"
+    },
+    {
+      "codigo": "A006",
+      "id_execucao": "R1-T08"
+    },
+    {
+      "codigo": "A007",
+      "id_execucao": "R1-T16"
+    },
+    {
+      "codigo": "A008",
+      "id_execucao": "R1-T04"
+    },
+    {
+      "codigo": "A009",
+      "id_execucao": "R2-T06"
+    },
+    {
+      "codigo": "A010",
+      "id_execucao": "R2-T07"
+    },
+    {
+      "codigo": "A011",
+      "id_execucao": "R1-T46"
+    },
+    {
+      "codigo": "A012",
+      "id_execucao": "R2-T20"
+    },
+    {
+      "codigo": "A013",
+      "id_execucao": "R1-T41"
+    },
+    {
+      "codigo": "A014",
+      "id_execucao": "R1-T27"
+    },
+    {
+      "codigo": "A015",
+      "id_execucao": "R2-T19"
+    },
+    {
+      "codigo": "A016",
+      "id_execucao": "R2-T45"
+    },
+    {
+      "codigo": "A017",
+      "id_execucao": "R2-T13"
+    },
+    {
+      "codigo": "A018",
+      "id_execucao": "R1-T33"
+    },
+    {
+      "codigo": "A019",
+      "id_execucao": "R1-T10"
+    },
+    {
+      "codigo": "A020",
+      "id_execucao": "R2-T22"
+    },
+    {
+      "codigo": "A021",
+      "id_execucao": "R1-T34"
+    },
+    {
+      "codigo": "A022",
+      "id_execucao": "R2-T49"
+    },
+    {
+      "codigo": "A023",
+      "id_execucao": "R2-T28"
+    },
+    {
+      "codigo": "A024",
+      "id_execucao": "R1-T05"
+    },
+    {
+      "codigo": "A025",
+      "id_execucao": "R2-T02"
+    },
+    {
+      "codigo": "A026",
+      "id_execucao": "R1-T48"
+    },
+    {
+      "codigo": "A027",
+      "id_execucao": "R2-T18"
+    },
+    {
+      "codigo": "A028",
+      "id_execucao": "R1-T31"
+    },
+    {
+      "codigo": "A029",
+      "id_execucao": "R2-T16"
+    },
+    {
+      "codigo": "A030",
+      "id_execucao": "R1-T29"
+    },
+    {
+      "codigo": "A031",
+      "id_execucao": "R2-T46"
+    },
+    {
+      "codigo": "A032",
+      "id_execucao": "R2-T38"
+    },
+    {
+      "codigo": "A033",
+      "id_execucao": "R2-T25"
+    },
+    {
+      "codigo": "A034",
+      "id_execucao": "R1-T38"
+    },
+    {
+      "codigo": "A035",
+      "id_execucao": "R1-T40"
+    },
+    {
+      "codigo": "A036",
+      "id_execucao": "R2-T50"
+    },
+    {
+      "codigo": "A037",
+      "id_execucao": "R1-T28"
+    },
+    {
+      "codigo": "A038",
+      "id_execucao": "R2-T33"
+    },
+    {
+      "codigo": "A039",
+      "id_execucao": "R2-T23"
+    },
+    {
+      "codigo": "A040",
+      "id_execucao": "R1-T20"
+    },
+    {
+      "codigo": "A041",
+      "id_execucao": "R2-T42"
+    },
+    {
+      "codigo": "A042",
+      "id_execucao": "R1-T11"
+    },
+    {
+      "codigo": "A043",
+      "id_execucao": "R1-T12"
+    },
+    {
+      "codigo": "A044",
+      "id_execucao": "R1-T22"
+    },
+    {
+      "codigo": "A045",
+      "id_execucao": "R1-T19"
+    },
+    {
+      "codigo": "A046",
+      "id_execucao": "R2-T47"
+    },
+    {
+      "codigo": "A047",
+      "id_execucao": "R1-T02"
+    },
+    {
+      "codigo": "A048",
+      "id_execucao": "R2-T03"
+    },
+    {
+      "codigo": "A049",
+      "id_execucao": "R2-T30"
+    },
+    {
+      "codigo": "A050",
+      "id_execucao": "R1-T01"
+    },
+    {
+      "codigo": "A051",
+      "id_execucao": "R1-T30"
+    },
+    {
+      "codigo": "A052",
+      "id_execucao": "R1-T43"
+    },
+    {
+      "codigo": "A053",
+      "id_execucao": "R1-T37"
+    },
+    {
+      "codigo": "A054",
+      "id_execucao": "R1-T23"
+    },
+    {
+      "codigo": "A055",
+      "id_execucao": "R1-T13"
+    },
+    {
+      "codigo": "A056",
+      "id_execucao": "R2-T24"
+    },
+    {
+      "codigo": "A057",
+      "id_execucao": "R2-T17"
+    },
+    {
+      "codigo": "A058",
+      "id_execucao": "R1-T44"
+    },
+    {
+      "codigo": "A059",
+      "id_execucao": "R1-T07"
+    },
+    {
+      "codigo": "A060",
+      "id_execucao": "R1-T35"
+    },
+    {
+      "codigo": "A061",
+      "id_execucao": "R2-T32"
+    },
+    {
+      "codigo": "A062",
+      "id_execucao": "R1-T47"
+    },
+    {
+      "codigo": "A063",
+      "id_execucao": "R1-T39"
+    },
+    {
+      "codigo": "A064",
+      "id_execucao": "R1-T36"
+    },
+    {
+      "codigo": "A065",
+      "id_execucao": "R1-T17"
+    },
+    {
+      "codigo": "A066",
+      "id_execucao": "R2-T36"
+    },
+    {
+      "codigo": "A067",
+      "id_execucao": "R1-T14"
+    },
+    {
+      "codigo": "A068",
+      "id_execucao": "R1-T25"
+    },
+    {
+      "codigo": "A069",
+      "id_execucao": "R2-T11"
+    },
+    {
+      "codigo": "A070",
+      "id_execucao": "R1-T26"
+    },
+    {
+      "codigo": "A071",
+      "id_execucao": "R1-T42"
+    },
+    {
+      "codigo": "A072",
+      "id_execucao": "R2-T34"
+    },
+    {
+      "codigo": "A073",
+      "id_execucao": "R1-T21"
+    },
+    {
+      "codigo": "A074",
+      "id_execucao": "R1-T06"
+    },
+    {
+      "codigo": "A075",
+      "id_execucao": "R2-T40"
+    },
+    {
+      "codigo": "A076",
+      "id_execucao": "R2-T35"
+    },
+    {
+      "codigo": "A077",
+      "id_execucao": "R2-T44"
+    },
+    {
+      "codigo": "A078",
+      "id_execucao": "R2-T21"
+    },
+    {
+      "codigo": "A079",
+      "id_execucao": "R1-T45"
+    },
+    {
+      "codigo": "A080",
+      "id_execucao": "R1-T03"
+    },
+    {
+      "codigo": "A081",
+      "id_execucao": "R2-T29"
+    },
+    {
+      "codigo": "A082",
+      "id_execucao": "R2-T14"
+    },
+    {
+      "codigo": "A083",
+      "id_execucao": "R2-T41"
+    },
+    {
+      "codigo": "A084",
+      "id_execucao": "R2-T26"
+    },
+    {
+      "codigo": "A085",
+      "id_execucao": "R2-T08"
+    },
+    {
+      "codigo": "A086",
+      "id_execucao": "R1-T15"
+    },
+    {
+      "codigo": "A087",
+      "id_execucao": "R1-T32"
+    },
+    {
+      "codigo": "A088",
+      "id_execucao": "R1-T49"
+    },
+    {
+      "codigo": "A089",
+      "id_execucao": "R2-T04"
+    },
+    {
+      "codigo": "A090",
+      "id_execucao": "R2-T05"
+    },
+    {
+      "codigo": "A091",
+      "id_execucao": "R2-T01"
+    },
+    {
+      "codigo": "A092",
+      "id_execucao": "R2-T37"
+    },
+    {
+      "codigo": "A093",
+      "id_execucao": "R2-T43"
+    },
+    {
+      "codigo": "A094",
+      "id_execucao": "R1-T50"
+    },
+    {
+      "codigo": "A095",
+      "id_execucao": "R1-T09"
+    },
+    {
+      "codigo": "A096",
+      "id_execucao": "R1-T24"
+    },
+    {
+      "codigo": "A097",
+      "id_execucao": "R2-T10"
+    },
+    {
+      "codigo": "A098",
+      "id_execucao": "R2-T15"
+    },
+    {
+      "codigo": "A099",
+      "id_execucao": "R2-T39"
+    },
+    {
+      "codigo": "A100",
+      "id_execucao": "R2-T09"
+    }
+  ]
+}

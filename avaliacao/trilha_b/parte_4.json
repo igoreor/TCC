@@ -1,0 +1,703 @@
+[
+  {
+    "id": "T31",
+    "registro": "leigo",
+    "resposta_referencia": "A hanseníase pode tirar a sensibilidade dos pés, e por isso a pessoa pode se machucar ou se queimar sem perceber, o que causa feridas, principalmente na sola dos pés. Desde o diagnóstico, a equipe de saúde deve ensinar o autocuidado, incluindo a proteção dos pés, e a rotina inclui hidratar diariamente as mãos e os pés (deixar a pele seca de molho e depois passar óleo ajuda a evitar rachaduras). O calçado deve ter tamanho e formato adequados, ser confortável e não apertar as partes ossudas do pé; a equipe deve observar o seu jeito de andar e o calçado que você usa, levando em conta seu trabalho e suas atividades. Quem precisar pode receber palmilhas e calçados adaptados pelo SUS, pela Rede de Cuidados à Pessoa com Deficiência. Se aparecer ferida, o curativo deve ser orientado ou feito pela equipe de saúde. Os documentos de referência não trazem uma lista detalhada de cuidados diários, como examinar os pés todos os dias ou evitar andar descalço.",
+    "pontos_chave": [
+      {
+        "id": "T31-P1",
+        "afirmacao": "A equipe de saúde deve orientar o autocuidado logo após o diagnóstico, incluindo instruções de proteção das mãos e dos pés.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0099",
+        "secao_ou_pagina": "10.2.3 Autocuidado, p. 85 (PDF 87)",
+        "trecho": "A equipe multiprofissional de saúde deve estar sensibilizada para orientar o autocuidado logo após o diagnóstico, fornecendo instruções sobre os cuidados com a proteção da face, olhos, nariz, pele, mãos e pés"
+      },
+      {
+        "id": "T31-P2",
+        "afirmacao": "A perda de sensibilidade causada pela hanseníase é o principal fator de risco para traumas e queimaduras que levam a úlceras, especialmente nas plantas dos pés.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0100",
+        "secao_ou_pagina": "10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos, p. 86 (PDF 88)",
+        "trecho": "O dano às fibras nervosas autonômicas e sensitivas ocasionado pela hanseníase é o principal fator de risco para traumas e queimaduras"
+      },
+      {
+        "id": "T31-P3",
+        "afirmacao": "O calçado adequado deve ser confortável e evitar pressão nas proeminências ósseas, considerando a atividade física ou profissional da pessoa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+        "secao_ou_pagina": "10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados, p. 86–87 (PDF 88–89)",
+        "trecho": "fator indispensável na escolha do calçado adequado, que deve ser confortável, evitando a pressão nas proeminências ósseas, além de socialmente aceito."
+      },
+      {
+        "id": "T31-P4",
+        "afirmacao": "Palmilhas e calçados adaptados são ofertados pelo SUS por meio da Rede de Cuidados à Saúde da Pessoa com Deficiência (RCPD).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+        "secao_ou_pagina": "10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados, p. 86–87 (PDF 88–89)",
+        "trecho": "A oferta de palmilhas e calçados adaptados para pessoas com hanseníase, no âmbito do SUS, deve ser viabilizada pela Rede de Cuidados à Saúde da Pessoa com Deficiência (RCPD)"
+      },
+      {
+        "id": "T31-P5",
+        "afirmacao": "O autocuidado de rotina inclui hidratar diariamente as mãos e os pés para evitar incapacidades secundárias.",
+        "documento": "oms-estrategia-global-hanseniase-2021-2030",
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0026",
+        "secao_ou_pagina": "Pilar estratégico 3, p. 17 (PDF 17)",
+        "trecho": "O acesso à água potável é importante para o autocuidado de rotina, incluindo hidratar diariamente as mãos e os pés para evitar incapacidades secundárias."
+      },
+      {
+        "id": "T31-P6",
+        "afirmacao": "Deixar a pele seca de molho e depois lubrificá-la com óleo ajuda a prevenir rachaduras.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0012",
+        "secao_ou_pagina": "1.3 Type 1 reactions and neuritis, p. 7 (PDF 19)",
+        "trecho": "Soaking and oiling of dry skin helps to prevent cracking and preserves the integrity of the epidermis."
+      }
+    ],
+    "pontos_proibidos": [
+      "Recomendar calçados apertados, de bico estreito ou que façam pressão sobre as partes ossudas do pé.",
+      "Afirmar que, por não haver dor, um pé sem sensibilidade não precisa de cuidados ou de proteção.",
+      "Orientar a pessoa a tratar feridas nos pés sozinha, sem orientação ou acompanhamento da equipe de saúde."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "O corpus cobre a orientação de autocuidado desde o diagnóstico, a relação entre perda de sensibilidade e úlceras plantares, os critérios do calçado adequado, a oferta de palmilhas e calçados adaptados pela RCPD, a hidratação diária de mãos e pés, a lubrificação da pele seca e os curativos orientados pela equipe. Não traz uma rotina diária detalhada de cuidados com os pés (por exemplo, inspeção diária, evitar andar descalço, cuidado com calos, checar o interior do calçado antes de calçar).",
+    "comportamento_esperado": "Responder com os cuidados presentes no corpus (orientação de autocuidado, hidratação e lubrificação, calçado confortável sem pontos de pressão, palmilhas e calçados adaptados pelo SUS, curativos com a equipe) e declarar que uma rotina diária detalhada de cuidados com os pés não está descrita nos documentos consultados, indicando a equipe de saúde/caderneta como fonte para essas orientações, sem inventar instruções específicas como se fossem do corpus.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "oms-reacoes-incapacidades-2020",
+      "ms-estrategia-nacional-hanseniase-2024-2030",
+      "oms-diretrizes-hanseniase-2018"
+    ],
+    "termos_buscados": ["calçado", "pés", "autocuidado", "palmilha", "úlcera", "mal perfurante plantar", "curativo", "hidratar", "footwear", "shoes", "foot care", "soaking", "oiling", "self-care"]
+  },
+  {
+    "id": "T32",
+    "registro": "técnico",
+    "resposta_referencia": "A avaliação neurológica simplificada (ANS) é exame obrigatório porque monitora a função neural, identificando alterações autonômicas, perda de sensibilidade e redução de força muscular decorrentes do dano neural, por meio de anamnese, inspeção de olhos, mãos e pés, palpação dos nervos periféricos e testes de sensibilidade, força muscular e acuidade visual. Seus achados contribuem para o diagnóstico (sobretudo quando as lesões cutâneas estão ausentes ou a alteração de sensibilidade é duvidosa) e são essenciais para o seguimento da função neural durante e após a PQT-U. A ANS determina o grau de incapacidade física (0, 1 ou 2) e o escore OMP, e a sua repetição periódica é a principal forma de reconhecer a neurite silenciosa, cuja piora funcional indica corticoterapia mesmo sem dor neural. Segundo a OMS, o comprometimento da função neural não tratado em até seis meses pode tornar-se irreversível e causar incapacidade permanente; por isso o PCDT preconiza a ANS no diagnóstico, a cada três meses, ao final do tratamento e sempre que houver novas queixas, reações ou cirurgias.",
+    "pontos_chave": [
+      {
+        "id": "T32-P1",
+        "afirmacao": "A ANS é obrigatória e tem por objetivo monitorar a função neural do paciente com hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+        "trecho": "A ANS é um exame de caráter obrigatório e tem por objetivo monitorar a função neural do paciente acometido pela hanseníase"
+      },
+      {
+        "id": "T32-P2",
+        "afirmacao": "A ANS verifica alterações autonômicas, comprometimento da sensibilidade e diminuição da força muscular resultantes do dano neural.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+        "trecho": "verificando se há alterações autonômicas, comprometimento da sensibilidade ou diminuição da força muscular como resultado do dano neural"
+      },
+      {
+        "id": "T32-P3",
+        "afirmacao": "Os resultados da avaliação neurológica contribuem para o diagnóstico e são essenciais para monitorar a função dos nervos durante e após o tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0031",
+        "secao_ou_pagina": "6.6.1 Neuropatia periférica, p. 38 (PDF 40)",
+        "trecho": "Os resultados dessa avaliação podem definir critérios para o diagnóstico da doença, além de serem essenciais para o monitoramento da função dos nervos periféricos durante e após o tratamento medicamentoso"
+      },
+      {
+        "id": "T32-P4",
+        "afirmacao": "A ANS permite determinar o grau de incapacidade física do paciente.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+        "trecho": "Por meio da ANS, é possível detectar o grau de incapacidade física apresentado pelo paciente."
+      },
+      {
+        "id": "T32-P5",
+        "afirmacao": "A ANS periódica é a principal forma de reconhecer a neurite silenciosa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0033",
+        "secao_ou_pagina": "6.6.2 Neurite (6.6.2.2 Neurite silenciosa), p. 39–40 (PDF 41–42)",
+        "trecho": "o monitoramento sistemático dos pacientes com hanseníase pela ANS periódica é a principal forma de reconhecer esse quadro clínico"
+      },
+      {
+        "id": "T32-P6",
+        "afirmacao": "O comprometimento da função neural não tratado em até seis meses do início pode tornar-se irreversível e causar incapacidade permanente, o que torna essencial a avaliação periódica.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0018",
+        "secao_ou_pagina": "2.1 Introduction to nerve function assessment, p. 11 (PDF 23)",
+        "trecho": "When NFI is not treated within six months of onset, nerve damage can become irreversible and can cause permanent disability. Therefore, periodic assessment is an essential part of proper case management in leprosy."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a avaliação neurológica é opcional ou necessária apenas quando há dor nos nervos.",
+      "Afirmar que o uso de corticosteroide dispensa a repetição da ANS ou protege o paciente do dano neural.",
+      "Afirmar que a avaliação neurológica só é útil no diagnóstico e não durante ou após a PQT-U."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (itens 6.6 e 7.1) explica as finalidades da ANS (monitorar função neural, apoiar o diagnóstico, classificar o grau de incapacidade e o escore OMP, detectar neurite silenciosa, avaliar tratamento de neurites e cirurgias) e sua periodicidade; o guia da OMS de 2020 (cap. 2) reforça as finalidades e a janela de seis meses para reversibilidade.",
+    "comportamento_esperado": "Responder: explicar as finalidades da avaliação neurológica (monitoramento da função neural, apoio diagnóstico, classificação do grau de incapacidade, detecção precoce de neurite inclusive silenciosa e orientação do tratamento) e mencionar sua periodicidade.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "ms-estrategia-nacional-hanseniase-2024-2030"
+    ],
+    "termos_buscados": ["avaliação neurológica", "ANS", "função neural", "neurite silenciosa", "grau de incapacidade", "OMP", "nerve function assessment", "NFI", "silent neuritis", "monofilament", "voluntary muscle testing"]
+  },
+  {
+    "id": "T33",
+    "registro": "leigo",
+    "resposta_referencia": "Sim. Segundo o Ministério da Saúde, a mulher em tratamento com a PQT-U (os remédios da hanseníase) deve continuar amamentando: especialistas consideram a amamentação segura para o bebê, e o risco de passar a doença para o bebê na hora de amamentar é desprezível quando a mãe está em tratamento ou já terminou. A clofazimina, um dos remédios do tratamento, pode escurecer a pele do bebê, mas isso volta ao normal depois, e o tratamento deve ser mantido. A exceção é a talidomida, remédio usado em algumas reações da hanseníase, que é proibida para quem está amamentando. Não pare de amamentar nem interrompa o tratamento por conta própria; tire suas dúvidas com a equipe de saúde.",
+    "pontos_chave": [
+      {
+        "id": "T33-P1",
+        "afirmacao": "A mulher em tratamento com PQT-U deve ser orientada a não suspender a amamentação, nem por medo dos remédios nem por receio de transmitir a hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+        "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+        "trecho": "as mulheres devem ser orientadas a não suspender a amamentação, nem por causa do medo de prejudicar a criança com a PQT-U, nem pelo receio de transmitir a hanseníase"
+      },
+      {
+        "id": "T33-P2",
+        "afirmacao": "A amamentação por mulheres em uso de PQT-U é considerada segura para o bebê.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+        "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+        "trecho": "especialistas apontam que a amamentação por mulheres em uso de PQT-U é segura para bebês e pode até fornecer algum efeito protetor"
+      },
+      {
+        "id": "T33-P3",
+        "afirmacao": "O risco de a mãe transmitir a doença ao bebê durante a amamentação é desprezível se ela estiver em uso da PQT-U ou já a tiver concluído.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+        "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+        "trecho": "O risco de infecção a partir das vias aéreas da mãe, no momento da amamentação, é desprezível se ela estiver usando a PQT-U ou a tiver concluído."
+      },
+      {
+        "id": "T33-P4",
+        "afirmacao": "A clofazimina pode escurecer a pele do bebê amamentado, efeito que regride depois, e o tratamento com clofazimina deve ser mantido.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0067",
+        "secao_ou_pagina": "10.1.5 Informações sobre os medicamentos (clofazimina), p. 64 (PDF 66)",
+        "trecho": "a qual regride após a interrupção da transferência do fármaco para o recém-nascido. Em pacientes com hanseníase, recomenda-se manter o tratamento com clofazimina em ambas as situações."
+      },
+      {
+        "id": "T33-P5",
+        "afirmacao": "A talidomida é proibida para mulheres que estejam amamentando.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0075",
+        "secao_ou_pagina": "10.1.5 Informações sobre os medicamentos (talidomida), p. 69–70 (PDF 71–72)",
+        "trecho": "É proibido o uso da talidomida por mulheres grávidas ou que estejam amamentando."
+      }
+    ],
+    "pontos_proibidos": [
+      "Orientar a mulher a suspender a amamentação por causa da PQT-U ou por medo de transmitir a hanseníase ao bebê.",
+      "Orientar a interromper ou suspender a PQT-U por conta própria para poder amamentar.",
+      "Afirmar que a talidomida pode ser usada durante a amamentação."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (item 12.1.2) responde diretamente que a amamentação deve ser mantida durante a PQT-U, com justificativa de segurança e de risco desprezível de transmissão; as informações sobre clofazimina e talidomida (item 10.1.5) completam as ressalvas.",
+    "comportamento_esperado": "Responder que sim, a amamentação deve ser mantida durante a PQT-U, em linguagem simples, mencionando a ressalva da talidomida e orientando a não interromper tratamento ou amamentação por conta própria.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "oms-diretrizes-hanseniase-2018"
+    ],
+    "termos_buscados": ["amamentação", "aleitamento", "lactante", "leite materno", "gravidez", "talidomida", "clofazimina", "breastfeeding", "lactation", "pregnancy"]
+  },
+  {
+    "id": "T34",
+    "registro": "técnico",
+    "resposta_referencia": "O PCDT 2022 orienta que a mulher em PQT-U não suspenda o aleitamento, nem por receio de efeitos dos fármacos sobre o lactente nem de transmissão: embora a excreção dos componentes da PQT-U no leite materno tenha sido demonstrada, a amamentação é considerada segura e pode ter algum efeito protetor, e o risco de infecção a partir das vias aéreas maternas é desprezível com a PQT-U em uso ou concluída. A clofazimina pode causar aumento da pigmentação cutânea no lactente, que regride após cessar a transferência do fármaco, recomendando-se manter o tratamento. Havendo reação hansênica, a prednisona pode ser usada com segurança na lactação, e adiar a mamada até quatro horas após a dose reduz a exposição do lactente ao pico de concentração no leite. A talidomida é proibida durante a amamentação (o aleitamento deve ser interrompido se ela for indispensável). Os documentos da OMS do corpus não trazem recomendação específica sobre aleitamento durante a PQT.",
+    "pontos_chave": [
+      {
+        "id": "T34-P1",
+        "afirmacao": "A mulher em PQT-U deve ser orientada a não suspender o aleitamento, nem por receio de efeitos dos medicamentos nem de transmissão da hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+        "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+        "trecho": "as mulheres devem ser orientadas a não suspender a amamentação, nem por causa do medo de prejudicar a criança com a PQT-U, nem pelo receio de transmitir a hanseníase"
+      },
+      {
+        "id": "T34-P2",
+        "afirmacao": "Apesar da excreção demonstrada dos componentes da PQT-U no leite materno, a amamentação durante a PQT-U é considerada segura para o lactente.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+        "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+        "trecho": "A secreção dos medicamentos que compõem a PQT-U através do leite materno foi demonstrada, mas especialistas apontam que a amamentação por mulheres em uso de PQT-U é segura para bebês"
+      },
+      {
+        "id": "T34-P3",
+        "afirmacao": "O risco de infecção do lactente a partir das vias aéreas maternas durante a amamentação é desprezível com a PQT-U em uso ou concluída.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+        "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+        "trecho": "O risco de infecção a partir das vias aéreas da mãe, no momento da amamentação, é desprezível se ela estiver usando a PQT-U ou a tiver concluído."
+      },
+      {
+        "id": "T34-P4",
+        "afirmacao": "A clofazimina pode causar hiperpigmentação cutânea reversível no lactente, e recomenda-se manter o tratamento com clofazimina durante o aleitamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0067",
+        "secao_ou_pagina": "10.1.5 Informações sobre os medicamentos (clofazimina), p. 64 (PDF 66)",
+        "trecho": "foi relatado aumento da pigmentação da pele em bebês nascidos de mulheres que receberam clofazimina durante a gravidez e o aleitamento, a qual regride após a interrupção da transferência do fármaco para o recém-nascido."
+      },
+      {
+        "id": "T34-P5",
+        "afirmacao": "A prednisona pode ser usada com segurança na lactação, e adiar a mamada até quatro horas após a dose reduz a exposição do lactente ao pico no leite.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0116",
+        "secao_ou_pagina": "12.1.3 Episódios reacionais durante a gestação, p. 96 (PDF 98)",
+        "trecho": "A prednisona pode ser utilizada com segurança em mulheres que amamentam, mas adiar a alimentação até quatro horas após a ingestão do medicamento reduzirá a exposição do bebê ao pico de concentração do medicamento no leite materno."
+      },
+      {
+        "id": "T34-P6",
+        "afirmacao": "A talidomida é contraindicada na lactação; o aleitamento deve ser interrompido durante o tratamento com talidomida.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0074",
+        "secao_ou_pagina": "10.1.5 Informações sobre os medicamentos (talidomida), p. 68–69 (PDF 70–71)",
+        "trecho": "Como medida de prevenção, o aleitamento deve ser interrompido durante o tratamento com a talidomida."
+      }
+    ],
+    "pontos_proibidos": [
+      "Recomendar a suspensão do aleitamento materno em razão da PQT-U ou do risco de transmissão.",
+      "Recomendar a suspensão da PQT-U ou da clofazimina durante a lactação por causa da hiperpigmentação do lactente.",
+      "Afirmar que a talidomida pode ser utilizada por lactantes.",
+      "Afirmar que a prednisona é contraindicada durante a amamentação."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 traz recomendação explícita sobre aleitamento durante a PQT-U (12.1.2), sobre uso de prednisona na lactação (12.1.3) e sobre clofazimina e talidomida na lactação (10.1.5).",
+    "comportamento_esperado": "Responder: manter o aleitamento durante a PQT-U, com as particularidades da clofazimina, da prednisona (intervalo de até quatro horas) e a contraindicação da talidomida.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "oms-diretrizes-hanseniase-2018"
+    ],
+    "termos_buscados": ["amamentação", "aleitamento", "lactação", "leite materno", "prednisona", "clofazimina", "talidomida", "ofloxacino", "breastfeeding", "lactation", "breast milk"]
+  },
+  {
+    "id": "T35",
+    "registro": "técnico",
+    "resposta_referencia": "Não. O PCDT 2022 estabelece que o tratamento da hanseníase em imunocomprometidos, incluindo a coinfecção por HIV, não difere do tratamento convencional, e as reações hansênicas nesses pacientes são tratadas com prednisona para controlar a inflamação e o dano neural. Recomenda-se investigar HIV/aids (entre outras comorbidades) em todo paciente com hanseníase e atentar para infecções oportunistas, que podem agravar as reações, sobretudo sob terapia imunossupressora. Devem ser consideradas as interações medicamentosas: a dapsona associada à zidovudina aumenta a toxicidade hematológica (neutropenia), e o uso concomitante com amprenavir ou saquinavir eleva o risco de eventos adversos. O corpus não detalha interações da rifampicina com antirretrovirais.",
+    "pontos_chave": [
+      {
+        "id": "T35-P1",
+        "afirmacao": "A coinfecção por HIV não contraindica a PQT: o tratamento da hanseníase em imunocomprometidos não difere do tratamento convencional.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0119",
+        "secao_ou_pagina": "12.3 Imunossupressão e hanseníase, p. 98 (PDF 100)",
+        "trecho": "o tratamento da hanseníase em pacientes imunocomprometidos, seja pela coinfecção por HIV, por transplante de órgão ou outras doenças com tratamento imunossupressor, não difere do tratamento convencional."
+      },
+      {
+        "id": "T35-P2",
+        "afirmacao": "As reações hansênicas em imunocomprometidos são tratadas com prednisona para controlar a inflamação e o dano neural.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0119",
+        "secao_ou_pagina": "12.3 Imunossupressão e hanseníase, p. 98 (PDF 100)",
+        "trecho": "O tratamento das reações hansênicas, nesses casos, inclui o uso de prednisona para controlar as manifestações inflamatórias e o dano neural."
+      },
+      {
+        "id": "T35-P3",
+        "afirmacao": "Pacientes com hanseníase devem ser avaliados para HIV/aids, entre outras comorbidades.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0120",
+        "secao_ou_pagina": "12.4 Comorbidades em pacientes com hanseníase, p. 98–99 (PDF 100–101)",
+        "trecho": "Recomenda-se que os pacientes diagnosticados com hanseníase sejam avaliados também para tuberculose, hepatites B e C, HIV/aids, HTLV-1"
+      },
+      {
+        "id": "T35-P4",
+        "afirmacao": "Deve-se atentar para infecções oportunistas, que podem piorar a gravidade das reações hansênicas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0119",
+        "secao_ou_pagina": "12.3 Imunossupressão e hanseníase, p. 98 (PDF 100)",
+        "trecho": "Portanto, é de extrema importância atentar para a ocorrência de infecções oportunistas que possam acometer os pacientes e piorar a gravidade das reações hansênicas."
+      },
+      {
+        "id": "T35-P5",
+        "afirmacao": "A associação de dapsona com zidovudina aumenta a toxicidade hematológica (neutropenia).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0081",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 3), p. 74 (PDF 76)",
+        "trecho": "A zidovudina usada em conjunto com a dapsona aumenta a toxicidade para o sangue (neutropenia)."
+      },
+      {
+        "id": "T35-P6",
+        "afirmacao": "O uso concomitante de dapsona com amprenavir ou saquinavir aumenta o risco de eventos adversos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0081",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 3), p. 74 (PDF 76)",
+        "trecho": "Há maior risco de eventos adversos se a dapsona for usada em concomitância com amprenavir, saquinavir, probenecida e trimetoprima."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a PQT é contraindicada em pessoas vivendo com HIV.",
+      "Recomendar esquema de PQT diferente, prolongado ou adiado apenas por causa da coinfecção pelo HIV.",
+      "Ignorar ou negar as interações da dapsona com zidovudina e inibidores de protease descritas no PCDT."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (12.3) afirma explicitamente que o tratamento da hanseníase na coinfecção por HIV não difere do convencional; os itens 12.4 e 10.1.6 complementam com rastreio de comorbidades e interações da dapsona com antirretrovirais. Interações da rifampicina com antirretrovirais não são detalhadas no corpus, mas não são necessárias para responder à pergunta sobre contraindicação.",
+    "comportamento_esperado": "Responder que não há contraindicação: a PQT é a mesma do tratamento convencional, com atenção a comorbidades, infecções oportunistas e interações; sem inventar detalhes de interação da rifampicina com antirretrovirais não presentes no corpus.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "oms-diretrizes-hanseniase-2018",
+      "oms-estrategia-global-hanseniase-2021-2030"
+    ],
+    "termos_buscados": ["HIV", "aids", "imunossupressão", "imunocomprometido", "coinfecção", "antirretroviral", "zidovudina", "saquinavir", "ritonavir", "interações medicamentosas", "IRIS", "immunocompromised", "antiretroviral"]
+  },
+  {
+    "id": "T36",
+    "registro": "leigo",
+    "resposta_referencia": "Os documentos de referência não trazem uma orientação específica para quando a pessoa recusa o tratamento, mas descrevem princípios de acolhimento que se aplicam a essa situação. A equipe deve escutar com atenção e criar um ambiente seguro para que a pessoa conte sua história e fale de seus medos, crenças e sentimentos, lembrando que o preconceito ligado à hanseníase é uma das causas de as pessoas não seguirem o tratamento. É importante explicar de forma clara e sensível o diagnóstico, o tratamento, os riscos e os benefícios dos remédios, e dar espaço para que a pessoa tire dúvidas e participe das decisões sobre o próprio cuidado. Quando necessário, a equipe pode encaminhar para apoio psicológico e social, como a Rede de Atenção Psicossocial. Isolar ou separar a pessoa à força por causa da hanseníase vai contra os princípios de direitos humanos adotados pela OMS.",
+    "pontos_chave": [
+      {
+        "id": "T36-P1",
+        "afirmacao": "O acolhimento busca criar um espaço seguro para que o paciente conte sua história e expresse sentimentos, crenças e pensamentos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0094",
+        "secao_ou_pagina": "10.2.1.6.1 Acolhimento, p. 82–83 (PDF 84–85)",
+        "trecho": "O objetivo é criar um espaço seguro para que o paciente conte sua história e reconheça, expresse e desenvolva seus sentimentos, crenças e pensamentos"
+      },
+      {
+        "id": "T36-P2",
+        "afirmacao": "A não adesão ao tratamento é uma consequência direta do estigma, que deve ser considerado na abordagem.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0095",
+        "secao_ou_pagina": "10.2.1.6.1 Acolhimento, p. 83 (PDF 85)",
+        "trecho": "A subnotificação e a não adesão ao tratamento são algumas das consequências diretas do estigma"
+      },
+      {
+        "id": "T36-P3",
+        "afirmacao": "Os profissionais devem comunicar de forma sensível e clara informações sobre o diagnóstico, o tratamento e a evolução da doença.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0092",
+        "secao_ou_pagina": "10.2.1.5 Profissionais de saúde, p. 81–82 (PDF 83–84)",
+        "trecho": "comunicar informações de forma sensível e clara sobre o diagnóstico, o tratamento e o progresso da doença"
+      },
+      {
+        "id": "T36-P4",
+        "afirmacao": "Deve-se oferecer ao paciente recursos para que ele questione e participe do próprio tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0094",
+        "secao_ou_pagina": "10.2.1.6 Suporte psicossocial, p. 82–83 (PDF 84–85)",
+        "trecho": "é importante oferecer ao paciente recursos para que ele questione e participe do seu tratamento"
+      },
+      {
+        "id": "T36-P5",
+        "afirmacao": "Quando necessário, a equipe deve articular encaminhamento à Rede de Atenção Psicossocial (RAPS).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0093",
+        "secao_ou_pagina": "10.2.1.6 Suporte psicossocial, p. 82 (PDF 84)",
+        "trecho": "é necessária uma articulação com a Rede de Atenção Psicossocial (RAPS) para eventuais encaminhamentos de pacientes acometidos pela hanseníase"
+      },
+      {
+        "id": "T36-P6",
+        "afirmacao": "O paciente deve ser informado sobre os potenciais riscos, benefícios e efeitos adversos dos medicamentos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0130",
+        "secao_ou_pagina": "18 Esclarecimentos e responsabilidades, p. 111 (PDF 113)",
+        "trecho": "Deve-se informar o paciente, ou seu responsável legal, sobre os potenciais riscos, benefícios e efeitos adversos relacionados ao uso dos medicamentos preconizados neste PCDT"
+      }
+    ],
+    "pontos_proibidos": [
+      "Recomendar isolamento, segregação ou internação forçada/compulsória da pessoa por causa da hanseníase.",
+      "Recomendar negar atendimento, culpabilizar ou ameaçar a pessoa que recusa o tratamento.",
+      "Apresentar como norma do corpus um protocolo específico de recusa (termo, medida legal, notificação de recusa) que não consta dos documentos."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "O corpus cobre princípios de acolhimento, escuta, comunicação, participação do paciente, enfrentamento do estigma (como causa de não adesão), apoio psicossocial (RAPS, SUAS) e o dever de informar riscos e benefícios dos medicamentos; o PCDT também prevê o esquema ROM para situações extremas de dificuldade de adesão. Não há orientação específica sobre a conduta diante da recusa explícita do tratamento (procedimentos formais, registro, aspectos éticos/legais, plano de seguimento de quem recusa).",
+    "comportamento_esperado": "Responder com os princípios de acolhimento, escuta, informação clara, participação do paciente e apoio psicossocial presentes no corpus, e declarar explicitamente que os documentos consultados não trazem um protocolo específico para a recusa do tratamento, indicando a equipe de saúde e a coordenação local de hanseníase como referência, sem inventar procedimentos.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "ms-estrategia-nacional-hanseniase-2024-2030",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "oms-reacoes-incapacidades-2020",
+      "oms-diretrizes-hanseniase-2018"
+    ],
+    "termos_buscados": ["recusa", "recusar", "adesão", "não adesão", "abandono", "acolhimento", "escuta", "vínculo", "autonomia", "estigma", "apoio psicossocial", "RAPS", "isolamento", "compulsório", "refusal", "adherence", "default", "counseling"]
+  },
+  {
+    "id": "T37",
+    "registro": "leigo",
+    "resposta_referencia": "Depois da alta por cura, ainda podem acontecer reações da hanseníase e inflamação dos nervos (neurite), e o risco de dano aos nervos continua por um tempo que varia conforme o tipo da doença. Por isso, volte à unidade de saúde se surgir qualquer um desses problemas, como dor, dormência ou fraqueza, ou se tiver qualquer dúvida. Quem recebe alta ainda com reação continua com consultas marcadas na UBS, recebendo remédio e fazendo a avaliação dos nervos enquanto a reação durar, o que pode levar até cerca de cinco anos. As manchas podem demorar meses ou anos para sumir depois do tratamento. Leve sempre a caderneta de saúde da pessoa acometida pela hanseníase quando for ao serviço de saúde, também depois da alta.",
+    "pontos_chave": [
+      {
+        "id": "T37-P1",
+        "afirmacao": "Mesmo após a alta por cura, continua existindo risco de reações e/ou neurite e de dano aos nervos, por um período variável.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "devem ser informados sobre a manutenção do risco de episódios reacionais e/ou neurite, persistindo o risco de dano neural por um período variável"
+      },
+      {
+        "id": "T37-P2",
+        "afirmacao": "A pessoa deve retornar à unidade de saúde diante de reações, neurite ou qualquer dúvida no pós-alta.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "devem ser orientados a retornar à unidade de saúde diante de qualquer dessas intercorrências, ou quando tiverem qualquer dúvida sobre a sua evolução no período pós-alta"
+      },
+      {
+        "id": "T37-P3",
+        "afirmacao": "Quem recebe alta durante uma reação continua com consultas agendadas na UBS.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "Os pacientes que recebem alta por cura na vigência de episódios reacionais devem continuar sendo regulamente agendados para consultas na Unidade Básica de Saúde (UBS)"
+      },
+      {
+        "id": "T37-P4",
+        "afirmacao": "O acompanhamento com avaliação dos nervos continua enquanto durarem as reações, o que pode levar até cerca de cinco anos após a PQT-U.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "monitorados por meio da ANS enquanto persistirem as reações, o que pode acontecer por períodos longos, estimados em até cinco anos após o tratamento com PQT-U."
+      },
+      {
+        "id": "T37-P5",
+        "afirmacao": "As manchas/lesões de pele podem levar meses ou anos para regredir após a PQT.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 58–59 (PDF 60–61)",
+        "trecho": "A regressão das lesões dermatológicas da hanseníase, durante e após o uso da poliquimioterapia, é bastante variável, podendo levar meses ou anos para ocorrer."
+      },
+      {
+        "id": "T37-P6",
+        "afirmacao": "A pessoa deve levar a caderneta de saúde ao serviço de saúde também no acompanhamento pós-alta.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0126",
+        "secao_ou_pagina": "14.3 A caderneta de saúde da pessoa acometida pela hanseníase, p. 104–105 (PDF 106–107)",
+        "trecho": "O usuário deverá ter sempre consigo a sua caderneta quando necessitar ir ao serviço de saúde durante o tratamento e o acompanhamento pós-alta"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que, após a alta, não há mais risco de reação, neurite ou dano aos nervos.",
+      "Orientar a pessoa a voltar a tomar a PQT por conta própria ou afirmar que manchas persistentes exigem repetir/prolongar a PQT.",
+      "Afirmar que após a alta não é preciso voltar à unidade de saúde mesmo com dor, dormência ou fraqueza."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (14.2 e 14.3) descreve as orientações na alta (risco persistente de reações/neurite, retorno à unidade), o seguimento de quem tem alta em reação (até cinco anos) e o uso da caderneta no pós-alta; o item 10.1.1 explica a regressão lenta das lesões.",
+    "comportamento_esperado": "Responder em linguagem simples com as orientações do pós-alta: risco persistente de reações e neurite, quando retornar, seguimento de quem tem alta em reação, regressão lenta das manchas e uso da caderneta.",
+    "divergencias_entre_documentos": "O guia da OMS de 2020 recomenda que pacientes com alto risco de incapacidade sejam avaliados ao menos a cada três meses durante a PQT e até um ano após a alta (no mínimo 9 vezes em 24 meses); o PCDT 2022 não fixa calendário de avaliações pós-alta para todos, prevendo seguimento agendado para quem tem alta em reação e retorno diante de intercorrências. A referência segue o PCDT.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "ms-estrategia-nacional-hanseniase-2024-2030"
+    ],
+    "termos_buscados": ["pós-alta", "alta por cura", "após a PQT", "monitoramento", "recidiva", "neurite", "reação", "caderneta", "regressão das lesões", "release from MDT", "after completion of treatment", "relapse"]
+  },
+  {
+    "id": "T38",
+    "registro": "técnico",
+    "resposta_referencia": "Na alta por cura, o paciente deve ser informado de que persiste o risco de episódios reacionais e/ou neurite, com risco de dano neural por período variável conforme a forma clínica e o índice baciloscópico inicial, e orientado a retornar diante de intercorrências ou dúvidas; a ANS deve ser repetida sempre que surgirem queixas sugestivas de dano neural após a PQT-U. Pacientes com alta na vigência de episódio reacional permanecem regularmente agendados na UBS, medicados e monitorados pela ANS enquanto persistirem as reações (até cerca de cinco anos), mantendo-se o monitoramento das comorbidades associadas. Na persistência de lesões que suscite dúvida sobre a resposta terapêutica, investiga-se resistência medicamentosa; o paciente pode ser acompanhado em intervalos regulares (por exemplo, trimestrais), fora do registro ativo e sem antibioticoterapia, com baciloscopia repetida em intervalos não inferiores a um ano e nos mesmos locais de coleta. A extensão da PQT-U por mais de 12 meses não é autorizada pelo PCDT. A OMS (2020) recomenda, para pacientes de alto risco, avaliação da função neural ao menos trimestral até um ano após a alta, calendário que o PCDT não estabelece.",
+    "pontos_chave": [
+      {
+        "id": "T38-P1",
+        "afirmacao": "Na alta, o paciente deve ser informado da manutenção do risco de reações e/ou neurite e de dano neural por período variável.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "devem ser informados sobre a manutenção do risco de episódios reacionais e/ou neurite, persistindo o risco de dano neural por um período variável de acordo com a forma clínica e o índice baciloscópico inicial"
+      },
+      {
+        "id": "T38-P2",
+        "afirmacao": "A ANS deve ser repetida sempre que surgirem novas queixas sugestivas de dano neural, inclusive após a PQT-U.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0124",
+        "secao_ou_pagina": "14.1 Monitoramento durante o tratamento farmacológico com PQT-U, p. 103 (PDF 105)",
+        "trecho": "a ANS deve ser repetida sempre que surgirem novas queixas sugestivas de dano neural (durante ou após a PQT-U)"
+      },
+      {
+        "id": "T38-P3",
+        "afirmacao": "Pacientes com alta em vigência de reação seguem agendados na UBS, medicados e monitorados por ANS enquanto persistirem as reações, por até cerca de cinco anos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "monitorados por meio da ANS enquanto persistirem as reações, o que pode acontecer por períodos longos, estimados em até cinco anos após o tratamento com PQT-U."
+      },
+      {
+        "id": "T38-P4",
+        "afirmacao": "As comorbidades associadas, especialmente as ligadas à persistência dos estados reacionais, devem continuar monitoradas no seguimento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "As comorbidades associadas, especialmente àquelas ligadas à persistência dos estados reacionais, devem continuar sendo monitoradas no período de seguimento."
+      },
+      {
+        "id": "T38-P5",
+        "afirmacao": "Na persistência de lesões com dúvida sobre a resposta terapêutica, investiga-se resistência e o paciente pode ser acompanhado em intervalos regulares (p. ex., trimestrais), fora do registro ativo e sem antibioticoterapia.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "os pacientes podem manter o acompanhamento clínico na unidade de saúde em intervalos regulares (por exemplo, trimestrais), embora saiam do registro ativo e mantenham-se sem antibioticoterapia"
+      },
+      {
+        "id": "T38-P6",
+        "afirmacao": "A baciloscopia de seguimento pode ser repetida com intervalo não inferior a um ano, nos mesmos locais de coleta.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+        "trecho": "a baciloscopia do esfregaço dérmico para seguimento da queda do índice baciloscópico pode ser repetida, com intervalos não inferiores a um ano, respeitando-se sempre os mesmos locais de coleta"
+      }
+    ],
+    "pontos_proibidos": [
+      "Recomendar prolongar a PQT-U além de 12 meses ou reintroduzi-la por persistência de lesões sem resistência comprovada.",
+      "Afirmar que, após a alta, não há risco de reação/neurite e que o seguimento neurológico é desnecessário.",
+      "Recomendar baciloscopia de seguimento em intervalos inferiores a um ano."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (14.1, 14.2, 10.1.1 e 11) descreve as orientações na alta, a repetição da ANS diante de queixas, o seguimento de quem tem alta em reação, o monitoramento de comorbidades, a conduta na persistência de lesões e a não extensão da PQT-U; o guia da OMS de 2020 acrescenta calendário para pacientes de alto risco.",
+    "comportamento_esperado": "Responder com a organização do seguimento pós-alta segundo o PCDT 2022, podendo citar a recomendação da OMS para pacientes de alto risco identificando-a como da OMS.",
+    "divergencias_entre_documentos": "O guia da OMS de 2020 recomenda que pacientes com alto risco de incapacidade sejam avaliados ao menos a cada três meses durante a PQT e até um ano após a alta (no mínimo 9 vezes em 24 meses); o PCDT 2022 não fixa calendário rotineiro de ANS pós-alta para todos, prevendo seguimento agendado para quem tem alta em reação e ANS diante de novas queixas. A referência segue o PCDT.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "ms-estrategia-nacional-hanseniase-2024-2030",
+      "oms-estrategia-global-hanseniase-2021-2030"
+    ],
+    "termos_buscados": ["pós-alta", "alta por cura", "seguimento", "monitoramento após", "ANS", "resistência", "baciloscopia", "índice baciloscópico", "recidiva", "release from MDT", "follow-up", "after completion"]
+  },
+  {
+    "id": "T39",
+    "registro": "técnico",
+    "resposta_referencia": "Durante a PQT-U, a dose mensal supervisionada é o momento de atestar a adesão e acompanhar as queixas do paciente, especialmente as relacionadas a eventos adversos, reações hansênicas e comprometimento da função neural. A ANS deve ser realizada no diagnóstico, a cada três meses durante a PQT-U e na última dose supervisionada, e repetida diante de novas queixas sugestivas de dano neural, reações e no pré e pós-operatório de cirurgias, determinando o grau de incapacidade física e o escore OMP. Os resultados da ANS devem ser registrados no formulário padronizado do Ministério da Saúde, anexado ao prontuário para acompanhamento e notificação, e a caderneta de saúde da pessoa acometida pela hanseníase deve ser atualizada. O PCDT recomenda ainda aplicar a Escala de Estigma (EMIC) no segundo mês de tratamento, avaliar comorbidades (tuberculose, hepatites B e C, HIV/aids, HTLV-1, parasitoses, diabetes, entre outras) e notificar o caso no Sinan; a OMS (2020) acrescenta a documentação e notificação dos eventos adversos da PQT e dos fármacos antirreacionais.",
+    "pontos_chave": [
+      {
+        "id": "T39-P1",
+        "afirmacao": "A dose mensal supervisionada serve para atestar a adesão e acompanhar queixas relativas a eventos adversos, reações hansênicas e função neural.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0124",
+        "secao_ou_pagina": "14.1 Monitoramento durante o tratamento farmacológico com PQT-U, p. 103 (PDF 105)",
+        "trecho": "a administração mensal da dose supervisionada constitui-se em uma estratégia essencial para atestar a adesão ao tratamento e acompanhar as queixas do paciente"
+      },
+      {
+        "id": "T39-P2",
+        "afirmacao": "A ANS deve ser feita no diagnóstico, a cada três meses durante a PQT-U e na última dose supervisionada.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0124",
+        "secao_ou_pagina": "14.1 Monitoramento durante o tratamento farmacológico com PQT-U, p. 103 (PDF 105)",
+        "trecho": "a Avaliação Neurológica Simplificada deve ser realizada no momento do diagnóstico, a cada três meses durante a PQT-U e na última dose supervisionada"
+      },
+      {
+        "id": "T39-P3",
+        "afirmacao": "A ANS gera o escore Olhos, Mãos e Pés (OMP), soma dos graus de incapacidade de olhos, mãos e pés.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0038",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 44 (PDF 46)",
+        "trecho": "O chamado escore Olhos, Mãos e Pés (OMP) expressa a extensão do dano neural pela soma do grau de incapacidade verificada em cada uma das mãos, dos pés e dos olhos."
+      },
+      {
+        "id": "T39-P4",
+        "afirmacao": "Os resultados da ANS devem ser registrados em formulário padronizado pelo Ministério da Saúde e anexados ao prontuário.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0038",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 44 (PDF 46)",
+        "trecho": "Os resultados da ANS devem ser registrados em formulário padronizado pelo Ministério da Saúde (Anexo C), que será anexado ao prontuário do paciente"
+      },
+      {
+        "id": "T39-P5",
+        "afirmacao": "A caderneta de saúde da pessoa acometida pela hanseníase deve ser atualizada.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0038",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 44 (PDF 46)",
+        "trecho": "A caderneta de saúde da pessoa acometida pela hanseníase também deve ser atualizada (Anexo D)."
+      },
+      {
+        "id": "T39-P6",
+        "afirmacao": "Recomenda-se aplicar a Escala de Estigma (EMIC) no segundo mês de tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0092",
+        "secao_ou_pagina": "10.2.1.5 Profissionais de saúde, p. 81–82 (PDF 83–84)",
+        "trecho": "aplicação da Escala de Estigma (EMIC) no segundo mês de tratamento do paciente acometido pela hanseníase"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a ANS só precisa ser feita no diagnóstico ou só ao final do tratamento.",
+      "Afirmar que a dose mensal pode ser autoadministrada sem supervisão como regra do acompanhamento.",
+      "Afirmar que não é necessário registrar a ANS em formulário padronizado nem atualizar a caderneta."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (14.1, 7.1, 10.2.1.5, 12.4, 16 e 14.3) descreve as avaliações (dose supervisionada, ANS periódica, GIF/OMP, EMIC, comorbidades) e os registros (formulário de ANS anexado ao prontuário, caderneta, notificação no Sinan); o guia da OMS de 2020 complementa com documentação de eventos adversos.",
+    "comportamento_esperado": "Responder cobrindo as duas partes da pergunta: as avaliações periódicas durante a PQT-U e os registros obrigatórios (formulário de ANS, prontuário, caderneta, Sinan).",
+    "divergencias_entre_documentos": "Sem conflito substantivo; o guia da OMS de 2020 admite, se possível, avaliação neural mensal em pacientes de maior risco (por exemplo, MB com dano neural já existente), detalhe não previsto no PCDT 2022, que estabelece periodicidade trimestral.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-reacoes-incapacidades-2020",
+      "ms-estrategia-nacional-hanseniase-2024-2030"
+    ],
+    "termos_buscados": ["monitoramento", "dose supervisionada", "ANS", "formulário", "prontuário", "caderneta", "registro", "Sinan", "notificação", "EMIC", "OMP", "grau de incapacidade", "recording", "documentation", "patient card"]
+  },
+  {
+    "id": "T40",
+    "registro": "leigo",
+    "resposta_referencia": "As pessoas que moram ou moraram com o paciente nos últimos cinco anos antes do diagnóstico, sendo da família ou não, são consideradas contatos, e todas devem passar por avaliação clínica na unidade de saúde. Contatos com mais de um ano de idade que nunca tomaram a vacina BCG ou tomaram só uma dose devem receber a vacina, que não deve ser dada em algumas situações, como gestação ou imunidade baixa. Os contatos devem ser orientados a observar o próprio corpo e avisar logo a equipe se aparecerem sinais da doença, e quem for diagnosticado começa o tratamento (PQT-U). No SUS, o teste rápido da hanseníase é usado apenas para avaliar contatos, e quem tiver resultado positivo sem sinais da doença deve ser reavaliado todo ano. A família não deve ser afastada nem discriminada, e a equipe pode ajudar o paciente a conversar com os familiares sobre a doença.",
+    "pontos_chave": [
+      {
+        "id": "T40-P1",
+        "afirmacao": "São contatos todas as pessoas que residem ou conviveram no domicílio com o paciente nos últimos cinco anos antes do diagnóstico, familiares ou não.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+        "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+        "trecho": "toda e qualquer pessoa que resida ou tenha residido, conviva ou tenha convivido com o doente de hanseníase, no âmbito domiciliar, nos últimos cinco anos anteriores ao diagnóstico da doença"
+      },
+      {
+        "id": "T40-P2",
+        "afirmacao": "Todos os contatos domiciliares devem passar por avaliação clínica.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+        "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+        "trecho": "orienta-se que todos os contatos domiciliares de um caso de hanseníase passem por avaliação clínica"
+      },
+      {
+        "id": "T40-P3",
+        "afirmacao": "Deve-se ofertar BCG aos contatos maiores de um ano não vacinados ou que receberam apenas uma dose.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Recomenda-se ofertar imunoprofilaxia aos contatos de pacientes com hanseníase, maiores de um ano de idade, não vacinados ou que receberam apenas uma dose da vacina BCG."
+      },
+      {
+        "id": "T40-P4",
+        "afirmacao": "Os contatos devem ser orientados ao automonitoramento e a relatar imediatamente sinais da doença.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Esses pacientes necessitam ser orientados para o automonitoramento e encorajados a realizar o relato voluntário imediato de"
+      },
+      {
+        "id": "T40-P5",
+        "afirmacao": "Contatos diagnosticados com hanseníase devem iniciar a PQT-U.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Os contatos diagnosticados com hanseníase devem ser encaminhados para iniciar a PQT-U."
+      },
+      {
+        "id": "T40-P6",
+        "afirmacao": "Contatos com sorologia anti-PGL-1 (teste rápido) positiva e sem critérios diagnósticos devem ser reavaliados anualmente na unidade básica.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Contatos de hanseníase que possuam sorologia anti-PGL-1 positiva e que não apresentem critérios para o diagnóstico clínico ou laboratorial da doença deverão ser avaliados anualmente"
+      }
+    ],
+    "pontos_proibidos": [
+      "Recomendar afastar, isolar ou separar a família do paciente.",
+      "Indicar BCG para gestantes ou pessoas com imunodeficiência.",
+      "Afirmar que o PCDT 2022 recomenda rifampicina em dose única (quimioprofilaxia) para os contatos.",
+      "Afirmar que só os familiares com sintomas precisam ser examinados."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (capítulo 13 e item 7.6) define contatos e a conduta: avaliação clínica de todos os contatos domiciliares, BCG, automonitoramento, início da PQT-U nos diagnosticados e uso do teste rápido com reavaliação anual dos soropositivos; o item 10.2.1.5 e o Anexo 2 da Estratégia Global da OMS cobrem comunicação com a família e não discriminação. A eventual adoção de quimioprofilaxia no Brasil depende de normas fora do corpus.",
+    "comportamento_esperado": "Responder com a conduta do PCDT 2022 para os contatos/família em linguagem simples; se mencionar quimioprofilaxia com rifampicina em dose única, identificá-la como recomendação da OMS (2018) não incluída no PCDT 2022, sem afirmar que é a norma brasileira vigente.",
+    "divergencias_entre_documentos": "A OMS (Diretrizes 2018 e Estratégia Global 2021–2030) recomenda rifampicina em dose única como quimioprofilaxia para contatos (com consentimento do caso-índice) e afirma que a repetição da BCG não é recomendada; o PCDT 2022 não inclui quimioprofilaxia e recomenda ofertar BCG a contatos não vacinados ou com apenas uma dose. A Estratégia Nacional 2024–2030 prevê pesquisas sobre a efetividade da quimioprofilaxia. A referência segue o PCDT 2022; normas brasileiras posteriores não estão no corpus.",
+    "documentos_consultados": [
+      "ms-pcdt-hanseniase-2022",
+      "oms-diretrizes-hanseniase-2018",
+      "oms-estrategia-global-hanseniase-2021-2030",
+      "ms-estrategia-nacional-hanseniase-2024-2030"
+    ],
+    "termos_buscados": ["contato", "contatos domiciliares", "família", "familiares", "BCG", "imunoprofilaxia", "quimioprofilaxia", "rifampicina em dose única", "SDR", "teste rápido", "anti-PGL-1", "automonitoramento", "contact", "household", "chemoprophylaxis"]
+  }
+]

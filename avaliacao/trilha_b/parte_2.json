@@ -1,0 +1,641 @@
+[
+  {
+    "id": "T11",
+    "registro": "técnico",
+    "resposta_referencia": "No PCDT da Hanseníase (2022), o prazo de até 18 meses refere-se ao intervalo máximo para completar as 12 doses mensais supervisionadas da PQT-U nos casos multibacilares (MB): a PQT-U é encerrada após 12 doses administradas em até 18 meses, com alta por cura e saída do registro ativo do Sinan. Para os casos paucibacilares (PB), o equivalente é de 6 doses mensais supervisionadas em até 9 meses. Isso não autoriza prolongar o tratamento: o PCDT veda a extensão da PQT-U por mais de 12 meses (isto é, além das 12 doses). Se ao final houver suspeita de infecção ativa persistente, deve-se investigar resistência do M. leprae, e somente os casos com resistência comprovada recebem novo ciclo com esquema de segunda linha (nos casos de resistência à rifampicina, 6 meses iniciais seguidos de 18 meses, com duração máxima de 24 meses).",
+    "pontos_chave": [
+      {
+        "id": "T11-P1",
+        "afirmacao": "Nos casos multibacilares, as 12 doses mensais supervisionadas da PQT-U devem ser completadas em um intervalo de até 18 meses, quando o paciente recebe alta por cura.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota a), p. 58–59 (PDF 60–61)",
+        "trecho": "após 12 doses mensais supervisionadas em um intervalo de até 18 meses para os casos multibacilares, quando os pacientes deverão receber alta por cura"
+      },
+      {
+        "id": "T11-P2",
+        "afirmacao": "Nos casos paucibacilares, as 6 doses mensais supervisionadas devem ser completadas em até 9 meses (o limite de 18 meses vale para MB, não para PB).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota a), p. 58–59 (PDF 60–61)",
+        "trecho": "A PQT-U deverá ser interrompida após a administração de seis doses mensais supervisionadas em intervalo de até nove meses para os casos paucibacilares"
+      },
+      {
+        "id": "T11-P3",
+        "afirmacao": "O PCDT não autoriza estender o tratamento com PQT-U por mais de 12 meses; o prazo de 18 meses é janela para completar as doses, não prolongamento do tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 59 (PDF 61)",
+        "trecho": "Não está autorizada por este Protocolo a extensão do tratamento com PQT-U por mais de 12 meses."
+      },
+      {
+        "id": "T11-P4",
+        "afirmacao": "Havendo suspeita de infecção ativa ao final da PQT-U, investiga-se resistência; só casos com resistência comprovada recebem novo ciclo com esquema de segunda linha.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 59 (PDF 61)",
+        "trecho": "Apenas os casos com resistência medicamentosa comprovada deverão ser submetidos a um novo ciclo de tratamento, com o esquema terapêutico de segunda linha correspondente à mutação detectada"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a PQT-U para casos MB deve durar 18 meses ou ter 18 doses (o esquema é de 12 doses, completadas em até 18 meses).",
+      "Afirmar que a PQT-U pode ser prolongada além de 12 meses/12 doses quando as lesões não regridem.",
+      "Afirmar que o prazo de até 18 meses se aplica aos casos paucibacilares (para PB o prazo é de até 9 meses para 6 doses).",
+      "Recomendar reiniciar ou repetir a PQT-U sem resistência comprovada ou critério de recidiva."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (Quadro 1, nota a) define explicitamente que as 12 doses da PQT-U para MB são completadas em intervalo de até 18 meses, e o item 10.1.1 veda a extensão da PQT-U por mais de 12 meses.",
+    "comportamento_esperado": "Responder: o prazo de até 18 meses é a janela para completar as 12 doses supervisionadas nos casos MB (PB: 6 doses em até 9 meses), sem prolongamento do tratamento além de 12 doses; persistência de atividade leva à investigação de resistência.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018"],
+    "termos_buscados": ["18 meses", "18 months", "nove meses", "12 doses", "intervalo de até", "extensão do tratamento", "alta por cura", "abandono"]
+  },
+  {
+    "id": "T12",
+    "registro": "leigo",
+    "resposta_referencia": "O tratamento da hanseníase usa três remédios juntos (rifampicina, dapsona e clofazimina), e cada um pode causar alguns efeitos. A clofazimina é a que mais aparece: deixa a pele mais escura ou avermelhada (cor que costuma sumir alguns meses depois de terminar o remédio), pode deixar a urina, o suor e o catarro rosados, ressecar e descamar a pele das pernas e braços e causar cólicas, diarreia e perda de peso. A dapsona é o remédio que mais causa problemas, principalmente no sangue: pode destruir glóbulos vermelhos e, mais raramente, causar anemia importante, por isso o exame de sangue é acompanhado nos primeiros meses. A rifampicina raramente dá problemas nas doses usadas para hanseníase; pode haver uma leve alteração passageira nos exames do fígado, que não é motivo para parar o tratamento. Ao notar qualquer mudança, a pessoa deve contar à equipe de saúde em vez de parar o remédio por conta própria.",
+    "pontos_chave": [
+      {
+        "id": "T12-P1",
+        "afirmacao": "O efeito mais comum e visível da clofazimina é a mudança de cor da pele (de vermelho a castanho-escuro).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "O efeito mais comum e perceptível é a pigmentação da pele, variando de vermelho a castanho-escuro, dependendo da dosagem."
+      },
+      {
+        "id": "T12-P2",
+        "afirmacao": "A clofazimina pode deixar urina, catarro e suor rosados, principalmente após a dose mensal.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "Pode haver coloração rosada da urina, expectoração e suor, especialmente após a ingestão da dose mensal supervisionada."
+      },
+      {
+        "id": "T12-P3",
+        "afirmacao": "A clofazimina pode causar pele seca e descamativa (ictiose) e efeitos no intestino, como cólicas, diarreia e perda de peso.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "Os efeitos gastrointestinais, que variam de cólicas leves a diarreia e perda de peso, podem ocorrer como resultado da deposição de cristais de clofazimina na parede do intestino delgado"
+      },
+      {
+        "id": "T12-P4",
+        "afirmacao": "A dapsona costuma ser bem tolerada, mas pode causar destruição de glóbulos vermelhos (hemólise) e, mais raramente, anemia importante.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+        "trecho": "A dapsona geralmente é bem tolerada nas doses recomendadas para a hanseníase, mas pode causar hemólise e, mais raramente, anemia significativa."
+      },
+      {
+        "id": "T12-P5",
+        "afirmacao": "A dapsona é o remédio do tratamento que mais causa reações adversas, especialmente alterações no sangue.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+        "trecho": "Dentre os medicamentos utilizados para o tratamento da hanseníase, o mais frequentemente associado a reações adversas é a dapsona, especialmente as alterações hematológicas."
+      },
+      {
+        "id": "T12-P6",
+        "afirmacao": "Com a rifampicina pode haver leve alteração passageira nos exames do fígado, mas isso é raro nas doses da hanseníase e não é motivo para interromper o tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, rifampicina), p. 71–72 (PDF 73–74)",
+        "trecho": "essa reação é rara na dosagem e nos intervalos recomendados para hanseníase, não sendo uma indicação para interromper o tratamento."
+      }
+    ],
+    "pontos_proibidos": [
+      "Orientar a pessoa a parar o tratamento por conta própria ao perceber escurecimento da pele ou outro efeito colateral.",
+      "Afirmar que o escurecimento da pele causado pela clofazimina é sempre permanente.",
+      "Afirmar que a rifampicina causa frequentemente lesão grave do fígado no esquema da hanseníase ou que leve alteração de exames obriga a suspendê-la.",
+      "Afirmar que o tratamento da hanseníase não tem efeitos colaterais."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O Quadro 2 do PCDT 2022 (item 10.1.6) descreve os eventos adversos de cada medicamento da PQT-U, e o item 10.1.7 indica a dapsona como o mais associado a reações adversas.",
+    "comportamento_esperado": "Responder em linguagem simples, descrevendo os efeitos da clofazimina, da dapsona e da rifampicina e orientando a comunicar a equipe de saúde em vez de interromper o tratamento. Mencionar que os remédios usados para reações (corticoide, talidomida) têm efeitos próprios é aceitável, mas não é obrigatório.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "oms-estrategia-global-hanseniase-2021-2030", "oms-reacoes-incapacidades-2020"],
+    "termos_buscados": ["eventos adversos", "efeitos colaterais", "reações adversas", "pigmentação", "hemólise", "anemia", "hepatotoxicidade", "side effect", "adverse", "discoloration"]
+  },
+  {
+    "id": "T13",
+    "registro": "técnico",
+    "resposta_referencia": "Segundo o PCDT 2022, a dapsona é o componente da PQT-U mais frequentemente associado a reações adversas, sobretudo hematológicas (hemólise e, mais raramente, anemia significativa), registradas principalmente no primeiro trimestre do tratamento; a anemia é mais frequente em mulheres e as reações adversas à PQT são mais relatadas em idosos, e a reação mais grave à dapsona é a síndrome sulfônica. Recomenda-se, sempre que possível, monitorar o hemograma nos primeiros meses, sem necessidade de dosagem rotineira de G6PD antes de iniciar a PQT-U. O efeito mais comum e perceptível da clofazimina é a pigmentação cutânea (vermelho a castanho-escuro), acompanhada de coloração rosada de urina, suor e expectoração, ictiose em pernas e antebraços e efeitos gastrointestinais (cólicas, diarreia, perda de peso) por deposição de cristais na parede intestinal. Com a rifampicina, em dose mensal, os eventos adversos são raros; pode haver leve aumento transitório de transaminases, que não indica interrupção do tratamento.",
+    "pontos_chave": [
+      {
+        "id": "T13-P1",
+        "afirmacao": "A dapsona é o medicamento mais frequentemente associado a reações adversas, especialmente alterações hematológicas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+        "trecho": "Dentre os medicamentos utilizados para o tratamento da hanseníase, o mais frequentemente associado a reações adversas é a dapsona, especialmente as alterações hematológicas."
+      },
+      {
+        "id": "T13-P2",
+        "afirmacao": "As principais reações adversas à dapsona ocorrem no primeiro trimestre do tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+        "trecho": "Na maioria dos estudos, as principais reações adversas à dapsona são registradas no primeiro trimestre do tratamento."
+      },
+      {
+        "id": "T13-P3",
+        "afirmacao": "A dapsona pode causar hemólise e, mais raramente, anemia significativa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+        "trecho": "A dapsona geralmente é bem tolerada nas doses recomendadas para a hanseníase, mas pode causar hemólise e, mais raramente, anemia significativa."
+      },
+      {
+        "id": "T13-P4",
+        "afirmacao": "O efeito adverso mais comum e perceptível da clofazimina é a pigmentação da pele (vermelho a castanho-escuro).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "O efeito mais comum e perceptível é a pigmentação da pele, variando de vermelho a castanho-escuro, dependendo da dosagem."
+      },
+      {
+        "id": "T13-P5",
+        "afirmacao": "A clofazimina também causa ictiose em pernas e antebraços e pode causar efeitos gastrointestinais.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "A clofazimina também produz ictiose característica nas pernas e antebraços."
+      },
+      {
+        "id": "T13-P6",
+        "afirmacao": "A hepatotoxicidade da rifampicina (leve aumento transitório de transaminases) é rara na posologia da hanseníase e não indica interrupção.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, rifampicina), p. 71–72 (PDF 73–74)",
+        "trecho": "Pode ocorrer hepatotoxicidade com leve aumento transitório das transaminases hepáticas, mas essa reação é rara na dosagem e nos intervalos recomendados para hanseníase"
+      }
+    ],
+    "pontos_proibidos": [
+      "Apontar a rifampicina como o medicamento da PQT-U mais associado a reações adversas ou afirmar que a hepatotoxicidade é comum no esquema mensal.",
+      "Afirmar que é obrigatório dosar G6PD rotineiramente antes de iniciar a PQT-U.",
+      "Afirmar que a pigmentação pela clofazimina é critério para suspender o medicamento.",
+      "Afirmar que leve aumento transitório de transaminases pela rifampicina exige interromper o tratamento."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 descreve os eventos adversos por medicamento (Quadro 2, item 10.1.6) e indica a frequência relativa e o período de maior ocorrência das reações à dapsona (item 10.1.7).",
+    "comportamento_esperado": "Responder com terminologia técnica, destacando dapsona (hematológicos, primeiro trimestre, síndrome sulfônica como mais grave), clofazimina (pigmentação, ictiose, gastrointestinais) e rifampicina (eventos raros em dose mensal).",
+    "divergencias_entre_documentos": "Não há divergência normativa. A OMS (Diretrizes 2018) registra que nenhum estudo da revisão relatou eventos adversos com clofazimina no esquema de três medicamentos para PB, mas cita a coloração da pele como preocupação e estigma; o PCDT descreve a pigmentação como o efeito mais comum.",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "oms-estrategia-global-hanseniase-2021-2030", "oms-reacoes-incapacidades-2020"],
+    "termos_buscados": ["eventos adversos", "reações adversas", "Quadro 2", "hemólise", "anemia", "síndrome sulfônica", "pigmentação", "ictiose", "transaminases", "adverse events", "side effects", "dapsone hypersensitivity"]
+  },
+  {
+    "id": "T14",
+    "registro": "leigo",
+    "resposta_referencia": "A dapsona é um antibiótico, um dos três remédios que formam o tratamento da hanseníase (junto com a rifampicina e a clofazimina), chamado PQT-U. Ela atrapalha a bactéria de produzir uma substância de que precisa para crescer (o ácido fólico); sozinha tem efeito fraco, por isso é sempre usada junto com os outros remédios. No adulto, a dose é de 100 mg por dia, tomada em casa, além da dose do mês tomada na unidade de saúde. O principal cuidado é com o sangue: ela pode destruir glóbulos vermelhos e, mais raramente, causar anemia importante, sobretudo nos primeiros meses, por isso se recomenda acompanhar com exames de sangue e ficar atento a sinais de anemia, com mais atenção para mulheres e idosos. Também exige cuidado quem usa remédios para malária ou tem deficiência de uma enzima chamada G6PD, e qualquer reação deve ser contada à equipe de saúde; na gravidez, o PCDT recomenda manter a dapsona.",
+    "pontos_chave": [
+      {
+        "id": "T14-P1",
+        "afirmacao": "A dapsona é um dos três medicamentos (rifampicina, dapsona e clofazimina) da poliquimioterapia usada para curar a hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0055",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 56 (PDF 58)",
+        "trecho": "Consiste na associação de três antimicrobianos (rifampicina, dapsona e clofazimina), que leva à cura em até 98% dos casos tratados"
+      },
+      {
+        "id": "T14-P2",
+        "afirmacao": "A dapsona impede a bactéria de usar o PABA para produzir ácido fólico, tendo ação fracamente bactericida.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+        "secao_ou_pagina": "10.1.5.3 Dapsona, p. 64–65 (PDF 66–67)",
+        "trecho": "A dapsona é um antagonista competitivo do ácido paraminobenzoico (PABA) que impede a sua utilização pela bactéria para a síntese do ácido fólico, de modo que é fracamente bactericida."
+      },
+      {
+        "id": "T14-P3",
+        "afirmacao": "No adulto (acima de 50 kg), a dapsona é tomada diariamente na dose de 100 mg, além da dose mensal supervisionada.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1), p. 57–58 (PDF 59–60)",
+        "trecho": "Dose diária autoadministrada: •Clofazimina 50mg diariamente •Dapsona 100mg diariamente"
+      },
+      {
+        "id": "T14-P4",
+        "afirmacao": "A dapsona pode causar hemólise (destruição de glóbulos vermelhos) e, mais raramente, anemia importante.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+        "trecho": "A dapsona geralmente é bem tolerada nas doses recomendadas para a hanseníase, mas pode causar hemólise e, mais raramente, anemia significativa."
+      },
+      {
+        "id": "T14-P5",
+        "afirmacao": "Recomenda-se acompanhar os exames de sangue nos primeiros meses de tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+        "trecho": "Recomenda-se, sempre que possível, o monitoramento dos níveis hematológicos nos primeiros meses de tratamento."
+      },
+      {
+        "id": "T14-P6",
+        "afirmacao": "É preciso atenção a sinais de hemólise especialmente em quem usa remédios contra malária ou tem deficiência de G6PD.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+        "secao_ou_pagina": "10.1.5.3 Dapsona, p. 64–65 (PDF 66–67)",
+        "trecho": "Deve-se monitorar cuidadosamente o surgimento de sinais e sintomas de reações hemolíticas, particularmente em pacientes em uso concomitante de agentes antimaláricos"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a dapsona pode ser usada sozinha para tratar a hanseníase.",
+      "Afirmar que é obrigatório fazer o exame de G6PD antes de começar o tratamento (o PCDT diz que não é necessário testar rotineiramente).",
+      "Orientar a suspender a dapsona durante a gravidez (o PCDT recomenda mantê-la).",
+      "Orientar a parar a dapsona por conta própria ao surgir algum sintoma, em vez de procurar a equipe de saúde."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 descreve a dapsona (10.1.5.3), sua posição na PQT-U e posologia (Quadro 1) e os eventos adversos, monitoramento e interações (Quadros 2 e 3, item 10.1.7), cobrindo as três partes da pergunta composta.",
+    "comportamento_esperado": "Responder às três partes (o que é, para que serve, cuidados) em linguagem simples, sem jargão não explicado.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-estrategia-global-hanseniase-2021-2030", "oms-reacoes-incapacidades-2020", "oms-diretrizes-hanseniase-2018"],
+    "termos_buscados": ["dapsona", "dapsone", "PABA", "hemólise", "anemia", "G6PD", "glicose-6-fosfato", "antimaláricos", "síndrome sulfônica", "hipersensibilidade à dapsona", "gravidez"]
+  },
+  {
+    "id": "T15",
+    "registro": "leigo",
+    "resposta_referencia": "Sim, na maioria das vezes. Segundo o PCDT da Hanseníase, o escurecimento da pele causado pela clofazimina costuma desaparecer entre 6 e 12 meses depois que o remédio é parado, mas pode ficar um pouco de mancha por até quatro anos. A mudança de cor, que vai do avermelhado ao marrom-escuro, é o efeito mais comum desse remédio e pode deixar as manchas da hanseníase mais visíveis durante o tratamento. Ela não é motivo para parar o remédio por conta própria; se a cor incomodar muito, a pessoa deve conversar com a equipe de saúde. Em bebês de mães que usaram clofazimina na gravidez ou na amamentação, o escurecimento também regride quando o bebê deixa de receber o remédio.",
+    "pontos_chave": [
+      {
+        "id": "T15-P1",
+        "afirmacao": "A pigmentação geralmente desaparece entre 6 e 12 meses após a interrupção da clofazimina, mas traços podem permanecer por até quatro anos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "A pigmentação geralmente desaparece dentro de seis a 12 meses após a interrupção da clofazimina, embora traços de descoloração ainda possam permanecer por até quatro anos."
+      },
+      {
+        "id": "T15-P2",
+        "afirmacao": "A mudança de cor da pele (vermelho a castanho-escuro) é o efeito mais comum e perceptível da clofazimina.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "O efeito mais comum e perceptível é a pigmentação da pele, variando de vermelho a castanho-escuro, dependendo da dosagem."
+      },
+      {
+        "id": "T15-P3",
+        "afirmacao": "A pigmentação não é motivo para suspender o medicamento, exceto em insatisfação extrema do paciente com risco de abandono.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "A pigmentação da pele não deve ser considerada critério para suspensão do medicamento, exceto quando há insatisfação extrema do paciente, com risco de abandono do tratamento."
+      },
+      {
+        "id": "T15-P4",
+        "afirmacao": "O remédio pode se acumular nas manchas ativas da hanseníase, deixando-as mais evidentes.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+        "trecho": "O fármaco pode acumular-se nas lesões cutâneas ativas da hanseníase, tornando-as mais evidentes."
+      },
+      {
+        "id": "T15-P5",
+        "afirmacao": "Em bebês de mães que usaram clofazimina na gravidez ou amamentação, o aumento da pigmentação regride quando cessa a transferência do remédio.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0067",
+        "secao_ou_pagina": "10.1.5.2 Clofazimina, p. 64 (PDF 66)",
+        "trecho": "foi relatado aumento da pigmentação da pele em bebês nascidos de mulheres que receberam clofazimina durante a gravidez e o aleitamento, a qual regride após a interrupção da transferência do fármaco para o recém-nascido"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a alteração de cor causada pela clofazimina é sempre permanente.",
+      "Afirmar que a cor some imediatamente ou em poucos dias após parar o remédio.",
+      "Orientar a parar a clofazimina por conta própria por causa da mudança de cor.",
+      "Orientar a suspender a amamentação ou a clofazimina na gravidez por causa da pigmentação do bebê (o PCDT recomenda manter o tratamento)."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O Quadro 2 do PCDT 2022 informa explicitamente o tempo de regressão da pigmentação (6 a 12 meses, com traços por até quatro anos) e o item 10.1.5.2 trata da regressão em bebês.",
+    "comportamento_esperado": "Responder em linguagem simples que a cor costuma desaparecer em 6 a 12 meses após o fim do remédio, podendo restar traços por até quatro anos, e que isso não é motivo para interromper o tratamento por conta própria.",
+    "divergencias_entre_documentos": "As Diretrizes da OMS (2018) admitem considerar um regime alternativo de dois medicamentos (sem clofazimina) para pessoas com hanseníase PB muito preocupadas com a descoloração da pele; o PCDT 2022, norma brasileira mais recente do corpus, adota a PQT-U com clofazimina para todos e só admite suspender a clofazimina por pigmentação em caso de insatisfação extrema com risco de abandono.",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "oms-reacoes-incapacidades-2020"],
+    "termos_buscados": ["clofazimina", "clofazimine", "pigmentação", "descoloração", "coloração da pele", "skin pigmentation", "desaparece", "regride", "quatro anos"]
+  },
+  {
+    "id": "T16",
+    "registro": "técnico",
+    "resposta_referencia": "Pelo PCDT 2022, a reação adversa a medicamento (RAM) deve ser avaliada criteriosamente, para evitar a substituição inadequada da PQT-U, o que pode levar a resistência medicamentosa; vários eventos não justificam interromper o fármaco (leve aumento transitório de transaminases pela rifampicina, pigmentação pela clofazimina salvo insatisfação extrema com risco de abandono) e, para a prednisona, a redução da dose é preferível à interrupção. Quando a RAM é relevante e considerada irreversível, caracteriza falha terapêutica e o fármaco implicado é substituído por esquema de segunda linha: na RAM à rifampicina, clofazimina + ofloxacino + minociclina por 6 meses e, para MB, mais 18 meses de clofazimina + ofloxacino (ou minociclina); na RAM à dapsona, rifampicina + clofazimina + ofloxacino (ou minociclina) por 6 (PB) ou 12 meses (MB); na RAM à clofazimina, rifampicina + dapsona + ofloxacino (ou minociclina) por 6 (PB) ou 12 meses (MB). Os critérios de monitoramento e alta permanecem os do esquema PQT-U, exceto nos casos MB com intolerância à rifampicina, que passam a 24 doses supervisionadas. Em situações extremas, como intolerância grave a múltiplos fármacos da PQT-U, pode-se usar o esquema ROM (rifampicina 600 mg + ofloxacino 400 mg + minociclina 100 mg) em dose mensal supervisionada, por 6 meses (PB) ou 24 meses (MB). Toda RAM deve ser notificada para fins de farmacovigilância.",
+    "pontos_chave": [
+      {
+        "id": "T16-P1",
+        "afirmacao": "As RAM devem ser avaliadas criteriosamente para evitar a substituição inadequada da PQT-U, que pode gerar resistência medicamentosa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+        "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U (Observações), p. 78 (PDF 80)",
+        "trecho": "As reações adversas a medicamentos (RAM) devem ser avaliadas criteriosamente, a fim de evitar que o tratamento preconizado como primeira linha (PQT-U) seja substituído de forma inadequada"
+      },
+      {
+        "id": "T16-P2",
+        "afirmacao": "RAM relevante e irreversível caracteriza falha terapêutica, e o fármaco implicado é substituído por esquema de segunda linha.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+        "trecho": "Quando as reações adversas são relevantes e consideradas irreversíveis, elas caracterizam falha terapêutica, e os medicamentos implicados podem ser substituídos por outros considerados de segunda linha"
+      },
+      {
+        "id": "T16-P3",
+        "afirmacao": "Nos esquemas alternativos, os critérios de monitoramento e alta são os da PQT-U, exceto MB com intolerância à rifampicina, que passa a 24 doses supervisionadas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+        "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U (Observações), p. 78 (PDF 80)",
+        "trecho": "os critérios de monitoramento e alta permanecem os mesmos do esquema PQT-U, exceto para os casos MB com intolerância à rifampicina, quando o número de doses supervisionadas passa a ser de 24."
+      },
+      {
+        "id": "T16-P4",
+        "afirmacao": "Toda RAM deve ser notificada para fins de farmacovigilância.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+        "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U (Observações), p. 78 (PDF 80)",
+        "trecho": "3) Toda RAM deve ser notificada para fins de farmacovigilância."
+      },
+      {
+        "id": "T16-P5",
+        "afirmacao": "Na RAM à dapsona, o esquema alternativo é rifampicina 600 mg + clofazimina 300 mg + ofloxacino 400 mg (ou minociclina 100 mg) mensal, com clofazimina 50 mg + ofloxacino 400 mg (ou minociclina) diários.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0087",
+        "secao_ou_pagina": "10.1.7.2 Tratamento farmacológico de 2ª linha para casos de reações adversas à dapsona (Quadro 5), p. 77–78 (PDF 79–80)",
+        "trecho": "Rifampicina 600mg + clofazimina 300mg + ofloxacino 400mg (ou minociclina 100mg)"
+      },
+      {
+        "id": "T16-P6",
+        "afirmacao": "Nem todo evento adverso exige suspensão: o leve aumento transitório de transaminases pela rifampicina não é indicação para interromper o tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, rifampicina), p. 71–72 (PDF 73–74)",
+        "trecho": "essa reação é rara na dosagem e nos intervalos recomendados para hanseníase, não sendo uma indicação para interromper o tratamento."
+      }
+    ],
+    "pontos_proibidos": [
+      "Recomendar suspender definitivamente toda a PQT-U diante de qualquer evento adverso, sem avaliação e sem esquema substituto.",
+      "Recomendar trocar a PQT-U por esquema alternativo diante de qualquer queixa leve, sem avaliação criteriosa da RAM.",
+      "Afirmar que a pigmentação pela clofazimina ou o leve aumento transitório de transaminases pela rifampicina obrigam a suspender o medicamento.",
+      "Afirmar que, nos casos MB com intolerância à rifampicina, o esquema alternativo mantém 12 doses (o PCDT indica 24 doses supervisionadas).",
+      "Omitir ou dispensar a notificação da RAM à farmacovigilância."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O item 10.1.7 do PCDT 2022 (Quadros 4 a 6 e Observações) define a conduta diante de RAM aos componentes da PQT-U; o Quadro 2 (10.1.6) traz orientações por medicamento e o item 12.5 traz o esquema ROM para intolerância grave a múltiplos fármacos.",
+    "comportamento_esperado": "Responder com a conduta do PCDT: avaliação criteriosa, substituição por esquema de segunda linha conforme o fármaco implicado, manutenção dos critérios de alta (24 doses em MB com intolerância à rifampicina) e notificação de toda RAM.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-estrategia-global-hanseniase-2021-2030", "oms-diretrizes-hanseniase-2018"],
+    "termos_buscados": ["reação adversa", "RAM", "falha terapêutica", "segunda linha", "farmacovigilância", "notificada", "intolerância", "Quadro 4", "Quadro 5", "Quadro 6", "ROM", "interromper"]
+  },
+  {
+    "id": "T17",
+    "registro": "técnico",
+    "resposta_referencia": "Segundo o PCDT 2022, deve ser investigado para resistência todo paciente diagnosticado como caso novo de hanseníase que apresente, no diagnóstico inicial, índice baciloscópico (IB) ≥ 2,0; este é o critério previsto para casos novos (resistência primária), distinto dos critérios de resistência secundária após PQT-U (persistência de hansenomas ou lesões infiltradas inalteradas, IB inalterado ou em aumento após pelo menos um ano, reações reentrantes por mais de três anos após a alta e não responsivas, abandono de PQT-U por mais de seis meses em MB e recidiva). A investigação laboratorial usa o teste molecular incorporado ao SUS em 2022 (amplificação de DNA e hibridização reversa em fita de nitrocelulose), que identifica mutações nos genes rpoB (rifampicina), gyrA (ofloxacino e outras fluoroquinolonas) e folP1 (dapsona). A amostra é uma biópsia da lesão de pele, encaminhada ao Laboratório Central de Saúde Pública conforme o fluxo local, e a comprovação laboratorial, o tratamento e o acompanhamento ocorrem na Atenção Especializada.",
+    "pontos_chave": [
+      {
+        "id": "T17-P1",
+        "afirmacao": "Deve ser investigado para resistência todo caso novo de hanseníase com índice baciloscópico ≥ 2,0 no diagnóstico inicial.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+        "secao_ou_pagina": "11 Resistência do M. leprae a antimicrobianos (critério para casos novos, antes do item 11.3), p. 90–91 (PDF 92–93)",
+        "trecho": "Deve ser investigado qualquer paciente diagnosticado como caso novo de hanseníase e que, no diagnóstico inicial apresente IB ≥2,0."
+      },
+      {
+        "id": "T17-P2",
+        "afirmacao": "O teste laboratorial incorporado ao SUS detecta mutações associadas à resistência à rifampicina (rpoB), ao ofloxacino/fluoroquinolonas (gyrA) e à dapsona (folP1).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0107",
+        "secao_ou_pagina": "11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos, p. 90 (PDF 92)",
+        "trecho": "auxiliando no diagnóstico da resistência da micobactéria à rifampicina (gene rpoB), ao ofloxacino ou outras fluoroquinolonas (gene gyrA) e à dapsona (gene folP1)"
+      },
+      {
+        "id": "T17-P3",
+        "afirmacao": "A amostra para o teste é biópsia de lesão de pele, encaminhada ao Laboratório Central de Saúde Pública.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0107",
+        "secao_ou_pagina": "11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos, p. 90 (PDF 92)",
+        "trecho": "Uma amostra biológica (biópsia da lesão de pele) deve ser coletada e encaminhada para análise no Laboratório Central de Saúde Pública, conforme definição de fluxo local."
+      },
+      {
+        "id": "T17-P4",
+        "afirmacao": "A comprovação laboratorial da resistência, o tratamento e o acompanhamento são feitos na Atenção Especializada.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0106",
+        "secao_ou_pagina": "11 Resistência do M. leprae a antimicrobianos, p. 89–90 (PDF 91–92)",
+        "trecho": "A comprovação laboratorial da resistência medicamentosa do M. leprae, bem como o diagnóstico laboratorial, o tratamento e o acompanhamento devem ser realizados na Atenção Especializada"
+      },
+      {
+        "id": "T17-P5",
+        "afirmacao": "Critérios como persistência de hansenomas/lesões infiltradas após a PQT-U referem-se à resistência secundária (após tratamento), não à primária.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+        "secao_ou_pagina": "11.3 Critérios para investigação da resistência secundária do M. leprae a antimicrobianos, após PQT-U, p. 90–91 (PDF 92–93)",
+        "trecho": "1) Persistência de hansenomas e/ou lesões infiltradas após o término da PQT-U, com aspecto clínico inalterado em relação ao momento do diagnóstico;"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a resistência primária deve ser investigada em todos os casos novos, independentemente do índice baciloscópico.",
+      "Usar como critério de resistência primária os critérios de resistência secundária (falha após PQT-U, recidiva, abandono), sem distinguir os dois cenários.",
+      "Recomendar estender ou repetir a PQT-U como forma de investigar ou tratar suspeita de resistência.",
+      "Afirmar que a resistência pode ser confirmada apenas clinicamente, sem teste laboratorial."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (cap. 11) traz o critério para casos novos (IB ≥ 2,0 no diagnóstico) e descreve o teste molecular, a amostra e o local de realização. Ressalva: no texto extraído, o rótulo do item 11.2 não aparece; a frase do critério está no início do trecho rotulado 11.3, mas refere-se explicitamente a caso novo e o item 10.1.1 remete a 'critérios definidos no item 11.2'.",
+    "comportamento_esperado": "Responder: investigar caso novo com IB ≥ 2,0 no diagnóstico inicial, por teste molecular (rpoB, gyrA, folP1) em biópsia de pele enviada ao LACEN, com condução na Atenção Especializada, distinguindo dos critérios de resistência secundária.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "ms-estrategia-nacional-hanseniase-2024-2030", "oms-diretrizes-hanseniase-2018", "oms-estrategia-global-hanseniase-2021-2030"],
+    "termos_buscados": ["resistência primária", "resistência secundária", "caso novo", "IB ≥", "índice baciloscópico", "rpoB", "gyrA", "folP1", "hibridização reversa", "Laboratório Central", "11.2", "primary resistance", "resistance"]
+  },
+  {
+    "id": "T18",
+    "registro": "técnico",
+    "resposta_referencia": "No PCDT 2022, na resistência comprovada à rifampicina há dois esquemas de segunda linha para MB, com duração máxima de 24 meses: (1) ofloxacino 400 mg + minociclina 100 mg + clofazimina 50 mg diariamente por 6 meses, seguidos de clofazimina 50 mg + ofloxacino 400 mg (ou minociclina 100 mg) diariamente por 18 meses; ou (2) ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg por 6 meses, seguidos de ofloxacino 400 mg + clofazimina 50 mg por 18 meses. Na resistência à rifampicina e ao ofloxacino, usa-se claritromicina 500 mg + minociclina 100 mg + clofazimina 50 mg por 6 meses, seguidos de clofazimina 50 mg + claritromicina 500 mg (ou minociclina 100 mg) por 18 meses. A resistência isolada ao ofloxacino não indica falha da PQT-U (o fármaco não a compõe); nesse caso, o paciente é excluído do protocolo e investigado na Atenção Especializada, e casos com RAM que exigiriam ofloxacino mas com resistência a ele são tratados com minociclina. Os pacientes em segunda linha são acompanhados na Atenção Especializada com consultas mensais e registro no SIRH; a OMS acrescenta investigar tuberculose antes de iniciar fluoroquinolona e realizar farmacovigilância com monitorização eletrocardiográfica (risco de prolongamento do QT).",
+    "pontos_chave": [
+      {
+        "id": "T18-P1",
+        "afirmacao": "Na resistência à rifampicina há duas opções de esquema de segunda linha, com duração máxima de 24 meses.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+        "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+        "trecho": "Quando a resistência à rifampicina está presente, são recomendadas duas possibilidades de esquemas farmacológicos com duração máxima de 24 meses, conforme o Quadro 7."
+      },
+      {
+        "id": "T18-P2",
+        "afirmacao": "Esquema 1 para resistência à rifampicina: ofloxacino 400 mg + minociclina 100 mg + clofazimina 50 mg diários por 6 meses, seguidos de clofazimina + ofloxacino (ou minociclina) por 18 meses.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+        "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+        "trecho": "Ofloxacino 400mg + minociclina 100mg + clofazimina 50mg"
+      },
+      {
+        "id": "T18-P3",
+        "afirmacao": "Esquema 2 para resistência à rifampicina: ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg por 6 meses, seguidos de ofloxacino + clofazimina por 18 meses.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+        "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+        "trecho": "Ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg"
+      },
+      {
+        "id": "T18-P4",
+        "afirmacao": "Na resistência à rifampicina e ao ofloxacino: claritromicina 500 mg + minociclina 100 mg + clofazimina 50 mg por 6 meses, seguidos de clofazimina + claritromicina (ou minociclina) por 18 meses.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0110",
+        "secao_ou_pagina": "11.4.2 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina e ao ofloxacino (Quadro 8), p. 92 (PDF 94)",
+        "trecho": "Claritromicina 500mg + minociclina 100mg + clofazimina 50mg"
+      },
+      {
+        "id": "T18-P5",
+        "afirmacao": "A resistência isolada ao ofloxacino não indica falha da PQT-U, pois o ofloxacino não faz parte do esquema de primeira linha.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0111",
+        "secao_ou_pagina": "11.4.3 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente ao ofloxacino, p. 93 (PDF 95)",
+        "trecho": "A detecção da resistência ao ofloxacino isoladamente não é indicativa de falha do tratamento de primeira linha, tendo em vista que o fármaco não é um componente da PQT-U."
+      },
+      {
+        "id": "T18-P6",
+        "afirmacao": "O paciente em esquema de segunda linha por resistência é acompanhado na Atenção Especializada, com consultas mensais durante todo o tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0112",
+        "secao_ou_pagina": "11.5 Monitoramento do tratamento em casos de resistência medicamentosa, p. 93–95 (PDF 95–97)",
+        "trecho": "deve ser acompanhado na Atenção Especializada, com consultas mensais durante todo o período de tratamento"
+      }
+    ],
+    "pontos_proibidos": [
+      "Incluir uma quinolona (ofloxacino) no esquema quando há resistência ao ofloxacino.",
+      "Recomendar repetir ou prolongar a PQT-U como tratamento da resistência à rifampicina.",
+      "Indicar esquema de resistência à rifampicina com duração total de apenas 6 ou 12 meses (o PCDT prevê 6 meses + 18 meses, até 24 meses).",
+      "Recomendar monoterapia com um único fármaco de segunda linha."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (itens 11.4.1 a 11.5, Quadros 7 e 8) e as Diretrizes da OMS 2018 (item 2.2, Tabela 4) definem os esquemas de segunda linha para resistência à rifampicina, à rifampicina + ofloxacino e ao ofloxacino. Observação: o corpus não define um esquema específico para resistência isolada à dapsona ou à clofazimina; a resposta não deve inventá-lo.",
+    "comportamento_esperado": "Responder com os esquemas do PCDT por tipo de resistência e a conduta de acompanhamento; não inventar esquemas para resistência isolada à dapsona ou à clofazimina, que não estão no corpus.",
+    "divergencias_entre_documentos": "As Diretrizes da OMS (2018) admitem substituir o ofloxacino 400 mg por levofloxacino 500 mg ou moxifloxacino 400 mg e formulam a regra geral de 'pelo menos dois' fármacos de segunda linha (claritromicina, minociclina ou quinolona) + clofazimina; o PCDT 2022, norma brasileira seguida na referência, lista apenas ofloxacino como quinolona e dois esquemas fixos. A OMS ainda recomenda investigar tuberculose e monitorar ECG, pontos não detalhados no PCDT.",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "ms-estrategia-nacional-hanseniase-2024-2030", "oms-estrategia-global-hanseniase-2021-2030"],
+    "termos_buscados": ["resistência", "resistente", "segunda linha", "Quadro 7", "Quadro 8", "claritromicina", "minociclina", "ofloxacino", "levofloxacina", "moxifloxacina", "SIRH", "drug-resistant", "resistance"]
+  },
+  {
+    "id": "T19",
+    "registro": "técnico",
+    "resposta_referencia": "Para crianças com peso abaixo de 30 kg, o PCDT 2022 prevê a adaptação da PQT-U Infantil com doses por peso: dose mensal supervisionada de rifampicina 10 mg/kg, clofazimina 6 mg/kg e dapsona 2 mg/kg, e dose diária autoadministrada de clofazimina 1 mg/kg/dia e dapsona 2 mg/kg/dia. A duração é de 6 meses para PB (6 doses supervisionadas em até 9 meses) e 12 meses para MB (12 doses em até 18 meses), usando os três medicamentos independentemente da classificação operacional. A rifampicina está disponível no SUS como suspensão oral 20 mg/mL. Como a clofazimina só existe em cápsulas de 50 e 100 mg, recomenda-se calcular a dose semanal e dividi-la em duas ou três tomadas (ex.: criança de 15 kg recebe 105 mg por semana, podendo tomar uma cápsula de 50 mg duas vezes por semana).",
+    "pontos_chave": [
+      {
+        "id": "T19-P1",
+        "afirmacao": "Dose mensal supervisionada para crianças < 30 kg: rifampicina 10 mg/kg, clofazimina 6 mg/kg e dapsona 2 mg/kg.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, adaptação da PQT-U Infantil), p. 58–59 (PDF 60–61)",
+        "trecho": "Dose mensal supervisionada: •Rifampicina 10mg/kg de peso •Clofazimina 6mg/kg de peso •Dapsona 2mg/kg de peso"
+      },
+      {
+        "id": "T19-P2",
+        "afirmacao": "Dose diária autoadministrada para crianças < 30 kg: clofazimina 1 mg/kg/dia e dapsona 2 mg/kg/dia.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, adaptação da PQT-U Infantil), p. 58–59 (PDF 60–61)",
+        "trecho": "Dose diária autoadministrada: •Clofazimina 1mg/kg de peso/dia •Dapsona 2mg/kg de peso/dia"
+      },
+      {
+        "id": "T19-P3",
+        "afirmacao": "Duração: PB 6 doses mensais supervisionadas (em até 9 meses); MB 12 doses (em até 18 meses).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota a), p. 58–59 (PDF 60–61)",
+        "trecho": "A PQT-U deverá ser interrompida após a administração de seis doses mensais supervisionadas em intervalo de até nove meses para os casos paucibacilares e após 12 doses mensais supervisionadas em um intervalo de até 18 meses para os casos multibacilares"
+      },
+      {
+        "id": "T19-P4",
+        "afirmacao": "A rifampicina está disponível no SUS em suspensão oral de 20 mg/mL.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota b), p. 58–59 (PDF 60–61)",
+        "trecho": "A rifampicina também está disponível no SUS sob a forma de suspensão oral com 20mg/mL"
+      },
+      {
+        "id": "T19-P5",
+        "afirmacao": "Para a clofazimina, calcula-se a dose semanal e divide-se em duas ou três tomadas (ex.: 15 kg = 105 mg/semana).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota c), p. 58–59 (PDF 60–61)",
+        "trecho": "recomenda-se calcular a dose semanal e dividi-la em duas ou três tomadas. Por exemplo: uma criança com 15kg deverá receber 105mg de clofazimina ao longo de sete dias"
+      },
+      {
+        "id": "T19-P6",
+        "afirmacao": "Os três medicamentos (rifampicina, clofazimina e dapsona) são usados em todos os casos, independentemente da classificação operacional (PQT-U).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+        "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 57–58 (PDF 59–60)",
+        "trecho": "desde 2018 a OMS passou a preconizar o uso dos três medicamentos para o tratamento de todos os casos de hanseníase, independentemente da classificação operacional"
+      }
+    ],
+    "pontos_proibidos": [
+      "Prescrever para criança < 30 kg as doses fixas da PQT-U Infantil (rifampicina 450 mg, clofazimina 150 mg, dapsona 50 mg), destinadas à faixa de 30 a 50 kg.",
+      "Indicar clofazimina 50 mg diária para criança < 30 kg (a dose é 1 mg/kg/dia, ajustada semanalmente).",
+      "Inverter as durações (PB 12 meses / MB 6 meses) ou omitir a clofazimina nos casos PB.",
+      "Indicar dapsona apenas em dose mensal, sem a dose diária de 2 mg/kg/dia."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O Quadro 1 do PCDT 2022 (item 10.1.1) e suas notas a, b e c definem o esquema, a duração e as orientações práticas para crianças com peso abaixo de 30 kg.",
+    "comportamento_esperado": "Responder com as doses por kg do PCDT (mensal supervisionada e diária autoadministrada), a duração por classificação operacional e as orientações de apresentação (suspensão de rifampicina, fracionamento semanal da clofazimina).",
+    "divergencias_entre_documentos": "As Diretrizes da OMS (2018, Tabela 3) usam outro ponto de corte (crianças < 10 anos ou < 40 kg) e outra posologia de clofazimina (100 mg uma vez por mês e 50 mg duas vezes por semana), mantendo rifampicina 10 mg/kg mensal e dapsona 2 mg/kg/dia. A referência segue o PCDT 2022 (corte de 30 kg; clofazimina 6 mg/kg mensal e 1 mg/kg/dia).",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018"],
+    "termos_buscados": ["30kg", "30 kg", "40 kg", "crianças", "PQT-U Infantil", "mg/kg", "suspensão oral", "dose semanal", "menores de 15 anos", "children"]
+  },
+  {
+    "id": "T20",
+    "registro": "leigo",
+    "resposta_referencia": "A reação do tipo 1 (também chamada reação reversa) é uma inflamação causada pela própria defesa do corpo contra a bactéria da hanseníase, e pode aparecer antes, durante ou depois do tratamento. Ela começa de repente: as manchas que a pessoa já tinha ficam mais vermelhas ou arroxeadas, inchadas e às vezes doloridas, e podem surgir manchas que parecem novas. Muitas vezes os nervos também inflamam, o que se percebe por dor nos braços ou pernas, mais dormência nas mãos e nos pés, fraqueza e o hábito de deixar cair objetos das mãos. Pode haver uma febre leve, mas em geral a pessoa não se sente muito doente, ao contrário da reação tipo 2, em que aparecem caroços novos e doloridos na pele fora das manchas antigas. Ao notar esses sinais, a pessoa deve procurar a unidade de saúde logo, porque o tratamento precisa começar imediatamente para evitar dano aos nervos, sem parar o tratamento da hanseníase e sem tomar remédios por conta própria.",
+    "pontos_chave": [
+      {
+        "id": "T20-P1",
+        "afirmacao": "A reação tipo 1 surge de repente, com piora das manchas que já existiam e aparecimento de lesões novas, muitas vezes com inflamação dos nervos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "Ocorre abruptamente, com piora das lesões de pele preexistentes e aparecimento de novas lesões, muitas vezes acompanhada por intensa inflamação de nervos periféricos."
+      },
+      {
+        "id": "T20-P2",
+        "afirmacao": "As manchas ficam mais visíveis, avermelhadas/arroxeadas, inchadas e às vezes doloridas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "As lesões cutâneas tornam-se mais visíveis, com coloração eritemato-vinhosa, edemaciadas, algumas vezes dolorosas."
+      },
+      {
+        "id": "T20-P3",
+        "afirmacao": "Sinais de comprometimento dos nervos: piora da dor nos braços e pernas, deixar cair objetos das mãos e aumento da dormência nas mãos e pés.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "deve-se atentar às queixas do paciente em relação à piora das dores nos membros, queda mais frequente dos objetos das mãos e surgimento ou aumento da dormência nas mãos e pés"
+      },
+      {
+        "id": "T20-P4",
+        "afirmacao": "As reações podem acontecer antes, durante ou depois do tratamento da hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+        "secao_ou_pagina": "6.5 Reações hansênicas, p. 33–34 (PDF 35–36)",
+        "trecho": "Resultam da ativação de resposta imune contra o M. leprae e podem ocorrer antes, durante ou após o tratamento da infecção."
+      },
+      {
+        "id": "T20-P5",
+        "afirmacao": "Na reação tipo 1 as manchas da hanseníase ficam inflamadas e pode haver febre leve, mas a pessoa não se sente muito doente (diferente da tipo 2, com caroços novos e febre alta).",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0041",
+        "secao_ou_pagina": "4.2 The four steps in managing leprosy reactions, p. 28–29 (PDF 40–41)",
+        "trecho": "Type 1 reaction: – The leprosy skin lesions are inflamed; – There may be a slight fever, but the patient doesn’t feel too ill."
+      },
+      {
+        "id": "T20-P6",
+        "afirmacao": "Pelo risco de dano aos nervos, o tratamento da reação tipo 1 deve começar imediatamente (procurar o serviço de saúde sem demora).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+        "trecho": "Em vista do risco de dano neural, o tratamento da reação tipo 1 deve ser instituído imediatamente"
+      }
+    ],
+    "pontos_proibidos": [
+      "Orientar a parar o tratamento da hanseníase (PQT-U) durante a reação (o PCDT manda mantê-la).",
+      "Orientar a esperar a reação passar sozinha sem procurar o serviço de saúde.",
+      "Orientar a tomar corticoide ou outro remédio por conta própria.",
+      "Afirmar que a reação só acontece antes do tratamento ou que, depois da alta, não há mais risco de reação."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (itens 6.5 e 6.5.1) descreve os sinais da reação tipo 1 e a necessidade de tratamento imediato; o guia técnico da OMS de 2020 (cap. 4 e 5) traz a descrição simples e a diferenciação da reação tipo 2.",
+    "comportamento_esperado": "Responder em linguagem simples, descrevendo os sinais na pele e nos nervos e orientando a procurar o serviço de saúde imediatamente, sem interromper a PQT-U.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-reacoes-incapacidades-2020"],
+    "termos_buscados": ["reação tipo 1", "reação reversa", "Type 1 reaction", "reversal reaction", "neurite", "dormência", "eritemato-vinhosa", "silent neuritis", "symptoms of a reaction"]
+  }
+]

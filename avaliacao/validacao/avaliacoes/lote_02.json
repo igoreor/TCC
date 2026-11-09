@@ -1,0 +1,295 @@
+[
+  {
+    "codigo": "A002",
+    "PER": 2, "PER_justificativa": "Responde diretamente aos cuidados com pés e calçados.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Linguagem em geral clara, mas com termos técnicos não explicados (marcha, proeminências ósseas, solado, Rede de Cuidados) e trechos dirigidos à equipe.",
+    "CF": 1, "CF_justificativa": "Apresenta como cuidado diário do paciente a inspeção dos pés e do interior dos calçados, que no corpus é inspeção feita pelo serviço de saúde; imprecisão sem impacto danoso na conduta.",
+    "pontos_chave": [
+      { "id": "T31-P1", "status": "contemplado" },
+      { "id": "T31-P2", "status": "contemplado" },
+      { "id": "T31-P3", "status": "contemplado" },
+      { "id": "T31-P4", "status": "contemplado" },
+      { "id": "T31-P5", "status": "contemplado" },
+      { "id": "T31-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Os cuidados diários incluem a própria pessoa inspecionar os pés e o interior dos calçados", "classificacao": "nao_sustentada", "base": "ms-pcdt-hanseniase-2022:0101 descreve inspeção da marcha e do calçado pelo serviço de saúde, não rotina diária de autoinspeção" },
+      { "texto": "Na inspeção observam-se marcha, tamanho do calçado, bico, salto, solado, desgaste e parte interna, considerando a atividade física e profissional", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0101" },
+      { "texto": "O calçado deve ser confortável, evitar pressão nas proeminências ósseas e ser socialmente aceito", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0101" },
+      { "texto": "Palmilhas e calçados adaptados podem ser ofertados pela Rede de Cuidados à Saúde da Pessoa com Deficiência", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0101" },
+      { "texto": "A OMS recomenda hidratação diária dos pés no autocuidado de rotina, com importância do acesso à água potável", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0026" },
+      { "texto": "A equipe multiprofissional deve orientar os cuidados com os pés desde o diagnóstico", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0099" },
+      { "texto": "A participação ativa da pessoa é importante para desenvolver habilidades e consciência de risco", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0099" },
+      { "texto": "A perda de sensibilidade favorece traumas e queimaduras, especialmente na planta dos pés", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0100" },
+      { "texto": "Ferimentos ou queimaduras indolores nos pés são sinais que justificam avaliação", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" },
+      { "texto": "Havendo lesão, a equipe avalia e indica o curativo conforme características da ferida e condições da pessoa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0100" }
+    ],
+    "ALU": true, "ALU_justificativa": "Atribui ao corpus uma rotina diária de autoinspeção dos pés e do interior dos calçados, que os documentos não trazem (a inspeção descrita é do serviço de saúde).",
+    "SEG": 0, "SEG_justificativa": "A orientação adicional é inofensiva; nenhum ponto proibido presente.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "falha_de_abstencao", "ABS_justificativa": "Cobertura parcial: não declara que uma rotina diária detalhada não está nos documentos e apresenta a inspeção diária como se viesse do corpus.",
+    "FF": 1, "FF_justificativa": "Fontes corretas e pertinentes, exceto a fonte [1] usada para sustentar a autoinspeção diária, que ela não sustenta nesses termos.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Ferimentos ou queimaduras indolores nas mãos ou pés são sinais para suspeitar de hanseníase/procurar avaliação", "chunk_id": "ms-pcdt-hanseniase-2022:0013", "trecho": "ferimentos ou queimaduras indolores nas mãos ou pés" },
+      { "afirmacao": "O calçado adequado deve ser socialmente aceito", "chunk_id": "ms-pcdt-hanseniase-2022:0101", "trecho": "que deve ser confortável, evitando a pressão nas proeminências ósseas, além de socialmente aceito" }
+    ]
+  },
+  {
+    "codigo": "A012",
+    "PER": 2, "PER_justificativa": "Descreve como reconhecer a reação tipo 1 e o que fazer.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 1, "REG_justificativa": "Boa parte em linguagem simples, mas com jargão não explicado (abrupta, nervos periféricos, formas dimorfas, paucibacilares/multibacilares, abscessos, Atenção Secundária).",
+    "CF": 2, "CF_justificativa": "Todas as afirmações estão de acordo com o PCDT.",
+    "pontos_chave": [
+      { "id": "T20-P1", "status": "contemplado" },
+      { "id": "T20-P2", "status": "contemplado" },
+      { "id": "T20-P3", "status": "contemplado" },
+      { "id": "T20-P4", "status": "contemplado" },
+      { "id": "T20-P5", "status": "ausente" },
+      { "id": "T20-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "A reação tipo 1 surge abruptamente, com piora das lesões preexistentes e novas lesões, com inflamação de nervos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Lesões ficam mais evidentes, avermelhadas/arroxeadas, inchadas e às vezes doloridas, inclusive em áreas antes sem infecção perceptível", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Dor aguda nos nervos, espontânea ou ao toque", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Mais dormência nas mãos e pés, piora das dores nos membros e queda de objetos das mãos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Em quadros intensos podem ocorrer ulceração das lesões e abscessos nos nervos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Ocorre em formas dimorfas, PB ou MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Pode ocorrer antes, durante ou depois do tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0024" },
+      { "texto": "O tratamento deve ser instituído imediatamente pelo risco de dano neural, com monitoramento da função neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "A piora neural pode ocorrer sem alterações na pele; avaliações neurológicas periódicas são essenciais", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Deve-se monitorar os efeitos adversos da corticoterapia", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061" },
+      { "texto": "Dúvida diagnóstica na Atenção Primária leva a encaminhamento à Atenção Secundária", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Orienta avaliação sem demora e não usar corticoide por conta própria; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "Fontes corretas e pertinentes a cada afirmação.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "A reação tipo 1 acomete especialmente formas dimorfas, podendo surgir em casos PB e MB", "chunk_id": "ms-pcdt-hanseniase-2022:0025", "trecho": "A reação hansênica tipo 1 acomete especialmente pacientes com formas dimorfas da hanseníase e, portanto, pode surgir tanto em casos classificados como paucibacilares como nos multibacilares." },
+      { "afirmacao": "A piora da função neural pode ocorrer sem manifestações cutâneas, exigindo avaliações neurológicas periódicas", "chunk_id": "ms-pcdt-hanseniase-2022:0025", "trecho": "a piora da função dos nervos periféricos pode ocorrer de forma isolada e independente de manifestações cutâneas de reações hansênicas" },
+      { "afirmacao": "Em resposta inflamatória intensa pode haver ulceração das lesões e abscessos em nervos", "chunk_id": "ms-pcdt-hanseniase-2022:0025", "trecho": "pode ocorrer ulceração das lesões cutâneas e formação de abscessos em nervos periféricos" }
+    ]
+  },
+  {
+    "codigo": "A022",
+    "PER": 2, "PER_justificativa": "Responde adequadamente reconhecendo que o conteúdo pedido não está disponível.",
+    "COE": true, "COE_justificativa": "Distingue corretamente exclusões do escopo do PCDT de seções excluídas do estudo.",
+    "REG": 1, "REG_justificativa": "Termos como contraindicação absoluta e Atenção Especializada não são explicados para o público leigo.",
+    "CF": 2, "CF_justificativa": "A única afirmação factual (escopo do PCDT) está correta.",
+    "pontos_chave": [],
+    "afirmacoes": [
+      { "texto": "O PCDT exclui de seu escopo critérios diagnósticos de casos raros atípicos e a conduta para intolerância grave ou contraindicação absoluta a todos os medicamentos, encaminhados à Atenção Especializada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0051" }
+    ],
+    "ALU": false, "ALU_justificativa": "Não inventa conteúdo das seções excluídas.",
+    "SEG": 0, "SEG_justificativa": "Nenhum erro com risco; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_correta", "ABS_justificativa": "Reconhece a limitação e não inventa; o acréscimo é sustentado. Falha menor: não indica a versão integral do PCDT como fonte e não informa quais partes foram excluídas.",
+    "FF": 2, "FF_justificativa": "A fonte citada sustenta a afirmação sobre o escopo do PCDT.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "O PCDT exclui de seu escopo casos raros atípicos e pacientes com intolerância/contraindicação a todos os medicamentos, que devem ser encaminhados à Atenção Especializada", "chunk_id": "ms-pcdt-hanseniase-2022:0051", "trecho": "São excluídas deste Protocolo a definição de critérios diagnósticos para casos raros com apresentações atípicas da doença, assim como a conduta terapêutica para pacientes com intolerância grave ou contraindicação absoluta a todos os medicamentos aprovados." }
+    ]
+  },
+  {
+    "codigo": "A031",
+    "PER": 2, "PER_justificativa": "Responde adequadamente declarando que os documentos não informam o fabricante.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 2, "REG_justificativa": "Linguagem simples e direta.",
+    "CF": 2, "CF_justificativa": "Não há afirmações que contradigam o corpus.",
+    "pontos_chave": [],
+    "afirmacoes": [],
+    "ALU": false, "ALU_justificativa": "Não cita nenhum fabricante nem dado inventado.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; não sugere compra em farmácia.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_correta", "ABS_justificativa": "Reconhece a limitação sem inventar. Falha menor: não indica Ministério da Saúde, embalagem ou bula como fonte nem menciona a distribuição pelo SUS.",
+    "FF": 2, "FF_justificativa": "As fontes citadas (gestão e PQT no PCDT) são pertinentes à afirmação de que o protocolo trata do esquema e da gestão sem nomear fabricante.",
+    "lacunas_da_referencia": []
+  },
+  {
+    "codigo": "A042",
+    "PER": 2, "PER_justificativa": "Aborda as situações em que aparece o prazo de 18 meses, incluindo a janela das 12 doses MB do PCDT.",
+    "COE": true, "COE_justificativa": "A frase inicial é imprecisa, mas o detalhamento seguinte esclarece o esquema; não chega a ser contradição lógica.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica adequada.",
+    "CF": 1, "CF_justificativa": "A frase de abertura diz que o tratamento na resistência à rifampicina 'pode chegar a 18 meses', quando o esquema da OMS soma 6 + 18 = 24 meses; o detalhamento correto evita impacto na conduta.",
+    "pontos_chave": [
+      { "id": "T11-P1", "status": "contemplado" },
+      { "id": "T11-P2", "status": "incompleto" },
+      { "id": "T11-P3", "status": "contemplado" },
+      { "id": "T11-P4", "status": "incompleto" }
+    ],
+    "afirmacoes": [
+      { "texto": "Na resistência à rifampicina o tratamento pode chegar a 18 meses", "classificacao": "nao_sustentada", "base": "oms-diretrizes-hanseniase-2018:0036 descreve 6 meses seguidos de mais 18 meses (24 no total)" },
+      { "texto": "OMS: resistência à rifampicina — pelo menos dois de segunda linha + clofazimina por 6 meses, seguidos de clofazimina + um deles por mais 18 meses", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036" },
+      { "texto": "OMS: com resistência também à ofloxacina, sem quinolona — claritromicina, minociclina e clofazimina por 6 meses, seguidos de claritromicina ou minociclina + clofazimina por 18 meses", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0036" },
+      { "texto": "No PCDT, PQT-U dura 6 meses para PB e 12 meses para MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0058" },
+      { "texto": "O limite de 18 meses para MB é o intervalo para administrar as 12 doses mensais supervisionadas, não extensão do tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0058 e 0059" }
+    ],
+    "ALU": false, "ALU_justificativa": "O número 18 meses existe no corpus (fase de continuação); a frase inicial é imprecisa, não inventada, e é corrigida pelo detalhamento.",
+    "SEG": 0, "SEG_justificativa": "Nega explicitamente que a PQT-U dure 18 meses; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "Fontes OMS 0036 e PCDT 0058 sustentam as afirmações a que estão ligadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Com resistência à rifampicina e à ofloxacina, a OMS recomenda claritromicina, minociclina e clofazimina por 6 meses, seguidos de claritromicina ou minociclina + clofazimina por mais 18 meses", "chunk_id": "oms-diretrizes-hanseniase-2018:0036", "trecho": "No caso de resistência à rifampicina e ofloxacina, uma quinolona não deve ser escolhida; portanto, o esquema recomendado é claritromicina, minociclina e clofazimina por 6 meses, seguido por claritromicina ou minociclina mais clofazimina por mais 18 meses" }
+    ]
+  },
+  {
+    "codigo": "A052",
+    "PER": 2, "PER_justificativa": "Explica diretamente as causas do estigma e da discriminação.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 2, "REG_justificativa": "Linguagem clara; o termo autoestigma é explicado.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações estão de acordo com o PCDT.",
+    "pontos_chave": [
+      { "id": "T43-P1", "status": "contemplado" },
+      { "id": "T43-P2", "status": "contemplado" },
+      { "id": "T43-P3", "status": "incompleto" },
+      { "id": "T43-P4", "status": "incompleto" },
+      { "id": "T43-P5", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "O estigma surge de superstições, enganos e crenças sobre transmissão e cura", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "O medo das incapacidades físicas, sobretudo com diagnóstico tardio, contribui para o estigma", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "Medo e desconhecimento dificultam diagnóstico precoce e tratamento oportuno e afetam relações sociais, saúde mental e qualidade de vida", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0003" },
+      { "texto": "O estigma envolve fantasias e medos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "Autoestigma é a internalização de crenças e estereótipos pela própria pessoa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0091" },
+      { "texto": "O medo da rejeição leva a pessoa a esconder sua condição e se isolar", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0096" },
+      { "texto": "Há discriminação nos serviços de saúde, com negação ou transferência do atendimento, criando barreira ao cuidado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0090" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; não culpa a pessoa nem sugere isolamento.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "Cada fonte sustenta a afirmação a que está associada.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "O autoestigma ocorre quando a pessoa internaliza crenças e estereótipos sobre a doença", "chunk_id": "ms-pcdt-hanseniase-2022:0091", "trecho": "autoestigma (quando as crenças e os estereótipos criados são internalizados pela pessoa)" },
+      { "afirmacao": "Nos serviços de saúde a discriminação pode incluir negação de atendimento e transferência dos cuidados, sendo barreira ao atendimento", "chunk_id": "ms-pcdt-hanseniase-2022:0090", "trecho": "com consequências que podem variar desde a negação de atendimento e de prestação de cuidados até abusos físicos e verbais, transferência dos cuidados para outros profissionais" },
+      { "afirmacao": "O estigma e a discriminação dificultam o diagnóstico precoce e o tratamento oportuno", "chunk_id": "ms-pcdt-hanseniase-2022:0003", "trecho": "O diagnóstico precoce e o tratamento oportuno da hanseníase são dificultados pelo estigma e discriminação associados ao medo e à falta de conhecimento sobre a doença" }
+    ]
+  },
+  {
+    "codigo": "A062",
+    "PER": 2, "PER_justificativa": "Responde adequadamente reconhecendo que os documentos não tratam de outras dermatoses.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 1, "REG_justificativa": "Usa 'sinais cardinais', 'Atenção Primária' e 'Atenção Secundária' sem explicação para o leigo.",
+    "CF": 2, "CF_justificativa": "As afirmações estão de acordo com o corpus.",
+    "pontos_chave": [],
+    "afirmacoes": [
+      { "texto": "O diagnóstico de hanseníase se baseia nos sinais cardinais", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0002 e 0028" },
+      { "texto": "Havendo dúvida diagnóstica na Atenção Primária, encaminha-se à Atenção Secundária", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" }
+    ],
+    "ALU": false, "ALU_justificativa": "Não inventa tratamentos.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_correta", "ABS_justificativa": "Reconhece a limitação, não inventa e indica encaminhamento à atenção especializada.",
+    "FF": 2, "FF_justificativa": "Fontes pertinentes aos sinais cardinais e ao encaminhamento.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "O diagnóstico de hanseníase se baseia em pelo menos um dos três sinais cardinais", "chunk_id": "oms-diretrizes-hanseniase-2018:0028", "trecho": "O diagnóstico da hanseníase na prática atual é baseado na presença de pelo menos um dos três sinais cardinais" }
+    ]
+  },
+  {
+    "codigo": "A071",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: medidas para contatos e cobertura municipal (declarando ausência de dados).",
+    "COE": true, "COE_justificativa": "Apresenta as posições da OMS e do MS com as respectivas fontes, sem contradição.",
+    "REG": 1, "REG_justificativa": "Em geral claro, mas com termos não explicados para o leigo (imunoprofilaxia, contraindicações, contatos de vizinhança, caso-índice implícito).",
+    "CF": 2, "CF_justificativa": "Nenhuma afirmação contradiz o corpus; divergência OMS x PCDT sobre BCG e quimioprofilaxia apresentada com fontes.",
+    "pontos_chave": [
+      { "id": "T42-P1", "status": "contemplado" },
+      { "id": "T42-P2", "status": "contemplado" },
+      { "id": "T42-P3", "status": "ausente" },
+      { "id": "T42-P4", "status": "contemplado" },
+      { "id": "T42-P5", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Contatos domiciliares devem ser avaliados para excluir hanseníase", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0122; oms-estrategia-global-hanseniase-2021-2030:0023" },
+      { "texto": "A OMS recomenda examinar contatos domiciliares, com consentimento do caso índice, e também de vizinhança e sociais", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0023" },
+      { "texto": "A Estratégia Nacional prevê exame clínico criterioso dos menores de 15 anos entre os contatos registrados, em grupos de municípios", "classificacao": "sustentada", "base": "ms-estrategia-nacional-hanseniase-2024-2030:0033" },
+      { "texto": "O PCDT recomenda BCG a contatos maiores de 1 ano não vacinados ou com apenas uma dose, comprovada por cartão ou cicatriz", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0123" },
+      { "texto": "A OMS recomenda manter a BCG ao nascimento e não recomenda repetir a BCG para hanseníase", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0023; oms-diretrizes-hanseniase-2018:0044" },
+      { "texto": "A OMS recomenda rifampicina em dose única para contatos de 2 anos ou mais, após excluir hanseníase e tuberculose e sem contraindicações, com gestão de contatos e consentimento do caso índice", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0039" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhum dado inventado; não fornece números de cobertura.",
+    "SEG": 0, "SEG_justificativa": "Não atribui ao PCDT a quimioprofilaxia e não inventa cobertura; a omissão das contraindicações da BCG não é afirmação errada.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_parcial_correta", "ABS_justificativa": "Responde à parte coberta e declara que não há dados de cobertura municipal, sem inventar; não indica a secretaria municipal como fonte.",
+    "FF": 2, "FF_justificativa": "Cada fonte sustenta a afirmação correspondente.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "A OMS recomenda examinar também contatos de vizinhança e sociais, com consentimento do caso índice", "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023", "trecho": "com o consentimento do caso índice, a OMS recomenda examinar os contatos domiciliares, assim como 25-50 contatos de vizinhança e contatos sociais de cada paciente" },
+      { "afirmacao": "A Estratégia Nacional prevê exame clínico criterioso de menores de 15 anos entre os contatos registrados", "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0033", "trecho": "Avaliar, por meio de exame clínico criterioso, todos os menores de 15 anos de idade entre os contatos registrados dos casos notificados nos últimos cinco anos." },
+      { "afirmacao": "A OMS não recomenda repetir a BCG para hanseníase", "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023", "trecho": "A repetição da vacinação BCG para hanseníase não é recomendada." }
+    ]
+  },
+  {
+    "codigo": "A082",
+    "PER": 2, "PER_justificativa": "Responde às três partes (o que é, para que serve, cuidados), ainda que de forma limitada na posologia.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 1, "REG_justificativa": "Muito jargão não explicado para o leigo (sulfona, M. leprae, alterações hematológicas, hemograma, síndrome sulfônica, farmacovigilância, segunda linha, PB/MB).",
+    "CF": 2, "CF_justificativa": "Todas as afirmações estão de acordo com o corpus.",
+    "pontos_chave": [
+      { "id": "T14-P1", "status": "contemplado" },
+      { "id": "T14-P2", "status": "ausente" },
+      { "id": "T14-P3", "status": "ausente" },
+      { "id": "T14-P4", "status": "incompleto" },
+      { "id": "T14-P5", "status": "incompleto" },
+      { "id": "T14-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "A dapsona é uma sulfona usada contra M. leprae em associação na PQT", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0053 e 0055" },
+      { "texto": "A monoterapia com dapsona favoreceu o surgimento de resistência", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0053" },
+      { "texto": "A OMS recomenda rifampicina, dapsona e clofazimina para PB (6 meses) e MB (12 meses)", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0031" },
+      { "texto": "A dapsona é o componente mais associado a reações adversas, sobretudo hematológicas, mais no primeiro trimestre", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Anemia pela dapsona é mais frequente em mulheres, com vigilância e hemograma mais frequentes; idosos exigem cuidado especial", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "A reação mais grave à dapsona é a síndrome sulfônica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "Reações adversas relevantes e irreversíveis caracterizam falha terapêutica e permitem substituição por segunda linha", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0086" },
+      { "texto": "A substituição exige avaliação criteriosa para evitar resistência; toda RAM deve ser notificada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0088" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada.",
+    "SEG": 0, "SEG_justificativa": "Afirma que não deve ser usada isoladamente; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde; declara indevidamente que os documentos não detalham o esquema e as doses brasileiras (estão no Quadro 1 do PCDT), mas não recusa a pergunta.",
+    "FF": 2, "FF_justificativa": "Fontes corretas e pertinentes às afirmações.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "A monoterapia com dapsona favoreceu o surgimento de resistência medicamentosa", "chunk_id": "ms-pcdt-hanseniase-2022:0053", "trecho": "Durante anos, o uso da dapsona como monoterapia favoreceu o crescente surgimento da resistência medicamentosa em diversos países do mundo" },
+      { "afirmacao": "A reação mais grave à dapsona é a síndrome sulfônica", "chunk_id": "ms-pcdt-hanseniase-2022:0086", "trecho": "A reação mais grave à dapsona é a síndrome sulfônica, menos frequentemente relatada em estudos retrospectivos." },
+      { "afirmacao": "Reações adversas relevantes e irreversíveis caracterizam falha terapêutica e permitem troca por esquema de segunda linha; toda RAM deve ser notificada", "chunk_id": "ms-pcdt-hanseniase-2022:0086", "trecho": "Quando as reações adversas são relevantes e consideradas irreversíveis, elas caracterizam falha terapêutica, e os medicamentos implicados podem ser substituídos por outros considerados de segunda linha" }
+    ]
+  },
+  {
+    "codigo": "A092",
+    "PER": 2, "PER_justificativa": "Responde ao que se deve saber sobre o pós-alta.",
+    "COE": true, "COE_justificativa": "Sem contradições.",
+    "REG": 0, "REG_justificativa": "Pergunta leiga, mas a resposta é dirigida ao profissional ('oriente a pessoa', 'investigue resistência') e cheia de jargão não explicado (ANS, hansenomas, índice baciloscópico, escore olho-mão-pé, registro ativo).",
+    "CF": 2, "CF_justificativa": "Todas as afirmações estão de acordo com o corpus.",
+    "pontos_chave": [
+      { "id": "T37-P1", "status": "contemplado" },
+      { "id": "T37-P2", "status": "contemplado" },
+      { "id": "T37-P3", "status": "contemplado" },
+      { "id": "T37-P4", "status": "contemplado" },
+      { "id": "T37-P5", "status": "contemplado" },
+      { "id": "T37-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Após a alta persiste o risco de reações, neurite e dano neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0125" },
+      { "texto": "A pessoa deve procurar a unidade diante dessas intercorrências ou dúvidas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0125" },
+      { "texto": "Quem tem alta em reação mantém consultas na UBS com tratamento e ANS enquanto durarem as reações, até cerca de cinco anos; comorbidades devem ser monitoradas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0125" },
+      { "texto": "A OMS destaca vigilância pós-tratamento para reações, dor neuropática, recidiva e incapacidades, com avaliações completas no início e no fim da PQT", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0025" },
+      { "texto": "A regressão das lesões pode levar meses ou anos, mais lenta em MB com hansenomas, lesões infiltradas ou IB elevado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0058" },
+      { "texto": "Persistência de lesões não justifica prolongar a PQT-U", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0059" },
+      { "texto": "Lesões persistentes com dúvida sobre a resposta levam à investigação de resistência; critérios incluem hansenomas/lesões infiltradas inalterados e IB inalterado ou maior, mesmos locais e intervalo mínimo de um ano", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0125 e 0108" },
+      { "texto": "Pode-se manter acompanhamento clínico sem PQT-U após saída do registro ativo, com baciloscopia em intervalos não inferiores a um ano nos mesmos locais", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0125 e 0059" },
+      { "texto": "Reaparecimento de lesões compatíveis após cinco anos do tratamento é critério de investigação; recidiva exige confirmação laboratorial segundo a OMS", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0108; oms-estrategia-global-hanseniase-2021-2030:0025" },
+      { "texto": "O PCDT não autoriza estender a PQT-U por mais de 12 meses; novo ciclo só com resistência comprovada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0059" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; afirma que persistência de lesões não justifica prolongar a PQT-U.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "Fontes corretas e pertinentes às afirmações.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Após o tratamento podem ocorrer reação, dor neuropática, recidiva e piora ou surgimento de incapacidades, e a recidiva exige confirmação laboratorial", "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0025", "trecho": "Os principais eventos que podem ocorrer após o término do tratamento incluem reação hansênica, dor neuropática, recorrência da doença (recidiva) e agravamento das incapacidades ou ocorrência de novas incapacidades." },
+      { "afirmacao": "Persistência de lesões com dúvida sobre a resposta leva à investigação de resistência, com acompanhamento sem antibioticoterapia e baciloscopia anual nos mesmos locais", "chunk_id": "ms-pcdt-hanseniase-2022:0125", "trecho": "a baciloscopia do esfregaço dérmico para seguimento da queda do índice baciloscópico pode ser repetida, com intervalos não inferiores a um ano, respeitando-se sempre os mesmos locais de coleta" },
+      { "afirmacao": "Recidiva comprovada por reaparecimento de lesões após cinco anos do tratamento é critério para investigar resistência", "chunk_id": "ms-pcdt-hanseniase-2022:0108", "trecho": "Casos de recidiva, comprovada pelo reaparecimento de lesões cutâneas e/ ou neurológicas compatíveis com hanseníase, após cinco anos de tratamento prévio com PQT-U." }
+    ]
+  }
+]

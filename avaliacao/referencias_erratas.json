@@ -1,0 +1,1457 @@
+{
+  "observacao": "Afirmações corretas e sustentadas pelo corpus presentes nas respostas da IA e ausentes da referência congelada, registradas pelos avaliadores e não penalizadas. referencias.json não foi alterado.",
+  "total_lacunas": 165,
+  "perguntas": 44,
+  "erratas": [
+    {
+      "id": "T01",
+      "lacunas_registradas": 6,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0017",
+        "ms-pcdt-hanseniase-2022:0020",
+        "ms-pcdt-hanseniase-2022:0013",
+        "ms-pcdt-hanseniase-2022:0021"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A050",
+          "afirmacao": "Lesões podem ser placas bem delimitadas, elevadas e avermelhadas (forma tuberculoide)",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0017",
+          "trecho": "As lesões da pele são placas com bordas nítidas, elevadas, geralmente eritematosas e micropapulosas"
+        },
+        {
+          "codigo": "A050",
+          "afirmacao": "Lesões podem ser manchas e placas hipocrômicas, acastanhadas ou violáceas (forma dimorfa)",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0020",
+          "trecho": "apresentam grande variabilidade clínica, como manchas e placas hipocrômicas, acastanhadas ou violáceas"
+        },
+        {
+          "codigo": "A050",
+          "afirmacao": "Em caso de dúvida na Atenção Primária, encaminhar à Atenção Secundária",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "trecho": "Quando houver dúvida sobre o diagnóstico da hanseníase no nível da Atenção Primária, os pacientes deverão ser referenciados para a Atenção Secundária"
+        },
+        {
+          "codigo": "A091",
+          "afirmacao": "Lesões em placas bem delimitadas, elevadas e eritematosas (forma tuberculoide)",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0017",
+          "trecho": "As lesões da pele são placas com bordas nítidas, elevadas, geralmente eritematosas e micropapulosas"
+        },
+        {
+          "codigo": "A091",
+          "afirmacao": "Pode começar com distúrbio de sensibilidade sem alteração da cor da pele",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+          "trecho": "Ressalta-se que essa forma clínica pode inicialmente manifestar-se por distúrbios da sensibilidade, sem alteração da cor da pele."
+        },
+        {
+          "codigo": "A091",
+          "afirmacao": "Em caso de dúvida na Atenção Primária, encaminhar para a Atenção Secundária",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "trecho": "Quando houver dúvida sobre o diagnóstico da hanseníase no nível da Atenção Primária, os pacientes deverão ser referenciados para a Atenção Secundária"
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0013",
+        "ms-pcdt-hanseniase-2022:0020",
+        "oms-diretrizes-hanseniase-2018:0028"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A025",
+          "afirmacao": "Sinais de suspeição adicionais: dormência/formigamento, dor em nervos, nódulos em face/lóbulos, ferimentos indolores",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "trecho": "dormência ou formigamento de mãos/pés, dor ou hipersensibilidade em nervos, edema ou nódulos na face ou nos lóbulos auriculares, ferimentos ou queimaduras indolores nas mãos ou pés"
+        },
+        {
+          "codigo": "A025",
+          "afirmacao": "Na dimorfa, lesões em número variável, hipocrômicas, acastanhadas ou violáceas, com predomínio infiltrativo",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0020",
+          "trecho": "manchas e placas hipocrômicas, acastanhadas ou violáceas, com predomínio do aspecto infiltrativo"
+        },
+        {
+          "codigo": "A047",
+          "afirmacao": "Sinais cardinais da OMS, incluindo espessamento neural com alteração sensitiva/motora e baciloscopia positiva",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0028",
+          "trecho": "(ii) nervo periférico espessado ou aumentado com perda de sensibilidade e / ou fraqueza dos músculos supridos por esse nervo"
+        },
+        {
+          "codigo": "A047",
+          "afirmacao": "Lesões foveolares da forma dimorfa",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0020",
+          "trecho": "apresentam bordos internos bem definidos, delimitando uma área central de pele aparentemente poupada, enquanto os bordos externos são espraiados, infiltrados e imprecisos"
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "lacunas_registradas": 1,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0015"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A080",
+          "afirmacao": "Casos com um único nervo comprometido podem ser classificados como PB em serviços com profissionais experientes, embora a OMS recomende MB",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "trecho": "é aceitável que casos com comprometimento de um único nervo periférico sejam classificados e tratados como PB, desde que tenham sido avaliados em unidades de saúde que contem com profissionais experientes no cuidado em hanseníase"
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "lacunas_registradas": 1,
+      "trechos_distintos": [
+        "oms-diretrizes-hanseniase-2018:0008"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A089",
+          "afirmacao": "Definição da OMS de MB inclui envolvimento de nervos (neurite pura ou lesões com neurite)",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0008",
+          "trecho": "Caso multibacilar (MB): um caso de hanseníase com mais de cinco lesões de pele; ou com envolvimento dos nervos (neurite pura ou qualquer número de lesões de pele e neurite)"
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0042",
+        "ms-pcdt-hanseniase-2022:0036",
+        "ms-pcdt-hanseniase-2022:0022"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A024",
+          "afirmacao": "A histopatologia tem sensibilidade limitada (49% a 70%) e é ferramenta auxiliar",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0042",
+          "trecho": "a sensibilidade é mais baixa, variando de 49% a 70% de acordo com a forma clínica"
+        },
+        {
+          "codigo": "A024",
+          "afirmacao": "O diagnóstico permanece essencialmente clínico; casos atípicos são referenciados à Atenção Especializada",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0036",
+          "trecho": "o diagnóstico da hanseníase permanece essencialmente clínico"
+        },
+        {
+          "codigo": "A090",
+          "afirmacao": "Exames complementares (ENMG, biópsia, sorologia, biologia molecular) não estão facilmente disponíveis na rede",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+          "trecho": "podem auxiliar na definição etiológica, embora não estejam facilmente disponíveis na Rede de Atenção à Saúde (RAS)"
+        },
+        {
+          "codigo": "A090",
+          "afirmacao": "No polo tuberculoide, granulomas no nervo com poucos ou nenhum bacilo",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0042",
+          "trecho": "observando-se a formação de granulomas epitelioides com poucos ou nenhum bacilo no polo tuberculoide"
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0039",
+        "ms-pcdt-hanseniase-2022:0040",
+        "ms-pcdt-hanseniase-2022:0036"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A009",
+          "afirmacao": "Coloração por Ziehl-Neelsen a frio e média dos IBs como estimativa da carga bacilar",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+          "trecho": "O material é corado pela técnica de Ziehl-Neelsen a frio [...] A média dos IBs obtidos em cada esfregaço serve como estimativa da carga bacilar do paciente."
+        },
+        {
+          "codigo": "A009",
+          "afirmacao": "Falhas de coleta, coloração e leitura podem influenciar o resultado",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0040",
+          "trecho": "Resultados negativos em pacientes MB podem ocorrer devido a falhas na coleta, coloração e leitura"
+        },
+        {
+          "codigo": "A009",
+          "afirmacao": "O diagnóstico permanece essencialmente clínico",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0036",
+          "trecho": "o diagnóstico da hanseníase permanece essencialmente clínico"
+        },
+        {
+          "codigo": "A074",
+          "afirmacao": "Profundidade da incisão, quantidade de tecido, espessura do esfregaço e coloração influenciam o resultado",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0040",
+          "trecho": "A profundidade da incisão, a quantidade de tecido coletado, a espessura do esfregaço e a técnica de coloração podem influenciar diretamente no resultado do teste."
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "lacunas_registradas": 5,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0046",
+        "oms-diretrizes-hanseniase-2018:0028",
+        "ms-pcdt-hanseniase-2022:0045",
+        "oms-diretrizes-hanseniase-2018:0029"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A010",
+          "afirmacao": "Alguns estudos associam soropositividade de contatos a maior risco de adoecimento, mas outros não confirmaram",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0046",
+          "trecho": "Se, por um lado, diversos estudos apontam que contatos soropositivos têm maior risco de adoecimento, outras análises não confirmaram essa observação."
+        },
+        {
+          "codigo": "A010",
+          "afirmacao": "O diagnóstico deve se basear no exame clínico, com ou sem exames confirmatórios",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0028",
+          "trecho": "Recomenda-se basear o diagnóstico de hanseníase nos seguintes aspectos: exame clínico, com ou sem esfregaço cutâneo ou exame histopatólogico das biópsias"
+        },
+        {
+          "codigo": "A059",
+          "afirmacao": "Teste detecta IgM anti-PGL-1 em soro ou sangue total",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0045",
+          "trecho": "detecta anticorpos IgM contra o antígeno PGL-1 do M. leprae, tanto em amostras de soro humano como em sangue total"
+        },
+        {
+          "codigo": "A059",
+          "afirmacao": "ELISA e fluxo lateral sem clara vantagem sobre métodos diagnósticos padrão",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0029",
+          "trecho": "os testes de ELISA, fluxo lateral e PCR mais recentes não representam uma clara vantagem sobre os métodos diagnósticos padrão atuais"
+        },
+        {
+          "codigo": "A059",
+          "afirmacao": "Estudos divergem sobre maior risco de adoecimento em contatos soropositivos",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0046",
+          "trecho": "diversos estudos apontam que contatos soropositivos têm maior risco de adoecimento, outras análises não confirmaram essa observação"
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "lacunas_registradas": 3,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0036",
+        "oms-diretrizes-hanseniase-2018:0002"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A006",
+          "afirmacao": "O diagnóstico da hanseníase permanece essencialmente clínico e casos duvidosos podem ser referenciados à Atenção Especializada",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0036",
+          "trecho": "o diagnóstico da hanseníase permanece essencialmente clínico"
+        },
+        {
+          "codigo": "A085",
+          "afirmacao": "OMS não recomenda testes para diagnóstico em contatos assintomáticos",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0002",
+          "trecho": "As diretrizes também não recomendam nenhum teste para o diagnóstico da hanseníase em contatos assintomáticos."
+        },
+        {
+          "codigo": "A085",
+          "afirmacao": "O diagnóstico da hanseníase permanece essencialmente clínico",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0036",
+          "trecho": "o diagnóstico da hanseníase permanece essencialmente clínico"
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "lacunas_registradas": 3,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0037",
+        "ms-pcdt-hanseniase-2022:0031"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A095",
+          "afirmacao": "A ANS deve ser executada por profissional de saúde capacitado nos três níveis de atenção",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "trecho": "A ANS deve ser executada nos três níveis de atenção do SUS por profissional da saúde devidamente capacitado."
+        },
+        {
+          "codigo": "A100",
+          "afirmacao": "A ANS deve ser feita por profissional de saúde capacitado, nos três níveis de atenção",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "trecho": "A ANS deve ser executada nos três níveis de atenção do SUS por profissional da saúde devidamente capacitado."
+        },
+        {
+          "codigo": "A100",
+          "afirmacao": "O exame de pessoas com suspeita clínica deve incluir avaliação neurológica detalhada",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0031",
+          "trecho": "O exame de todos os indivíduos com suspeita clínica de hanseníase e daqueles com diagnóstico confirmado deve incluir uma avaliação neurológica muito detalhada"
+        }
+      ]
+    },
+    {
+      "id": "T10",
+      "lacunas_registradas": 2,
+      "trechos_distintos": [
+        "oms-diretrizes-hanseniase-2018:0003"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A019",
+          "afirmacao": "OMS recomenda 6 meses seguidos de 18 meses para resistência à rifampicina, sem quinolona se houver resistência à ofloxacina",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0003",
+          "trecho": "seguido de clofazimina mais um desses medicamentos por mais 18 meses. Quando a resistência à ofloxacina também está presente, uma fluoroquinolona não deve ser usada"
+        },
+        {
+          "codigo": "A097",
+          "afirmacao": "OMS recomenda para resistência à rifampicina 6 meses de segunda linha seguidos de mais 18 meses; sem fluoroquinolona se houver resistência à ofloxacina",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0003",
+          "trecho": "Quando a resistência à ofloxacina também está presente, uma fluoroquinolona não deve ser usada como parte do tratamento de segunda linha."
+        }
+      ]
+    },
+    {
+      "id": "T11",
+      "lacunas_registradas": 2,
+      "trechos_distintos": [
+        "oms-diretrizes-hanseniase-2018:0036"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A042",
+          "afirmacao": "Com resistência à rifampicina e à ofloxacina, a OMS recomenda claritromicina, minociclina e clofazimina por 6 meses, seguidos de claritromicina ou minociclina + clofazimina por mais 18 meses",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0036",
+          "trecho": "No caso de resistência à rifampicina e ofloxacina, uma quinolona não deve ser escolhida; portanto, o esquema recomendado é claritromicina, minociclina e clofazimina por 6 meses, seguido por claritromicina ou minociclina mais clofazimina por mais 18 meses"
+        },
+        {
+          "codigo": "A069",
+          "afirmacao": "Na resistência também à ofloxacina, a OMS veda quinolona no esquema",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0036",
+          "trecho": "No caso de resistência à rifampicina e ofloxacina, uma quinolona não deve ser escolhida"
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "lacunas_registradas": 7,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0077",
+        "ms-pcdt-hanseniase-2022:0080",
+        "ms-pcdt-hanseniase-2022:0086"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A001",
+          "afirmacao": "Dapsona: casos raros de hepatopatia, nefropatia, agranulocitose e psicose",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "trecho": "São descritos casos raros de hepatopatia, nefropatia, agranulocitose e psicose."
+        },
+        {
+          "codigo": "A001",
+          "afirmacao": "Talidomida pode causar neuropatia periférica irreversível e neutropenia",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "trecho": "Pode causar neuropatia periférica que pode ser irreversível. [...] Contagens reduzidas de células brancas sanguíneas, incluindo neutropenia, foram observadas em pacientes em uso de talidomida."
+        },
+        {
+          "codigo": "A001",
+          "afirmacao": "Efeitos adversos da pentoxifilina",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "trecho": "Relatam-se: elevação das transaminases hepáticas, hipotensão arterial, arritmia cardíaca, [...] tontura, dor de cabeça"
+        },
+        {
+          "codigo": "A001",
+          "afirmacao": "Pigmentação não é critério para suspensão da clofazimina",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "trecho": "A pigmentação da pele não deve ser considerada critério para suspensão do medicamento, exceto quando há insatisfação extrema do paciente, com risco de abandono do tratamento."
+        },
+        {
+          "codigo": "A043",
+          "afirmacao": "A pigmentação não é critério de suspensão da clofazimina, salvo insatisfação extrema com risco de abandono",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "trecho": "A pigmentação da pele não deve ser considerada critério para suspensão do medicamento, exceto quando há insatisfação extrema do paciente, com risco de abandono do tratamento."
+        },
+        {
+          "codigo": "A043",
+          "afirmacao": "A talidomida pode causar neuropatia periférica irreversível e redução de células brancas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "trecho": "Pode causar neuropatia periférica que pode ser irreversível."
+        },
+        {
+          "codigo": "A043",
+          "afirmacao": "As reações adversas à dapsona concentram-se no primeiro trimestre",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "trecho": "Na maioria dos estudos, as principais reações adversas à dapsona são registradas no primeiro trimestre do tratamento."
+        }
+      ]
+    },
+    {
+      "id": "T13",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0077"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A017",
+          "afirmacao": "Pigmentação pela clofazimina não é critério de suspensão, salvo insatisfação extrema",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "trecho": "A pigmentação da pele não deve ser considerada critério para suspensão do medicamento, exceto quando há insatisfação extrema do paciente"
+        },
+        {
+          "codigo": "A017",
+          "afirmacao": "Dapsona: casos raros de hepatopatia, nefropatia, agranulocitose e psicose",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "trecho": "São descritos casos raros de hepatopatia, nefropatia, agranulocitose e psicose."
+        },
+        {
+          "codigo": "A055",
+          "afirmacao": "Dapsona: casos raros de hepatopatia, nefropatia, agranulocitose e psicose",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "trecho": "São descritos casos raros de hepatopatia, nefropatia, agranulocitose e psicose."
+        },
+        {
+          "codigo": "A055",
+          "afirmacao": "Pigmentação não é critério de suspensão, exceto com insatisfação extrema e risco de abandono",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "trecho": "A pigmentação da pele não deve ser considerada critério para suspensão do medicamento, exceto quando há insatisfação extrema do paciente, com risco de abandono do tratamento."
+        }
+      ]
+    },
+    {
+      "id": "T14",
+      "lacunas_registradas": 6,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0068",
+        "ms-pcdt-hanseniase-2022:0088",
+        "ms-pcdt-hanseniase-2022:0053",
+        "ms-pcdt-hanseniase-2022:0086"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A067",
+          "afirmacao": "Efeito imunomodulador da dapsona, útil nas neurites",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+          "trecho": "Também tem um efeito imunomodulador, desejável nas neurites hansênicas, e pode atuar como poupador de corticoides."
+        },
+        {
+          "codigo": "A067",
+          "afirmacao": "Infertilidade potencialmente reversível em homens",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+          "trecho": "Foi relatada infertilidade em alguns homens que receberam dapsona, sendo este um efeito potencialmente reversível"
+        },
+        {
+          "codigo": "A067",
+          "afirmacao": "Notificar toda RAM para farmacovigilância",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+          "trecho": "3) Toda RAM deve ser notificada para fins de farmacovigilância."
+        },
+        {
+          "codigo": "A082",
+          "afirmacao": "A monoterapia com dapsona favoreceu o surgimento de resistência medicamentosa",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0053",
+          "trecho": "Durante anos, o uso da dapsona como monoterapia favoreceu o crescente surgimento da resistência medicamentosa em diversos países do mundo"
+        },
+        {
+          "codigo": "A082",
+          "afirmacao": "A reação mais grave à dapsona é a síndrome sulfônica",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "trecho": "A reação mais grave à dapsona é a síndrome sulfônica, menos frequentemente relatada em estudos retrospectivos."
+        },
+        {
+          "codigo": "A082",
+          "afirmacao": "Reações adversas relevantes e irreversíveis caracterizam falha terapêutica e permitem troca por esquema de segunda linha; toda RAM deve ser notificada",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "trecho": "Quando as reações adversas são relevantes e consideradas irreversíveis, elas caracterizam falha terapêutica, e os medicamentos implicados podem ser substituídos por outros considerados de segunda linha"
+        }
+      ]
+    },
+    {
+      "id": "T16",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0086",
+        "ms-pcdt-hanseniase-2022:0130",
+        "ms-pcdt-hanseniase-2022:0080"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A007",
+          "afirmacao": "Monitoramento mais frequente do hemograma em mulheres e cuidado especial com idosos",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "trecho": "o monitoramento mais frequente do hemograma em indivíduos do sexo feminino"
+        },
+        {
+          "codigo": "A007",
+          "afirmacao": "Informar o paciente sobre riscos, benefícios e efeitos adversos dos medicamentos",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0130",
+          "trecho": "Deve-se informar o paciente, ou seu responsável legal, sobre os potenciais riscos, benefícios e efeitos adversos relacionados ao uso dos medicamentos"
+        },
+        {
+          "codigo": "A029",
+          "afirmacao": "Monitoramento mais frequente do hemograma em mulheres e cuidado especial com idosos",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "trecho": "monitoramento mais frequente do hemograma em indivíduos do sexo feminino [...] ensejando cuidado especial com os indivíduos nessa faixa etária"
+        },
+        {
+          "codigo": "A029",
+          "afirmacao": "Sintomas de neuropatia por talidomida exigem reavaliação imediata do tratamento",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "trecho": "Os principais sintomas indicativos de neuropatia pelo fármaco são: parestesia, disestesia, desconforto, coordenação anormal ou fraqueza. Em caso de achados positivos, o tratamento com a talidomida deve ser imediatamente reavaliado."
+        }
+      ]
+    },
+    {
+      "id": "T17",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0105",
+        "ms-pcdt-hanseniase-2022:0106"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A057",
+          "afirmacao": "Mutação em gene-alvo não confere necessariamente resistência",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0105",
+          "trecho": "a presença de mutação em genes codificadores de alvos medicamentosos ou ativadores de fármacos não necessariamente conferem resistência medicamentosa"
+        },
+        {
+          "codigo": "A057",
+          "afirmacao": "Resistência identificada em apenas 1 dos 344 casos novos investigados, isolada à dapsona",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0106",
+          "trecho": "Entre os casos novos, houve um caso (0,31%) de resistência isolada à dapsona."
+        },
+        {
+          "codigo": "A065",
+          "afirmacao": "Presença de mutação em gene-alvo não necessariamente confere resistência",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0105",
+          "trecho": "a presença de mutação em genes codificadores de alvos medicamentosos ou ativadores de fármacos não necessariamente conferem resistência medicamentosa"
+        },
+        {
+          "codigo": "A065",
+          "afirmacao": "Entre os casos novos investigados no Brasil, houve um caso de resistência",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0106",
+          "trecho": "em apenas um dos casos novos investigados"
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "lacunas_registradas": 2,
+      "trechos_distintos": [
+        "oms-diretrizes-hanseniase-2018:0037",
+        "oms-diretrizes-hanseniase-2018:0036"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A005",
+          "afirmacao": "As recomendações da OMS para hanseníase resistente baseiam-se em opinião de especialistas por falta de evidência de eficácia",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0037",
+          "trecho": "Como faltam evidências sobre a eficácia dos regimes para tratar a hanseníase resistente a medicamentos, as recomendações baseiam-se em opiniões de especialistas"
+        },
+        {
+          "codigo": "A027",
+          "afirmacao": "Recomendações da OMS para resistência são condicionais e baseadas em opinião de especialistas",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0036",
+          "trecho": "recomendação condicional, baseada na opinião de especialistas; nenhuma evidência recuperada"
+        }
+      ]
+    },
+    {
+      "id": "T19",
+      "lacunas_registradas": 2,
+      "trechos_distintos": [
+        "oms-diretrizes-hanseniase-2018:0009"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A015",
+          "afirmacao": "Definição operacional de PB e MB pela OMS",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0009",
+          "trecho": "Caso paucibacilar (PB): um caso de hanseníase com 1 a 5 lesões cutâneas, sem presença demonstrada de bacilos em baciloscopia"
+        },
+        {
+          "codigo": "A045",
+          "afirmacao": "Definição operacional de PB e MB",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0009",
+          "trecho": "Caso paucibacilar (PB): um caso de hanseníase com 1 a 5 lesões cutâneas, sem presença demonstrada de bacilos em baciloscopia"
+        }
+      ]
+    },
+    {
+      "id": "T20",
+      "lacunas_registradas": 5,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0025"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A012",
+          "afirmacao": "A reação tipo 1 acomete especialmente formas dimorfas, podendo surgir em casos PB e MB",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "A reação hansênica tipo 1 acomete especialmente pacientes com formas dimorfas da hanseníase e, portanto, pode surgir tanto em casos classificados como paucibacilares como nos multibacilares."
+        },
+        {
+          "codigo": "A012",
+          "afirmacao": "A piora da função neural pode ocorrer sem manifestações cutâneas, exigindo avaliações neurológicas periódicas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "a piora da função dos nervos periféricos pode ocorrer de forma isolada e independente de manifestações cutâneas de reações hansênicas"
+        },
+        {
+          "codigo": "A012",
+          "afirmacao": "Em resposta inflamatória intensa pode haver ulceração das lesões e abscessos em nervos",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "pode ocorrer ulceração das lesões cutâneas e formação de abscessos em nervos periféricos"
+        },
+        {
+          "codigo": "A040",
+          "afirmacao": "A piora da função neural pode ocorrer isoladamente, sem manifestações cutâneas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "a piora da função dos nervos periféricos pode ocorrer de forma isolada e independente de manifestações cutâneas de reações hansênicas"
+        },
+        {
+          "codigo": "A040",
+          "afirmacao": "Em reações intensas, as lesões cutâneas podem ulcerar",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "Em pacientes com intensa resposta inflamatória, pode ocorrer ulceração das lesões cutâneas"
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "lacunas_registradas": 5,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0024",
+        "ms-pcdt-hanseniase-2022:0025",
+        "ms-pcdt-hanseniase-2022:0041",
+        "ms-pcdt-hanseniase-2022:0032"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A073",
+          "afirmacao": "Quadros reacionais atípicos podem simular outras doenças",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+          "trecho": "Quadros atípicos de resposta imune também podem ocorrer na hanseníase, dificultando a classificação de alguns casos reacionais e simulando doenças como artrite reumatoide, outras doenças reumatológicas, uveítes, nefrites, hepatites e vasculites"
+        },
+        {
+          "codigo": "A073",
+          "afirmacao": "Abscessos de nervo em reações intensas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "Em pacientes com intensa resposta inflamatória, pode ocorrer ulceração das lesões cutâneas e formação de abscessos em nervos periféricos"
+        },
+        {
+          "codigo": "A073",
+          "afirmacao": "Histopatologia no diagnóstico diferencial",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0041",
+          "trecho": "O exame histopatológico é empregado nos casos em que o diagnóstico persiste indefinido mesmo após a avaliação clínica e baciloscópica."
+        },
+        {
+          "codigo": "A078",
+          "afirmacao": "Reações atípicas podem simular doenças reumatológicas, uveítes, nefrites, hepatites e vasculites",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+          "trecho": "Quadros atípicos de resposta imune também podem ocorrer na hanseníase, dificultando a classificação de alguns casos reacionais e simulando doenças como artrite reumatoide, outras doenças reumatológicas, uveítes, nefrites, hepatites e vasculites"
+        },
+        {
+          "codigo": "A078",
+          "afirmacao": "Neurite aguda requer imobilização do membro afetado e corticosteroide supervisionado",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+          "trecho": "Requer imobilização do membro afetado e o uso supervisionado de corticosteroides."
+        }
+      ]
+    },
+    {
+      "id": "T22",
+      "lacunas_registradas": 6,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0080",
+        "ms-pcdt-hanseniase-2022:0084",
+        "ms-pcdt-hanseniase-2022:0075",
+        "ms-pcdt-hanseniase-2022:0062"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A020",
+          "afirmacao": "Não iniciar talidomida com contagem absoluta de neutrófilos abaixo de 750 células/mm³",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "trecho": "não deve ser iniciado o tratamento quando a contagem absoluta de neutrófilos estiver abaixo de 750 células/mm³"
+        },
+        {
+          "codigo": "A020",
+          "afirmacao": "Pacientes com risco de convulsões devem ser rigorosamente monitorados",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "trecho": "Pacientes com histórico de convulsões ou fatores de risco para o desenvolvimento de convulsões devem ser rigorosamente monitorados."
+        },
+        {
+          "codigo": "A020",
+          "afirmacao": "Talidomida pode induzir bradicardia",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0084",
+          "trecho": "devido ao potencial da talidomida para induzir bradicardia, é necessária particular atenção com medicamentos que tenham o mesmo efeito farmacodinâmico"
+        },
+        {
+          "codigo": "A020",
+          "afirmacao": "Dispensação condicionada a teste de gravidez recente",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0075",
+          "trecho": "A dispensação da talidomida está condicionada à apresentação de teste de gravidez recente (até 24 horas)."
+        },
+        {
+          "codigo": "A044",
+          "afirmacao": "A talidomida mostrou controle mais rápido e remissão mais longa que a pentoxifilina no ENH",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0062",
+          "trecho": "a talidomida tenha mostrado efeito mais rápido para o controle do quadro reacional e remissão mais longa após 60 dias de tratamento"
+        },
+        {
+          "codigo": "A044",
+          "afirmacao": "Não iniciar com contagem absoluta de neutrófilos abaixo de 750/mm³",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "trecho": "não deve ser iniciado o tratamento quando a contagem absoluta de neutrófilos estiver abaixo de 750 células/mm³"
+        }
+      ]
+    },
+    {
+      "id": "T23",
+      "lacunas_registradas": 3,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0080",
+        "ms-pcdt-hanseniase-2022:0063"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A039",
+          "afirmacao": "Pacientes com histórico ou fatores de risco para convulsões devem ser rigorosamente monitorados",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "trecho": "Pacientes com histórico de convulsões ou fatores de risco para o desenvolvimento de convulsões devem ser rigorosamente monitorados."
+        },
+        {
+          "codigo": "A039",
+          "afirmacao": "Para ENH em crianças, o tratamento é com clofazimina",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+          "trecho": "O tratamento do ENH em crianças deve ser feito com clofazimina"
+        },
+        {
+          "codigo": "A054",
+          "afirmacao": "Para ENH em crianças, o PCDT descreve clofazimina",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+          "trecho": "O tratamento do ENH em crianças deve ser feito com clofazimina"
+        }
+      ]
+    },
+    {
+      "id": "T24",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0119",
+        "ms-pcdt-hanseniase-2022:0028",
+        "ms-pcdt-hanseniase-2022:0025"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A056",
+          "afirmacao": "Coinfecções como tuberculose, helmintíases (estrongiloidíase) e infecções graves de tecidos moles e ossos podem piorar as reações",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0119",
+          "trecho": "observam-se coinfecções como tuberculose, helmintíases (incluindo estrongiloidíase) e infecções graves dos tecidos moles e ossos"
+        },
+        {
+          "codigo": "A056",
+          "afirmacao": "Associação TB-hanseníase exige ajuste de esquemas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0028",
+          "trecho": "Destaca-se a importância da associação entre tuberculose e hanseníase, pela necessidade de ajuste dos esquemas terapêuticos"
+        },
+        {
+          "codigo": "A056",
+          "afirmacao": "Avaliação neurológica periódica é essencial porque a piora neural pode ocorrer sem lesões cutâneas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "a piora da função dos nervos periféricos pode ocorrer de forma isolada e independente de manifestações cutâneas"
+        },
+        {
+          "codigo": "A096",
+          "afirmacao": "Associação entre tuberculose e hanseníase exige ajuste dos esquemas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0028",
+          "trecho": "Destaca-se a importância da associação entre tuberculose e hanseníase, pela necessidade de ajuste dos esquemas terapêuticos utilizados para ambas as doenças."
+        }
+      ]
+    },
+    {
+      "id": "T25",
+      "lacunas_registradas": 1,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0026"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A033",
+          "afirmacao": "Na reação tipo 2, os nódulos subcutâneos dolorosos aparecem com sintomas gerais e comprometimento de nervos e órgãos",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0026",
+          "trecho": "o quadro pode vir acompanhado por sintomas gerais como febre, artralgias, mialgias, dor óssea, edema periférico e linfadenomegalia, além do comprometimento inflamatório dos nervos periféricos (neurite), olhos (irite, episclerite), testículos (orquite) e rins (nefrite)."
+        }
+      ]
+    },
+    {
+      "id": "T26",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0060",
+        "ms-pcdt-hanseniase-2022:0027"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A070",
+          "afirmacao": "PQT-U deve ser mantida durante reações se não houver critério de alta e não reintroduzida após a conclusão, salvo recidiva",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0060",
+          "trecho": "Durante os episódios reacionais, a PQT-U deve ser mantida se o paciente ainda não houver completado os critérios de alta por cura. Nos casos em que as reações ocorrem após a conclusão da PQT-U, esta não deverá ser reintroduzida, exceto nos casos que cumprirem os critérios para recidiva."
+        },
+        {
+          "codigo": "A070",
+          "afirmacao": "ENH com neurite ou comprometimento de olhos/testículos é tratado com corticosteroide",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0027",
+          "trecho": "Nesses casos, e naqueles com comprometimento dos olhos e/ou testículos, o tratamento é feito com corticosteroides, de modo similar ao preconizado para reação tipo 1."
+        },
+        {
+          "codigo": "A084",
+          "afirmacao": "A PQT-U deve ser mantida durante a reação se os critérios de alta ainda não foram cumpridos",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0060",
+          "trecho": "Durante os episódios reacionais, a PQT-U deve ser mantida se o paciente ainda não houver completado os critérios de alta por cura."
+        },
+        {
+          "codigo": "A084",
+          "afirmacao": "A reação tipo 2 com comprometimento neural, ocular ou testicular é tratada com corticosteroide",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0027",
+          "trecho": "Nesses casos, e naqueles com comprometimento dos olhos e/ou testículos, o tratamento é feito com corticosteroides, de modo similar ao preconizado para reação tipo 1."
+        }
+      ]
+    },
+    {
+      "id": "T27",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0037",
+        "ms-pcdt-hanseniase-2022:0025"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A003",
+          "afirmacao": "A ANS deve ser executada por profissional de saúde capacitado",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "trecho": "A ANS deve ser executada nos três níveis de atenção do SUS por profissional da saúde devidamente capacitado."
+        },
+        {
+          "codigo": "A003",
+          "afirmacao": "A piora da função neural pode ocorrer independentemente de manifestações cutâneas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "Ressalta-se que a piora da função dos nervos periféricos pode ocorrer de forma isolada e independente de manifestações cutâneas de reações hansênicas."
+        },
+        {
+          "codigo": "A014",
+          "afirmacao": "Em vista do risco de dano neural, o tratamento da reação tipo 1 deve ser instituído imediatamente",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "Em vista do risco de dano neural, o tratamento da reação tipo 1 deve ser instituído imediatamente"
+        },
+        {
+          "codigo": "A014",
+          "afirmacao": "A piora neural pode ocorrer independente de manifestações cutâneas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "trecho": "a piora da função dos nervos periféricos pode ocorrer de forma isolada e independente de manifestações cutâneas de reações hansênicas"
+        }
+      ]
+    },
+    {
+      "id": "T28",
+      "lacunas_registradas": 1,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0033"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A023",
+          "afirmacao": "A neurite silenciosa causa perda lenta de sensibilidade e força, e a piora neural indica corticoterapia independentemente de dor ou de lesões de pele",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0033",
+          "trecho": "A evidente piora da função neural indica necessidade de corticoterapia, independentemente da presença de dor neural ou de lesões inflamatórias na pele."
+        }
+      ]
+    },
+    {
+      "id": "T29",
+      "lacunas_registradas": 6,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0034",
+        "ms-pcdt-hanseniase-2022:0102",
+        "ms-pcdt-hanseniase-2022:0032"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A030",
+          "afirmacao": "Dor nociceptiva aguda surge em reações e não costuma ter comprometimento sensorial",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+          "trecho": "A dor nociceptiva aguda, geralmente, não está associada ao comprometimento sensorial e costuma surgir no contexto de reações hansênicas"
+        },
+        {
+          "codigo": "A030",
+          "afirmacao": "Distribuição mais difusa em MB e localizada/assimétrica em PB",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+          "trecho": "com um envolvimento mais difuso nos casos multibacilares (MB) ou distribuição mais localizada e assimétrica em casos paucibacilares (PB)"
+        },
+        {
+          "codigo": "A030",
+          "afirmacao": "Encaminhamento cirúrgico em neuropatia crônica com déficit neural tardio e dor",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0102",
+          "trecho": "contraindicação formal do uso de corticosteroides, abscesso de nervo, neurite que não responde ao tratamento clínico em quatro semanas, reações hansênicas recorrentes ou subentrantes, subluxação do nervo ulnar e neuropatia crônica com déficit neural tardio e dor"
+        },
+        {
+          "codigo": "A081",
+          "afirmacao": "Critérios de encaminhamento para avaliação cirúrgica",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0102",
+          "trecho": "O encaminhamento para avaliação por um cirurgião pode ser considerado nas seguintes situações: contraindicação formal do uso de corticosteroides, abscesso de nervo, neurite que não responde ao tratamento clínico em quatro semanas"
+        },
+        {
+          "codigo": "A081",
+          "afirmacao": "Distribuição da dor segundo o espectro (MB difusa, PB localizada)",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+          "trecho": "com um envolvimento mais difuso nos casos multibacilares (MB) ou distribuição mais localizada e assimétrica em casos paucibacilares (PB)"
+        },
+        {
+          "codigo": "A081",
+          "afirmacao": "Neurite aguda requer imobilização e corticoide supervisionado",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+          "trecho": "Requer imobilização do membro afetado e o uso supervisionado de corticosteroides."
+        }
+      ]
+    },
+    {
+      "id": "T30",
+      "lacunas_registradas": 3,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0037",
+        "ms-pcdt-hanseniase-2022:0035"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A049",
+          "afirmacao": "ANS inclui averiguação da acuidade visual e deve ser repetida em reações",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "trecho": "O exame físico inclui a inspeção minuciosa das mãos, pés e olhos [...] além da averiguação da acuidade visual."
+        },
+        {
+          "codigo": "A049",
+          "afirmacao": "Profissionais devem diminuir barreiras de acesso aos cuidados oftalmológicos",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+          "trecho": "trabalhar em conjunto com as pessoas acometidas para diminuir as barreiras de acesso aos cuidados oftalmológicos"
+        },
+        {
+          "codigo": "A051",
+          "afirmacao": "Cegueira por neuropatia hansênica é grau 2 de incapacidade; acuidade visual faz parte da ANS",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "trecho": "Os casos que apresentam deformidades físicas visíveis ou cegueira resultantes da neuropatia hansênica são classificados como grau de incapacidade física 2."
+        }
+      ]
+    },
+    {
+      "id": "T31",
+      "lacunas_registradas": 2,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0013",
+        "ms-pcdt-hanseniase-2022:0101"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A002",
+          "afirmacao": "Ferimentos ou queimaduras indolores nas mãos ou pés são sinais para suspeitar de hanseníase/procurar avaliação",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "trecho": "ferimentos ou queimaduras indolores nas mãos ou pés"
+        },
+        {
+          "codigo": "A002",
+          "afirmacao": "O calçado adequado deve ser socialmente aceito",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+          "trecho": "que deve ser confortável, evitando a pressão nas proeminências ósseas, além de socialmente aceito"
+        }
+      ]
+    },
+    {
+      "id": "T32",
+      "lacunas_registradas": 2,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0022",
+        "ms-pcdt-hanseniase-2022:0032"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A061",
+          "afirmacao": "Na forma neural pura, o diagnóstico depende do espessamento de nervo com alterações sensitivas, motoras ou autonômicas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+          "trecho": "o diagnóstico é confirmado pelo achado do segundo sinal cardinal da hanseníase (espessamento de nervo periférico, associado a alterações sensitivas e/ou motoras e/ou autonômicas no território do nervo)"
+        },
+        {
+          "codigo": "A087",
+          "afirmacao": "Corticosteroides têm efeito analgésico, mas não protegem do dano neurológico",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+          "trecho": "esses medicamentos podem ter efeito analgésico, mas não protegem o paciente do dano neurológico"
+        }
+      ]
+    },
+    {
+      "id": "T33",
+      "lacunas_registradas": 2,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0116"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A018",
+          "afirmacao": "Prednisona pode ser usada com segurança na amamentação; adiar a mamada até 4 h após a dose reduz a exposição do bebê",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0116",
+          "trecho": "A prednisona pode ser utilizada com segurança em mulheres que amamentam, mas adiar a alimentação até quatro horas após a ingestão do medicamento reduzirá a exposição do bebê ao pico de concentração do medicamento no leite materno."
+        },
+        {
+          "codigo": "A038",
+          "afirmacao": "Prednisona pode ser usada na amamentação, adiando a mamada até quatro horas após a dose",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0116",
+          "trecho": "A prednisona pode ser utilizada com segurança em mulheres que amamentam, mas adiar a alimentação até quatro horas após a ingestão do medicamento reduzirá a exposição do bebê ao pico de concentração do medicamento no leite materno."
+        }
+      ]
+    },
+    {
+      "id": "T36",
+      "lacunas_registradas": 7,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0096",
+        "ms-pcdt-hanseniase-2022:0095",
+        "ms-pcdt-hanseniase-2022:0092",
+        "ms-pcdt-hanseniase-2022:0128",
+        "ms-pcdt-hanseniase-2022:0126"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A064",
+          "afirmacao": "Grupos de autocuidado e apoio de pares favorecem autonomia e apoio mútuo",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0096",
+          "trecho": "Recomenda-se como medida fundamental a organização e a formação de grupos de autocuidado"
+        },
+        {
+          "codigo": "A064",
+          "afirmacao": "O CRAS orienta sobre benefícios assistenciais e o Cadastro Único",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0096",
+          "trecho": "No CRAS, os cidadãos são orientados em relação aos benefícios assistenciais e podem ser inscritos no Cadastro Único"
+        },
+        {
+          "codigo": "A066",
+          "afirmacao": "Acolhimento pelo agente comunitário de saúde",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0095",
+          "trecho": "é indispensável que o acolhimento seja uma de suas atribuições"
+        },
+        {
+          "codigo": "A066",
+          "afirmacao": "Uso da EMIC e da Escala de Participação",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0092",
+          "trecho": "a aplicação da Escala de Estigma (EMIC) no segundo mês de tratamento"
+        },
+        {
+          "codigo": "A066",
+          "afirmacao": "Divulgação voluntária e comunicação à família",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0092",
+          "trecho": "orientar a divulgação voluntária da condição a terceiros; estimular a comunicação aos membros da família"
+        },
+        {
+          "codigo": "A066",
+          "afirmacao": "APS como principal instância de atendimento",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0128",
+          "trecho": "A APS deve ser a principal instância de atendimento"
+        },
+        {
+          "codigo": "A066",
+          "afirmacao": "Caderneta de saúde como apoio ao acompanhamento",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0126",
+          "trecho": "A caderneta de saúde objetiva ser um instrumento de registro com as principais informações do acompanhamento terapêutico"
+        }
+      ]
+    },
+    {
+      "id": "T37",
+      "lacunas_registradas": 6,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0059",
+        "ms-pcdt-hanseniase-2022:0125",
+        "ms-pcdt-hanseniase-2022:0108",
+        "oms-estrategia-global-hanseniase-2021-2030:0025"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A053",
+          "afirmacao": "Não se estende a PQT-U além de 12 meses; novo ciclo só com resistência comprovada",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+          "trecho": "Não está autorizada por este Protocolo a extensão do tratamento com PQT-U por mais de 12 meses."
+        },
+        {
+          "codigo": "A053",
+          "afirmacao": "Lesões persistentes no pós-alta: investigar resistência e manter seguimento sem antibiótico",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "trecho": "Quando, após a PQT-U, houver persistência de lesões dermatológicas que cheguem a suscitar dúvidas sobre a resposta terapêutica, a resistência medicamentosa deve ser investigada."
+        },
+        {
+          "codigo": "A053",
+          "afirmacao": "Critérios para investigar resistência secundária após a PQT-U",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+          "trecho": "Reações hansênicas reentrantes por mais de três anos após a alta por cura, não responsivas ao tratamento com corticosteroides sistêmicos ou talidomida"
+        },
+        {
+          "codigo": "A092",
+          "afirmacao": "Após o tratamento podem ocorrer reação, dor neuropática, recidiva e piora ou surgimento de incapacidades, e a recidiva exige confirmação laboratorial",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0025",
+          "trecho": "Os principais eventos que podem ocorrer após o término do tratamento incluem reação hansênica, dor neuropática, recorrência da doença (recidiva) e agravamento das incapacidades ou ocorrência de novas incapacidades."
+        },
+        {
+          "codigo": "A092",
+          "afirmacao": "Persistência de lesões com dúvida sobre a resposta leva à investigação de resistência, com acompanhamento sem antibioticoterapia e baciloscopia anual nos mesmos locais",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "trecho": "a baciloscopia do esfregaço dérmico para seguimento da queda do índice baciloscópico pode ser repetida, com intervalos não inferiores a um ano, respeitando-se sempre os mesmos locais de coleta"
+        },
+        {
+          "codigo": "A092",
+          "afirmacao": "Recidiva comprovada por reaparecimento de lesões após cinco anos do tratamento é critério para investigar resistência",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+          "trecho": "Casos de recidiva, comprovada pelo reaparecimento de lesões cutâneas e/ ou neurológicas compatíveis com hanseníase, após cinco anos de tratamento prévio com PQT-U."
+        }
+      ]
+    },
+    {
+      "id": "T38",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "oms-estrategia-global-hanseniase-2021-2030:0025",
+        "ms-pcdt-hanseniase-2022:0032"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A032",
+          "afirmacao": "A OMS recomenda vigilância pós-tratamento para pessoas com maior risco de reações ou agravamento de incapacidades",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0025",
+          "trecho": "seguidos de vigilância pós-tratamento, para identificar, registrar, monitorar e fornecer suporte personalizado para pessoas com maior risco de desenvolver reações ou agravamento da incapacidade"
+        },
+        {
+          "codigo": "A032",
+          "afirmacao": "Neurite pode surgir após a cura, geralmente até cinco anos depois",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+          "trecho": "pode afetar pacientes com doença ativa ou após a cura, surgindo geralmente até cinco anos após o tratamento quimioterápico"
+        },
+        {
+          "codigo": "A034",
+          "afirmacao": "A OMS recomenda avaliação da função neural e do escore olho-mão-pé no início e no fim da PQT, com vigilância pós-tratamento",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0025",
+          "trecho": "Exames completos, incluindo avaliações da função neural e o escore olho-mãopé, devem ser realizados no início e no final do tratamento com PQT, seguidos de vigilância pós-tratamento"
+        },
+        {
+          "codigo": "A034",
+          "afirmacao": "A neurite pode ocorrer após a cura, geralmente até cinco anos após o tratamento",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+          "trecho": "pode afetar pacientes com doença ativa ou após a cura, surgindo geralmente até cinco anos após o tratamento quimioterápico"
+        }
+      ]
+    },
+    {
+      "id": "T39",
+      "lacunas_registradas": 6,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0128",
+        "ms-pcdt-hanseniase-2022:0058",
+        "ms-pcdt-hanseniase-2022:0126"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A063",
+          "afirmacao": "Verificação periódica das doses prescritas e dispensadas e uso de sistema informatizado",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0128",
+          "trecho": "bem como a verificação periódica das doses prescritas e dispensadas e a adequação de uso dos medicamentos"
+        },
+        {
+          "codigo": "A063",
+          "afirmacao": "A conclusão do tratamento depende do número de doses supervisionadas no intervalo previsto",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "trecho": "A PQT-U deverá ser interrompida após a administração de seis doses mensais supervisionadas em intervalo de até nove meses para os casos paucibacilares e após 12 doses mensais supervisionadas em um intervalo de até 18 meses para os casos multibacilares"
+        },
+        {
+          "codigo": "A099",
+          "afirmacao": "Recomenda-se sistema informatizado para monitoramento clínico e terapêutico",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0128",
+          "trecho": "Recomenda-se a adoção de sistema informatizado, de forma a garantir o adequado monitoramento clínico dos pacientes"
+        },
+        {
+          "codigo": "A099",
+          "afirmacao": "Verificação periódica das doses prescritas e dispensadas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0128",
+          "trecho": "a duração e a monitorização do tratamento, bem como a verificação periódica das doses prescritas e dispensadas e a adequação de uso dos medicamentos"
+        },
+        {
+          "codigo": "A099",
+          "afirmacao": "Pacientes com resistência acompanhados na Atenção Especializada",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0128",
+          "trecho": "Pacientes diagnosticados com M. leprae resistente a medicamentos devem ser acompanhados na Atenção Especializada"
+        },
+        {
+          "codigo": "A099",
+          "afirmacao": "Caderneta deve ser levada ao serviço durante o tratamento e pós-alta",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0126",
+          "trecho": "O usuário deverá ter sempre consigo a sua caderneta quando necessitar ir ao serviço de saúde durante o tratamento e o acompanhamento pós-alta"
+        }
+      ]
+    },
+    {
+      "id": "T40",
+      "lacunas_registradas": 5,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0123",
+        "oms-diretrizes-hanseniase-2018:0041",
+        "oms-estrategia-global-hanseniase-2021-2030:0023",
+        "ms-pcdt-hanseniase-2022:0013"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A035",
+          "afirmacao": "Contraindicações da revacinação BCG incluem neoplasia maligna e corticoide em dose elevada por mais de duas semanas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "trecho": "Pacientes acometidos por neoplasias malignas"
+        },
+        {
+          "codigo": "A035",
+          "afirmacao": "OMS não recomenda identificar ou rastrear contatos quando o paciente não autoriza a divulgação",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0041",
+          "trecho": "Quando os pacientes não autorizam a divulgação, o GDG não recomenda a identificação ou a triagem de contatos"
+        },
+        {
+          "codigo": "A075",
+          "afirmacao": "OMS: sem autorização do paciente não se recomenda identificar ou examinar contatos para tratamento preventivo",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0041",
+          "trecho": "Quando os pacientes não autorizam a divulgação, o GDG não recomenda a identificação ou a triagem de contatos ou a prescrição de tratamento preventivo aos contatos."
+        },
+        {
+          "codigo": "A075",
+          "afirmacao": "OMS recomenda examinar contatos de vizinhança e sociais com oferta de rifampicina em dose única",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023",
+          "trecho": "a OMS recomenda examinar os contatos domiciliares, assim como 25-50 contatos de vizinhança e contatos sociais de cada paciente"
+        },
+        {
+          "codigo": "A075",
+          "afirmacao": "Na anamnese de contatos, indagar sobre queixas neurológicas",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "trecho": "Na anamnese de indivíduos com suspeita de hanseníase ou contatos de casos diagnosticados, deve-se indagar sobre queixas neurológicas"
+        }
+      ]
+    },
+    {
+      "id": "T41",
+      "lacunas_registradas": 3,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0013",
+        "oms-estrategia-global-hanseniase-2021-2030:0023",
+        "oms-diretrizes-hanseniase-2018:0042"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A013",
+          "afirmacao": "Havendo dúvida diagnóstica na Atenção Primária, encaminhar à Atenção Secundária",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "trecho": "Quando houver dúvida sobre o diagnóstico da hanseníase no nível da Atenção Primária, os pacientes deverão ser referenciados para a Atenção Secundária"
+        },
+        {
+          "codigo": "A013",
+          "afirmacao": "A OMS condiciona o exame de contatos ao consentimento do caso-índice",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023",
+          "trecho": "com o consentimento do caso índice, a OMS recomenda examinar os contatos domiciliares"
+        },
+        {
+          "codigo": "A083",
+          "afirmacao": "A OMS recomenda obter o consentimento do caso-índice antes de identificar ou examinar contatos",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0042",
+          "trecho": "As diretrizes nacionais sobre os SDR devem incluir orientações claras sobre como obter o consentimento do caso-índice para identificação e exame dos contatos."
+        }
+      ]
+    },
+    {
+      "id": "T42",
+      "lacunas_registradas": 6,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0123",
+        "oms-diretrizes-hanseniase-2018:0041",
+        "oms-estrategia-global-hanseniase-2021-2030:0023",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0033"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A041",
+          "afirmacao": "Contatos anti-PGL-1 positivos sem critérios diagnósticos são avaliados anualmente",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "trecho": "Contatos de hanseníase que possuam sorologia anti-PGL-1 positiva e que não apresentem critérios para o diagnóstico clínico ou laboratorial da doença deverão ser avaliados anualmente nas unidades básicas de saúde"
+        },
+        {
+          "codigo": "A041",
+          "afirmacao": "A OMS não recomenda identificar contatos sem autorização de divulgação do paciente",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0041",
+          "trecho": "Quando os pacientes não autorizam a divulgação, o GDG não recomenda a identificação ou a triagem de contatos ou a prescrição de tratamento preventivo aos contatos."
+        },
+        {
+          "codigo": "A041",
+          "afirmacao": "A OMS recomenda examinar contatos de vizinhança e sociais",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023",
+          "trecho": "a OMS recomenda examinar os contatos domiciliares, assim como 25-50 contatos de vizinhança e contatos sociais de cada paciente"
+        },
+        {
+          "codigo": "A071",
+          "afirmacao": "A OMS recomenda examinar também contatos de vizinhança e sociais, com consentimento do caso índice",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023",
+          "trecho": "com o consentimento do caso índice, a OMS recomenda examinar os contatos domiciliares, assim como 25-50 contatos de vizinhança e contatos sociais de cada paciente"
+        },
+        {
+          "codigo": "A071",
+          "afirmacao": "A Estratégia Nacional prevê exame clínico criterioso de menores de 15 anos entre os contatos registrados",
+          "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0033",
+          "trecho": "Avaliar, por meio de exame clínico criterioso, todos os menores de 15 anos de idade entre os contatos registrados dos casos notificados nos últimos cinco anos."
+        },
+        {
+          "codigo": "A071",
+          "afirmacao": "A OMS não recomenda repetir a BCG para hanseníase",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023",
+          "trecho": "A repetição da vacinação BCG para hanseníase não é recomendada."
+        }
+      ]
+    },
+    {
+      "id": "T43",
+      "lacunas_registradas": 5,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0091",
+        "ms-pcdt-hanseniase-2022:0090",
+        "ms-pcdt-hanseniase-2022:0003"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A052",
+          "afirmacao": "O autoestigma ocorre quando a pessoa internaliza crenças e estereótipos sobre a doença",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0091",
+          "trecho": "autoestigma (quando as crenças e os estereótipos criados são internalizados pela pessoa)"
+        },
+        {
+          "codigo": "A052",
+          "afirmacao": "Nos serviços de saúde a discriminação pode incluir negação de atendimento e transferência dos cuidados, sendo barreira ao atendimento",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0090",
+          "trecho": "com consequências que podem variar desde a negação de atendimento e de prestação de cuidados até abusos físicos e verbais, transferência dos cuidados para outros profissionais"
+        },
+        {
+          "codigo": "A052",
+          "afirmacao": "O estigma e a discriminação dificultam o diagnóstico precoce e o tratamento oportuno",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0003",
+          "trecho": "O diagnóstico precoce e o tratamento oportuno da hanseníase são dificultados pelo estigma e discriminação associados ao medo e à falta de conhecimento sobre a doença"
+        },
+        {
+          "codigo": "A093",
+          "afirmacao": "O estigma e o medo dificultam o diagnóstico precoce e o tratamento oportuno",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0003",
+          "trecho": "O diagnóstico precoce e o tratamento oportuno da hanseníase são dificultados pelo estigma e discriminação associados ao medo e à falta de conhecimento sobre a doença"
+        },
+        {
+          "codigo": "A093",
+          "afirmacao": "Nos serviços de saúde, a discriminação pode chegar à negação de atendimento",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0090",
+          "trecho": "com consequências que podem variar desde a negação de atendimento e de prestação de cuidados até abusos físicos e verbais"
+        }
+      ]
+    },
+    {
+      "id": "T44",
+      "lacunas_registradas": 4,
+      "trechos_distintos": [
+        "oms-estrategia-global-hanseniase-2021-2030:0028",
+        "ms-pcdt-hanseniase-2022:0095",
+        "oms-estrategia-global-hanseniase-2021-2030:0013"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A058",
+          "afirmacao": "Devem existir processos oficiais para registrar e agir sobre denúncias de discriminação, e monitorar a exclusão social",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028",
+          "trecho": "Devem existir processos oficiais para registrar e tomar medidas em relação a denúncias de comportamento discriminatório."
+        },
+        {
+          "codigo": "A058",
+          "afirmacao": "Subnotificação e não adesão ao tratamento são consequências diretas do estigma",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0095",
+          "trecho": "A subnotificação e a não adesão ao tratamento são algumas das consequências diretas do estigma"
+        },
+        {
+          "codigo": "A077",
+          "afirmacao": "Programas de conscientização baseados só em conhecimento são insuficientes para mudar atitudes",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0013",
+          "trecho": "Os programas de conscientização sobre a hanseníase baseados no conhecimento têm se mostrado insuficientes para mudar as atitudes da comunidade."
+        },
+        {
+          "codigo": "A077",
+          "afirmacao": "Estigma gera subnotificação e não adesão ao tratamento",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0095",
+          "trecho": "A subnotificação e a não adesão ao tratamento são algumas das consequências diretas do estigma"
+        }
+      ]
+    },
+    {
+      "id": "T45",
+      "lacunas_registradas": 5,
+      "trechos_distintos": [
+        "ms-estrategia-nacional-hanseniase-2024-2030:0015",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0038",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0013",
+        "ms-estrategia-nacional-hanseniase-2024-2030:0036"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A016",
+          "afirmacao": "Linha de base 2019 de 3.604 municípios (65%) e projeção de eliminação em 74% até 2030",
+          "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0015",
+          "trecho": "Ano-base: 2019 Linha de base: 3.604 municípios (65%) sem notificação de casos autóctones"
+        },
+        {
+          "codigo": "A016",
+          "afirmacao": "Estados e municípios devem elaborar estratégias próprias e a Estratégia deve ser reavaliada periodicamente",
+          "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0038",
+          "trecho": "é recomendado que estados e municípios elaborem suas próprias estratégias, com base nesta Estratégia Nacional"
+        },
+        {
+          "codigo": "A079",
+          "afirmacao": "Definições de interrupção da transmissão e de eliminação",
+          "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0013",
+          "trecho": "Considera-se como interrupção da transmissão a ausência de casos autóctones em pessoas com menos de 15 anos de idade pelo período de cinco anos consecutivos."
+        },
+        {
+          "codigo": "A079",
+          "afirmacao": "Linha de base de 3.604 municípios (65%) e projeção de 74% até 2030",
+          "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0015",
+          "trecho": "Linha de base: 3.604 municípios (65%) [...] a expectativa é de eliminação da doença em 74% dos municípios até 2030."
+        },
+        {
+          "codigo": "A079",
+          "afirmacao": "Monitoramento anual via Sinan e OuvidorSUS",
+          "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0036",
+          "trecho": "O monitoramento [...] será realizado anualmente, a partir dos dados inseridos no Sinan (metas 1 a 3) e as informações disponibilizadas pela Ouvidoria-Geral do Sistema Único de Saúde (OUVSUS) (meta 4)."
+        }
+      ]
+    },
+    {
+      "id": "T47",
+      "lacunas_registradas": 1,
+      "trechos_distintos": [
+        "oms-diretrizes-hanseniase-2018:0028"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A062",
+          "afirmacao": "O diagnóstico de hanseníase se baseia em pelo menos um dos três sinais cardinais",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0028",
+          "trecho": "O diagnóstico da hanseníase na prática atual é baseado na presença de pelo menos um dos três sinais cardinais"
+        }
+      ]
+    },
+    {
+      "id": "T49",
+      "lacunas_registradas": 1,
+      "trechos_distintos": [
+        "ms-pcdt-hanseniase-2022:0051"
+      ],
+      "lacunas": [
+        {
+          "codigo": "A022",
+          "afirmacao": "O PCDT exclui de seu escopo casos raros atípicos e pacientes com intolerância/contraindicação a todos os medicamentos, que devem ser encaminhados à Atenção Especializada",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0051",
+          "trecho": "São excluídas deste Protocolo a definição de critérios diagnósticos para casos raros com apresentações atípicas da doença, assim como a conduta terapêutica para pacientes com intolerância grave ou contraindicação absoluta a todos os medicamentos aprovados."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "id_pergunta": "T01",
+    "par": "P01",
+    "contradicao": false,
+    "justificativa": "Ambas descrevem manchas hipocrômicas/avermelhadas com alteração de sensibilidade, necessidade de exame e encaminhamento em caso de dúvida; diferem apenas em detalhes."
+  },
+  {
+    "id_pergunta": "T02",
+    "par": "P02",
+    "contradicao": false,
+    "justificativa": "Mesmos achados (alteração de sensibilidade, aspecto das lesões, sinais neurológicos) e mesma conduta; B omite a ressalva sobre a forma virchowiana, o que é omissão."
+  },
+  {
+    "id_pergunta": "T03",
+    "par": "P03",
+    "contradicao": false,
+    "justificativa": "Critérios PB/MB, exceção do nervo único, tratar como MB na dúvida e durações de 6/12 meses coincidem."
+  },
+  {
+    "id_pergunta": "T04",
+    "par": "P04",
+    "contradicao": false,
+    "justificativa": "Respostas praticamente idênticas em critérios e ressalvas sobre acometimento neural."
+  },
+  {
+    "id_pergunta": "T05",
+    "par": "P05",
+    "contradicao": false,
+    "justificativa": "Mesmos achados, exames auxiliares, encaminhamento e diagnóstico diferencial; B acrescenta locais de biópsia, A uma observação sobre ausência de algoritmo único, sem incompatibilidade."
+  },
+  {
+    "id_pergunta": "T06",
+    "par": "P06",
+    "contradicao": false,
+    "justificativa": "Indicações, técnica de coleta (raspado intradérmico, Ziehl-Neelsen) e interpretação coincidem."
+  },
+  {
+    "id_pergunta": "T07",
+    "par": "P07",
+    "contradicao": false,
+    "justificativa": "Ambas tratam o teste como auxiliar, restrito no SUS à investigação de contatos, com baixa sensibilidade em PB e alta em MB; A cita um VPP de 4%, o que é detalhe adicional."
+  },
+  {
+    "id_pergunta": "T08",
+    "par": "P08",
+    "contradicao": false,
+    "justificativa": "Ambas indicam qPCR no SUS exclusivamente para investigação de contatos e possível apoio em casos difíceis; A comenta não haver atualização de 2026 nos trechos, B não aborda esse ponto (omissão)."
+  },
+  {
+    "id_pergunta": "T09",
+    "par": "P09",
+    "contradicao": false,
+    "justificativa": "Definição e momentos da ANS coincidem; 'periodicamente' (A) e 'a cada três meses' (B) diferem só em especificidade."
+  },
+  {
+    "id_pergunta": "T10",
+    "par": "P10",
+    "contradicao": true,
+    "justificativa": "A afirma que os esquemas de segunda linha do protocolo brasileiro por reação adversa duram 6 ou 12 meses, não 18; B afirma que o esquema MB de segunda linha por reação à dapsona totaliza 18 meses (6 + 12). Além disso, A apresenta os 18 meses como prazo para completar as 12 doses da PQT-U MB, e B não reconhece esse contexto."
+  },
+  {
+    "id_pergunta": "T11",
+    "par": "P11",
+    "contradicao": false,
+    "justificativa": "Ambas distinguem os 18 meses adicionais da OMS para resistência à rifampicina do prazo de até 18 meses para completar as 12 doses MB no Brasil."
+  },
+  {
+    "id_pergunta": "T12",
+    "par": "P12",
+    "contradicao": false,
+    "justificativa": "Mesmos efeitos por medicamento (dapsona, clofazimina, rifampicina, talidomida, pentoxifilina) e mesma ressalva sobre pigmentação."
+  },
+  {
+    "id_pergunta": "T13",
+    "par": "P13",
+    "contradicao": false,
+    "justificativa": "Efeitos descritos coincidem; B acrescenta que a anemia é mais frequente em mulheres, sem incompatibilidade."
+  },
+  {
+    "id_pergunta": "T14",
+    "par": "P14",
+    "contradicao": false,
+    "justificativa": "Enfoques diferentes (A detalha mecanismo e cuidados, B a indicação e o risco de resistência), mas nenhuma afirmação de uma é negada pela outra."
+  },
+  {
+    "id_pergunta": "T15",
+    "par": "P15",
+    "contradicao": false,
+    "justificativa": "Respostas idênticas em conteúdo (desaparece em 6-12 meses, traços até 4 anos)."
+  },
+  {
+    "id_pergunta": "T16",
+    "par": "P16",
+    "contradicao": false,
+    "justificativa": "Mesma conduta geral; A detalha os esquemas alternativos e B apenas menciona que existem para rifampicina, dapsona e clofazimina, o que é diferença de detalhe."
+  },
+  {
+    "id_pergunta": "T17",
+    "par": "P17",
+    "contradicao": false,
+    "justificativa": "Ambas indicam investigação diante de suspeita de persistência de infecção ativa, o mesmo teste molecular (rpoB, gyrA, folP1) e a ausência de critérios específicos para resistência primária."
+  },
+  {
+    "id_pergunta": "T18",
+    "par": "P18",
+    "contradicao": true,
+    "justificativa": "A afirma que os trechos do protocolo brasileiro não apresentam esquema específico para resistência medicamentosa (só por reação adversa); B apresenta, como documentados no PCDT brasileiro, dois esquemas com doses para resistência confirmada à rifampicina."
+  },
+  {
+    "id_pergunta": "T19",
+    "par": "P19",
+    "contradicao": false,
+    "justificativa": "Doses em mg/kg, duração e exemplo de clofazimina coincidem."
+  },
+  {
+    "id_pergunta": "T20",
+    "par": "P20",
+    "contradicao": false,
+    "justificativa": "Mesmos sinais e mesma conduta (tratar prontamente, monitorar função neural)."
+  },
+  {
+    "id_pergunta": "T21",
+    "par": "P21",
+    "contradicao": false,
+    "justificativa": "Mesmos achados e critérios de diferenciação com a reação tipo 2, a neurite isolada e quadros atípicos; A acrescenta neural pura e histopatologia."
+  },
+  {
+    "id_pergunta": "T22",
+    "par": "P22",
+    "contradicao": false,
+    "justificativa": "Ambas indicam a talidomida para ENH, não como tratamento de neurite, e listam os mesmos cuidados; diferem na ênfase (A na indicação preferencial, B no mecanismo)."
+  },
+  {
+    "id_pergunta": "T23",
+    "par": "P23",
+    "contradicao": false,
+    "justificativa": "Mesma dose (100-400 mg/dia) e mesmos cuidados; para neurite/orquite/episclerite A diz corticosteroide e 'não talidomida isolada', B diz associar corticosteroide, o que é compatível."
+  },
+  {
+    "id_pergunta": "T24",
+    "par": "P24",
+    "contradicao": false,
+    "justificativa": "Mesmos fatores desencadeantes; B acrescenta exemplos de coinfecções e o mecanismo, sem incompatibilidade."
+  },
+  {
+    "id_pergunta": "T25",
+    "par": "P25",
+    "contradicao": false,
+    "justificativa": "Ambas indicam avaliação presencial hoje, suspeita de reação tipo 1, avaliação neural e possibilidade de reação tipo 2; A acrescenta que a PQT-U deve ser mantida, B fala de infecção, o que é complementar."
+  },
+  {
+    "id_pergunta": "T26",
+    "par": "P26",
+    "contradicao": false,
+    "justificativa": "Ambas trazem prednisona 1 mg/kg/dia com redução gradual, clofazimina escalonada por três meses até 300 mg/dia, talidomida não autorizada para menores de 18 anos e manutenção da PQT-U. A dose detalhada de clofazimina e o prazo de seis meses aparecem só em A, o que é omissão em B, não conflito."
+  },
+  {
+    "id_pergunta": "T27",
+    "par": "P27",
+    "contradicao": false,
+    "justificativa": "Ambas orientam avaliação presencial rápida, repetição da ANS e, em neurite aguda, imobilização e corticoide supervisionado. A diferença é apenas de redação."
+  },
+  {
+    "id_pergunta": "T28",
+    "par": "P28",
+    "contradicao": false,
+    "justificativa": "Mesma conduta nas duas: ANS, imobilização e corticoide na neurite aguda e encaminhamento cirúrgico se não houver resposta em quatro semanas. A menciona também a neurite silenciosa, o que é só detalhe a mais."
+  },
+  {
+    "id_pergunta": "T29",
+    "par": "P29",
+    "contradicao": false,
+    "justificativa": "Mesmas definições de dor neuropática crônica e aguda, de dor nociceptiva e de neurite, com as mesmas opções de cuidado (PCDT de Dor Crônica, corticoide, reabilitação, cirurgia). Diferem só no nível de detalhe."
+  },
+  {
+    "id_pergunta": "T30",
+    "par": "P30",
+    "contradicao": false,
+    "justificativa": "Mesmas complicações oculares (lagoftalmo, anestesia da córnea, iridociclite etc.) e mesmos sinais de alerta. As duas dizem que as fontes não trazem prazo formal de encaminhamento."
+  },
+  {
+    "id_pergunta": "T31",
+    "par": "P31",
+    "contradicao": false,
+    "justificativa": "Ambas recomendam inspecionar os pés e os calçados, usar calçados que não pressionem áreas ósseas, hidratar os pés diariamente e recorrer à Rede de Cuidados à Pessoa com Deficiência. A diferença é de ênfase."
+  },
+  {
+    "id_pergunta": "T32",
+    "par": "P32",
+    "contradicao": false,
+    "justificativa": "As finalidades da avaliação e o calendário da ANS (diagnóstico, a cada três meses, final do tratamento ou última dose) são compatíveis. B acrescenta a avaliação antes e depois de cirurgias, o que é só detalhe a mais."
+  },
+  {
+    "id_pergunta": "T33",
+    "par": "P33",
+    "contradicao": false,
+    "justificativa": "As duas dizem que a amamentação é segura durante a PQT-U, que o risco de transmissão é desprezível e que a prednisona é compatível, esperando quatro horas após a dose."
+  },
+  {
+    "id_pergunta": "T34",
+    "par": "P34",
+    "contradicao": false,
+    "justificativa": "Mesma recomendação de manter a amamentação durante a PQT-U. B acrescenta um possível efeito protetor, sem conflito com A."
+  },
+  {
+    "id_pergunta": "T35",
+    "par": "P35",
+    "contradicao": true,
+    "justificativa": "A afirma que os trechos não tratam especificamente da PQT em pessoas com HIV, enquanto B apresenta como documentado no protocolo que o tratamento em coinfecção por HIV não difere do convencional. A conclusão (não é contraindicação) é a mesma, mas há conflito sobre o que a fonte documenta."
+  },
+  {
+    "id_pergunta": "T36",
+    "par": "P36",
+    "contradicao": false,
+    "justificativa": "Ambas recomendam acolhimento sem julgamento, escuta, respeito à autonomia, acompanhamento na APS e articulação psicossocial e social. As duas dizem que não há procedimento formal nem prazo específico para a recusa."
+  },
+  {
+    "id_pergunta": "T37",
+    "par": "P37",
+    "contradicao": false,
+    "justificativa": "Mesmas orientações nas duas: o risco de reação e neurite persiste, há acompanhamento por até cinco anos, a PQT-U não se estende além de 12 meses e a resistência deve ser investigada. B detalha mais os critérios de resistência."
+  },
+  {
+    "id_pergunta": "T38",
+    "par": "P38",
+    "contradicao": false,
+    "justificativa": "Mesma organização do seguimento: orientação na alta, ANS diante de novas queixas, acompanhamento de reações por até cinco anos, seguimento trimestral sem antibiótico e baciloscopia com intervalo mínimo de um ano. As duas dizem que não há calendário fixo."
+  },
+  {
+    "id_pergunta": "T39",
+    "par": "P39",
+    "contradicao": false,
+    "justificativa": "Mesmas avaliações (dose mensal supervisionada, ANS no diagnóstico, a cada três meses e na última dose) e mesmos registros (caderneta, Sinan). Diferem só em itens complementares."
+  },
+  {
+    "id_pergunta": "T40",
+    "par": "P40",
+    "contradicao": false,
+    "justificativa": "Mesma conduta de investigação dos contatos dos últimos cinco anos, BCG conforme histórico vacinal, PQT-U se houver diagnóstico, avaliação anual se anti-PGL-1 positivo e consentimento conforme a OMS. B acrescenta contatos de vizinhança, o que é só detalhe a mais."
+  },
+  {
+    "id_pergunta": "T41",
+    "par": "P41",
+    "contradicao": false,
+    "justificativa": "Mesma definição de contato e mesma conduta (avaliação, PQT-U, BCG para maiores de 1 ano, automonitoramento). As duas citam a rifampicina como recomendação da OMS, diferenciada da conduta brasileira."
+  },
+  {
+    "id_pergunta": "T42",
+    "par": "P42",
+    "contradicao": false,
+    "justificativa": "Ambas recomendam avaliar os contatos, oferecer BCG conforme o histórico, citam a rifampicina como recomendação da OMS não documentada no protocolo brasileiro e dizem não haver dados municipais de cobertura."
+  },
+  {
+    "id_pergunta": "T43",
+    "par": "P43",
+    "contradicao": false,
+    "justificativa": "Mesmas causas nas duas (superstições, desinformação, medo da transmissão e de incapacidades, discriminação nos serviços). B acrescenta o autoestigma, o que é só detalhe a mais."
+  },
+  {
+    "id_pergunta": "T44",
+    "par": "P44",
+    "contradicao": false,
+    "justificativa": "Mesmos fatores históricos, sociais e institucionais e estratégias compatíveis (EMIC-AP, Escala de Participação, educação permanente, ouvidorias, grupos de apoio). A diferença é de organização e detalhe."
+  },
+  {
+    "id_pergunta": "T45",
+    "par": "P45",
+    "contradicao": false,
+    "justificativa": "Mesmos pilares, alicerces, metas e linha de base de 2019 (3.604 municípios, 65%, projeção de 74%). As duas dizem que não há resultado nacional posterior nos documentos."
+  },
+  {
+    "id_pergunta": "T46",
+    "par": "P46",
+    "contradicao": false,
+    "justificativa": "As duas informam que os trechos não identificam o laboratório fabricante."
+  },
+  {
+    "id_pergunta": "T47",
+    "par": "P47",
+    "contradicao": false,
+    "justificativa": "As duas dizem que os documentos não tratam dessa outra doença e orientam encaminhar à Atenção Secundária em caso de dúvida diagnóstica."
+  },
+  {
+    "id_pergunta": "T48",
+    "par": "P48",
+    "contradicao": false,
+    "justificativa": "As duas dizem que os trechos não indicam jejum nem especificam a relação da dose com alimentos."
+  },
+  {
+    "id_pergunta": "T49",
+    "par": "P49",
+    "contradicao": false,
+    "justificativa": "As duas dizem que os trechos não identificam as seções excluídas do estudo. B acrescenta o que fica fora do escopo do PCDT, deixando claro que é outra coisa."
+  },
+  {
+    "id_pergunta": "T50",
+    "par": "P50",
+    "contradicao": false,
+    "justificativa": "As duas dizem que não há dados municipais de 2026 e remetem ao Sinan. B pede ainda que o usuário informe o município, sem conflito com A."
+  }
+]

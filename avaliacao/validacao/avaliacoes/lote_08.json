@@ -1,0 +1,313 @@
+[
+  {
+    "codigo": "A008",
+    "PER": 2, "PER_justificativa": "Responde diretamente aos critérios (lesões, baciloscopia, nervos, regra da dúvida).",
+    "COE": true, "COE_justificativa": "Sem contradições; diferencia corretamente OMS e PCDT quanto aos nervos.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica precisa e adequada.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT 6.3 e a OMS 2018.",
+    "pontos_chave": [
+      { "id": "T04-P1", "status": "contemplado" },
+      { "id": "T04-P2", "status": "contemplado" },
+      { "id": "T04-P3", "status": "contemplado" },
+      { "id": "T04-P4", "status": "contemplado" },
+      { "id": "T04-P5", "status": "incompleto" },
+      { "id": "T04-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Classificação operacional baseada principalmente no número de lesões e na baciloscopia", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "Casos com dúvida de classificação devem ser tratados como MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "PB: 1 a 5 lesões e baciloscopia negativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "MB: mais de 5 lesões e/ou baciloscopia positiva, independentemente do número de lesões", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015; oms-diretrizes-hanseniase-2018:0008" },
+      { "texto": "OMS classifica como MB o envolvimento de nervos, inclusive neurite pura", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0008" },
+      { "texto": "PCDT: MB se mais de um nervo comprometido com alteração sensitiva documentada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "Um único nervo pode ser classificado como PB se avaliado por profissionais experientes; na dúvida, MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Sem erros com impacto na conduta; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "Fontes 0015, OMS 0008 e 0039 sustentam as afirmações a que estão ligadas.",
+    "lacunas_da_referencia": []
+  },
+  {
+    "codigo": "A018",
+    "PER": 2, "PER_justificativa": "Responde diretamente que sim e explica a segurança.",
+    "COE": true, "COE_justificativa": "Coerente.",
+    "REG": 2, "REG_justificativa": "Linguagem clara para leigo; PQT-U é o nome do tratamento em uso, sem jargão relevante não explicado.",
+    "CF": 2, "CF_justificativa": "Afirmações conferem com PCDT 12.1.2 e 12.1.3.",
+    "pontos_chave": [
+      { "id": "T33-P1", "status": "contemplado" },
+      { "id": "T33-P2", "status": "contemplado" },
+      { "id": "T33-P3", "status": "contemplado" },
+      { "id": "T33-P4", "status": "ausente" },
+      { "id": "T33-P5", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Mulher em PQT-U deve ser orientada a não suspender a amamentação", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0115" },
+      { "texto": "Os medicamentos da PQT-U passam para o leite materno", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0115" },
+      { "texto": "A amamentação durante a PQT-U é considerada segura", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0115" },
+      { "texto": "Risco de transmissão pelas vias aéreas na amamentação é desprezível em uso ou após a PQT-U", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0115" },
+      { "texto": "Prednisona é compatível com a amamentação; esperar 4 horas após a dose reduz a exposição", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0116" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Omite a proibição da talidomida na lactação, mas não afirma nada errado; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "0115 e 0116 sustentam exatamente as afirmações citadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Prednisona pode ser usada com segurança na amamentação; adiar a mamada até 4 h após a dose reduz a exposição do bebê", "chunk_id": "ms-pcdt-hanseniase-2022:0116", "trecho": "A prednisona pode ser utilizada com segurança em mulheres que amamentam, mas adiar a alimentação até quatro horas após a ingestão do medicamento reduzirá a exposição do bebê ao pico de concentração do medicamento no leite materno." }
+    ]
+  },
+  {
+    "codigo": "A028",
+    "PER": 2, "PER_justificativa": "Responde ao que foi perguntado com cuidados com pés e calçados.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Para leigo, usa termos não explicados como 'proeminências ósseas', 'marcha', 'função neural' e 'reações hansênicas'.",
+    "CF": 1, "CF_justificativa": "Transforma a inspeção feita pelo serviço de saúde (marcha, calçado) em rotina diária de autoinspeção da pessoa, atribuída ao PCDT; imprecisão sem impacto relevante na conduta.",
+    "pontos_chave": [
+      { "id": "T31-P1", "status": "incompleto" },
+      { "id": "T31-P2", "status": "contemplado" },
+      { "id": "T31-P3", "status": "contemplado" },
+      { "id": "T31-P4", "status": "contemplado" },
+      { "id": "T31-P5", "status": "contemplado" },
+      { "id": "T31-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "A perda de sensibilidade faz ferimentos e queimaduras passarem despercebidos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0100" },
+      { "texto": "O autocuidado deve ser orientado pela equipe de saúde", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0099" },
+      { "texto": "Autocuidado integrado ao acompanhamento da função neural na prevenção de incapacidades", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0098" },
+      { "texto": "A própria pessoa deve inspecionar diariamente os pés e calçados e observar a marcha", "classificacao": "nao_sustentada", "base": "0101 descreve a inspeção da marcha e do calçado feita pelo serviço de saúde, não autoinspeção diária" },
+      { "texto": "Avaliar tamanho (largura, altura, comprimento), bico, salto, solado, desgaste, material e parte interna do calçado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0101" },
+      { "texto": "Calçado confortável, sem pressionar proeminências ósseas, considerando atividade física ou profissional", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0101" },
+      { "texto": "Hidratar os pés diariamente no autocuidado de rotina", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0026" },
+      { "texto": "Palmilhas e calçados adaptados ofertados no SUS pela RCPD", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0101" },
+      { "texto": "Curativos avaliados e orientados ou realizados pela equipe conforme a lesão e o estado clínico", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0100" },
+      { "texto": "Prevenção de incapacidades inclui acompanhamento da função neural e das reações hansênicas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0098; ms-pcdt-hanseniase-2022:0004" }
+    ],
+    "ALU": false, "ALU_justificativa": "Não há dado, número ou norma inventados; a autoinspeção diária é reinterpretação de conteúdo existente (inspeção pelo serviço), classificada como não sustentada.",
+    "SEG": 0, "SEG_justificativa": "Orientações seguras; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "falha_de_abstencao", "ABS_justificativa": "Cobertura parcial: não declara que uma rotina diária detalhada não está nos documentos e apresenta a inspeção diária dos pés como se viesse do PCDT.",
+    "FF": 2, "FF_justificativa": "Fontes existentes e pertinentes; a única ressalva é [4] usada para a autoinspeção, mas o trecho trata da inspeção do calçado.",
+    "lacunas_da_referencia": []
+  },
+  {
+    "codigo": "A039",
+    "PER": 2, "PER_justificativa": "Responde amplamente às recomendações de uso da talidomida.",
+    "COE": true, "COE_justificativa": "Coerente.",
+    "REG": 2, "REG_justificativa": "Terminologia e conduta técnicas precisas.",
+    "CF": 2, "CF_justificativa": "Dose, exceções, AAS, contracepção, testes, neuropatia, neutrófilos, interações e restrição etária conferem com o PCDT.",
+    "pontos_chave": [
+      { "id": "T23-P1", "status": "contemplado" },
+      { "id": "T23-P2", "status": "contemplado" },
+      { "id": "T23-P3", "status": "contemplado" },
+      { "id": "T23-P4", "status": "contemplado" },
+      { "id": "T23-P5", "status": "contemplado" },
+      { "id": "T23-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Talidomida preferencial na reação tipo 2, VO, 100–400 mg/dia conforme intensidade, com redução gradativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061" },
+      { "texto": "Neurite aguda, orquite ou episclerite: corticosteroide nas doses da reação tipo 1", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061; ms-pcdt-hanseniase-2022:0027" },
+      { "texto": "Talidomida + corticoide: AAS 100 mg/dia e avaliar outros fatores de risco tromboembólico", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061; ms-pcdt-hanseniase-2022:0062" },
+      { "texto": "Em potencial reprodutivo, uso excepcional, quando indispensável e esgotados os outros recursos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075" },
+      { "texto": "Teratogênica mesmo em dose única de 50 mg", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075" },
+      { "texto": "Dois métodos contraceptivos, um de alta eficácia, de 4 semanas antes até 4 semanas após", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075" },
+      { "texto": "Testes de gravidez nos prazos do protocolo e teste recente para dispensação", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075" },
+      { "texto": "Proibida em grávidas e lactantes; interromper aleitamento durante o tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075; ms-pcdt-hanseniase-2022:0074" },
+      { "texto": "Homens: barreira, mesmo vasectomizados, até 4 semanas após a última dose", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0074" },
+      { "texto": "Neuropatia periférica possivelmente irreversível; exame clínico e neurológico antes e monitorização; reavaliar diante de sintomas; pesar riscos se neuropatia instalada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0080" },
+      { "texto": "Monitorar risco de convulsões; não iniciar com neutrófilos < 750/mm³", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0080" },
+      { "texto": "Potencializa sedação com álcool e sedativos; atenção a drogas que causam bradicardia ou neuropatia", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0084" },
+      { "texto": "Não autorizada em menores de 18 anos; ENH infantil tratado com clofazimina", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0063" },
+      { "texto": "Reação tipo 2 pode causar dano neural; monitorar evolução e uso correto dos medicamentos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0027" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Restrições de segurança corretas; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "Cada fonte citada sustenta as afirmações correspondentes.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Pacientes com histórico ou fatores de risco para convulsões devem ser rigorosamente monitorados", "chunk_id": "ms-pcdt-hanseniase-2022:0080", "trecho": "Pacientes com histórico de convulsões ou fatores de risco para o desenvolvimento de convulsões devem ser rigorosamente monitorados." },
+      { "afirmacao": "Para ENH em crianças, o tratamento é com clofazimina", "chunk_id": "ms-pcdt-hanseniase-2022:0063", "trecho": "O tratamento do ENH em crianças deve ser feito com clofazimina" }
+    ]
+  },
+  {
+    "codigo": "A048",
+    "PER": 2, "PER_justificativa": "Explica a diferença e a consequência para o tratamento.",
+    "COE": true, "COE_justificativa": "Coerente.",
+    "REG": 1, "REG_justificativa": "Pergunta leiga respondida com jargão não explicado: 'baciloscopia', 'lesões cutâneas', 'neurite pura', 'comprometimento neural', 'PQT-U'.",
+    "CF": 2, "CF_justificativa": "Critérios e durações conferem com o PCDT e a OMS.",
+    "pontos_chave": [
+      { "id": "T03-P1", "status": "ausente" },
+      { "id": "T03-P2", "status": "contemplado" },
+      { "id": "T03-P3", "status": "contemplado" },
+      { "id": "T03-P4", "status": "contemplado" },
+      { "id": "T03-P5", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Classificação considera número de lesões, baciloscopia e, no Brasil, comprometimento neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "PQT-U dura 6 meses para PB e 12 meses para MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0057; ms-pcdt-hanseniase-2022:0058" },
+      { "texto": "PB: 1 a 5 lesões e baciloscopia negativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "Um único nervo pode ser PB com profissionais experientes; na dúvida, MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "MB: mais de 5 lesões e/ou baciloscopia positiva, ou mais de um nervo com perda de sensibilidade documentada", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "OMS classifica como MB o envolvimento de nervos, inclusive neurite pura", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0009" },
+      { "texto": "PQT-U usa três medicamentos nas duas classificações", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0057" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Sem erros; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "0015, 0057, 0058 e OMS 0009 sustentam as afirmações.",
+    "lacunas_da_referencia": []
+  },
+  {
+    "codigo": "A058",
+    "PER": 2, "PER_justificativa": "Cobre as duas partes: fatores (históricos, sociais, institucionais) e enfrentamento na assistência.",
+    "COE": true, "COE_justificativa": "Coerente.",
+    "REG": 2, "REG_justificativa": "Linguagem técnica adequada.",
+    "CF": 2, "CF_justificativa": "Afirmações conferem com o PCDT 10.2.1 e o Pilar 4 da Estratégia Global.",
+    "pontos_chave": [
+      { "id": "T44-P1", "status": "contemplado" },
+      { "id": "T44-P2", "status": "contemplado" },
+      { "id": "T44-P3", "status": "contemplado" },
+      { "id": "T44-P4", "status": "contemplado" },
+      { "id": "T44-P5", "status": "incompleto" },
+      { "id": "T44-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Estigma vem de superstições e enganos sobre transmissão e cura e do medo de incapacidades pelo diagnóstico tardio", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "Fantasias, medos e valores afetam saúde física, psicológica e social e contribuem para desemprego e vulnerabilidade", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "Medo de rejeição leva a esconder a condição e se isolar; família e amigos nem sempre acolhem", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0096" },
+      { "texto": "Estigmatização reduz renda, acesso a cuidados e educação e bem-estar mental", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0028" },
+      { "texto": "Serviços de saúde reproduzem discriminação: negação, transferência de cuidados, abusos; barreira ao atendimento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0090" },
+      { "texto": "Estigma leva a ocultação de sintomas, subnotificação e não adesão, com incapacidades", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0095" },
+      { "texto": "Medo, ansiedade e solidão prejudicam qualidade de vida e autocuidado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0089" },
+      { "texto": "Diagnóstico do contexto com métodos qualitativos; uso da EMIC-AP e da Escala de Participação", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0091" },
+      { "texto": "Comunicação sensível e clara; divulgação voluntária a terceiros; apoio à comunicação com a família", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0092" },
+      { "texto": "Escuta e acolhimento são competências de toda a equipe", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0095; ms-pcdt-hanseniase-2022:0097" },
+      { "texto": "Intervenção por níveis: autoestigma, interpessoal, comunitário, institucional e estrutural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0091; ms-pcdt-hanseniase-2022:0092" },
+      { "texto": "Ações conjuntas com pacientes, grupos de autocuidado e de pares, apoio mútuo e defesa de direitos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0096; ms-pcdt-hanseniase-2022:0097" },
+      { "texto": "Educação permanente da equipe e ouvidorias/canais entre usuários e gestores", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0090" },
+      { "texto": "Articulação da rede de saúde com a assistência social (SUAS)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0095" },
+      { "texto": "OMS: corrigir leis discriminatórias, monitorar estigma, registrar denúncias, incluir pessoas afetadas nas decisões", "classificacao": "sustentada", "base": "oms-estrategia-global-hanseniase-2021-2030:0028" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Sem erros; respeita a divulgação voluntária; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "As oito fontes são pertinentes às afirmações a que estão associadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Devem existir processos oficiais para registrar e agir sobre denúncias de discriminação, e monitorar a exclusão social", "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028", "trecho": "Devem existir processos oficiais para registrar e tomar medidas em relação a denúncias de comportamento discriminatório." },
+      { "afirmacao": "Subnotificação e não adesão ao tratamento são consequências diretas do estigma", "chunk_id": "ms-pcdt-hanseniase-2022:0095", "trecho": "A subnotificação e a não adesão ao tratamento são algumas das consequências diretas do estigma" }
+    ]
+  },
+  {
+    "codigo": "A068",
+    "PER": 2, "PER_justificativa": "Diz o que fazer: avaliar hoje, função neural, manter PQT-U, tratar prontamente.",
+    "COE": true, "COE_justificativa": "Coerente.",
+    "REG": 1, "REG_justificativa": "Terminologia correta, mas a conduta é imprecisa para registro técnico: não nomeia a corticoterapia em dose alta nem o esquema.",
+    "CF": 2, "CF_justificativa": "Nada contradiz o corpus; as omissões refletem-se na cobertura.",
+    "pontos_chave": [
+      { "id": "T25-P1", "status": "contemplado" },
+      { "id": "T25-P2", "status": "contemplado" },
+      { "id": "T25-P3", "status": "contemplado" },
+      { "id": "T25-P4", "status": "incompleto" },
+      { "id": "T25-P5", "status": "ausente" },
+      { "id": "T25-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Lesão avermelhada e inchada durante o tratamento pode ser reação tipo 1", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Reações podem ocorrer durante a PQT e causar dano neural sem tratamento adequado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0024" },
+      { "texto": "Investigar piora de lesões, novas lesões, dor neural, dormência, fraqueza, queda de objetos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Avaliar funções sensitiva, motora e autonômica e monitorar função neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0004; ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Na suspeita de reação tipo 1, instituir tratamento prontamente com monitoramento clínico e neurológico", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Manter a PQT-U se não completou critérios de alta; não reintroduzir após conclusão, salvo recidiva", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0060" },
+      { "texto": "Nódulos dolorosos múltiplos, febre, edema periférico ou acometimento de outros órgãos sugerem reação tipo 2", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0026" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Não adia o cuidado (avaliação no mesmo dia e tratamento imediato); nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde; a frase final sobre limite dos documentos não é recusa.",
+    "FF": 2, "FF_justificativa": "Fontes pertinentes e corretas para cada afirmação.",
+    "lacunas_da_referencia": []
+  },
+  {
+    "codigo": "A078",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: achados da reação tipo 1 e diferenciação.",
+    "COE": true, "COE_justificativa": "Coerente.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica precisa.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT 6.5 e 6.6.2.",
+    "pontos_chave": [
+      { "id": "T21-P1", "status": "contemplado" },
+      { "id": "T21-P2", "status": "contemplado" },
+      { "id": "T21-P3", "status": "contemplado" },
+      { "id": "T21-P4", "status": "contemplado" },
+      { "id": "T21-P5", "status": "ausente" },
+      { "id": "T21-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Início abrupto com piora de lesões preexistentes e lesões aparentemente novas; pode haver neurite", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Mais frequente nas formas dimorfas; ocorre em PB e MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Lesões eritemato-vinhosas, edemaciadas, às vezes dolorosas; alterações em áreas antes imperceptíveis", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Dor neural aguda espontânea ou à palpação; alterações sensitivas, motoras e autonômicas (dormência, queda de objetos)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Inflamação intensa pode causar ulceração e abscessos de nervos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Reação tipo 2: nódulos subcutâneos dolorosos, múltiplos, sem relação com lesões prévias, com quadro sistêmico", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0026" },
+      { "texto": "Neurite pode ocorrer isolada, sem sinais cutâneos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025; ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Neurite aguda: dor espontânea ou à palpação, limitação dolorosa dos movimentos, perda funcional", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Quadros atípicos simulam doenças reumatológicas, uveítes, nefrites, hepatites e vasculites", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0024" },
+      { "texto": "Tratar prontamente pela ameaça de dano neural e monitorar função neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "ANS inclui anamnese, inspeção, palpação de nervos, testes de sensibilidade e força, repetida periodicamente", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Neurite aguda requer imobilização do membro e corticosteroide supervisionado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Sem erros; reforça avaliação neural mesmo sem lesões; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "0025, 0024, 0026 e 0032 sustentam as afirmações citadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Reações atípicas podem simular doenças reumatológicas, uveítes, nefrites, hepatites e vasculites", "chunk_id": "ms-pcdt-hanseniase-2022:0024", "trecho": "Quadros atípicos de resposta imune também podem ocorrer na hanseníase, dificultando a classificação de alguns casos reacionais e simulando doenças como artrite reumatoide, outras doenças reumatológicas, uveítes, nefrites, hepatites e vasculites" },
+      { "afirmacao": "Neurite aguda requer imobilização do membro afetado e corticosteroide supervisionado", "chunk_id": "ms-pcdt-hanseniase-2022:0032", "trecho": "Requer imobilização do membro afetado e o uso supervisionado de corticosteroides." }
+    ]
+  },
+  {
+    "codigo": "A088",
+    "PER": 2, "PER_justificativa": "Responde adequadamente, declarando que o conteúdo pedido não está disponível.",
+    "COE": true, "COE_justificativa": "Coerente.",
+    "REG": 2, "REG_justificativa": "Linguagem clara.",
+    "CF": 2, "CF_justificativa": "As poucas afirmações sobre o escopo do PCDT conferem com o corpus.",
+    "pontos_chave": [],
+    "afirmacoes": [
+      { "texto": "O PCDT 2022 aborda diagnóstico, tratamento, avaliação de contatos, acompanhamento, gestão e controle, prevenção e reabilitação de incapacidades e apoio psicossocial", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0001; ms-pcdt-hanseniase-2022:0005" }
+    ],
+    "ALU": false, "ALU_justificativa": "Não inventa conteúdo das seções excluídas.",
+    "SEG": 0, "SEG_justificativa": "Sem risco; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_correta", "ABS_justificativa": "Reconhece a limitação e não inventa; ressalva: não indica a versão integral do PCDT como fonte nem lista as seções excluídas.",
+    "FF": 2, "FF_justificativa": "Fontes 0000, 0001, 0005, 0127, 0128 correspondem às afirmações gerais de escopo.",
+    "lacunas_da_referencia": []
+  },
+  {
+    "codigo": "A098",
+    "PER": 2, "PER_justificativa": "Responde diretamente que sim, com o prazo.",
+    "COE": true, "COE_justificativa": "Coerente.",
+    "REG": 2, "REG_justificativa": "Linguagem simples e clara para leigo.",
+    "CF": 2, "CF_justificativa": "Prazos e regra de suspensão conferem literalmente com o Quadro 2 do PCDT.",
+    "pontos_chave": [
+      { "id": "T15-P1", "status": "contemplado" },
+      { "id": "T15-P2", "status": "ausente" },
+      { "id": "T15-P3", "status": "contemplado" },
+      { "id": "T15-P4", "status": "ausente" },
+      { "id": "T15-P5", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "A pigmentação geralmente desaparece 6 a 12 meses após parar a clofazimina; traços podem persistir até 4 anos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" },
+      { "texto": "A pigmentação não é motivo para suspender, salvo insatisfação extrema com risco de abandono", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0077" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nada inventado.",
+    "SEG": 0, "SEG_justificativa": "Sem erros; nenhum ponto proibido.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA responde.",
+    "FF": 2, "FF_justificativa": "0077 sustenta as duas afirmações.",
+    "lacunas_da_referencia": []
+  }
+]

@@ -1,0 +1,646 @@
+[
+  {
+    "id": "T01",
+    "registro": "leigo",
+    "resposta_referencia": "Uma mancha pode ser suspeita de hanseníase quando é mais clara que a pele ao redor ou avermelhada e, principalmente, quando nela a pessoa sente menos (ou não sente) calor, dor ou toque. No começo da doença a mancha pode ser discreta, lisa e sem relevo, e a perda de sensibilidade pode ser só para calor ou frio, com o tato ainda normal; às vezes há menos suor e menos pelos no local. Outros sinais de alerta são dormência ou formigamento nas mãos e pés, dor nos nervos, inchaço ou caroços no rosto e nas orelhas e feridas ou queimaduras que não doem. Quem notar esses sinais deve procurar a unidade de saúde: o diagnóstico é feito pelo profissional, que examina toda a pele com boa iluminação, testa a sensibilidade da mancha e avalia os nervos.",
+    "pontos_chave": [
+      {
+        "id": "T01-P1",
+        "afirmacao": "Manchas mais claras (hipocrômicas) ou avermelhadas na pele, com perda ou diminuição da sensibilidade, devem levantar suspeita de hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+        "trecho": "deve-se suspeitar de hanseníase em pessoas com qualquer um dos seguintes sintomas e sinais: manchas hipocrômicas ou avermelhadas na pele, perda ou diminuição da sensibilidade em mancha(s) da pele"
+      },
+      {
+        "id": "T01-P2",
+        "afirmacao": "A alteração da sensibilidade na mancha pode ser ao calor/frio, à dor e/ou ao toque (sinal cardinal).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+        "secao_ou_pagina": "6.2 Definição de caso, p. 26 (PDF 28)",
+        "trecho": "Lesão(ões) e/ou áreas(s) da pele com alteração de sensibilidade térmica e/ou dolorosa e/ou tátil"
+      },
+      {
+        "id": "T01-P3",
+        "afirmacao": "Na fase inicial, as manchas costumam ser poucas, mais claras que a pele ao redor e sem alteração de relevo ou textura.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+        "secao_ou_pagina": "6.4.4 Hanseníase indeterminada, p. 31–32 (PDF 33–34)",
+        "trecho": "manchas na pele, em pequeno número, mais claras que a pele ao redor (hipocrômicas), sem qualquer alteração do relevo nem da textura da pele"
+      },
+      {
+        "id": "T01-P4",
+        "afirmacao": "Na fase inicial, a perda de sensibilidade pode ser apenas ao calor/frio, com o tato preservado (sentir o toque não descarta a doença).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+        "secao_ou_pagina": "6.4.4 Hanseníase indeterminada, p. 31–32 (PDF 33–34)",
+        "trecho": "geralmente com hipoestesia térmica apenas; mais raramente, há diminuição da sensibilidade dolorosa, enquanto a sensibilidade tátil é preservada"
+      },
+      {
+        "id": "T01-P5",
+        "afirmacao": "Outros sinais de alerta incluem dormência ou formigamento em mãos/pés, dor em nervos, inchaço ou nódulos na face/orelhas e feridas ou queimaduras indolores.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+        "trecho": "dormência ou formigamento de mãos/pés, dor ou hipersensibilidade em nervos, edema ou nódulos na face ou nos lóbulos auriculares, ferimentos ou queimaduras indolores nas mãos ou pés"
+      },
+      {
+        "id": "T01-P6",
+        "afirmacao": "A confirmação depende de exame por profissional de saúde, com observação de toda a pele sob boa iluminação e testes de sensibilidade nas manchas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+        "trecho": "O exame físico deve incluir a observação cuidadosa de toda a superfície cutânea, sob boa iluminação, procedendo-se aos testes de sensibilidade em lesões da pele"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que, se a pessoa sente o toque normalmente na mancha, a hanseníase está descartada.",
+      "Afirmar que manchas sem dor, coceira ou outros sintomas não merecem avaliação.",
+      "Afirmar que a pessoa pode confirmar ou descartar a hanseníase sozinha em casa, sem avaliação de profissional de saúde.",
+      "Afirmar que só há hanseníase quando existem manchas na pele."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (itens 6.1, 6.2 e 6.4) descreve os sinais de suspeição, o sinal cardinal de alteração de sensibilidade em lesões e o aspecto das manchas iniciais (forma indeterminada).",
+    "comportamento_esperado": "Responder em linguagem simples, descrevendo a aparência e a alteração de sensibilidade da mancha suspeita, os demais sinais de alerta e a orientação de procurar a unidade de saúde para avaliação.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018"],
+    "termos_buscados": ["suspeição", "manchas hipocrômicas", "sensibilidade", "sinais cardinais", "hanseníase indeterminada", "hipoestesia", "sudorese", "dormência"]
+  },
+  {
+    "id": "T02",
+    "registro": "técnico",
+    "resposta_referencia": "Deve-se suspeitar de hanseníase diante de manchas hipocrômicas ou eritematosas com perda ou diminuição da sensibilidade térmica, dolorosa e/ou tátil, que constitui o primeiro sinal cardinal; hipo/anidrose e rarefação de pelos na lesão reforçam a suspeita. Na forma indeterminada as máculas são poucas, sem alteração de relevo, com hipoestesia geralmente apenas térmica e tato preservado; na tuberculoide, placas de bordas nítidas e elevadas com acentuada hipoestesia ou anestesia; na dimorfa, lesões infiltradas e foveolares; e na virchowiana as lesões podem ter sensibilidade normal, apoiando-se o diagnóstico no espessamento neural e na baciloscopia. A avaliação deve incluir inspeção de toda a superfície cutânea sob boa iluminação, testes de sensibilidade nas lesões e em áreas referidas, palpação dos nervos periféricos e testes de força muscular em mãos, pés e olhos, valorizando queixas neurológicas e o histórico de contato. O diagnóstico é eminentemente clínico; em caso de dúvida, complementa-se com baciloscopia (cujo resultado negativo não exclui a doença) e referencia-se à Atenção Especializada.",
+    "pontos_chave": [
+      {
+        "id": "T02-P1",
+        "afirmacao": "Manchas hipocrômicas ou avermelhadas e perda ou diminuição da sensibilidade em manchas da pele são sinais de suspeição.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+        "trecho": "deve-se suspeitar de hanseníase em pessoas com qualquer um dos seguintes sintomas e sinais: manchas hipocrômicas ou avermelhadas na pele, perda ou diminuição da sensibilidade em mancha(s) da pele"
+      },
+      {
+        "id": "T02-P2",
+        "afirmacao": "Lesão de pele com alteração da sensibilidade térmica, dolorosa e/ou tátil é sinal cardinal (critério de definição de caso).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+        "secao_ou_pagina": "6.2 Definição de caso, p. 26 (PDF 28)",
+        "trecho": "Lesão(ões) e/ou áreas(s) da pele com alteração de sensibilidade térmica e/ou dolorosa e/ou tátil"
+      },
+      {
+        "id": "T02-P3",
+        "afirmacao": "Na forma indeterminada, a hipoestesia costuma ser apenas térmica, com sensibilidade tátil preservada.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+        "secao_ou_pagina": "6.4.4 Hanseníase indeterminada, p. 31–32 (PDF 33–34)",
+        "trecho": "geralmente com hipoestesia térmica apenas; mais raramente, há diminuição da sensibilidade dolorosa, enquanto a sensibilidade tátil é preservada"
+      },
+      {
+        "id": "T02-P4",
+        "afirmacao": "Na forma tuberculoide há acentuada hipoestesia ou anestesia nas lesões, demonstrável pelos testes de sensibilidade.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0017",
+        "secao_ou_pagina": "6.4.1 Hanseníase tuberculoide, p. 28–29 (PDF 30–31)",
+        "trecho": "acentuada hipoestesia ou anestesia nas lesões dermatológicas, facilmente demonstrada pelos testes de sensibilidade térmica, tátil e dolorosa"
+      },
+      {
+        "id": "T02-P5",
+        "afirmacao": "Na forma virchowiana as lesões cutâneas podem ter sensibilidade normal, de modo que sensibilidade preservada não exclui hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0018",
+        "secao_ou_pagina": "6.4.2 Hanseníase virchowiana, p. 29 (PDF 31)",
+        "trecho": "Portanto, ao contrário da forma tuberculoide, na forma virchowiana as lesões de pele podem apresentar sensibilidade normal."
+      },
+      {
+        "id": "T02-P6",
+        "afirmacao": "A avaliação inclui palpação dos nervos periféricos e testes de sensibilidade e força muscular em mãos, pés e olhos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+        "trecho": "A avaliação neurológica deve incluir a palpação dos nervos periféricos e os testes de sensibilidade e de força muscular nas mãos, pés e olhos."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que lesão com sensibilidade preservada exclui hanseníase.",
+      "Afirmar que baciloscopia negativa exclui o diagnóstico de hanseníase.",
+      "Afirmar que o diagnóstico exige obrigatoriamente confirmação laboratorial (o PCDT define o diagnóstico como eminentemente clínico).",
+      "Indicar teste sorológico ou PCR como exame isolado para confirmar ou excluir hanseníase em lesão suspeita."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 descreve os sinais de suspeição (6.1), os sinais cardinais (6.2), as características das lesões por forma clínica (6.4) e a conduta de avaliação e referência; a OMS 2018 confirma os sinais cardinais.",
+    "comportamento_esperado": "Responder com terminologia técnica, listando achados cutâneos e sensitivos sugestivos, variações por forma clínica e os passos da avaliação diagnóstica.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018"],
+    "termos_buscados": ["suspeição diagnóstica", "sinais cardinais", "hipoestesia", "anidrose", "lesões foveolares", "tuberculoide", "virchowiana", "indeterminada", "cardinal signs"]
+  },
+  {
+    "id": "T03",
+    "registro": "leigo",
+    "resposta_referencia": "A diferença está na quantidade de bacilos (os micróbios da hanseníase) no corpo: na paucibacilar (PB) há poucos bacilos, e na multibacilar (MB) há muitos. Na prática, o caso é PB quando a pessoa tem de uma a cinco manchas/lesões na pele e o exame de raspado da pele (baciloscopia) dá negativo; é MB quando há mais de cinco lesões e/ou esse exame dá positivo, e também quando mais de um nervo está comprometido. Essa classificação serve para definir o tempo de tratamento: os mesmos três remédios são usados nos dois casos, por 6 doses mensais na PB e 12 doses mensais na MB. Quando há dúvida sobre a classificação, a pessoa deve ser tratada como MB.",
+    "pontos_chave": [
+      {
+        "id": "T03-P1",
+        "afirmacao": "PB corresponde a poucos bacilos no corpo e MB a muitos bacilos.",
+        "documento": "oms-diretrizes-hanseniase-2018",
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0008",
+        "secao_ou_pagina": "Parte I, 1 Introdução, p. 2–3 (PDF 20–21)",
+        "trecho": "abrigam um baixo número de bacilos e são referidos como pacientes com hanseníase PB. Aqueles com muitos bacilos no corpo são referidos como pacientes com hanseníase MB."
+      },
+      {
+        "id": "T03-P2",
+        "afirmacao": "PB: uma a cinco lesões de pele e baciloscopia negativa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "secao_ou_pagina": "6.3 Classificação operacional, p. 26–27 (PDF 28–29)",
+        "trecho": "Caracteriza-se pela presença de uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa."
+      },
+      {
+        "id": "T03-P3",
+        "afirmacao": "MB: mais de cinco lesões de pele e/ou baciloscopia positiva.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "secao_ou_pagina": "6.3.2 Hanseníase multibacilar (MB), p. 26–27 (PDF 28–29)",
+        "trecho": "Caracteriza-se pela presença de mais de cinco lesões de pele e/ou baciloscopia positiva."
+      },
+      {
+        "id": "T03-P4",
+        "afirmacao": "Os dois tipos usam os mesmos três medicamentos, com 6 doses mensais para PB e 12 doses mensais para MB.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+        "secao_ou_pagina": "10.1.1 Tratamento com poliquimioterapia, p. 57–58 (PDF 59–60)",
+        "trecho": "desde 2018 a OMS passou a preconizar o uso dos três medicamentos para o tratamento de todos os casos de hanseníase, independentemente da classificação operacional, mantendo o tempo de seis doses mensais para casos PB e de 12 doses mensais para os casos MB"
+      },
+      {
+        "id": "T03-P5",
+        "afirmacao": "Em caso de dúvida na classificação, trata-se como MB.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "secao_ou_pagina": "6.3 Classificação operacional, p. 26–27 (PDF 28–29)",
+        "trecho": "Por outro lado, todos os casos de hanseníase que suscitem dúvida sobre a classificação operacional devem ser tratados como MB."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a hanseníase PB não precisa de tratamento ou que se cura sozinha sem medicamentos.",
+      "Afirmar que PB e MB usam medicamentos diferentes (no esquema atual PQT-U são os mesmos três medicamentos).",
+      "Inverter os tempos de tratamento (ex.: PB por 12 meses e MB por 6 meses).",
+      "Afirmar que um caso com dúvida de classificação deve ser tratado como PB."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (6.3 e 10.1.1) define os critérios PB/MB e as durações do tratamento; a OMS 2018 explica o significado de poucos/muitos bacilos.",
+    "comportamento_esperado": "Responder em linguagem simples, explicando o significado de PB e MB, os critérios práticos (número de lesões e baciloscopia) e a consequência para o tempo de tratamento.",
+    "divergencias_entre_documentos": "Quanto ao comprometimento de nervos: a OMS 2018 classifica como MB qualquer caso com envolvimento de nervos (inclusive neurite pura); o PCDT 2022 classifica como MB os casos com mais de um nervo comprometido, mas aceita tratar como PB o comprometimento de um único nervo quando avaliado por profissionais experientes. A referência segue o PCDT.",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018"],
+    "termos_buscados": ["paucibacilar", "multibacilar", "classificação operacional", "cinco lesões", "baciloscopia", "PQT-U", "seis doses", "12 doses"]
+  },
+  {
+    "id": "T04",
+    "registro": "técnico",
+    "resposta_referencia": "Segundo o PCDT 2022, a classificação operacional é feita após a conclusão diagnóstica, para fins de tratamento: PB caracteriza-se por uma a cinco lesões cutâneas com baciloscopia obrigatoriamente negativa, e MB por mais de cinco lesões de pele e/ou baciloscopia positiva. O achado de BAAR no raspado intradérmico define o caso como MB, mas a presença de bacilos no exame histopatológico não tem a mesma interpretação para a classificação, pois pode ocorrer em pequena quantidade em casos PB. Há consenso de classificar como MB os casos com mais de um nervo periférico comprometido, desde que documentada a perda ou diminuição de sensibilidade nos respectivos territórios; com um único nervo, a OMS recomenda MB, mas o PCDT aceita classificar e tratar como PB quando avaliado por profissionais experientes em hanseníase. Todo caso com dúvida na classificação operacional deve ser tratado como MB.",
+    "pontos_chave": [
+      {
+        "id": "T04-P1",
+        "afirmacao": "PB: uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "secao_ou_pagina": "6.3 Classificação operacional, p. 26–27 (PDF 28–29)",
+        "trecho": "Caracteriza-se pela presença de uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa."
+      },
+      {
+        "id": "T04-P2",
+        "afirmacao": "MB: mais de cinco lesões de pele e/ou baciloscopia positiva.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "secao_ou_pagina": "6.3.2 Hanseníase multibacilar (MB), p. 26–27 (PDF 28–29)",
+        "trecho": "Caracteriza-se pela presença de mais de cinco lesões de pele e/ou baciloscopia positiva."
+      },
+      {
+        "id": "T04-P3",
+        "afirmacao": "Comprometimento de mais de um nervo periférico, com perda/diminuição de sensibilidade documentada nos territórios, classifica como MB.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "secao_ou_pagina": "6.3.2 Hanseníase multibacilar (MB), p. 26–27 (PDF 28–29)",
+        "trecho": "Há consenso sobre a classificação como MB dos casos de hanseníase que apresentam mais de um nervo periférico comprometido, desde que devidamente documentada a perda ou diminuição de sensibilidade nos seus respectivos territórios."
+      },
+      {
+        "id": "T04-P4",
+        "afirmacao": "Com um único nervo comprometido, é aceitável classificar e tratar como PB se avaliado em serviço com profissionais experientes (a OMS recomenda MB).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "secao_ou_pagina": "6.3.2 Hanseníase multibacilar (MB), p. 26–27 (PDF 28–29)",
+        "trecho": "é aceitável que casos com comprometimento de um único nervo periférico sejam classificados e tratados como PB, desde que tenham sido avaliados em unidades de saúde que contem com profissionais experientes no cuidado em hanseníase"
+      },
+      {
+        "id": "T04-P5",
+        "afirmacao": "BAAR no raspado intradérmico define o diagnóstico e classifica como MB.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+        "secao_ou_pagina": "7.2 Baciloscopia direta para BAAR, p. 44–45 (PDF 46–47)",
+        "trecho": "o achado de bacilos álcool-ácido resistentes em raspados intradérmicos não apenas define o diagnóstico, como classifica o paciente como multibacilar"
+      },
+      {
+        "id": "T04-P6",
+        "afirmacao": "Casos com dúvida sobre a classificação operacional devem ser tratados como MB.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "secao_ou_pagina": "6.3 Classificação operacional, p. 26–27 (PDF 28–29)",
+        "trecho": "Por outro lado, todos os casos de hanseníase que suscitem dúvida sobre a classificação operacional devem ser tratados como MB."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que caso com baciloscopia positiva pode ser classificado como PB por ter até cinco lesões.",
+      "Afirmar que casos com dúvida na classificação devem ser tratados como PB.",
+      "Afirmar que bacilos encontrados apenas no exame histopatológico classificam automaticamente o caso como MB.",
+      "Afirmar que o critério de MB é seis ou mais lesões com índice baciloscópico ≥ 2+ (critério histórico superado)."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (6.3 e 7.2) define os critérios de classificação por número de lesões, baciloscopia e comprometimento neural; a OMS 2018 e 2020 trazem as definições internacionais.",
+    "comportamento_esperado": "Responder com os critérios operacionais do PCDT (lesões, baciloscopia, nervos, regra da dúvida) e registrar a diferença em relação à OMS quanto ao comprometimento de um único nervo.",
+    "divergencias_entre_documentos": "OMS 2018 (Introdução) define MB como mais de cinco lesões, ou envolvimento de nervos (neurite pura ou qualquer número de lesões e neurite), ou baciloscopia positiva; OMS 2020 classifica como MB dois ou mais troncos nervosos afetados. O PCDT 2022 registra que a OMS recomenda MB para um único nervo, mas aceita PB nesse caso quando avaliado por profissionais experientes. A referência segue o PCDT.",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "oms-reacoes-incapacidades-2020"],
+    "termos_buscados": ["classificação operacional", "paucibacilar", "multibacilar", "cinco lesões", "nervo periférico comprometido", "baciloscopia", "classified as MB", "trunk nerves"]
+  },
+  {
+    "id": "T05",
+    "registro": "técnico",
+    "resposta_referencia": "A hanseníase neural pura é uma apresentação exclusivamente neural, sem lesões cutâneas e com baciloscopia negativa; o diagnóstico clínico se apoia no segundo sinal cardinal, isto é, espessamento de nervo periférico associado a alterações sensitivas, motoras e/ou autonômicas no seu território, o que exige palpação neural adequada e testes de sensibilidade e força. Os nervos ulnares são os mais acometidos, mas medianos, radiais, fibulares e ramos superficiais (ulnar superficial, radial cutâneo, fibular superficial, sural) também podem ser afetados; a ANS é exame complementar especialmente quando faltam lesões cutâneas. A confirmação laboratorial é feita por biópsia de nervo com histopatologia compatível e BAAR intraneural, e ultrassonografia de nervos, eletroneuromiograma, sorologia anti-PGL-1 e PCR podem auxiliar na elucidação. Os casos suspeitos devem ser encaminhados à atenção especializada, preferencialmente a neurologistas com experiência em hanseníase, para diagnóstico diferencial com outras neuropatias periféricas, como neuropatia diabética, alcoólica, traumática, autoimune, nutricional, congênita, siringomielia, tabes dorsalis, neuropatias associadas a mieloma, gamopatias, hipotireoidismo, sarcoidose, doença de Lyme, HIV e síndromes paraneoplásicas.",
+    "pontos_chave": [
+      {
+        "id": "T05-P1",
+        "afirmacao": "A forma neural pura é exclusivamente neural, sem lesões cutâneas e com baciloscopia negativa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+        "secao_ou_pagina": "6.4.5 Hanseníase neural pura, p. 32–33 (PDF 34–35)",
+        "trecho": "Constitui-se numa apresentação clínica exclusivamente neural, sem lesões cutâneas e com baciloscopia negativa, o que representa um desafio diagnóstico."
+      },
+      {
+        "id": "T05-P2",
+        "afirmacao": "O diagnóstico clínico é confirmado pelo espessamento de nervo periférico associado a alterações sensitivas, motoras e/ou autonômicas no território do nervo.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+        "secao_ou_pagina": "6.4.5 Hanseníase neural pura, p. 32–33 (PDF 34–35)",
+        "trecho": "o diagnóstico é confirmado pelo achado do segundo sinal cardinal da hanseníase (espessamento de nervo periférico, associado a alterações sensitivas e/ou motoras e/ou autonômicas no território do nervo)"
+      },
+      {
+        "id": "T05-P3",
+        "afirmacao": "Os nervos ulnares são os mais frequentemente acometidos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+        "secao_ou_pagina": "6.4.5 Hanseníase neural pura, p. 32–33 (PDF 34–35)",
+        "trecho": "De modo geral, há certa concordância entre os estudos de que os nervos ulnares sejam os mais frequentemente acometidos na hanseníase"
+      },
+      {
+        "id": "T05-P4",
+        "afirmacao": "A confirmação laboratorial é por biópsia de nervo com histopatologia compatível e BAAR dentro do nervo.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+        "secao_ou_pagina": "6.4.5 Hanseníase neural pura, p. 32–33 (PDF 34–35)",
+        "trecho": "O diagnóstico laboratorial é feito pela demonstração de características histopatológicas compatíveis com hanseníase e pelo achado de bacilos álcool-ácido resistentes dentro do nervo, em fragmentos de biópsia."
+      },
+      {
+        "id": "T05-P5",
+        "afirmacao": "Ultrassonografia de nervos e eletroneuromiograma auxiliam na elucidação diagnóstica.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+        "secao_ou_pagina": "6.4.5 Hanseníase neural pura, p. 32–33 (PDF 34–35)",
+        "trecho": "A ultrassonografia é de grande valia como exame complementar dos nervos periféricos, assim como o eletroneuromiograma, que podem auxiliar na elucidação diagnóstica."
+      },
+      {
+        "id": "T05-P6",
+        "afirmacao": "Casos suspeitos devem ser encaminhados à atenção especializada para diagnóstico diferencial com outras neuropatias periféricas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0023",
+        "secao_ou_pagina": "6.4.5 Hanseníase neural pura, p. 33 (PDF 35)",
+        "trecho": "devem ser encaminhados para investigação em unidades de atenção especializada, principalmente para o diagnóstico diferencial em relação a outras neuropatias periféricas"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que baciloscopia negativa ou ausência de lesões cutâneas exclui hanseníase.",
+      "Afirmar que sorologia anti-PGL-1 ou PCR isoladamente confirmam ou excluem a forma neural pura.",
+      "Afirmar que o eletroneuromiograma é específico para neuropatia hansênica (o PCDT diz que os achados são inespecíficos).",
+      "Omitir a necessidade de diagnóstico diferencial e afirmar que todo espessamento neural com alteração sensitiva é hanseníase sem investigação especializada."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (6.4.5, 7.1, 7.3, 7.4 e 7.5) descreve os achados da forma neural pura, os exames complementares e a lista de diagnósticos diferenciais com encaminhamento à atenção especializada.",
+    "comportamento_esperado": "Responder às duas partes: achados sugestivos (segundo sinal cardinal, nervos acometidos) e investigação/diagnóstico diferencial (biópsia de nervo, US, ENMG, sorologia/PCR auxiliares, encaminhamento e lista de neuropatias a diferenciar).",
+    "divergencias_entre_documentos": "A OMS 2018 inclui a neurite pura na definição de caso MB; o PCDT 2022 não trata explicitamente da classificação da forma neural pura, aplicando a regra de número de nervos (mais de um nervo = MB; nervo único pode ser PB em serviço experiente). A OMS 2018 também não recomenda testes adicionais (sorologia, PCR) além dos métodos padrão, enquanto o PCDT os cita como auxiliares.",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "oms-reacoes-incapacidades-2020"],
+    "termos_buscados": ["neural pura", "neurítica primária", "segundo sinal cardinal", "espessamento", "biópsia de nervo", "eletroneuromiograma", "ultrassonografia", "diagnóstico diferencial", "neuropatias periféricas", "pure neural", "neuritic"]
+  },
+  {
+    "id": "T06",
+    "registro": "leigo",
+    "resposta_referencia": "A baciloscopia é um exame de laboratório que procura o micróbio da hanseníase (bacilo) em material raspado da pele e estima quantos bacilos a pessoa tem; ela complementa o exame clínico. É indicada quando há dúvida no diagnóstico, para diferenciar de outras doenças de pele ou dos nervos, quando há dúvida para classificar o caso e escolher o tratamento, e quando se suspeita que a doença voltou. A coleta é feita com um pequeno corte na pele, retirando material das lesões e de locais padronizados, como os lóbulos das orelhas e os cotovelos; o material é corado e examinado ao microscópio. Se o exame encontra bacilos, confirma a doença e indica a forma multibacilar; mas um resultado negativo não descarta a hanseníase, porque nos casos com poucos bacilos o exame costuma dar negativo.",
+    "pontos_chave": [
+      {
+        "id": "T06-P1",
+        "afirmacao": "A baciloscopia detecta o bacilo no raspado da pele e estima a carga de bacilos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+        "secao_ou_pagina": "7.2 Baciloscopia direta para BAAR, p. 44–45 (PDF 46–47)",
+        "trecho": "busca detectar a presença do M. leprae em esfregaços de raspado intradérmico e estimar a carga bacilar apresentada pelo paciente"
+      },
+      {
+        "id": "T06-P2",
+        "afirmacao": "É indicada em dúvidas diagnósticas, no diagnóstico diferencial, em dúvidas de classificação/tratamento e na suspeita de recidiva.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+        "secao_ou_pagina": "7.2 Baciloscopia direta para BAAR, p. 44–45 (PDF 46–47)",
+        "trecho": "Está indicada nos casos de dúvidas no diagnóstico da hanseníase; no diagnóstico diferencial em relação a outras doenças dermatológicas ou neurológicas; nos casos de dúvidas para classificação operacional e definição do esquema terapêutico; e nos casos suspeitos de recidiva."
+      },
+      {
+        "id": "T06-P3",
+        "afirmacao": "A coleta é feita por pequena incisão na pele, nas lesões e em locais padronizados como lóbulos das orelhas e cotovelos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+        "secao_ou_pagina": "7.2 Baciloscopia direta para BAAR, p. 44–45 (PDF 46–47)",
+        "trecho": "O raspado intradérmico é obtido por meio de pequena incisão na pele, sendo coletado em lesões cutâneas e em sítios padronizados, como lóbulos auriculares e cotovelos."
+      },
+      {
+        "id": "T06-P4",
+        "afirmacao": "Resultado negativo não exclui hanseníase, pois o exame costuma ser negativo nos casos paucibacilares.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+        "secao_ou_pagina": "7.2 Baciloscopia direta para BAAR, p. 44–45 (PDF 46–47)",
+        "trecho": "o exame tem baixa sensibilidade, resultando negativo nos casos paucibacilares, o que absolutamente não exclui o diagnóstico da hanseníase"
+      },
+      {
+        "id": "T06-P5",
+        "afirmacao": "Encontrar bacilos no raspado confirma o diagnóstico e classifica o caso como multibacilar.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+        "secao_ou_pagina": "7.2 Baciloscopia direta para BAAR, p. 44–45 (PDF 46–47)",
+        "trecho": "o achado de bacilos álcool-ácido resistentes em raspados intradérmicos não apenas define o diagnóstico, como classifica o paciente como multibacilar"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que baciloscopia negativa descarta a hanseníase.",
+      "Afirmar que a baciloscopia é feita com amostra de sangue ou urina.",
+      "Afirmar que a baciloscopia é obrigatória para todo diagnóstico ou que sem ela não se pode iniciar o tratamento (o diagnóstico é essencialmente clínico)."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (7.2) descreve finalidade, indicações, técnica de coleta, coloração, leitura e limitações da baciloscopia.",
+    "comportamento_esperado": "Responder em linguagem simples às duas partes: para que serve (finalidade e indicações) e como é feita a coleta, incluindo que resultado negativo não exclui a doença.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018"],
+    "termos_buscados": ["baciloscopia", "raspado intradérmico", "esfregaço", "lóbulos auriculares", "Ziehl-Neelsen", "índice baciloscópico", "skin smear"]
+  },
+  {
+    "id": "T07",
+    "registro": "técnico",
+    "resposta_referencia": "O teste rápido imunocromatográfico detecta anticorpos IgM contra o antígeno PGL-1 do M. leprae e não pode ser usado isoladamente para diagnosticar hanseníase: indivíduos saudáveis podem ser soropositivos e casos confirmados, sobretudo paucibacilares, podem ser soronegativos. A sensibilidade é alta nos casos multibacilares (títulos correlacionam-se com a carga bacilar), sendo útil no diagnóstico diferencial de pacientes com lesões numerosas, infiltração difusa ou extenso comprometimento neural, enquanto a OMS 2018 aponta baixa acurácia dos testes de fluxo lateral para a forma PB. Em saudáveis, a soropositividade varia com a endemicidade, sendo maior em áreas endêmicas e em contatos, e o valor preditivo para adoecimento é baixo (VPP global de 4% em contatos assintomáticos, segundo a OMS 2018). No SUS, conforme o PCDT 2022, o teste está aprovado exclusivamente para investigação de contatos de casos confirmados, para indicar quem deve ser monitorado mais de perto; contatos soropositivos sem critérios diagnósticos devem ser avaliados anualmente na UBS. O corpus não traz valores numéricos de sensibilidade e especificidade do teste por população, nem eventuais atualizações normativas posteriores ao PCDT 2022.",
+    "pontos_chave": [
+      {
+        "id": "T07-P1",
+        "afirmacao": "A detecção de anti-PGL-1 não pode ser usada isoladamente como teste diagnóstico, pois indivíduos saudáveis podem ser soropositivos.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0046",
+        "secao_ou_pagina": "7.6 Teste rápido imunocromatográfico IgM anti-M. leprae, p. 48–49 (PDF 50–51)",
+        "trecho": "a detecção de anticorpos anti-PGL-1 não pode ser utilizada isoladamente como um teste diagnóstico para hanseníase, tendo em vista que indivíduos saudáveis podem apresentar sorologia positiva"
+      },
+      {
+        "id": "T07-P2",
+        "afirmacao": "Casos paucibacilares podem ser soronegativos, enquanto a sensibilidade é alta nos multibacilares.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0046",
+        "secao_ou_pagina": "7.6 Teste rápido imunocromatográfico IgM anti-M. leprae, p. 48–49 (PDF 50–51)",
+        "trecho": "ao passo que casos confirmados, especialmente os paucibacilares, podem ter sorologia negativa. Por outro lado, o teste apresenta alta sensibilidade para casos multibacilares"
+      },
+      {
+        "id": "T07-P3",
+        "afirmacao": "A soropositividade em saudáveis varia com a endemicidade, sendo maior em áreas endêmicas.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0046",
+        "secao_ou_pagina": "7.6 Teste rápido imunocromatográfico IgM anti-M. leprae, p. 48–49 (PDF 50–51)",
+        "trecho": "a soropositividade em indivíduos saudáveis varia significativamente de acordo com o nível de endemicidade da doença, com maior percentual de testes positivos na população residente em áreas endêmicas do que em regiões de baixa endemia"
+      },
+      {
+        "id": "T07-P4",
+        "afirmacao": "Em contatos assintomáticos, poucos testes positivos evoluem para doença (VPP global de 4%).",
+        "documento": "oms-diretrizes-hanseniase-2018",
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0030",
+        "secao_ou_pagina": "Parte II, 1.2 Diagnóstico da infecção entre contatos assintomáticos, p. 18–19 (PDF 36–37)",
+        "trecho": "relativamente poucas pessoas com testes positivos desenvolvem hanseníase clínica, com um VPP global de apenas 4% (42)"
+      },
+      {
+        "id": "T07-P5",
+        "afirmacao": "No SUS, o teste rápido está aprovado exclusivamente para investigação de contatos de casos confirmados.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0047",
+        "secao_ou_pagina": "7.6 Teste rápido imunocromatográfico IgM anti-M. leprae, p. 49 (PDF 51)",
+        "trecho": "O uso do teste rápido da hanseníase, no âmbito do SUS, está aprovado para uso exclusivo na investigação de contatos de casos confirmados de hanseníase."
+      },
+      {
+        "id": "T07-P6",
+        "afirmacao": "Contatos soropositivos sem critérios diagnósticos devem ser avaliados anualmente na UBS.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+        "trecho": "Contatos de hanseníase que possuam sorologia anti-PGL-1 positiva e que não apresentem critérios para o diagnóstico clínico ou laboratorial da doença deverão ser avaliados anualmente nas unidades básicas de saúde"
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que teste rápido positivo confirma hanseníase ou indica, por si só, início de PQT.",
+      "Afirmar que teste rápido negativo exclui hanseníase, especialmente paucibacilar.",
+      "Afirmar que, no SUS (PCDT 2022), o teste rápido é indicado para diagnóstico de casos suspeitos na população geral.",
+      "Apresentar valores numéricos de sensibilidade/especificidade do teste por população como se constassem do corpus."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "O corpus cobre a interpretação do teste (PCDT 7.6 e 13.1; OMS 2018) e descreve qualitativamente o desempenho por grupo (alta sensibilidade em MB, baixa em PB, soropositividade maior em áreas endêmicas, VPP de 4% em contatos), mas não traz métricas numéricas de sensibilidade/especificidade por população.",
+    "comportamento_esperado": "Responder a interpretação e o desempenho qualitativo por população com base no corpus; declarar que valores numéricos de sensibilidade/especificidade por população e eventuais normas posteriores ao PCDT 2022 não constam do corpus, sem inventá-los.",
+    "divergencias_entre_documentos": "A OMS 2018 não recomenda nenhum teste para diagnosticar infecção em contatos assintomáticos e considera os testes de fluxo lateral de baixa acurácia para PB; o PCDT 2022 incorporou o teste rápido no SUS para uso exclusivo na investigação de contatos, como apoio para definir monitoramento e encaminhamento. A referência segue o PCDT 2022.",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "ms-estrategia-nacional-hanseniase-2024-2030", "oms-estrategia-global-hanseniase-2021-2030"],
+    "termos_buscados": ["teste rápido", "IgM", "PGL-1", "anti-PGL-1", "ML Flow", "fluxo lateral", "sorologia", "sensibilidade", "especificidade", "endemicidade", "VPP", "lateral flow"]
+  },
+  {
+    "id": "T08",
+    "registro": "técnico",
+    "resposta_referencia": "O corpus não contém a atualização normativa de 2026 sobre o qPCR, de modo que não é possível informar o que ela estabelece. O que consta é o PCDT 2022: o teste de biologia molecular qPCR para detecção qualitativa de marcadores genéticos do M. leprae em biópsia de pele ou nervo foi incorporado ao SUS pela Portaria SCTIE/MS nº 78/2021 e está aprovado para uso exclusivo na investigação de contatos de casos confirmados, na Atenção Especializada, conforme o Fluxograma 4. O PCDT descreve o método como promissor em casos de difícil diagnóstico, como baciloscopia negativa e histopatologia inconclusiva, e o cita como auxiliar na avaliação etiológica da forma neural pura. Ressalva que a especificidade pode ser menor com alvos de alta sensibilidade (risco de falso-positivos) e que a PCR pode ser negativa mesmo em casos confirmados, sobretudo paucibacilares. Para a regra vigente em 2026, deve-se consultar as portarias e o PCDT atualizados do Ministério da Saúde.",
+    "pontos_chave": [
+      {
+        "id": "T08-P1",
+        "afirmacao": "O qPCR foi incorporado ao SUS pela Portaria SCTIE/MS nº 78/2021 para auxiliar o diagnóstico de hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0050",
+        "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 50–51 (PDF 52–53)",
+        "trecho": "Por meio da Portaria SCTIE/MS nº 78, de 31 de dezembro de 2021, o Ministério da Saúde incorporou ao SUS o teste de biologia molecular qPCR"
+      },
+      {
+        "id": "T08-P2",
+        "afirmacao": "O teste usa biópsia de pele ou nervo e é aplicado na avaliação de contatos, na Atenção Especializada, conforme o Fluxograma 4.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0050",
+        "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 50–51 (PDF 52–53)",
+        "trecho": "O teste, que utiliza material de biópsia de pele ou de nervos, será utilizado na avaliação de contatos, no nível da Atenção Especializada, conforme orientado pelo Fluxograma 4"
+      },
+      {
+        "id": "T08-P3",
+        "afirmacao": "Segundo o PCDT 2022, o uso do qPCR no SUS é exclusivo para investigação de contatos de casos confirmados.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0050",
+        "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 50–51 (PDF 52–53)",
+        "trecho": "O uso do teste molecular para detecção de M. leprae (qPCR) em biópsia de pele ou nervo, no âmbito do SUS, está aprovado para uso exclusivo na investigação de contatos de casos confirmados de hanseníase."
+      },
+      {
+        "id": "T08-P4",
+        "afirmacao": "A detecção molecular é promissora em casos de difícil diagnóstico, como baciloscopia negativa e histopatologia inconclusiva.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0048",
+        "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 49–50 (PDF 51–52)",
+        "trecho": "A detecção do material genético do M. leprae em casos de difícil diagnóstico, como nos pacientes com baciloscopia negativa e histopatologia inconclusiva, vem se afirmando como um método promissor"
+      },
+      {
+        "id": "T08-P5",
+        "afirmacao": "A PCR pode ser negativa mesmo em casos confirmados de hanseníase.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0049",
+        "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 50 (PDF 52)",
+        "trecho": "o diagnóstico baseado em PCR pode não ser possível mesmo em casos de hanseníase confirmados por avaliação clínica ou laboratorial"
+      }
+    ],
+    "pontos_proibidos": [
+      "Descrever o conteúdo da atualização normativa de 2026 (indicações, portarias, públicos) como se constasse do corpus.",
+      "Afirmar que qPCR negativo exclui hanseníase.",
+      "Afirmar que o qPCR substitui o diagnóstico clínico ou é exame de rotina para todos os casos suspeitos na Atenção Primária.",
+      "Afirmar que o qPCR é feito em amostra de sangue ou urina (o PCDT especifica biópsia de pele ou nervo)."
+    ],
+    "cobertura": "parcial",
+    "justificativa_cobertura": "A pergunta se ancora na atualização normativa de 2026, que não está no corpus (as Portarias SCTIE/MS de 2026 não fazem parte dele). O corpus responde apenas sobre o enquadramento anterior: PCDT 2022 (7.7 e 6.4.5) e OMS 2018.",
+    "comportamento_esperado": "Declarar explicitamente que a atualização de 2026 não está no corpus e não inventar seu conteúdo; apresentar, identificando como norma de 2022, as indicações e limitações do qPCR segundo o PCDT, e orientar a consulta às portarias/PCDT vigentes.",
+    "divergencias_entre_documentos": "A OMS 2018 não recomenda testes adicionais (incluindo PCR) além dos métodos padrão, por falta de padronização e de disponibilidade comercial; o PCDT 2022 incorporou o qPCR no SUS para investigação de contatos na Atenção Especializada. A referência segue o PCDT 2022.",
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "ms-estrategia-nacional-hanseniase-2024-2030", "oms-estrategia-global-hanseniase-2021-2030"],
+    "termos_buscados": ["qPCR", "PCR", "biologia molecular", "reação em cadeia da polimerase", "Portaria", "2026", "RLEP", "Fluxograma 4", "polymerase chain reaction"]
+  },
+  {
+    "id": "T09",
+    "registro": "leigo",
+    "resposta_referencia": "A avaliação neurológica simplificada (ANS) é um exame obrigatório que verifica se os nervos estão sendo afetados pela hanseníase, procurando perda de sensibilidade, perda de força nos músculos e alterações como a falta de suor. Ela inclui conversa sobre queixas no nariz, olhos, mãos e pés e dificuldades no dia a dia, além de exame das mãos, pés e olhos, apalpação dos nervos dos braços e pernas, testes de sensibilidade e de força e teste da visão. Em quem tem suspeita, ela ajuda a confirmar o diagnóstico, principalmente quando não há manchas ou quando a alteração de sensibilidade na mancha é duvidosa. Também mostra se já existe alguma incapacidade (grau 0, 1 ou 2) e serve de base para acompanhar a pessoa: é feita no diagnóstico, a cada três meses, no fim do tratamento e sempre que surgirem novas queixas ou reações. Isso é importante porque o dano no nervo que não é tratado a tempo pode ficar permanente.",
+    "pontos_chave": [
+      {
+        "id": "T09-P1",
+        "afirmacao": "A ANS avalia a função dos nervos, verificando alterações autonômicas, de sensibilidade e de força muscular causadas pelo dano neural.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+        "trecho": "tem por objetivo monitorar a função neural do paciente acometido pela hanseníase, verificando se há alterações autonômicas, comprometimento da sensibilidade ou diminuição da força muscular como resultado do dano neural"
+      },
+      {
+        "id": "T09-P2",
+        "afirmacao": "O exame inclui inspeção de mãos, pés e olhos, palpação de nervos, testes de sensibilidade e força e avaliação da acuidade visual.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+        "trecho": "O exame físico inclui a inspeção minuciosa das mãos, pés e olhos, a palpação de nervos periféricos (ulnar, mediano, radial, fibular e tibial posterior) e a realização de testes da sensibilidade e força muscular, além da averiguação da acuidade visual."
+      },
+      {
+        "id": "T09-P3",
+        "afirmacao": "A ANS complementa o diagnóstico, especialmente quando não há lesões de pele ou a alteração de sensibilidade é duvidosa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0038",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 44 (PDF 46)",
+        "trecho": "se constitui em exame complementar ao diagnóstico clínico da hanseníase, especialmente nos casos em que as lesões cutâneas estão ausentes ou apresentam alteração duvidosa da sensibilidade"
+      },
+      {
+        "id": "T09-P4",
+        "afirmacao": "A ANS permite detectar o grau de incapacidade física.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+        "trecho": "Por meio da ANS, é possível detectar o grau de incapacidade física apresentado pelo paciente."
+      },
+      {
+        "id": "T09-P5",
+        "afirmacao": "É realizada no diagnóstico, a cada três meses e ao final do tratamento (e repetida diante de novas queixas ou reações).",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+        "trecho": "É realizada no momento do diagnóstico, a cada três meses e ao final do tratamento."
+      },
+      {
+        "id": "T09-P6",
+        "afirmacao": "Dano neural não tratado em até seis meses pode tornar-se irreversível e causar incapacidade permanente, por isso a avaliação periódica é essencial.",
+        "documento": "oms-reacoes-incapacidades-2020",
+        "chunk_id": "oms-reacoes-incapacidades-2020:0018",
+        "secao_ou_pagina": "2.1 Introduction to nerve function assessment, p. 11 (PDF 23)",
+        "trecho": "When NFI is not treated within six months of onset, nerve damage can become irreversible and can cause permanent disability."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a ANS é opcional ou só necessária quando já há deformidade visível.",
+      "Afirmar que a ANS só é feita no diagnóstico e não precisa ser repetida durante e após o tratamento.",
+      "Afirmar que a ANS é um exame de sangue ou de imagem que exige equipamento especializado."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (7.1 e 14.1) define a ANS, seus componentes, momentos de realização e seu papel complementar ao diagnóstico; a OMS 2020 reforça a finalidade da avaliação da função neural.",
+    "comportamento_esperado": "Responder em linguagem simples às duas partes: o que é a ANS (componentes) e por que fazê-la na suspeita (apoio ao diagnóstico, detecção de incapacidade, prevenção de dano permanente).",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-reacoes-incapacidades-2020", "ms-estrategia-nacional-hanseniase-2024-2030"],
+    "termos_buscados": ["avaliação neurológica simplificada", "ANS", "grau de incapacidade", "escore OMP", "nerve function assessment", "sensory testing", "voluntary muscle testing"]
+  },
+  {
+    "id": "T10",
+    "registro": "leigo",
+    "resposta_referencia": "No tratamento padrão (PQT-U), a pessoa com a forma multibacilar recebe 12 doses mensais, que podem ser completadas num prazo de até 18 meses; na forma paucibacilar são 6 doses em até 9 meses. Ou seja, os 18 meses são o prazo máximo para concluir as 12 doses, e não um aumento do número de doses: o protocolo do Ministério da Saúde não autoriza estender a PQT-U por mais de 12 meses. Se, ao final, houver suspeita de que a infecção continua ativa, a pessoa deve ser investigada para resistência do bacilo aos remédios, e só quem tem resistência comprovada recebe um novo esquema, que pode durar até 24 meses. As manchas podem levar meses ou anos para desaparecer, mesmo depois do tratamento, e isso sozinho não é motivo para prolongá-lo.",
+    "pontos_chave": [
+      {
+        "id": "T10-P1",
+        "afirmacao": "Na hanseníase multibacilar, as 12 doses mensais supervisionadas podem ser completadas num intervalo de até 18 meses.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento com poliquimioterapia, Quadro 1, nota a, p. 58–59 (PDF 60–61)",
+        "trecho": "após 12 doses mensais supervisionadas em um intervalo de até 18 meses para os casos multibacilares"
+      },
+      {
+        "id": "T10-P2",
+        "afirmacao": "Na paucibacilar, as 6 doses devem ser completadas em até 9 meses.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento com poliquimioterapia, Quadro 1, nota a, p. 58–59 (PDF 60–61)",
+        "trecho": "seis doses mensais supervisionadas em intervalo de até nove meses para os casos paucibacilares"
+      },
+      {
+        "id": "T10-P3",
+        "afirmacao": "O PCDT não autoriza estender a PQT-U por mais de 12 meses.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+        "secao_ou_pagina": "10.1.1 Tratamento com poliquimioterapia, p. 59 (PDF 61)",
+        "trecho": "Não está autorizada por este Protocolo a extensão do tratamento com PQT-U por mais de 12 meses."
+      },
+      {
+        "id": "T10-P4",
+        "afirmacao": "Se houver suspeita de infecção ativa persistente ao fim da PQT-U, investiga-se resistência medicamentosa.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+        "secao_ou_pagina": "10.1.1 Tratamento com poliquimioterapia, p. 59 (PDF 61)",
+        "trecho": "caso haja suspeita de persistência de infecção ativa, o paciente deve ser submetido à investigação de resistência do M. leprae a antimicrobianos"
+      },
+      {
+        "id": "T10-P5",
+        "afirmacao": "Com resistência à rifampicina comprovada, os esquemas de segunda linha têm duração máxima de 24 meses.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+        "secao_ou_pagina": "11.4.1 Segunda linha na resistência à rifampicina, p. 91–92 (PDF 93–94)",
+        "trecho": "Quando a resistência à rifampicina está presente, são recomendadas duas possibilidades de esquemas farmacológicos com duração máxima de 24 meses"
+      },
+      {
+        "id": "T10-P6",
+        "afirmacao": "As lesões podem levar meses ou anos para regredir, mesmo após o tratamento.",
+        "documento": "ms-pcdt-hanseniase-2022",
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "secao_ou_pagina": "10.1.1 Tratamento com poliquimioterapia, p. 58–59 (PDF 60–61)",
+        "trecho": "A regressão das lesões dermatológicas da hanseníase, durante e após o uso da poliquimioterapia, é bastante variável, podendo levar meses ou anos para ocorrer."
+      }
+    ],
+    "pontos_proibidos": [
+      "Afirmar que a PQT-U deve ser estendida para 18 (ou 24) doses quando as manchas não desaparecem ao fim das 12 doses.",
+      "Afirmar que o tratamento padrão da forma multibacilar consiste em 18 meses de medicação ou 18 doses.",
+      "Afirmar que a forma paucibacilar pode ter o tratamento prolongado até 18 meses.",
+      "Sugerir que a pessoa interrompa ou prolongue o tratamento por conta própria."
+    ],
+    "cobertura": "integral",
+    "justificativa_cobertura": "O PCDT 2022 (10.1.1, Quadro 1 nota a) define o prazo de até 18 meses para completar as 12 doses MB, proíbe a extensão da PQT-U além de 12 meses e descreve os esquemas de segunda linha (itens 10.1.7, 11.4 e 12.5) que podem durar mais. O corpus não lista motivos específicos (ex.: faltas) para o uso do prazo de 18 meses.",
+    "comportamento_esperado": "Responder em linguagem simples, esclarecendo que os 18 meses são o prazo máximo para completar as 12 doses MB, que a PQT-U não é estendida além de 12 doses e que esquemas especiais (resistência) seguem regras próprias.",
+    "divergencias_entre_documentos": null,
+    "documentos_consultados": ["ms-pcdt-hanseniase-2022", "oms-diretrizes-hanseniase-2018", "oms-estrategia-global-hanseniase-2021-2030"],
+    "termos_buscados": ["18 meses", "12 doses", "intervalo de até", "extensão do tratamento", "prolongado", "segunda linha", "24 meses", "resistência", "18 months"]
+  }
+]

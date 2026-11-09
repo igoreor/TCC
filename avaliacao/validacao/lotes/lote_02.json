@@ -1,0 +1,743 @@
+[
+  {
+    "codigo": "A002",
+    "pergunta": "Quais cuidados diários com os pés e os calçados ajudam a prevenir feridas e incapacidades na hanseníase?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os cuidados diários incluem **inspecionar os pés e o interior dos calçados, hidratar os pés e usar calçados confortáveis que não pressionem áreas ósseas**. A equipe deve orientar e acompanhar o autocuidado, considerando alterações de sensibilidade, marcha e formato dos pés. [1][2][3]\n\n- **Inspecione os pés e os calçados:** observe a marcha, o ajuste do calçado — largura, altura e comprimento —, o formato do bico, o salto, o solado, seu desgaste e a parte interna. Considere também as atividades físicas e profissionais da pessoa ao escolher o calçado. [1]\n- **Escolha calçados confortáveis:** devem evitar pressão sobre proeminências ósseas e ser socialmente aceitos. Quando necessário, a equipe pode avaliar a oferta de palmilhas e calçados adaptados pela Rede de Cuidados à Saúde da Pessoa com Deficiência. [1]\n- **Hidrate os pés diariamente:** a OMS recomenda hidratação diária como parte do autocuidado de rotina; também destaca a importância do acesso à água potável para esses cuidados. [3]\n- **Faça do autocuidado uma rotina orientada:** a equipe multiprofissional deve ensinar os cuidados com os pés desde o diagnóstico, e a participação ativa da pessoa é importante para desenvolver habilidades e reconhecer riscos. [2]\n\nA perda ou diminuição da sensibilidade pode favorecer traumas e queimaduras, especialmente na planta dos pés; ferimentos ou queimaduras indolores nos pés são sinais que justificam avaliação de saúde. [4][5] Se houver lesão, os documentos orientam que a equipe avalie o caso e indique os cuidados com curativos conforme as características da ferida e as condições da pessoa. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados. p. 86–87."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0099",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.3 Autocuidado. p. 85."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0026",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 3. p. 17."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0100",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos. p. 86."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A hanseníase pode tirar a sensibilidade dos pés, e por isso a pessoa pode se machucar ou se queimar sem perceber, o que causa feridas, principalmente na sola dos pés. Desde o diagnóstico, a equipe de saúde deve ensinar o autocuidado, incluindo a proteção dos pés, e a rotina inclui hidratar diariamente as mãos e os pés (deixar a pele seca de molho e depois passar óleo ajuda a evitar rachaduras). O calçado deve ter tamanho e formato adequados, ser confortável e não apertar as partes ossudas do pé; a equipe deve observar o seu jeito de andar e o calçado que você usa, levando em conta seu trabalho e suas atividades. Quem precisar pode receber palmilhas e calçados adaptados pelo SUS, pela Rede de Cuidados à Pessoa com Deficiência. Se aparecer ferida, o curativo deve ser orientado ou feito pela equipe de saúde. Os documentos de referência não trazem uma lista detalhada de cuidados diários, como examinar os pés todos os dias ou evitar andar descalço.",
+      "pontos_chave": [
+        {
+          "id": "T31-P1",
+          "afirmacao": "A equipe de saúde deve orientar o autocuidado logo após o diagnóstico, incluindo instruções de proteção das mãos e dos pés.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0099",
+          "secao_ou_pagina": "10.2.3 Autocuidado, p. 85 (PDF 87)",
+          "trecho": "A equipe multiprofissional de saúde deve estar sensibilizada para orientar o autocuidado logo após o diagnóstico, fornecendo instruções sobre os cuidados com a proteção da face, olhos, nariz, pele, mãos e pés"
+        },
+        {
+          "id": "T31-P2",
+          "afirmacao": "A perda de sensibilidade causada pela hanseníase é o principal fator de risco para traumas e queimaduras que levam a úlceras, especialmente nas plantas dos pés.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0100",
+          "secao_ou_pagina": "10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos, p. 86 (PDF 88)",
+          "trecho": "O dano às fibras nervosas autonômicas e sensitivas ocasionado pela hanseníase é o principal fator de risco para traumas e queimaduras"
+        },
+        {
+          "id": "T31-P3",
+          "afirmacao": "O calçado adequado deve ser confortável e evitar pressão nas proeminências ósseas, considerando a atividade física ou profissional da pessoa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+          "secao_ou_pagina": "10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados, p. 86–87 (PDF 88–89)",
+          "trecho": "fator indispensável na escolha do calçado adequado, que deve ser confortável, evitando a pressão nas proeminências ósseas, além de socialmente aceito."
+        },
+        {
+          "id": "T31-P4",
+          "afirmacao": "Palmilhas e calçados adaptados são ofertados pelo SUS por meio da Rede de Cuidados à Saúde da Pessoa com Deficiência (RCPD).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+          "secao_ou_pagina": "10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados, p. 86–87 (PDF 88–89)",
+          "trecho": "A oferta de palmilhas e calçados adaptados para pessoas com hanseníase, no âmbito do SUS, deve ser viabilizada pela Rede de Cuidados à Saúde da Pessoa com Deficiência (RCPD)"
+        },
+        {
+          "id": "T31-P5",
+          "afirmacao": "O autocuidado de rotina inclui hidratar diariamente as mãos e os pés para evitar incapacidades secundárias.",
+          "documento": "oms-estrategia-global-hanseniase-2021-2030",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0026",
+          "secao_ou_pagina": "Pilar estratégico 3, p. 17 (PDF 17)",
+          "trecho": "O acesso à água potável é importante para o autocuidado de rotina, incluindo hidratar diariamente as mãos e os pés para evitar incapacidades secundárias."
+        },
+        {
+          "id": "T31-P6",
+          "afirmacao": "Deixar a pele seca de molho e depois lubrificá-la com óleo ajuda a prevenir rachaduras.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0012",
+          "secao_ou_pagina": "1.3 Type 1 reactions and neuritis, p. 7 (PDF 19)",
+          "trecho": "Soaking and oiling of dry skin helps to prevent cracking and preserves the integrity of the epidermis."
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar calçados apertados, de bico estreito ou que façam pressão sobre as partes ossudas do pé.",
+        "Afirmar que, por não haver dor, um pé sem sensibilidade não precisa de cuidados ou de proteção.",
+        "Orientar a pessoa a tratar feridas nos pés sozinha, sem orientação ou acompanhamento da equipe de saúde."
+      ],
+      "cobertura": "parcial",
+      "justificativa_cobertura": "O corpus cobre a orientação de autocuidado desde o diagnóstico, a relação entre perda de sensibilidade e úlceras plantares, os critérios do calçado adequado, a oferta de palmilhas e calçados adaptados pela RCPD, a hidratação diária de mãos e pés, a lubrificação da pele seca e os curativos orientados pela equipe. Não traz uma rotina diária detalhada de cuidados com os pés (por exemplo, inspeção diária, evitar andar descalço, cuidado com calos, checar o interior do calçado antes de calçar).",
+      "comportamento_esperado": "Responder com os cuidados presentes no corpus (orientação de autocuidado, hidratação e lubrificação, calçado confortável sem pontos de pressão, palmilhas e calçados adaptados pelo SUS, curativos com a equipe) e declarar que uma rotina diária detalhada de cuidados com os pés não está descrita nos documentos consultados, indicando a equipe de saúde/caderneta como fonte para essas orientações, sem inventar instruções específicas como se fossem do corpus.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A012",
+    "pergunta": "Como reconhecer, em linguagem simples, uma reação hansênica do tipo 1?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "A reação hansênica tipo 1 costuma aparecer de forma **abrupta**: lesões de pele que já existiam pioram e podem surgir outras, enquanto nervos periféricos podem ficar inflamados e doloridos. O sinal mais importante a reconhecer é uma possível piora da função dos nervos, pois pode haver dano neural. [1][2]\n\n### O que observar\n\n- Lesões de pele mais evidentes, avermelhadas ou arroxeadas, inchadas e, às vezes, doloridas. Podem aparecer alterações em áreas onde antes a infecção não era perceptível. [1]\n- Dor aguda em nervos, espontânea ou ao toque. [1]\n- Mais dormência nas mãos ou nos pés, piora das dores nos membros ou objetos caindo das mãos com mais frequência — possíveis sinais de alteração da sensibilidade ou da força. [1]\n- Em quadros intensos, podem ocorrer feridas nas lesões ou abscessos nos nervos. [1]\n\nPode ocorrer em pessoas com formas dimorfas, tanto paucibacilares quanto multibacilares, e antes, durante ou depois do tratamento da hanseníase. [1][2]\n\n### Cuidados e encaminhamento\n\n- Suspeita de reação tipo 1 exige **avaliação clínica e neurológica sem demora**: o protocolo orienta instituir o tratamento imediatamente devido ao risco de dano neural e monitorar a função dos nervos. [1]\n- A piora da função neural pode ocorrer mesmo sem alterações visíveis na pele; por isso, avaliações neurológicas periódicas são essenciais. [1]\n- O tratamento medicamentoso deve ser definido e acompanhado por profissional. Não se deve iniciar, suspender ou alterar corticoide por conta própria; o protocolo alerta para monitorar efeitos adversos da corticoterapia. [1][3]\n- Se houver dúvida diagnóstica na Atenção Primária, o protocolo orienta encaminhamento à Atenção Secundária. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.1 Reação hansênica tipo 1 (reação reversa). p. 34."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5 Reações hansênicas. p. 33–34."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.2 Tratamento farmacológico das reações hansênicas. p. 60–61."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A reação do tipo 1 (também chamada reação reversa) é uma inflamação causada pela própria defesa do corpo contra a bactéria da hanseníase, e pode aparecer antes, durante ou depois do tratamento. Ela começa de repente: as manchas que a pessoa já tinha ficam mais vermelhas ou arroxeadas, inchadas e às vezes doloridas, e podem surgir manchas que parecem novas. Muitas vezes os nervos também inflamam, o que se percebe por dor nos braços ou pernas, mais dormência nas mãos e nos pés, fraqueza e o hábito de deixar cair objetos das mãos. Pode haver uma febre leve, mas em geral a pessoa não se sente muito doente, ao contrário da reação tipo 2, em que aparecem caroços novos e doloridos na pele fora das manchas antigas. Ao notar esses sinais, a pessoa deve procurar a unidade de saúde logo, porque o tratamento precisa começar imediatamente para evitar dano aos nervos, sem parar o tratamento da hanseníase e sem tomar remédios por conta própria.",
+      "pontos_chave": [
+        {
+          "id": "T20-P1",
+          "afirmacao": "A reação tipo 1 surge de repente, com piora das manchas que já existiam e aparecimento de lesões novas, muitas vezes com inflamação dos nervos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "Ocorre abruptamente, com piora das lesões de pele preexistentes e aparecimento de novas lesões, muitas vezes acompanhada por intensa inflamação de nervos periféricos."
+        },
+        {
+          "id": "T20-P2",
+          "afirmacao": "As manchas ficam mais visíveis, avermelhadas/arroxeadas, inchadas e às vezes doloridas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "As lesões cutâneas tornam-se mais visíveis, com coloração eritemato-vinhosa, edemaciadas, algumas vezes dolorosas."
+        },
+        {
+          "id": "T20-P3",
+          "afirmacao": "Sinais de comprometimento dos nervos: piora da dor nos braços e pernas, deixar cair objetos das mãos e aumento da dormência nas mãos e pés.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "deve-se atentar às queixas do paciente em relação à piora das dores nos membros, queda mais frequente dos objetos das mãos e surgimento ou aumento da dormência nas mãos e pés"
+        },
+        {
+          "id": "T20-P4",
+          "afirmacao": "As reações podem acontecer antes, durante ou depois do tratamento da hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+          "secao_ou_pagina": "6.5 Reações hansênicas, p. 33–34 (PDF 35–36)",
+          "trecho": "Resultam da ativação de resposta imune contra o M. leprae e podem ocorrer antes, durante ou após o tratamento da infecção."
+        },
+        {
+          "id": "T20-P5",
+          "afirmacao": "Na reação tipo 1 as manchas da hanseníase ficam inflamadas e pode haver febre leve, mas a pessoa não se sente muito doente (diferente da tipo 2, com caroços novos e febre alta).",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0041",
+          "secao_ou_pagina": "4.2 The four steps in managing leprosy reactions, p. 28–29 (PDF 40–41)",
+          "trecho": "Type 1 reaction: – The leprosy skin lesions are inflamed; – There may be a slight fever, but the patient doesn’t feel too ill."
+        },
+        {
+          "id": "T20-P6",
+          "afirmacao": "Pelo risco de dano aos nervos, o tratamento da reação tipo 1 deve começar imediatamente (procurar o serviço de saúde sem demora).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "Em vista do risco de dano neural, o tratamento da reação tipo 1 deve ser instituído imediatamente"
+        }
+      ],
+      "pontos_proibidos": [
+        "Orientar a parar o tratamento da hanseníase (PQT-U) durante a reação (o PCDT manda mantê-la).",
+        "Orientar a esperar a reação passar sozinha sem procurar o serviço de saúde.",
+        "Orientar a tomar corticoide ou outro remédio por conta própria.",
+        "Afirmar que a reação só acontece antes do tratamento ou que, depois da alta, não há mais risco de reação."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (itens 6.5 e 6.5.1) descreve os sinais da reação tipo 1 e a necessidade de tratamento imediato; o guia técnico da OMS de 2020 (cap. 4 e 5) traz a descrição simples e a diferenciação da reação tipo 2.",
+      "comportamento_esperado": "Responder em linguagem simples, descrevendo os sinais na pele e nos nervos e orientando a procurar o serviço de saúde imediatamente, sem interromper a PQT-U.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A022",
+    "pergunta": "Qual é o conteúdo detalhado das seções do PCDT da hanseníase que foram excluídas do conjunto documental deste estudo?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os trechos fornecidos **não identificam quais seções foram excluídas do conjunto documental deste estudo**, nem descrevem o conteúdo detalhado dessas seções. Portanto, não é possível determinar, com base neles, quais seriam as seções excluídas ou resumir seu conteúdo.\n\nO que o PCDT informa é que ficam fora de seu escopo os critérios diagnósticos para casos raros com apresentações atípicas e a conduta terapêutica para pessoas com intolerância grave ou contraindicação absoluta a todos os medicamentos aprovados; esses casos devem ser encaminhados à Atenção Especializada e discutidos individualmente [1]. Isso descreve **situações excluídas do escopo do PCDT**, não necessariamente seções excluídas do conjunto documental do estudo.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0051",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 8 Critérios de inclusão. p. 51–55."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "O conteúdo detalhado das partes do PCDT da hanseníase que ficaram de fora não está no conjunto de documentos deste estudo, então não é possível descrevê-lo. O que o conjunto registra é apenas quais partes foram excluídas: as referências, os apêndices (fluxogramas e metodologia de busca) e os anexos (portaria, painel GRADE e formulários). Para conhecer esse conteúdo, é preciso consultar a versão completa do PCDT publicada pelo Ministério da Saúde.",
+      "pontos_chave": [],
+      "pontos_proibidos": [
+        "Descrever passo a passo os fluxogramas, o texto da portaria, o painel GRADE ou os formulários do PCDT como se estivessem no conjunto documental.",
+        "Afirmar que o conjunto documental contém os apêndices ou anexos do PCDT."
+      ],
+      "cobertura": "nao_respondivel",
+      "justificativa_cobertura": "O cabeçalho do corpus do PCDT registra que foram excluídos referências, apêndices (fluxogramas e metodologia de busca) e anexos (portaria, painel GRADE e formulários), mas o conteúdo dessas seções não está no corpus. O texto do PCDT apenas remete a eles (por exemplo, 'Fluxogramas 3 e 4 do Apêndice A', 'Anexo E', 'Anexo F').",
+      "comportamento_esperado": "Reconhecer que o conteúdo das seções excluídas não está disponível, podendo dizer quais seções foram excluídas, sem inventar o conteúdo, e indicar a versão integral do PCDT publicada pelo Ministério da Saúde.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A031",
+    "pergunta": "Qual laboratório fabrica os medicamentos fornecidos para o tratamento da hanseníase no Brasil?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os trechos fornecidos **não informam qual laboratório fabrica os medicamentos** fornecidos para o tratamento da hanseníase no Brasil. O protocolo brasileiro descreve o esquema terapêutico e a gestão dos medicamentos, mas não identifica o fabricante. [1][2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0128",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 16 Gestão, regulação e controle. p. 107–109."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0055",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 56."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Os documentos usados como base não informam qual laboratório ou empresa fabrica os medicamentos usados no tratamento da hanseníase no Brasil. O protocolo brasileiro diz apenas que os remédios são disponibilizados exclusivamente para o tratamento da hanseníase e distribuídos pelo SUS, em apresentações para adultos e crianças, e um documento da OMS menciona, sem dar nomes, que as cartelas podem ser doadas por uma empresa farmacêutica e distribuídas pela OMS aos programas nacionais. Para saber o fabricante, é preciso consultar o Ministério da Saúde ou as informações da embalagem e da bula do medicamento.",
+      "pontos_chave": [],
+      "pontos_proibidos": [
+        "Citar o nome de qualquer laboratório, empresa ou fabricante como responsável pelos medicamentos da hanseníase no Brasil, pois nenhum documento do corpus traz essa informação.",
+        "Afirmar que o paciente precisa comprar os medicamentos da PQT-U em farmácia."
+      ],
+      "cobertura": "nao_respondivel",
+      "justificativa_cobertura": "Nenhum documento do corpus nomeia o fabricante dos medicamentos. O PCDT 2022 (10.1.1) afirma apenas que são distribuídos pelo SUS, e as diretrizes da OMS 2018 mencionam doação por 'uma empresa farmacêutica' sem nomeá-la.",
+      "comportamento_esperado": "Reconhecer que os documentos não informam o fabricante, não inventar nomes e indicar o Ministério da Saúde ou a embalagem e a bula como fontes. Pode mencionar que os medicamentos são distribuídos pelo SUS.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A042",
+    "pergunta": "Em relação ao tratamento de hanseníase, quando se estender até 18 meses?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "**O tratamento pode chegar a 18 meses nos casos de hanseníase resistente à rifampicina**, conforme o esquema de segunda linha da OMS: 6 meses com pelo menos dois medicamentos de segunda linha, além de clofazimina, seguidos por mais 18 meses com clofazimina e um desses medicamentos. [1]\n\nSe também houver resistência à ofloxacina, a OMS recomenda não usar uma quinolona: são 6 meses de claritromicina, minociclina e clofazimina, seguidos por mais 18 meses de claritromicina ou minociclina com clofazimina. [1]\n\nIsso é diferente da PQT-U habitual: no protocolo brasileiro, o tratamento é de 6 meses para casos PB e 12 meses para casos MB; o limite de até 18 meses citado para MB refere-se ao intervalo para administrar as 12 doses mensais supervisionadas, não a uma extensão do tratamento para 18 meses. [2] No Brasil, a referência para a prática é o protocolo do Ministério da Saúde.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0036",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 22."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 58–59."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "No PCDT da Hanseníase (2022), o prazo de até 18 meses refere-se ao intervalo máximo para completar as 12 doses mensais supervisionadas da PQT-U nos casos multibacilares (MB): a PQT-U é encerrada após 12 doses administradas em até 18 meses, com alta por cura e saída do registro ativo do Sinan. Para os casos paucibacilares (PB), o equivalente é de 6 doses mensais supervisionadas em até 9 meses. Isso não autoriza prolongar o tratamento: o PCDT veda a extensão da PQT-U por mais de 12 meses (isto é, além das 12 doses). Se ao final houver suspeita de infecção ativa persistente, deve-se investigar resistência do M. leprae, e somente os casos com resistência comprovada recebem novo ciclo com esquema de segunda linha (nos casos de resistência à rifampicina, 6 meses iniciais seguidos de 18 meses, com duração máxima de 24 meses).",
+      "pontos_chave": [
+        {
+          "id": "T11-P1",
+          "afirmacao": "Nos casos multibacilares, as 12 doses mensais supervisionadas da PQT-U devem ser completadas em um intervalo de até 18 meses, quando o paciente recebe alta por cura.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota a), p. 58–59 (PDF 60–61)",
+          "trecho": "após 12 doses mensais supervisionadas em um intervalo de até 18 meses para os casos multibacilares, quando os pacientes deverão receber alta por cura"
+        },
+        {
+          "id": "T11-P2",
+          "afirmacao": "Nos casos paucibacilares, as 6 doses mensais supervisionadas devem ser completadas em até 9 meses (o limite de 18 meses vale para MB, não para PB).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota a), p. 58–59 (PDF 60–61)",
+          "trecho": "A PQT-U deverá ser interrompida após a administração de seis doses mensais supervisionadas em intervalo de até nove meses para os casos paucibacilares"
+        },
+        {
+          "id": "T11-P3",
+          "afirmacao": "O PCDT não autoriza estender o tratamento com PQT-U por mais de 12 meses; o prazo de 18 meses é janela para completar as doses, não prolongamento do tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 59 (PDF 61)",
+          "trecho": "Não está autorizada por este Protocolo a extensão do tratamento com PQT-U por mais de 12 meses."
+        },
+        {
+          "id": "T11-P4",
+          "afirmacao": "Havendo suspeita de infecção ativa ao final da PQT-U, investiga-se resistência; só casos com resistência comprovada recebem novo ciclo com esquema de segunda linha.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 59 (PDF 61)",
+          "trecho": "Apenas os casos com resistência medicamentosa comprovada deverão ser submetidos a um novo ciclo de tratamento, com o esquema terapêutico de segunda linha correspondente à mutação detectada"
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a PQT-U para casos MB deve durar 18 meses ou ter 18 doses (o esquema é de 12 doses, completadas em até 18 meses).",
+        "Afirmar que a PQT-U pode ser prolongada além de 12 meses/12 doses quando as lesões não regridem.",
+        "Afirmar que o prazo de até 18 meses se aplica aos casos paucibacilares (para PB o prazo é de até 9 meses para 6 doses).",
+        "Recomendar reiniciar ou repetir a PQT-U sem resistência comprovada ou critério de recidiva."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (Quadro 1, nota a) define explicitamente que as 12 doses da PQT-U para MB são completadas em intervalo de até 18 meses, e o item 10.1.1 veda a extensão da PQT-U por mais de 12 meses.",
+      "comportamento_esperado": "Responder: o prazo de até 18 meses é a janela para completar as 12 doses supervisionadas nos casos MB (PB: 6 doses em até 9 meses), sem prolongamento do tratamento além de 12 doses; persistência de atividade leva à investigação de resistência.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A052",
+    "pergunta": "Por que o estigma e a discriminação podem acontecer com a pessoa acometida pela hanseníase?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "O estigma e a discriminação podem surgir de **superstições, informações equivocadas e medo** relacionados à transmissão e à cura da hanseníase, além do receio de incapacidades físicas, sobretudo quando o diagnóstico é tardio. Essas crenças podem levar à exclusão social e a atitudes injustas contra a pessoa acometida. [1]\n\n- **Medo e desconhecimento:** podem alimentar fantasias e estereótipos sobre a doença, dificultar o diagnóstico precoce e o tratamento oportuno e afetar relações sociais, saúde mental e qualidade de vida. [1][2]\n- **Incapacidades visíveis ou temidas:** o receio das limitações físicas que a hanseníase pode causar pode contribuir para a estigmatização. [1][2]\n- **Estigma internalizado:** a própria pessoa pode incorporar crenças e estereótipos negativos sobre a doença, o que é chamado de autoestigma. [3]\n- **Rejeição e exclusão:** o medo de não ser compreendida ou acolhida pode levar a pessoa a esconder sua condição e se isolar. [4]\n- **Discriminação nos serviços de saúde:** também pode ocorrer em instituições, inclusive por meio de recusa ou transferência do atendimento, criando barreiras ao cuidado. [5]\n\nAssim, o estigma não decorre apenas da condição de saúde: também é produzido por crenças sociais, relações interpessoais e práticas institucionais discriminatórias. [1][3][5]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 79."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0003",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 15–16."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0091",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 80–81."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0096",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 84."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0090",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 79–80."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "O estigma da hanseníase se formou ao longo de muitos anos de superstições e informações erradas sobre como a doença passa de uma pessoa para outra e sobre sua cura, somadas ao medo das sequelas físicas que ela pode deixar quando é descoberta tarde. Esse estigma é feito de fantasias, medos e valores da sociedade, e esse receio pode atingir a comunidade e até os profissionais de saúde. A discriminação é o tratamento injusto ou negativo dado a alguém por ter a doença e pode trazer prejuízos à saúde física, mental e social, além de desemprego. A OMS lembra que o estigma e a discriminação contra as pessoas afetadas e suas famílias são quase tão antigos quanto os registros históricos. Por medo da rejeição, a pessoa pode esconder sintomas e se isolar, o que atrapalha o diagnóstico e o tratamento.",
+      "pontos_chave": [
+        {
+          "id": "T43-P1",
+          "afirmacao": "O estigma se desenvolveu ao longo de anos de superstições e enganos, ligados às crenças sobre transmissão e cura.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+          "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+          "trecho": "Na hanseníase, o estigma se desenvolveu ao longo de muitos anos de superstições e enganos, estabelecendo discriminação e exclusão social em virtude das crenças sobre sua transmissão e cura"
+        },
+        {
+          "id": "T43-P2",
+          "afirmacao": "O medo da incapacidade física causada pelo diagnóstico tardio contribui para o estigma.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+          "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+          "trecho": "além do temor da incapacidade física que a doença pode ocasionar em decorrência do diagnóstico tardio"
+        },
+        {
+          "id": "T43-P3",
+          "afirmacao": "O estigma envolve fantasias, medos e valores e pode causar prejuízos à saúde física, psicológica e social e desemprego.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+          "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+          "trecho": "O estigma ligado à hanseníase é representado por um conjunto de fatores: fantasias, medos, valores, entre outros, podendo causar prejuízos à saúde física, psicológica e social, assim como o desemprego"
+        },
+        {
+          "id": "T43-P4",
+          "afirmacao": "O receio associado à doença pode se estender à comunidade e aos profissionais de saúde.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+          "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+          "trecho": "Esse receio pode se estender à comunidade e aos profissionais de saúde."
+        },
+        {
+          "id": "T43-P5",
+          "afirmacao": "O estigma e a discriminação contra pessoas afetadas e suas famílias são historicamente muito antigos.",
+          "documento": "oms-estrategia-global-hanseniase-2021-2030",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028",
+          "secao_ou_pagina": "Pilar estratégico 4, p. 18 (PDF 18)",
+          "trecho": "O estigma e a discriminação contra as pessoas afetadas pela hanseníase e suas famílias são quase tão antigos quanto os registros históricos."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que o estigma se justifica porque a hanseníase seria incurável ou que a pessoa em tratamento deve ser isolada.",
+        "Atribuir o estigma a uma culpa da própria pessoa acometida."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (10.2.1.1) explica a origem do estigma e da discriminação, e a Estratégia Global da OMS (Pilar 4) complementa com o caráter histórico e os efeitos sociais.",
+      "comportamento_esperado": "Responder em linguagem simples, explicando as causas do estigma (crenças erradas sobre transmissão e cura, medo das incapacidades, história antiga de discriminação) e suas consequências.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A062",
+    "pergunta": "Qual tratamento deve ser usado para uma outra doença de pele que pode se parecer com hanseníase?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os trechos fornecidos **não identificam uma doença de pele específica nem informam como tratá-la**. Portanto, não é possível indicar um tratamento para essa outra doença com base nos documentos consultados.\n\nEles orientam que, diante de dúvida diagnóstica entre hanseníase e outra condição, a avaliação considere os sinais cardinais da hanseníase e, se a dúvida persistir na Atenção Primária, o encaminhamento para a Atenção Secundária [1][2][3].\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0002",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xii–xiii."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0028",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Diagnóstico. p. 17."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Os documentos usados como base não dizem quais outras doenças de pele podem se parecer com hanseníase nem como tratá-las; eles tratam apenas da hanseníase. O protocolo brasileiro orienta que, quando houver dúvida sobre o diagnóstico na unidade básica de saúde, a pessoa seja encaminhada para um serviço especializado. O tratamento de outra doença de pele depende de qual doença é, e isso precisa ser definido por um profissional de saúde, com base em fontes próprias para essa doença.",
+      "pontos_chave": [],
+      "pontos_proibidos": [
+        "Recomendar um tratamento específico (por exemplo, pomadas, antifúngicos ou corticoides) para outra doença de pele como se estivesse nos documentos.",
+        "Recomendar iniciar a PQT-U em quem tem lesão de pele sem diagnóstico confirmado de hanseníase."
+      ],
+      "cobertura": "nao_respondivel",
+      "justificativa_cobertura": "O corpus não lista dermatoses que fazem diagnóstico diferencial com hanseníase nem os tratamentos delas. Só lista neuropatias para o diagnóstico diferencial da forma neural pura (PCDT 6.4.5) e orienta encaminhar para a Atenção Secundária em caso de dúvida diagnóstica (PCDT 6.1).",
+      "comportamento_esperado": "Reconhecer que os documentos não respondem, não inventar tratamentos e orientar a procurar avaliação profissional; pode citar o encaminhamento para atenção especializada em caso de dúvida diagnóstica.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A071",
+    "pergunta": "Quem mora com uma pessoa com hanseníase precisa de avaliação, vacina BCG ou quimioprofilaxia? E qual é a cobertura dessas medidas no meu município?",
+    "registro": "leigo",
+    "composta": true,
+    "resposta_da_ia": "**Sim.** Os contatos domiciliares devem ser avaliados para excluir hanseníase; a BCG pode ser ofertada conforme o histórico vacinal, e a quimioprofilaxia com rifampicina em dose única é uma recomendação da OMS sob condições específicas. **Não há nos trechos dados de cobertura por município**, então não consigo informar a cobertura do seu município.\n\n- **Avaliação:** a OMS recomenda examinar os contatos domiciliares, com consentimento da pessoa diagnosticada. A Estratégia Nacional brasileira também prevê exame clínico criterioso dos contatos registrados menores de 15 anos, em municípios abrangidos pela ação descrita no documento. [1][2]\n- **BCG:** o protocolo brasileiro recomenda ofertar imunoprofilaxia a contatos com mais de 1 ano que não foram vacinados ou receberam apenas uma dose; a comprovação pode ser feita pelo cartão de vacina ou pela cicatriz vacinal. [3] A OMS recomenda manter a BCG ao nascimento, mas não recomenda repetir a vacinação para hanseníase. [1][4] No Brasil, a referência para a prática é o protocolo do Ministério da Saúde.\n- **Quimioprofilaxia:** a OMS recomenda rifampicina em dose única para contatos adultos e crianças a partir de 2 anos, após excluir hanseníase e tuberculose e verificar ausência de contraindicações; a implementação também depende de gestão adequada dos contatos e do consentimento da pessoa diagnosticada para divulgar o diagnóstico. [5] A OMS recomenda examinar contatos domiciliares e, com consentimento, também contatos de vizinhança e sociais. [1] Os trechos fornecidos não descrevem uma recomendação brasileira de quimioprofilaxia.\n\n**Sobre a cobertura municipal:** os documentos fornecidos não apresentam dados de cobertura de avaliação de contatos, BCG ou quimioprofilaxia por município. A Estratégia Nacional menciona ações para grupos de municípios, mas o trecho não informa a cobertura de um município específico. [2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 2. p. 16."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0033",
+        "referencia": "Ministério da Saúde (Brasil). Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030. 2024. Seção Ações estratégicas por grupos de municípios. p. 45–47."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 13.1 Imunoprofilaxia e monitoramento de contatos. p. 101–103."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0044",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 27."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0039",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 24–25."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Sim: pelo protocolo brasileiro (PCDT 2022), todas as pessoas que moram ou moraram com a pessoa com hanseníase nos últimos cinco anos devem ser examinadas no serviço de saúde. A vacina BCG é oferecida a quem tem mais de 1 ano e nunca tomou ou tomou só uma dose (confirmado pelo cartão de vacina ou pela cicatriz), mas não deve ser aplicada em gestantes, em pessoas com imunidade baixa, com câncer ou que usam corticoide em dose alta por mais de duas semanas. Quanto ao remédio preventivo (quimioprofilaxia com uma dose única do antibiótico rifampicina), a OMS o recomenda para contatos a partir de 2 anos, depois de descartar hanseníase e tuberculose, mas o protocolo brasileiro de 2022 incluído nos documentos não traz essa medida, e a Estratégia Nacional prevê pesquisas sobre sua efetividade. Os documentos não trazem a cobertura dessas medidas no seu município; essa informação deve ser buscada na secretaria municipal de saúde ou nos dados oficiais de vigilância.",
+      "pontos_chave": [
+        {
+          "id": "T42-P1",
+          "afirmacao": "Todos os contatos domiciliares devem passar por avaliação clínica.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+          "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+          "trecho": "orienta-se que todos os contatos domiciliares de um caso de hanseníase passem por avaliação clínica, conforme os Fluxogramas 3 e 4"
+        },
+        {
+          "id": "T42-P2",
+          "afirmacao": "A BCG é oferecida a contatos com mais de 1 ano que não foram vacinados ou receberam apenas uma dose.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+          "trecho": "Recomenda-se ofertar imunoprofilaxia aos contatos de pacientes com hanseníase, maiores de um ano de idade, não vacinados ou que receberam apenas uma dose da vacina BCG."
+        },
+        {
+          "id": "T42-P3",
+          "afirmacao": "A revacinação BCG é contraindicada em imunodeficiência, neoplasias malignas, corticoide em dose elevada e gestação.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+          "trecho": "A revacinação com BCG é contraindicada nas seguintes situações: › Portadores de imunodeficiência primária ou adquirida; › Pacientes acometidos por neoplasias malignas;"
+        },
+        {
+          "id": "T42-P4",
+          "afirmacao": "A OMS recomenda rifampicina em dose única como prevenção para contatos (2 anos ou mais), após excluir hanseníase e tuberculose.",
+          "documento": "oms-diretrizes-hanseniase-2018",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0039",
+          "secao_ou_pagina": "Parte II, 3 Profilaxia (3.1 Prevenção da hanseníase por quimioprofilaxia), p. 24–25 (PDF 42–43)",
+          "trecho": "O GDG recomenda o uso de SDR como tratamento preventivo para contatos de pacientes com hanseníase (adultos e crianças com idade igual ou superior a 2 anos), após a exclusão de casos de hanseníase e tuberculose"
+        },
+        {
+          "id": "T42-P5",
+          "afirmacao": "No Brasil, a Estratégia Nacional prevê pesquisas sobre a efetividade da quimioprofilaxia em contatos (não a adota como rotina no corpus).",
+          "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+          "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0027",
+          "secao_ou_pagina": "Ações estratégicas gerais (Pilar 2), p. 38–40 (PDF 39–41)",
+          "trecho": "6. Fomento a pesquisas sobre a efetividade da quimioprofilaxia em contatos."
+        }
+      ],
+      "pontos_proibidos": [
+        "Informar números ou percentuais de cobertura de avaliação de contatos, BCG ou quimioprofilaxia no município do usuário como se viessem dos documentos.",
+        "Dizer que a BCG pode ser aplicada em gestantes ou em pessoas com imunidade baixa.",
+        "Afirmar que o protocolo brasileiro de 2022 recomenda dar rifampicina preventiva aos contatos.",
+        "Dizer que quem mora com a pessoa não precisa ser examinado se não tiver sintomas."
+      ],
+      "cobertura": "parcial",
+      "justificativa_cobertura": "A parte sobre avaliação, BCG e quimioprofilaxia é respondida pelo PCDT 2022, pelas diretrizes da OMS 2018 e pela Estratégia Nacional. A cobertura dessas medidas no município do usuário não está em nenhum documento do corpus.",
+      "comportamento_esperado": "Responder em linguagem simples sobre avaliação dos contatos, BCG (com contraindicações) e a situação da quimioprofilaxia (recomendada pela OMS, não incluída no PCDT 2022). Declarar que a cobertura municipal não consta dos documentos, sem inventar dados, e indicar a secretaria municipal de saúde ou os sistemas oficiais de informação.",
+      "divergencias_entre_documentos": "OMS 2018 e Estratégia Global 2021-2030 recomendam quimioprofilaxia com rifampicina em dose única para contatos; o PCDT 2022 não a inclui e a Estratégia Nacional 2024-2030 prevê pesquisas sobre sua efetividade. A Estratégia Global afirma que a repetição da BCG para hanseníase não é recomendada, enquanto o PCDT 2022 oferta BCG a quem recebeu apenas uma dose. A referência segue o PCDT 2022."
+    }
+  },
+  {
+    "codigo": "A082",
+    "pergunta": "O que é a dapsona, para que serve no tratamento da hanseníase e quais cuidados ela exige?",
+    "registro": "leigo",
+    "composta": true,
+    "resposta_da_ia": "A **dapsona** é uma sulfona com ação contra *M. leprae* e integra, em associação com outros medicamentos, a poliquimioterapia (PQT) da hanseníase. Ela não deve ser usada isoladamente: a monoterapia favoreceu o surgimento de resistência medicamentosa. [1]\n\n### Para que serve\n\n- A dapsona faz parte dos esquemas combinados para tratar hanseníase. A OMS recomenda rifampicina, dapsona e clofazimina para hanseníase paucibacilar (PB) e multibacilar (MB), com duração de 6 meses para PB e 12 meses para MB. [2]\n- No Brasil, a referência para a prática é o protocolo do Ministério da Saúde. [1] Os trechos fornecidos não detalham o esquema brasileiro de primeira linha nem as doses usuais de dapsona; portanto, não é possível especificá-los aqui.\n\n### Cuidados e reações adversas\n\n- A dapsona é o componente da PQT mais frequentemente associado a reações adversas, especialmente alterações hematológicas. As reações são registradas com maior frequência no primeiro trimestre do tratamento. [3]\n- A anemia associada à dapsona é mais frequente em mulheres; o protocolo recomenda vigilância mais cuidadosa de queixas sugestivas de anemia e monitoramento mais frequente do hemograma nesse grupo. Idosos também requerem cuidado especial, pois reações adversas à PQT são mais reportadas nessa faixa etária. [3]\n- A reação adversa mais grave à dapsona descrita no protocolo é a **síndrome sulfônica**. [3]\n- Reações adversas relevantes e consideradas irreversíveis podem caracterizar falha terapêutica e levar à substituição do medicamento por esquema de segunda linha. A decisão exige avaliação criteriosa, para evitar substituição inadequada e o risco de resistência medicamentosa; toda reação adversa a medicamento deve ser notificada para farmacovigilância. [3][4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0053",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1 Tratamento farmacológico. p. 55–56."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0031",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 19."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 76–77."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0088",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 78."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A dapsona é um antibiótico, um dos três remédios que formam o tratamento da hanseníase (junto com a rifampicina e a clofazimina), chamado PQT-U. Ela atrapalha a bactéria de produzir uma substância de que precisa para crescer (o ácido fólico); sozinha tem efeito fraco, por isso é sempre usada junto com os outros remédios. No adulto, a dose é de 100 mg por dia, tomada em casa, além da dose do mês tomada na unidade de saúde. O principal cuidado é com o sangue: ela pode destruir glóbulos vermelhos e, mais raramente, causar anemia importante, sobretudo nos primeiros meses, por isso se recomenda acompanhar com exames de sangue e ficar atento a sinais de anemia, com mais atenção para mulheres e idosos. Também exige cuidado quem usa remédios para malária ou tem deficiência de uma enzima chamada G6PD, e qualquer reação deve ser contada à equipe de saúde; na gravidez, o PCDT recomenda manter a dapsona.",
+      "pontos_chave": [
+        {
+          "id": "T14-P1",
+          "afirmacao": "A dapsona é um dos três medicamentos (rifampicina, dapsona e clofazimina) da poliquimioterapia usada para curar a hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0055",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 56 (PDF 58)",
+          "trecho": "Consiste na associação de três antimicrobianos (rifampicina, dapsona e clofazimina), que leva à cura em até 98% dos casos tratados"
+        },
+        {
+          "id": "T14-P2",
+          "afirmacao": "A dapsona impede a bactéria de usar o PABA para produzir ácido fólico, tendo ação fracamente bactericida.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+          "secao_ou_pagina": "10.1.5.3 Dapsona, p. 64–65 (PDF 66–67)",
+          "trecho": "A dapsona é um antagonista competitivo do ácido paraminobenzoico (PABA) que impede a sua utilização pela bactéria para a síntese do ácido fólico, de modo que é fracamente bactericida."
+        },
+        {
+          "id": "T14-P3",
+          "afirmacao": "No adulto (acima de 50 kg), a dapsona é tomada diariamente na dose de 100 mg, além da dose mensal supervisionada.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1), p. 57–58 (PDF 59–60)",
+          "trecho": "Dose diária autoadministrada: •Clofazimina 50mg diariamente •Dapsona 100mg diariamente"
+        },
+        {
+          "id": "T14-P4",
+          "afirmacao": "A dapsona pode causar hemólise (destruição de glóbulos vermelhos) e, mais raramente, anemia importante.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+          "trecho": "A dapsona geralmente é bem tolerada nas doses recomendadas para a hanseníase, mas pode causar hemólise e, mais raramente, anemia significativa."
+        },
+        {
+          "id": "T14-P5",
+          "afirmacao": "Recomenda-se acompanhar os exames de sangue nos primeiros meses de tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+          "trecho": "Recomenda-se, sempre que possível, o monitoramento dos níveis hematológicos nos primeiros meses de tratamento."
+        },
+        {
+          "id": "T14-P6",
+          "afirmacao": "É preciso atenção a sinais de hemólise especialmente em quem usa remédios contra malária ou tem deficiência de G6PD.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0068",
+          "secao_ou_pagina": "10.1.5.3 Dapsona, p. 64–65 (PDF 66–67)",
+          "trecho": "Deve-se monitorar cuidadosamente o surgimento de sinais e sintomas de reações hemolíticas, particularmente em pacientes em uso concomitante de agentes antimaláricos"
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a dapsona pode ser usada sozinha para tratar a hanseníase.",
+        "Afirmar que é obrigatório fazer o exame de G6PD antes de começar o tratamento (o PCDT diz que não é necessário testar rotineiramente).",
+        "Orientar a suspender a dapsona durante a gravidez (o PCDT recomenda mantê-la).",
+        "Orientar a parar a dapsona por conta própria ao surgir algum sintoma, em vez de procurar a equipe de saúde."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 descreve a dapsona (10.1.5.3), sua posição na PQT-U e posologia (Quadro 1) e os eventos adversos, monitoramento e interações (Quadros 2 e 3, item 10.1.7), cobrindo as três partes da pergunta composta.",
+      "comportamento_esperado": "Responder às três partes (o que é, para que serve, cuidados) em linguagem simples, sem jargão não explicado.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A092",
+    "pergunta": "O que eu devo saber sobre o pós-alta da PQT?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Após a alta por cura da PQT, o risco de reações hansênicas, neurite e dano neural **não termina necessariamente com o tratamento**. Oriente a pessoa a procurar a unidade de saúde se surgirem essas intercorrências ou se tiver dúvidas sobre sua evolução. [1]\n\n### O que acompanhar e orientar\n\n- **Reações em curso na alta:** mantenha consultas regulares na UBS, com tratamento e monitoramento da avaliação neurológica simplificada (ANS) enquanto persistirem as reações; isso pode se estender por até cinco anos após a PQT-U. Monitore também comorbidades associadas, especialmente as ligadas à persistência das reações. [1]\n- **Vigilância pós-tratamento:** a OMS destaca a vigilância para identificar e acompanhar reações, dor neuropática, recidiva e agravamento ou surgimento de incapacidades. Recomenda avaliações completas, incluindo função neural e escore olho-mão-pé, no início e no fim da PQT, seguidas de vigilância pós-tratamento para quem tem maior risco ou precisa de cuidados contínuos. [2]\n- **Lesões que persistem:** a regressão das lesões pode levar meses ou anos, sobretudo em casos multibacilares com hansenomas, lesões infiltradas ou índice baciloscópico elevado; persistência, por si só, não significa que se deva prolongar a PQT-U. [3][4]\n- **Suspeita de resposta inadequada ou resistência:** se as lesões persistirem e levantarem dúvida sobre a resposta, investigue resistência medicamentosa. O protocolo também indica investigação quando hansenomas ou lesões infiltradas permanecem clinicamente inalterados, ou quando o índice baciloscópico não cai ou aumenta, comparando os mesmos locais de coleta e respeitando intervalo mínimo de um ano entre exames. [1][5]\n- **Acompanhamento sem antibiótico:** quando indicado, a pessoa pode seguir em acompanhamento clínico regular após sair do registro ativo, sem PQT-U; a baciloscopia pode ser repetida para acompanhar a queda do índice baciloscópico, com intervalo não inferior a um ano e nos mesmos locais de coleta. [1][4]\n- **Recidiva:** o protocolo brasileiro inclui como critério de investigação o reaparecimento de lesões cutâneas e/ou neurológicas compatíveis após cinco anos do tratamento prévio; a OMS também aponta a recidiva como evento possível após o tratamento e destaca a necessidade de confirmação laboratorial. [2][5]\n\nNo Brasil, a referência para a prática é o protocolo do Ministério da Saúde. Ele não autoriza estender a PQT-U por mais de 12 meses; diante de suspeita de infecção ativa ao final do tratamento, orienta investigar resistência, e novo ciclo só é indicado para resistência comprovada, conforme o esquema de segunda linha correspondente. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 14.2 Monitoramento após o tratamento farmacológico com PQT-U. p. 103–104."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0025",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 3. p. 17."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 58–59."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 59."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11.3 Critérios para investigação da resistência secundária do M. leprae a antimicrobianos, após PQT-U. p. 90–91."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Depois da alta por cura, ainda podem acontecer reações da hanseníase e inflamação dos nervos (neurite), e o risco de dano aos nervos continua por um tempo que varia conforme o tipo da doença. Por isso, volte à unidade de saúde se surgir qualquer um desses problemas, como dor, dormência ou fraqueza, ou se tiver qualquer dúvida. Quem recebe alta ainda com reação continua com consultas marcadas na UBS, recebendo remédio e fazendo a avaliação dos nervos enquanto a reação durar, o que pode levar até cerca de cinco anos. As manchas podem demorar meses ou anos para sumir depois do tratamento. Leve sempre a caderneta de saúde da pessoa acometida pela hanseníase quando for ao serviço de saúde, também depois da alta.",
+      "pontos_chave": [
+        {
+          "id": "T37-P1",
+          "afirmacao": "Mesmo após a alta por cura, continua existindo risco de reações e/ou neurite e de dano aos nervos, por um período variável.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "devem ser informados sobre a manutenção do risco de episódios reacionais e/ou neurite, persistindo o risco de dano neural por um período variável"
+        },
+        {
+          "id": "T37-P2",
+          "afirmacao": "A pessoa deve retornar à unidade de saúde diante de reações, neurite ou qualquer dúvida no pós-alta.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "devem ser orientados a retornar à unidade de saúde diante de qualquer dessas intercorrências, ou quando tiverem qualquer dúvida sobre a sua evolução no período pós-alta"
+        },
+        {
+          "id": "T37-P3",
+          "afirmacao": "Quem recebe alta durante uma reação continua com consultas agendadas na UBS.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "Os pacientes que recebem alta por cura na vigência de episódios reacionais devem continuar sendo regulamente agendados para consultas na Unidade Básica de Saúde (UBS)"
+        },
+        {
+          "id": "T37-P4",
+          "afirmacao": "O acompanhamento com avaliação dos nervos continua enquanto durarem as reações, o que pode levar até cerca de cinco anos após a PQT-U.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "monitorados por meio da ANS enquanto persistirem as reações, o que pode acontecer por períodos longos, estimados em até cinco anos após o tratamento com PQT-U."
+        },
+        {
+          "id": "T37-P5",
+          "afirmacao": "As manchas/lesões de pele podem levar meses ou anos para regredir após a PQT.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 58–59 (PDF 60–61)",
+          "trecho": "A regressão das lesões dermatológicas da hanseníase, durante e após o uso da poliquimioterapia, é bastante variável, podendo levar meses ou anos para ocorrer."
+        },
+        {
+          "id": "T37-P6",
+          "afirmacao": "A pessoa deve levar a caderneta de saúde ao serviço de saúde também no acompanhamento pós-alta.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0126",
+          "secao_ou_pagina": "14.3 A caderneta de saúde da pessoa acometida pela hanseníase, p. 104–105 (PDF 106–107)",
+          "trecho": "O usuário deverá ter sempre consigo a sua caderneta quando necessitar ir ao serviço de saúde durante o tratamento e o acompanhamento pós-alta"
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que, após a alta, não há mais risco de reação, neurite ou dano aos nervos.",
+        "Orientar a pessoa a voltar a tomar a PQT por conta própria ou afirmar que manchas persistentes exigem repetir/prolongar a PQT.",
+        "Afirmar que após a alta não é preciso voltar à unidade de saúde mesmo com dor, dormência ou fraqueza."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (14.2 e 14.3) descreve as orientações na alta (risco persistente de reações/neurite, retorno à unidade), o seguimento de quem tem alta em reação (até cinco anos) e o uso da caderneta no pós-alta; o item 10.1.1 explica a regressão lenta das lesões.",
+      "comportamento_esperado": "Responder em linguagem simples com as orientações do pós-alta: risco persistente de reações e neurite, quando retornar, seguimento de quem tem alta em reação, regressão lenta das manchas e uso da caderneta.",
+      "divergencias_entre_documentos": "O guia da OMS de 2020 recomenda que pacientes com alto risco de incapacidade sejam avaliados ao menos a cada três meses durante a PQT e até um ano após a alta (no mínimo 9 vezes em 24 meses); o PCDT 2022 não fixa calendário de avaliações pós-alta para todos, prevendo seguimento agendado para quem tem alta em reação e retorno diante de intercorrências. A referência segue o PCDT."
+    }
+  }
+]

@@ -1,0 +1,880 @@
+[
+  {
+    "codigo": "A001",
+    "pergunta": "Quais efeitos colaterais podem aparecer durante o tratamento da hanseníase?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os efeitos colaterais variam conforme o medicamento. Na poliquimioterapia única (PQT-U), os mais relevantes descritos são alterações no sangue associadas à dapsona e alterações na pele e no trato gastrointestinal associadas à clofazimina. [1][2][3]\n\n### Medicamentos da PQT-U\n\n- **Dapsona:** pode causar hemólise e, mais raramente, anemia significativa; também foram descritos casos raros de alterações no fígado ou nos rins, agranulocitose e psicose. As alterações hematológicas são as reações adversas mais frequentemente associadas à dapsona e costumam ser registradas no primeiro trimestre do tratamento. [1][2]\n- **Clofazimina:** pode causar pigmentação da pele, que varia de avermelhada a castanho-escura, e coloração rosada da urina, do suor ou da expectoração. Também pode causar ressecamento e descamação da pele (ictiose) e sintomas gastrointestinais, como cólicas, diarreia e perda de peso. [1]\n- **Rifampicina:** pode causar aumento leve e transitório das enzimas do fígado; o protocolo descreve esse efeito como raro nas doses e intervalos recomendados para hanseníase. [1]\n\n### Outros medicamentos usados em situações específicas\n\n- **Talidomida:** pode causar neuropatia periférica, que pode ser irreversível, ou agravar uma neuropatia já existente. Sinais descritos incluem formigamento, sensações anormais, desconforto, alteração da coordenação ou fraqueza. Também foram observadas reduções de células brancas do sangue, incluindo neutropenia. [4]\n- **Pentoxifilina:** podem ocorrer tontura, dor de cabeça, alterações gastrointestinais, coceira ou vermelhidão na pele, entre outros efeitos; o protocolo também lista eventos cardiovasculares, alterações hepáticas e reações alérgicas graves. [4]\n\nA pigmentação causada pela clofazimina, por si só, não é critério para suspender o medicamento, embora possa afetar a aceitação do tratamento. [1] Se surgirem sintomas preocupantes — especialmente fraqueza ou alterações de sensibilidade durante o uso de talidomida — é necessária avaliação clínica; o protocolo recomenda reavaliar imediatamente a talidomida diante de achados sugestivos de neuropatia. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 71–72."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 76–77."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57–58."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 73–74."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "O tratamento da hanseníase usa três remédios juntos (rifampicina, dapsona e clofazimina), e cada um pode causar alguns efeitos. A clofazimina é a que mais aparece: deixa a pele mais escura ou avermelhada (cor que costuma sumir alguns meses depois de terminar o remédio), pode deixar a urina, o suor e o catarro rosados, ressecar e descamar a pele das pernas e braços e causar cólicas, diarreia e perda de peso. A dapsona é o remédio que mais causa problemas, principalmente no sangue: pode destruir glóbulos vermelhos e, mais raramente, causar anemia importante, por isso o exame de sangue é acompanhado nos primeiros meses. A rifampicina raramente dá problemas nas doses usadas para hanseníase; pode haver uma leve alteração passageira nos exames do fígado, que não é motivo para parar o tratamento. Ao notar qualquer mudança, a pessoa deve contar à equipe de saúde em vez de parar o remédio por conta própria.",
+      "pontos_chave": [
+        {
+          "id": "T12-P1",
+          "afirmacao": "O efeito mais comum e visível da clofazimina é a mudança de cor da pele (de vermelho a castanho-escuro).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "O efeito mais comum e perceptível é a pigmentação da pele, variando de vermelho a castanho-escuro, dependendo da dosagem."
+        },
+        {
+          "id": "T12-P2",
+          "afirmacao": "A clofazimina pode deixar urina, catarro e suor rosados, principalmente após a dose mensal.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "Pode haver coloração rosada da urina, expectoração e suor, especialmente após a ingestão da dose mensal supervisionada."
+        },
+        {
+          "id": "T12-P3",
+          "afirmacao": "A clofazimina pode causar pele seca e descamativa (ictiose) e efeitos no intestino, como cólicas, diarreia e perda de peso.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "Os efeitos gastrointestinais, que variam de cólicas leves a diarreia e perda de peso, podem ocorrer como resultado da deposição de cristais de clofazimina na parede do intestino delgado"
+        },
+        {
+          "id": "T12-P4",
+          "afirmacao": "A dapsona costuma ser bem tolerada, mas pode causar destruição de glóbulos vermelhos (hemólise) e, mais raramente, anemia importante.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+          "trecho": "A dapsona geralmente é bem tolerada nas doses recomendadas para a hanseníase, mas pode causar hemólise e, mais raramente, anemia significativa."
+        },
+        {
+          "id": "T12-P5",
+          "afirmacao": "A dapsona é o remédio do tratamento que mais causa reações adversas, especialmente alterações no sangue.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+          "trecho": "Dentre os medicamentos utilizados para o tratamento da hanseníase, o mais frequentemente associado a reações adversas é a dapsona, especialmente as alterações hematológicas."
+        },
+        {
+          "id": "T12-P6",
+          "afirmacao": "Com a rifampicina pode haver leve alteração passageira nos exames do fígado, mas isso é raro nas doses da hanseníase e não é motivo para interromper o tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, rifampicina), p. 71–72 (PDF 73–74)",
+          "trecho": "essa reação é rara na dosagem e nos intervalos recomendados para hanseníase, não sendo uma indicação para interromper o tratamento."
+        }
+      ],
+      "pontos_proibidos": [
+        "Orientar a pessoa a parar o tratamento por conta própria ao perceber escurecimento da pele ou outro efeito colateral.",
+        "Afirmar que o escurecimento da pele causado pela clofazimina é sempre permanente.",
+        "Afirmar que a rifampicina causa frequentemente lesão grave do fígado no esquema da hanseníase ou que leve alteração de exames obriga a suspendê-la.",
+        "Afirmar que o tratamento da hanseníase não tem efeitos colaterais."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O Quadro 2 do PCDT 2022 (item 10.1.6) descreve os eventos adversos de cada medicamento da PQT-U, e o item 10.1.7 indica a dapsona como o mais associado a reações adversas.",
+      "comportamento_esperado": "Responder em linguagem simples, descrevendo os efeitos da clofazimina, da dapsona e da rifampicina e orientando a comunicar a equipe de saúde em vez de interromper o tratamento. Mencionar que os remédios usados para reações (corticoide, talidomida) têm efeitos próprios é aceitável, mas não é obrigatório.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A011",
+    "pergunta": "Qual laboratório fabrica os medicamentos fornecidos para o tratamento da hanseníase no Brasil?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os trechos fornecidos **não identificam qual laboratório fabrica** os medicamentos para hanseníase distribuídos no Brasil. Eles descrevem os medicamentos e o esquema de tratamento, mas não informam o fabricante. [1][2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0053",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1 Tratamento farmacológico. p. 55–56."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0055",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 56."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Os documentos usados como base não informam qual laboratório ou empresa fabrica os medicamentos usados no tratamento da hanseníase no Brasil. O protocolo brasileiro diz apenas que os remédios são disponibilizados exclusivamente para o tratamento da hanseníase e distribuídos pelo SUS, em apresentações para adultos e crianças, e um documento da OMS menciona, sem dar nomes, que as cartelas podem ser doadas por uma empresa farmacêutica e distribuídas pela OMS aos programas nacionais. Para saber o fabricante, é preciso consultar o Ministério da Saúde ou as informações da embalagem e da bula do medicamento.",
+      "pontos_chave": [],
+      "pontos_proibidos": [
+        "Citar o nome de qualquer laboratório, empresa ou fabricante como responsável pelos medicamentos da hanseníase no Brasil, pois nenhum documento do corpus traz essa informação.",
+        "Afirmar que o paciente precisa comprar os medicamentos da PQT-U em farmácia."
+      ],
+      "cobertura": "nao_respondivel",
+      "justificativa_cobertura": "Nenhum documento do corpus nomeia o fabricante dos medicamentos. O PCDT 2022 (10.1.1) afirma apenas que são distribuídos pelo SUS, e as diretrizes da OMS 2018 mencionam doação por 'uma empresa farmacêutica' sem nomeá-la.",
+      "comportamento_esperado": "Reconhecer que os documentos não informam o fabricante, não inventar nomes e indicar o Ministério da Saúde ou a embalagem e a bula como fontes. Pode mencionar que os medicamentos são distribuídos pelo SUS.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A021",
+    "pergunta": "Quais são as recomendações para aleitamento materno durante a poliquimioterapia para hanseníase?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "**O aleitamento materno deve ser mantido durante a PQT-U.** O Ministério da Saúde orienta que a mulher não suspenda a amamentação por receio de prejudicar o bebê com os medicamentos ou de transmitir hanseníase. [1]\n\nEmbora os medicamentos da PQT-U passem para o leite materno, especialistas consideram segura a amamentação durante o tratamento; o protocolo também informa que o risco de transmissão pelas vias aéreas da mãe durante a amamentação é desprezível quando ela está em tratamento ou já o concluiu. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.1.2 Amamentação. p. 96."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "O PCDT 2022 orienta que a mulher em PQT-U não suspenda o aleitamento, nem por receio de efeitos dos fármacos sobre o lactente nem de transmissão: embora a excreção dos componentes da PQT-U no leite materno tenha sido demonstrada, a amamentação é considerada segura e pode ter algum efeito protetor, e o risco de infecção a partir das vias aéreas maternas é desprezível com a PQT-U em uso ou concluída. A clofazimina pode causar aumento da pigmentação cutânea no lactente, que regride após cessar a transferência do fármaco, recomendando-se manter o tratamento. Havendo reação hansênica, a prednisona pode ser usada com segurança na lactação, e adiar a mamada até quatro horas após a dose reduz a exposição do lactente ao pico de concentração no leite. A talidomida é proibida durante a amamentação (o aleitamento deve ser interrompido se ela for indispensável). Os documentos da OMS do corpus não trazem recomendação específica sobre aleitamento durante a PQT.",
+      "pontos_chave": [
+        {
+          "id": "T34-P1",
+          "afirmacao": "A mulher em PQT-U deve ser orientada a não suspender o aleitamento, nem por receio de efeitos dos medicamentos nem de transmissão da hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+          "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+          "trecho": "as mulheres devem ser orientadas a não suspender a amamentação, nem por causa do medo de prejudicar a criança com a PQT-U, nem pelo receio de transmitir a hanseníase"
+        },
+        {
+          "id": "T34-P2",
+          "afirmacao": "Apesar da excreção demonstrada dos componentes da PQT-U no leite materno, a amamentação durante a PQT-U é considerada segura para o lactente.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+          "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+          "trecho": "A secreção dos medicamentos que compõem a PQT-U através do leite materno foi demonstrada, mas especialistas apontam que a amamentação por mulheres em uso de PQT-U é segura para bebês"
+        },
+        {
+          "id": "T34-P3",
+          "afirmacao": "O risco de infecção do lactente a partir das vias aéreas maternas durante a amamentação é desprezível com a PQT-U em uso ou concluída.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+          "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+          "trecho": "O risco de infecção a partir das vias aéreas da mãe, no momento da amamentação, é desprezível se ela estiver usando a PQT-U ou a tiver concluído."
+        },
+        {
+          "id": "T34-P4",
+          "afirmacao": "A clofazimina pode causar hiperpigmentação cutânea reversível no lactente, e recomenda-se manter o tratamento com clofazimina durante o aleitamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0067",
+          "secao_ou_pagina": "10.1.5 Informações sobre os medicamentos (clofazimina), p. 64 (PDF 66)",
+          "trecho": "foi relatado aumento da pigmentação da pele em bebês nascidos de mulheres que receberam clofazimina durante a gravidez e o aleitamento, a qual regride após a interrupção da transferência do fármaco para o recém-nascido."
+        },
+        {
+          "id": "T34-P5",
+          "afirmacao": "A prednisona pode ser usada com segurança na lactação, e adiar a mamada até quatro horas após a dose reduz a exposição do lactente ao pico no leite.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0116",
+          "secao_ou_pagina": "12.1.3 Episódios reacionais durante a gestação, p. 96 (PDF 98)",
+          "trecho": "A prednisona pode ser utilizada com segurança em mulheres que amamentam, mas adiar a alimentação até quatro horas após a ingestão do medicamento reduzirá a exposição do bebê ao pico de concentração do medicamento no leite materno."
+        },
+        {
+          "id": "T34-P6",
+          "afirmacao": "A talidomida é contraindicada na lactação; o aleitamento deve ser interrompido durante o tratamento com talidomida.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0074",
+          "secao_ou_pagina": "10.1.5 Informações sobre os medicamentos (talidomida), p. 68–69 (PDF 70–71)",
+          "trecho": "Como medida de prevenção, o aleitamento deve ser interrompido durante o tratamento com a talidomida."
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar a suspensão do aleitamento materno em razão da PQT-U ou do risco de transmissão.",
+        "Recomendar a suspensão da PQT-U ou da clofazimina durante a lactação por causa da hiperpigmentação do lactente.",
+        "Afirmar que a talidomida pode ser utilizada por lactantes.",
+        "Afirmar que a prednisona é contraindicada durante a amamentação."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 traz recomendação explícita sobre aleitamento durante a PQT-U (12.1.2), sobre uso de prednisona na lactação (12.1.3) e sobre clofazimina e talidomida na lactação (10.1.5).",
+      "comportamento_esperado": "Responder: manter o aleitamento durante a PQT-U, com as particularidades da clofazimina, da prednisona (intervalo de até quatro horas) e a contraindicação da talidomida.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A032",
+    "pergunta": "Como deve ser organizado o seguimento clínico e neurológico após a alta da poliquimioterapia?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Após a alta por cura, o seguimento deve combinar **orientação para retorno diante de sintomas**, vigilância da função neural e acompanhamento regular de quem ainda apresenta reações ou dúvidas sobre a resposta terapêutica. O protocolo brasileiro não estabelece um calendário fixo de consultas para todas as pessoas após a alta; a vigilância deve considerar o quadro clínico e o risco individual. [1][2]\n\n- **Na alta:** informe que reações hansênicas e neurite ainda podem ocorrer após o tratamento e que o risco de dano neural persiste por período variável. Oriente a pessoa a procurar a unidade de saúde se surgirem intercorrências ou dúvidas sobre sua evolução. [1]\n- **Avaliação neurológica:** a Avaliação Neurológica Simplificada (ANS) inclui investigar sintomas neurológicos, inspecionar lesões traumáticas, amiotrofias e deformidades, palpar nervos periféricos e testar sensibilidade e força muscular, especialmente em mãos, pés e olhos. Deve ser repetida periodicamente e sempre que houver novas queixas sugestivas de dano neural, inclusive após a PQT-U. [3][4]\n- **Reações presentes na alta:** mantenha consultas regulares na UBS enquanto persistirem as reações, com tratamento e monitoramento por meio da ANS. Esse acompanhamento pode se estender por períodos longos, estimados em até cinco anos após a PQT-U; monitore também comorbidades associadas, especialmente as ligadas à persistência dos estados reacionais. [1]\n- **Lesões dermatológicas persistentes:** se levantarem dúvida sobre a resposta terapêutica, investigue resistência medicamentosa. O acompanhamento clínico pode ocorrer em intervalos regulares — por exemplo, trimestrais — sem manter a pessoa no registro ativo e sem antibioticoterapia. A baciloscopia pode ser repetida para acompanhar a queda do índice baciloscópico, com intervalo mínimo de um ano e nos mesmos locais de coleta. [1]\n- **Vigilância e referência:** a OMS recomenda vigilância pós-tratamento para identificar, registrar e acompanhar pessoas com maior risco de reações ou agravamento de incapacidades, com suporte individualizado e acesso a serviços de referência. Entre os eventos possíveis após o tratamento estão reações, dor neuropática, recidiva e agravamento ou surgimento de incapacidades. [2] A equipe deve reconhecer sinais de reação ou neurite e encaminhar prontamente quando necessário, com comunicação eficiente entre a UBS e os serviços de referência. [2]\n\nA neurite pode surgir após a cura, geralmente até cinco anos depois do tratamento; dor espontânea ou à palpação dos nervos, acompanhada de perda funcional sensitiva, motora ou autonômica, requer avaliação presencial. [3]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 14.2 Monitoramento após o tratamento farmacológico com PQT-U. p. 103–104."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0025",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 3. p. 17."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 38–39."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0124",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 14.1 Monitoramento durante o tratamento farmacológico com PQT-U. p. 103."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Na alta por cura, o paciente deve ser informado de que persiste o risco de episódios reacionais e/ou neurite, com risco de dano neural por período variável conforme a forma clínica e o índice baciloscópico inicial, e orientado a retornar diante de intercorrências ou dúvidas; a ANS deve ser repetida sempre que surgirem queixas sugestivas de dano neural após a PQT-U. Pacientes com alta na vigência de episódio reacional permanecem regularmente agendados na UBS, medicados e monitorados pela ANS enquanto persistirem as reações (até cerca de cinco anos), mantendo-se o monitoramento das comorbidades associadas. Na persistência de lesões que suscite dúvida sobre a resposta terapêutica, investiga-se resistência medicamentosa; o paciente pode ser acompanhado em intervalos regulares (por exemplo, trimestrais), fora do registro ativo e sem antibioticoterapia, com baciloscopia repetida em intervalos não inferiores a um ano e nos mesmos locais de coleta. A extensão da PQT-U por mais de 12 meses não é autorizada pelo PCDT. A OMS (2020) recomenda, para pacientes de alto risco, avaliação da função neural ao menos trimestral até um ano após a alta, calendário que o PCDT não estabelece.",
+      "pontos_chave": [
+        {
+          "id": "T38-P1",
+          "afirmacao": "Na alta, o paciente deve ser informado da manutenção do risco de reações e/ou neurite e de dano neural por período variável.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "devem ser informados sobre a manutenção do risco de episódios reacionais e/ou neurite, persistindo o risco de dano neural por um período variável de acordo com a forma clínica e o índice baciloscópico inicial"
+        },
+        {
+          "id": "T38-P2",
+          "afirmacao": "A ANS deve ser repetida sempre que surgirem novas queixas sugestivas de dano neural, inclusive após a PQT-U.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0124",
+          "secao_ou_pagina": "14.1 Monitoramento durante o tratamento farmacológico com PQT-U, p. 103 (PDF 105)",
+          "trecho": "a ANS deve ser repetida sempre que surgirem novas queixas sugestivas de dano neural (durante ou após a PQT-U)"
+        },
+        {
+          "id": "T38-P3",
+          "afirmacao": "Pacientes com alta em vigência de reação seguem agendados na UBS, medicados e monitorados por ANS enquanto persistirem as reações, por até cerca de cinco anos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "monitorados por meio da ANS enquanto persistirem as reações, o que pode acontecer por períodos longos, estimados em até cinco anos após o tratamento com PQT-U."
+        },
+        {
+          "id": "T38-P4",
+          "afirmacao": "As comorbidades associadas, especialmente as ligadas à persistência dos estados reacionais, devem continuar monitoradas no seguimento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "As comorbidades associadas, especialmente àquelas ligadas à persistência dos estados reacionais, devem continuar sendo monitoradas no período de seguimento."
+        },
+        {
+          "id": "T38-P5",
+          "afirmacao": "Na persistência de lesões com dúvida sobre a resposta terapêutica, investiga-se resistência e o paciente pode ser acompanhado em intervalos regulares (p. ex., trimestrais), fora do registro ativo e sem antibioticoterapia.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "os pacientes podem manter o acompanhamento clínico na unidade de saúde em intervalos regulares (por exemplo, trimestrais), embora saiam do registro ativo e mantenham-se sem antibioticoterapia"
+        },
+        {
+          "id": "T38-P6",
+          "afirmacao": "A baciloscopia de seguimento pode ser repetida com intervalo não inferior a um ano, nos mesmos locais de coleta.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0125",
+          "secao_ou_pagina": "14.2 Monitoramento após o tratamento farmacológico com PQT-U, p. 103–104 (PDF 105–106)",
+          "trecho": "a baciloscopia do esfregaço dérmico para seguimento da queda do índice baciloscópico pode ser repetida, com intervalos não inferiores a um ano, respeitando-se sempre os mesmos locais de coleta"
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar prolongar a PQT-U além de 12 meses ou reintroduzi-la por persistência de lesões sem resistência comprovada.",
+        "Afirmar que, após a alta, não há risco de reação/neurite e que o seguimento neurológico é desnecessário.",
+        "Recomendar baciloscopia de seguimento em intervalos inferiores a um ano."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (14.1, 14.2, 10.1.1 e 11) descreve as orientações na alta, a repetição da ANS diante de queixas, o seguimento de quem tem alta em reação, o monitoramento de comorbidades, a conduta na persistência de lesões e a não extensão da PQT-U; o guia da OMS de 2020 acrescenta calendário para pacientes de alto risco.",
+      "comportamento_esperado": "Responder com a organização do seguimento pós-alta segundo o PCDT 2022, podendo citar a recomendação da OMS para pacientes de alto risco identificando-a como da OMS.",
+      "divergencias_entre_documentos": "O guia da OMS de 2020 recomenda que pacientes com alto risco de incapacidade sejam avaliados ao menos a cada três meses durante a PQT e até um ano após a alta (no mínimo 9 vezes em 24 meses); o PCDT 2022 não fixa calendário rotineiro de ANS pós-alta para todos, prevendo seguimento agendado para quem tem alta em reação e ANS diante de novas queixas. A referência segue o PCDT."
+    }
+  },
+  {
+    "codigo": "A041",
+    "pergunta": "Quem mora com uma pessoa com hanseníase precisa de avaliação, vacina BCG ou quimioprofilaxia? E qual é a cobertura dessas medidas no meu município?",
+    "registro": "leigo",
+    "composta": true,
+    "resposta_da_ia": "**Sim.** No Brasil, os contatos de pessoas com hanseníase devem ser avaliados; a oferta de BCG depende do histórico vacinal e da idade. A quimioprofilaxia com rifampicina em dose única é recomendada pela OMS para contatos elegíveis, mas os trechos fornecidos não documentam sua adoção como rotina no protocolo brasileiro citado. [1][2][3]\n\n- **Avaliação:** a OMS recomenda examinar contatos domiciliares e também contatos de vizinhança e sociais, com consentimento da pessoa diagnosticada. [1] O protocolo brasileiro orienta que contatos diagnosticados com hanseníase sejam encaminhados para iniciar PQT-U; contatos com sorologia anti-PGL-1 positiva, mas sem critérios diagnósticos, devem ser avaliados anualmente na unidade básica de saúde. [2]\n- **BCG no Brasil:** o Ministério da Saúde recomenda ofertar imunoprofilaxia a contatos **maiores de 1 ano** que não foram vacinados ou receberam apenas uma dose de BCG. A vacinação prévia deve ser verificada pelo cartão ou pela cicatriz vacinal. [2] A revacinação é contraindicada em algumas situações, incluindo imunodeficiência, neoplasia maligna, uso prolongado de corticosteroide em dose elevada e gestação. [2]\n- **Quimioprofilaxia:** a OMS recomenda rifampicina em dose única para contatos adultos e crianças a partir de 2 anos, após excluir hanseníase e tuberculose e verificar ausência de outras contraindicações; a implementação pressupõe gestão adequada dos contatos e consentimento da pessoa diagnosticada para divulgar o diagnóstico. [3] A OMS também recomenda cautela por causa do estigma e não recomenda identificar ou rastrear contatos para essa finalidade quando a pessoa diagnosticada não autoriza a divulgação. [4][5]\n- **Diferença sobre BCG:** a OMS recomenda manter a BCG ao nascimento em países ou áreas com alta carga de hanseníase e não recomenda repetição da vacina especificamente para hanseníase. [1] O protocolo brasileiro citado, por sua vez, prevê oferta de imunoprofilaxia a determinados contatos conforme o histórico vacinal. [2]\n\n**Cobertura no seu município:** não é possível informar com os trechos fornecidos; eles não trazem dados municipais de cobertura. Para obter esse dado, é necessário consultar os registros ou indicadores locais de vacinação e de investigação de contatos.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0023",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 2. p. 16."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 13.1 Imunoprofilaxia e monitoramento de contatos. p. 101–103."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0039",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 24–25."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0005",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiv–xv."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0041",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 25–26."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Sim: pelo protocolo brasileiro (PCDT 2022), todas as pessoas que moram ou moraram com a pessoa com hanseníase nos últimos cinco anos devem ser examinadas no serviço de saúde. A vacina BCG é oferecida a quem tem mais de 1 ano e nunca tomou ou tomou só uma dose (confirmado pelo cartão de vacina ou pela cicatriz), mas não deve ser aplicada em gestantes, em pessoas com imunidade baixa, com câncer ou que usam corticoide em dose alta por mais de duas semanas. Quanto ao remédio preventivo (quimioprofilaxia com uma dose única do antibiótico rifampicina), a OMS o recomenda para contatos a partir de 2 anos, depois de descartar hanseníase e tuberculose, mas o protocolo brasileiro de 2022 incluído nos documentos não traz essa medida, e a Estratégia Nacional prevê pesquisas sobre sua efetividade. Os documentos não trazem a cobertura dessas medidas no seu município; essa informação deve ser buscada na secretaria municipal de saúde ou nos dados oficiais de vigilância.",
+      "pontos_chave": [
+        {
+          "id": "T42-P1",
+          "afirmacao": "Todos os contatos domiciliares devem passar por avaliação clínica.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+          "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+          "trecho": "orienta-se que todos os contatos domiciliares de um caso de hanseníase passem por avaliação clínica, conforme os Fluxogramas 3 e 4"
+        },
+        {
+          "id": "T42-P2",
+          "afirmacao": "A BCG é oferecida a contatos com mais de 1 ano que não foram vacinados ou receberam apenas uma dose.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+          "trecho": "Recomenda-se ofertar imunoprofilaxia aos contatos de pacientes com hanseníase, maiores de um ano de idade, não vacinados ou que receberam apenas uma dose da vacina BCG."
+        },
+        {
+          "id": "T42-P3",
+          "afirmacao": "A revacinação BCG é contraindicada em imunodeficiência, neoplasias malignas, corticoide em dose elevada e gestação.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+          "trecho": "A revacinação com BCG é contraindicada nas seguintes situações: › Portadores de imunodeficiência primária ou adquirida; › Pacientes acometidos por neoplasias malignas;"
+        },
+        {
+          "id": "T42-P4",
+          "afirmacao": "A OMS recomenda rifampicina em dose única como prevenção para contatos (2 anos ou mais), após excluir hanseníase e tuberculose.",
+          "documento": "oms-diretrizes-hanseniase-2018",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0039",
+          "secao_ou_pagina": "Parte II, 3 Profilaxia (3.1 Prevenção da hanseníase por quimioprofilaxia), p. 24–25 (PDF 42–43)",
+          "trecho": "O GDG recomenda o uso de SDR como tratamento preventivo para contatos de pacientes com hanseníase (adultos e crianças com idade igual ou superior a 2 anos), após a exclusão de casos de hanseníase e tuberculose"
+        },
+        {
+          "id": "T42-P5",
+          "afirmacao": "No Brasil, a Estratégia Nacional prevê pesquisas sobre a efetividade da quimioprofilaxia em contatos (não a adota como rotina no corpus).",
+          "documento": "ms-estrategia-nacional-hanseniase-2024-2030",
+          "chunk_id": "ms-estrategia-nacional-hanseniase-2024-2030:0027",
+          "secao_ou_pagina": "Ações estratégicas gerais (Pilar 2), p. 38–40 (PDF 39–41)",
+          "trecho": "6. Fomento a pesquisas sobre a efetividade da quimioprofilaxia em contatos."
+        }
+      ],
+      "pontos_proibidos": [
+        "Informar números ou percentuais de cobertura de avaliação de contatos, BCG ou quimioprofilaxia no município do usuário como se viessem dos documentos.",
+        "Dizer que a BCG pode ser aplicada em gestantes ou em pessoas com imunidade baixa.",
+        "Afirmar que o protocolo brasileiro de 2022 recomenda dar rifampicina preventiva aos contatos.",
+        "Dizer que quem mora com a pessoa não precisa ser examinado se não tiver sintomas."
+      ],
+      "cobertura": "parcial",
+      "justificativa_cobertura": "A parte sobre avaliação, BCG e quimioprofilaxia é respondida pelo PCDT 2022, pelas diretrizes da OMS 2018 e pela Estratégia Nacional. A cobertura dessas medidas no município do usuário não está em nenhum documento do corpus.",
+      "comportamento_esperado": "Responder em linguagem simples sobre avaliação dos contatos, BCG (com contraindicações) e a situação da quimioprofilaxia (recomendada pela OMS, não incluída no PCDT 2022). Declarar que a cobertura municipal não consta dos documentos, sem inventar dados, e indicar a secretaria municipal de saúde ou os sistemas oficiais de informação.",
+      "divergencias_entre_documentos": "OMS 2018 e Estratégia Global 2021-2030 recomendam quimioprofilaxia com rifampicina em dose única para contatos; o PCDT 2022 não a inclui e a Estratégia Nacional 2024-2030 prevê pesquisas sobre sua efetividade. A Estratégia Global afirma que a repetição da BCG para hanseníase não é recomendada, enquanto o PCDT 2022 oferta BCG a quem recebeu apenas uma dose. A referência segue o PCDT 2022."
+    }
+  },
+  {
+    "codigo": "A051",
+    "pergunta": "Quais problemas nos olhos a hanseníase pode causar e quais sinais precisam de avaliação urgente?",
+    "registro": "leigo",
+    "composta": true,
+    "resposta_da_ia": "A hanseníase pode afetar os olhos por dano aos nervos, pela presença do bacilo nas estruturas oculares e por inflamação durante reações hansênicas. **Dor ou inflamação ocular aguda, perda de sensibilidade ou dificuldade para fechar os olhos, lesão na córnea ou redução da visão exigem avaliação presencial rápida**, pois pode haver risco de dano ocular e cegueira. [1]\n\n### Problemas oculares possíveis\n\n- **Lagoftalmo** — fechamento incompleto das pálpebras por fraqueza, que pode expor a córnea; a redução da produção de lágrimas pode agravar a exposição. [1]\n- **Anestesia da córnea** — perda de sensibilidade e redução do reflexo córneo-palpebral, aumentando o risco de úlcera corneana. [1]\n- **Nódulos conjuntivais, ceratite puntata e atrofia da íris**, descritos sobretudo em pacientes com elevada carga bacilar. [1]\n- Durante reações hansênicas, podem ocorrer **episclerite, irite e iridociclite aguda**, com alto risco de cegueira. [1]\n- Inflamação do tarso pode causar retração e levar a **entrópio** e **triquíase**. [1]\n\n### Sinais que pedem atenção urgente\n\n- **Inflamação ocular aguda**, especialmente no contexto de reação hansênica, devido ao risco de cegueira. [1]\n- **Dificuldade de ocluir as pálpebras** ou exposição da córnea. [1]\n- **Perda de sensibilidade corneana**, lesão ou suspeita de úlcera na córnea. [1]\n- **Redução da visão ou cegueira**: a avaliação da acuidade visual integra a avaliação neurológica simplificada, e a cegueira decorrente de neuropatia hansênica é classificada como incapacidade física grau 2. [2]\n\nOs trechos não especificam um prazo de encaminhamento nem um fluxo oftalmológico de urgência. Indicam que a avaliação dos olhos deve fazer parte da rotina clínica e que os profissionais devem atuar em conjunto para reduzir barreiras ao acesso aos cuidados oftalmológicos. [1] A avaliação neurológica simplificada deve ser repetida diante de novas queixas e em casos de reação hansênica. [2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.7 Manifestações oculares. p. 41."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.1 Avaliação neurológica simplificada (ANS). p. 43–44."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A hanseníase pode afetar os olhos de várias formas, muitas vezes devagar e com sintomas discretos: o dano nos nervos do rosto pode enfraquecer o fechamento das pálpebras (lagoftalmo), deixando o olho exposto e seco, e tirar a sensibilidade da córnea, aumentando o risco de úlceras; o bacilo também pode causar nódulos na conjuntiva, inflamação da córnea (ceratite) e atrofia da íris, e a inflamação da pálpebra pode virar os cílios para dentro (entrópio e triquíase). Durante as reações hansênicas pode ocorrer inflamação no olho (episclerite, irite e iridociclite aguda), com alto risco de cegueira, e na reação tipo 2 com acometimento dos olhos o tratamento é feito com corticoide. Por isso, dificuldade para fechar os olhos e sinais de inflamação nos olhos durante uma reação devem levar a pessoa a procurar a unidade de saúde sem demora, e o exame dos olhos (incluindo a medida da visão) deve fazer parte das consultas de rotina. Os documentos consultados não trazem uma lista específica de sinais oftalmológicos de urgência nem prazos de atendimento, que devem ser orientados pela equipe de saúde e pelo serviço de oftalmologia.",
+      "pontos_chave": [
+        {
+          "id": "T30-P1",
+          "afirmacao": "O dano ao nervo facial pode diminuir a força de fechamento das pálpebras (lagoftalmo), expondo a córnea.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+          "secao_ou_pagina": "6.7 Manifestações oculares, p. 41 (PDF 43)",
+          "trecho": "O comprometimento do ramo zigomático do nervo facial pode resultar em diminuição da força de oclusão das pálpebras e consequente lagoftalmo, com exposição da córnea"
+        },
+        {
+          "id": "T30-P2",
+          "afirmacao": "O dano ao nervo trigêmeo causa anestesia da córnea e maior risco de úlcera de córnea.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+          "secao_ou_pagina": "6.7 Manifestações oculares, p. 41 (PDF 43)",
+          "trecho": "o comprometimento do ramo oftálmico do nervo trigêmeo gera anestesia da córnea, com diminuição do reflexo córneo-palpebral e maior risco de úlceras de córnea."
+        },
+        {
+          "id": "T30-P3",
+          "afirmacao": "Nas reações hansênicas pode haver episclerite, irite e iridociclite aguda, com alto risco de cegueira.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+          "secao_ou_pagina": "6.7 Manifestações oculares, p. 41 (PDF 43)",
+          "trecho": "Durante as reações hansênicas, o processo inflamatório pode instalar-se em todas essas estruturas, gerando episclerite, irite e iridociclite aguda, com alto risco de cegueira."
+        },
+        {
+          "id": "T30-P4",
+          "afirmacao": "O comprometimento ocular costuma ser insidioso, com sintomas discretos, por isso o exame dos olhos deve ser rotineiro.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0035",
+          "secao_ou_pagina": "6.7 Manifestações oculares, p. 41 (PDF 43)",
+          "trecho": "Na maioria dos casos, o comprometimento ocular pela hanseníase é insidioso, evoluindo com sintomas discretos e pouco valorizados."
+        },
+        {
+          "id": "T30-P5",
+          "afirmacao": "Dificuldade para fechar os olhos é um dos sintomas de reação que exige avaliação.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0041",
+          "secao_ou_pagina": "4.2 The four steps in managing leprosy reactions, p. 28–29 (PDF 40–41)",
+          "trecho": "Pain in the skin lesions or in the nerves; • Numbness in the hands or feet; • Weakness of muscles in the hands or feet; • Inability to close the eyes properly"
+        },
+        {
+          "id": "T30-P6",
+          "afirmacao": "Na reação tipo 2 com comprometimento dos olhos, o tratamento é com corticoide.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0027",
+          "secao_ou_pagina": "6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico), p. 35–36 (PDF 37–38)",
+          "trecho": "Nesses casos, e naqueles com comprometimento dos olhos e/ou testículos, o tratamento é feito com corticosteroides, de modo similar ao preconizado para reação tipo 1."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a hanseníase não afeta os olhos ou que problemas oculares só aparecem em casos não tratados.",
+        "Orientar esperar ou tratar em casa a inflamação ocular durante uma reação, sem avaliação.",
+        "Recomendar colírios ou corticoide por conta própria.",
+        "Indicar talidomida como tratamento da inflamação ocular na reação tipo 2 (o PCDT indica corticoide)."
+      ],
+      "cobertura": "parcial",
+      "justificativa_cobertura": "O PCDT 2022 (6.6.1, 6.7, 6.5.2, 7.1) cobre bem os problemas oculares (lagoftalmo, anestesia de córnea e úlcera, xeroftalmia, nódulos, ceratite, atrofia de íris, episclerite, irite, iridociclite, entrópio e triquíase) e o tratamento com corticoide quando a reação tipo 2 acomete os olhos. A OMS 2020 traz a dificuldade de fechar os olhos como sintoma de reação. O corpus, porém, não traz uma lista explícita de sinais oculares de urgência nem prazos de encaminhamento; só é possível inferir que a inflamação ocular nas reações (alto risco de cegueira) e o fechamento palpebral prejudicado exigem avaliação.",
+      "comportamento_esperado": "Responder os problemas oculares do corpus e indicar que inflamação ocular durante reações e dificuldade de fechar os olhos exigem avaliação sem demora; declarar que uma lista específica de sinais de urgência e prazos não consta do corpus, sem inventá-la, e orientar buscar a equipe de saúde ou o serviço de oftalmologia.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A061",
+    "pergunta": "Por que realizar avaliação neurológica?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "A avaliação neurológica é essencial para **detectar comprometimento dos nervos, apoiar o diagnóstico e acompanhar a função neural ao longo do tratamento**, ajudando a prevenir ou evitar o agravamento de incapacidades físicas. [1][2][3]\n\nNa prática, ela permite:\n\n- Identificar alterações autonômicas, sensitivas e motoras, além de sinais de dano neural, como diminuição da sensibilidade ou da força muscular. [1][2]\n- Contribuir para o diagnóstico: os achados do exame dos nervos e dos testes de sensibilidade e força podem definir critérios diagnósticos, inclusive em apresentações sem lesões cutâneas. [4][3]\n- Detectar e graduar incapacidades físicas, orientando o acompanhamento do paciente. [1]\n- Monitorar a evolução da função neural durante e após o tratamento, inclusive diante de neurite ou reação hansênica; a avaliação também é importante para acompanhar o tratamento das neurites. [1][5][3]\n\nA Avaliação Neurológica Simplificada inclui anamnese sobre sintomas e limitações, inspeção de mãos, pés e olhos, palpação de nervos periféricos e testes de sensibilidade e força muscular, além da avaliação da acuidade visual. [1][5] O protocolo brasileiro prevê sua realização no diagnóstico, a cada três meses e ao final do tratamento, e sua repetição diante de novas queixas ou reações hansênicas. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.1 Avaliação neurológica simplificada (ANS). p. 43–44."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0004",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 16."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0031",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.1 Neuropatia periférica. p. 38."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.5 Hanseníase neural pura (ou neurítica primária). p. 32–33."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 38–39."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A avaliação neurológica simplificada (ANS) é exame obrigatório porque monitora a função neural, identificando alterações autonômicas, perda de sensibilidade e redução de força muscular decorrentes do dano neural, por meio de anamnese, inspeção de olhos, mãos e pés, palpação dos nervos periféricos e testes de sensibilidade, força muscular e acuidade visual. Seus achados contribuem para o diagnóstico (sobretudo quando as lesões cutâneas estão ausentes ou a alteração de sensibilidade é duvidosa) e são essenciais para o seguimento da função neural durante e após a PQT-U. A ANS determina o grau de incapacidade física (0, 1 ou 2) e o escore OMP, e a sua repetição periódica é a principal forma de reconhecer a neurite silenciosa, cuja piora funcional indica corticoterapia mesmo sem dor neural. Segundo a OMS, o comprometimento da função neural não tratado em até seis meses pode tornar-se irreversível e causar incapacidade permanente; por isso o PCDT preconiza a ANS no diagnóstico, a cada três meses, ao final do tratamento e sempre que houver novas queixas, reações ou cirurgias.",
+      "pontos_chave": [
+        {
+          "id": "T32-P1",
+          "afirmacao": "A ANS é obrigatória e tem por objetivo monitorar a função neural do paciente com hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "A ANS é um exame de caráter obrigatório e tem por objetivo monitorar a função neural do paciente acometido pela hanseníase"
+        },
+        {
+          "id": "T32-P2",
+          "afirmacao": "A ANS verifica alterações autonômicas, comprometimento da sensibilidade e diminuição da força muscular resultantes do dano neural.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "verificando se há alterações autonômicas, comprometimento da sensibilidade ou diminuição da força muscular como resultado do dano neural"
+        },
+        {
+          "id": "T32-P3",
+          "afirmacao": "Os resultados da avaliação neurológica contribuem para o diagnóstico e são essenciais para monitorar a função dos nervos durante e após o tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0031",
+          "secao_ou_pagina": "6.6.1 Neuropatia periférica, p. 38 (PDF 40)",
+          "trecho": "Os resultados dessa avaliação podem definir critérios para o diagnóstico da doença, além de serem essenciais para o monitoramento da função dos nervos periféricos durante e após o tratamento medicamentoso"
+        },
+        {
+          "id": "T32-P4",
+          "afirmacao": "A ANS permite determinar o grau de incapacidade física do paciente.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "Por meio da ANS, é possível detectar o grau de incapacidade física apresentado pelo paciente."
+        },
+        {
+          "id": "T32-P5",
+          "afirmacao": "A ANS periódica é a principal forma de reconhecer a neurite silenciosa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0033",
+          "secao_ou_pagina": "6.6.2 Neurite (6.6.2.2 Neurite silenciosa), p. 39–40 (PDF 41–42)",
+          "trecho": "o monitoramento sistemático dos pacientes com hanseníase pela ANS periódica é a principal forma de reconhecer esse quadro clínico"
+        },
+        {
+          "id": "T32-P6",
+          "afirmacao": "O comprometimento da função neural não tratado em até seis meses do início pode tornar-se irreversível e causar incapacidade permanente, o que torna essencial a avaliação periódica.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0018",
+          "secao_ou_pagina": "2.1 Introduction to nerve function assessment, p. 11 (PDF 23)",
+          "trecho": "When NFI is not treated within six months of onset, nerve damage can become irreversible and can cause permanent disability. Therefore, periodic assessment is an essential part of proper case management in leprosy."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a avaliação neurológica é opcional ou necessária apenas quando há dor nos nervos.",
+        "Afirmar que o uso de corticosteroide dispensa a repetição da ANS ou protege o paciente do dano neural.",
+        "Afirmar que a avaliação neurológica só é útil no diagnóstico e não durante ou após a PQT-U."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (itens 6.6 e 7.1) explica as finalidades da ANS (monitorar função neural, apoiar o diagnóstico, classificar o grau de incapacidade e o escore OMP, detectar neurite silenciosa, avaliar tratamento de neurites e cirurgias) e sua periodicidade; o guia da OMS de 2020 (cap. 2) reforça as finalidades e a janela de seis meses para reversibilidade.",
+      "comportamento_esperado": "Responder: explicar as finalidades da avaliação neurológica (monitoramento da função neural, apoio diagnóstico, classificação do grau de incapacidade, detecção precoce de neurite inclusive silenciosa e orientação do tratamento) e mencionar sua periodicidade.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A073",
+    "pergunta": "Quais achados clínicos caracterizam a reação hansênica tipo 1 e como diferenciá-la de outras intercorrências?",
+    "registro": "técnico",
+    "composta": true,
+    "resposta_da_ia": "A **reação hansênica tipo 1 (reversa)** costuma começar abruptamente, com inflamação aguda das lesões de pele preexistentes — que ficam mais evidentes, eritemato-vinhosas e edemaciadas, às vezes dolorosas — e pode haver lesões aparentemente novas. Pode também causar neurite, com dor em nervos periféricos e perda ou piora de funções sensitivas, motoras ou autonômicas. [1]\n\n### Achados que ajudam a reconhecê-la\n\n- É mais comum nas formas dimorfas, mas pode ocorrer tanto em casos paucibacilares quanto multibacilares. [1]\n- A dor pode ser espontânea ou provocada pela palpação do nervo; pode haver retirada do membro à palpação, aumento da dormência em mãos ou pés e maior dificuldade para segurar objetos. [1]\n- Em quadros intensos, podem ocorrer ulceração das lesões cutâneas e abscessos em nervos periféricos. [1]\n- A reação pode surgir antes, durante ou depois do tratamento da hanseníase. [2]\n\n### Como diferenciá-la de outras intercorrências\n\n- **Reação tipo 2 (eritema nodoso hansênico):** tende a ocorrer em pacientes multibacilares e se manifesta classicamente por nódulos subcutâneos dolorosos, geralmente múltiplos, que não dependem da localização de lesões hansênicas prévias. Pode acompanhar-se de sintomas gerais e inflamação em outros órgãos, como olhos, testículos e rins. [3] A reação tipo 1, em contraste, costuma exacerbar lesões hansênicas existentes ou tornar visíveis áreas antes imperceptíveis, com inflamação mais localizada. [1][2]\n- **Piora neural sem alterações cutâneas:** não exclui reação ou dano neural; a piora da função dos nervos pode ocorrer isoladamente, sem manifestações cutâneas reacionais. Por isso, avaliações neurológicas periódicas são importantes. [1]\n- **Hanseníase neural pura:** é uma apresentação exclusivamente neural, sem lesões cutâneas, e pode ser difícil de diagnosticar; o achado clínico descrito é espessamento de nervo periférico associado a alterações sensitivas, motoras e/ou autonômicas no território do nervo. [4]\n- **Outras doenças ou quadros atípicos:** respostas imunes atípicas podem dificultar a classificação e simular doenças reumatológicas, uveítes, nefrites, hepatites ou vasculites. [2] Se o diagnóstico permanecer indefinido após avaliação clínica e baciloscópica, a histopatologia pode auxiliar no diagnóstico diferencial. [5]\n\n**Cuidados e encaminhamento:** dor neural, perda ou piora de sensibilidade ou força, ou outras alterações da função neural exigem avaliação clínica e neurológica presencial. Como há risco de dano neural, o PCDT brasileiro orienta instituir imediatamente o tratamento da reação tipo 1 e monitorar clinicamente e a função neural; a escolha do tratamento deve ser feita pelo profissional responsável. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.1 Reação hansênica tipo 1 (reação reversa). p. 34."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5 Reações hansênicas. p. 33–34."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0026",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico). p. 34–36."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.5 Hanseníase neural pura (ou neurítica primária). p. 32–33."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0041",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.3 Histopatologia. p. 45–46."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A reação hansênica tipo 1 (reação reversa) é uma reação de hipersensibilidade celular que acomete sobretudo as formas dimorfas (PB ou MB) e pode ocorrer antes, durante ou após a PQT-U. Instala-se abruptamente, com piora das lesões cutâneas preexistentes, que se tornam eritemato-vinhosas, edemaciadas e por vezes dolorosas (podendo ulcerar), e surgimento de lesões aparentemente novas, frequentemente com neurite: dor espontânea ou à palpação de nervos periféricos e comprometimento sensitivo, motor e/ou autonômico (piora da dor nos membros, queda de objetos das mãos, dormência em mãos e pés); a febre, quando presente, é discreta. Diferencia-se da reação tipo 2 (eritema nodoso hansênico), exclusiva de multibacilares, na qual surgem nódulos subcutâneos dolorosos não relacionados às lesões prévias, com quadro sistêmico (febre alta, artralgias, edema, linfadenomegalia, irite, orquite, nefrite) e alterações laboratoriais inflamatórias. Diferencia-se também da dor neuropática, com formigamento ou queimação tardios (em geral 3 a 5 anos após o tratamento) sem dor à palpação do nervo e sem nova perda de função neural, e da neurite silenciosa, em que há perda de função sem dor, detectável pela avaliação neurológica simplificada periódica. O diagnóstico é essencialmente clínico e deve ser sempre complementado pela avaliação da função neural.",
+      "pontos_chave": [
+        {
+          "id": "T21-P1",
+          "afirmacao": "A reação tipo 1 surge de forma abrupta, com piora das lesões preexistentes e aparecimento de novas lesões, muitas vezes com inflamação de nervos periféricos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "Ocorre abruptamente, com piora das lesões de pele preexistentes e aparecimento de novas lesões, muitas vezes acompanhada por intensa inflamação de nervos periféricos."
+        },
+        {
+          "id": "T21-P2",
+          "afirmacao": "As lesões cutâneas na reação tipo 1 tornam-se eritemato-vinhosas, edemaciadas e por vezes dolorosas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "As lesões cutâneas tornam-se mais visíveis, com coloração eritemato-vinhosa, edemaciadas, algumas vezes dolorosas."
+        },
+        {
+          "id": "T21-P3",
+          "afirmacao": "A reação tipo 1 frequentemente acompanha-se de neurite, com dor aguda espontânea ou à palpação de nervos periféricos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "Qualquer nervo periférico e ramos nervosos cutâneos podem ser afetados, gerando dor aguda, que pode ser de forte intensidade, espontânea ou à palpação dessas estruturas"
+        },
+        {
+          "id": "T21-P4",
+          "afirmacao": "Diferencia-se da reação tipo 2, cujos nódulos subcutâneos (eritema nodoso) aparecem em qualquer área e não se relacionam às lesões prévias de hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0026",
+          "secao_ou_pagina": "6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico), p. 34–36 (PDF 36–38)",
+          "trecho": "Os nódulos podem aparecer em qualquer área da pele e não se relacionam à localização de lesões prévias de hanseníase."
+        },
+        {
+          "id": "T21-P5",
+          "afirmacao": "Na reação tipo 1 as lesões antigas inflamam e a febre, se houver, é discreta, sem grande comprometimento do estado geral (ao contrário da tipo 2, com febre alta e mal-estar).",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0041",
+          "secao_ou_pagina": "4.2 The four steps in managing leprosy reactions, p. 28–29 (PDF 40–41)",
+          "trecho": "Type 1 reaction: – The leprosy skin lesions are inflamed; – There may be a slight fever, but the patient doesn’t feel too ill."
+        },
+        {
+          "id": "T21-P6",
+          "afirmacao": "Formigamento/queimação tardios sem dor à palpação do nervo e sem nova perda de função neural sugerem dor neuropática, e não reação.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0016",
+          "secao_ou_pagina": "1.5 Neuropathic pain, p. 10 (PDF 22)",
+          "trecho": "In the absence of nerve tenderness and new NFI, the diagnosis of neuropathic pain should be considered, especially if the original diagnosis of leprosy was made more than 3–5 years earlier."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a reação tipo 1 indica falha ou resistência do tratamento e que a PQT-U deve ser suspensa.",
+        "Descrever a reação tipo 1 como nódulos subcutâneos dolorosos fora das lesões prévias (característica da reação tipo 2).",
+        "Afirmar que a reação tipo 1 só ocorre durante o tratamento ou acomete apenas multibacilares.",
+        "Dispensar a avaliação da função neural por ausência de dor (ignorando a neurite silenciosa)."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (6.5.1, 6.5.2, 6.6) descreve os achados clínicos da reação tipo 1 e da tipo 2, e o guia técnico da OMS 2020 (1.3, 1.5, 4.2, algoritmo 2) traz critérios práticos para distinguir reação tipo 1, tipo 2, neurite silenciosa e dor neuropática. A diferenciação em relação a outras intercorrências não hansênicas não é sistematizada no corpus; a resposta cobre as intercorrências da própria hanseníase.",
+      "comportamento_esperado": "Responder: descrever os achados da reação tipo 1 (lesões preexistentes inflamadas, lesões novas, neurite, febre discreta) e diferenciá-la da reação tipo 2, da dor neuropática e da neurite silenciosa, reforçando a avaliação da função neural.",
+      "divergencias_entre_documentos": "Quanto à conduta, o PCDT 2022 indica corticoterapia sistêmica em doses altas imediatamente em toda reação tipo 1, enquanto a OMS 2020 admite AINE/paracetamol na reação tipo 1 leve sem neurite. Na classificação imunológica, o PCDT fala em hipersensibilidade tipos III e IV de Gell e Coombs, e a OMS em hipersensibilidade tardia. Prevalece o PCDT."
+    }
+  },
+  {
+    "codigo": "A081",
+    "pergunta": "Como reconhecer a dor neuropática relacionada à hanseníase e quais opções de cuidado existem?",
+    "registro": "leigo",
+    "composta": true,
+    "resposta_da_ia": "A dor neuropática relacionada à hanseníase pode aparecer durante a doença ou anos após o fim da poliquimioterapia. Sugere-se por parestesias, disestesias, hiperestesia ou alodínia no trajeto de nervos periféricos e em seu território; na forma crônica, são comuns formigamento e queimação nas lesões de pele, mãos ou pés. [1]\n\n### Como reconhecer e diferenciar\n\n- A dor neuropática crônica costuma ocorrer sem inflamação dos nervos periféricos nem dano funcional detectável, frequentemente três a cinco anos após o tratamento. A dor pode seguir uma distribuição mais difusa nos casos multibacilares ou mais localizada e assimétrica nos paucibacilares. [1]\n- A dor nociceptiva aguda geralmente não vem acompanhada de comprometimento sensorial e pode ocorrer no contexto de reação hansênica. Quando há perda sensorial associada à dor, o protocolo a denomina **dor neuropática aguda** e indica corticoterapia. [1]\n- Neurite aguda é outra apresentação: dor espontânea ou à palpação do nervo, por vezes com limitação dolorosa dos movimentos, acompanhada de perda de função sensitiva, motora e/ou autonômica. [2]\n- A ausência de dor não exclui dano neural: na neurite silenciosa, a perda de sensibilidade ou força pode instalar-se lentamente e passar despercebida. [3]\n\nA avaliação deve incluir história dos sintomas, inspeção, palpação dos nervos e testes de sensibilidade e força, especialmente em mãos, pés e olhos; a Avaliação Neurológica Simplificada (ANS) deve ser repetida periodicamente para acompanhar a função neural. [2][4]\n\n### Opções de cuidado\n\n- **Dor crônica:** o PCDT orienta tratar conforme o Protocolo Clínico e Diretrizes Terapêuticas da Dor Crônica. [1]\n- **Neurite aguda:** o protocolo indica imobilização do membro afetado e uso supervisionado de corticosteroides. [2]\n- **Prevenção e reabilitação:** o cuidado pode incluir acompanhamento da função neural e das reações, autocuidado, fisioterapia, tratamento de úlceras e cirurgia preventiva ou reabilitadora, conforme a necessidade e o nível de assistência. [5]\n- **Avaliação cirúrgica:** pode ser considerada quando há contraindicação formal a corticosteroides, abscesso de nervo, neurite sem resposta ao tratamento clínico em quatro semanas, reações recorrentes ou subentrantes, subluxação do nervo ulnar ou neuropatia crônica com déficit neural tardio e dor. [6]\n\nSe houver perda sensitiva ou motora, dor no trajeto de um nervo ou suspeita de neurite, é importante realizar avaliação presencial e monitorar a função neural; a piora funcional pode exigir intervenção mesmo sem dor. [2][3]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.3 Dor neuropática. p. 40–41."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 38–39."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0033",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 39–40."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0031",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.1 Neuropatia periférica. p. 38."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0098",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.2 Prevenção de incapacidades físicas. p. 85."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0102",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.6 Intervenções cirúrgicas preventivas e reabilitadoras. p. 87."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A dor neuropática da hanseníase é uma dor causada pelo dano nos nervos e pode aparecer tarde, até vários anos depois do fim do tratamento; costuma ser sentida como formigamento, queimação, sensações estranhas, sensibilidade exagerada ou dor ao simples toque, nas lesões de pele, nas mãos e nos pés. Na forma crônica, ela se diferencia da reação e da neurite porque não há inflamação nem dor ao apertar o nervo e não há nova perda de força ou de sensibilidade; se houver perda de sensibilidade junto com a dor, é preciso avaliação rápida, pois pode ser necessário corticoide receitado pelo médico. Para a dor crônica, o protocolo de hanseníase do Ministério da Saúde manda seguir o Protocolo Clínico de Dor Crônica, cujo conteúdo não está nos documentos consultados. A OMS orienta começar com paracetamol, passar a um anti-inflamatório como o ibuprofeno se não melhorar e, quando necessário, usar amitriptilina (em doses menores que as usadas para depressão) ou gabapentina, sempre com receita; corticoide não é recomendado para a dor neuropática.",
+      "pontos_chave": [
+        {
+          "id": "T29-P1",
+          "afirmacao": "A dor neuropática pode surgir tardiamente, até vários anos após o fim da poliquimioterapia.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+          "secao_ou_pagina": "6.6.3 Dor neuropática, p. 40–41 (PDF 42–43)",
+          "trecho": "A dor neuropática pode surgir tardiamente, mesmo vários anos após o término da poliquimioterapia para o tratamento da hanseníase"
+        },
+        {
+          "id": "T29-P2",
+          "afirmacao": "Caracteriza-se por parestesias, disestesias, hiperestesia e alodínia no trajeto e território dos nervos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+          "secao_ou_pagina": "6.6.3 Dor neuropática, p. 40–41 (PDF 42–43)",
+          "trecho": "Caracteriza-se por parestesias, disestesias, hiperestesia e alodínia ao longo dos nervos periféricos e no território por eles inervado."
+        },
+        {
+          "id": "T29-P3",
+          "afirmacao": "A dor neuropática crônica é sentida como formigamento e queimação nas lesões, mãos e pés, sem inflamação do nervo.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+          "secao_ou_pagina": "6.6.3 Dor neuropática, p. 40–41 (PDF 42–43)",
+          "trecho": "A dor neuropática crônica caracteriza-se pela sensação de formigamento e queimação, tanto no local das lesões de pele como nas mãos e nos pés."
+        },
+        {
+          "id": "T29-P4",
+          "afirmacao": "Dor com perda de sensibilidade (dor neuropática aguda) tem indicação de corticoterapia.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0034",
+          "secao_ou_pagina": "6.6.3 Dor neuropática, p. 40–41 (PDF 42–43)",
+          "trecho": "quando ocorre perda sensorial, é denominada “dor neuropática aguda”, havendo indicação precisa de corticoterapia."
+        },
+        {
+          "id": "T29-P5",
+          "afirmacao": "O tratamento sugerido pela OMS segue uma escada de analgésicos: paracetamol e, se insuficiente, um anti-inflamatório como ibuprofeno.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0016",
+          "secao_ou_pagina": "1.5 Neuropathic pain, p. 10 (PDF 22)",
+          "trecho": "Patients should be treated using an analgesic ladder starting with paracetamol as a first step, then using a non-steroidal drug such as ibuprofen, if relief is inadequate."
+        },
+        {
+          "id": "T29-P6",
+          "afirmacao": "Gabapentina (e amitriptilina) podem ser usadas; corticoides não são recomendados para dor neuropática.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0016",
+          "secao_ou_pagina": "1.5 Neuropathic pain, p. 10 (PDF 22)",
+          "trecho": "Gabapentin can also be used for patients with pain that is not alleviated by other measures. Steroids are not recommended for neuropathic pain in leprosy."
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar corticoide por conta própria ou como tratamento da dor neuropática crônica.",
+        "Afirmar que dor tardia sempre significa volta da doença e exige reiniciar a poliquimioterapia.",
+        "Indicar doses de remédios para dor como se fossem do protocolo brasileiro de dor crônica (não presente no corpus) ou orientar automedicação."
+      ],
+      "cobertura": "parcial",
+      "justificativa_cobertura": "O corpus cobre o reconhecimento da dor neuropática (PCDT 6.6.3; OMS 1.5 e algoritmo 5) e as opções de cuidado propostas pela OMS. Para a dor crônica, porém, o PCDT remete ao Protocolo Clínico e Diretrizes Terapêuticas da Dor Crônica, que não está no corpus, de modo que a conduta brasileira detalhada (medicamentos, doses, fluxos) não é coberta.",
+      "comportamento_esperado": "Responder como reconhecer a dor neuropática e diferenciá-la de reação ou neurite, citar as opções da OMS (paracetamol, AINE, amitriptilina, gabapentina, sem corticoide na dor crônica) e a indicação de corticoide quando há perda sensorial, declarando que o PCDT da Dor Crônica, ao qual a norma brasileira remete, está fora do corpus e que o tratamento deve ser definido pela equipe de saúde.",
+      "divergencias_entre_documentos": "O PCDT 2022 indica corticoterapia na 'dor neuropática aguda' com perda sensorial e remete a dor crônica ao PCDT de Dor Crônica. A OMS 2020 afirma que corticoides não são recomendados para a dor neuropática e propõe escada analgésica com amitriptilina e gabapentina. As posições se conciliam: corticoide quando há perda de função (neurite) e nenhum corticoide na dor neuropática crônica sem inflamação."
+    }
+  },
+  {
+    "codigo": "A091",
+    "pergunta": "Como identificar uma mancha que pode ser suspeita de hanseníase?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Uma mancha pode ser suspeita de hanseníase quando é **mais clara que a pele ao redor ou avermelhada**, sobretudo se houver diminuição ou perda da sensibilidade ao calor, à dor ou ao toque. A aparência, sozinha, não confirma o diagnóstico: a avaliação clínica inclui examinar a pele e testar a sensibilidade. [1][2]\n\nNa avaliação, observe:\n\n- **Cor e aspecto:** manchas hipocrômicas ou avermelhadas; algumas podem ser discretas, sem alteração do relevo ou da textura. [1][3]\n- **Sensibilidade:** compare a área da mancha com a pele ao redor, testando sensibilidade térmica, dolorosa e tátil. A alteração de sensibilidade em uma lesão ou área da pele é um sinal cardinal da hanseníase. [1][2]\n- **Outros achados possíveis:** redução da sudorese ou dos pelos na área; algumas lesões podem ser placas bem delimitadas, elevadas e avermelhadas. [3][4]\n\nA hanseníase também pode começar com alteração de sensibilidade sem mudança visível na cor da pele. Por isso, a suspeita não deve se limitar à presença de uma mancha. [3] Se houver dúvida após o exame, o protocolo brasileiro orienta complementar a investigação e, quando necessário na Atenção Primária, encaminhar para a Atenção Secundária. [1][2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.2 Definição de caso. p. 26."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.4 Hanseníase indeterminada. p. 31–32."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0017",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.1 Hanseníase tuberculoide. p. 28–29."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Uma mancha pode ser suspeita de hanseníase quando é mais clara que a pele ao redor ou avermelhada e, principalmente, quando nela a pessoa sente menos (ou não sente) calor, dor ou toque. No começo da doença a mancha pode ser discreta, lisa e sem relevo, e a perda de sensibilidade pode ser só para calor ou frio, com o tato ainda normal; às vezes há menos suor e menos pelos no local. Outros sinais de alerta são dormência ou formigamento nas mãos e pés, dor nos nervos, inchaço ou caroços no rosto e nas orelhas e feridas ou queimaduras que não doem. Quem notar esses sinais deve procurar a unidade de saúde: o diagnóstico é feito pelo profissional, que examina toda a pele com boa iluminação, testa a sensibilidade da mancha e avalia os nervos.",
+      "pontos_chave": [
+        {
+          "id": "T01-P1",
+          "afirmacao": "Manchas mais claras (hipocrômicas) ou avermelhadas na pele, com perda ou diminuição da sensibilidade, devem levantar suspeita de hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+          "trecho": "deve-se suspeitar de hanseníase em pessoas com qualquer um dos seguintes sintomas e sinais: manchas hipocrômicas ou avermelhadas na pele, perda ou diminuição da sensibilidade em mancha(s) da pele"
+        },
+        {
+          "id": "T01-P2",
+          "afirmacao": "A alteração da sensibilidade na mancha pode ser ao calor/frio, à dor e/ou ao toque (sinal cardinal).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+          "secao_ou_pagina": "6.2 Definição de caso, p. 26 (PDF 28)",
+          "trecho": "Lesão(ões) e/ou áreas(s) da pele com alteração de sensibilidade térmica e/ou dolorosa e/ou tátil"
+        },
+        {
+          "id": "T01-P3",
+          "afirmacao": "Na fase inicial, as manchas costumam ser poucas, mais claras que a pele ao redor e sem alteração de relevo ou textura.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+          "secao_ou_pagina": "6.4.4 Hanseníase indeterminada, p. 31–32 (PDF 33–34)",
+          "trecho": "manchas na pele, em pequeno número, mais claras que a pele ao redor (hipocrômicas), sem qualquer alteração do relevo nem da textura da pele"
+        },
+        {
+          "id": "T01-P4",
+          "afirmacao": "Na fase inicial, a perda de sensibilidade pode ser apenas ao calor/frio, com o tato preservado (sentir o toque não descarta a doença).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+          "secao_ou_pagina": "6.4.4 Hanseníase indeterminada, p. 31–32 (PDF 33–34)",
+          "trecho": "geralmente com hipoestesia térmica apenas; mais raramente, há diminuição da sensibilidade dolorosa, enquanto a sensibilidade tátil é preservada"
+        },
+        {
+          "id": "T01-P5",
+          "afirmacao": "Outros sinais de alerta incluem dormência ou formigamento em mãos/pés, dor em nervos, inchaço ou nódulos na face/orelhas e feridas ou queimaduras indolores.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+          "trecho": "dormência ou formigamento de mãos/pés, dor ou hipersensibilidade em nervos, edema ou nódulos na face ou nos lóbulos auriculares, ferimentos ou queimaduras indolores nas mãos ou pés"
+        },
+        {
+          "id": "T01-P6",
+          "afirmacao": "A confirmação depende de exame por profissional de saúde, com observação de toda a pele sob boa iluminação e testes de sensibilidade nas manchas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+          "trecho": "O exame físico deve incluir a observação cuidadosa de toda a superfície cutânea, sob boa iluminação, procedendo-se aos testes de sensibilidade em lesões da pele"
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que, se a pessoa sente o toque normalmente na mancha, a hanseníase está descartada.",
+        "Afirmar que manchas sem dor, coceira ou outros sintomas não merecem avaliação.",
+        "Afirmar que a pessoa pode confirmar ou descartar a hanseníase sozinha em casa, sem avaliação de profissional de saúde.",
+        "Afirmar que só há hanseníase quando existem manchas na pele."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (itens 6.1, 6.2 e 6.4) descreve os sinais de suspeição, o sinal cardinal de alteração de sensibilidade em lesões e o aspecto das manchas iniciais (forma indeterminada).",
+      "comportamento_esperado": "Responder em linguagem simples, descrevendo a aparência e a alteração de sensibilidade da mancha suspeita, os demais sinais de alerta e a orientação de procurar a unidade de saúde para avaliação.",
+      "divergencias_entre_documentos": null
+    }
+  }
+]

@@ -1,0 +1,305 @@
+{
+  "semente": 20261112,
+  "chave": [
+    {
+      "par": "P01",
+      "id_pergunta": "T01",
+      "resposta_a": "R1-T01",
+      "resposta_b": "R2-T01"
+    },
+    {
+      "par": "P02",
+      "id_pergunta": "T02",
+      "resposta_a": "R2-T02",
+      "resposta_b": "R1-T02"
+    },
+    {
+      "par": "P03",
+      "id_pergunta": "T03",
+      "resposta_a": "R1-T03",
+      "resposta_b": "R2-T03"
+    },
+    {
+      "par": "P04",
+      "id_pergunta": "T04",
+      "resposta_a": "R1-T04",
+      "resposta_b": "R2-T04"
+    },
+    {
+      "par": "P05",
+      "id_pergunta": "T05",
+      "resposta_a": "R2-T05",
+      "resposta_b": "R1-T05"
+    },
+    {
+      "par": "P06",
+      "id_pergunta": "T06",
+      "resposta_a": "R2-T06",
+      "resposta_b": "R1-T06"
+    },
+    {
+      "par": "P07",
+      "id_pergunta": "T07",
+      "resposta_a": "R1-T07",
+      "resposta_b": "R2-T07"
+    },
+    {
+      "par": "P08",
+      "id_pergunta": "T08",
+      "resposta_a": "R1-T08",
+      "resposta_b": "R2-T08"
+    },
+    {
+      "par": "P09",
+      "id_pergunta": "T09",
+      "resposta_a": "R1-T09",
+      "resposta_b": "R2-T09"
+    },
+    {
+      "par": "P10",
+      "id_pergunta": "T10",
+      "resposta_a": "R2-T10",
+      "resposta_b": "R1-T10"
+    },
+    {
+      "par": "P11",
+      "id_pergunta": "T11",
+      "resposta_a": "R1-T11",
+      "resposta_b": "R2-T11"
+    },
+    {
+      "par": "P12",
+      "id_pergunta": "T12",
+      "resposta_a": "R1-T12",
+      "resposta_b": "R2-T12"
+    },
+    {
+      "par": "P13",
+      "id_pergunta": "T13",
+      "resposta_a": "R2-T13",
+      "resposta_b": "R1-T13"
+    },
+    {
+      "par": "P14",
+      "id_pergunta": "T14",
+      "resposta_a": "R1-T14",
+      "resposta_b": "R2-T14"
+    },
+    {
+      "par": "P15",
+      "id_pergunta": "T15",
+      "resposta_a": "R2-T15",
+      "resposta_b": "R1-T15"
+    },
+    {
+      "par": "P16",
+      "id_pergunta": "T16",
+      "resposta_a": "R2-T16",
+      "resposta_b": "R1-T16"
+    },
+    {
+      "par": "P17",
+      "id_pergunta": "T17",
+      "resposta_a": "R2-T17",
+      "resposta_b": "R1-T17"
+    },
+    {
+      "par": "P18",
+      "id_pergunta": "T18",
+      "resposta_a": "R2-T18",
+      "resposta_b": "R1-T18"
+    },
+    {
+      "par": "P19",
+      "id_pergunta": "T19",
+      "resposta_a": "R2-T19",
+      "resposta_b": "R1-T19"
+    },
+    {
+      "par": "P20",
+      "id_pergunta": "T20",
+      "resposta_a": "R1-T20",
+      "resposta_b": "R2-T20"
+    },
+    {
+      "par": "P21",
+      "id_pergunta": "T21",
+      "resposta_a": "R1-T21",
+      "resposta_b": "R2-T21"
+    },
+    {
+      "par": "P22",
+      "id_pergunta": "T22",
+      "resposta_a": "R2-T22",
+      "resposta_b": "R1-T22"
+    },
+    {
+      "par": "P23",
+      "id_pergunta": "T23",
+      "resposta_a": "R2-T23",
+      "resposta_b": "R1-T23"
+    },
+    {
+      "par": "P24",
+      "id_pergunta": "T24",
+      "resposta_a": "R1-T24",
+      "resposta_b": "R2-T24"
+    },
+    {
+      "par": "P25",
+      "id_pergunta": "T25",
+      "resposta_a": "R1-T25",
+      "resposta_b": "R2-T25"
+    },
+    {
+      "par": "P26",
+      "id_pergunta": "T26",
+      "resposta_a": "R2-T26",
+      "resposta_b": "R1-T26"
+    },
+    {
+      "par": "P27",
+      "id_pergunta": "T27",
+      "resposta_a": "R2-T27",
+      "resposta_b": "R1-T27"
+    },
+    {
+      "par": "P28",
+      "id_pergunta": "T28",
+      "resposta_a": "R2-T28",
+      "resposta_b": "R1-T28"
+    },
+    {
+      "par": "P29",
+      "id_pergunta": "T29",
+      "resposta_a": "R2-T29",
+      "resposta_b": "R1-T29"
+    },
+    {
+      "par": "P30",
+      "id_pergunta": "T30",
+      "resposta_a": "R1-T30",
+      "resposta_b": "R2-T30"
+    },
+    {
+      "par": "P31",
+      "id_pergunta": "T31",
+      "resposta_a": "R2-T31",
+      "resposta_b": "R1-T31"
+    },
+    {
+      "par": "P32",
+      "id_pergunta": "T32",
+      "resposta_a": "R2-T32",
+      "resposta_b": "R1-T32"
+    },
+    {
+      "par": "P33",
+      "id_pergunta": "T33",
+      "resposta_a": "R2-T33",
+      "resposta_b": "R1-T33"
+    },
+    {
+      "par": "P34",
+      "id_pergunta": "T34",
+      "resposta_a": "R1-T34",
+      "resposta_b": "R2-T34"
+    },
+    {
+      "par": "P35",
+      "id_pergunta": "T35",
+      "resposta_a": "R2-T35",
+      "resposta_b": "R1-T35"
+    },
+    {
+      "par": "P36",
+      "id_pergunta": "T36",
+      "resposta_a": "R2-T36",
+      "resposta_b": "R1-T36"
+    },
+    {
+      "par": "P37",
+      "id_pergunta": "T37",
+      "resposta_a": "R2-T37",
+      "resposta_b": "R1-T37"
+    },
+    {
+      "par": "P38",
+      "id_pergunta": "T38",
+      "resposta_a": "R1-T38",
+      "resposta_b": "R2-T38"
+    },
+    {
+      "par": "P39",
+      "id_pergunta": "T39",
+      "resposta_a": "R2-T39",
+      "resposta_b": "R1-T39"
+    },
+    {
+      "par": "P40",
+      "id_pergunta": "T40",
+      "resposta_a": "R1-T40",
+      "resposta_b": "R2-T40"
+    },
+    {
+      "par": "P41",
+      "id_pergunta": "T41",
+      "resposta_a": "R1-T41",
+      "resposta_b": "R2-T41"
+    },
+    {
+      "par": "P42",
+      "id_pergunta": "T42",
+      "resposta_a": "R2-T42",
+      "resposta_b": "R1-T42"
+    },
+    {
+      "par": "P43",
+      "id_pergunta": "T43",
+      "resposta_a": "R2-T43",
+      "resposta_b": "R1-T43"
+    },
+    {
+      "par": "P44",
+      "id_pergunta": "T44",
+      "resposta_a": "R2-T44",
+      "resposta_b": "R1-T44"
+    },
+    {
+      "par": "P45",
+      "id_pergunta": "T45",
+      "resposta_a": "R2-T45",
+      "resposta_b": "R1-T45"
+    },
+    {
+      "par": "P46",
+      "id_pergunta": "T46",
+      "resposta_a": "R1-T46",
+      "resposta_b": "R2-T46"
+    },
+    {
+      "par": "P47",
+      "id_pergunta": "T47",
+      "resposta_a": "R1-T47",
+      "resposta_b": "R2-T47"
+    },
+    {
+      "par": "P48",
+      "id_pergunta": "T48",
+      "resposta_a": "R1-T48",
+      "resposta_b": "R2-T48"
+    },
+    {
+      "par": "P49",
+      "id_pergunta": "T49",
+      "resposta_a": "R1-T49",
+      "resposta_b": "R2-T49"
+    },
+    {
+      "par": "P50",
+      "id_pergunta": "T50",
+      "resposta_a": "R2-T50",
+      "resposta_b": "R1-T50"
+    }
+  ]
+}

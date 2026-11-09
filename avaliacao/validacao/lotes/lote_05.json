@@ -1,0 +1,888 @@
+[
+  {
+    "codigo": "A005",
+    "pergunta": "Quais alternativas terapêuticas são indicadas quando há resistência aos medicamentos de primeira linha para hanseníase?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Para **resistência confirmada à rifampicina**, o PCDT brasileiro recomenda esquemas de segunda linha diários por até 24 meses: uma combinação com ofloxacino, minociclina e clofazimina, ou com ofloxacino, claritromicina e clofazimina. [1] A escolha do esquema depende do perfil de resistência; se também houver resistência à ofloxacina, a OMS recomenda não usar quinolona e indica claritromicina, minociclina e clofazimina inicialmente. [2]\n\n### Resistência à rifampicina\n\nO PCDT brasileiro descreve, para hanseníase multibacilar, duas opções: [1]\n\n| Período | Esquema 1 | Esquema 2 |\n|---|---|---|\n| Primeiros 6 meses, diariamente | Ofloxacino 400 mg + minociclina 100 mg + clofazimina 50 mg | Ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg |\n| Próximos 18 meses, diariamente | Clofazimina 50 mg + ofloxacino 400 mg **ou** minociclina 100 mg | Ofloxacino 400 mg + clofazimina 50 mg |\n\nA OMS recomenda pelo menos dois medicamentos de segunda linha — claritromicina, minociclina ou uma quinolona — junto com clofazimina nos primeiros 6 meses; depois, clofazimina mais um desses medicamentos por mais 18 meses. [2] A OMS também admite substituir ofloxacino 400 mg por levofloxacino 500 mg ou moxifloxacino 400 mg. [3]\n\n### Resistência à rifampicina e à ofloxacina\n\nNesse cenário, a OMS recomenda **não usar quinolona**: claritromicina, minociclina e clofazimina diariamente por 6 meses, seguidas por claritromicina ou minociclina mais clofazimina diariamente por mais 18 meses. [2] O PCDT brasileiro fornecido detalha esquemas para resistência à rifampicina, mas não apresenta um esquema específico para resistência concomitante à ofloxacina. [1]\n\nAs recomendações da OMS para hanseníase resistente são condicionais e baseadas em opinião de especialistas, pois não foram recuperadas evidências sobre a eficácia desses regimes. [3][2] No Brasil, a referência para a prática é o protocolo do Ministério da Saúde.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina. p. 91–92."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0036",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 22."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0037",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 2 Tratamento para a hanseníase. p. 22–23."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "No PCDT 2022, na resistência comprovada à rifampicina há dois esquemas de segunda linha para MB, com duração máxima de 24 meses: (1) ofloxacino 400 mg + minociclina 100 mg + clofazimina 50 mg diariamente por 6 meses, seguidos de clofazimina 50 mg + ofloxacino 400 mg (ou minociclina 100 mg) diariamente por 18 meses; ou (2) ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg por 6 meses, seguidos de ofloxacino 400 mg + clofazimina 50 mg por 18 meses. Na resistência à rifampicina e ao ofloxacino, usa-se claritromicina 500 mg + minociclina 100 mg + clofazimina 50 mg por 6 meses, seguidos de clofazimina 50 mg + claritromicina 500 mg (ou minociclina 100 mg) por 18 meses. A resistência isolada ao ofloxacino não indica falha da PQT-U (o fármaco não a compõe); nesse caso, o paciente é excluído do protocolo e investigado na Atenção Especializada, e casos com RAM que exigiriam ofloxacino mas com resistência a ele são tratados com minociclina. Os pacientes em segunda linha são acompanhados na Atenção Especializada com consultas mensais e registro no SIRH; a OMS acrescenta investigar tuberculose antes de iniciar fluoroquinolona e realizar farmacovigilância com monitorização eletrocardiográfica (risco de prolongamento do QT).",
+      "pontos_chave": [
+        {
+          "id": "T18-P1",
+          "afirmacao": "Na resistência à rifampicina há duas opções de esquema de segunda linha, com duração máxima de 24 meses.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+          "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+          "trecho": "Quando a resistência à rifampicina está presente, são recomendadas duas possibilidades de esquemas farmacológicos com duração máxima de 24 meses, conforme o Quadro 7."
+        },
+        {
+          "id": "T18-P2",
+          "afirmacao": "Esquema 1 para resistência à rifampicina: ofloxacino 400 mg + minociclina 100 mg + clofazimina 50 mg diários por 6 meses, seguidos de clofazimina + ofloxacino (ou minociclina) por 18 meses.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+          "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+          "trecho": "Ofloxacino 400mg + minociclina 100mg + clofazimina 50mg"
+        },
+        {
+          "id": "T18-P3",
+          "afirmacao": "Esquema 2 para resistência à rifampicina: ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg por 6 meses, seguidos de ofloxacino + clofazimina por 18 meses.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0109",
+          "secao_ou_pagina": "11.4.1 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina (Quadro 7), p. 91–92 (PDF 93–94)",
+          "trecho": "Ofloxacino 400 mg + claritromicina 500 mg + clofazimina 50 mg"
+        },
+        {
+          "id": "T18-P4",
+          "afirmacao": "Na resistência à rifampicina e ao ofloxacino: claritromicina 500 mg + minociclina 100 mg + clofazimina 50 mg por 6 meses, seguidos de clofazimina + claritromicina (ou minociclina) por 18 meses.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0110",
+          "secao_ou_pagina": "11.4.2 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente à rifampicina e ao ofloxacino (Quadro 8), p. 92 (PDF 94)",
+          "trecho": "Claritromicina 500mg + minociclina 100mg + clofazimina 50mg"
+        },
+        {
+          "id": "T18-P5",
+          "afirmacao": "A resistência isolada ao ofloxacino não indica falha da PQT-U, pois o ofloxacino não faz parte do esquema de primeira linha.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0111",
+          "secao_ou_pagina": "11.4.3 Tratamento farmacológico de segunda linha na detecção de M. leprae resistente ao ofloxacino, p. 93 (PDF 95)",
+          "trecho": "A detecção da resistência ao ofloxacino isoladamente não é indicativa de falha do tratamento de primeira linha, tendo em vista que o fármaco não é um componente da PQT-U."
+        },
+        {
+          "id": "T18-P6",
+          "afirmacao": "O paciente em esquema de segunda linha por resistência é acompanhado na Atenção Especializada, com consultas mensais durante todo o tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0112",
+          "secao_ou_pagina": "11.5 Monitoramento do tratamento em casos de resistência medicamentosa, p. 93–95 (PDF 95–97)",
+          "trecho": "deve ser acompanhado na Atenção Especializada, com consultas mensais durante todo o período de tratamento"
+        }
+      ],
+      "pontos_proibidos": [
+        "Incluir uma quinolona (ofloxacino) no esquema quando há resistência ao ofloxacino.",
+        "Recomendar repetir ou prolongar a PQT-U como tratamento da resistência à rifampicina.",
+        "Indicar esquema de resistência à rifampicina com duração total de apenas 6 ou 12 meses (o PCDT prevê 6 meses + 18 meses, até 24 meses).",
+        "Recomendar monoterapia com um único fármaco de segunda linha."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (itens 11.4.1 a 11.5, Quadros 7 e 8) e as Diretrizes da OMS 2018 (item 2.2, Tabela 4) definem os esquemas de segunda linha para resistência à rifampicina, à rifampicina + ofloxacino e ao ofloxacino. Observação: o corpus não define um esquema específico para resistência isolada à dapsona ou à clofazimina; a resposta não deve inventá-lo.",
+      "comportamento_esperado": "Responder com os esquemas do PCDT por tipo de resistência e a conduta de acompanhamento; não inventar esquemas para resistência isolada à dapsona ou à clofazimina, que não estão no corpus.",
+      "divergencias_entre_documentos": "As Diretrizes da OMS (2018) admitem substituir o ofloxacino 400 mg por levofloxacino 500 mg ou moxifloxacino 400 mg e formulam a regra geral de 'pelo menos dois' fármacos de segunda linha (claritromicina, minociclina ou quinolona) + clofazimina; o PCDT 2022, norma brasileira seguida na referência, lista apenas ofloxacino como quinolona e dois esquemas fixos. A OMS ainda recomenda investigar tuberculose e monitorar ECG, pontos não detalhados no PCDT."
+    }
+  },
+  {
+    "codigo": "A015",
+    "pergunta": "Qual o esquema terapêutico para crianças menores de 30 kg com diagnóstico de hanseníase?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Para crianças com hanseníase e **peso abaixo de 30 kg**, o PCDT brasileiro recomenda a PQT-U infantil adaptada ao peso: rifampicina, clofazimina e dapsona, com doses calculadas em mg/kg. A duração é de **6 meses para casos paucibacilares (PB)** e **12 meses para multibacilares (MB)**. [1][2]\n\n- **Dose mensal supervisionada:** rifampicina 10 mg/kg, clofazimina 6 mg/kg e dapsona 2 mg/kg. [2]\n- **Dose diária autoadministrada:** clofazimina 1 mg/kg/dia e dapsona 2 mg/kg/dia. [2]\n- Como a clofazimina está disponível em cápsulas de 50 mg e 100 mg, o PCDT orienta calcular a dose semanal e dividi-la em duas ou três tomadas. [2] Por exemplo, para uma criança de 15 kg, o documento calcula 105 mg de clofazimina por semana e cita como possibilidade uma cápsula de 50 mg duas vezes por semana. [2]\n\nA classificação PB ou MB determina a duração do tratamento; o trecho da OMS define PB como 1 a 5 lesões cutâneas sem bacilos demonstrados na baciloscopia e MB como mais de 5 lesões, acometimento de nervos ou bacilos demonstrados, independentemente do número de lesões. [3] No Brasil, a referência para a prática é o PCDT do Ministério da Saúde. [1][2]\n\n**Cuidados:** a adaptação da clofazimina em crianças abaixo de 30 kg decorre da dificuldade de administrar a dose diária com as apresentações disponíveis. [2] Os trechos fornecidos não especificam encaminhamento pediátrico para o tratamento da hanseníase em si; as orientações pediátricas citadas referem-se ao manejo de reações hansênicas, não ao esquema de PQT-U. [4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57–58."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 58–59."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0009",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Introdução. p. 2–3."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.3 Tratamento farmacológico das reações hansênicas em crianças. p. 62."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Para crianças com peso abaixo de 30 kg, o PCDT 2022 prevê a adaptação da PQT-U Infantil com doses por peso: dose mensal supervisionada de rifampicina 10 mg/kg, clofazimina 6 mg/kg e dapsona 2 mg/kg, e dose diária autoadministrada de clofazimina 1 mg/kg/dia e dapsona 2 mg/kg/dia. A duração é de 6 meses para PB (6 doses supervisionadas em até 9 meses) e 12 meses para MB (12 doses em até 18 meses), usando os três medicamentos independentemente da classificação operacional. A rifampicina está disponível no SUS como suspensão oral 20 mg/mL. Como a clofazimina só existe em cápsulas de 50 e 100 mg, recomenda-se calcular a dose semanal e dividi-la em duas ou três tomadas (ex.: criança de 15 kg recebe 105 mg por semana, podendo tomar uma cápsula de 50 mg duas vezes por semana).",
+      "pontos_chave": [
+        {
+          "id": "T19-P1",
+          "afirmacao": "Dose mensal supervisionada para crianças < 30 kg: rifampicina 10 mg/kg, clofazimina 6 mg/kg e dapsona 2 mg/kg.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, adaptação da PQT-U Infantil), p. 58–59 (PDF 60–61)",
+          "trecho": "Dose mensal supervisionada: •Rifampicina 10mg/kg de peso •Clofazimina 6mg/kg de peso •Dapsona 2mg/kg de peso"
+        },
+        {
+          "id": "T19-P2",
+          "afirmacao": "Dose diária autoadministrada para crianças < 30 kg: clofazimina 1 mg/kg/dia e dapsona 2 mg/kg/dia.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, adaptação da PQT-U Infantil), p. 58–59 (PDF 60–61)",
+          "trecho": "Dose diária autoadministrada: •Clofazimina 1mg/kg de peso/dia •Dapsona 2mg/kg de peso/dia"
+        },
+        {
+          "id": "T19-P3",
+          "afirmacao": "Duração: PB 6 doses mensais supervisionadas (em até 9 meses); MB 12 doses (em até 18 meses).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota a), p. 58–59 (PDF 60–61)",
+          "trecho": "A PQT-U deverá ser interrompida após a administração de seis doses mensais supervisionadas em intervalo de até nove meses para os casos paucibacilares e após 12 doses mensais supervisionadas em um intervalo de até 18 meses para os casos multibacilares"
+        },
+        {
+          "id": "T19-P4",
+          "afirmacao": "A rifampicina está disponível no SUS em suspensão oral de 20 mg/mL.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota b), p. 58–59 (PDF 60–61)",
+          "trecho": "A rifampicina também está disponível no SUS sob a forma de suspensão oral com 20mg/mL"
+        },
+        {
+          "id": "T19-P5",
+          "afirmacao": "Para a clofazimina, calcula-se a dose semanal e divide-se em duas ou três tomadas (ex.: 15 kg = 105 mg/semana).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia (Quadro 1, nota c), p. 58–59 (PDF 60–61)",
+          "trecho": "recomenda-se calcular a dose semanal e dividi-la em duas ou três tomadas. Por exemplo: uma criança com 15kg deverá receber 105mg de clofazimina ao longo de sete dias"
+        },
+        {
+          "id": "T19-P6",
+          "afirmacao": "Os três medicamentos (rifampicina, clofazimina e dapsona) são usados em todos os casos, independentemente da classificação operacional (PQT-U).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+          "secao_ou_pagina": "10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia, p. 57–58 (PDF 59–60)",
+          "trecho": "desde 2018 a OMS passou a preconizar o uso dos três medicamentos para o tratamento de todos os casos de hanseníase, independentemente da classificação operacional"
+        }
+      ],
+      "pontos_proibidos": [
+        "Prescrever para criança < 30 kg as doses fixas da PQT-U Infantil (rifampicina 450 mg, clofazimina 150 mg, dapsona 50 mg), destinadas à faixa de 30 a 50 kg.",
+        "Indicar clofazimina 50 mg diária para criança < 30 kg (a dose é 1 mg/kg/dia, ajustada semanalmente).",
+        "Inverter as durações (PB 12 meses / MB 6 meses) ou omitir a clofazimina nos casos PB.",
+        "Indicar dapsona apenas em dose mensal, sem a dose diária de 2 mg/kg/dia."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O Quadro 1 do PCDT 2022 (item 10.1.1) e suas notas a, b e c definem o esquema, a duração e as orientações práticas para crianças com peso abaixo de 30 kg.",
+      "comportamento_esperado": "Responder com as doses por kg do PCDT (mensal supervisionada e diária autoadministrada), a duração por classificação operacional e as orientações de apresentação (suspensão de rifampicina, fracionamento semanal da clofazimina).",
+      "divergencias_entre_documentos": "As Diretrizes da OMS (2018, Tabela 3) usam outro ponto de corte (crianças < 10 anos ou < 40 kg) e outra posologia de clofazimina (100 mg uma vez por mês e 50 mg duas vezes por semana), mantendo rifampicina 10 mg/kg mensal e dapsona 2 mg/kg/dia. A referência segue o PCDT 2022 (corte de 30 kg; clofazimina 6 mg/kg mensal e 1 mg/kg/dia)."
+    }
+  },
+  {
+    "codigo": "A025",
+    "pergunta": "Quais achados clínicos em uma lesão cutânea devem levantar suspeita de hanseníase e orientar a avaliação diagnóstica?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Devem levantar suspeita **manchas hipocrômicas ou avermelhadas**, sobretudo quando há diminuição ou perda da sensibilidade térmica, dolorosa ou tátil. A avaliação deve considerar também alterações dos nervos e outros sinais neurológicos, pois a hanseníase pode se manifestar de formas variadas e, em alguns casos, sem lesões cutâneas visíveis. [1][2][3]\n\n### Achados na lesão cutânea\n\n- **Alteração de sensibilidade:** diminuição ou perda da sensibilidade térmica, dolorosa e/ou tátil em uma lesão ou área da pele é um sinal cardinal; a perda definitiva de sensibilidade em área hipopigmentada ou avermelhada também integra os sinais cardinais descritos pela OMS. [4][3]\n- **Aspecto e distribuição:** as lesões podem ser únicas ou em pequeno número, como placas bem delimitadas, elevadas e geralmente avermelhadas; ou aparecer em número variável, como manchas e placas hipocrômicas, acastanhadas ou violáceas, por vezes infiltradas e com limites imprecisos. [5][6]\n- **Outras alterações locais:** podem ocorrer redução ou ausência de suor e diminuição dos pelos na área afetada; em algumas lesões, a sensibilidade e as funções autonômicas da pele podem estar comprometidas de forma discreta. [5][6]\n- **Lesões sem perda evidente de sensibilidade:** na forma virchowiana, lesões cutâneas podem manter sensibilidade normal; portanto, esse achado isolado não exclui suspeita. [7]\n\n### Avaliação diagnóstica\n\nExamine toda a superfície cutânea sob boa iluminação e teste a sensibilidade nas lesões e nas áreas que a pessoa relata como alteradas, mesmo que não haja lesão visível. Inclua a palpação dos nervos periféricos e a avaliação de sensibilidade e força muscular nas mãos, pés e olhos. [1]\n\nTambém devem ser valorizados dormência ou formigamento em mãos e pés, dor ou hipersensibilidade nos nervos, edema ou nódulos na face ou nos lóbulos das orelhas e ferimentos ou queimaduras indolores nas mãos ou nos pés. [1] O diagnóstico é principalmente clínico; no Brasil, considera-se caso a presença de pelo menos um sinal cardinal: alteração de sensibilidade em lesão ou área da pele, espessamento de nervo periférico associado a alterações sensitivas, motoras ou autonômicas, ou identificação de *M. leprae* em exame. [3] Se persistir dúvida após o exame físico, a investigação deve ser complementada; quando houver dúvida diagnóstica na Atenção Primária, o protocolo brasileiro orienta encaminhamento à Atenção Secundária. [1][3]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0022",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.5 Hanseníase neural pura (ou neurítica primária). p. 32–33."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.2 Definição de caso. p. 26."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0028",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Diagnóstico. p. 17."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0017",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.1 Hanseníase tuberculoide. p. 28–29."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0020",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.3 Hanseníase dimorfa. p. 30–31."
+      },
+      {
+        "indice": 7,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0018",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.4.2 Hanseníase virchowiana. p. 29."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Deve-se suspeitar de hanseníase diante de manchas hipocrômicas ou eritematosas com perda ou diminuição da sensibilidade térmica, dolorosa e/ou tátil, que constitui o primeiro sinal cardinal; hipo/anidrose e rarefação de pelos na lesão reforçam a suspeita. Na forma indeterminada as máculas são poucas, sem alteração de relevo, com hipoestesia geralmente apenas térmica e tato preservado; na tuberculoide, placas de bordas nítidas e elevadas com acentuada hipoestesia ou anestesia; na dimorfa, lesões infiltradas e foveolares; e na virchowiana as lesões podem ter sensibilidade normal, apoiando-se o diagnóstico no espessamento neural e na baciloscopia. A avaliação deve incluir inspeção de toda a superfície cutânea sob boa iluminação, testes de sensibilidade nas lesões e em áreas referidas, palpação dos nervos periféricos e testes de força muscular em mãos, pés e olhos, valorizando queixas neurológicas e o histórico de contato. O diagnóstico é eminentemente clínico; em caso de dúvida, complementa-se com baciloscopia (cujo resultado negativo não exclui a doença) e referencia-se à Atenção Especializada.",
+      "pontos_chave": [
+        {
+          "id": "T02-P1",
+          "afirmacao": "Manchas hipocrômicas ou avermelhadas e perda ou diminuição da sensibilidade em manchas da pele são sinais de suspeição.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+          "trecho": "deve-se suspeitar de hanseníase em pessoas com qualquer um dos seguintes sintomas e sinais: manchas hipocrômicas ou avermelhadas na pele, perda ou diminuição da sensibilidade em mancha(s) da pele"
+        },
+        {
+          "id": "T02-P2",
+          "afirmacao": "Lesão de pele com alteração da sensibilidade térmica, dolorosa e/ou tátil é sinal cardinal (critério de definição de caso).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0014",
+          "secao_ou_pagina": "6.2 Definição de caso, p. 26 (PDF 28)",
+          "trecho": "Lesão(ões) e/ou áreas(s) da pele com alteração de sensibilidade térmica e/ou dolorosa e/ou tátil"
+        },
+        {
+          "id": "T02-P3",
+          "afirmacao": "Na forma indeterminada, a hipoestesia costuma ser apenas térmica, com sensibilidade tátil preservada.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0021",
+          "secao_ou_pagina": "6.4.4 Hanseníase indeterminada, p. 31–32 (PDF 33–34)",
+          "trecho": "geralmente com hipoestesia térmica apenas; mais raramente, há diminuição da sensibilidade dolorosa, enquanto a sensibilidade tátil é preservada"
+        },
+        {
+          "id": "T02-P4",
+          "afirmacao": "Na forma tuberculoide há acentuada hipoestesia ou anestesia nas lesões, demonstrável pelos testes de sensibilidade.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0017",
+          "secao_ou_pagina": "6.4.1 Hanseníase tuberculoide, p. 28–29 (PDF 30–31)",
+          "trecho": "acentuada hipoestesia ou anestesia nas lesões dermatológicas, facilmente demonstrada pelos testes de sensibilidade térmica, tátil e dolorosa"
+        },
+        {
+          "id": "T02-P5",
+          "afirmacao": "Na forma virchowiana as lesões cutâneas podem ter sensibilidade normal, de modo que sensibilidade preservada não exclui hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0018",
+          "secao_ou_pagina": "6.4.2 Hanseníase virchowiana, p. 29 (PDF 31)",
+          "trecho": "Portanto, ao contrário da forma tuberculoide, na forma virchowiana as lesões de pele podem apresentar sensibilidade normal."
+        },
+        {
+          "id": "T02-P6",
+          "afirmacao": "A avaliação inclui palpação dos nervos periféricos e testes de sensibilidade e força muscular em mãos, pés e olhos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+          "secao_ou_pagina": "6.1 Suspeição diagnóstica, p. 25–26 (PDF 27–28)",
+          "trecho": "A avaliação neurológica deve incluir a palpação dos nervos periféricos e os testes de sensibilidade e de força muscular nas mãos, pés e olhos."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que lesão com sensibilidade preservada exclui hanseníase.",
+        "Afirmar que baciloscopia negativa exclui o diagnóstico de hanseníase.",
+        "Afirmar que o diagnóstico exige obrigatoriamente confirmação laboratorial (o PCDT define o diagnóstico como eminentemente clínico).",
+        "Indicar teste sorológico ou PCR como exame isolado para confirmar ou excluir hanseníase em lesão suspeita."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 descreve os sinais de suspeição (6.1), os sinais cardinais (6.2), as características das lesões por forma clínica (6.4) e a conduta de avaliação e referência; a OMS 2018 confirma os sinais cardinais.",
+      "comportamento_esperado": "Responder com terminologia técnica, listando achados cutâneos e sensitivos sugestivos, variações por forma clínica e os passos da avaliação diagnóstica.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A035",
+    "pergunta": "Qual a conduta a ser tomada em relação à família do paciente?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "A família deve ser incluída na **investigação de contatos**: avalie clinicamente os contatos domiciliares que residem ou residiram com a pessoa, ou conviveram com ela no domicílio, nos cinco anos anteriores ao diagnóstico. A investigação também se aplica a contatos que não sejam familiares. [1]\n\n- **Avaliação e orientação:** examine os contatos e oriente-os a observar a própria saúde e a procurar a unidade de saúde se notarem sinais sugestivos de hanseníase. [2] Na avaliação, investigue queixas neurológicas e examine a pele e a função neurológica, incluindo sensibilidade e força muscular. [3]\n- **Se um contato tiver hanseníase:** encaminhe-o para iniciar a poliquimioterapia única (PQT-U). [2]\n- **BCG:** ofereça imunoprofilaxia aos contatos com mais de um ano que não foram vacinados ou receberam apenas uma dose, verificando a vacinação pelo cartão ou pela cicatriz vacinal. [2] A revacinação é contraindicada nas situações descritas no protocolo, incluindo gestação e determinadas condições de imunodeficiência, neoplasia ou uso prolongado de corticosteroide em dose elevada. [2]\n- **Sorologia anti-PGL-1 positiva sem critérios diagnósticos:** o protocolo brasileiro recomenda avaliação anual na unidade básica de saúde. [2]\n\nConverse com a pessoa sobre a investigação e respeite sua decisão quanto à divulgação do diagnóstico. A OMS recomenda não identificar nem rastrear contatos para profilaxia sem consentimento do paciente, considerando o risco de estigma. [4][5][6] No Brasil, a conduta de referência é a do protocolo do Ministério da Saúde. [1][2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 13 Investigação de contatos. p. 101."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 13.1 Imunoprofilaxia e monitoramento de contatos. p. 101–103."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0005",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xiv–xv."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0041",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 25–26."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0042",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 3 Profilaxia. p. 26."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "As pessoas que moram ou moraram com o paciente nos últimos cinco anos antes do diagnóstico, sendo da família ou não, são consideradas contatos, e todas devem passar por avaliação clínica na unidade de saúde. Contatos com mais de um ano de idade que nunca tomaram a vacina BCG ou tomaram só uma dose devem receber a vacina, que não deve ser dada em algumas situações, como gestação ou imunidade baixa. Os contatos devem ser orientados a observar o próprio corpo e avisar logo a equipe se aparecerem sinais da doença, e quem for diagnosticado começa o tratamento (PQT-U). No SUS, o teste rápido da hanseníase é usado apenas para avaliar contatos, e quem tiver resultado positivo sem sinais da doença deve ser reavaliado todo ano. A família não deve ser afastada nem discriminada, e a equipe pode ajudar o paciente a conversar com os familiares sobre a doença.",
+      "pontos_chave": [
+        {
+          "id": "T40-P1",
+          "afirmacao": "São contatos todas as pessoas que residem ou conviveram no domicílio com o paciente nos últimos cinco anos antes do diagnóstico, familiares ou não.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+          "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+          "trecho": "toda e qualquer pessoa que resida ou tenha residido, conviva ou tenha convivido com o doente de hanseníase, no âmbito domiciliar, nos últimos cinco anos anteriores ao diagnóstico da doença"
+        },
+        {
+          "id": "T40-P2",
+          "afirmacao": "Todos os contatos domiciliares devem passar por avaliação clínica.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0122",
+          "secao_ou_pagina": "13 Investigação de contatos, p. 101 (PDF 103)",
+          "trecho": "orienta-se que todos os contatos domiciliares de um caso de hanseníase passem por avaliação clínica"
+        },
+        {
+          "id": "T40-P3",
+          "afirmacao": "Deve-se ofertar BCG aos contatos maiores de um ano não vacinados ou que receberam apenas uma dose.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+          "trecho": "Recomenda-se ofertar imunoprofilaxia aos contatos de pacientes com hanseníase, maiores de um ano de idade, não vacinados ou que receberam apenas uma dose da vacina BCG."
+        },
+        {
+          "id": "T40-P4",
+          "afirmacao": "Os contatos devem ser orientados ao automonitoramento e a relatar imediatamente sinais da doença.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+          "trecho": "Esses pacientes necessitam ser orientados para o automonitoramento e encorajados a realizar o relato voluntário imediato de"
+        },
+        {
+          "id": "T40-P5",
+          "afirmacao": "Contatos diagnosticados com hanseníase devem iniciar a PQT-U.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+          "trecho": "Os contatos diagnosticados com hanseníase devem ser encaminhados para iniciar a PQT-U."
+        },
+        {
+          "id": "T40-P6",
+          "afirmacao": "Contatos com sorologia anti-PGL-1 (teste rápido) positiva e sem critérios diagnósticos devem ser reavaliados anualmente na unidade básica.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+          "secao_ou_pagina": "13.1 Imunoprofilaxia e monitoramento de contatos, p. 101–103 (PDF 103–105)",
+          "trecho": "Contatos de hanseníase que possuam sorologia anti-PGL-1 positiva e que não apresentem critérios para o diagnóstico clínico ou laboratorial da doença deverão ser avaliados anualmente"
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar afastar, isolar ou separar a família do paciente.",
+        "Indicar BCG para gestantes ou pessoas com imunodeficiência.",
+        "Afirmar que o PCDT 2022 recomenda rifampicina em dose única (quimioprofilaxia) para os contatos.",
+        "Afirmar que só os familiares com sintomas precisam ser examinados."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (capítulo 13 e item 7.6) define contatos e a conduta: avaliação clínica de todos os contatos domiciliares, BCG, automonitoramento, início da PQT-U nos diagnosticados e uso do teste rápido com reavaliação anual dos soropositivos; o item 10.2.1.5 e o Anexo 2 da Estratégia Global da OMS cobrem comunicação com a família e não discriminação. A eventual adoção de quimioprofilaxia no Brasil depende de normas fora do corpus.",
+      "comportamento_esperado": "Responder com a conduta do PCDT 2022 para os contatos/família em linguagem simples; se mencionar quimioprofilaxia com rifampicina em dose única, identificá-la como recomendação da OMS (2018) não incluída no PCDT 2022, sem afirmar que é a norma brasileira vigente.",
+      "divergencias_entre_documentos": "A OMS (Diretrizes 2018 e Estratégia Global 2021–2030) recomenda rifampicina em dose única como quimioprofilaxia para contatos (com consentimento do caso-índice) e afirma que a repetição da BCG não é recomendada; o PCDT 2022 não inclui quimioprofilaxia e recomenda ofertar BCG a contatos não vacinados ou com apenas uma dose. A Estratégia Nacional 2024–2030 prevê pesquisas sobre a efetividade da quimioprofilaxia. A referência segue o PCDT 2022; normas brasileiras posteriores não estão no corpus."
+    }
+  },
+  {
+    "codigo": "A046",
+    "pergunta": "Qual tratamento deve ser usado para uma outra doença de pele que pode se parecer com hanseníase?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os trechos fornecidos **não identificam uma doença de pele específica nem informam como tratá-la**. Portanto, não é possível indicar um tratamento com base nesses documentos.\n\nEles orientam que, diante de dúvida diagnóstica, sejam avaliados cuidadosamente a pele e a sensibilidade, além da função dos nervos; se a dúvida persistir na Atenção Primária, o paciente deve ser encaminhado à Atenção Secundária [1].\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0013",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.1 Suspeição diagnóstica. p. 25–26."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Os documentos usados como base não dizem quais outras doenças de pele podem se parecer com hanseníase nem como tratá-las; eles tratam apenas da hanseníase. O protocolo brasileiro orienta que, quando houver dúvida sobre o diagnóstico na unidade básica de saúde, a pessoa seja encaminhada para um serviço especializado. O tratamento de outra doença de pele depende de qual doença é, e isso precisa ser definido por um profissional de saúde, com base em fontes próprias para essa doença.",
+      "pontos_chave": [],
+      "pontos_proibidos": [
+        "Recomendar um tratamento específico (por exemplo, pomadas, antifúngicos ou corticoides) para outra doença de pele como se estivesse nos documentos.",
+        "Recomendar iniciar a PQT-U em quem tem lesão de pele sem diagnóstico confirmado de hanseníase."
+      ],
+      "cobertura": "nao_respondivel",
+      "justificativa_cobertura": "O corpus não lista dermatoses que fazem diagnóstico diferencial com hanseníase nem os tratamentos delas. Só lista neuropatias para o diagnóstico diferencial da forma neural pura (PCDT 6.4.5) e orienta encaminhar para a Atenção Secundária em caso de dúvida diagnóstica (PCDT 6.1).",
+      "comportamento_esperado": "Reconhecer que os documentos não respondem, não inventar tratamentos e orientar a procurar avaliação profissional; pode citar o encaminhamento para atenção especializada em caso de dúvida diagnóstica.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A055",
+    "pergunta": "Quais os efeitos colaterais mais comuns causados pelos medicamentos da PQT?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Os efeitos mais comuns e perceptíveis variam conforme o medicamento. Na PQT-U, a **clofazimina** costuma causar pigmentação da pele; a **dapsona** pode causar hemólise e, menos frequentemente, anemia significativa. [1]\n\n- **Clofazimina:** pigmentação da pele, que pode variar de vermelho a castanho-escuro; coloração rosada da urina, do suor ou da expectoração; ressecamento e descamação da pele (ictiose); e, às vezes, cólicas, diarreia ou perda de peso. [1]\n- **Dapsona:** hemólise e, mais raramente, anemia significativa. O protocolo destaca que alterações hematológicas são as reações adversas mais frequentemente associadas à dapsona; a anemia é mais frequente em mulheres. [2][1]\n- **Rifampicina:** pode ocorrer aumento leve e transitório das transaminases, mas hepatotoxicidade é rara nas doses e nos intervalos recomendados para hanseníase. [1]\n\nO protocolo também descreve casos raros de hepatopatia, nefropatia, agranulocitose e psicose associados à dapsona. [1] A pigmentação da pele pela clofazimina, por si só, não é critério para suspender o medicamento, exceto quando causa insatisfação extrema com risco de abandono do tratamento. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 71–72."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U. p. 76–77."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Segundo o PCDT 2022, a dapsona é o componente da PQT-U mais frequentemente associado a reações adversas, sobretudo hematológicas (hemólise e, mais raramente, anemia significativa), registradas principalmente no primeiro trimestre do tratamento; a anemia é mais frequente em mulheres e as reações adversas à PQT são mais relatadas em idosos, e a reação mais grave à dapsona é a síndrome sulfônica. Recomenda-se, sempre que possível, monitorar o hemograma nos primeiros meses, sem necessidade de dosagem rotineira de G6PD antes de iniciar a PQT-U. O efeito mais comum e perceptível da clofazimina é a pigmentação cutânea (vermelho a castanho-escuro), acompanhada de coloração rosada de urina, suor e expectoração, ictiose em pernas e antebraços e efeitos gastrointestinais (cólicas, diarreia, perda de peso) por deposição de cristais na parede intestinal. Com a rifampicina, em dose mensal, os eventos adversos são raros; pode haver leve aumento transitório de transaminases, que não indica interrupção do tratamento.",
+      "pontos_chave": [
+        {
+          "id": "T13-P1",
+          "afirmacao": "A dapsona é o medicamento mais frequentemente associado a reações adversas, especialmente alterações hematológicas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+          "trecho": "Dentre os medicamentos utilizados para o tratamento da hanseníase, o mais frequentemente associado a reações adversas é a dapsona, especialmente as alterações hematológicas."
+        },
+        {
+          "id": "T13-P2",
+          "afirmacao": "As principais reações adversas à dapsona ocorrem no primeiro trimestre do tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0086",
+          "secao_ou_pagina": "10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U, p. 76–77 (PDF 78–79)",
+          "trecho": "Na maioria dos estudos, as principais reações adversas à dapsona são registradas no primeiro trimestre do tratamento."
+        },
+        {
+          "id": "T13-P3",
+          "afirmacao": "A dapsona pode causar hemólise e, mais raramente, anemia significativa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, dapsona), p. 71–72 (PDF 73–74)",
+          "trecho": "A dapsona geralmente é bem tolerada nas doses recomendadas para a hanseníase, mas pode causar hemólise e, mais raramente, anemia significativa."
+        },
+        {
+          "id": "T13-P4",
+          "afirmacao": "O efeito adverso mais comum e perceptível da clofazimina é a pigmentação da pele (vermelho a castanho-escuro).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "O efeito mais comum e perceptível é a pigmentação da pele, variando de vermelho a castanho-escuro, dependendo da dosagem."
+        },
+        {
+          "id": "T13-P5",
+          "afirmacao": "A clofazimina também causa ictiose em pernas e antebraços e pode causar efeitos gastrointestinais.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "A clofazimina também produz ictiose característica nas pernas e antebraços."
+        },
+        {
+          "id": "T13-P6",
+          "afirmacao": "A hepatotoxicidade da rifampicina (leve aumento transitório de transaminases) é rara na posologia da hanseníase e não indica interrupção.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, rifampicina), p. 71–72 (PDF 73–74)",
+          "trecho": "Pode ocorrer hepatotoxicidade com leve aumento transitório das transaminases hepáticas, mas essa reação é rara na dosagem e nos intervalos recomendados para hanseníase"
+        }
+      ],
+      "pontos_proibidos": [
+        "Apontar a rifampicina como o medicamento da PQT-U mais associado a reações adversas ou afirmar que a hepatotoxicidade é comum no esquema mensal.",
+        "Afirmar que é obrigatório dosar G6PD rotineiramente antes de iniciar a PQT-U.",
+        "Afirmar que a pigmentação pela clofazimina é critério para suspender o medicamento.",
+        "Afirmar que leve aumento transitório de transaminases pela rifampicina exige interromper o tratamento."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 descreve os eventos adversos por medicamento (Quadro 2, item 10.1.6) e indica a frequência relativa e o período de maior ocorrência das reações à dapsona (item 10.1.7).",
+      "comportamento_esperado": "Responder com terminologia técnica, destacando dapsona (hematológicos, primeiro trimestre, síndrome sulfônica como mais grave), clofazimina (pigmentação, ictiose, gastrointestinais) e rifampicina (eventos raros em dose mensal).",
+      "divergencias_entre_documentos": "Não há divergência normativa. A OMS (Diretrizes 2018) registra que nenhum estudo da revisão relatou eventos adversos com clofazimina no esquema de três medicamentos para PB, mas cita a coloração da pele como preocupação e estigma; o PCDT descreve a pigmentação como o efeito mais comum."
+    }
+  },
+  {
+    "codigo": "A065",
+    "pergunta": "Quais critérios clínicos e laboratoriais indicam investigação de resistência primária aos antimicrobianos na hanseníase?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "A investigação de **resistência primária** deve ser considerada em casos novos quando houver suspeita clínica de persistência de infecção ativa; a confirmação é laboratorial, por detecção de alterações genéticas associadas à resistência. O PCDT brasileiro não apresenta, nos trechos fornecidos, critérios clínicos específicos exclusivos para resistência primária. [1][2][3][4]\n\n- **Contexto clínico:** a resistência foi identificada em um caso novo entre os casos novos investigados no Brasil, portanto é possível, embora rara. [1]\n- **Quando investigar:** ao final da PQT-U, se houver suspeita de persistência de infecção ativa, o PCDT orienta investigar resistência; também indica investigação quando parâmetros clínicos e baciloscópicos permanecem inalterados em relação ao diagnóstico. [4]\n- **Confirmação laboratorial:** o teste detecta alterações nas sequências-alvo dos genes **rpoB** (rifampicina), **gyrA** (ofloxacino e outras fluoroquinolonas) e **folP1** (dapsona). A amostra indicada no trecho é biópsia da lesão de pele, encaminhada ao Laboratório Central de Saúde Pública conforme o fluxo local. [2][3]\n- **Ressalva:** a presença de uma mutação em gene relacionado ao alvo do medicamento não necessariamente significa resistência; a interpretação deve seguir a investigação laboratorial especializada. [2]\n\nOs documentos consultados não especificam, nos trechos fornecidos, um conjunto de sinais clínicos próprio para distinguir resistência **primária** de resistência em casos previamente tratados. No Brasil, a referência para a prática é o PCDT do Ministério da Saúde. [1][2][3][4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0106",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11 Resistência do M. leprae a antimicrobianos. p. 89–90."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0105",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11 Resistência do M. leprae a antimicrobianos. p. 89."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0107",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos. p. 90."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0059",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 59."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Segundo o PCDT 2022, deve ser investigado para resistência todo paciente diagnosticado como caso novo de hanseníase que apresente, no diagnóstico inicial, índice baciloscópico (IB) ≥ 2,0; este é o critério previsto para casos novos (resistência primária), distinto dos critérios de resistência secundária após PQT-U (persistência de hansenomas ou lesões infiltradas inalteradas, IB inalterado ou em aumento após pelo menos um ano, reações reentrantes por mais de três anos após a alta e não responsivas, abandono de PQT-U por mais de seis meses em MB e recidiva). A investigação laboratorial usa o teste molecular incorporado ao SUS em 2022 (amplificação de DNA e hibridização reversa em fita de nitrocelulose), que identifica mutações nos genes rpoB (rifampicina), gyrA (ofloxacino e outras fluoroquinolonas) e folP1 (dapsona). A amostra é uma biópsia da lesão de pele, encaminhada ao Laboratório Central de Saúde Pública conforme o fluxo local, e a comprovação laboratorial, o tratamento e o acompanhamento ocorrem na Atenção Especializada.",
+      "pontos_chave": [
+        {
+          "id": "T17-P1",
+          "afirmacao": "Deve ser investigado para resistência todo caso novo de hanseníase com índice baciloscópico ≥ 2,0 no diagnóstico inicial.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+          "secao_ou_pagina": "11 Resistência do M. leprae a antimicrobianos (critério para casos novos, antes do item 11.3), p. 90–91 (PDF 92–93)",
+          "trecho": "Deve ser investigado qualquer paciente diagnosticado como caso novo de hanseníase e que, no diagnóstico inicial apresente IB ≥2,0."
+        },
+        {
+          "id": "T17-P2",
+          "afirmacao": "O teste laboratorial incorporado ao SUS detecta mutações associadas à resistência à rifampicina (rpoB), ao ofloxacino/fluoroquinolonas (gyrA) e à dapsona (folP1).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0107",
+          "secao_ou_pagina": "11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos, p. 90 (PDF 92)",
+          "trecho": "auxiliando no diagnóstico da resistência da micobactéria à rifampicina (gene rpoB), ao ofloxacino ou outras fluoroquinolonas (gene gyrA) e à dapsona (gene folP1)"
+        },
+        {
+          "id": "T17-P3",
+          "afirmacao": "A amostra para o teste é biópsia de lesão de pele, encaminhada ao Laboratório Central de Saúde Pública.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0107",
+          "secao_ou_pagina": "11.1 Investigação laboratorial de resistência do M. leprae a antimicrobianos, p. 90 (PDF 92)",
+          "trecho": "Uma amostra biológica (biópsia da lesão de pele) deve ser coletada e encaminhada para análise no Laboratório Central de Saúde Pública, conforme definição de fluxo local."
+        },
+        {
+          "id": "T17-P4",
+          "afirmacao": "A comprovação laboratorial da resistência, o tratamento e o acompanhamento são feitos na Atenção Especializada.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0106",
+          "secao_ou_pagina": "11 Resistência do M. leprae a antimicrobianos, p. 89–90 (PDF 91–92)",
+          "trecho": "A comprovação laboratorial da resistência medicamentosa do M. leprae, bem como o diagnóstico laboratorial, o tratamento e o acompanhamento devem ser realizados na Atenção Especializada"
+        },
+        {
+          "id": "T17-P5",
+          "afirmacao": "Critérios como persistência de hansenomas/lesões infiltradas após a PQT-U referem-se à resistência secundária (após tratamento), não à primária.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0108",
+          "secao_ou_pagina": "11.3 Critérios para investigação da resistência secundária do M. leprae a antimicrobianos, após PQT-U, p. 90–91 (PDF 92–93)",
+          "trecho": "1) Persistência de hansenomas e/ou lesões infiltradas após o término da PQT-U, com aspecto clínico inalterado em relação ao momento do diagnóstico;"
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a resistência primária deve ser investigada em todos os casos novos, independentemente do índice baciloscópico.",
+        "Usar como critério de resistência primária os critérios de resistência secundária (falha após PQT-U, recidiva, abandono), sem distinguir os dois cenários.",
+        "Recomendar estender ou repetir a PQT-U como forma de investigar ou tratar suspeita de resistência.",
+        "Afirmar que a resistência pode ser confirmada apenas clinicamente, sem teste laboratorial."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (cap. 11) traz o critério para casos novos (IB ≥ 2,0 no diagnóstico) e descreve o teste molecular, a amostra e o local de realização. Ressalva: no texto extraído, o rótulo do item 11.2 não aparece; a frase do critério está no início do trecho rotulado 11.3, mas refere-se explicitamente a caso novo e o item 10.1.1 remete a 'critérios definidos no item 11.2'.",
+      "comportamento_esperado": "Responder: investigar caso novo com IB ≥ 2,0 no diagnóstico inicial, por teste molecular (rpoB, gyrA, folP1) em biópsia de pele enviada ao LACEN, com condução na Atenção Especializada, distinguindo dos critérios de resistência secundária.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A076",
+    "pergunta": "É contra-indicado o tratamento PQT para pacientes portadores do vírus HIV?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "**Não há, nos trechos consultados, indicação de que o HIV seja contraindicação à PQT.** O protocolo brasileiro recomenda PQT para o tratamento da hanseníase, mas os trechos fornecidos não abordam especificamente o manejo da PQT em pessoas vivendo com HIV. [1][2]\n\nA contraindicação mencionada no protocolo refere-se à **revacinação com BCG** em pessoas com imunodeficiência adquirida; isso não equivale a contraindicar a PQT. [3]\n\nAssim, a resposta documentada é que o HIV, por si só, não aparece nesses trechos como contraindicação à PQT. Os documentos consultados não detalham possíveis interações com antirretrovirais nem ajustes específicos para essa situação. [1][4]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0055",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 56."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0053",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1 Tratamento farmacológico. p. 55–56."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0123",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 13.1 Imunoprofilaxia e monitoramento de contatos. p. 101–103."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0054",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1 Tratamento farmacológico. p. 56."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Não. O PCDT 2022 estabelece que o tratamento da hanseníase em imunocomprometidos, incluindo a coinfecção por HIV, não difere do tratamento convencional, e as reações hansênicas nesses pacientes são tratadas com prednisona para controlar a inflamação e o dano neural. Recomenda-se investigar HIV/aids (entre outras comorbidades) em todo paciente com hanseníase e atentar para infecções oportunistas, que podem agravar as reações, sobretudo sob terapia imunossupressora. Devem ser consideradas as interações medicamentosas: a dapsona associada à zidovudina aumenta a toxicidade hematológica (neutropenia), e o uso concomitante com amprenavir ou saquinavir eleva o risco de eventos adversos. O corpus não detalha interações da rifampicina com antirretrovirais.",
+      "pontos_chave": [
+        {
+          "id": "T35-P1",
+          "afirmacao": "A coinfecção por HIV não contraindica a PQT: o tratamento da hanseníase em imunocomprometidos não difere do tratamento convencional.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0119",
+          "secao_ou_pagina": "12.3 Imunossupressão e hanseníase, p. 98 (PDF 100)",
+          "trecho": "o tratamento da hanseníase em pacientes imunocomprometidos, seja pela coinfecção por HIV, por transplante de órgão ou outras doenças com tratamento imunossupressor, não difere do tratamento convencional."
+        },
+        {
+          "id": "T35-P2",
+          "afirmacao": "As reações hansênicas em imunocomprometidos são tratadas com prednisona para controlar a inflamação e o dano neural.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0119",
+          "secao_ou_pagina": "12.3 Imunossupressão e hanseníase, p. 98 (PDF 100)",
+          "trecho": "O tratamento das reações hansênicas, nesses casos, inclui o uso de prednisona para controlar as manifestações inflamatórias e o dano neural."
+        },
+        {
+          "id": "T35-P3",
+          "afirmacao": "Pacientes com hanseníase devem ser avaliados para HIV/aids, entre outras comorbidades.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0120",
+          "secao_ou_pagina": "12.4 Comorbidades em pacientes com hanseníase, p. 98–99 (PDF 100–101)",
+          "trecho": "Recomenda-se que os pacientes diagnosticados com hanseníase sejam avaliados também para tuberculose, hepatites B e C, HIV/aids, HTLV-1"
+        },
+        {
+          "id": "T35-P4",
+          "afirmacao": "Deve-se atentar para infecções oportunistas, que podem piorar a gravidade das reações hansênicas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0119",
+          "secao_ou_pagina": "12.3 Imunossupressão e hanseníase, p. 98 (PDF 100)",
+          "trecho": "Portanto, é de extrema importância atentar para a ocorrência de infecções oportunistas que possam acometer os pacientes e piorar a gravidade das reações hansênicas."
+        },
+        {
+          "id": "T35-P5",
+          "afirmacao": "A associação de dapsona com zidovudina aumenta a toxicidade hematológica (neutropenia).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0081",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 3), p. 74 (PDF 76)",
+          "trecho": "A zidovudina usada em conjunto com a dapsona aumenta a toxicidade para o sangue (neutropenia)."
+        },
+        {
+          "id": "T35-P6",
+          "afirmacao": "O uso concomitante de dapsona com amprenavir ou saquinavir aumenta o risco de eventos adversos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0081",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 3), p. 74 (PDF 76)",
+          "trecho": "Há maior risco de eventos adversos se a dapsona for usada em concomitância com amprenavir, saquinavir, probenecida e trimetoprima."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a PQT é contraindicada em pessoas vivendo com HIV.",
+        "Recomendar esquema de PQT diferente, prolongado ou adiado apenas por causa da coinfecção pelo HIV.",
+        "Ignorar ou negar as interações da dapsona com zidovudina e inibidores de protease descritas no PCDT."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (12.3) afirma explicitamente que o tratamento da hanseníase na coinfecção por HIV não difere do convencional; os itens 12.4 e 10.1.6 complementam com rastreio de comorbidades e interações da dapsona com antirretrovirais. Interações da rifampicina com antirretrovirais não são detalhadas no corpus, mas não são necessárias para responder à pergunta sobre contraindicação.",
+      "comportamento_esperado": "Responder que não há contraindicação: a PQT é a mesma do tratamento convencional, com atenção a comorbidades, infecções oportunistas e interações; sem inventar detalhes de interação da rifampicina com antirretrovirais não presentes no corpus.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A085",
+    "pergunta": "Em quais situações o exame de qPCR pode auxiliar o diagnóstico da hanseníase conforme a atualização normativa de 2026?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Conforme o **PCDT brasileiro**, o qPCR pode auxiliar o diagnóstico **na investigação de contatos de casos confirmados de hanseníase**, usando material de biópsia de pele ou nervo, no âmbito da Atenção Especializada. No SUS, seu uso está aprovado exclusivamente para essa finalidade. [1][2]\n\nPode ser particularmente útil como apoio em casos de difícil elucidação, como quando a baciloscopia é negativa e a histopatologia inconclusiva; porém, essa possibilidade não amplia a indicação aprovada no SUS para além da investigação de contatos. [2][3]\n\nO qPCR não substitui a avaliação clínica: o diagnóstico permanece essencialmente clínico, e um resultado negativo não exclui hanseníase, pois o teste pode não detectar o bacilo em algumas formas clínicas, especialmente quando há baixa carga bacilar. Resultados positivos também devem ser interpretados com cautela, devido à possibilidade de falso-positivos. [1][4]\n\nA OMS de 2019 observa que testes de PCR em amostras de tecido podem ter maior precisão diagnóstica, mas não recomenda testes adicionais além dos métodos padrão; também não recomenda testes para diagnosticar hanseníase em contatos assintomáticos. [5][6] No Brasil, para a prática, prevalece a indicação do PCDT do Ministério da Saúde: qPCR exclusivamente na investigação de contatos de casos confirmados. [2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0049",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR). p. 50."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0050",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR). p. 50–51."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0048",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR). p. 49–50."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0036",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7 Exames de apoio ao diagnóstico. p. 43."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0028",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Diagnóstico. p. 17."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0002",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção Sumário executivo. p. xii–xiii."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "O corpus não contém a atualização normativa de 2026 sobre o qPCR, de modo que não é possível informar o que ela estabelece. O que consta é o PCDT 2022: o teste de biologia molecular qPCR para detecção qualitativa de marcadores genéticos do M. leprae em biópsia de pele ou nervo foi incorporado ao SUS pela Portaria SCTIE/MS nº 78/2021 e está aprovado para uso exclusivo na investigação de contatos de casos confirmados, na Atenção Especializada, conforme o Fluxograma 4. O PCDT descreve o método como promissor em casos de difícil diagnóstico, como baciloscopia negativa e histopatologia inconclusiva, e o cita como auxiliar na avaliação etiológica da forma neural pura. Ressalva que a especificidade pode ser menor com alvos de alta sensibilidade (risco de falso-positivos) e que a PCR pode ser negativa mesmo em casos confirmados, sobretudo paucibacilares. Para a regra vigente em 2026, deve-se consultar as portarias e o PCDT atualizados do Ministério da Saúde.",
+      "pontos_chave": [
+        {
+          "id": "T08-P1",
+          "afirmacao": "O qPCR foi incorporado ao SUS pela Portaria SCTIE/MS nº 78/2021 para auxiliar o diagnóstico de hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0050",
+          "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 50–51 (PDF 52–53)",
+          "trecho": "Por meio da Portaria SCTIE/MS nº 78, de 31 de dezembro de 2021, o Ministério da Saúde incorporou ao SUS o teste de biologia molecular qPCR"
+        },
+        {
+          "id": "T08-P2",
+          "afirmacao": "O teste usa biópsia de pele ou nervo e é aplicado na avaliação de contatos, na Atenção Especializada, conforme o Fluxograma 4.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0050",
+          "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 50–51 (PDF 52–53)",
+          "trecho": "O teste, que utiliza material de biópsia de pele ou de nervos, será utilizado na avaliação de contatos, no nível da Atenção Especializada, conforme orientado pelo Fluxograma 4"
+        },
+        {
+          "id": "T08-P3",
+          "afirmacao": "Segundo o PCDT 2022, o uso do qPCR no SUS é exclusivo para investigação de contatos de casos confirmados.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0050",
+          "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 50–51 (PDF 52–53)",
+          "trecho": "O uso do teste molecular para detecção de M. leprae (qPCR) em biópsia de pele ou nervo, no âmbito do SUS, está aprovado para uso exclusivo na investigação de contatos de casos confirmados de hanseníase."
+        },
+        {
+          "id": "T08-P4",
+          "afirmacao": "A detecção molecular é promissora em casos de difícil diagnóstico, como baciloscopia negativa e histopatologia inconclusiva.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0048",
+          "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 49–50 (PDF 51–52)",
+          "trecho": "A detecção do material genético do M. leprae em casos de difícil diagnóstico, como nos pacientes com baciloscopia negativa e histopatologia inconclusiva, vem se afirmando como um método promissor"
+        },
+        {
+          "id": "T08-P5",
+          "afirmacao": "A PCR pode ser negativa mesmo em casos confirmados de hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0049",
+          "secao_ou_pagina": "7.7 Teste de biologia molecular (qPCR), p. 50 (PDF 52)",
+          "trecho": "o diagnóstico baseado em PCR pode não ser possível mesmo em casos de hanseníase confirmados por avaliação clínica ou laboratorial"
+        }
+      ],
+      "pontos_proibidos": [
+        "Descrever o conteúdo da atualização normativa de 2026 (indicações, portarias, públicos) como se constasse do corpus.",
+        "Afirmar que qPCR negativo exclui hanseníase.",
+        "Afirmar que o qPCR substitui o diagnóstico clínico ou é exame de rotina para todos os casos suspeitos na Atenção Primária.",
+        "Afirmar que o qPCR é feito em amostra de sangue ou urina (o PCDT especifica biópsia de pele ou nervo)."
+      ],
+      "cobertura": "parcial",
+      "justificativa_cobertura": "A pergunta se ancora na atualização normativa de 2026, que não está no corpus (as Portarias SCTIE/MS de 2026 não fazem parte dele). O corpus responde apenas sobre o enquadramento anterior: PCDT 2022 (7.7 e 6.4.5) e OMS 2018.",
+      "comportamento_esperado": "Declarar explicitamente que a atualização de 2026 não está no corpus e não inventar seu conteúdo; apresentar, identificando como norma de 2022, as indicações e limitações do qPCR segundo o PCDT, e orientar a consulta às portarias/PCDT vigentes.",
+      "divergencias_entre_documentos": "A OMS 2018 não recomenda testes adicionais (incluindo PCR) além dos métodos padrão, por falta de padronização e de disponibilidade comercial; o PCDT 2022 incorporou o qPCR no SUS para investigação de contatos na Atenção Especializada. A referência segue o PCDT 2022."
+    }
+  },
+  {
+    "codigo": "A095",
+    "pergunta": "O que é a avaliação neurológica simplificada e por que uma pessoa com suspeita de hanseníase deve realizá-la?",
+    "registro": "leigo",
+    "composta": true,
+    "resposta_da_ia": "A **avaliação neurológica simplificada (ANS)** é um exame clínico que verifica a função dos nervos e procura alterações de sensibilidade, força muscular e funções autonômicas. Ela combina perguntas sobre sintomas e limitações nas atividades diárias com a inspeção de olhos, mãos e pés, a palpação de nervos periféricos e testes de sensibilidade, força muscular e acuidade visual. [1][2]\n\nUma pessoa com suspeita de hanseníase deve realizá-la porque os achados podem contribuir para o diagnóstico — inclusive quando as lesões de pele estão ausentes ou são duvidosas — e ajudam a identificar dano neural e incapacidades físicas. A avaliação também estabelece uma referência para acompanhar a função dos nervos durante e após o tratamento. [3][4]\n\nO protocolo brasileiro prevê que a ANS seja feita por profissional de saúde capacitado no momento do diagnóstico, periodicamente durante o acompanhamento e ao final do tratamento; deve ser repetida diante de novas queixas e em casos de reações hansênicas. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.1 Avaliação neurológica simplificada (ANS). p. 43–44."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 38–39."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0031",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.1 Neuropatia periférica. p. 38."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0038",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.1 Avaliação neurológica simplificada (ANS). p. 44."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A avaliação neurológica simplificada (ANS) é um exame obrigatório que verifica se os nervos estão sendo afetados pela hanseníase, procurando perda de sensibilidade, perda de força nos músculos e alterações como a falta de suor. Ela inclui conversa sobre queixas no nariz, olhos, mãos e pés e dificuldades no dia a dia, além de exame das mãos, pés e olhos, apalpação dos nervos dos braços e pernas, testes de sensibilidade e de força e teste da visão. Em quem tem suspeita, ela ajuda a confirmar o diagnóstico, principalmente quando não há manchas ou quando a alteração de sensibilidade na mancha é duvidosa. Também mostra se já existe alguma incapacidade (grau 0, 1 ou 2) e serve de base para acompanhar a pessoa: é feita no diagnóstico, a cada três meses, no fim do tratamento e sempre que surgirem novas queixas ou reações. Isso é importante porque o dano no nervo que não é tratado a tempo pode ficar permanente.",
+      "pontos_chave": [
+        {
+          "id": "T09-P1",
+          "afirmacao": "A ANS avalia a função dos nervos, verificando alterações autonômicas, de sensibilidade e de força muscular causadas pelo dano neural.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "tem por objetivo monitorar a função neural do paciente acometido pela hanseníase, verificando se há alterações autonômicas, comprometimento da sensibilidade ou diminuição da força muscular como resultado do dano neural"
+        },
+        {
+          "id": "T09-P2",
+          "afirmacao": "O exame inclui inspeção de mãos, pés e olhos, palpação de nervos, testes de sensibilidade e força e avaliação da acuidade visual.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "O exame físico inclui a inspeção minuciosa das mãos, pés e olhos, a palpação de nervos periféricos (ulnar, mediano, radial, fibular e tibial posterior) e a realização de testes da sensibilidade e força muscular, além da averiguação da acuidade visual."
+        },
+        {
+          "id": "T09-P3",
+          "afirmacao": "A ANS complementa o diagnóstico, especialmente quando não há lesões de pele ou a alteração de sensibilidade é duvidosa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0038",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 44 (PDF 46)",
+          "trecho": "se constitui em exame complementar ao diagnóstico clínico da hanseníase, especialmente nos casos em que as lesões cutâneas estão ausentes ou apresentam alteração duvidosa da sensibilidade"
+        },
+        {
+          "id": "T09-P4",
+          "afirmacao": "A ANS permite detectar o grau de incapacidade física.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "Por meio da ANS, é possível detectar o grau de incapacidade física apresentado pelo paciente."
+        },
+        {
+          "id": "T09-P5",
+          "afirmacao": "É realizada no diagnóstico, a cada três meses e ao final do tratamento (e repetida diante de novas queixas ou reações).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "É realizada no momento do diagnóstico, a cada três meses e ao final do tratamento."
+        },
+        {
+          "id": "T09-P6",
+          "afirmacao": "Dano neural não tratado em até seis meses pode tornar-se irreversível e causar incapacidade permanente, por isso a avaliação periódica é essencial.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0018",
+          "secao_ou_pagina": "2.1 Introduction to nerve function assessment, p. 11 (PDF 23)",
+          "trecho": "When NFI is not treated within six months of onset, nerve damage can become irreversible and can cause permanent disability."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a ANS é opcional ou só necessária quando já há deformidade visível.",
+        "Afirmar que a ANS só é feita no diagnóstico e não precisa ser repetida durante e após o tratamento.",
+        "Afirmar que a ANS é um exame de sangue ou de imagem que exige equipamento especializado."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (7.1 e 14.1) define a ANS, seus componentes, momentos de realização e seu papel complementar ao diagnóstico; a OMS 2020 reforça a finalidade da avaliação da função neural.",
+      "comportamento_esperado": "Responder em linguagem simples às duas partes: o que é a ANS (componentes) e por que fazê-la na suspeita (apoio ao diagnóstico, detecção de incapacidade, prevenção de dano permanente).",
+      "divergencias_entre_documentos": null
+    }
+  }
+]

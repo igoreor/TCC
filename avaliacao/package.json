@@ -1,0 +1,10 @@
+{
+  "name": "avaliacao-hanseniase",
+  "private": true,
+  "description": "Avaliação experimental da IA do projeto: 50 perguntas × 2 execuções, com tripla validação (AVALIACAO_HANSENIASE.md).",
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "jszip": "3.10.1",
+    "playwright-core": "1.58.0"
+  }
+}

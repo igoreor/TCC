@@ -1,0 +1,906 @@
+[
+  {
+    "codigo": "A008",
+    "pergunta": "Quais são os critérios utilizados na classificação operacional da hanseníase em paucibacilar e multibacilar?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "A classificação operacional é feita principalmente pelo **número de lesões cutâneas** e pelo resultado da **baciloscopia**. No Brasil, casos com dúvida de classificação devem ser tratados como multibacilares (MB), conforme o protocolo do Ministério da Saúde. [1]\n\n- **Paucibacilar (PB):** de 1 a 5 lesões cutâneas e baciloscopia negativa. [1][2]\n- **Multibacilar (MB):** mais de 5 lesões cutâneas **e/ou** baciloscopia positiva, independentemente do número de lesões. [1][2][3]\n\n**Acometimento neural:** a OMS classifica como MB o envolvimento dos nervos, inclusive neurite pura ou neurite associada a qualquer número de lesões. [2] O protocolo brasileiro considera MB o comprometimento de mais de um nervo periférico, desde que a alteração sensitiva correspondente esteja documentada. [1] Para comprometimento de um único nervo, o protocolo admite classificação como PB quando a avaliação é feita por profissionais experientes; se houver dúvida, recomenda classificar como MB. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.3.2 Hanseníase multibacilar (MB). p. 26–27."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0008",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Introdução. p. 2–3."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR). p. 44–45."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Segundo o PCDT 2022, a classificação operacional é feita após a conclusão diagnóstica, para fins de tratamento: PB caracteriza-se por uma a cinco lesões cutâneas com baciloscopia obrigatoriamente negativa, e MB por mais de cinco lesões de pele e/ou baciloscopia positiva. O achado de BAAR no raspado intradérmico define o caso como MB, mas a presença de bacilos no exame histopatológico não tem a mesma interpretação para a classificação, pois pode ocorrer em pequena quantidade em casos PB. Há consenso de classificar como MB os casos com mais de um nervo periférico comprometido, desde que documentada a perda ou diminuição de sensibilidade nos respectivos territórios; com um único nervo, a OMS recomenda MB, mas o PCDT aceita classificar e tratar como PB quando avaliado por profissionais experientes em hanseníase. Todo caso com dúvida na classificação operacional deve ser tratado como MB.",
+      "pontos_chave": [
+        {
+          "id": "T04-P1",
+          "afirmacao": "PB: uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "secao_ou_pagina": "6.3 Classificação operacional, p. 26–27 (PDF 28–29)",
+          "trecho": "Caracteriza-se pela presença de uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa."
+        },
+        {
+          "id": "T04-P2",
+          "afirmacao": "MB: mais de cinco lesões de pele e/ou baciloscopia positiva.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "secao_ou_pagina": "6.3.2 Hanseníase multibacilar (MB), p. 26–27 (PDF 28–29)",
+          "trecho": "Caracteriza-se pela presença de mais de cinco lesões de pele e/ou baciloscopia positiva."
+        },
+        {
+          "id": "T04-P3",
+          "afirmacao": "Comprometimento de mais de um nervo periférico, com perda/diminuição de sensibilidade documentada nos territórios, classifica como MB.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "secao_ou_pagina": "6.3.2 Hanseníase multibacilar (MB), p. 26–27 (PDF 28–29)",
+          "trecho": "Há consenso sobre a classificação como MB dos casos de hanseníase que apresentam mais de um nervo periférico comprometido, desde que devidamente documentada a perda ou diminuição de sensibilidade nos seus respectivos territórios."
+        },
+        {
+          "id": "T04-P4",
+          "afirmacao": "Com um único nervo comprometido, é aceitável classificar e tratar como PB se avaliado em serviço com profissionais experientes (a OMS recomenda MB).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "secao_ou_pagina": "6.3.2 Hanseníase multibacilar (MB), p. 26–27 (PDF 28–29)",
+          "trecho": "é aceitável que casos com comprometimento de um único nervo periférico sejam classificados e tratados como PB, desde que tenham sido avaliados em unidades de saúde que contem com profissionais experientes no cuidado em hanseníase"
+        },
+        {
+          "id": "T04-P5",
+          "afirmacao": "BAAR no raspado intradérmico define o diagnóstico e classifica como MB.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0039",
+          "secao_ou_pagina": "7.2 Baciloscopia direta para BAAR, p. 44–45 (PDF 46–47)",
+          "trecho": "o achado de bacilos álcool-ácido resistentes em raspados intradérmicos não apenas define o diagnóstico, como classifica o paciente como multibacilar"
+        },
+        {
+          "id": "T04-P6",
+          "afirmacao": "Casos com dúvida sobre a classificação operacional devem ser tratados como MB.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "secao_ou_pagina": "6.3 Classificação operacional, p. 26–27 (PDF 28–29)",
+          "trecho": "Por outro lado, todos os casos de hanseníase que suscitem dúvida sobre a classificação operacional devem ser tratados como MB."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que caso com baciloscopia positiva pode ser classificado como PB por ter até cinco lesões.",
+        "Afirmar que casos com dúvida na classificação devem ser tratados como PB.",
+        "Afirmar que bacilos encontrados apenas no exame histopatológico classificam automaticamente o caso como MB.",
+        "Afirmar que o critério de MB é seis ou mais lesões com índice baciloscópico ≥ 2+ (critério histórico superado)."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (6.3 e 7.2) define os critérios de classificação por número de lesões, baciloscopia e comprometimento neural; a OMS 2018 e 2020 trazem as definições internacionais.",
+      "comportamento_esperado": "Responder com os critérios operacionais do PCDT (lesões, baciloscopia, nervos, regra da dúvida) e registrar a diferença em relação à OMS quanto ao comprometimento de um único nervo.",
+      "divergencias_entre_documentos": "OMS 2018 (Introdução) define MB como mais de cinco lesões, ou envolvimento de nervos (neurite pura ou qualquer número de lesões e neurite), ou baciloscopia positiva; OMS 2020 classifica como MB dois ou mais troncos nervosos afetados. O PCDT 2022 registra que a OMS recomenda MB para um único nervo, mas aceita PB nesse caso quando avaliado por profissionais experientes. A referência segue o PCDT."
+    }
+  },
+  {
+    "codigo": "A018",
+    "pergunta": "A mulher em tratamento contra a hanseníase pode amamentar?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "**Sim.** A mulher em tratamento com PQT-U pode amamentar; o protocolo brasileiro orienta que ela não suspenda a amamentação por receio de prejudicar o bebê com os medicamentos ou de transmitir hanseníase. [1]\n\nO protocolo informa que os medicamentos da PQT-U passam para o leite materno, mas considera segura a amamentação durante o tratamento. Também aponta que, se a mãe estiver usando ou já tiver concluído a PQT-U, o risco de transmissão pelas vias aéreas durante a amamentação é desprezível. [1]\n\nSe ela também estiver usando **prednisona** para reação hansênica ou neurite, o protocolo considera seu uso compatível com a amamentação; esperar quatro horas após a dose para amamentar reduz a exposição do bebê ao pico do medicamento no leite. [2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.1.2 Amamentação. p. 96."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0116",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 12.1.3 Episódios reacionais durante a gestação. p. 96."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Sim. Segundo o Ministério da Saúde, a mulher em tratamento com a PQT-U (os remédios da hanseníase) deve continuar amamentando: especialistas consideram a amamentação segura para o bebê, e o risco de passar a doença para o bebê na hora de amamentar é desprezível quando a mãe está em tratamento ou já terminou. A clofazimina, um dos remédios do tratamento, pode escurecer a pele do bebê, mas isso volta ao normal depois, e o tratamento deve ser mantido. A exceção é a talidomida, remédio usado em algumas reações da hanseníase, que é proibida para quem está amamentando. Não pare de amamentar nem interrompa o tratamento por conta própria; tire suas dúvidas com a equipe de saúde.",
+      "pontos_chave": [
+        {
+          "id": "T33-P1",
+          "afirmacao": "A mulher em tratamento com PQT-U deve ser orientada a não suspender a amamentação, nem por medo dos remédios nem por receio de transmitir a hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+          "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+          "trecho": "as mulheres devem ser orientadas a não suspender a amamentação, nem por causa do medo de prejudicar a criança com a PQT-U, nem pelo receio de transmitir a hanseníase"
+        },
+        {
+          "id": "T33-P2",
+          "afirmacao": "A amamentação por mulheres em uso de PQT-U é considerada segura para o bebê.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+          "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+          "trecho": "especialistas apontam que a amamentação por mulheres em uso de PQT-U é segura para bebês e pode até fornecer algum efeito protetor"
+        },
+        {
+          "id": "T33-P3",
+          "afirmacao": "O risco de a mãe transmitir a doença ao bebê durante a amamentação é desprezível se ela estiver em uso da PQT-U ou já a tiver concluído.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0115",
+          "secao_ou_pagina": "12.1.2 Amamentação, p. 96 (PDF 98)",
+          "trecho": "O risco de infecção a partir das vias aéreas da mãe, no momento da amamentação, é desprezível se ela estiver usando a PQT-U ou a tiver concluído."
+        },
+        {
+          "id": "T33-P4",
+          "afirmacao": "A clofazimina pode escurecer a pele do bebê amamentado, efeito que regride depois, e o tratamento com clofazimina deve ser mantido.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0067",
+          "secao_ou_pagina": "10.1.5 Informações sobre os medicamentos (clofazimina), p. 64 (PDF 66)",
+          "trecho": "a qual regride após a interrupção da transferência do fármaco para o recém-nascido. Em pacientes com hanseníase, recomenda-se manter o tratamento com clofazimina em ambas as situações."
+        },
+        {
+          "id": "T33-P5",
+          "afirmacao": "A talidomida é proibida para mulheres que estejam amamentando.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0075",
+          "secao_ou_pagina": "10.1.5 Informações sobre os medicamentos (talidomida), p. 69–70 (PDF 71–72)",
+          "trecho": "É proibido o uso da talidomida por mulheres grávidas ou que estejam amamentando."
+        }
+      ],
+      "pontos_proibidos": [
+        "Orientar a mulher a suspender a amamentação por causa da PQT-U ou por medo de transmitir a hanseníase ao bebê.",
+        "Orientar a interromper ou suspender a PQT-U por conta própria para poder amamentar.",
+        "Afirmar que a talidomida pode ser usada durante a amamentação."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (item 12.1.2) responde diretamente que a amamentação deve ser mantida durante a PQT-U, com justificativa de segurança e de risco desprezível de transmissão; as informações sobre clofazimina e talidomida (item 10.1.5) completam as ressalvas.",
+      "comportamento_esperado": "Responder que sim, a amamentação deve ser mantida durante a PQT-U, em linguagem simples, mencionando a ressalva da talidomida e orientando a não interromper tratamento ou amamentação por conta própria.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A028",
+    "pergunta": "Quais cuidados diários com os pés e os calçados ajudam a prevenir feridas e incapacidades na hanseníase?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os cuidados diários combinam **inspeção dos pés, proteção contra traumas e uso de calçados confortáveis e adequados**. Como a perda de sensibilidade pode fazer com que ferimentos e queimaduras passem despercebidos, o autocuidado deve ser orientado pela equipe de saúde e integrado ao acompanhamento da função neural. [1][2][3]\n\n- **Inspecione os pés e os calçados** e observe a marcha. Ao avaliar o calçado, confira se o tamanho é adequado — largura, altura e comprimento —, além do bico, salto, solado, desgaste, material e parte interna. [4]\n- **Escolha calçados confortáveis**, que não pressionem proeminências ósseas; a atividade física ou profissional da pessoa também deve ser considerada nessa escolha. [4]\n- **Hidrate os pés diariamente** como parte do autocuidado de rotina. [3]\n- **Procure a equipe de saúde** para orientação individualizada e, quando indicado, avaliação de palmilhas ou calçados adaptados. No SUS, a oferta desses recursos deve ser viabilizada pela Rede de Cuidados à Saúde da Pessoa com Deficiência. [4][1]\n- Se houver ferida, a equipe deve avaliar a lesão e orientar ou realizar o curativo conforme suas características e as condições clínicas da pessoa. [2]\n\nA prevenção de incapacidades também envolve acompanhamento da função neural e atenção às reações hansênicas; o autocuidado com os pés é parte desse conjunto de ações. [5][6]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0099",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.3 Autocuidado. p. 85."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0100",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos. p. 86."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0026",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 3. p. 17."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados. p. 86–87."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0098",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.2 Prevenção de incapacidades físicas. p. 85."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0004",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 16."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A hanseníase pode tirar a sensibilidade dos pés, e por isso a pessoa pode se machucar ou se queimar sem perceber, o que causa feridas, principalmente na sola dos pés. Desde o diagnóstico, a equipe de saúde deve ensinar o autocuidado, incluindo a proteção dos pés, e a rotina inclui hidratar diariamente as mãos e os pés (deixar a pele seca de molho e depois passar óleo ajuda a evitar rachaduras). O calçado deve ter tamanho e formato adequados, ser confortável e não apertar as partes ossudas do pé; a equipe deve observar o seu jeito de andar e o calçado que você usa, levando em conta seu trabalho e suas atividades. Quem precisar pode receber palmilhas e calçados adaptados pelo SUS, pela Rede de Cuidados à Pessoa com Deficiência. Se aparecer ferida, o curativo deve ser orientado ou feito pela equipe de saúde. Os documentos de referência não trazem uma lista detalhada de cuidados diários, como examinar os pés todos os dias ou evitar andar descalço.",
+      "pontos_chave": [
+        {
+          "id": "T31-P1",
+          "afirmacao": "A equipe de saúde deve orientar o autocuidado logo após o diagnóstico, incluindo instruções de proteção das mãos e dos pés.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0099",
+          "secao_ou_pagina": "10.2.3 Autocuidado, p. 85 (PDF 87)",
+          "trecho": "A equipe multiprofissional de saúde deve estar sensibilizada para orientar o autocuidado logo após o diagnóstico, fornecendo instruções sobre os cuidados com a proteção da face, olhos, nariz, pele, mãos e pés"
+        },
+        {
+          "id": "T31-P2",
+          "afirmacao": "A perda de sensibilidade causada pela hanseníase é o principal fator de risco para traumas e queimaduras que levam a úlceras, especialmente nas plantas dos pés.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0100",
+          "secao_ou_pagina": "10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos, p. 86 (PDF 88)",
+          "trecho": "O dano às fibras nervosas autonômicas e sensitivas ocasionado pela hanseníase é o principal fator de risco para traumas e queimaduras"
+        },
+        {
+          "id": "T31-P3",
+          "afirmacao": "O calçado adequado deve ser confortável e evitar pressão nas proeminências ósseas, considerando a atividade física ou profissional da pessoa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+          "secao_ou_pagina": "10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados, p. 86–87 (PDF 88–89)",
+          "trecho": "fator indispensável na escolha do calçado adequado, que deve ser confortável, evitando a pressão nas proeminências ósseas, além de socialmente aceito."
+        },
+        {
+          "id": "T31-P4",
+          "afirmacao": "Palmilhas e calçados adaptados são ofertados pelo SUS por meio da Rede de Cuidados à Saúde da Pessoa com Deficiência (RCPD).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0101",
+          "secao_ou_pagina": "10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados, p. 86–87 (PDF 88–89)",
+          "trecho": "A oferta de palmilhas e calçados adaptados para pessoas com hanseníase, no âmbito do SUS, deve ser viabilizada pela Rede de Cuidados à Saúde da Pessoa com Deficiência (RCPD)"
+        },
+        {
+          "id": "T31-P5",
+          "afirmacao": "O autocuidado de rotina inclui hidratar diariamente as mãos e os pés para evitar incapacidades secundárias.",
+          "documento": "oms-estrategia-global-hanseniase-2021-2030",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0026",
+          "secao_ou_pagina": "Pilar estratégico 3, p. 17 (PDF 17)",
+          "trecho": "O acesso à água potável é importante para o autocuidado de rotina, incluindo hidratar diariamente as mãos e os pés para evitar incapacidades secundárias."
+        },
+        {
+          "id": "T31-P6",
+          "afirmacao": "Deixar a pele seca de molho e depois lubrificá-la com óleo ajuda a prevenir rachaduras.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0012",
+          "secao_ou_pagina": "1.3 Type 1 reactions and neuritis, p. 7 (PDF 19)",
+          "trecho": "Soaking and oiling of dry skin helps to prevent cracking and preserves the integrity of the epidermis."
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar calçados apertados, de bico estreito ou que façam pressão sobre as partes ossudas do pé.",
+        "Afirmar que, por não haver dor, um pé sem sensibilidade não precisa de cuidados ou de proteção.",
+        "Orientar a pessoa a tratar feridas nos pés sozinha, sem orientação ou acompanhamento da equipe de saúde."
+      ],
+      "cobertura": "parcial",
+      "justificativa_cobertura": "O corpus cobre a orientação de autocuidado desde o diagnóstico, a relação entre perda de sensibilidade e úlceras plantares, os critérios do calçado adequado, a oferta de palmilhas e calçados adaptados pela RCPD, a hidratação diária de mãos e pés, a lubrificação da pele seca e os curativos orientados pela equipe. Não traz uma rotina diária detalhada de cuidados com os pés (por exemplo, inspeção diária, evitar andar descalço, cuidado com calos, checar o interior do calçado antes de calçar).",
+      "comportamento_esperado": "Responder com os cuidados presentes no corpus (orientação de autocuidado, hidratação e lubrificação, calçado confortável sem pontos de pressão, palmilhas e calçados adaptados pelo SUS, curativos com a equipe) e declarar que uma rotina diária detalhada de cuidados com os pés não está descrita nos documentos consultados, indicando a equipe de saúde/caderneta como fonte para essas orientações, sem inventar instruções específicas como se fossem do corpus.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A039",
+    "pergunta": "Quais são as recomendações para o uso de talidomida no tratamento da reação hansênica?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "A talidomida é o tratamento preferencial para a **reação hansênica tipo 2 (eritema nodoso hansênico — ENH)** em adultos, por via oral, na dose de **100 a 400 mg/dia**, conforme a intensidade do quadro; a dose deve ser reduzida gradualmente conforme a resposta terapêutica. [1] A presença de neurite aguda, orquite ou episclerite requer tratamento com corticosteroide, conforme o esquema indicado para reação tipo 1; comprometimento importante dos nervos ou dos olhos/testículos também direciona para corticosteroide. [1][2]\n\n### Cuidados e restrições\n\n- **Talidomida associada a corticosteroide:** prescrever ácido acetilsalicílico 100 mg/dia para profilaxia de tromboembolismo e avaliar outros fatores de risco tromboembólico. [3][1]\n- **Potencial reprodutivo:** o uso só deve ser considerado excepcionalmente, quando indispensável e após esgotados os demais recursos terapêuticos. A talidomida é teratogênica mesmo em dose única de 50 mg. [4] Nesses casos, são obrigatórios dois métodos contraceptivos concomitantes, sendo um de alta eficácia; a prevenção deve começar pelo menos quatro semanas antes, manter-se durante o tratamento e por pelo menos quatro semanas após a interrupção. [4] Também são exigidos testes de gravidez nos prazos descritos no protocolo e teste recente para dispensação. [4]\n- **Gestação e amamentação:** é proibido o uso em mulheres grávidas ou que estejam amamentando; o protocolo também orienta interromper o aleitamento durante o tratamento. [5][4]\n- **Homens em tratamento:** devem usar método contraceptivo de barreira em relações com mulheres com risco de engravidar, inclusive após vasectomia, durante o tratamento e por pelo menos quatro semanas após a última dose. [5]\n- **Neuropatia:** a talidomida pode causar neuropatia periférica potencialmente irreversível ou agravar neuropatia preexistente. Recomenda-se exame clínico e neurológico antes do início e monitorização de rotina; parestesia, disestesia, desconforto, alteração da coordenação ou fraqueza exigem reavaliação imediata do tratamento. [6] Em pacientes com neuropatia periférica instalada, pesar riscos e benefícios. [6]\n- **Outros cuidados:** monitorar rigorosamente pacientes com histórico ou fatores de risco para convulsões; não iniciar se a contagem absoluta de neutrófilos estiver abaixo de 750 células/mm³. [6] A talidomida pode potencializar sedação com álcool e determinados medicamentos sedativos, e requer atenção com medicamentos que também possam causar bradicardia ou neuropatia periférica. [7]\n- **Crianças:** o PCDT não autoriza talidomida em menores de 18 anos; para ENH infantil, descreve clofazimina como tratamento. [8]\n\nA reação tipo 2 pode causar dano neural e incapacidades; por isso, é necessário monitorar cuidadosamente a evolução clínica e o uso correto dos medicamentos. [2] **Neurite aguda ou comprometimento neural, ocular ou testicular requer avaliação presencial e tratamento com corticosteroide conforme o protocolo**, não talidomida isolada. [1][2]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.2 Tratamento farmacológico das reações hansênicas. p. 60–61."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0027",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico). p. 35–36."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0062",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.2 Tratamento farmacológico das reações hansênicas. p. 61."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0075",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.5 Informações sobre os medicamentos. p. 69–70."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0074",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.5 Informações sobre os medicamentos. p. 68–69."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 73–74."
+      },
+      {
+        "indice": 7,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0084",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 75–76."
+      },
+      {
+        "indice": 8,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.3 Tratamento farmacológico das reações hansênicas em crianças. p. 62."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Segundo o PCDT (2022), a talidomida é o tratamento preferencial da reação hansênica tipo 2 (eritema nodoso hansênico), por via oral, na dose de 100 a 400 mg/dia conforme a intensidade do quadro, com redução gradativa conforme a resposta; quadros com orquite, episclerite e/ou neurite aguda devem ser tratados com corticosteroides (prednisona nas doses da reação tipo 1), e na associação talidomida + corticoide deve-se prescrever AAS 100 mg/dia como profilaxia de tromboembolismo. É de uso exclusivo em adultos, não sendo autorizada em menores de 18 anos, e é proibida em gestantes e lactantes por ser teratogênica mesmo em dose única de 50 mg. Em mulheres com potencial reprodutivo, só pode ser prescrita com exclusão de gravidez por exame sensível (teste até 24 h antes do início e a cada nova dispensação, semanal no primeiro mês) e com uso concomitante de dois métodos contraceptivos, ao menos um de alta eficácia, iniciados quatro semanas antes e mantidos até quatro semanas após a suspensão; homens devem usar método de barreira, mesmo vasectomizados. Recomendam-se exame clínico e neurológico antes e durante o tratamento, pelo risco de neuropatia periférica; não se deve iniciar com neutrófilos abaixo de 750/mm³, e é preciso atentar para sedação, bradicardia e risco tromboembólico. O controle da dispensação e a farmacovigilância são compulsórios, e qualquer suspeita de exposição fetal deve ser notificada à Anvisa (Vigimed).",
+      "pontos_chave": [
+        {
+          "id": "T23-P1",
+          "afirmacao": "Talidomida é o tratamento preferencial da reação tipo 2, VO, 100 a 400 mg/dia conforme a intensidade, com redução gradativa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+          "secao_ou_pagina": "10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico, p. 61 (PDF 63)",
+          "trecho": "O tratamento é feito preferencialmente com talidomida, administrada por via oral na dose de 100 a 400mg/dia, conforme a intensidade do quadro."
+        },
+        {
+          "id": "T23-P2",
+          "afirmacao": "Na reação tipo 2 com orquite, episclerite e/ou neurite aguda, o tratamento deve ser feito com corticosteroides.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+          "secao_ou_pagina": "10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico, p. 61 (PDF 63)",
+          "trecho": "Nos pacientes que apresentam quadros associados a orquite, episclerite e/ou neurite aguda (definida pela palpação dos nervos periféricos e pela avaliação da função neural), o tratamento deverá ser feito com corticosteroides"
+        },
+        {
+          "id": "T23-P3",
+          "afirmacao": "Na associação de talidomida com corticoide, deve-se prescrever AAS 100 mg/dia como profilaxia de tromboembolismo.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+          "secao_ou_pagina": "10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico, p. 61 (PDF 63)",
+          "trecho": "Na associação de talidomida e corticoide, deve-se prescrever ácido acetilsalicílico 100mg/dia como profilaxia para tromboembolismo."
+        },
+        {
+          "id": "T23-P4",
+          "afirmacao": "Para mulheres com potencial reprodutivo, a prescrição exige exclusão de gravidez por exame sensível e no mínimo dois métodos contraceptivos, um de alta eficácia; é proibida na gestação.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0116",
+          "secao_ou_pagina": "12.1.3 Episódios reacionais durante a gestação, p. 96 (PDF 98)",
+          "trecho": "No Brasil, a prescrição de talidomida para mulheres com potencial reprodutivo é permitida, desde que haja avaliação médica com exclusão de gravidez por meio de exames sensíveis e comprovação de, no mínimo, dois métodos contraceptivos, sendo pelo menos um de alta eficácia."
+        },
+        {
+          "id": "T23-P5",
+          "afirmacao": "A talidomida não é autorizada em menores de 18 anos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0063",
+          "secao_ou_pagina": "10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças, p. 62 (PDF 64)",
+          "trecho": "Portanto, não está autorizada neste PCDT a administração de talidomida em menores de 18 anos."
+        },
+        {
+          "id": "T23-P6",
+          "afirmacao": "Pelo risco de neuropatia periférica, recomendam-se exames clínicos e neurológicos antes e durante o tratamento com talidomida.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0080",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2 – Talidomida), p. 73–74 (PDF 75–76)",
+          "trecho": "Recomenda-se a realização de exames clínicos e neurológicos nos pacientes antes do início do tratamento com talidomida e a monitorização de rotina durante o tratamento."
+        }
+      ],
+      "pontos_proibidos": [
+        "Prescrever ou admitir talidomida para gestantes ou lactantes, ou para mulheres com potencial reprodutivo sem exclusão de gravidez e contracepção dupla.",
+        "Indicar talidomida para menores de 18 anos.",
+        "Indicar talidomida, e não corticoide, para reação tipo 2 com neurite, orquite ou episclerite, ou para a reação tipo 1.",
+        "Informar doses de talidomida acima de 400 mg/dia para a reação tipo 2.",
+        "Omitir a profilaxia com AAS na associação de talidomida com corticoide."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 traz indicação, dose, redução, exceções com corticoide, profilaxia com AAS, restrição etária, exigências de contracepção e testagem, monitorização neurológica e hematológica e farmacovigilância (10.1.2.2, 10.1.3.2, 10.1.5.8, 10.1.6, 12.1.3, 16). A OMS 2020 (3.2 e anexo 3) complementa. Eventuais atualizações normativas posteriores ao PCDT 2022, como as Portarias SCTIE/MS nº 47 e 51/2026, não fazem parte do corpus.",
+      "comportamento_esperado": "Responder com as recomendações do PCDT (indicação, dose, exceções, AAS, restrição a adultos, programa de prevenção da gravidez, monitorização) e registrar que a OMS a posiciona como fármaco de segunda linha.",
+      "divergencias_entre_documentos": "A OMS 2020 recomenda iniciar a reação tipo 2 grave com prednisolona 30–40 mg/dia e reserva a talidomida para não resposta ou dependência de corticoide e comorbidade grave, sob supervisão estrita em serviços de referência. Cita o esquema indiano de 300 mg/dia, reduzido a 100 mg/dia em 2–3 semanas, e pede teste de gravidez mensal. O PCDT 2022 coloca a talidomida como primeira escolha (100–400 mg/dia) e exige teste até 24 h antes do início, a cada dispensação e semanal no primeiro mês. Prevalece o PCDT."
+    }
+  },
+  {
+    "codigo": "A048",
+    "pergunta": "Qual é a diferença entre hanseníase paucibacilar e multibacilar?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "A diferença é **operacional**: a classificação PB ou MB considera principalmente o número de lesões, a baciloscopia e, no Brasil, o comprometimento neural. Ela também define a duração da PQT-U: **6 meses para PB e 12 meses para MB**.[1][2][3]\n\n- **Paucibacilar (PB):** de 1 a 5 lesões cutâneas e baciloscopia negativa.[1] No protocolo brasileiro, o comprometimento de um único nervo pode ser classificado como PB quando avaliado por profissionais experientes; se houver dúvida sobre a classificação, o caso deve ser tratado como MB.[1]\n- **Multibacilar (MB):** mais de 5 lesões e/ou baciloscopia positiva. O protocolo brasileiro também considera MB o comprometimento de mais de um nervo periférico, com perda ou diminuição de sensibilidade documentada.[1]\n- **Diferença na definição da OMS:** a OMS classifica como MB o envolvimento dos nervos, inclusive neurite pura ou neurite associada a qualquer número de lesões; o protocolo brasileiro admite a exceção descrita para um único nervo, em avaliação especializada.[4][1]\n\nNo Brasil, a PQT-U utiliza três medicamentos para ambas as classificações; muda a duração: 6 meses para PB e 12 meses para MB.[2][3]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.3.2 Hanseníase multibacilar (MB). p. 26–27."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 57–58."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0058",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia. p. 58–59."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "oms-diretrizes-hanseniase-2018:0009",
+        "referencia": "Organização Mundial da Saúde (OMS). Diretrizes para o diagnóstico, tratamento e prevenção da hanseníase. 2019. Seção 1 Introdução. p. 2–3."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A diferença está na quantidade de bacilos (os micróbios da hanseníase) no corpo: na paucibacilar (PB) há poucos bacilos, e na multibacilar (MB) há muitos. Na prática, o caso é PB quando a pessoa tem de uma a cinco manchas/lesões na pele e o exame de raspado da pele (baciloscopia) dá negativo; é MB quando há mais de cinco lesões e/ou esse exame dá positivo, e também quando mais de um nervo está comprometido. Essa classificação serve para definir o tempo de tratamento: os mesmos três remédios são usados nos dois casos, por 6 doses mensais na PB e 12 doses mensais na MB. Quando há dúvida sobre a classificação, a pessoa deve ser tratada como MB.",
+      "pontos_chave": [
+        {
+          "id": "T03-P1",
+          "afirmacao": "PB corresponde a poucos bacilos no corpo e MB a muitos bacilos.",
+          "documento": "oms-diretrizes-hanseniase-2018",
+          "chunk_id": "oms-diretrizes-hanseniase-2018:0008",
+          "secao_ou_pagina": "Parte I, 1 Introdução, p. 2–3 (PDF 20–21)",
+          "trecho": "abrigam um baixo número de bacilos e são referidos como pacientes com hanseníase PB. Aqueles com muitos bacilos no corpo são referidos como pacientes com hanseníase MB."
+        },
+        {
+          "id": "T03-P2",
+          "afirmacao": "PB: uma a cinco lesões de pele e baciloscopia negativa.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "secao_ou_pagina": "6.3 Classificação operacional, p. 26–27 (PDF 28–29)",
+          "trecho": "Caracteriza-se pela presença de uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa."
+        },
+        {
+          "id": "T03-P3",
+          "afirmacao": "MB: mais de cinco lesões de pele e/ou baciloscopia positiva.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "secao_ou_pagina": "6.3.2 Hanseníase multibacilar (MB), p. 26–27 (PDF 28–29)",
+          "trecho": "Caracteriza-se pela presença de mais de cinco lesões de pele e/ou baciloscopia positiva."
+        },
+        {
+          "id": "T03-P4",
+          "afirmacao": "Os dois tipos usam os mesmos três medicamentos, com 6 doses mensais para PB e 12 doses mensais para MB.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0057",
+          "secao_ou_pagina": "10.1.1 Tratamento com poliquimioterapia, p. 57–58 (PDF 59–60)",
+          "trecho": "desde 2018 a OMS passou a preconizar o uso dos três medicamentos para o tratamento de todos os casos de hanseníase, independentemente da classificação operacional, mantendo o tempo de seis doses mensais para casos PB e de 12 doses mensais para os casos MB"
+        },
+        {
+          "id": "T03-P5",
+          "afirmacao": "Em caso de dúvida na classificação, trata-se como MB.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0015",
+          "secao_ou_pagina": "6.3 Classificação operacional, p. 26–27 (PDF 28–29)",
+          "trecho": "Por outro lado, todos os casos de hanseníase que suscitem dúvida sobre a classificação operacional devem ser tratados como MB."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a hanseníase PB não precisa de tratamento ou que se cura sozinha sem medicamentos.",
+        "Afirmar que PB e MB usam medicamentos diferentes (no esquema atual PQT-U são os mesmos três medicamentos).",
+        "Inverter os tempos de tratamento (ex.: PB por 12 meses e MB por 6 meses).",
+        "Afirmar que um caso com dúvida de classificação deve ser tratado como PB."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (6.3 e 10.1.1) define os critérios PB/MB e as durações do tratamento; a OMS 2018 explica o significado de poucos/muitos bacilos.",
+      "comportamento_esperado": "Responder em linguagem simples, explicando o significado de PB e MB, os critérios práticos (número de lesões e baciloscopia) e a consequência para o tempo de tratamento.",
+      "divergencias_entre_documentos": "Quanto ao comprometimento de nervos: a OMS 2018 classifica como MB qualquer caso com envolvimento de nervos (inclusive neurite pura); o PCDT 2022 classifica como MB os casos com mais de um nervo comprometido, mas aceita tratar como PB o comprometimento de um único nervo quando avaliado por profissionais experientes. A referência segue o PCDT."
+    }
+  },
+  {
+    "codigo": "A058",
+    "pergunta": "Quais fatores históricos, sociais e institucionais contribuem para o estigma associado à hanseníase e como enfrentá-lo na assistência?",
+    "registro": "técnico",
+    "composta": true,
+    "resposta_da_ia": "O estigma associado à hanseníase resulta de crenças e medos acumulados historicamente e pode ser reforçado por exclusão social, vulnerabilidade econômica e práticas discriminatórias — inclusive dentro dos serviços de saúde. Enfrentá-lo na assistência exige ações em vários níveis: individual, relacional, comunitário e institucional. [1][2][3][4]\n\n### Fatores que contribuem para o estigma\n\n- **Históricos e culturais:** superstições e informações equivocadas sobre transmissão e cura, além do medo de incapacidades físicas associadas ao diagnóstico tardio, alimentaram discriminação e exclusão ao longo do tempo. Fantasias, medos e valores negativos podem afetar a saúde física, psicológica e social e contribuir para desemprego e maior vulnerabilidade. [1]\n- **Sociais e relacionais:** o receio de rejeição pode levar a pessoa a esconder a condição e se isolar; familiares e amigos nem sempre oferecem acolhimento ou informações adequadas. A estigmatização também pode reduzir renda, acesso a cuidados e educação e bem-estar mental. [5][6]\n- **Institucionais:** serviços de saúde podem reproduzir discriminação, incluindo negação ou transferência do atendimento e abusos verbais ou físicos. Isso transforma a discriminação em barreira ao cuidado. [2]\n- **Consequências para a assistência:** o estigma pode favorecer ocultação de sintomas, subnotificação e não adesão ao tratamento, com risco de falta de controle da doença e incapacidades físicas. Medo, ansiedade e solidão também podem prejudicar a qualidade de vida e o autocuidado. [1][7]\n\n### Como enfrentá-lo na assistência\n\n1. **Avaliar a experiência da pessoa:** investigar o contexto vivido com escuta, entrevistas ou discussões em grupo; o PCDT recomenda a Escala de Estigma para Pessoas Acometidas pela Hanseníase (EMIC-AP) e a Escala de Participação para orientar intervenções psicossociais. [3]\n2. **Comunicar e acolher sem discriminação:** transmitir informações claras e sensíveis sobre diagnóstico, tratamento e evolução; respeitar a decisão sobre divulgação da condição a terceiros e apoiar, quando pertinente, a comunicação com familiares. Escuta, acolhimento e atendimento humanizado devem ser competências de toda a equipe. [8][7][4]\n3. **Intervir em diferentes níveis:** no autoestigma, trabalhar conhecimento, atitudes, autoconceito, autoestima, empoderamento e habilidades de enfrentamento; nas relações próximas, fortalecer vínculos e inclusão social e econômica; na comunidade, promover informação correta e contato que confronte estereótipos; nas instituições, rever práticas discriminatórias e reforçar a proteção de direitos. [3][4]\n4. **Fortalecer participação e apoio:** desenvolver ações conjuntamente com pacientes, apoiar grupos de autocuidado e de pares e favorecer apoio mútuo, autonomia, resiliência e defesa de direitos. [8][5][6]\n5. **Criar mecanismos institucionais de resposta:** oferecer educação permanente à equipe sobre discriminação e desigualdades sociais e estabelecer canais de comunicação entre usuários e gestores, como ouvidorias e serviços de orientação. [2]\n6. **Articular proteção social:** considerar a vulnerabilidade social e articular a rede de saúde com a assistência social para apoiar autonomia, direitos, cuidado familiar e inclusão no trabalho. [7]\n\nA OMS também recomenda medidas estruturais, como corrigir leis discriminatórias, monitorar o estigma e a exclusão social, registrar e responder a denúncias e incluir pessoas afetadas e suas organizações nas decisões. [6]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 79."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0090",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 79–80."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0091",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 80–81."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0092",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 81–82."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0096",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 84."
+      },
+      {
+        "indice": 6,
+        "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028",
+        "referencia": "Organização Mundial da Saúde (OMS). Rumo à zero hanseníase: Estratégia Global de Hanseníase 2021–2030. 2021. Seção Pilar estratégico 4. p. 18."
+      },
+      {
+        "indice": 7,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0095",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 83."
+      },
+      {
+        "indice": 8,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0097",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.2.1 Abordagem psicossocial. p. 84–85."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Historicamente, o estigma se construiu ao longo de muitos anos de superstições e enganos sobre transmissão e cura, e a OMS o descreve como quase tão antigo quanto os registros históricos, incluindo leis e regulamentos que discriminam e segregam ou isolam compulsoriamente as pessoas afetadas, que devem ser revogados. Socialmente, contribuem o temor das incapacidades decorrentes do diagnóstico tardio, a vulnerabilidade social e econômica (desemprego, perda de renda) e o receio que se estende à comunidade e aos profissionais; institucionalmente, serviços públicos e privados reproduzem comportamentos discriminatórios, como negação de atendimento, abusos e transferência de cuidados. Na assistência, o PCDT 2022 propõe identificar os níveis do estigma (autoestigma, interpessoal, comunitário, organizacional/institucional e estrutural) e intervir em cada um, aplicar a Escala de Estigma EMIC-AP no segundo mês de tratamento (e no pós-alta recente ou durante reações) e a Escala de Participação. Também recomenda capacitar as equipes, praticar escuta e acolhimento, comunicar o diagnóstico de forma sensível, criar ouvidorias e espaços de educação permanente, formar grupos de autocuidado e articular a RAPS e o SUAS. A Estratégia Nacional 2024-2030 tem como meta dar providência a 100% das manifestações sobre práticas discriminatórias registradas nas Ouvidorias do SUS.",
+      "pontos_chave": [
+        {
+          "id": "T44-P1",
+          "afirmacao": "Fator histórico: o estigma resulta de muitos anos de superstições e enganos sobre transmissão e cura.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0089",
+          "secao_ou_pagina": "10.2.1.1 Estigma e discriminação na hanseníase, p. 79 (PDF 81)",
+          "trecho": "Na hanseníase, o estigma se desenvolveu ao longo de muitos anos de superstições e enganos, estabelecendo discriminação e exclusão social em virtude das crenças sobre sua transmissão e cura"
+        },
+        {
+          "id": "T44-P2",
+          "afirmacao": "Fator institucional: serviços de saúde públicos e privados reproduzem comportamentos discriminatórios.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0090",
+          "secao_ou_pagina": "10.2.1.2 Estigma e discriminação nos serviços de saúde, p. 79–80 (PDF 81–82)",
+          "trecho": "tanto os serviços públicos quanto os privados acabam por reproduzir comportamentos discriminatórios frente aos pacientes."
+        },
+        {
+          "id": "T44-P3",
+          "afirmacao": "Leis e regulamentações que permitem discriminação devem ser revogadas ou corrigidas.",
+          "documento": "oms-estrategia-global-hanseniase-2021-2030",
+          "chunk_id": "oms-estrategia-global-hanseniase-2021-2030:0028",
+          "secao_ou_pagina": "Pilar estratégico 4, p. 18 (PDF 18)",
+          "trecho": "As leis e regulamentações que permitem a discriminação contra as pessoas afetadas pela hanseníase devem ser revogadas ou corrigidas sem demora"
+        },
+        {
+          "id": "T44-P4",
+          "afirmacao": "O enfrentamento exige identificar os níveis do estigma e intervir em cada um.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0091",
+          "secao_ou_pagina": "10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação, p. 80–81 (PDF 82–83)",
+          "trecho": "Para tratá-lo, é preciso identificar os seus níveis e abordar cada um deles da melhor maneira possível."
+        },
+        {
+          "id": "T44-P5",
+          "afirmacao": "Aplicar a Escala de Estigma (EMIC) no segundo mês de tratamento.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0092",
+          "secao_ou_pagina": "10.2.1.5 Profissionais de saúde, p. 81–82 (PDF 83–84)",
+          "trecho": "Uma das estratégias pensadas em relação à atuação do profissional de saúde é a aplicação da Escala de Estigma (EMIC) no segundo mês de tratamento do paciente acometido pela hanseníase"
+        },
+        {
+          "id": "T44-P6",
+          "afirmacao": "Capacitar a equipe de saúde com informações sobre a hanseníase é estratégia de enfrentamento nos serviços.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0097",
+          "secao_ou_pagina": "10.2.1.7.2 Direcionando uma intervenção, p. 84–85 (PDF 86–87)",
+          "trecho": "capacitar a equipe de saúde, a partir do fornecimento de informações acerca das condições que envolvem direta e indiretamente a hanseníase"
+        }
+      ],
+      "pontos_proibidos": [
+        "Recomendar isolamento ou segregação de pessoas com hanseníase.",
+        "Afirmar que o enfrentamento ao estigma não faz parte do tratamento (o PCDT considera o tratamento completo apenas com essa intervenção).",
+        "Orientar a divulgação do diagnóstico a terceiros sem o consentimento do paciente."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (10.2.1) descreve os fatores históricos, sociais e institucionais e as estratégias de enfrentamento na assistência; a Estratégia Global da OMS (Pilar 4 e Anexo 2) e a Estratégia Nacional 2024-2030 (meta 4 e ações) complementam.",
+      "comportamento_esperado": "Responder com terminologia técnica, cobrindo fatores históricos, sociais e institucionais e as estratégias de enfrentamento na assistência (níveis de estigma, EMIC e Escala de Participação, capacitação, acolhimento, ouvidorias, grupos de autocuidado, RAPS e SUAS).",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A068",
+    "pergunta": "Recebeu-se hoje um paciente que está em tratamento, relatando que a lesão está avermelhada e inchada. O que deve ser feito?",
+    "registro": "técnico",
+    "composta": false,
+    "resposta_da_ia": "Lesão **avermelhada e inchada durante o tratamento pode ser uma reação hansênica tipo 1**, mas esse relato, isoladamente, não confirma a causa. O paciente deve ser avaliado presencialmente **hoje**, com atenção especial à função dos nervos periféricos, pois reações podem ocorrer durante a poliquimioterapia e, sem tratamento adequado, causar dano neural [1][2][3].\n\n- Verifique se houve piora abrupta de lesões preexistentes ou surgimento de novas lesões e pergunte sobre dor nos nervos, aumento da dormência, fraqueza ou dificuldade para segurar objetos. Esses achados podem acompanhar reação tipo 1 e comprometimento neural [1].\n- Avalie as funções **sensitiva, motora e autonômica** e monitore a função neural. Se houver suspeita de reação tipo 1, o protocolo orienta instituir tratamento prontamente e monitorar clínica e neurologicamente; a escolha do tratamento cabe à equipe após avaliação [1][2].\n- Mantenha a PQT-U se o paciente ainda não completou os critérios de alta por cura. Se já concluiu a PQT-U, ela não deve ser reiniciada, exceto quando forem preenchidos critérios de recidiva [4].\n- Se a lesão for um nódulo doloroso, especialmente múltiplo, ou houver febre, edema periférico ou sintomas em outros órgãos, considere também a possibilidade de reação tipo 2, que requer avaliação clínica [5][3].\n\nOs documentos consultados não definem uma conduta específica para vermelhidão e inchaço isolados sem exame clínico; portanto, não é possível distinguir a causa apenas pela descrição.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.1 Reação hansênica tipo 1 (reação reversa). p. 34."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0004",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 16."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5 Reações hansênicas. p. 33–34."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0060",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.2 Tratamento farmacológico das reações hansênicas. p. 60."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0026",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico). p. 34–36."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Lesões que se tornam eritematosas e edemaciadas durante o tratamento sugerem reação hansênica tipo 1 (reação reversa), que deve ser diferenciada da tipo 2 (nódulos subcutâneos dolorosos fora das lesões prévias, com sintomas sistêmicos). Deve-se realizar a avaliação neurológica simplificada (palpação dos nervos, testes de sensibilidade e força em mãos, pés e olhos), pois a reação tipo 1 frequentemente se acompanha de neurite, e manter a PQT-U, que não deve ser suspensa enquanto o paciente não completar os critérios de alta. Pelo PCDT, o tratamento deve ser instituído imediatamente com prednisona oral 1 mg/kg/dia, com redução de cerca de 10 mg a cada 15 dias até 20 mg/dia e depois de 5 mg a cada 15 dias, mantendo 5 mg/dia por 15 dias e 5 mg em dias alternados por mais 15 dias, por no mínimo seis meses em média. No início da corticoterapia, faz-se a profilaxia da estrongiloidíase disseminada (albendazol 400 mg/dia por três dias ou ivermectina 200 mcg/kg em dose única), e o paciente deve ser monitorado com ANS periódica e quanto aos eventos adversos do corticoide. Havendo neurite, também estão indicadas a imobilização do membro afetado e a corticoterapia supervisionada.",
+      "pontos_chave": [
+        {
+          "id": "T25-P1",
+          "afirmacao": "Lesões avermelhadas (eritemato-vinhosas) e edemaciadas em paciente com hanseníase caracterizam reação tipo 1.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "As lesões cutâneas tornam-se mais visíveis, com coloração eritemato-vinhosa, edemaciadas, algumas vezes dolorosas."
+        },
+        {
+          "id": "T25-P2",
+          "afirmacao": "A avaliação neurológica simplificada deve ser repetida diante de novas queixas e nos casos de reação.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0037",
+          "secao_ou_pagina": "7.1 Avaliação neurológica simplificada (ANS), p. 43–44 (PDF 45–46)",
+          "trecho": "Além disso, a ANS deve ser repetida sempre que o paciente apresentar novas queixas e nos casos de reações hansênicas"
+        },
+        {
+          "id": "T25-P3",
+          "afirmacao": "A PQT-U deve ser mantida durante a reação se o paciente ainda não completou os critérios de alta.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0060",
+          "secao_ou_pagina": "10.1.2 Tratamento farmacológico das reações hansênicas, p. 60 (PDF 62)",
+          "trecho": "Durante os episódios reacionais, a PQT-U deve ser mantida se o paciente ainda não houver completado os critérios de alta por cura."
+        },
+        {
+          "id": "T25-P4",
+          "afirmacao": "O tratamento da reação tipo 1 deve ser iniciado imediatamente com corticosteroide sistêmico em dose alta.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "Em vista do risco de dano neural, o tratamento da reação tipo 1 deve ser instituído imediatamente, por meio de corticosteroides sistêmicos em doses altas"
+        },
+        {
+          "id": "T25-P5",
+          "afirmacao": "Prednisona VO 1 mg/kg/dia com redução gradual de cerca de 10 mg a cada 15 dias (esquema do PCDT).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+          "secao_ou_pagina": "10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa, p. 60–61 (PDF 62–63)",
+          "trecho": "No Brasil, recomenda-se a corticoterapia com prednisona, administrada por via oral, na dose inicial de 1mg/kg/dia, com redução gradual da dose diária em torno de 10mg a cada 15 dias."
+        },
+        {
+          "id": "T25-P6",
+          "afirmacao": "Fazer profilaxia da estrongiloidíase disseminada no início da corticoterapia (albendazol 400 mg/dia por 3 dias ou ivermectina).",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0061",
+          "secao_ou_pagina": "10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa, p. 60–61 (PDF 62–63)",
+          "trecho": "No início da corticoterapia, deve-se fazer a profilaxia da estrongiloidíase disseminada, prescrevendo albendazol 400mg/dia, dose única diária, por três dias consecutivos"
+        }
+      ],
+      "pontos_proibidos": [
+        "Suspender ou interromper a PQT-U por causa da reação.",
+        "Interpretar o quadro como falha terapêutica ou alergia e trocar ou suspender o esquema da hanseníase.",
+        "Prescrever talidomida para a reação tipo 1.",
+        "Não avaliar a função neural ou adiar o tratamento até a próxima dose supervisionada.",
+        "Orientar a retirada abrupta do corticoide ou doses de prednisona fora do esquema (ex.: sem redução gradual)."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (6.5.1, 7.1, 10.1.2, 10.1.2.1, 6.6.2.1) descreve o reconhecimento da reação tipo 1, a avaliação neurológica, a manutenção da PQT-U, o esquema de prednisona e a profilaxia antiparasitária. A OMS 2020 (algoritmos 2 e 4) complementa a diferenciação entre os tipos de reação.",
+      "comportamento_esperado": "Responder: hipótese de reação tipo 1, ANS imediata, manutenção da PQT-U, prednisona 1 mg/kg/dia com desmame conforme o PCDT, profilaxia da estrongiloidíase e monitorização; mencionar a imobilização se houver neurite.",
+      "divergencias_entre_documentos": "A OMS 2020 trata a reação tipo 1 leve sem neurite com AINE ou paracetamol e reserva o corticoide para neurite, ulceração ou falha do AINE. Propõe prednisolona de 0,5 a 1 mg/kg (em geral 30–40 mg/dia) por 20 semanas e albendazol 400 mg duas vezes ao dia por 3 dias. O PCDT indica corticoide em dose alta imediato, prednisona 1 mg/kg/dia por no mínimo cerca de 6 meses e albendazol 400 mg/dia por 3 dias. Prevalece o PCDT."
+    }
+  },
+  {
+    "codigo": "A078",
+    "pergunta": "Quais achados clínicos caracterizam a reação hansênica tipo 1 e como diferenciá-la de outras intercorrências?",
+    "registro": "técnico",
+    "composta": true,
+    "resposta_da_ia": "A reação hansênica tipo 1 (reação reversa) costuma começar abruptamente, com inflamação e piora de lesões cutâneas já existentes, podendo também surgir lesões aparentemente novas; pode haver neurite e perda de função dos nervos periféricos. [1] Para diferenciá-la de outras intercorrências, avalie o padrão das lesões e a função neural, e considere se há sinais de reação tipo 2 ou de neurite isolada. [1][2][3][4]\n\n### Achados que caracterizam a reação tipo 1\n\n- É mais frequente nas formas dimorfas e pode ocorrer tanto em casos paucibacilares quanto multibacilares. [1]\n- As lesões tornam-se mais visíveis, eritemato-vinhosas e edemaciadas; algumas podem ser dolorosas. Alterações também podem aparecer em áreas onde a infecção era antes imperceptível. [1]\n- Pode haver dor aguda em nervos periféricos ou ramos cutâneos, espontânea ou à palpação. A neurite pode vir acompanhada de alterações sensitivas, motoras e/ou autonômicas — por exemplo, aumento da dormência nas mãos ou nos pés, piora da dor nos membros ou queda mais frequente de objetos das mãos. [1]\n- Em quadros de inflamação intensa, podem ocorrer ulceração das lesões cutâneas e abscessos em nervos periféricos. [1]\n\n### Como diferenciar de outras intercorrências\n\n- **Reação tipo 2 (eritema nodoso hansênico):** caracteriza-se classicamente por nódulos subcutâneos dolorosos, geralmente múltiplos, que podem surgir em qualquer área da pele e não se relacionam à localização de lesões prévias. Pode haver manifestações sistêmicas e comprometimento de outros órgãos e tecidos. [3] Em contraste, na reação tipo 1 predominam a piora inflamatória de lesões hansênicas preexistentes e o possível aparecimento de lesões em áreas antes imperceptíveis. [1]\n- **Neurite sem manifestações cutâneas:** a neurite pode ocorrer isoladamente, sem sinais cutâneos de reação; por isso, a ausência de piora das lesões de pele não exclui deterioração neural. [1][4] A neurite aguda é caracterizada por dor espontânea ou à palpação dos nervos, por vezes com limitação dolorosa dos movimentos, e perda funcional sensitiva, motora e/ou autonômica. [4]\n- **Outras doenças ou quadros atípicos:** as reações hansênicas podem ter apresentações atípicas que dificultam a classificação e simulam, entre outras condições, doenças reumatológicas, uveítes, nefrites, hepatites e vasculites. [2] Os documentos consultados não fornecem critérios para distinguir cada uma dessas condições em particular.\n\n### Cuidados e encaminhamento\n\nA suspeita de reação tipo 1 exige atenção imediata pelo risco de dano neural; o protocolo brasileiro orienta instituir tratamento prontamente e monitorar a evolução clínica e a função neural. [1] A avaliação neurológica deve incluir investigação de sintomas, inspeção, palpação dos nervos e testes de sensibilidade e força muscular, com repetição periódica. [4] Na neurite aguda, o protocolo descreve imobilização do membro afetado e corticosteroides sob supervisão. [4] A piora da função neural pode ocorrer mesmo sem manifestações cutâneas, reforçando a importância da avaliação periódica. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.1 Reação hansênica tipo 1 (reação reversa). p. 34."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0024",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5 Reações hansênicas. p. 33–34."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0026",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico). p. 34–36."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0032",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 6.6.2 Neurite. p. 38–39."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "A reação hansênica tipo 1 (reação reversa) é uma reação de hipersensibilidade celular que acomete sobretudo as formas dimorfas (PB ou MB) e pode ocorrer antes, durante ou após a PQT-U. Instala-se abruptamente, com piora das lesões cutâneas preexistentes, que se tornam eritemato-vinhosas, edemaciadas e por vezes dolorosas (podendo ulcerar), e surgimento de lesões aparentemente novas, frequentemente com neurite: dor espontânea ou à palpação de nervos periféricos e comprometimento sensitivo, motor e/ou autonômico (piora da dor nos membros, queda de objetos das mãos, dormência em mãos e pés); a febre, quando presente, é discreta. Diferencia-se da reação tipo 2 (eritema nodoso hansênico), exclusiva de multibacilares, na qual surgem nódulos subcutâneos dolorosos não relacionados às lesões prévias, com quadro sistêmico (febre alta, artralgias, edema, linfadenomegalia, irite, orquite, nefrite) e alterações laboratoriais inflamatórias. Diferencia-se também da dor neuropática, com formigamento ou queimação tardios (em geral 3 a 5 anos após o tratamento) sem dor à palpação do nervo e sem nova perda de função neural, e da neurite silenciosa, em que há perda de função sem dor, detectável pela avaliação neurológica simplificada periódica. O diagnóstico é essencialmente clínico e deve ser sempre complementado pela avaliação da função neural.",
+      "pontos_chave": [
+        {
+          "id": "T21-P1",
+          "afirmacao": "A reação tipo 1 surge de forma abrupta, com piora das lesões preexistentes e aparecimento de novas lesões, muitas vezes com inflamação de nervos periféricos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "Ocorre abruptamente, com piora das lesões de pele preexistentes e aparecimento de novas lesões, muitas vezes acompanhada por intensa inflamação de nervos periféricos."
+        },
+        {
+          "id": "T21-P2",
+          "afirmacao": "As lesões cutâneas na reação tipo 1 tornam-se eritemato-vinhosas, edemaciadas e por vezes dolorosas.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "As lesões cutâneas tornam-se mais visíveis, com coloração eritemato-vinhosa, edemaciadas, algumas vezes dolorosas."
+        },
+        {
+          "id": "T21-P3",
+          "afirmacao": "A reação tipo 1 frequentemente acompanha-se de neurite, com dor aguda espontânea ou à palpação de nervos periféricos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0025",
+          "secao_ou_pagina": "6.5.1 Reação hansênica tipo 1 (reação reversa), p. 34 (PDF 36)",
+          "trecho": "Qualquer nervo periférico e ramos nervosos cutâneos podem ser afetados, gerando dor aguda, que pode ser de forte intensidade, espontânea ou à palpação dessas estruturas"
+        },
+        {
+          "id": "T21-P4",
+          "afirmacao": "Diferencia-se da reação tipo 2, cujos nódulos subcutâneos (eritema nodoso) aparecem em qualquer área e não se relacionam às lesões prévias de hanseníase.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0026",
+          "secao_ou_pagina": "6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico), p. 34–36 (PDF 36–38)",
+          "trecho": "Os nódulos podem aparecer em qualquer área da pele e não se relacionam à localização de lesões prévias de hanseníase."
+        },
+        {
+          "id": "T21-P5",
+          "afirmacao": "Na reação tipo 1 as lesões antigas inflamam e a febre, se houver, é discreta, sem grande comprometimento do estado geral (ao contrário da tipo 2, com febre alta e mal-estar).",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0041",
+          "secao_ou_pagina": "4.2 The four steps in managing leprosy reactions, p. 28–29 (PDF 40–41)",
+          "trecho": "Type 1 reaction: – The leprosy skin lesions are inflamed; – There may be a slight fever, but the patient doesn’t feel too ill."
+        },
+        {
+          "id": "T21-P6",
+          "afirmacao": "Formigamento/queimação tardios sem dor à palpação do nervo e sem nova perda de função neural sugerem dor neuropática, e não reação.",
+          "documento": "oms-reacoes-incapacidades-2020",
+          "chunk_id": "oms-reacoes-incapacidades-2020:0016",
+          "secao_ou_pagina": "1.5 Neuropathic pain, p. 10 (PDF 22)",
+          "trecho": "In the absence of nerve tenderness and new NFI, the diagnosis of neuropathic pain should be considered, especially if the original diagnosis of leprosy was made more than 3–5 years earlier."
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a reação tipo 1 indica falha ou resistência do tratamento e que a PQT-U deve ser suspensa.",
+        "Descrever a reação tipo 1 como nódulos subcutâneos dolorosos fora das lesões prévias (característica da reação tipo 2).",
+        "Afirmar que a reação tipo 1 só ocorre durante o tratamento ou acomete apenas multibacilares.",
+        "Dispensar a avaliação da função neural por ausência de dor (ignorando a neurite silenciosa)."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O PCDT 2022 (6.5.1, 6.5.2, 6.6) descreve os achados clínicos da reação tipo 1 e da tipo 2, e o guia técnico da OMS 2020 (1.3, 1.5, 4.2, algoritmo 2) traz critérios práticos para distinguir reação tipo 1, tipo 2, neurite silenciosa e dor neuropática. A diferenciação em relação a outras intercorrências não hansênicas não é sistematizada no corpus; a resposta cobre as intercorrências da própria hanseníase.",
+      "comportamento_esperado": "Responder: descrever os achados da reação tipo 1 (lesões preexistentes inflamadas, lesões novas, neurite, febre discreta) e diferenciá-la da reação tipo 2, da dor neuropática e da neurite silenciosa, reforçando a avaliação da função neural.",
+      "divergencias_entre_documentos": "Quanto à conduta, o PCDT 2022 indica corticoterapia sistêmica em doses altas imediatamente em toda reação tipo 1, enquanto a OMS 2020 admite AINE/paracetamol na reação tipo 1 leve sem neurite. Na classificação imunológica, o PCDT fala em hipersensibilidade tipos III e IV de Gell e Coombs, e a OMS em hipersensibilidade tardia. Prevalece o PCDT."
+    }
+  },
+  {
+    "codigo": "A088",
+    "pergunta": "Qual é o conteúdo detalhado das seções do PCDT da hanseníase que foram excluídas do conjunto documental deste estudo?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Os trechos fornecidos **não identificam quais seções foram excluídas do conjunto documental do estudo** nem reproduzem o conteúdo detalhado dessas seções. Portanto, não é possível determinar, com base neles, quais seções foram excluídas ou descrever seu conteúdo.\n\nO material disponível informa apenas, em termos gerais, que o PCDT de 2022 aborda diagnóstico e tratamento, avaliação de contatos, acompanhamento e monitoramento, gestão e controle, prevenção e reabilitação de incapacidades e apoio psicossocial [1][2][3]. Também há trechos sobre resultados esperados [4] e gestão, regulação e controle [5], mas eles não esclarecem se essas seções foram excluídas do estudo.\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0000",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção Apresentação. p. 13."
+      },
+      {
+        "indice": 2,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0001",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção Apresentação. p. 13–15."
+      },
+      {
+        "indice": 3,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0005",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 1 Introdução. p. 16–17."
+      },
+      {
+        "indice": 4,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0127",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 15 Resultados esperados. p. 105–107."
+      },
+      {
+        "indice": 5,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0128",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 16 Gestão, regulação e controle. p. 107–109."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "O conteúdo detalhado das partes do PCDT da hanseníase que ficaram de fora não está no conjunto de documentos deste estudo, então não é possível descrevê-lo. O que o conjunto registra é apenas quais partes foram excluídas: as referências, os apêndices (fluxogramas e metodologia de busca) e os anexos (portaria, painel GRADE e formulários). Para conhecer esse conteúdo, é preciso consultar a versão completa do PCDT publicada pelo Ministério da Saúde.",
+      "pontos_chave": [],
+      "pontos_proibidos": [
+        "Descrever passo a passo os fluxogramas, o texto da portaria, o painel GRADE ou os formulários do PCDT como se estivessem no conjunto documental.",
+        "Afirmar que o conjunto documental contém os apêndices ou anexos do PCDT."
+      ],
+      "cobertura": "nao_respondivel",
+      "justificativa_cobertura": "O cabeçalho do corpus do PCDT registra que foram excluídos referências, apêndices (fluxogramas e metodologia de busca) e anexos (portaria, painel GRADE e formulários), mas o conteúdo dessas seções não está no corpus. O texto do PCDT apenas remete a eles (por exemplo, 'Fluxogramas 3 e 4 do Apêndice A', 'Anexo E', 'Anexo F').",
+      "comportamento_esperado": "Reconhecer que o conteúdo das seções excluídas não está disponível, podendo dizer quais seções foram excluídas, sem inventar o conteúdo, e indicar a versão integral do PCDT publicada pelo Ministério da Saúde.",
+      "divergencias_entre_documentos": null
+    }
+  },
+  {
+    "codigo": "A098",
+    "pergunta": "A alteração da cor da pele causada pela clofazimina desaparece depois do tratamento?",
+    "registro": "leigo",
+    "composta": false,
+    "resposta_da_ia": "Sim. A pigmentação da pele causada pela clofazimina geralmente desaparece **entre seis e 12 meses após a interrupção** do medicamento, embora traços de descoloração possam persistir por até quatro anos. [1]\n\nA pigmentação, por si só, não é motivo para suspender o medicamento; o protocolo brasileiro ressalva a situação de insatisfação extrema do paciente, com risco de abandono do tratamento. [1]\n\nEste sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde.",
+    "falha_tecnica": false,
+    "recusa_por_regra_de_seguranca": false,
+    "motivo_da_recusa": null,
+    "fontes_citadas_pela_ia": [
+      {
+        "indice": 1,
+        "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+        "referencia": "Ministério da Saúde (Brasil). Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase. 2022. Seção 10.1.6 Eventos adversos e interações medicamentosas. p. 71–72."
+      }
+    ],
+    "referencia": {
+      "resposta_referencia": "Sim, na maioria das vezes. Segundo o PCDT da Hanseníase, o escurecimento da pele causado pela clofazimina costuma desaparecer entre 6 e 12 meses depois que o remédio é parado, mas pode ficar um pouco de mancha por até quatro anos. A mudança de cor, que vai do avermelhado ao marrom-escuro, é o efeito mais comum desse remédio e pode deixar as manchas da hanseníase mais visíveis durante o tratamento. Ela não é motivo para parar o remédio por conta própria; se a cor incomodar muito, a pessoa deve conversar com a equipe de saúde. Em bebês de mães que usaram clofazimina na gravidez ou na amamentação, o escurecimento também regride quando o bebê deixa de receber o remédio.",
+      "pontos_chave": [
+        {
+          "id": "T15-P1",
+          "afirmacao": "A pigmentação geralmente desaparece entre 6 e 12 meses após a interrupção da clofazimina, mas traços podem permanecer por até quatro anos.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "A pigmentação geralmente desaparece dentro de seis a 12 meses após a interrupção da clofazimina, embora traços de descoloração ainda possam permanecer por até quatro anos."
+        },
+        {
+          "id": "T15-P2",
+          "afirmacao": "A mudança de cor da pele (vermelho a castanho-escuro) é o efeito mais comum e perceptível da clofazimina.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "O efeito mais comum e perceptível é a pigmentação da pele, variando de vermelho a castanho-escuro, dependendo da dosagem."
+        },
+        {
+          "id": "T15-P3",
+          "afirmacao": "A pigmentação não é motivo para suspender o medicamento, exceto em insatisfação extrema do paciente com risco de abandono.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "A pigmentação da pele não deve ser considerada critério para suspensão do medicamento, exceto quando há insatisfação extrema do paciente, com risco de abandono do tratamento."
+        },
+        {
+          "id": "T15-P4",
+          "afirmacao": "O remédio pode se acumular nas manchas ativas da hanseníase, deixando-as mais evidentes.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0077",
+          "secao_ou_pagina": "10.1.6 Eventos adversos e interações medicamentosas (Quadro 2, clofazimina), p. 71–72 (PDF 73–74)",
+          "trecho": "O fármaco pode acumular-se nas lesões cutâneas ativas da hanseníase, tornando-as mais evidentes."
+        },
+        {
+          "id": "T15-P5",
+          "afirmacao": "Em bebês de mães que usaram clofazimina na gravidez ou amamentação, o aumento da pigmentação regride quando cessa a transferência do remédio.",
+          "documento": "ms-pcdt-hanseniase-2022",
+          "chunk_id": "ms-pcdt-hanseniase-2022:0067",
+          "secao_ou_pagina": "10.1.5.2 Clofazimina, p. 64 (PDF 66)",
+          "trecho": "foi relatado aumento da pigmentação da pele em bebês nascidos de mulheres que receberam clofazimina durante a gravidez e o aleitamento, a qual regride após a interrupção da transferência do fármaco para o recém-nascido"
+        }
+      ],
+      "pontos_proibidos": [
+        "Afirmar que a alteração de cor causada pela clofazimina é sempre permanente.",
+        "Afirmar que a cor some imediatamente ou em poucos dias após parar o remédio.",
+        "Orientar a parar a clofazimina por conta própria por causa da mudança de cor.",
+        "Orientar a suspender a amamentação ou a clofazimina na gravidez por causa da pigmentação do bebê (o PCDT recomenda manter o tratamento)."
+      ],
+      "cobertura": "integral",
+      "justificativa_cobertura": "O Quadro 2 do PCDT 2022 informa explicitamente o tempo de regressão da pigmentação (6 a 12 meses, com traços por até quatro anos) e o item 10.1.5.2 trata da regressão em bebês.",
+      "comportamento_esperado": "Responder em linguagem simples que a cor costuma desaparecer em 6 a 12 meses após o fim do remédio, podendo restar traços por até quatro anos, e que isso não é motivo para interromper o tratamento por conta própria.",
+      "divergencias_entre_documentos": "As Diretrizes da OMS (2018) admitem considerar um regime alternativo de dois medicamentos (sem clofazimina) para pessoas com hanseníase PB muito preocupadas com a descoloração da pele; o PCDT 2022, norma brasileira mais recente do corpus, adota a PQT-U com clofazimina para todos e só admite suspender a clofazimina por pigmentação em caso de insatisfação extrema com risco de abandono."
+    }
+  }
+]

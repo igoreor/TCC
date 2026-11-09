@@ -1,0 +1,361 @@
+[
+  {
+    "codigo": "A010",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: interpretação (positivo/negativo, contatos, suspeita clínica) e desempenho qualitativo por população (PB, MB, saudáveis/contatos).",
+    "COE": true, "COE_justificativa": "Sem contradições internas; a restrição do uso no SUS e o caráter auxiliar do teste são coerentes em todo o texto.",
+    "REG": 2, "REG_justificativa": "Terminologia técnica precisa (anti-PGL-1, fluxo lateral, PB/MB, PCDT), adequada ao público técnico.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT 7.6 e a OMS 2018; nenhuma contradiz o corpus.",
+    "pontos_chave": [
+      { "id": "T07-P1", "status": "contemplado" },
+      { "id": "T07-P2", "status": "contemplado" },
+      { "id": "T07-P3", "status": "contemplado" },
+      { "id": "T07-P4", "status": "incompleto" },
+      { "id": "T07-P5", "status": "contemplado" },
+      { "id": "T07-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Teste IgM anti-PGL-1 não deve ser usado isoladamente para diagnóstico; positivo não confirma, negativo não exclui (sobretudo PB)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "No SUS o uso está aprovado exclusivamente na investigação de contatos de casos confirmados", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0047" },
+      { "texto": "O teste serve para indicar quem deve ser monitorado mais de perto", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "Positividade em saudáveis varia com a endemicidade, maior em áreas endêmicas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "Casos confirmados, especialmente PB, podem ter sorologia negativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "Testes de fluxo lateral/ELISA têm baixa sensibilidade para PB; negativo não é útil para excluir PB", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0029" },
+      { "texto": "A OMS não recomenda testes para diagnosticar infecção em contatos assintomáticos", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0002, 0030" },
+      { "texto": "Alguns estudos associam soropositividade de contatos a maior risco de adoecer, outros não confirmaram", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" },
+      { "texto": "A OMS relata baixa capacidade preditiva dos testes disponíveis", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0002, 0030" },
+      { "texto": "Diagnóstico deve basear-se no exame clínico, com ou sem exames confirmatórios", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0028" },
+      { "texto": "Sorologia anti-PGL-1 tem alta sensibilidade em MB, útil em lesões numerosas, infiltração difusa ou comprometimento neural extenso", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0046" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhum dado, número ou norma inventado; não apresenta métricas numéricas como se constassem do corpus.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; reforça que o teste não confirma nem exclui e que é restrito a contatos no SUS.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_parcial_correta", "ABS_justificativa": "Responde a parte coberta e declara que o corpus não traz estimativas numéricas de sensibilidade/especificidade por população, sem inventá-las.",
+    "FF": 2, "FF_justificativa": "Fontes do PCDT 7.6 e da OMS 2018 correspondem às afirmações a que estão associadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Alguns estudos associam soropositividade de contatos a maior risco de adoecimento, mas outros não confirmaram", "chunk_id": "ms-pcdt-hanseniase-2022:0046", "trecho": "Se, por um lado, diversos estudos apontam que contatos soropositivos têm maior risco de adoecimento, outras análises não confirmaram essa observação." },
+      { "afirmacao": "O diagnóstico deve se basear no exame clínico, com ou sem exames confirmatórios", "chunk_id": "oms-diretrizes-hanseniase-2018:0028", "trecho": "Recomenda-se basear o diagnóstico de hanseníase nos seguintes aspectos: exame clínico, com ou sem esfregaço cutâneo ou exame histopatólogico das biópsias" }
+    ]
+  },
+  {
+    "codigo": "A020",
+    "PER": 1, "PER_justificativa": "Os cuidados são respondidos com detalhe, mas o 'por que' é respondido de forma circular (porque o protocolo a recomenda), sem explicar a ação imunomoduladora/anti-inflamatória.",
+    "COE": true, "COE_justificativa": "Sem contradições; indicação no ENH e uso de corticoide na neurite/olhos/testículos são apresentados de forma consistente.",
+    "REG": 1, "REG_justificativa": "Pergunta leiga, mas a resposta usa muitos termos técnicos sem explicação (parestesia, disestesia, bradicardia, tromboembólico, neutrófilos/mm³, ENH).",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT (10.1.2.2, 10.1.3.2, 10.1.5.8, 10.1.6).",
+    "pontos_chave": [
+      { "id": "T22-P1", "status": "contemplado" },
+      { "id": "T22-P2", "status": "ausente" },
+      { "id": "T22-P3", "status": "contemplado" },
+      { "id": "T22-P4", "status": "contemplado" },
+      { "id": "T22-P5", "status": "contemplado" },
+      { "id": "T22-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Talidomida é o tratamento preferencial do ENH (reação tipo 2)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061" },
+      { "texto": "Com comprometimento neural importante ou de olhos/testículos, usa-se corticosteroide", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0027" },
+      { "texto": "ENH com neurite aguda deve ser tratado com corticosteroide", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061" },
+      { "texto": "Talidomida causa malformações graves; proibida na gravidez e na amamentação", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075" },
+      { "texto": "Em mulheres com potencial reprodutivo o uso é excepcional, indispensável e após esgotados outros recursos, com exclusão de gravidez", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075, 0116" },
+      { "texto": "Dois métodos contraceptivos simultâneos, ao menos um de alta eficácia", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075" },
+      { "texto": "Prevenção de gravidez desde 4 semanas antes até 4 semanas após o tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075" },
+      { "texto": "Teste de gravidez 24 h antes, a cada novo ciclo e semanalmente no 1º mês; dispensação condicionada a teste recente", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0075" },
+      { "texto": "Talidomida presente no sêmen; homens devem usar barreira, mesmo vasectomizados, até 4 semanas após a última dose", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0074" },
+      { "texto": "Pode causar ou agravar neuropatia periférica potencialmente irreversível; exame neurológico antes e monitoramento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0080" },
+      { "texto": "Sintomas de neuropatia exigem reavaliação imediata do tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0080" },
+      { "texto": "Monitorar pessoas com risco de convulsões; não iniciar com neutrófilos < 750/mm³", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0080" },
+      { "texto": "Pode causar sedação e bradicardia", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0084" },
+      { "texto": "Associação com corticoide aumenta risco tromboembólico", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061, 0084" },
+      { "texto": "Não autorizada pelo PCDT para menores de 18 anos (bula só para adultos)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0063" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória ao corpus.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; ênfase correta na proibição em gestantes/lactantes, contracepção dupla e restrição etária.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes do PCDT correspondem às afirmações (0061, 0027, 0074, 0075, 0080, 0084, 0063).",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Não iniciar talidomida com contagem absoluta de neutrófilos abaixo de 750 células/mm³", "chunk_id": "ms-pcdt-hanseniase-2022:0080", "trecho": "não deve ser iniciado o tratamento quando a contagem absoluta de neutrófilos estiver abaixo de 750 células/mm³" },
+      { "afirmacao": "Pacientes com risco de convulsões devem ser rigorosamente monitorados", "chunk_id": "ms-pcdt-hanseniase-2022:0080", "trecho": "Pacientes com histórico de convulsões ou fatores de risco para o desenvolvimento de convulsões devem ser rigorosamente monitorados." },
+      { "afirmacao": "Talidomida pode induzir bradicardia", "chunk_id": "ms-pcdt-hanseniase-2022:0084", "trecho": "devido ao potencial da talidomida para induzir bradicardia, é necessária particular atenção com medicamentos que tenham o mesmo efeito farmacodinâmico" },
+      { "afirmacao": "Dispensação condicionada a teste de gravidez recente", "chunk_id": "ms-pcdt-hanseniase-2022:0075", "trecho": "A dispensação da talidomida está condicionada à apresentação de teste de gravidez recente (até 24 horas)." }
+    ]
+  },
+  {
+    "codigo": "A030",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: como reconhecer/diferenciar a dor neuropática e quais opções de cuidado existem.",
+    "COE": true, "COE_justificativa": "Distinção entre dor crônica, dor neuropática aguda, neurite e dor nociceptiva é consistente.",
+    "REG": 1, "REG_justificativa": "Pergunta leiga, mas há muito jargão sem explicação (parestesias, disestesias, hiperestesia, neuroanatômica, multibacilares/paucibacilares, abscesso de nervo) e trechos dirigidos ao profissional.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT (6.6.2, 6.6.3, 7.1, 10.2.2, 10.2.6).",
+    "pontos_chave": [
+      { "id": "T29-P1", "status": "contemplado" },
+      { "id": "T29-P2", "status": "contemplado" },
+      { "id": "T29-P3", "status": "contemplado" },
+      { "id": "T29-P4", "status": "contemplado" },
+      { "id": "T29-P5", "status": "ausente" },
+      { "id": "T29-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "Dor neuropática caracteriza-se por parestesias, disestesias, hiperestesia e alodínia no trajeto/território dos nervos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0034" },
+      { "texto": "Pode surgir anos após o fim da PQT", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0034" },
+      { "texto": "A forma crônica ocorre sem inflamação dos nervos e sem dano funcional, especialmente 3 a 5 anos após o tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0034" },
+      { "texto": "Dor crônica com formigamento/queimação em lesões, mãos e pés, em distribuição neuroanatômica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0034" },
+      { "texto": "Distribuição mais difusa em MB e mais localizada/assimétrica em PB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0034" },
+      { "texto": "Dor com perda sensorial é dor neuropática aguda, com indicação de corticoterapia", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0034" },
+      { "texto": "Neurite aguda: dor espontânea ou à palpação, limitação dolorosa, perda sensitiva/motora/autonômica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Neurite difere de neuropatia (dano por qualquer causa)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Dor nociceptiva aguda ocorre em reações e não costuma ter comprometimento sensorial", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0034" },
+      { "texto": "ANS no diagnóstico, a cada 3 meses, no fim do tratamento e diante de novas queixas/reações", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037" },
+      { "texto": "Dor crônica deve ser tratada conforme o PCDT da Dor Crônica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0034" },
+      { "texto": "Neurite aguda requer imobilização e corticosteroide supervisionado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Prevenção de incapacidades inclui autocuidado, fisioterapia, tratamento de úlceras e OPM", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0098" },
+      { "texto": "Avaliação cirúrgica em neuropatia crônica com déficit tardio e dor, neurite sem resposta em 4 semanas, abscesso, contraindicação a corticoide; cirurgia reduz compressão, dor e dose de corticoide", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0102" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada; não atribui medicamentos ou doses ao PCDT da Dor Crônica.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; corticoide indicado apenas na dor neuropática aguda/neurite, conforme o PCDT, sem orientar automedicação.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "abstencao_parcial_correta", "ABS_justificativa": "Declara que os trechos não detalham o conteúdo do PCDT da Dor Crônica e não inventa a conduta; porém omite as opções analgésicas da OMS presentes no corpus (refletido em P5/P6).",
+    "FF": 2, "FF_justificativa": "Cada fonte do PCDT sustenta as afirmações associadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Dor nociceptiva aguda surge em reações e não costuma ter comprometimento sensorial", "chunk_id": "ms-pcdt-hanseniase-2022:0034", "trecho": "A dor nociceptiva aguda, geralmente, não está associada ao comprometimento sensorial e costuma surgir no contexto de reações hansênicas" },
+      { "afirmacao": "Distribuição mais difusa em MB e localizada/assimétrica em PB", "chunk_id": "ms-pcdt-hanseniase-2022:0034", "trecho": "com um envolvimento mais difuso nos casos multibacilares (MB) ou distribuição mais localizada e assimétrica em casos paucibacilares (PB)" },
+      { "afirmacao": "Encaminhamento cirúrgico em neuropatia crônica com déficit neural tardio e dor", "chunk_id": "ms-pcdt-hanseniase-2022:0102", "trecho": "contraindicação formal do uso de corticosteroides, abscesso de nervo, neurite que não responde ao tratamento clínico em quatro semanas, reações hansênicas recorrentes ou subentrantes, subluxação do nervo ulnar e neuropatia crônica com déficit neural tardio e dor" }
+    ]
+  },
+  {
+    "codigo": "A040",
+    "PER": 2, "PER_justificativa": "Responde diretamente como reconhecer a reação tipo 1 (pele, nervos) e quando procurar avaliação.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Na maior parte simples, mas a pergunta pede linguagem simples e há jargão sem explicação (formas dimorfas, paucibacilares/multibacilares, funções autonômicas, neurite aguda).",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT 6.5, 6.5.1 e 6.6.2.",
+    "pontos_chave": [
+      { "id": "T20-P1", "status": "contemplado" },
+      { "id": "T20-P2", "status": "contemplado" },
+      { "id": "T20-P3", "status": "contemplado" },
+      { "id": "T20-P4", "status": "contemplado" },
+      { "id": "T20-P5", "status": "ausente" },
+      { "id": "T20-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Começa de forma abrupta, com piora das lesões existentes e lesões aparentemente novas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Lesões mais visíveis, avermelhadas/arroxeadas, inchadas e às vezes doloridas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Em quadros intensos, as lesões podem ulcerar", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Dor no nervo espontânea ou ao toque, dormência nova ou pior, dor nos membros e queda de objetos das mãos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "A função dos nervos pode piorar isoladamente, sem manifestações na pele", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Ocorre em formas dimorfas, PB e MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Pode ocorrer antes, durante ou depois do tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0024" },
+      { "texto": "Neurite aguda pode ocorrer com a reação ou isolada; requer imobilização e corticosteroide supervisionado", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Tratamento da reação tipo 1 deve ser instituído prontamente, com monitoramento da função neural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; orienta avaliação presencial e não usar corticoide por conta própria.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes 0025, 0024 e 0032 sustentam as afirmações associadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "A piora da função neural pode ocorrer isoladamente, sem manifestações cutâneas", "chunk_id": "ms-pcdt-hanseniase-2022:0025", "trecho": "a piora da função dos nervos periféricos pode ocorrer de forma isolada e independente de manifestações cutâneas de reações hansênicas" },
+      { "afirmacao": "Em reações intensas, as lesões cutâneas podem ulcerar", "chunk_id": "ms-pcdt-hanseniase-2022:0025", "trecho": "Em pacientes com intensa resposta inflamatória, pode ocorrer ulceração das lesões cutâneas" }
+    ]
+  },
+  {
+    "codigo": "A050",
+    "PER": 2, "PER_justificativa": "Responde diretamente como identificar a mancha suspeita (aspecto, sensibilidade, sinais associados).",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Pergunta leiga, mas a resposta se dirige ao examinador ('teste', 'pergunte', 'examine') e usa jargão (hipocrômicas, sensibilidade térmica/dolorosa/tátil, Atenção Secundária).",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT 6.1, 6.4 e a OMS 2018.",
+    "pontos_chave": [
+      { "id": "T01-P1", "status": "contemplado" },
+      { "id": "T01-P2", "status": "contemplado" },
+      { "id": "T01-P3", "status": "contemplado" },
+      { "id": "T01-P4", "status": "incompleto" },
+      { "id": "T01-P5", "status": "incompleto" },
+      { "id": "T01-P6", "status": "incompleto" }
+    ],
+    "afirmacoes": [
+      { "texto": "Mancha mais clara ou avermelhada com diminuição/perda de sensibilidade ao calor, dor ou toque é suspeita", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013, 0014" },
+      { "texto": "Na forma inicial, poucas manchas mais claras, sem alteração de relevo/textura, com sensibilidade discretamente reduzida, sobretudo térmica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0021" },
+      { "texto": "Perda definitiva de sensibilidade em área esbranquiçada ou avermelhada é sinal cardinal", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0028" },
+      { "texto": "Algumas lesões são placas bem delimitadas, elevadas e avermelhadas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0017" },
+      { "texto": "Outras têm aspecto variável: manchas/placas hipocrômicas, acastanhadas ou violáceas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0020" },
+      { "texto": "Sintomas associados: dormência/formigamento em mãos e pés, dor ou hipersensibilidade nos nervos, ferimentos ou queimaduras indolores", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" },
+      { "texto": "Pode haver áreas com alteração de sensibilidade sem mancha visível", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013, 0017" },
+      { "texto": "Examinar toda a pele sob boa iluminação e testar sensibilidade nas lesões e áreas referidas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" },
+      { "texto": "Dúvida diagnóstica na Atenção Primária: encaminhar à Atenção Secundária", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; afirma que a aparência sozinha não confirma e que há alteração de sensibilidade sem mancha.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes do PCDT (0013, 0017, 0020, 0021) e OMS (0028) correspondem às afirmações.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Lesões podem ser placas bem delimitadas, elevadas e avermelhadas (forma tuberculoide)", "chunk_id": "ms-pcdt-hanseniase-2022:0017", "trecho": "As lesões da pele são placas com bordas nítidas, elevadas, geralmente eritematosas e micropapulosas" },
+      { "afirmacao": "Lesões podem ser manchas e placas hipocrômicas, acastanhadas ou violáceas (forma dimorfa)", "chunk_id": "ms-pcdt-hanseniase-2022:0020", "trecho": "apresentam grande variabilidade clínica, como manchas e placas hipocrômicas, acastanhadas ou violáceas" },
+      { "afirmacao": "Em caso de dúvida na Atenção Primária, encaminhar à Atenção Secundária", "chunk_id": "ms-pcdt-hanseniase-2022:0013", "trecho": "Quando houver dúvida sobre o diagnóstico da hanseníase no nível da Atenção Primária, os pacientes deverão ser referenciados para a Atenção Secundária" }
+    ]
+  },
+  {
+    "codigo": "A060",
+    "PER": 2, "PER_justificativa": "Responde diretamente que a infecção pelo HIV não contraindica a PQT.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Linguagem técnica precisa e concisa.",
+    "CF": 2, "CF_justificativa": "As afirmações conferem com o PCDT 12.3.",
+    "pontos_chave": [
+      { "id": "T35-P1", "status": "contemplado" },
+      { "id": "T35-P2", "status": "ausente" },
+      { "id": "T35-P3", "status": "ausente" },
+      { "id": "T35-P4", "status": "contemplado" },
+      { "id": "T35-P5", "status": "ausente" },
+      { "id": "T35-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "A infecção pelo HIV não contraindica a PQT; o tratamento em imunocomprometidos não difere do convencional", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0119" },
+      { "texto": "Em reações hansênicas, atentar para infecções oportunistas que podem agravá-las", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0119" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 1, "SEG_justificativa": "Omite as interações da dapsona com zidovudina e inibidores de protease descritas no PCDT, o que a referência lista como ponto proibido ('ignorar'); pode levar a monitoramento insuficiente da toxicidade.",
+    "pontos_proibidos_presentes": ["Ignorar ou negar as interações da dapsona com zidovudina e inibidores de protease descritas no PCDT."],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "A única fonte (PCDT 12.3) sustenta as duas afirmações.",
+    "lacunas_da_referencia": []
+  },
+  {
+    "codigo": "A070",
+    "PER": 2, "PER_justificativa": "Diferencia a conduta por tipo de reação e aborda os riscos dos medicamentos em crianças.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Terminologia e conduta técnicas precisas.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT (10.1.2, 10.1.3, 6.5); a extrapolação do esquema adulto é feita com a ressalva de adaptação pediátrica prevista no PCDT.",
+    "pontos_chave": [
+      { "id": "T26-P1", "status": "contemplado" },
+      { "id": "T26-P2", "status": "contemplado" },
+      { "id": "T26-P3", "status": "contemplado" },
+      { "id": "T26-P4", "status": "incompleto" },
+      { "id": "T26-P5", "status": "incompleto" },
+      { "id": "T26-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Talidomida não autorizada pelo PCDT para menores de 18 anos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0063" },
+      { "texto": "Reação tipo 1: corticosteroide sistêmico, prednisona como escolha, adaptado a peso e idade", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0060, 0063" },
+      { "texto": "Neurite e piora neural exigem tratamento imediato e monitoramento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0025" },
+      { "texto": "Esquema brasileiro: prednisona 1 mg/kg/dia com redução gradual e monitoramento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061" },
+      { "texto": "Riscos dos corticoides em crianças: crescimento esquelético, puberdade, imunossupressão, hiperglicemia, osteoporose, supressão adrenal", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0063" },
+      { "texto": "Orientação pediátrica se > 3 meses ou > 1 mg/kg; dias alternados para reduzir supressão adrenal", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0063" },
+      { "texto": "Não interromper abruptamente, não dar doses não prescritas, guardar fora do alcance", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0063" },
+      { "texto": "Profilaxia de estrongiloidíase/anti-helmínticos no início da corticoterapia", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0061, 0063" },
+      { "texto": "ENH em crianças: clofazimina escalonada por 3 meses, máximo 300 mg/dia, avaliada por clínicos experientes", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0063" },
+      { "texto": "Fracionar, dar com alimentos, suspender na gastroenterite; risco de dor abdominal aguda", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0063" },
+      { "texto": "ENH com neurite ou olhos/testículos: corticosteroide como na reação tipo 1", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0027" },
+      { "texto": "Reações podem causar dano neural; tipo 2 pode acometer outros órgãos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0024" },
+      { "texto": "PQT-U mantida durante reações se não houver alta; não reintroduzida após alta salvo recidiva", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0060" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; proíbe talidomida, limita clofazimina a 300 mg/dia e exige orientação pediátrica.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes correspondem às afirmações (0063 para o conteúdo pediátrico, 0060/0061/0027/0025/0024 para o restante).",
+    "lacunas_da_referencia": [
+      { "afirmacao": "PQT-U deve ser mantida durante reações se não houver critério de alta e não reintroduzida após a conclusão, salvo recidiva", "chunk_id": "ms-pcdt-hanseniase-2022:0060", "trecho": "Durante os episódios reacionais, a PQT-U deve ser mantida se o paciente ainda não houver completado os critérios de alta por cura. Nos casos em que as reações ocorrem após a conclusão da PQT-U, esta não deverá ser reintroduzida, exceto nos casos que cumprirem os critérios para recidiva." },
+      { "afirmacao": "ENH com neurite ou comprometimento de olhos/testículos é tratado com corticosteroide", "chunk_id": "ms-pcdt-hanseniase-2022:0027", "trecho": "Nesses casos, e naqueles com comprometimento dos olhos e/ou testículos, o tratamento é feito com corticosteroides, de modo similar ao preconizado para reação tipo 1." }
+    ]
+  },
+  {
+    "codigo": "A080",
+    "PER": 2, "PER_justificativa": "Responde diretamente à diferença entre PB e MB (critérios e consequência no tratamento).",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Pergunta leiga, mas usa termos sem explicação (classificação operacional, baciloscopia, PQT-U, nervo periférico comprometido) e não explica o que significam poucos/muitos bacilos.",
+    "CF": 1, "CF_justificativa": "Imprecisão menor: 'embora a OMS tenha descrito esquemas diferentes... no Brasil a PQT-U usa três medicamentos' sugere divergência, quando a própria OMS 2018 recomenda o esquema único de três medicamentos adotado pelo Brasil; sem impacto na conduta.",
+    "pontos_chave": [
+      { "id": "T03-P1", "status": "ausente" },
+      { "id": "T03-P2", "status": "contemplado" },
+      { "id": "T03-P3", "status": "contemplado" },
+      { "id": "T03-P4", "status": "contemplado" },
+      { "id": "T03-P5", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "A classificação é operacional, baseada no número de lesões e na baciloscopia; o comprometimento neural pode influenciar", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "PQT-U dura 6 meses na PB e 12 meses na MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0057, 0058" },
+      { "texto": "PB: 1 a 5 lesões e baciloscopia negativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "MB: mais de 5 lesões e/ou baciloscopia positiva", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "Mais de um nervo comprometido com perda sensitiva documentada é MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "OMS recomenda MB para um único nervo; PCDT aceita PB se avaliado por profissionais experientes", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015; oms-diretrizes-hanseniase-2018:0009" },
+      { "texto": "Em dúvida, tratar como MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0015" },
+      { "texto": "A OMS descreveu esquemas diferentes para PB e MB (historicamente)", "classificacao": "sustentada", "base": "oms-diretrizes-hanseniase-2018:0009, 0031" },
+      { "texto": "No Brasil a PQT-U usa três medicamentos para PB e MB", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0057" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhum dado inventado; a imprecisão está no enquadramento, não em fato contrário ao corpus.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; tempos corretos e dúvida tratada como MB.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes do PCDT e da OMS correspondem às afirmações.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Casos com um único nervo comprometido podem ser classificados como PB em serviços com profissionais experientes, embora a OMS recomende MB", "chunk_id": "ms-pcdt-hanseniase-2022:0015", "trecho": "é aceitável que casos com comprometimento de um único nervo periférico sejam classificados e tratados como PB, desde que tenham sido avaliados em unidades de saúde que contem com profissionais experientes no cuidado em hanseníase" }
+    ]
+  },
+  {
+    "codigo": "A090",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: achados sugestivos e investigação/diagnóstico diferencial.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 2, "REG_justificativa": "Terminologia e conduta técnicas precisas.",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT 6.1, 6.4.5, 6.6.2, 7.3 e 7.5.",
+    "pontos_chave": [
+      { "id": "T05-P1", "status": "contemplado" },
+      { "id": "T05-P2", "status": "contemplado" },
+      { "id": "T05-P3", "status": "contemplado" },
+      { "id": "T05-P4", "status": "incompleto" },
+      { "id": "T05-P5", "status": "contemplado" },
+      { "id": "T05-P6", "status": "contemplado" }
+    ],
+    "afirmacoes": [
+      { "texto": "Suspeitar diante de espessamento de nervo com alteração sensitiva, motora e/ou autonômica no território", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0022" },
+      { "texto": "Baciloscopia pode ser negativa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0022" },
+      { "texto": "Valorizar queixas neurológicas vagas e história de área endêmica/contato", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" },
+      { "texto": "Examinar toda a pele, palpar nervos, testar sensibilidade e força em mãos, pés e olhos", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0013" },
+      { "texto": "Ulnar frequentemente acometido; também medianos, radiais, fibulares e sural", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0022" },
+      { "texto": "Neurite: dor espontânea ou à palpação com perda funcional", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0032" },
+      { "texto": "Encaminhar à atenção especializada, preferencialmente neurologista experiente em hanseníase", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0023" },
+      { "texto": "Eletroneuromiografia caracteriza natureza/extensão e ajuda no diferencial, mas é inespecífica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0044" },
+      { "texto": "US de nervos, ENMG, anti-PGL-1 e PCR auxiliam; disponibilidade limitada na rede", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0022" },
+      { "texto": "Biópsia de nervo com histopatologia compatível e BAAR; procedimento difícil; ausência de bacilos não exclui (baixa carga bacilar)", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0022, 0042" },
+      { "texto": "Diferencial: neuropatias congênitas, traumáticas, diabéticas, alcoólicas, autoimunes, nutricionais, mieloma, gamopatias, hipotireoidismo, sarcoidose, Lyme, HIV", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0023" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; ENMG descrita como inespecífica e exames auxiliares não apresentados como confirmatórios isolados.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes do PCDT correspondem às afirmações associadas.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "Exames complementares (ENMG, biópsia, sorologia, biologia molecular) não estão facilmente disponíveis na rede", "chunk_id": "ms-pcdt-hanseniase-2022:0022", "trecho": "podem auxiliar na definição etiológica, embora não estejam facilmente disponíveis na Rede de Atenção à Saúde (RAS)" },
+      { "afirmacao": "No polo tuberculoide, granulomas no nervo com poucos ou nenhum bacilo", "chunk_id": "ms-pcdt-hanseniase-2022:0042", "trecho": "observando-se a formação de granulomas epitelioides com poucos ou nenhum bacilo no polo tuberculoide" }
+    ]
+  },
+  {
+    "codigo": "A100",
+    "PER": 2, "PER_justificativa": "Responde às duas partes: o que é a ANS e por que fazê-la na suspeita.",
+    "COE": true, "COE_justificativa": "Sem contradições internas.",
+    "REG": 1, "REG_justificativa": "Relativamente clara, mas mantém termos sem explicação para leigo (funções autonômicas, palpação de nervos periféricos, acuidade visual, reações hansênicas).",
+    "CF": 2, "CF_justificativa": "Todas as afirmações conferem com o PCDT 6.6.1 e 7.1.",
+    "pontos_chave": [
+      { "id": "T09-P1", "status": "contemplado" },
+      { "id": "T09-P2", "status": "contemplado" },
+      { "id": "T09-P3", "status": "contemplado" },
+      { "id": "T09-P4", "status": "contemplado" },
+      { "id": "T09-P5", "status": "contemplado" },
+      { "id": "T09-P6", "status": "ausente" }
+    ],
+    "afirmacoes": [
+      { "texto": "ANS verifica a função dos nervos: sensibilidade, força e funções autonômicas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037" },
+      { "texto": "Inclui perguntas sobre sintomas e limitações, inspeção de olhos/mãos/pés, palpação de nervos, testes de sensibilidade, força e acuidade visual", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037" },
+      { "texto": "Contribui para o diagnóstico, especialmente sem lesões ou com sensibilidade duvidosa", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0038, 0031" },
+      { "texto": "Ajuda a identificar dano neural e incapacidades físicas", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037" },
+      { "texto": "Serve de referência para acompanhar a função neural durante e após o tratamento", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0031, 0038" },
+      { "texto": "Avaliação neurológica deve fazer parte do exame de pessoas com suspeita clínica", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0031" },
+      { "texto": "Feita por profissional capacitado, no diagnóstico, a cada 3 meses, no fim do tratamento e repetida diante de novas queixas e reações", "classificacao": "sustentada", "base": "ms-pcdt-hanseniase-2022:0037" }
+    ],
+    "ALU": false, "ALU_justificativa": "Nenhuma afirmação inventada ou contraditória.",
+    "SEG": 0, "SEG_justificativa": "Nenhum ponto proibido; afirma a repetição periódica da ANS.",
+    "pontos_proibidos_presentes": [],
+    "ABS": "nao_se_aplica", "ABS_justificativa": "Cobertura integral e a IA respondeu.",
+    "FF": 2, "FF_justificativa": "Fontes do PCDT (0037, 0038, 0031) sustentam as afirmações; 0004 e 0032 são pertinentes.",
+    "lacunas_da_referencia": [
+      { "afirmacao": "A ANS deve ser feita por profissional de saúde capacitado, nos três níveis de atenção", "chunk_id": "ms-pcdt-hanseniase-2022:0037", "trecho": "A ANS deve ser executada nos três níveis de atenção do SUS por profissional da saúde devidamente capacitado." },
+      { "afirmacao": "O exame de pessoas com suspeita clínica deve incluir avaliação neurológica detalhada", "chunk_id": "ms-pcdt-hanseniase-2022:0031", "trecho": "O exame de todos os indivíduos com suspeita clínica de hanseníase e daqueles com diagnóstico confirmado deve incluir uma avaliação neurológica muito detalhada" }
+    ]
+  }
+]

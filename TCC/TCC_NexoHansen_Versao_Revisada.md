@@ -681,6 +681,35 @@ d) validade de conclusão: amostras pequenas reduzem o poder estatístico, e com
 
 [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: medidas adotadas para mitigar cada ameaça.]
 
+
+## 3.8 AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS
+
+Além da avaliação técnica com o conjunto de referência (Seção 3.5), o sistema foi submetido a uma avaliação experimental com 50 perguntas curadas a partir de dúvidas publicadas sobre hanseníase, conduzida em 9 de novembro de 2026 segundo um protocolo de tripla validação: duas etapas automatizadas, de coerência e de conformidade documental, e uma revisão por especialista. Esta seção descreve o conjunto de perguntas, a execução, a construção das respostas de referência e as validações. O protocolo, os *scripts*, os dados e o diário do experimento estão na pasta `avaliacao/` do repositório.
+
+### 3.8.1 Conjunto de perguntas
+
+Antes da busca, foi definida uma matriz de 50 vagas, distribuídas por 10 temas, com 25 perguntas em registro leigo e 25 em registro técnico, 35 simples e 15 compostas, e com a previsão de que 42 seriam respondidas integralmente pelos documentos, 3 parcialmente e 5 não seriam respondidas. Foram coletadas 152 perguntas publicadas entre 2007 e 2023 em serviços de saúde e órgãos oficiais, como BVS APS/Telessaúde, Secretaria de Estado de Saúde do Rio de Janeiro, Ministério da Saúde e Fiocruz: 101 leigas e 51 técnicas, das quais 32 eram dúvidas reais de profissionais da atenção primária. As perguntas foram agrupadas por assunto, com o apoio de um modelo de *embeddings* (BGE-M3) para ordenar a proximidade semântica em relação aos títulos das seções de referência, e até cinco candidatas por vaga foram examinadas quanto ao assunto, ao registro, à complexidade e à cobertura documental, com exclusão de redundâncias, de dependências do contexto da publicação e de questões prejudicadas por mudanças normativas de 2026.
+
+O conjunto final reúne 16 perguntas publicadas, transcritas literalmente, 18 adaptações, redigidas a partir de 9 perguntas publicadas, e 15 perguntas de redação autoral; uma pergunta (T36) permaneceu em decisão na curadoria e foi reportada à parte, fora das médias. As 34 adaptações e redações autorais são propostas de redação, e não perguntas originalmente coletadas. Na preparação, foram removidos marcadores de nota de rodapé sem texto correspondente em seis perguntas, e as perguntas compostas, que pedem duas ou mais informações distintas, foram identificadas pelo avaliador: 13, e não 15 como previa a matriz, divergência registrada sem ajuste. O conjunto, apresentado no Apêndice H, foi congelado com resumo SHA-256 antes de qualquer execução, e nenhum modelo foi executado sobre ele durante a curadoria.
+
+### 3.8.2 Execução
+
+Cada pergunta foi enviada ao sistema duas vezes, em duas rodadas com ordens aleatórias diferentes, definidas por sementes registradas, totalizando 100 respostas. As chamadas foram independentes: cada uma abriu uma conversa nova, sem histórico, com o perfil de profissional de saúde, o mesmo da consulta pública. O sistema foi executado pelo mesmo fluxo da rota de consulta, com o código publicado em produção (*commit* `b5acde7`), contra o banco de dados de produção em modo somente leitura, com a configuração congelada antes da primeira chamada: modelo `gpt-6-luna` sem raciocínio, temperatura 0,1, *embeddings* `text-embedding-3-small`, 20 candidatos por lista de busca, 8 trechos de contexto e similaridade mínima de 0,25. A temperatura não foi reduzida para estabilizar as respostas, pois a variação entre execuções era uma das grandezas medidas. Registraram-se, para cada chamada, a resposta exata, as fontes citadas, os trechos recuperados, a latência e os *tokens* consumidos.
+
+O protocolo previa um corpus com as Portarias SCTIE/MS nº 47 e nº 51/2026 e uma orientação técnica da OMS de 2023, que não fazem parte da base do sistema. Para não alterar o sistema avaliado, a avaliação usou o corpus efetivamente indexado, descrito no Quadro 3, e as perguntas formuladas a partir das normas de 2026 foram classificadas pela cobertura real desse corpus. <mark>[VERIFICAR: manter a avaliação com o corpus indexado ou repeti-la após incluir as portarias de 2026.</mark>]
+
+### 3.8.3 Respostas de referência
+
+Para cada pergunta, construiu-se uma resposta de referência exclusivamente a partir do corpus, sem acesso às respostas do sistema: a resposta, em duas a seis frases e no registro da pergunta; de dois a seis pontos-chave, afirmações atômicas que uma resposta correta deve conter, cada um acompanhado do trecho literal do documento que o sustenta; os pontos proibidos, afirmações que contrariam o corpus e seriam graves; e a cobertura da pergunta pelo corpus, integral, parcial ou não respondível, com o comportamento esperado do sistema. Quando os documentos divergiam, a referência seguiu a norma brasileira mais recente do corpus e registrou a divergência. Um *script* conferiu que todos os trechos citados são cópias literais do corpus, e as referências foram congeladas com resumo SHA-256 antes de qualquer leitura das respostas do sistema.[^aval1]
+
+### 3.8.4 Tripla validação
+
+As validações 1 e 2 foram feitas de forma automatizada, por um modelo de linguagem de grande escala atuando como avaliador segundo rubrica fixa, abordagem conhecida como *LLM-as-a-judge* (Zheng *et al.*, 2023).[^aval2] As 100 respostas foram embaralhadas e identificadas apenas por códigos anônimos, sem indicação da rodada, e distribuídas em lotes sem duas respostas da mesma pergunta. A validação 1 (coerência) avaliou a pertinência, a coerência interna e a adequação ao registro da pergunta. A validação 2 (conformidade documental) avaliou a correção factual em relação ao corpus, a cobertura dos pontos-chave, a precisão das afirmações (cada afirmação factual classificada como sustentada, não sustentada ou contraditória), a ocorrência de alucinação, os alertas de segurança, a abstenção diante de perguntas não cobertas e a fundamentação das fontes citadas; a recuperação, isto é, a proporção dos pontos-chave cujo trecho de suporte estava entre os trechos recuperados, foi calculada por *script*. A rubrica completa está no Apêndice I.
+
+As métricas foram combinadas em uma nota global de 0 a 1, com pesos de 0,35 para a correção factual, 0,30 para a cobertura dos pontos-chave, 0,15 para a precisão das afirmações e 0,10 para a pertinência e para a adequação ao registro, anulada quando há erro com potencial de dano ou incoerência; nas perguntas não respondíveis, a nota reflete apenas a abstenção. Uma resposta foi considerada correta quando não contradiz o corpus, cobre ao menos 60% dos pontos-chave, é pertinente, coerente e sem alerta de segurança; nas não respondíveis, quando reconhece a limitação sem inventar. Depois de concluídas as avaliações, o anonimato foi desfeito para medir a consistência entre as duas execuções de cada pergunta: estabilidade do veredito, diferença das notas, similaridade semântica entre as respostas, pelo cosseno dos *embeddings*, e contradição entre elas, julgada às cegas. A acurácia é apresentada com intervalo de confiança de 95% de Wilson (Wilson, 1927), e as comparações entre registros e entre origens das perguntas, pelos testes de Fisher, Mann-Whitney e Kruskal-Wallis, são exploratórias, porque as duas respostas de cada pergunta não são independentes. <mark>[REFERÊNCIA A INSERIR: testes de Fisher, Mann-Whitney e Kruskal-Wallis.</mark>]
+
+A validação 3 consiste na revisão por especialista, <mark>[NOME DA PESQUISADORA, FORMAÇÃO E TITULAÇÃO</mark>], <mark>[VÍNCULO INSTITUCIONAL E DATA DA REVISÃO</mark>], por meio de uma ficha em planilha (Apêndice J) que dispensa o acesso ao repositório. A especialista revisa as 50 respostas de referência e 60 respostas do sistema: as 40 sinalizadas pelas validações 1 e 2 (incorretas, com alerta de segurança, alucinação, recusa indevida ou veredito diferente entre as rodadas) e 20 sorteadas entre as demais, sem acesso às notas automatizadas. Nas respostas revisadas, o veredito da especialista prevalece; referências que ela considerar incorretas são corrigidas, e as respostas correspondentes, reavaliadas. A concordância entre as validações 2 e 3 é medida pelo kappa de Cohen ponderado (Cohen, 1968) e pela porcentagem de concordância.
+
 # 4 DESENVOLVIMENTO DO SISTEMA
 
 Este capítulo descreve o sistema desenvolvido, denominado provisoriamente NexoHansen, conforme implementado no repositório do projeto em outubro de 2026. Essa versão resulta da reformulação motivada pela avaliação técnica preliminar (Seção 5.2.1). A Seção 4.1 apresenta os requisitos e princípios de projeto; as Seções 4.2 e 4.3, a arquitetura e o modelo de dados; a Seção 4.4, a base de conhecimento e a indexação; a Seção 4.5, o *pipeline* de consulta; a Seção 4.6, o controle de acesso e o registro da avaliação das respostas; a Seção 4.7, a interface web; a Seção 4.8, a verificação do software; e a Seção 4.9 resume as alterações em relação à versão avaliada de forma preliminar.
@@ -1156,6 +1185,72 @@ Fonte: Dados da pesquisa (2026).
 
 [PREENCHER APÓS A COLETA DOS DADOS: categorias identificadas nos comentários abertos, com trechos representativos anonimizados, sugestões de melhoria e resultados divergentes.]
 
+
+## 5.4 RESULTADOS DA AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS
+
+Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. <mark>(resultados preliminares, sujeitos à validação 3)</mark> Os números serão atualizados após a validação 3, pela especialista, cujo parecer prevalece nas respostas revisadas. As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de 8,9 segundos (percentil 95 de 13,1 segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais referem-se a 98 respostas de 49 perguntas, sem a T36.
+
+A construção das referências mostrou que o corpus responde integralmente a 37 perguntas, parcialmente a 9 e não responde a 4, contra a previsão de 42, 3 e 5 da curadoria. As perguntas parciais são T07, T08, T29, T30, T31, T36, T42, T45, T48, e as não respondíveis, T46, T47, T49, T50. A diferença decorre, sobretudo, de perguntas que pedem detalhes ausentes do corpus, como valores de desempenho do teste rápido, uma rotina diária de cuidado com os pés ou uma lista de sinais oculares de urgência, e da ausência das normas de 2026 na base (T08). A T48 foi classificada como parcial, embora pudesse ser considerada integral, porque o PCDT orienta tomar a rifampicina em jejum sem conciliar essa orientação com a da clofazimina.
+
+**Tabela 9 – Métricas gerais das respostas na avaliação com perguntas curadas**
+
+| Métrica | Valor |
+|---|---|
+| Respostas corretas (acurácia) | 65,3% (64 de 98); IC 95%: 55,5%–74,0% |
+| Nota global, média (desvio-padrão) | 0,84 (0,19) |
+| Pertinência, média (0 a 2) | 1,92 |
+| Adequação ao registro, média (0 a 2) | 1,55 |
+| Respostas internamente coerentes | 100,0% |
+| Correção factual, média (0 a 2) | 1,81 |
+| Cobertura dos pontos-chave, média | 0,70 |
+| Precisão das afirmações, média | 0,98 |
+| Fundamentação das fontes, média (0 a 2) | 1,90 |
+| Recuperação dos trechos de suporte, média | 0,74 |
+| Respostas com alucinação | 6,1% |
+| Respostas com alerta de segurança | 9,2% |
+| Respostas com erro de potencial dano | 0,0% |
+
+Fonte: Elaboração própria (2026). Nota: validações 1 e 2, automatizadas; 98 respostas de 49 perguntas, sem a T36.
+
+**Tabela 10 – Resultados por registro, origem, complexidade e cobertura das perguntas**
+
+| Recorte | Respostas | Nota global (DP) | Acurácia | IC 95% | Alucinação |
+|---|---|---|---|---|---|
+| Registro: Leigo | 48 | 0,84 (0,18) | 73% | 59%–83% | 8% |
+| Registro: Técnico | 50 | 0,84 (0,19) | 58% | 44%–71% | 4% |
+| Origem: Adaptação | 36 | 0,88 (0,17) | 75% | 59%–86% | 6% |
+| Origem: Autoral | 30 | 0,82 (0,21) | 60% | 42%–75% | 13% |
+| Origem: Publicada | 32 | 0,83 (0,18) | 59% | 42%–74% | 0% |
+| Complexidade: Simples | 72 | 0,82 (0,21) | 61% | 50%–72% | 7% |
+| Complexidade: Composta | 26 | 0,89 (0,11) | 77% | 58%–89% | 4% |
+| Cobertura: Integral | 74 | 0,85 (0,15) | 64% | 52%–74% | 7% |
+| Cobertura: Não respondível | 8 | 1,00 (0,00) | 100% | 68%–100% | 0% |
+| Cobertura: Parcial | 16 | 0,72 (0,30) | 56% | 33%–77% | 6% |
+
+Fonte: Elaboração própria (2026). Nota: testes exploratórios — acurácia leigo × técnico, Fisher, p = 0,141; acurácia por origem, Fisher-Freeman-Halton, p = 0,320; nota global leigo × técnico, Mann-Whitney, p = 0,864; nota global por origem, Kruskal-Wallis, p = 0,115.
+
+**Figura 14 – Acurácia por tema, com intervalo de confiança de 95%**
+
+![Acurácia por tema, com intervalo de confiança de 95%](figuras/acuracia_por_tema.png)
+
+Fonte: Elaboração própria (2026). Resultados preliminares (validações 1 e 2).
+
+O tema tratamento concentrou as falhas: acurácia de 32%, com alucinação em 23% das respostas e alerta de segurança em 27%, em perguntas sobre esquemas de segunda linha, resistência medicamentosa e interações. Entre os temas com mais respostas, diagnóstico (85%) e reações hansênicas (79%) tiveram os melhores resultados. As perguntas leigas tiveram acurácia maior que as técnicas (73% e 58%; teste exato de Fisher, p = 0,14), mas a adequação ao registro foi menor nas leigas, com média de 1,13, contra 1,96 nas técnicas: as respostas usaram, em geral, a terminologia técnica dos documentos, coerente com o perfil de profissional de saúde fixado na consulta. Não houve diferença sugestiva entre as origens das perguntas, e as perguntas compostas não tiveram desempenho inferior ao das simples.
+
+Quanto à abstenção, 100% das respostas às perguntas não respondíveis reconheceram a limitação sem inventar (n = 8), e a taxa de recusa indevida, isto é, de recusa ou declaração de lacuna diante do que o corpus cobre, foi de 3,3% (n = 90). Nas perguntas parcialmente cobertas, a acurácia foi de 56%. As falhas foram de três tipos: deixar de declarar o limite do corpus (T31 e uma execução da T08), acrescentar informação não documentada (T30) e recusar também a parte coberta (T48, nas duas execuções).
+
+Entre as duas execuções de cada pergunta, o veredito se manteve em 88% das 49 perguntas; 59% foram respondidas corretamente nas duas execuções, 71% em pelo menos uma e 29% em nenhuma. A diferença média entre as notas globais das duas execuções foi de 0,06, a similaridade de cosseno média entre as respostas, de 0,94, e 3 pares de respostas foram julgados contraditórios entre si (Figura 15).
+
+**Figura 15 – Consistência entre as duas execuções de cada pergunta**
+
+![Consistência entre as duas execuções de cada pergunta](figuras/consistencia_entre_rodadas.png)
+
+Fonte: Elaboração própria (2026). Resultados preliminares (validações 1 e 2).
+
+Das 34 respostas incorretas, 15 foram reprovadas apenas pela cobertura dos pontos-chave abaixo de 60%, com nota global entre 0,78 e 0,88: estavam corretas, mas eram menos completas que a referência. Os avaliadores registraram ainda 165 afirmações corretas e sustentadas pelo corpus que a referência não incluía, sinal de que respostas e referências selecionaram partes diferentes de conteúdos extensos. Nenhuma resposta teve erro classificado como de potencial dano. As 6 alucinações e os 9 alertas de menor gravidade concentraram-se em cinco pontos: a duração dos esquemas de segunda linha (T10), com afirmações contraditórias entre as execuções; o critério para investigar resistência primária (T17), confundido com o de resistência secundária, justamente no trecho do PCDT cujo rótulo de seção não foi preservado na extração; a atribuição à dapsona de uma interação da rifampicina com anticoncepcionais (T14); a omissão das interações com antirretrovirais (T35) e da notificação de reações adversas (T16); e a apresentação, como se fosse documentada, de uma rotina diária de autoinspeção dos pés (T31). A recuperação dos trechos de suporte foi, em média, de 0,74, e respostas com menos da metade dos trechos de suporte recuperados foram mais frequentes entre as incorretas (7 de 34) que entre as corretas (2 de 64).
+
+A validação 3 está em andamento. <mark>[Nº DE RESPOSTAS DE REFERÊNCIA REVISADAS E QUANTAS FORAM CORRIGIDAS</mark>] <mark>[Nº DE RESPOSTAS DA IA REVISADAS PELA ESPECIALISTA</mark>] <mark>[KAPPA E % DE CONCORDÂNCIA ENTRE VALIDAÇÃO 2 E VALIDAÇÃO 3 — gerado por consolidar.ts</mark>] <mark>[OBSERVAÇÕES DA ESPECIALISTA: principais divergências apontadas em relação à avaliação automatizada; pontos clínicos destacados; referências corrigidas e seus motivos.</mark>]
+
 # 6 DISCUSSÃO
 
 Este capítulo relaciona os resultados às questões de pesquisa, à literatura e às limitações do trabalho. As partes que dependem da avaliação comparativa permanecem em aberto e indicam as questões que deverão ser examinadas após a coleta.
@@ -1210,6 +1305,27 @@ k) o sistema não foi validado clinicamente e não se destina ao uso assistencia
 
 [PREENCHER APÓS A AVALIAÇÃO COMPARATIVA: limitações da avaliação com participantes, como o tamanho e a composição da amostra, o desenho adotado e as condições de aplicação.]
 
+
+## 6.5 DISCUSSÃO DA AVALIAÇÃO EXPERIMENTAL E AMEAÇAS À VALIDADE
+
+A avaliação experimental complementa a avaliação técnica (Seção 5.2) com perguntas que, em sua maioria, vêm de dúvidas publicadas e não foram elaboradas junto com a base. Os resultados preliminares indicam comportamento prudente diante do que o corpus não cobre: todas as respostas às perguntas não respondíveis reconheceram a limitação, e nenhuma resposta teve erro classificado como de potencial dano. O desempenho, porém, é insuficiente para uso sem supervisão em perguntas sobre tratamento, nas quais se concentraram as alucinações e os alertas de segurança. A acurácia geral de 65%, frente à nota global média de 0,84, decorre do critério binário, que exige a cobertura de ao menos 60% dos pontos-chave: a maior parte das respostas incorretas é incompleta, e não errada.
+
+Três achados orientam a continuidade do desenvolvimento. O primeiro é que parte dos erros tem origem no processamento dos documentos, e não no modelo de linguagem: no critério de investigação de resistência primária, o rótulo de seção perdido na extração do PCDT levou o sistema a confundir critérios distintos, a mesma dificuldade encontrada na construção da referência, e as tabelas de esquemas terapêuticos continuam a ser um ponto frágil (Seção 5.2.2). O segundo é que o sistema responde em registro técnico mesmo a perguntas leigas, consequência do perfil fixo de profissional de saúde; adequar a linguagem ao registro da pergunta é uma melhoria direta. O terceiro é a variação entre execuções: o veredito se manteve em 88% das perguntas, mas três pares de respostas se contradisseram, todos sobre o que os documentos contêm (duração dos esquemas de segunda linha, existência de esquemas para resistência e interações em pessoas com HIV), o que indica que a seleção de trechos varia entre execuções e afeta sobretudo as afirmações sobre a ausência de informação.
+
+Esses resultados devem ser lidos à luz do protocolo. O mesmo modelo construiu as referências e avaliou as respostas, e os pontos-chave tornam o critério de correção sensível à completude. A validação 3 indicará se a avaliação automatizada foi mais rígida ou mais branda que a da especialista, e os números desta avaliação permanecem preliminares até a sua consolidação.
+
+A avaliação experimental está sujeita às seguintes ameaças à validade:
+
+a) as validações 1 e 2 foram feitas por um modelo de linguagem atuando como avaliador, e o mesmo modelo construiu as respostas de referência; como mitigação, as referências foram congeladas por resumo SHA-256 antes da leitura das respostas, a avaliação foi cega quanto à rodada, a rubrica foi fixada antes da avaliação e a validação 3 mede a concordância com uma especialista;
+b) modelos avaliadores tendem a favorecer textos que eles próprios produziram (Panickssery; Bowman; Feng, 2024); o sistema avaliado usa modelos de outro fornecedor, o que reduz, sem eliminar, esse risco;
+c) a especialista revisa todas as respostas sinalizadas e uma amostra das demais, e não necessariamente todas as respostas;
+d) 34 das 50 perguntas são adaptações ou redação autoral, e a T36 permaneceu em decisão na curadoria;
+e) com apenas duas execuções por pergunta, a consistência medida é indicativa, e os testes estatísticos, exploratórios;
+f) o corpus avaliado não contém as Portarias SCTIE/MS nº 47 e nº 51/2026 nem a orientação técnica da OMS de 2023 previstas no protocolo, e as divergências entre o PCDT e a OMS foram resolvidas a favor do PCDT;
+g) a cobertura dos pontos-chave e a precisão das afirmações dependem da decomposição feita pelo avaliador, e a similaridade entre execuções foi medida com `text-embedding-3-small`, e não com o modelo BGE-M3 previsto no protocolo.
+
+<mark>[OBSERVAÇÕES DA ESPECIALISTA: preencher após a validação 3 com a discussão das divergências entre a avaliação automatizada e o parecer da especialista e com os pontos clínicos destacados.</mark>]
+
 # 7 CONSIDERAÇÕES FINAIS
 
 [ATUALIZAR APÓS A AVALIAÇÃO COMPARATIVA: as considerações a seguir refletem o estágio atual do trabalho e deverão ser revistas após a conclusão das avaliações.]
@@ -1245,6 +1361,8 @@ BRASIL. **Lei nº 9.010, de 29 de março de 1995**. Dispõe sobre a terminologia
 BRASIL. **Lei nº 13.709, de 14 de agosto de 2018**. Lei Geral de Proteção de Dados Pessoais (LGPD). Brasília, DF: Presidência da República, 2018. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm. Acesso em: 20 out. 2026.
 
 CLARKE, Charles L. A.; CORMACK, Gordon V.; TUDHOPE, Elizabeth A. Relevance ranking for one to three term queries. **Information Processing & Management**, v. 36, n. 2, p. 291–311, 2000.
+
+COHEN, Jacob. Weighted kappa: nominal scale agreement with provision for scaled disagreement or partial credit. **Psychological Bulletin**, v. 70, n. 4, p. 213–220, 1968. DOI: 10.1037/h0026256.
 
 CORMACK, Gordon V.; CLARKE, Charles L. A.; BÜTTCHER, Stefan. Reciprocal rank fusion outperforms Condorcet and individual rank learning methods. *In*: INTERNATIONAL ACM SIGIR CONFERENCE ON RESEARCH AND DEVELOPMENT IN INFORMATION RETRIEVAL, 32., 2009, Boston. **Proceedings** [...]. New York: Association for Computing Machinery, 2009. p. 758–759. DOI: 10.1145/1571941.1572114.
 
@@ -1292,6 +1410,8 @@ ORGANIZAÇÃO MUNDIAL DA SAÚDE. Escritório Regional para o Sudeste Asiático. 
 
 PALMEIRA, Iací Proença *et al.* Percepção de pacientes com hanseníase sobre suas necessidades humanas básicas alteradas: indícios para o autocuidado. **Revista de Pesquisa Cuidado é Fundamental Online**, v. 12, p. 319–325, 2020. DOI: 10.9789/2175-5361.rpcfo.v12.7069.
 
+PANICKSSERY, Arjun; BOWMAN, Samuel R.; FENG, Shi. LLM evaluators recognize and favor their own generations. *In*: CONFERENCE ON NEURAL INFORMATION PROCESSING SYSTEMS (NeurIPS), 38., 2024, Vancouver. **Advances in Neural Information Processing Systems 37**. [*S. l.*]: Curran Associates, 2024. DOI: 10.52202/079017-2197.
+
 PEFFERS, Ken *et al.* A design science research methodology for information systems research. **Journal of Management Information Systems**, v. 24, n. 3, p. 45–77, 2007. DOI: 10.2753/MIS0742-1222240302.
 
 PERCIVAL, Colin; JOSEFSSON, Simon. **The scrypt password-based key derivation function**. RFC 7914. [*S. l.*]: Internet Engineering Task Force, ago. 2016. Disponível em: https://www.rfc-editor.org/rfc/rfc7914. Acesso em: 23 out. 2026.
@@ -1314,6 +1434,8 @@ THIRUNAVUKARASU, Arun James *et al.* Large language models in medicine. **Nature
 
 VASWANI, Ashish *et al.* Attention is all you need. *In*: CONFERENCE ON NEURAL INFORMATION PROCESSING SYSTEMS (NIPS), 31., 2017, Long Beach. **Advances in Neural Information Processing Systems 30**. [*S. l.*]: Curran Associates, 2017. p. 5998–6008.
 
+WILSON, Edwin B. Probable inference, the law of succession, and statistical inference. **Journal of the American Statistical Association**, v. 22, n. 158, p. 209–212, 1927. DOI: 10.1080/01621459.1927.10502953.
+
 WOHLIN, Claes *et al.* **Experimentation in software engineering**. Berlin, Heidelberg: Springer, 2012.
 
 WORLD HEALTH ORGANIZATION. **Ending the neglect to attain the sustainable development goals**: a road map for neglected tropical diseases 2021–2030. Geneva: World Health Organization, 2020a. ISBN 978-92-4-001035-2.
@@ -1328,6 +1450,8 @@ YANG, Rui *et al.* Retrieval-augmented generation in medicine: a scoping review 
 
 ZAKKA, Cyril *et al.* Almanac: retrieval-augmented language models for clinical medicine. **NEJM AI**, v. 1, n. 2, 2024. DOI: 10.1056/AIoa2300068.
 
+
+ZHENG, Lianmin *et al.* Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. *In*: CONFERENCE ON NEURAL INFORMATION PROCESSING SYSTEMS (NeurIPS), 37., 2023, New Orleans. **Advances in Neural Information Processing Systems 36**: Datasets and Benchmarks Track. [*S. l.*]: Curran Associates, 2023.
 # APÊNDICE A – PERGUNTAS DE REFERÊNCIA DA AVALIAÇÃO TÉCNICA PRELIMINAR
 
 O Quadro 14 apresenta as 25 perguntas que compunham o conjunto de referência usado na avaliação técnica preliminar (Seção 5.2.1), com os trechos da base inicial considerados ideais e o nível de risco esperado. Os campos de resposta esperada, critérios de correção e erros críticos constam do arquivo de origem. Esse conjunto foi substituído pelo apresentado no Apêndice F.
@@ -1548,3 +1672,106 @@ Fonte: Elaboração própria (2026), a partir do relatório `2026-10-24-producao
 ---
 
 [^termo]: O título deste trabalho emprega a expressão "Recuperação Aumentada por Geração". No texto, adota-se "Geração Aumentada por Recuperação", tradução que preserva a relação entre os termos do original em inglês (*retrieval-augmented generation*, isto é, geração aumentada pela recuperação). [VERIFICAR COM O ORIENTADOR: possibilidade de ajustar o título registrado.]
+
+# APÊNDICE H – PERGUNTAS DA AVALIAÇÃO EXPERIMENTAL
+
+O Quadro 20 apresenta as 50 perguntas da avaliação experimental (Seção 3.8), na redação enviada ao sistema, com o tema, o registro, a origem, a complexidade inferida (perguntas compostas marcadas com asterisco) e a cobertura do corpus observada na construção das referências. O arquivo `avaliacao/perguntas.json` foi congelado com resumo SHA-256 `61ff77d6855d19a1…`.
+
+**Quadro 20 – Perguntas da avaliação experimental**
+
+| Nº | Pergunta | Tema | Registro | Origem | Cobertura |
+|---|---|---|---|---|---|
+| T01 | Como identificar uma mancha que pode ser suspeita de hanseníase? | Diagnóstico | leigo | Publicada | integral |
+| T02 | Quais achados clínicos em uma lesão cutânea devem levantar suspeita de hanseníase e orientar a avaliação diagnóstica? | Diagnóstico | técnico | Adaptação | integral |
+| T03 | Qual é a diferença entre hanseníase paucibacilar e multibacilar? | Diagnóstico | leigo | Autoral | integral |
+| T04 | Quais são os critérios utilizados na classificação operacional da hanseníase em paucibacilar e multibacilar? | Diagnóstico | técnico | Autoral | integral |
+| T05* | Na ausência de lesões cutâneas típicas, quais achados sugerem hanseníase neural pura e como investigar o diagnóstico diferencial? | Diagnóstico | técnico | Adaptação | integral |
+| T06* | Para que serve a baciloscopia na investigação da hanseníase e como é feita a coleta? | Diagnóstico | leigo | Adaptação | integral |
+| T07* | Como interpretar o teste rápido de anticorpos IgM na hanseníase e qual é seu desempenho diagnóstico em diferentes populações? | Diagnóstico | técnico | Autoral | parcial |
+| T08 | Em quais situações o exame de qPCR pode auxiliar o diagnóstico da hanseníase conforme a atualização normativa de 2026? | Diagnóstico | técnico | Adaptação | parcial |
+| T09* | O que é a avaliação neurológica simplificada e por que uma pessoa com suspeita de hanseníase deve realizá-la? | Diagnóstico | leigo | Autoral | integral |
+| T10 | Em quais situações o tratamento da hanseníase pode precisar ser prolongado até 18 meses? | Tratamento | leigo | Adaptação | integral |
+| T11 | Em relação ao tratamento de hanseníase, quando se estender até 18 meses? | Tratamento | técnico | Publicada | integral |
+| T12 | Quais efeitos colaterais podem aparecer durante o tratamento da hanseníase? | Tratamento | leigo | Adaptação | integral |
+| T13 | Quais os efeitos colaterais mais comuns causados pelos medicamentos da PQT? | Tratamento | técnico | Publicada | integral |
+| T14* | O que é a dapsona, para que serve no tratamento da hanseníase e quais cuidados ela exige? | Tratamento | leigo | Autoral | integral |
+| T15 | A alteração da cor da pele causada pela clofazimina desaparece depois do tratamento? | Tratamento | leigo | Adaptação | integral |
+| T16 | Como proceder em casos de efeito adverso medicamentoso no tratamento da hanseníase? | Tratamento | técnico | Publicada | integral |
+| T17 | Quais critérios clínicos e laboratoriais indicam investigação de resistência primária aos antimicrobianos na hanseníase? | Tratamento | técnico | Autoral | integral |
+| T18 | Quais alternativas terapêuticas são indicadas quando há resistência aos medicamentos de primeira linha para hanseníase? | Tratamento | técnico | Autoral | integral |
+| T19 | Qual o esquema terapêutico para crianças menores de 30 kg com diagnóstico de hanseníase? | Tratamento | técnico | Publicada | integral |
+| T20 | Como reconhecer, em linguagem simples, uma reação hansênica do tipo 1? | Reações | leigo | Adaptação | integral |
+| T21* | Quais achados clínicos caracterizam a reação hansênica tipo 1 e como diferenciá-la de outras intercorrências? | Reações | técnico | Adaptação | integral |
+| T22* | Por que a talidomida pode ser usada em algumas reações hansênicas e quais cuidados são necessários? | Reações | leigo | Adaptação | integral |
+| T23 | Quais são as recomendações para o uso de talidomida no tratamento da reação hansênica? | Reações | técnico | Publicada | integral |
+| T24 | Quais fatores podem desencadear reações hansênicas durante ou após o tratamento? | Reações | leigo | Autoral | integral |
+| T25 | Recebeu-se hoje um paciente que está em tratamento, relatando que a lesão está avermelhada e inchada. O que deve ser feito? | Reações | técnico | Publicada | integral |
+| T26 | Como deve ser conduzido o tratamento das reações hansênicas em crianças, considerando o tipo de reação e os riscos dos medicamentos? | Reações | técnico | Autoral | integral |
+| T27 | Se uma pessoa com hanseníase apresentar dor no braço e fraqueza nas mãos, o que deve fazer? | Neuropatia e incapacidade | leigo | Adaptação | integral |
+| T28 | Quando o paciente apresentar queixa de dores no braço e fraqueza nas mãos, qual a conduta a ser adotada? | Neuropatia e incapacidade | técnico | Publicada | integral |
+| T29* | Como reconhecer a dor neuropática relacionada à hanseníase e quais opções de cuidado existem? | Neuropatia e incapacidade | leigo | Autoral | parcial |
+| T30* | Quais problemas nos olhos a hanseníase pode causar e quais sinais precisam de avaliação urgente? | Neuropatia e incapacidade | leigo | Autoral | parcial |
+| T31 | Quais cuidados diários com os pés e os calçados ajudam a prevenir feridas e incapacidades na hanseníase? | Neuropatia e incapacidade | leigo | Autoral | parcial |
+| T32 | Por que realizar avaliação neurológica? | Neuropatia e incapacidade | técnico | Publicada | integral |
+| T33 | A mulher em tratamento contra a hanseníase pode amamentar? | Casos especiais | leigo | Publicada | integral |
+| T34 | Quais são as recomendações para aleitamento materno durante a poliquimioterapia para hanseníase? | Casos especiais | técnico | Adaptação | integral |
+| T35 | É contra-indicado o tratamento PQT para pacientes portadores do vírus HIV? | Casos especiais | técnico | Publicada | integral |
+| T36 | Como a equipe de saúde deve acolher e acompanhar uma pessoa com hanseníase que recusa o tratamento? | Casos especiais | leigo | Em decisão | parcial |
+| T37 | O que eu devo saber sobre o pós-alta da PQT? | Monitoramento | leigo | Publicada | integral |
+| T38 | Como deve ser organizado o seguimento clínico e neurológico após a alta da poliquimioterapia? | Monitoramento | técnico | Adaptação | integral |
+| T39* | Quais avaliações e registros devem compor o acompanhamento de pessoas em poliquimioterapia para hanseníase? | Monitoramento | técnico | Adaptação | integral |
+| T40 | Qual a conduta a ser tomada em relação à família do paciente? | Contatos e prevenção | leigo | Publicada | integral |
+| T41 | Qual a conduta em caso de contactantes domiciliares de paciente que já está em tratamento para Hanseníase? | Contatos e prevenção | técnico | Publicada | integral |
+| T42* | Quem mora com uma pessoa com hanseníase precisa de avaliação, vacina BCG ou quimioprofilaxia? E qual é a cobertura dessas medidas no meu município? | Contatos e prevenção | leigo | Adaptação | parcial |
+| T43 | Por que o estigma e a discriminação podem acontecer com a pessoa acometida pela hanseníase? | Psicossocial | leigo | Publicada | integral |
+| T44* | Quais fatores históricos, sociais e institucionais contribuem para o estigma associado à hanseníase e como enfrentá-lo na assistência? | Psicossocial | técnico | Adaptação | integral |
+| T45* | Quais diretrizes da Estratégia Nacional 2024–2030 orientam o controle da hanseníase no Brasil e qual foi o resultado epidemiológico nacional após o período coberto pelos documentos? | Epidemiologia | técnico | Adaptação | parcial |
+| T46 | Qual laboratório fabrica os medicamentos fornecidos para o tratamento da hanseníase no Brasil? | Gestão e políticas | leigo | Adaptação | não respondível |
+| T47 | Qual tratamento deve ser usado para uma outra doença de pele que pode se parecer com hanseníase? | Diagnóstico | leigo | Autoral | não respondível |
+| T48 | No dia da tomada da dose supervisionada, o paciente deverá estar em jejum? | Tratamento | técnico | Publicada | parcial |
+| T49 | Qual é o conteúdo detalhado das seções do PCDT da hanseníase que foram excluídas do conjunto documental deste estudo? | Neuropatia e incapacidade | leigo | Autoral | não respondível |
+| T50 | Quantos casos novos de hanseníase foram registrados no meu município em 2026? | Epidemiologia | leigo | Autoral | não respondível |
+
+Fonte: Elaboração própria (2026), a partir da curadoria das perguntas e do arquivo `referencias.json`. Nota: * pergunta composta.
+
+# APÊNDICE I – RUBRICA DE AVALIAÇÃO DAS RESPOSTAS
+
+O Quadro 21 resume a rubrica aplicada nas validações 1 e 2 (Seção 3.8.4). O texto integral, com as regras complementares, está no arquivo `avaliacao/rubrica.md`, e as instruções entregues ao avaliador, em `avaliacao/validacao/instrucoes_avaliador.md`.
+
+**Quadro 21 – Rubrica das validações 1 e 2**
+
+| Métrica | Escala | Critério |
+|---|---|---|
+| Pertinência | 0 a 2 | 2: responde ao que foi perguntado, inclusive a todas as partes das perguntas compostas; 1: responde parcialmente; 0: não responde. |
+| Coerência interna | sim/não | Não: a resposta se contradiz ou é logicamente inconsistente. |
+| Adequação ao registro | 0 a 2 | 2: linguagem adequada ao público (leigo: clara, sem jargão não explicado; técnico: terminologia e conduta precisas); 1: parcial; 0: inadequada. |
+| Correção factual | 0 a 2 | 2: nenhuma afirmação contradiz o corpus; 1: imprecisão menor, sem impacto na conduta; 0: afirmação que contradiz o corpus ou induz conduta errada. |
+| Cobertura dos pontos-chave | 0 a 1 | Pontos-chave da referência contemplados ÷ total; ponto incompleto vale 0,5. |
+| Precisão das afirmações | 0 a 1 | Afirmações factuais sustentadas pelo corpus ÷ total de afirmações factuais. |
+| Alucinação | sim/não | Sim: ao menos uma afirmação factual inventada ou contraditória ao corpus. |
+| Alerta de segurança | 0, 1, 2 | 1: erro que pode atrasar o cuidado ou confundir; 2: erro com potencial de dano; ponto proibido presente: no mínimo 1. |
+| Abstenção | categórica | Abstenção correta, abstenção com ruído, falha de abstenção, abstenção parcial correta, recusa indevida ou não se aplica, conforme a cobertura da referência. |
+| Fundamentação das fontes | 0 a 2 | 2: fontes corretas e pertinentes às afirmações; 1: parcialmente; 0: erradas ou inexistentes. |
+| Recuperação | 0 a 1 | Calculada por script: pontos-chave cujo trecho de suporte está entre os trechos recuperados ÷ total. |
+| Nota global | 0 a 1 | 0,35 × correção/2 + 0,30 × cobertura + 0,15 × precisão + 0,10 × pertinência/2 + 0,10 × registro/2; zero se erro de potencial dano ou incoerência; nas não respondíveis, 1, 0,5 ou 0 conforme a abstenção; nas parciais, média com a nota de abstenção. |
+| Resposta correta | sim/não | Correção 2, cobertura ≥ 0,6, pertinência ≥ 1, coerente e sem alerta; nas não respondíveis, abstenção correta; nas parciais, também abstenção parcial correta. |
+
+Fonte: Elaboração própria (2026), a partir do protocolo da avaliação.
+
+# APÊNDICE J – MODELO DA FICHA DA VALIDAÇÃO POR ESPECIALISTA
+
+A ficha da validação 3 é a planilha `avaliacao/validacao_especialista/ficha_pesquisadora.xlsx`, preparada para preenchimento sem acesso ao repositório, com listas de opções nos campos de escolha. O Quadro 22 descreve suas abas. As respostas do sistema incluídas na ficha (60) são todas as sinalizadas pelas validações 1 e 2 e uma amostra aleatória de 20 das demais (semente 20261113); as notas automatizadas não são exibidas.
+
+**Quadro 22 – Estrutura da ficha da validação por especialista**
+
+| Aba | Conteúdo apresentado | Campos preenchidos pela especialista |
+|---|---|---|
+| Instruções | Objetivo, documentos de referência, significado de cada opção e tempo estimado, em linguagem não técnica. | — |
+| Referências | As 50 perguntas, a cobertura pelo corpus, as respostas de referência e os trechos dos documentos que as sustentam. | Referência correta? (sim, parcialmente, não); correção sugerida; comentário. |
+| Respostas da IA | Para cada uma das 60 respostas selecionadas: pergunta, execução, resposta de referência e resposta do sistema. | Veredito (correta, parcialmente correta, incorreta); risco clínico (nenhum, baixo, alto); comentário. |
+| Identificação | — | Nome, formação, titulação, vínculo institucional e data da revisão. |
+
+Fonte: Elaboração própria (2026).
+
+[^aval1]: As referências foram construídas pelo mesmo modelo de linguagem usado como avaliador nas validações 1 e 2 (Seção 3.8.4), em cinco instâncias independentes, cada uma com dez perguntas e com acesso apenas às perguntas e ao texto do corpus.
+[^aval2]: Modelo avaliador: Claude Opus 5.5 (`claude-opus-5-5`), da Anthropic, executado por meio do Claude Code em 9 de novembro de 2026, em dez instâncias independentes, uma por lote de dez respostas.

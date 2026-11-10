@@ -1,6 +1,6 @@
 # 06 — Relatório final da revisão
 
-Revisão acadêmica do TCC "Desenvolvimento de um Sistema Baseado em Recuperação Aumentada por Geração (RAG) para Apoio à Decisão Clínica em Hanseníase", feita em 09/11/2026 segundo o guia mestre e o prompt de execução entregues pelo autor. Os demais arquivos desta pasta trazem o detalhamento:
+Revisão acadêmica do TCC "Desenvolvimento de um Sistema Baseado em Recuperação Aumentada por Geração (RAG) para Apoio à Decisão Clínica em Hanseníase", feita em 09/11/2026 segundo o guia mestre e o prompt de execução entregues pelo autor. Os demais arquivos desta pasta trazem o detalhamento. A revisão de concisão feita em seguida, em 10/11/2026, está em `RELATORIO_OTIMIZACAO_TCC.md`; ela alterou a extensão e a numeração de ilustrações citadas abaixo.
 
 - `00_INVENTARIO_E_REGRAS.md`: inventário dos arquivos e regras adotadas;
 - `01_DIAGNOSTICO.md`: problemas encontrados, com severidade;
@@ -124,8 +124,8 @@ A lista completa, com os endereços consultados, está em `03_AUDITORIA_REFERENC
 | D-05 | Premissa da necessidade de informação na APS (2.1.2) | Opcional: citar um estudo sobre necessidades de informação de profissionais da APS, se houver |
 | D-06 | Sigla PRISMA ausente da lista de siglas | Incluir na lista |
 | D-07 | Declaração de uso de ferramentas de IA | Verificar se o curso ou a UPE exige; o uso na avaliação já está declarado em nota de rodapé (Seção 3.8.4), mas não o uso na redação |
-| D-08 | O resumo (459 palavras) passa da primeira página em oito linhas | Se o template exigir página única, a candidata a corte é a frase sobre autenticação e avaliação de 0 a 10 ("O acesso exige autenticação… avaliação com participantes"), detalhe já tratado no Capítulo 4 |
-| D-10 | Introdução e Justificativa ainda citam a mesma constatação das revisões | Opcional: encurtar a frase da Justificativa |
+| D-08 | O resumo (459 palavras) passava da primeira página | **Resolvido na revisão de concisão (10/11/2026):** resumo com 370 palavras, em uma página; a frase sobre autenticação e nota de 0 a 10 saiu |
+| D-10 | Introdução e Justificativa citavam a mesma constatação das revisões | **Resolvido na revisão de concisão:** a Justificativa remete à Seção 2.7 |
 | D-11 | Separação entre "Estado da arte" (2.7) e "Trabalhos relacionados" (2.8) | Estrutura mantida; uma opção é fundir a 2.8 na 2.7 como síntese |
 | D-12 | Seção 3.8 depois das ameaças à validade (3.7), e ameaças da avaliação experimental na 6.5 | Estrutura mantida; uma opção é mover a 3.8 para antes da 3.7 e concentrar todas as ameaças na 3.7 |
 

@@ -1,6 +1,6 @@
 # Alterações no TCC — avaliação experimental com 50 perguntas
 
-Arquivos alterados: `TCC/TCC_NexoHansen_Versao_Revisada.docx` e `TCC/TCC_NexoHansen_Versao_Revisada.md`. Depois das inserções, o .docx tem 134 páginas.
+Arquivos alterados: `TCC/TCC_NexoHansen_Versao_Revisada.docx` e `TCC/TCC_NexoHansen_Versao_Revisada.md`. Depois das inserções, o .docx tem 136 páginas.
 
 Backups anteriores à edição:
 
@@ -29,6 +29,7 @@ O texto antigo não foi alterado: só houve inserções.
 | **Apêndice H** | Quadro 20 — as 50 perguntas, com tema, registro, origem e cobertura; o asterisco indica pergunta composta. |
 | **Apêndice I** | Quadro 21 — resumo da rubrica das validações 1 e 2. |
 | **Apêndice J** | Quadro 22 — modelo da ficha da validação 3. |
+| **Apêndice K** | Quadro 23 — resultado de cada pergunta: veredito e nota global nas duas execuções, alertas e situação da validação 3. Remete ao documento `avaliacao/Perguntas_e_Respostas_Avaliacao.docx`. |
 | **Notas de rodapé (2)** | Uma em 3.8.3: as referências foram feitas pelo mesmo modelo avaliador, em instâncias isoladas. Outra em 3.8.4: identificação do modelo avaliador (Claude Opus 5.5, `claude-opus-5-5`, 09/11/2026). |
 | **Referências (4)**, em ordem alfabética | COHEN (1968), kappa ponderado; PANICKSSERY, BOWMAN e FENG (2024), viés de autopreferência; WILSON (1927), intervalo de confiança; ZHENG *et al.* (2023), *LLM-as-a-judge*. |
 
@@ -48,6 +49,7 @@ As validações 1 e 2 estão descritas como **avaliação automatizada por model
 | 5.4 (fim) | `[KAPPA E % DE CONCORDÂNCIA ENTRE VALIDAÇÃO 2 E VALIDAÇÃO 3 — gerado por consolidar.ts]` | Usar `validacao_especialista/consolidacao.json`. |
 | 5.4 (fim) | `[OBSERVAÇÕES DA ESPECIALISTA: …]` | Resumir as observações da ficha. |
 | 6.5 (fim) | `[OBSERVAÇÕES DA ESPECIALISTA: …]` | Discutir as divergências entre a avaliação automatizada e a especialista. |
+| Apêndice K | Frase sobre as células realçadas e as 25 células `A avaliar (exec. N)` do Quadro 23 | **Automático:** depois de `consolidar.ts`, rodar `atualizar_tcc.ts`, que troca as células pelo veredito da especialista e remove a frase. |
 
 As legendas e fontes das Figuras 14 e 15 e o título do gráfico dizem "resultados preliminares". Depois da validação 3, rode novamente `graficos.ts` e `atualizar_tcc.ts`.
 

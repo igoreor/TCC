@@ -1188,7 +1188,7 @@ Fonte: Dados da pesquisa (2026).
 
 ## 5.4 RESULTADOS DA AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS
 
-Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. <mark>(resultados preliminares, sujeitos à validação 3)</mark> Os números serão atualizados após a validação 3, pela especialista, cujo parecer prevalece nas respostas revisadas. As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de 8,9 segundos (percentil 95 de 13,1 segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais referem-se a 98 respostas de 49 perguntas, sem a T36.
+Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. <mark>(resultados preliminares, sujeitos à validação 3)</mark> Os números serão atualizados após a validação 3, pela especialista, cujo parecer prevalece nas respostas revisadas. As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de 8,9 segundos (percentil 95 de 13,1 segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais referem-se a 98 respostas de 49 perguntas, sem a T36. O resultado de cada pergunta está no Apêndice K.
 
 A construção das referências mostrou que o corpus responde integralmente a 37 perguntas, parcialmente a 9 e não responde a 4, contra a previsão de 42, 3 e 5 da curadoria. As perguntas parciais são T07, T08, T29, T30, T31, T36, T42, T45, T48, e as não respondíveis, T46, T47, T49, T50. A diferença decorre, sobretudo, de perguntas que pedem detalhes ausentes do corpus, como valores de desempenho do teste rápido, uma rotina diária de cuidado com os pés ou uma lista de sinais oculares de urgência, e da ausência das normas de 2026 na base (T08). A T48 foi classificada como parcial, embora pudesse ser considerada integral, porque o PCDT orienta tomar a rifampicina em jejum sem conciliar essa orientação com a da clofazimina.
 
@@ -1772,6 +1772,67 @@ A ficha da validação 3 é a planilha `avaliacao/validacao_especialista/ficha_p
 | Identificação | — | Nome, formação, titulação, vínculo institucional e data da revisão. |
 
 Fonte: Elaboração própria (2026).
+
+# APÊNDICE K – RESULTADO POR PERGUNTA
+
+O Quadro 23 apresenta, para cada pergunta, o veredito da avaliação automatizada nas duas execuções, com a nota global entre parênteses e a indicação de alerta de segurança ou alucinação, e a situação da validação 3. As perguntas, as respostas de referência, com os trechos que as sustentam, e as duas respostas do sistema, na íntegra e com a avaliação de cada uma, estão no documento `avaliacao/Perguntas_e_Respostas_Avaliacao.docx`. <mark>As células realçadas indicam as respostas que aguardam a revisão da especialista.</mark>
+
+**Quadro 23 – Resultado da avaliação por pergunta**
+
+| Nº | Tema | Execução 1 | Execução 2 | Validação 3 |
+|---|---|---|---|---|
+| T01 | Diagnóstico | Correta (0,88) | Incorreta (0,83) | <mark>A avaliar (exec. 2)</mark> |
+| T02 | Diagnóstico | Correta (0,95) | Correta (0,90) | Não selecionada |
+| T03 | Diagnóstico | Incorreta (0,71) | Correta (0,89) | <mark>A avaliar (exec. 1)</mark> |
+| T04 | Diagnóstico | Correta (0,97) | Correta (1,00) | Não selecionada |
+| T05 | Diagnóstico | Correta (0,97) | Correta (0,97) | Não selecionada |
+| T06 | Diagnóstico | Correta (0,95) | Correta (0,95) | Não selecionada |
+| T07 | Diagnóstico | Correta (0,97) | Correta (0,96) | <mark>A avaliar (exec. 1)</mark> |
+| T08 | Diagnóstico | Correta (0,98) | Incorreta (0,45); alerta | <mark>A avaliar (exec. 2)</mark> |
+| T09 | Diagnóstico | Correta (0,88) | Correta (0,90) | Não selecionada |
+| T10 | Tratamento | Incorreta (0,25); alerta, alucinação | Incorreta (0,37); alerta, alucinação | <mark>A avaliar (exec. 1)</mark> |
+| T11 | Tratamento | Incorreta (0,72) | Correta (0,89) | <mark>A avaliar (exec. 1)</mark> |
+| T12 | Tratamento | Correta (0,93) | Correta (0,93) | <mark>A avaliar (exec. 1)</mark> |
+| T13 | Tratamento | Correta (0,92) | Correta (0,92) | Não selecionada |
+| T14 | Tratamento | Incorreta (0,51); alucinação | Incorreta (0,75) | <mark>A avaliar (exec. 1)</mark> |
+| T15 | Tratamento | Incorreta (0,82) | Incorreta (0,82) | Não selecionada |
+| T16 | Tratamento | Incorreta (0,82); alerta | Incorreta (0,67); alerta | <mark>A avaliar (exec. 1)</mark> |
+| T17 | Tratamento | Incorreta (0,40); alerta, alucinação | Incorreta (0,49); alerta, alucinação | <mark>A avaliar (exec. 2)</mark> |
+| T18 | Tratamento | Incorreta (0,70) | Incorreta (0,82) | <mark>A avaliar (exec. 2)</mark> |
+| T19 | Tratamento | Correta (0,95) | Correta (0,92) | Não selecionada |
+| T20 | Reações | Correta (0,90) | Correta (0,90) | Não selecionada |
+| T21 | Reações | Correta (0,92) | Correta (0,90) | Não selecionada |
+| T22 | Reações | Correta (0,93) | Correta (0,85) | Não selecionada |
+| T23 | Reações | Correta (1,00) | Correta (1,00) | <mark>A avaliar (exec. 1)</mark> |
+| T24 | Reações | Incorreta (0,80) | Correta (0,85) | <mark>A avaliar (exec. 1)</mark> |
+| T25 | Reações | Incorreta (0,83) | Incorreta (0,78) | <mark>A avaliar (exec. 1)</mark> |
+| T26 | Reações | Correta (0,95) | Correta (0,97) | <mark>A avaliar (exec. 1)</mark> |
+| T27 | Neuropatia e incapacidade | Correta (0,88) | Correta (0,93) | Não selecionada |
+| T28 | Neuropatia e incapacidade | Incorreta (0,88) | Incorreta (0,88) | Não selecionada |
+| T29 | Neuropatia e incapacidade | Correta (0,93) | Correta (0,93) | Não selecionada |
+| T30 | Neuropatia e incapacidade | Incorreta (0,68) | Incorreta (0,69) | <mark>A avaliar (exec. 1)</mark> |
+| T31 | Neuropatia e incapacidade | Incorreta (0,34) | Incorreta (0,36); alucinação | <mark>A avaliar (exec. 2)</mark> |
+| T32 | Neuropatia e incapacidade | Correta (0,92) | Incorreta (0,88) | Não selecionada |
+| T33 | Casos especiais | Correta (0,88) | Correta (0,83) | Não selecionada |
+| T34 | Casos especiais | Incorreta (0,85) | Incorreta (0,85) | Não selecionada |
+| T35 | Casos especiais | Incorreta (0,80); alerta | Incorreta (0,55); alerta | <mark>A avaliar (exec. 2)</mark> |
+| T36* | Casos especiais | Correta (0,95) | Correta (0,95) | Não selecionada |
+| T37 | Monitoramento | Correta (0,85) | Correta (0,85) | <mark>A avaliar (exec. 1)</mark> |
+| T38 | Monitoramento | Correta (0,97) | Correta (1,00) | Não selecionada |
+| T39 | Monitoramento | Incorreta (0,85) | Incorreta (0,85) | <mark>A avaliar (exec. 1)</mark> |
+| T40 | Contatos e prevenção | Correta (0,95) | Correta (0,95) | <mark>A avaliar (exec. 2)</mark> |
+| T41 | Contatos e prevenção | Correta (0,95) | Correta (0,90) | Não selecionada |
+| T42 | Contatos e prevenção | Correta (0,92) | Correta (0,96) | Não selecionada |
+| T43 | Psicossocial | Correta (0,88) | Correta (0,91) | <mark>A avaliar (exec. 2)</mark> |
+| T44 | Psicossocial | Correta (0,97) | Correta (0,90) | <mark>A avaliar (exec. 1)</mark> |
+| T45 | Epidemiologia | Correta (0,97) | Correta (0,97) | Não selecionada |
+| T46 | Gestão e políticas | Correta (1,00) | Correta (1,00) | Não selecionada |
+| T47 | Diagnóstico | Correta (1,00) | Correta (1,00) | <mark>A avaliar (exec. 2)</mark> |
+| T48 | Tratamento | Incorreta (0,20) | Incorreta (0,24) | <mark>A avaliar (exec. 1)</mark> |
+| T49 | Neuropatia e incapacidade | Correta (1,00) | Correta (1,00) | Não selecionada |
+| T50 | Epidemiologia | Correta (1,00) | Correta (1,00) | Não selecionada |
+
+Fonte: Elaboração própria (2026). Nota: resultados preliminares (validações 1 e 2); * T36, em decisão na curadoria, fora das médias.
 
 [^aval1]: As referências foram construídas pelo mesmo modelo de linguagem usado como avaliador nas validações 1 e 2 (Seção 3.8.4), em cinco instâncias independentes, cada uma com dez perguntas e com acesso apenas às perguntas e ao texto do corpus.
 [^aval2]: Modelo avaliador: Claude Opus 5.5 (`claude-opus-5-5`), da Anthropic, executado por meio do Claude Code em 9 de novembro de 2026, em dez instâncias independentes, uma por lote de dez respostas.

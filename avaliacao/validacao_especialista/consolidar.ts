@@ -43,12 +43,14 @@ async function main() {
     if (!indice) throw new Error(`coluna "${nome}" não encontrada na aba Respostas da IA`);
     return indice;
   };
-  const [colCodigo, colVeredito, colRisco] = [coluna('Código'), coluna('Veredito'), coluna('Risco clínico')];
+  const [colCodigo, colVeredito, colRisco, colComentario] = [coluna('Código'), coluna('Veredito'), coluna('Risco clínico'), coluna('Comentário')];
+  const comentarios = new Map<string, string>();
   abaRespostas.eachRow((row, n) => {
     if (n === 1) return;
     const veredito = texto(row.getCell(colVeredito).value);
     if (!CATEGORIAS.includes(veredito as any)) return;
     vereditos.push({ id_execucao: texto(row.getCell(colCodigo).value).toUpperCase(), veredito: veredito as VereditoEspecialista['veredito'], risco_clinico: texto(row.getCell(colRisco).value) });
+    comentarios.set(texto(row.getCell(colCodigo).value).toUpperCase(), String(row.getCell(colComentario).value ?? '').trim());
   });
 
   // Veredito automatizado em três níveis: correta; parcialmente correta quando incorreta com NG ≥ 0,5; incorreta.
@@ -82,6 +84,8 @@ async function main() {
     risco_clinico_alto: vereditos.filter((v) => v.risco_clinico === 'alto').length,
     matriz_3x3: CATEGORIAS.map((_, i) => CATEGORIAS.map((__, j) => a.filter((x, k) => x === i && b[k] === j).length)),
     metricas_finais: { acuracia: resumo.geral.acuracia, ic95: [resumo.geral.ic95_inferior, resumo.geral.ic95_superior] },
+    vereditos: vereditos.map((v) => ({ ...v, comentario: comentarios.get(v.id_execucao) ?? '' })),
+    referencias: revisadas.map((r) => ({ id: r.id, avaliacao: r.avaliacao, correcao_sugerida: r.correcao.trim(), comentario: r.comentario.trim() })),
     observacao:
       'Referências marcadas como incorretas devem ter as respostas da IA da pergunta reavaliadas com a correção (regra 2.4 do protocolo); registrar a reavaliação em DIARIO.md.'
   };

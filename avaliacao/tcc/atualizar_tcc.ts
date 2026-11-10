@@ -1,11 +1,12 @@
 // Fase 7: insere no TCC (.docx e .md) a subseção de método (3.8), os resultados preliminares (5.4),
-// a discussão e as ameaças à validade (6.5), os Apêndices H, I e J e as referências novas. Os
+// a discussão e as ameaças à validade (6.5), os Apêndices H a K e as referências novas. Os
 // números vêm de resultados/metricas.json; a interpretação dos achados, de tcc/achados.json.
 // Uso: npx tsx avaliacao/tcc/atualizar_tcc.ts
 import { copyFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { aplicarDocx, aplicarMarkdown, Insercao } from './aplicar';
 import { Bloco } from './docx_blocos';
+import { calcularPorResposta, carregarDados, EXCLUIDA_DAS_MEDIAS } from '../metricas';
 
 const AVAL = path.resolve(__dirname, '..');
 const RAIZ = path.resolve(AVAL, '..');
@@ -19,6 +20,8 @@ const { perguntas } = ler('perguntas.json');
 const { referencias } = ler('referencias.json');
 const selecao = ler('validacao_especialista/selecao.json');
 const achados = ler('tcc/achados.json');
+const consolidacao = existsSync(path.join(AVAL, 'validacao_especialista/consolidacao.json')) ? ler('validacao_especialista/consolidacao.json') : null;
+const porResposta = calcularPorResposta(carregarDados(), consolidacao?.vereditos ?? []);
 const hash = (a: string) => readFileSync(path.join(AVAL, a), 'utf8').split(' ')[0];
 
 const n2 = (x: number | null, c = 2) => (x === null || x === undefined ? '—' : x.toFixed(c).replace('.', ','));
@@ -103,7 +106,7 @@ const resultados: Bloco[] = [
   { tipo: 'titulo2', texto: '5.4 RESULTADOS DA AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS' },
   {
     tipo: 'paragrafo',
-    texto: `Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. ${PREL} Os números serão atualizados após a validação 3, pela especialista, cujo parecer prevalece nas respostas revisadas. As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de ${n2(m.operacional.latencia_mediana_ms / 1000, 1)} segundos (percentil 95 de ${n2(m.operacional.latencia_p95_ms / 1000, 1)} segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais referem-se a ${g.n} respostas de 49 perguntas, sem a T36.`
+    texto: `Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. ${PREL} Os números serão atualizados após a validação 3, pela especialista, cujo parecer prevalece nas respostas revisadas. As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de ${n2(m.operacional.latencia_mediana_ms / 1000, 1)} segundos (percentil 95 de ${n2(m.operacional.latencia_p95_ms / 1000, 1)} segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais referem-se a ${g.n} respostas de 49 perguntas, sem a T36. O resultado de cada pergunta está no Apêndice K.`
   },
   {
     tipo: 'paragrafo',
@@ -246,6 +249,33 @@ const apendices: Bloco[] = [
       ['Identificação', '—', 'Nome, formação, titulação, vínculo institucional e data da revisão.']
     ],
     fonte: 'Fonte: Elaboração própria (2026).'
+  },
+  { tipo: 'titulo1', texto: 'APÊNDICE K – RESULTADO POR PERGUNTA', apendice: true },
+  {
+    tipo: 'paragrafo',
+    texto:
+      'O Quadro 23 apresenta, para cada pergunta, o veredito da avaliação automatizada nas duas execuções, com a nota global entre parênteses e a indicação de alerta de segurança ou alucinação, e a situação da validação 3. As perguntas, as respostas de referência, com os trechos que as sustentam, e as duas respostas do sistema, na íntegra e com a avaliação de cada uma, estão no documento `avaliacao/Perguntas_e_Respostas_Avaliacao.docx`.' +
+      (consolidacao ? '' : ' [[As células realçadas indicam as respostas que aguardam a revisão da especialista.]]')
+  },
+  {
+    tipo: 'tabela',
+    especie: 'Quadro',
+    legenda: 'Resultado da avaliação por pergunta',
+    cabecalho: ['Nº', 'Tema', 'Execução 1', 'Execução 2', 'Validação 3'],
+    larguras: [7, 21, 24, 24, 24],
+    linhas: perguntas.map((p: any) => {
+      const exec = (rodada: number) => {
+        const l = porResposta.find((x) => x.id_execucao === `R${rodada}-${p.id}`)!;
+        const sinais = [l.SEG >= 1 && 'alerta', l.ALU && 'alucinação'].filter(Boolean);
+        return `${l.correta_automatizada ? 'Correta' : 'Incorreta'} (${n2(l.NG)})${sinais.length ? `; ${sinais.join(', ')}` : ''}`;
+      };
+      const sel = selecao.selecionadas.find((s: any) => s.id_pergunta === p.id);
+      const parecer = sel && consolidacao?.vereditos?.find((v: any) => v.id_execucao === sel.id_execucao);
+      const execucaoSel = sel ? `exec. ${sel.id_execucao.slice(1, 2)}` : '';
+      const v3 = !sel ? 'Não selecionada' : parecer ? `${parecer.veredito} (${execucaoSel})` : `[[A avaliar (${execucaoSel})]]`;
+      return [p.id === EXCLUIDA_DAS_MEDIAS ? `${p.id}*` : p.id, p.tema, exec(1), exec(2), v3];
+    }),
+    fonte: `Fonte: Elaboração própria (2026). Nota: ${consolidacao ? 'validação 3 consolidada' : 'resultados preliminares (validações 1 e 2)'}; * ${EXCLUIDA_DAS_MEDIAS}, em decisão na curadoria, fora das médias.`
   }
 ];
 

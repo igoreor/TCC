@@ -10,14 +10,14 @@ import { calcularPorResposta, carregarDados } from './metricas';
 export const SEMENTE_AMOSTRA = 20261113;
 const PASTA = path.join(__dirname, 'validacao_especialista');
 
-const NOMES_DOCUMENTO: Record<string, string> = {
+export const NOMES_DOCUMENTO: Record<string, string> = {
   'ms-pcdt-hanseniase-2022': 'PCDT da Hanseníase (Ministério da Saúde, 2022)',
   'ms-estrategia-nacional-hanseniase-2024-2030': 'Estratégia Nacional 2024–2030 (Ministério da Saúde, 2024)',
   'oms-diretrizes-hanseniase-2018': 'Diretrizes da OMS (2019)',
   'oms-reacoes-incapacidades-2020': 'Manejo das reações e prevenção de incapacidades (OMS, 2020, em inglês)',
   'oms-estrategia-global-hanseniase-2021-2030': 'Estratégia Global 2021–2030 (OMS, 2021)'
 };
-const COBERTURA: Record<string, string> = {
+export const COBERTURA: Record<string, string> = {
   integral: 'Os documentos respondem à pergunta',
   parcial: 'Os documentos respondem só a uma parte da pergunta',
   nao_respondivel: 'Os documentos não respondem à pergunta'

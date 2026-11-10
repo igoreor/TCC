@@ -5,6 +5,7 @@ Este documento resume a execução do protocolo `AVALIACAO_HANSENIASE.md` em 09/
 - O registro passo a passo está em `avaliacao/DIARIO.md`.
 - Os números completos estão em `avaliacao/RELATORIO_RESULTADOS.md`.
 - As mudanças no TCC estão em `avaliacao/ALTERACOES_TCC.md`.
+- **As perguntas e respostas estão em `avaliacao/Perguntas_e_Respostas_Avaliacao.docx`.** Para cada uma das 50 perguntas: a resposta de referência com os trechos dos documentos, as duas respostas da IA na íntegra e a avaliação de cada uma. Nas 25 perguntas da validação 3, os campos da especialista estão em amarelo.
 
 ## 1. Resumo
 
@@ -87,8 +88,11 @@ Pontos positivos:
    npx tsx ../avaliacao/validacao_especialista/consolidar.ts caminho/da/ficha_preenchida.xlsx
    npx tsx ../avaliacao/graficos.ts
    npx tsx ../avaliacao/relatorio.ts
+   npx tsx ../avaliacao/documento_perguntas_respostas.ts
+   npx tsx ../avaliacao/tcc/atualizar_tcc.ts
+   powershell -File ../avaliacao/tcc/word_atualizar.ps1 -Docx ../TCC/TCC_NexoHansen_Versao_Revisada.docx
    ```
-   Isso calcula o kappa ponderado e a concordância e aplica o veredito dela.
+   Isso calcula o kappa ponderado e a concordância e aplica o veredito dela. O documento de perguntas e respostas e o Apêndice K do TCC passam a mostrar o parecer dela no lugar das marcações amarelas, e o último comando atualiza campos e sumário no Word.
 3. **Preencher as marcações amarelas do TCC** com os números de `consolidacao.json`. A lista completa está em `ALTERACOES_TCC.md`. Depois, remova os avisos de "resultados preliminares".
 4. **Decidir sobre as Portarias 47 e 51/2026.** Se forem indexadas, o sistema muda, e a avaliação deve ser refeita: rode novamente as fases 0, 2 e 4, já que as referências também mudam.
 5. Inserir a referência dos testes estatísticos (marcação em 3.8.4).
@@ -105,6 +109,7 @@ Pontos positivos:
 | `avaliacao/avaliacoes.jsonl`, `avaliacao/validacao/` | Avaliações, chave de anonimato, contradições, similaridade |
 | `avaliacao/resultados/` | CSV, `metricas.json` e gráficos |
 | `avaliacao/RELATORIO_RESULTADOS.md` | Relatório completo |
+| `avaliacao/Perguntas_e_Respostas_Avaliacao.docx` | As 50 perguntas com referência, respostas da IA e avaliação (gerado por `documento_perguntas_respostas.ts`) |
 | `avaliacao/validacao_especialista/` | Ficha, seleção e script de consolidação |
 | `avaliacao/tcc/` | Scripts de atualização do TCC e textos de interpretação |
 | `TCC/*_antes_avaliacao.*` | Backup do TCC anterior a esta etapa |

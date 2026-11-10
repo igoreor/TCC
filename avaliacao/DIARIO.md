@@ -129,3 +129,13 @@ O autor pediu execução autônoma ("tome todas as ações recomendadas e não m
 - Resultado: 16 respostas incorretas e 9 corretas segundo a avaliação automatizada, numa amostra enriquecida. O kappa vale para essa amostra, o que foi registrado como ameaça à validade.
 - `consolidar.ts` passou a localizar as colunas pelo cabeçalho, porque a coluna "Execução" saiu da ficha. Foi testado com uma cópia preenchida com valores fictícios: leu 25 referências e 25 respostas e calculou o kappa. Os resultados reais foram restaurados em seguida.
 - Seções 3.8.4 e 6.5 e Apêndice J do TCC regerados com a nova seleção; relatório também regerado.
+
+### Documento de perguntas e respostas e Apêndice K
+
+- `documento_perguntas_respostas.ts` gera `Perguntas_e_Respostas_Avaliacao.docx`. Para cada uma das 50 perguntas, traz:
+  - a resposta de referência, com os pontos-chave e os trechos literais dos documentos;
+  - as duas respostas da IA, na íntegra e sem edição, com as fontes citadas;
+  - a avaliação automatizada de cada resposta: veredito, nota global, cobertura dos pontos-chave, correção factual, abstenção e justificativas do avaliador.
+- Nas 25 perguntas da validação 3, o documento tem um quadro com os campos da especialista, realçados em amarelo enquanto a ficha não é consolidada.
+- `consolidar.ts` passou a gravar em `consolidacao.json` os vereditos, os comentários e as revisões de referência. Com isso, o documento e o TCC preenchem o parecer da especialista sozinhos.
+- TCC: novo Apêndice K (Quadro 23), com o resultado de cada pergunta e a coluna da validação 3 em amarelo nas 25 selecionadas. A Seção 5.4 remete ao Apêndice K. O TCC ficou com 136 páginas.

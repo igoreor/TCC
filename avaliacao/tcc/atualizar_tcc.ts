@@ -5,7 +5,7 @@
 import { copyFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { aplicarDocx, aplicarMarkdown, Insercao } from './aplicar';
-import { aplicarRevisaoDocx, aplicarRevisaoMarkdown, conferirMarkdown } from './aplicar_revisao';
+import { aplicarRevisaoDocx, aplicarRevisaoMarkdown, conferirMarkdown, normalizarMarkdown } from './aplicar_revisao';
 import { Bloco } from './docx_blocos';
 import { calcularPorResposta, carregarDados, EXCLUIDA_DAS_MEDIAS } from '../metricas';
 
@@ -40,18 +40,18 @@ const metodo: Bloco[] = [
   {
     tipo: 'paragrafo',
     texto:
-      'Além da avaliação técnica com o conjunto de referência (Seção 3.5), o sistema foi submetido a uma avaliação experimental com 50 perguntas curadas a partir de dúvidas publicadas sobre hanseníase, conduzida em 9 de novembro de 2026 segundo um protocolo de tripla validação: duas etapas automatizadas, de coerência e de conformidade documental, e uma revisão por especialista. Esta seção descreve o conjunto de perguntas, a execução, a construção das respostas de referência e as validações. O protocolo, os *scripts*, os dados e o diário do experimento estão na pasta `avaliacao/` do repositório.'
+      'Além da avaliação técnica com o conjunto de referência (Seção 3.5), o sistema foi submetido a uma avaliação experimental com 50 perguntas curadas a partir de dúvidas publicadas sobre hanseníase, conduzida em 9 de novembro de 2026 segundo um protocolo de tripla validação: duas etapas automatizadas, de coerência e de conformidade documental, e uma revisão por especialista. O protocolo, os *scripts*, os dados e o diário do experimento estão na pasta `avaliacao/` do repositório.'
   },
   { tipo: 'titulo3', texto: '3.8.1 Conjunto de perguntas' },
   {
     tipo: 'paragrafo',
     texto:
-      'Antes da busca, foi definida uma matriz de 50 vagas, distribuídas por 10 temas, com 25 perguntas em registro leigo e 25 em registro técnico, 35 simples e 15 compostas, e com a previsão de que 42 seriam respondidas integralmente pelos documentos, 3 parcialmente e 5 não seriam respondidas. Foram coletadas 152 perguntas publicadas entre 2007 e 2023 em serviços de saúde e órgãos oficiais, como BVS APS/Telessaúde, Secretaria de Estado de Saúde do Rio de Janeiro, Ministério da Saúde e Fiocruz: 101 leigas e 51 técnicas, das quais 32 eram dúvidas reais de profissionais da atenção primária. As perguntas foram agrupadas por assunto, com o apoio de um modelo de *embeddings* (BGE-M3) para ordenar a proximidade semântica em relação aos títulos das seções de referência, e até cinco candidatas por vaga foram examinadas quanto ao assunto, ao registro, à complexidade e à cobertura documental, com exclusão de redundâncias, de dependências do contexto da publicação e de questões prejudicadas por mudanças normativas de 2026.'
+      'Antes da busca, foi definida uma matriz de 50 vagas por 10 temas, com 25 perguntas em registro leigo e 25 em registro técnico, 35 simples e 15 compostas, e a previsão de que 42 seriam respondidas integralmente pelos documentos, 3 parcialmente e 5 não seriam respondidas. Foram coletadas 152 perguntas publicadas entre 2007 e 2023 em serviços de saúde e órgãos oficiais, como BVS APS/Telessaúde, Secretaria de Estado de Saúde do Rio de Janeiro, Ministério da Saúde e Fiocruz (101 leigas e 51 técnicas, das quais 32 eram dúvidas reais de profissionais da atenção primária). Com o apoio de um modelo de *embeddings* (BGE-M3) para ordenar a proximidade semântica em relação aos títulos das seções de referência, até cinco candidatas por vaga foram examinadas quanto ao assunto, ao registro, à complexidade e à cobertura documental, com exclusão de redundâncias, de dependências do contexto da publicação e de questões prejudicadas por mudanças normativas de 2026.'
   },
   {
     tipo: 'paragrafo',
     texto:
-      'O conjunto final reúne 16 perguntas publicadas, transcritas literalmente, 18 adaptações, redigidas a partir de 9 perguntas publicadas, e 15 perguntas de redação autoral; uma pergunta (T36) permaneceu em decisão na curadoria e foi reportada à parte, fora das médias. As 34 adaptações e redações autorais são propostas de redação, e não perguntas originalmente coletadas. Na preparação, foram removidos marcadores de nota de rodapé sem texto correspondente em seis perguntas, e as perguntas compostas, que pedem duas ou mais informações distintas, foram identificadas pelo avaliador: 13, e não 15 como previa a matriz, divergência registrada sem ajuste. O conjunto, apresentado no Apêndice H, foi congelado com resumo SHA-256 antes de qualquer execução, e nenhum modelo foi executado sobre ele durante a curadoria.'
+      'O conjunto final reúne 16 perguntas publicadas, transcritas literalmente, 18 adaptações, redigidas a partir de 9 perguntas publicadas, e 15 perguntas de redação autoral; uma pergunta (T36) permaneceu em decisão na curadoria e foi reportada à parte, fora das médias. As 34 adaptações e redações autorais são propostas de redação, e não perguntas originalmente coletadas. As perguntas compostas, que pedem duas ou mais informações distintas, foram identificadas pelo avaliador: 13, e não 15 como previa a matriz, divergência registrada sem ajuste. O conjunto, apresentado no Apêndice H, foi congelado com resumo SHA-256 antes de qualquer execução, e nenhum modelo foi executado sobre ele durante a curadoria.'
   },
   { tipo: 'titulo3', texto: '3.8.2 Execução' },
   {
@@ -73,7 +73,7 @@ const metodo: Bloco[] = [
   {
     tipo: 'paragrafo',
     texto:
-      'As validações 1 e 2 foram feitas de forma automatizada, por um modelo de linguagem de grande escala atuando como avaliador segundo rubrica fixa, abordagem conhecida como *LLM-as-a-judge* (Zheng *et al.*, 2023).{{Modelo avaliador: Claude Opus 5.5 (`claude-opus-5-5`), da Anthropic, executado por meio do Claude Code em 9 de novembro de 2026, em dez instâncias independentes, uma por lote de dez respostas.}} As 100 respostas foram embaralhadas e identificadas apenas por códigos anônimos, sem indicação da rodada, e distribuídas em lotes sem duas respostas da mesma pergunta. A validação 1 (coerência) avaliou a pertinência, a coerência interna e a adequação ao registro da pergunta. A validação 2 (conformidade documental) avaliou a correção factual em relação ao corpus, a cobertura dos pontos-chave, a precisão das afirmações (cada afirmação factual classificada como sustentada, não sustentada ou contraditória), a ocorrência de alucinação, os alertas de segurança, a abstenção diante de perguntas não cobertas e a fundamentação das fontes citadas; a recuperação, isto é, a proporção dos pontos-chave cujo trecho de suporte estava entre os trechos recuperados, foi calculada por *script*. A rubrica completa está no Apêndice I.'
+      'As validações 1 e 2 foram feitas de forma automatizada, por um modelo de linguagem de grande escala atuando como avaliador segundo rubrica fixa, abordagem conhecida como *LLM-as-a-judge* (Zheng *et al.*, 2023).{{Modelo avaliador: Claude Opus 5.5 (`claude-opus-5-5`), da Anthropic, executado por meio do Claude Code em 9 de novembro de 2026, em dez instâncias independentes, uma por lote de dez respostas.}} As 100 respostas foram embaralhadas e identificadas apenas por códigos anônimos, sem indicação da rodada, e distribuídas em lotes sem duas respostas da mesma pergunta. A validação 1 (coerência) avaliou a pertinência, a coerência interna e a adequação ao registro da pergunta; a validação 2 (conformidade documental), a correção factual em relação ao corpus, a cobertura dos pontos-chave, a precisão das afirmações, a alucinação, os alertas de segurança, a abstenção diante de perguntas não cobertas e a fundamentação das fontes, conforme a rubrica do Apêndice I. A recuperação, isto é, a proporção dos pontos-chave cujo trecho de suporte estava entre os trechos recuperados, foi calculada por *script*.'
   },
   {
     tipo: 'paragrafo',
@@ -107,11 +107,11 @@ const resultados: Bloco[] = [
   { tipo: 'titulo2', texto: '5.4 RESULTADOS DA AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS' },
   {
     tipo: 'paragrafo',
-    texto: `Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. ${PREL} Os números serão atualizados após a validação 3, pela especialista, cujo parecer prevalece nas respostas revisadas. As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de ${n2(m.operacional.latencia_mediana_ms / 1000, 1)} segundos (percentil 95 de ${n2(m.operacional.latencia_p95_ms / 1000, 1)} segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais referem-se a ${g.n} respostas de 49 perguntas, sem a T36. O resultado de cada pergunta está no Apêndice K.`
+    texto: `Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. ${PREL} As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de ${n2(m.operacional.latencia_mediana_ms / 1000, 1)} segundos (percentil 95 de ${n2(m.operacional.latencia_p95_ms / 1000, 1)} segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais, na Tabela 9, referem-se a ${g.n} respostas de 49 perguntas, sem a T36. O resultado de cada pergunta está no Apêndice K.`
   },
   {
     tipo: 'paragrafo',
-    texto: `A construção das referências mostrou que o corpus responde integralmente a ${cob[0].length} perguntas, parcialmente a ${cob[1].length} e não responde a ${cob[2].length}, contra a previsão de 42, 3 e 5 da curadoria. As perguntas parciais são ${cob[1].map((r: any) => r.id).join(', ')}, e as não respondíveis, ${cob[2].map((r: any) => r.id).join(', ')}. ${achados.cobertura}`
+    texto: `A construção das referências mostrou que o corpus responde integralmente a ${cob[0].length} perguntas, parcialmente a ${cob[1].length} e não responde a ${cob[2].length}, contra a previsão de 42, 3 e 5 da curadoria; a cobertura de cada pergunta está no Apêndice H. ${achados.cobertura}`
   },
   {
     tipo: 'tabela',
@@ -310,17 +310,20 @@ async function main() {
   writeFileSync(path.join(AVAL, 'tcc', 'insercoes.json'), JSON.stringify({ insercoes, novasReferencias }, null, 2) + '\n');
   console.log(`TCC atualizado: ${r.notas} notas, ${r.imagens} figuras, ${novasReferencias.length} referências`);
 
-  // Revisão acadêmica (revisao_tcc/edicoes.ts), aplicada sobre o texto já com as inserções.
-  const arquivoEdicoes = path.join(RAIZ, 'revisao_tcc', 'edicoes.ts');
-  if (existsSync(arquivoEdicoes)) {
+  // Revisões do texto, aplicadas em ordem sobre o texto já com as inserções: a acadêmica
+  // (edicoes.ts) e a de concisão (edicoes_concisao.ts), que parte do texto produzido pela primeira.
+  for (const nome of ['edicoes.ts', 'edicoes_concisao.ts']) {
+    const arquivoEdicoes = path.join(RAIZ, 'revisao_tcc', nome);
+    if (!existsSync(arquivoEdicoes)) continue;
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const { edicoes } = require(arquivoEdicoes);
     await aplicarRevisaoDocx(DOCX, edicoes);
     aplicarRevisaoMarkdown(MD, edicoes);
     const ausentes = conferirMarkdown(MD, edicoes);
-    if (ausentes.length) throw new Error(`edições sem correspondência no .md: ${ausentes.join(', ')}`);
-    console.log(`Revisão aplicada: ${edicoes.length} edições`);
+    if (ausentes.length) throw new Error(`${nome}: edições sem correspondência no .md: ${ausentes.join(', ')}`);
+    console.log(`Revisão aplicada (${nome}): ${edicoes.length} edições`);
   }
+  normalizarMarkdown(MD);
 }
 
 main().catch((error) => {

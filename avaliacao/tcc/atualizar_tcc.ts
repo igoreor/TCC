@@ -5,6 +5,7 @@
 import { copyFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { aplicarDocx, aplicarMarkdown, Insercao } from './aplicar';
+import { aplicarRevisaoDocx, aplicarRevisaoMarkdown, conferirMarkdown } from './aplicar_revisao';
 import { Bloco } from './docx_blocos';
 import { calcularPorResposta, carregarDados, EXCLUIDA_DAS_MEDIAS } from '../metricas';
 
@@ -308,6 +309,18 @@ async function main() {
   aplicarMarkdown(MD, insercoes, novasReferencias);
   writeFileSync(path.join(AVAL, 'tcc', 'insercoes.json'), JSON.stringify({ insercoes, novasReferencias }, null, 2) + '\n');
   console.log(`TCC atualizado: ${r.notas} notas, ${r.imagens} figuras, ${novasReferencias.length} referências`);
+
+  // Revisão acadêmica (revisao_tcc/edicoes.ts), aplicada sobre o texto já com as inserções.
+  const arquivoEdicoes = path.join(RAIZ, 'revisao_tcc', 'edicoes.ts');
+  if (existsSync(arquivoEdicoes)) {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { edicoes } = require(arquivoEdicoes);
+    await aplicarRevisaoDocx(DOCX, edicoes);
+    aplicarRevisaoMarkdown(MD, edicoes);
+    const ausentes = conferirMarkdown(MD, edicoes);
+    if (ausentes.length) throw new Error(`edições sem correspondência no .md: ${ausentes.join(', ')}`);
+    console.log(`Revisão aplicada: ${edicoes.length} edições`);
+  }
 }
 
 main().catch((error) => {

@@ -32,7 +32,8 @@ type Segmento = { texto: string; italico?: boolean; negrito?: boolean; codigo?: 
 /** Separa o texto marcado em segmentos (sem aninhamento, exceto itálico/código dentro de realce). */
 export function segmentar(texto: string): Segmento[] {
   const segs: Segmento[] = [];
-  const re = /\{\{([\s\S]+?)\}\}|\[\[([\s\S]+?)\]\]|\*\*([^*]+)\*\*|\*([^*]+)\*|`([^`]+)`/g;
+  // Realce: [[texto]]; em [[[MARCAÇÃO]]], os colchetes internos fazem parte do texto realçado.
+  const re = /\{\{([\s\S]+?)\}\}|\[\[([\s\S]+?\]?)\]\](?!\])|\*\*([^*]+)\*\*|\*([^*]+)\*|`([^`]+)`/g;
   let ultimo = 0;
   let m: RegExpExecArray | null;
   while ((m = re.exec(texto))) {
@@ -48,7 +49,7 @@ export function segmentar(texto: string): Segmento[] {
   return segs;
 }
 
-function runs(texto: string, ctx: Contexto, tamanhoCodigo = 22) {
+export function runs(texto: string, ctx: Contexto, tamanhoCodigo = 22) {
   return segmentar(texto)
     .map((s) => {
       if (s.nota !== undefined) {
@@ -183,7 +184,7 @@ export function blocosParaMarkdown(blocos: Bloco[], numeros: { Tabela: number; Q
       case 'paragrafo':
         return mdTexto(b.texto, notas);
       case 'alineas':
-        return b.itens.map((item, i) => `${String.fromCharCode(97 + i)}) ${mdTexto(item, notas)}`).join('\n');
+        return b.itens.map((item, i) => `${String.fromCharCode(97 + i)}) ${mdTexto(item, notas)}`).join('\n\n');
       case 'tabela': {
         numeros[b.especie] += 1;
         const linha = (cols: string[]) => `| ${cols.map((c) => mdTexto(c, notas)).join(' | ')} |`;

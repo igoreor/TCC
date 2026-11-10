@@ -104,7 +104,7 @@ export function aplicarMarkdown(arquivo: string, insercoes: Insercao[], referenc
     const linhas = md.slice(inicio, fim).split('\n');
     const indice = linhas.findIndex((l, i) => i > 1 && l.trim() && /^[A-ZÀ-Ú]/.test(l) && chaveRef(l) > chaveRef(ref));
     if (indice >= 0) linhas.splice(indice, 0, ref, '');
-    else linhas.push('', ref);
+    else linhas.push('', ref, '');
     md = md.slice(0, inicio) + linhas.join('\n') + md.slice(fim);
   }
   const todasNotas: string[] = [];

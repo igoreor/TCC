@@ -1,6 +1,6 @@
 # Pendências do TCC — NexoHansen
 
-Complemento da versão revisada, hoje `TCC_NexoHansen_Versao_Revisada.docx` (20/10/2026, atualizada em 23 e 24/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+Complemento da versão revisada, hoje `TCC NexoHansen - Versão Final 11 do 11.docx` (20/10/2026, atualizada em 23 e 24/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
 
 ## Atualização de 24/10/2026
 

@@ -90,7 +90,7 @@ Pontos positivos:
    npx tsx ../avaliacao/relatorio.ts
    npx tsx ../avaliacao/documento_perguntas_respostas.ts
    npx tsx ../avaliacao/tcc/atualizar_tcc.ts
-   powershell -File ../avaliacao/tcc/word_atualizar.ps1 -Docx "../TCC/TCC_NexoHansen_Versao_Revisada.docx"
+   powershell -File ../avaliacao/tcc/word_atualizar.ps1 -Docx "../TCC/TCC NexoHansen - Versão Final 11 do 11.docx"
    ```
    Isso calcula o kappa ponderado e a concordância e aplica o veredito dela. O documento de perguntas e respostas e o Apêndice K do TCC passam a mostrar o parecer dela no lugar das marcações amarelas, e o último comando atualiza campos e sumário no Word.
 3. **Preencher as marcações amarelas do TCC** com os números de `consolidacao.json`. A lista completa está em `ALTERACOES_TCC.md`. Depois, remova os avisos de "resultados preliminares".

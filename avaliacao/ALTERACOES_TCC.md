@@ -1,6 +1,6 @@
 # Alterações no TCC — avaliação experimental com 50 perguntas
 
-Arquivos alterados: `TCC/TCC_NexoHansen_Versao_Revisada.docx` e `TCC/TCC_NexoHansen_Versao_Revisada.md`. Depois das inserções e das revisões acadêmica, de concisão e dos comentários do orientador, o .docx tem 116 páginas (69 de texto principal).
+Arquivos alterados: `TCC/TCC NexoHansen - Versão Final 11 do 11.docx` e `TCC/TCC NexoHansen - Versão Final 11 do 11.md`. Depois das inserções e das revisões acadêmica, de concisão e dos comentários do orientador, o .docx tem 116 páginas (69 de texto principal).
 
 Backups anteriores à edição:
 
@@ -12,7 +12,7 @@ As inserções são geradas por `avaliacao/tcc/atualizar_tcc.ts`, que sempre par
 ```bash
 cd backend
 npx tsx ../avaliacao/tcc/atualizar_tcc.ts
-powershell -File ../avaliacao/tcc/word_atualizar.ps1 -Docx "../TCC/TCC_NexoHansen_Versao_Revisada.docx"
+powershell -File ../avaliacao/tcc/word_atualizar.ps1 -Docx "../TCC/TCC NexoHansen - Versão Final 11 do 11.docx"
 ```
 
 O segundo comando atualiza o sumário, as listas e a numeração no Word. Como o script parte sempre dos backups, **qualquer edição manual feita no .docx depois disso é sobrescrita**. Antes de editar o .docx à mão, decida se o script ainda será usado. Os textos de interpretação ficam em `avaliacao/tcc/achados.json`.

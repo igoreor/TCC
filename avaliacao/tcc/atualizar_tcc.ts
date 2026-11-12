@@ -11,8 +11,8 @@ import { calcularPorResposta, carregarDados, EXCLUIDA_DAS_MEDIAS } from '../metr
 
 const AVAL = path.resolve(__dirname, '..');
 const RAIZ = path.resolve(AVAL, '..');
-const DOCX = path.join(RAIZ, 'TCC', 'TCC_NexoHansen_Versao_Revisada.docx');
-const MD = path.join(RAIZ, 'TCC', 'TCC_NexoHansen_Versao_Revisada.md');
+const DOCX = path.join(RAIZ, 'TCC', 'TCC NexoHansen - Versão Final 11 do 11.docx');
+const MD = path.join(RAIZ, 'TCC', 'TCC NexoHansen - Versão Final 11 do 11.md');
 const ler = (a: string) => JSON.parse(readFileSync(path.join(AVAL, a), 'utf8'));
 
 const m = ler('resultados/metricas.json');

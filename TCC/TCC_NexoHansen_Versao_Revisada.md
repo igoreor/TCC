@@ -2,7 +2,7 @@ UNIVERSIDADE DE PERNAMBUCO<br>CAMPUS GARANHUNS<br>ENGENHARIA DE SOFTWARE
 
 Igor Emanuel Oliveira Rêgo
 
-**Desenvolvimento de um Sistema Baseado em Recuperação Aumentada por Geração (RAG) para Apoio à Decisão Clínica em Hanseníase**
+**Desenvolvimento de um Sistema Baseado em Geração Aumentada por Recuperação (RAG) para Apoio à Decisão Clínica em Hanseníase**
 
 GARANHUNS<br>2026
 
@@ -10,11 +10,11 @@ GARANHUNS<br>2026
 
 Igor Emanuel Oliveira Rêgo
 
-**Desenvolvimento de um Sistema Baseado em Recuperação Aumentada por Geração (RAG) para Apoio à Decisão Clínica em Hanseníase**
+**Desenvolvimento de um Sistema Baseado em Geração Aumentada por Recuperação (RAG) para Apoio à Decisão Clínica em Hanseníase**
 
 > Monografia apresentada como requisito para obtenção do diploma de Bacharelado em Engenharia de Software pela Universidade de Pernambuco Campus Garanhuns.
 >
-> Orientador: Prof. Élisson da Silva Rocha
+> Orientador: Prof. Dr. Élisson da Silva Rocha
 >
 > Coorientador(a): [PREENCHER OU REMOVER: o campo está em branco no rascunho]
 >
@@ -31,7 +31,7 @@ GARANHUNS<br>2026
 
 Igor Emanuel Oliveira Rêgo
 
-**Desenvolvimento de um Sistema Baseado em Recuperação Aumentada por Geração (RAG) para Apoio à Decisão Clínica em Hanseníase**
+**Desenvolvimento de um Sistema Baseado em Geração Aumentada por Recuperação (RAG) para Apoio à Decisão Clínica em Hanseníase**
 
 > Monografia apresentada como requisito para obtenção do diploma de Bacharelado em Engenharia de Software pela Universidade de Pernambuco Campus Garanhuns.
 
@@ -39,7 +39,7 @@ Aprovado em: ____/____/2026.
 
 **BANCA EXAMINADORA**
 
-Prof. Élisson da Silva Rocha — Orientador
+Prof. Dr. Élisson da Silva Rocha — Orientador
 
 [PREENCHER: nome do(a) coorientador(a), se houver] — Coorientador(a)
 
@@ -57,7 +57,7 @@ GARANHUNS<br>2026
 
 # AGRADECIMENTOS
 
-[REESCREVER PELO AUTOR: o texto dos agradecimentos do rascunho coincide quase integralmente com o do TCC usado como exemplo, inclusive na estrutura dos parágrafos e em frases inteiras. Por se tratar de elemento pessoal, recomenda-se que seja redigido com palavras próprias. Pessoas e grupos citados no rascunho, para referência: a mãe, Maria José; a madrinha, Synara Polyana; a tia, Edna Ferreira; a irmã, Jullyana; o padrinho, Renato Bezerra; os amigos Mickael e Nathan; os professores do curso; e o orientador, Prof. Élisson da Silva Rocha.]
+[REESCREVER PELO AUTOR: o texto dos agradecimentos do rascunho coincide quase integralmente com o do TCC usado como exemplo, inclusive na estrutura dos parágrafos e em frases inteiras. Por se tratar de elemento pessoal, recomenda-se que seja redigido com palavras próprias. Pessoas e grupos citados no rascunho, para referência: a mãe, Maria José; a madrinha, Synara Polyana; a tia, Edna Ferreira; a irmã, Jullyana; o padrinho, Renato Bezerra; os amigos Mickael e Nathan; os professores do curso; e o orientador, Prof. Dr. Élisson da Silva Rocha.]
 
 > [OPCIONAL: a epígrafe do rascunho é a mesma do TCC usado como exemplo. Avaliar se deseja mantê-la ou escolher outra.]
 >
@@ -86,49 +86,44 @@ Leprosy remains a public health problem in Brazil, the country with the second h
 - Figura 2 – Arquitetura geral do sistema
 - Figura 3 – Modelo de dados do sistema
 - Figura 4 – Fluxo de processamento de uma consulta
-- Figura 5 – Componente de avaliação de uma resposta, após a escolha da nota
-- Figura 6 – Página inicial do sistema
-- Figura 7 – Resposta a uma consulta na gaveta, com citações numeradas e nota de segurança
-- Figura 8 – Lista de fontes de uma resposta, com o trecho da primeira fonte exibido
-- Figura 9 – Formulário do explorador de recuperação no painel interno
-- Figura 10 – Acurácia por tema, com intervalo de confiança de 95%
-- Figura 11 – Consistência entre as duas execuções de cada pergunta
+- Figura 5 – Resposta a uma consulta na gaveta, com citações numeradas e nota de segurança
+- Figura 6 – Lista de fontes de uma resposta, com o trecho da primeira fonte exibido
+- Figura 7 – Acurácia por tema, com intervalo de confiança de 95%
+- Figura 8 – Consistência entre as duas execuções de cada pergunta
 
 # LISTA DE QUADROS
 
 - Quadro 1 – Trabalhos relacionados ao sistema proposto
-- Quadro 2 – Correspondência entre objetivos específicos, etapas e situação atual
+- Quadro 2 – Correspondência entre objetivos específicos, etapas da pesquisa e seções do trabalho
 - Quadro 3 – Documentos que compõem a base de conhecimento
 - Quadro 4 – Categorias do conjunto de referência da avaliação técnica
 - Quadro 5 – Métricas da avaliação técnica
-- Quadro 6 – Parâmetros a registrar para cada cenário de avaliação
-- Quadro 7 – Dimensões candidatas para o instrumento de avaliação
-- Quadro 8 – Requisitos do sistema e mecanismos de implementação
-- Quadro 9 – Regras da camada de segurança
-- Quadro 10 – Testes automatizados do servidor e da interface
-- Quadro 11 – Problemas identificados na avaliação preliminar e alterações realizadas
-- Quadro 12 – Perguntas de referência da avaliação técnica preliminar
-- Quadro 13 – Trechos da base inicial de desenvolvimento
-- Quadro 14 – Mensagens de recusa da camada de segurança
-- Quadro 15 – Análise das partes determinísticas do *pipeline* por pergunta
-- Quadro 16 – Conjunto de referência da avaliação técnica com a base oficial
-- Quadro 17 – Resultados por pergunta da configuração escolhida
-- Quadro 18 – Perguntas da avaliação experimental
-- Quadro 19 – Rubrica das validações 1 e 2
-- Quadro 20 – Estrutura da ficha da validação por especialista
-- Quadro 21 – Resultado da avaliação por pergunta
+- Quadro 6 – Requisitos do sistema e mecanismos de implementação
+- Quadro 7 – Regras da camada de segurança
+- Quadro 8 – Problemas identificados na avaliação preliminar e alterações realizadas
+- Quadro 9 – Perguntas de referência da avaliação técnica preliminar
+- Quadro 10 – Trechos da base inicial de desenvolvimento
+- Quadro 11 – Mensagens de recusa da camada de segurança
+- Quadro 12 – Análise das partes determinísticas do *pipeline* por pergunta
+- Quadro 13 – Parâmetros a registrar para cada cenário de avaliação
+- Quadro 14 – Dimensões candidatas para o instrumento de avaliação
+- Quadro 15 – Conjunto de referência da avaliação técnica com a base oficial
+- Quadro 16 – Resultados por pergunta da configuração escolhida
+- Quadro 17 – Perguntas da avaliação experimental
+- Quadro 18 – Rubrica das validações 1 e 2
+- Quadro 19 – Estrutura da ficha da validação por especialista
+- Quadro 20 – Resultado da avaliação por pergunta
+- Quadro 21 – Testes automatizados do servidor e da interface
 
 # LISTA DE TABELAS
 
 - Tabela 1 – Resultado da avaliação técnica preliminar
-- Tabela 2 – Pontuação textual mínima necessária para atingir o limiar de relevância
-- Tabela 3 – Resultados no conjunto de referência atual, por versão do sistema
-- Tabela 4 – Resultados da comparação de modelos geradores no conjunto de referência
-- Tabela 5 – Tempo, tamanho das respostas e custo medidos por configuração
-- Tabela 6 – Caracterização agregada dos participantes
-- Tabela 7 – Avaliações por dimensão e cenário
-- Tabela 8 – Métricas gerais das respostas na avaliação com perguntas curadas
-- Tabela 9 – Resultados por registro, origem, complexidade e cobertura das perguntas
+- Tabela 2 – Resultados no conjunto de referência atual, por versão do sistema
+- Tabela 3 – Resultados da comparação de modelos geradores no conjunto de referência
+- Tabela 4 – Tempo, tamanho das respostas e custo medidos por configuração
+- Tabela 5 – Métricas gerais das respostas na avaliação com perguntas curadas
+- Tabela 6 – Resultados por registro, origem, complexidade e cobertura das perguntas
+- Tabela 7 – Pontuação textual mínima necessária para atingir o limiar de relevância
 
 # LISTA DE ABREVIATURAS E SIGLAS
 
@@ -232,56 +227,52 @@ Leprosy remains a public health problem in Brazil, the country with the second h
   - 4.6 CONTROLE DE ACESSO E AVALIAÇÃO DAS RESPOSTAS
     - 4.6.1 Autenticação e sessões
     - 4.6.2 Registro da avaliação das respostas
-  - 4.7 INTERFACE WEB
+  - 4.7 INTERFACE *WEB*
   - 4.8 VERIFICAÇÃO DO SOFTWARE
   - 4.9 EVOLUÇÃO DO SISTEMA APÓS A AVALIAÇÃO PRELIMINAR
-- 5 RESULTADOS
-  - 5.1 ARTEFATO DESENVOLVIDO
-  - 5.2 AVALIAÇÃO TÉCNICA
-    - 5.2.1 Execução preliminar
-    - 5.2.2 Avaliação com a base oficial
-    - 5.2.3 Comparação de modelos e escolha do modelo gerador
-  - 5.3 RESULTADOS DA AVALIAÇÃO COMPARATIVA
-    - 5.3.1 Execução da avaliação e participantes
-    - 5.3.2 Avaliações por dimensão e cenário
-    - 5.3.3 Análise por pergunta e por tipo de situação
-    - 5.3.4 Percepções qualitativas dos participantes
-  - 5.4 RESULTADOS DA AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS
-- 6 DISCUSSÃO
-  - 6.1 QUESTÕES DE PESQUISA
-  - 6.2 RELAÇÃO COM A LITERATURA
-  - 6.3 IMPLICAÇÕES PARA O PROJETO DE SISTEMAS RAG EM SAÚDE
-  - 6.4 LIMITAÇÕES
-  - 6.5 DISCUSSÃO DA AVALIAÇÃO EXPERIMENTAL E AMEAÇAS À VALIDADE
-- 7 CONSIDERAÇÕES FINAIS
+- 5 RESULTADOS E DISCUSSÃO
+  - 5.1 AVALIAÇÃO TÉCNICA
+    - 5.1.1 Execução preliminar
+    - 5.1.2 Avaliação com a base oficial
+    - 5.1.3 Comparação de modelos e escolha do modelo gerador
+  - 5.2 RESULTADOS DA AVALIAÇÃO COMPARATIVA
+  - 5.3 RESULTADOS DA AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS
+  - 5.4 DISCUSSÃO
+    - 5.4.1 Questões de pesquisa
+    - 5.4.2 Relação com a literatura
+    - 5.4.3 Implicações para o projeto de sistemas RAG em saúde
+    - 5.4.4 Limitações
+    - 5.4.5 Discussão da avaliação experimental e ameaças à validade
+- 6 CONSIDERAÇÕES FINAIS
 - REFERÊNCIAS
 - APÊNDICE A – PERGUNTAS DE REFERÊNCIA DA AVALIAÇÃO TÉCNICA PRELIMINAR
 - APÊNDICE B – TRECHOS DA BASE INICIAL DE DESENVOLVIMENTO
 - APÊNDICE C – RESPOSTAS DE RECUSA DEFINIDAS NA POLÍTICA DE SEGURANÇA
 - APÊNDICE D – ANÁLISE TÉCNICA POR PERGUNTA DA AVALIAÇÃO PRELIMINAR
-- APÊNDICE E – ESTRUTURA PREVISTA DO INSTRUMENTO DE AVALIAÇÃO
+- APÊNDICE E – PROTOCOLO PREVISTO DA AVALIAÇÃO COMPARATIVA
 - APÊNDICE F – CONJUNTO DE REFERÊNCIA DA AVALIAÇÃO TÉCNICA COM A BASE OFICIAL
 - APÊNDICE G – RESULTADOS POR PERGUNTA DA AVALIAÇÃO COM A BASE OFICIAL
 - APÊNDICE H – PERGUNTAS DA AVALIAÇÃO EXPERIMENTAL
 - APÊNDICE I – RUBRICA DE AVALIAÇÃO DAS RESPOSTAS
 - APÊNDICE J – MODELO DA FICHA DA VALIDAÇÃO POR ESPECIALISTA
 - APÊNDICE K – RESULTADO POR PERGUNTA
+- APÊNDICE L – TESTES AUTOMATIZADOS DO SISTEMA
 
 # 1 INTRODUÇÃO
 
-A hanseníase é uma doença infecciosa crônica causada pelo *Mycobacterium leprae*, que acomete primariamente os nervos periféricos e a pele e pode resultar em incapacidades físicas permanentes quando o diagnóstico e o tratamento ocorrem tardiamente (Ministério da Saúde, 2022). A Organização Mundial da Saúde (OMS) a inclui entre as doenças tropicais negligenciadas (DTN), agravos que recebem atenção científica, política e financeira desproporcionalmente pequena diante da carga que impõem (World Health Organization, 2020a).
+A hanseníase é uma doença infecciosa crônica causada pelo *Mycobacterium leprae*, que acomete primariamente os nervos periféricos e a pele e pode resultar em incapacidades físicas permanentes quando o diagnóstico e o tratamento ocorrem tardiamente (Brasil, 2022b). A Organização Mundial da Saúde (OMS) a inclui entre as doenças tropicais negligenciadas (DTN), agravos que recebem atenção científica, política e financeira desproporcionalmente pequena diante da carga que impõem (World Health Organization, 2020a).
 
-O Brasil ocupa a segunda posição mundial em número de casos novos da doença. Em 2024, foram identificados 22.129 casos novos no país, com taxa de detecção de 10,41 casos por 100 mil habitantes, e Índia, Brasil e Indonésia foram os únicos países a notificar mais de 10 mil casos novos, somando 79,8% da detecção global (Ministério da Saúde, 2026). Os indicadores brasileiros também sinalizam diagnóstico tardio: a proporção de casos novos multibacilares passou de 68,9% em 2015 para 82,2% em 2024, e 11,5% dos casos novos de 2024 já apresentavam grau 2 de incapacidade física no momento do diagnóstico (Ministério da Saúde, 2026).
+O Brasil ocupa a segunda posição mundial em número de casos novos da doença. Em 2024, foram identificados 22.129 casos novos no país, com taxa de detecção de 10,41 casos por 100 mil habitantes, e Índia, Brasil e Indonésia foram os únicos países a notificar mais de 10 mil casos novos, somando 79,8% da detecção global (Brasil, 2026). Os indicadores brasileiros também sinalizam diagnóstico tardio: a proporção de casos novos multibacilares passou de 68,9% em 2015 para 82,2% em 2024, e 11,5% dos casos novos de 2024 já apresentavam grau 2 de incapacidade física no momento do diagnóstico (Brasil, 2026).
 
-O diagnóstico da hanseníase é eminentemente clínico, e a maioria dos casos pode ser confirmada na Atenção Primária à Saúde (APS) (Ministério da Saúde, 2022). Cabe, portanto, a equipes generalistas reconhecer sinais iniciais, classificar os casos, acompanhar a poliquimioterapia, avaliar contatos e identificar episódios reacionais, tarefas cujas orientações estão consolidadas no Protocolo Clínico e Diretrizes Terapêuticas (PCDT) da Hanseníase, documento de 152 páginas (Ministério da Saúde, 2022). Consultar um documento dessa extensão durante o atendimento nem sempre é viável, o que torna pertinente investigar meios de localizar rapidamente a orientação aplicável a uma dúvida e de indicar de onde ela foi extraída.
+O diagnóstico da hanseníase é eminentemente clínico, e a maioria dos casos pode ser confirmada na Atenção Primária à Saúde (APS) (Brasil, 2022b). Cabe, portanto, a equipes generalistas reconhecer sinais iniciais, classificar os casos, acompanhar a poliquimioterapia, avaliar contatos e identificar episódios reacionais, tarefas cujas orientações estão consolidadas no Protocolo Clínico e Diretrizes Terapêuticas (PCDT) da Hanseníase, documento de 152 páginas (Brasil, 2022b). Consultar um documento dessa extensão durante o atendimento nem sempre é viável, o que torna pertinente investigar meios de localizar rapidamente a orientação aplicável a uma dúvida e de indicar de onde ela foi extraída.
 
 Os modelos de linguagem de grande escala (LLMs, do inglês *large language models*) ampliaram as possibilidades de consulta e síntese de conhecimento médico em linguagem natural (Singhal *et al.*, 2023). Seu uso direto em contextos clínicos, contudo, enfrenta limitações conhecidas: esses modelos podem produzir conteúdo plausível e incorreto, fenômeno denominado alucinação, não indicam a origem das afirmações que fazem e têm conhecimento restrito aos dados de treinamento, que não acompanham a atualização dos protocolos (Ji *et al.*, 2023; Thirunavukarasu *et al.*, 2023).
 
-A Geração Aumentada por Recuperação (RAG, do inglês *retrieval-augmented generation*)[^termo] procura mitigar essas limitações ao condicionar a geração de texto a trechos recuperados de uma base documental externa (Lewis *et al.*, 2020). Em vez de depender apenas do conhecimento armazenado nos parâmetros do modelo, o sistema localiza os trechos mais pertinentes à pergunta e redige a resposta a partir deles, o que permite indicar as fontes utilizadas e atualizar o conhecimento por meio da base, sem novo treinamento. Estudos em medicina mostram, entretanto, que a qualidade da recuperação é tão determinante quanto a do modelo gerador (Xiong *et al.*, 2024), e revisões recentes apontam que a área ainda carece de validação clínica, de padronização da avaliação e de adaptação a idiomas diferentes do inglês (Amugongo *et al.*, 2025; Yang *et al.*, 2026).
+A Geração Aumentada por Recuperação (RAG, do inglês *retrieval-augmented generation*) procura mitigar essas limitações ao condicionar a geração de texto a trechos recuperados de uma base documental externa (Lewis *et al.*, 2020). Em vez de depender apenas do conhecimento armazenado nos parâmetros do modelo, o sistema localiza os trechos mais pertinentes à pergunta e redige a resposta a partir deles, o que permite indicar as fontes utilizadas e atualizar o conhecimento por meio da base, sem novo treinamento. Estudos em medicina mostram, entretanto, que a qualidade da recuperação é tão determinante quanto a do modelo gerador (Xiong *et al.*, 2024), e revisões recentes apontam que a área ainda carece de validação clínica, de padronização da avaliação e de adaptação a idiomas diferentes do inglês (Amugongo *et al.*, 2025; Yang *et al.*, 2026).
 
-No caso da hanseníase, a produção em Inteligência Artificial (IA) concentra-se no apoio ao diagnóstico e à triagem, sobretudo a partir de imagens de lesões cutâneas, exames laboratoriais e questionários (Fernandes *et al.*, 2024; Barbieri *et al.*, 2022; Simões *et al.*, 2025). Na literatura consultada para este trabalho, não foram identificados sistemas baseados em RAG voltados ao apoio informacional sobre a doença, em língua portuguesa e ancorados em documentos oficiais brasileiros.
+No caso da hanseníase, a produção em Inteligência Artificial (IA) concentra-se no apoio ao diagnóstico e à triagem, sobretudo a partir de imagens de lesões cutâneas, exames laboratoriais e questionários (Fernandes *et al.*, 2024; Barbieri *et al.*, 2022; Simões *et al.*, 2025). Até onde se tem conhecimento, não foram identificados sistemas baseados em RAG voltados ao apoio informacional sobre a doença, em língua portuguesa e ancorados em documentos oficiais brasileiros.
 
-Este trabalho desenvolve o NexoHansen (nome provisório), um sistema de apoio informacional à decisão clínica em hanseníase baseado em RAG. O sistema recupera trechos de uma base de conhecimento curada, redige respostas restritas a esses trechos com indicação das fontes, recusa situações que exigem avaliação presencial, como pedidos de diagnóstico definitivo ou de prescrição, e registra cada consulta para auditoria. Ele não substitui o julgamento clínico e não foi validado para uso assistencial: nesta pesquisa, é o artefato por meio do qual se investiga como uma arquitetura RAG pode ser projetada para esse domínio e como suas respostas são avaliadas em comparação com as de um modelo de linguagem sem recuperação.
+Este trabalho desenvolve o NexoHansen, um sistema de apoio informacional à decisão clínica em hanseníase baseado em RAG. O sistema recupera trechos de uma base de conhecimento curada, redige respostas restritas a esses trechos com indicação das fontes, recusa situações que exigem avaliação presencial, como pedidos de diagnóstico definitivo ou de prescrição, e registra cada consulta para auditoria. Ele não substitui o julgamento clínico e não foi validado para uso assistencial: nesta pesquisa, é o artefato por meio do qual se investiga como uma arquitetura RAG pode ser projetada para esse domínio e como suas respostas são avaliadas em comparação com as de um modelo de linguagem sem recuperação.
 
 A pesquisa é orientada pela seguinte questão: como um sistema baseado em Geração Aumentada por Recuperação, com base de conhecimento curada, indicação de fontes e regras explícitas de segurança, pode ser projetado para o apoio informacional em hanseníase, e como as respostas que ele produz são avaliadas por participantes em comparação com respostas de um modelo de linguagem sem recuperação? Para tratá-la, a questão foi desdobrada em três questões específicas:
 
@@ -307,7 +298,7 @@ a) construir uma base de conhecimento sobre hanseníase organizada em trechos co
 
 b) projetar e implementar um *pipeline* RAG com recuperação híbrida, regras explícitas de segurança, geração com indicação das fontes e registro das consultas;
 
-c) desenvolver uma interface web para consulta ao sistema e para inspeção da recuperação, da base de conhecimento e da avaliação técnica;
+c) desenvolver uma interface *web* para consulta ao sistema e para inspeção da recuperação, da base de conhecimento e da avaliação técnica;
 
 d) avaliar tecnicamente o mecanismo de recuperação com um conjunto de perguntas de referência, identificando limitações da configuração adotada;
 
@@ -315,11 +306,11 @@ e) planejar e conduzir uma avaliação comparativa, com participantes, entre res
 
 f) identificar as limitações do sistema e da avaliação em relação ao domínio clínico da hanseníase.
 
-O Quadro 2, no Capítulo 3, relaciona cada objetivo às etapas metodológicas e indica sua situação nesta versão do trabalho.
+O Quadro 2, no Capítulo 3, relaciona cada objetivo às etapas metodológicas e às seções em que é tratado.
 
 ## 1.2 JUSTIFICATIVA
 
-Como o diagnóstico da hanseníase pode ser confirmado, na maioria dos casos, na própria APS (Ministério da Saúde, 2022), a qualidade da informação técnica disponível para as equipes generalistas influencia a capacidade de reconhecer a doença, classificar os casos e identificar situações que exigem encaminhamento. Ferramentas que facilitem o acesso a orientações oficiais, com indicação clara de sua origem, têm, portanto, relevância potencial para uma doença que afeta de forma desproporcional populações em situação de vulnerabilidade (World Health Organization, 2020a; Ministério da Saúde, 2026).
+Como o diagnóstico da hanseníase pode ser confirmado, na maioria dos casos, na própria APS (Brasil, 2022b), a qualidade da informação técnica disponível para as equipes generalistas influencia a capacidade de reconhecer a doença, classificar os casos e identificar situações que exigem encaminhamento. Ferramentas que facilitem o acesso a orientações oficiais, com indicação clara de sua origem, têm, portanto, relevância potencial para uma doença que afeta de forma desproporcional populações em situação de vulnerabilidade (World Health Organization, 2020a; Brasil, 2026).
 
 Do ponto de vista técnico, três características do problema justificam investigar uma arquitetura RAG. A primeira é a necessidade de fundamentação: em saúde, uma resposta só é útil se puder ser conferida, o que exige recuperar trechos de uma base curada e indicar de quais deles a resposta foi derivada (Lewis *et al.*, 2020; Zakka *et al.*, 2024). A segunda é a necessidade de tratar situações de risco, como pedidos de diagnóstico definitivo ou de prescrição e perguntas que envolvem gestantes, crianças ou sinais de urgência, com recusa explicada e orientação para avaliação presencial, e não com respostas geradas livremente. A terceira é a dependência da recuperação: as decisões sobre o corpus, o modelo de *embedding* e o método de recuperação influenciam fortemente o desempenho de sistemas RAG em medicina (Xiong *et al.*, 2024; Amugongo *et al.*, 2025), o que justifica examiná-las em um domínio específico e em língua portuguesa.
 
@@ -329,7 +320,7 @@ Cabe distinguir a relevância potencial da proposta das conclusões que ela pode
 
 ## 1.3 ORGANIZAÇÃO DO TRABALHO
 
-Além desta introdução, o trabalho tem seis capítulos. O Capítulo 2 apresenta o referencial teórico; o Capítulo 3, a metodologia, com a avaliação técnica, a avaliação comparativa planejada e a avaliação experimental com perguntas curadas; o Capítulo 4, o sistema desenvolvido; o Capítulo 5, os resultados disponíveis, inclusive os preliminares da avaliação experimental; o Capítulo 6, a discussão e as limitações; e o Capítulo 7, as considerações finais. Os apêndices reúnem os conjuntos de perguntas, os resultados por pergunta e os instrumentos das avaliações.
+Além desta introdução, o trabalho tem cinco capítulos. O Capítulo 2 apresenta o referencial teórico; o Capítulo 3, a metodologia, com a avaliação técnica, a avaliação comparativa planejada e a avaliação experimental com perguntas curadas; o Capítulo 4, o sistema desenvolvido, primeiro resultado da pesquisa; o Capítulo 5, os resultados das avaliações, inclusive os preliminares da avaliação experimental, e sua discussão, com as limitações; e o Capítulo 6, as considerações finais. Os apêndices reúnem os conjuntos de perguntas, os resultados por pergunta, o protocolo previsto da avaliação comparativa e os instrumentos das avaliações.
 
 # 2 REFERENCIAL TEÓRICO
 
@@ -339,15 +330,15 @@ Este capítulo reúne os conceitos de que dependem o problema, o projeto do sist
 
 ### 2.1.1 Agente, transmissão e classificação
 
-A hanseníase é causada pelo *Mycobacterium leprae*, bacilo que acomete primariamente os nervos periféricos e a pele. A principal fonte de infecção são pessoas com a doença não tratada e alta carga bacilar, que eliminam o bacilo pelas vias aéreas superiores; a transmissão ocorre pelo contato direto pessoa a pessoa, facilitado pelo convívio de doentes não tratados com pessoas suscetíveis, e o período de incubação, estimado em cinco anos, em média, pode ultrapassar 20 anos (Ministério da Saúde, 2022).
+A hanseníase é causada pelo *Mycobacterium leprae*, bacilo que acomete primariamente os nervos periféricos e a pele. A principal fonte de infecção são pessoas com a doença não tratada e alta carga bacilar, que eliminam o bacilo pelas vias aéreas superiores; a transmissão ocorre pelo contato direto pessoa a pessoa, facilitado pelo convívio de doentes não tratados com pessoas suscetíveis, e o período de incubação, estimado em cinco anos, em média, pode ultrapassar 20 anos (Brasil, 2022b).
 
-A classificação operacional, que define o esquema terapêutico, considera o número de lesões cutâneas e a baciloscopia: o caso paucibacilar (PB) apresenta de uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa; o multibacilar (MB), mais de cinco lesões de pele e/ou baciloscopia positiva, e os casos que suscitem dúvida devem ser tratados como multibacilares (Ministério da Saúde, 2022). O comprometimento de nervos periféricos é um ponto de divergência entre as fontes oficiais: há consenso em classificar como MB os casos com mais de um nervo comprometido, mas, para um único nervo, a OMS recomenda a classificação multibacilar, enquanto a literatura brasileira o descreve na forma tuberculoide, reconhecida como paucibacilar (Ministério da Saúde, 2022). Para um sistema que consulta documentos das duas instituições, divergências desse tipo exigem que a resposta indique qual orientação se aplica à prática no Brasil (Seção 4.5.6).
+A classificação operacional, que define o esquema terapêutico, considera o número de lesões cutâneas e a baciloscopia: o caso paucibacilar (PB) apresenta de uma a cinco lesões cutâneas e baciloscopia obrigatoriamente negativa; o multibacilar (MB), mais de cinco lesões de pele e/ou baciloscopia positiva, e os casos que suscitem dúvida devem ser tratados como multibacilares (Brasil, 2022b). O comprometimento de nervos periféricos é um ponto de divergência entre as fontes oficiais: há consenso em classificar como MB os casos com mais de um nervo comprometido, mas, para um único nervo, a OMS recomenda a classificação multibacilar, enquanto a literatura brasileira o descreve na forma tuberculoide, reconhecida como paucibacilar (Brasil, 2022b). Para um sistema que consulta documentos das duas instituições, divergências desse tipo exigem que a resposta indique qual orientação se aplica à prática no Brasil (Seção 4.5.6).
 
 ### 2.1.2 Diagnóstico, tratamento e desafios na atenção primária
 
-O diagnóstico baseia-se no exame dermatoneurológico, com a identificação de lesões de pele com alteração de sensibilidade e do comprometimento de nervos periféricos (Ministério da Saúde, 2022). A baciloscopia é um exame complementar e, como é negativa por definição nos casos paucibacilares, um resultado negativo não afasta a doença. O Brasil foi o primeiro país a incorporar ao Sistema Único de Saúde (SUS) um teste rápido para detecção de anticorpos contra o *M. leprae*, indicado como apoio na avaliação de contatos (Ministério da Saúde, 2022).
+O diagnóstico baseia-se no exame dermatoneurológico, com a identificação de lesões de pele com alteração de sensibilidade e do comprometimento de nervos periféricos (Brasil, 2022b). A baciloscopia é um exame complementar e, como é negativa por definição nos casos paucibacilares, um resultado negativo não afasta a doença. O Brasil foi o primeiro país a incorporar ao Sistema Único de Saúde (SUS) um teste rápido para detecção de anticorpos contra o *M. leprae*, indicado como apoio na avaliação de contatos (Brasil, 2022b).
 
-O tratamento de primeira linha é a poliquimioterapia (PQT), associação de rifampicina, dapsona e clofazimina que leva à cura em até 98% dos casos tratados, com baixa taxa de recidiva. Na poliquimioterapia única (PQT-U), o tratamento é interrompido após seis doses mensais supervisionadas, administradas em até nove meses, nos casos PB, e após doze doses, em até dezoito meses, nos MB (Ministério da Saúde, 2022). As reações hansênicas, respostas imunológicas exacerbadas que podem surgir durante ou após o tratamento, são manejadas com medicamentos como os corticosteroides e a talidomida, com atenção a eventos adversos e a contraindicações: a talidomida, por exemplo, nunca deve ser indicada para mulheres grávidas, em virtude de seu efeito teratogênico (Ministério da Saúde, 2022).
+O tratamento de primeira linha é a poliquimioterapia (PQT), associação de rifampicina, dapsona e clofazimina que leva à cura em até 98% dos casos tratados, com baixa taxa de recidiva. Na poliquimioterapia única (PQT-U), o tratamento é interrompido após seis doses mensais supervisionadas, administradas em até nove meses, nos casos PB, e após doze doses, em até dezoito meses, nos MB (Brasil, 2022b). As reações hansênicas, respostas imunológicas exacerbadas que podem surgir durante ou após o tratamento, são manejadas com medicamentos como os corticosteroides e a talidomida, com atenção a eventos adversos e a contraindicações: a talidomida, por exemplo, nunca deve ser indicada para mulheres grávidas, em virtude de seu efeito teratogênico (Brasil, 2022b).
 
 Essas decisões dependem de orientações distribuídas ao longo de um protocolo de 152 páginas e de documentos da OMS que nem sempre coincidem com ele. Este trabalho parte da premissa, não medida nesta pesquisa, de que localizar a orientação pertinente a uma dúvida específica, e identificar o documento de onde ela provém, é uma necessidade de informação das equipes da APS; a avaliação com participantes (Seção 3.6) examina como as respostas do sistema são percebidas, e não a frequência ou a natureza das dúvidas no atendimento.
 
@@ -383,13 +374,13 @@ No PostgreSQL, a busca textual completa (FTS, do inglês *full-text search*) con
 
 Na recuperação densa, a consulta e os documentos são representados por vetores numéricos de dimensão fixa, os *embeddings*, produzidos por modelos treinados para que textos semanticamente próximos resultem em vetores próximos. A relevância é estimada por uma medida de similaridade entre vetores, como o produto interno, adotado por Karpukhin *et al.* (2020) na recuperação densa de passagens, ou a similaridade de cosseno, usada neste trabalho. Essa abordagem reduz o problema do vocabulário divergente, pois uma pergunta pode recuperar um trecho relevante mesmo sem compartilhar termos com ele.
 
-A qualidade da recuperação densa depende do modelo de *embedding*. Há modelos especializados em textos biomédicos, como o BioBERT, pré-treinado em textos científicos da área e utilizável como base de codificadores de recuperação (Lee *et al.*, 2020), e modelos de propósito geral oferecidos como serviço, como o `text-embedding-3-small`, que produz vetores de 1.536 dimensões (OpenAI, 2024). O idioma também pesa: Yang *et al.* (2026) observam que as ferramentas de recuperação do RAG médico se apoiam sobretudo em modelos centrados no inglês, e Arzideh *et al.* (2026), ao ajustar um modelo multilíngue com documentos clínicos de um hospital alemão, relatam ganho na recuperação em relação ao modelo de partida. Este trabalho adotou um modelo de propósito geral, sem ajuste, com documentos e perguntas em português; o efeito dessa escolha é discutido na Seção 6.2.
+A qualidade da recuperação densa depende do modelo de *embedding*. Há modelos especializados em textos biomédicos, como o BioBERT, pré-treinado em textos científicos da área e utilizável como base de codificadores de recuperação (Lee *et al.*, 2020), e modelos de propósito geral oferecidos como serviço, como o `text-embedding-3-small`, que produz vetores de 1.536 dimensões (OpenAI, 2024). O idioma também pesa: Yang *et al.* (2026) observam que as ferramentas de recuperação do RAG médico se apoiam sobretudo em modelos centrados no inglês, e Arzideh *et al.* (2026), ao ajustar um modelo multilíngue com documentos clínicos de um hospital alemão, relatam ganho na recuperação em relação ao modelo de partida. Este trabalho adotou um modelo de propósito geral, sem ajuste, com documentos e perguntas em português; o efeito dessa escolha é discutido na Seção 5.4.2.
 
 O pgvector, extensão de código aberto do PostgreSQL, acrescenta o tipo `vector`, operadores de distância, entre eles a de cosseno, e índices para busca aproximada, como IVFFlat e HNSW (Kane, 2026), o que permite manter dados relacionais, texto indexado e vetores em um único banco de dados.
 
 ### 2.4.3 Recuperação híbrida e reordenação
 
-Como as duas famílias de técnicas falham em situações diferentes, é comum combiná-las em uma recuperação híbrida. A combinação pode ser feita pela soma ponderada das pontuações de cada método, o que exige que elas estejam em escalas comparáveis, ou por métodos baseados apenas na posição dos documentos em cada lista, como a fusão por posição recíproca (RRF, do inglês *reciprocal rank fusion*), que dispensa a calibração das escalas (Cormack; Clarke; Büttcher, 2009). Essa diferença explica parte dos resultados da avaliação preliminar (Seção 5.2.1).
+Como as duas famílias de técnicas falham em situações diferentes, é comum combiná-las em uma recuperação híbrida. A combinação pode ser feita pela soma ponderada das pontuações de cada método, o que exige que elas estejam em escalas comparáveis, ou por métodos baseados apenas na posição dos documentos em cada lista, como a fusão por posição recíproca (RRF, do inglês *reciprocal rank fusion*), que dispensa a calibração das escalas (Cormack; Clarke; Büttcher, 2009). Essa diferença explica parte dos resultados da avaliação preliminar (Seção 5.1.1).
 
 A reordenação (*reranking*) reavalia um conjunto menor de candidatos com critérios mais informativos que os da recuperação inicial, por modelos que estimam a relevância de pares pergunta-trecho, como os baseados em BERT (Nogueira; Cho, 2019), ou por regras do domínio. A versão atual do sistema não a utiliza: a reordenação por regras da primeira versão foi substituída pela RRF, pelos motivos descritos na Seção 4.9.
 
@@ -431,7 +422,7 @@ Fernandes *et al.* (2024) conduziram uma revisão sistemática sobre ferramentas
 
 Os estudos com resultados quantitativos diferem pelo tipo de dado e pela etapa do cuidado a que se dirigem. No diagnóstico por imagem, Barbieri *et al.* (2022) desenvolveram o AI4Leprosy, que combina imagens de lesões cutâneas e dados clínicos e demográficos de 222 pacientes de um centro de referência brasileiro, e apontam a necessidade de validação em populações com outros tipos de pele e com imagens de *smartphones*. Na triagem, Simões *et al.* (2025) aplicaram aprendizado de máquina ao Questionário de Suspeição de Hanseníase. Entre contatos domiciliares, Gama *et al.* (2019) combinaram análises moleculares e sorológicas com aprendizado de máquina para predizer o adoecimento, abordagem que depende de infraestrutura laboratorial. Os três trabalhos produzem uma classificação a partir de dados do paciente, e seu desempenho é medido por acurácia, sensibilidade e especificidade (Quadro 1). Mais próximo do apoio ao profissional, o Health Guardian, de Andrade *et al.* (2024), é um aplicativo colaborativo, em fase de prototipação, que aplica IA ao apoio à decisão sobre o tratamento de DTN, entre elas a hanseníase.
 
-Esses trabalhos convergem para tarefas de triagem, classificação e apoio ao diagnóstico, com dados de imagem, questionários ou exames. Na literatura consultada, não foram identificados sistemas voltados a responder perguntas sobre a doença com base em documentos oficiais, isto é, ao apoio informacional em linguagem natural. Essa tarefa exige outro tipo de avaliação: não há um rótulo correto a prever, e sim uma resposta em texto cuja correção, completude e fundamentação precisam ser julgadas (Seção 2.6).
+Esses trabalhos convergem para tarefas de triagem, classificação e apoio ao diagnóstico, com dados de imagem, questionários ou exames. Até onde se tem conhecimento, não foram identificados sistemas voltados a responder perguntas sobre a doença com base em documentos oficiais, isto é, ao apoio informacional em linguagem natural. Essa tarefa exige outro tipo de avaliação: não há um rótulo correto a prever, e sim uma resposta em texto cuja correção, completude e fundamentação precisam ser julgadas (Seção 2.6).
 
 ### 2.7.2 RAG em medicina
 
@@ -459,11 +450,11 @@ O Quadro 1 compara os trabalhos mais diretamente relacionados a esta pesquisa qu
 
 Fonte: Elaboração própria (2026).
 
-Em relação a esses trabalhos, o presente estudo diferencia-se em quatro aspectos: dirige-se ao apoio informacional em linguagem natural, e não à triagem, à classificação ou ao diagnóstico; opera em português, com documentos oficiais brasileiros e da OMS; trata a segurança como requisito de arquitetura, com regras de recusa implementadas em código, sinalização de risco e registro de cada consulta; e avalia respostas abertas, e não de múltipla escolha, por meio de perguntas curadas e de uma comparação planejada com participantes. Em comparação com Xiong *et al.* (2024) e Zakka *et al.* (2024), a base é restrita a cinco documentos, e a participação de especialistas limita-se, nesta versão, à revisão de uma amostra das respostas (Seção 3.8.4), limitação discutida no Capítulo 6.
+Em relação a esses trabalhos, o presente estudo diferencia-se em quatro aspectos: dirige-se ao apoio informacional em linguagem natural, e não à triagem, à classificação ou ao diagnóstico; opera em português, com documentos oficiais brasileiros e da OMS; trata a segurança como requisito de arquitetura, com regras de recusa implementadas em código, sinalização de risco e registro de cada consulta; e avalia respostas abertas, e não de múltipla escolha, por meio de perguntas curadas e de uma comparação planejada com participantes. Em comparação com Xiong *et al.* (2024) e Zakka *et al.* (2024), a base é restrita a cinco documentos, e a participação de especialistas limita-se, nesta versão, à revisão de uma amostra das respostas (Seção 3.8.4), limitação discutida na Seção 5.4.4.
 
 # 3 METODOLOGIA
 
-Este capítulo descreve os procedimentos da pesquisa: sua caracterização e suas etapas (Seções 3.1 e 3.2), a construção da base de conhecimento e o desenvolvimento do sistema (Seções 3.3 e 3.4), a avaliação técnica do *pipeline*, que incluiu a escolha do modelo gerador (Seção 3.5), a avaliação comparativa com participantes, ainda não realizada (Seção 3.6), as ameaças à validade dessas avaliações (Seção 3.7) e a avaliação experimental com 50 perguntas curadas, cujas ameaças à validade são discutidas na Seção 6.5 (Seção 3.8). Os procedimentos executados são distinguidos dos planejados, e as decisões pendentes são indicadas nos pontos em que deverão ser registradas.
+Este capítulo descreve os procedimentos da pesquisa: sua caracterização e suas etapas (Seções 3.1 e 3.2), a construção da base de conhecimento e o desenvolvimento do sistema (Seções 3.3 e 3.4), a avaliação técnica do *pipeline*, que incluiu a escolha do modelo gerador (Seção 3.5), a avaliação comparativa com participantes, ainda não realizada (Seção 3.6), as ameaças à validade dessas avaliações (Seção 3.7) e a avaliação experimental com 50 perguntas curadas (Seção 3.8), cujas ameaças à validade são discutidas na Seção 5.4.5. Os procedimentos executados são distinguidos dos planejados, e as decisões pendentes são indicadas nos pontos em que deverão ser registradas.
 
 ## 3.1 CARACTERIZAÇÃO DA PESQUISA
 
@@ -479,22 +470,22 @@ A Figura 1 apresenta as etapas da pesquisa, adaptadas do processo de Peffers *et
 
 ![Etapas da pesquisa e situação de cada uma](figuras/fig-etapas.png)
 
-Fonte: Elaborado pelo autor com base em Peffers *et al.* (2007).
+Fonte: Elaboração própria (2026), com base em Peffers *et al.* (2007).
 
-As etapas 1 e 2 correspondem ao levantamento do problema (Capítulos 1 e 2) e à sua conversão em requisitos (Seção 4.1); a etapa 3, à construção da base de conhecimento, primeiro como um conjunto inicial de desenvolvimento e depois a partir de documentos oficiais, e à implementação do sistema (Seções 3.3 e 3.4); a etapa 4, à demonstração por meio da interface web; a etapa 5, às avaliações descritas nas Seções 3.5, 3.6 e 3.8; e a etapa 6, a esta monografia. Como prevê o processo de Peffers *et al.* (2007), a avaliação motivou retornos às etapas anteriores: a avaliação técnica preliminar levou à construção da base a partir de documentos oficiais, à reformulação da recuperação e à correção das regras de segurança (Seção 4.9), seguidas de nova avaliação técnica, que serviu também para escolher o modelo de linguagem (Seção 5.2); e o planejamento da avaliação comparativa levou à inclusão da autenticação dos usuários e do registro da avaliação das respostas (Seção 4.6).
+As etapas 1 e 2 correspondem ao levantamento do problema (Capítulos 1 e 2) e à sua conversão em requisitos (Seção 4.1); a etapa 3, à construção da base de conhecimento, primeiro como um conjunto inicial de desenvolvimento e depois a partir de documentos oficiais, e à implementação do sistema (Seções 3.3 e 3.4); a etapa 4, à demonstração por meio da interface *web*; a etapa 5, às avaliações descritas nas Seções 3.5, 3.6 e 3.8; e a etapa 6, a esta monografia. Como prevê o processo de Peffers *et al.* (2007), a avaliação motivou retornos às etapas anteriores: a avaliação técnica preliminar levou à construção da base a partir de documentos oficiais, à reformulação da recuperação e à correção das regras de segurança (Seção 4.9), seguidas de nova avaliação técnica, que serviu também para escolher o modelo de linguagem (Seção 5.1); e o planejamento da avaliação comparativa levou à inclusão da autenticação dos usuários e do registro da avaliação das respostas (Seção 4.6).
 
-O Quadro 2 relaciona os objetivos específicos às etapas e indica a situação de cada um.
+O Quadro 2 relaciona cada objetivo específico às etapas da pesquisa (Figura 1) e às seções em que é tratado.
 
-**Quadro 2 – Correspondência entre objetivos específicos, etapas e situação atual**
+**Quadro 2 – Correspondência entre objetivos específicos, etapas da pesquisa e seções do trabalho**
 
-| Objetivo específico | Etapa | Situação nesta versão |
+| Objetivo específico | Etapa da pesquisa (Figura 1) | Seções |
 |---|---|---|
-| a) Base de conhecimento | 3 | Construída a partir de cinco documentos oficiais do Ministério da Saúde e da OMS, em 328 trechos com documento, seção e página; revisão do conteúdo por profissional de saúde pendente |
-| b) *Pipeline* RAG | 3 | Reformulado após a avaliação preliminar, verificado por testes automatizados e avaliado com o banco de dados de produção e *embeddings* semânticos |
-| c) Interface web | 3 e 4 | Implementada como protótipo, com acesso por login, avaliação das respostas de 0 a 10 e fontes apresentadas como referências documentais; a tela de comparação ainda usa uma simulação local no lugar do Cenário B |
-| d) Avaliação técnica | 5 | Executada com a base oficial e seis configurações de modelo gerador, com métricas automáticas; avaliação experimental com 50 perguntas curadas executada (Seção 3.8), com resultados preliminares que aguardam a revisão por especialista |
-| e) Avaliação comparativa | 5 | Planejada; protocolo, verificação ética e coleta pendentes |
-| f) Limitações | 5 e 6 | Limitações técnicas identificadas; limitações da avaliação comparativa pendentes |
+| a) Base de conhecimento | 3. Projeto e desenvolvimento | 3.3 e 4.4 |
+| b) *Pipeline* RAG | 3. Projeto e desenvolvimento | 4.1 a 4.5 e 4.8 |
+| c) Interface *web* | 3. Projeto e desenvolvimento; 4. Demonstração | 4.6 e 4.7 |
+| d) Avaliação técnica | 5. Avaliação | 3.5, 3.8, 5.1 e 5.3 |
+| e) Avaliação comparativa | 5. Avaliação | 3.6, 5.2 e Apêndice E |
+| f) Limitações | 5. Avaliação; 6. Comunicação | 5.4.4 e 5.4.5 |
 
 Fonte: Elaboração própria (2026).
 
@@ -508,7 +499,7 @@ Essa base cumpriu função de engenharia: exercitar a ingestão, a recuperação
 
 ### 3.3.2 Curadoria a partir de documentos oficiais
 
-A base utilizada a partir de outubro de 2026 tem o PCDT da Hanseníase (Ministério da Saúde, 2022) como fonte primária. Os documentos incluídos atendem aos seguintes critérios: publicação do Ministério da Saúde ou da OMS; situação vigente na data da coleta; conteúdo técnico sobre diagnóstico, tratamento, reações hansênicas, prevenção de incapacidades, vigilância ou estratégia de enfrentamento da doença; e arquivo obtido em portal oficial ou, quando o endereço oficial estava indisponível, cópia cuja ficha catalográfica identifica a edição. Priorizaram-se versões em português, e o documento da OMS sobre reações e prevenção de incapacidades foi incluído no original, em inglês. Foram excluídos as referências bibliográficas, os apêndices metodológicos, os formulários e os anexos sem conteúdo técnico aplicável às perguntas, como portarias, tabelas de avaliação da evidência e modelos de cartão do paciente. O Quadro 3 apresenta os documentos incluídos (Ministério da Saúde, 2022, 2024; Organização Mundial da Saúde, 2019, 2021; World Health Organization, 2020b).
+A base utilizada a partir de outubro de 2026 tem o PCDT da Hanseníase (Brasil, 2022b) como fonte primária. Os documentos incluídos atendem aos seguintes critérios: publicação do Ministério da Saúde ou da OMS; situação vigente na data da coleta; conteúdo técnico sobre diagnóstico, tratamento, reações hansênicas, prevenção de incapacidades, vigilância ou estratégia de enfrentamento da doença; e arquivo obtido em portal oficial ou, quando o endereço oficial estava indisponível, cópia cuja ficha catalográfica identifica a edição. Priorizaram-se versões em português, e o documento da OMS sobre reações e prevenção de incapacidades foi incluído no original, em inglês. Foram excluídos as referências bibliográficas, os apêndices metodológicos, os formulários e os anexos sem conteúdo técnico aplicável às perguntas, como portarias, tabelas de avaliação da evidência e modelos de cartão do paciente. O Quadro 3 apresenta os documentos incluídos (Brasil, 2022b, 2024; Organização Mundial da Saúde, 2019, 2021; World Health Organization, 2020b).
 
 **Quadro 3 – Documentos que compõem a base de conhecimento**
 
@@ -531,13 +522,13 @@ A conferência do processamento foi feita pelo desenvolvedor, com a revisão man
 
 ## 3.4 DESENVOLVIMENTO DO SISTEMA
 
-O desenvolvimento ocorreu de forma incremental entre junho e outubro de 2026. A primeira versão implementou o servidor, com a base inicial, o *pipeline* de consulta e os testes automatizados; as seguintes acrescentaram a interface web, corrigiram falhas observadas na execução contra o banco de dados real e, em outubro, incluíram a autenticação dos usuários, o registro da avaliação das respostas, a base de documentos oficiais e a reformulação da recuperação e das regras de segurança (Seção 4.9). Os requisitos derivam do problema e da política de segurança clínica documentada no projeto e são apresentados na Seção 4.1.
+O desenvolvimento ocorreu de forma incremental entre junho e outubro de 2026. A primeira versão implementou o servidor, com a base inicial, o *pipeline* de consulta e os testes automatizados; as seguintes acrescentaram a interface *web*, corrigiram falhas observadas na execução contra o banco de dados real e, em outubro, incluíram a autenticação dos usuários, o registro da avaliação das respostas, a base de documentos oficiais e a reformulação da recuperação e das regras de segurança (Seção 4.9). Os requisitos derivam do problema e da política de segurança clínica documentada no projeto e são apresentados na Seção 4.1.
 
-O servidor foi implementado em Node.js com TypeScript, com o *framework* Express para a interface de programação de aplicações (API, do inglês *application programming interface*) HTTP, o Prisma como ferramenta de mapeamento objeto-relacional (ORM), o PostgreSQL 16 com a extensão pgvector como banco de dados, a biblioteca Zod para a validação de dados e configurações e o Vitest para os testes automatizados. A interface web foi implementada em React com TypeScript, utilizando Vite, Tailwind CSS, TanStack Query e React Router. O uso de TypeScript nas duas camadas buscou manter contratos explícitos entre elas, e a escolha do PostgreSQL com pgvector, concentrar dados relacionais, texto indexado e vetores em um único banco de dados, sem serviço vetorial separado. A verificação combinou análise estática, verificação de tipos, compilação e testes automatizados, descritos na Seção 4.8.
+O servidor foi implementado em Node.js com TypeScript, com o *framework* Express para a interface de programação de aplicações (API, do inglês *application programming interface*) HTTP, o Prisma como ferramenta de mapeamento objeto-relacional (ORM), o PostgreSQL 16 com a extensão pgvector como banco de dados, a biblioteca Zod para a validação de dados e configurações e o Vitest para os testes automatizados. A interface *web* foi implementada em React com TypeScript, utilizando Vite, Tailwind CSS, TanStack Query e React Router. O uso de TypeScript nas duas camadas buscou manter contratos explícitos entre elas, e a escolha do PostgreSQL com pgvector, concentrar dados relacionais, texto indexado e vetores em um único banco de dados, sem serviço vetorial separado. A verificação combinou análise estática, verificação de tipos, compilação e testes automatizados, descritos na Seção 4.8.
 
 ## 3.5 AVALIAÇÃO TÉCNICA DO *PIPELINE*
 
-A avaliação técnica verifica se o mecanismo de recuperação localiza, para um conjunto de perguntas de referência, os trechos que contêm a resposta (QP2) e, de forma complementar, se as respostas geradas citam esses trechos e contêm as informações esperadas. A execução preliminar, de setembro de 2026, usou a base inicial e um conjunto de 25 perguntas elaborado com ela (Apêndice A) e media apenas a presença de um trecho ideal entre as fontes da resposta e o número de recusas (Seção 5.2.1). Com a substituição da base, esse conjunto perdeu a referência e foi substituído pelo descrito a seguir, usado em outubro de 2026.
+A avaliação técnica verifica se o mecanismo de recuperação localiza, para um conjunto de perguntas de referência, os trechos que contêm a resposta (QP2) e, de forma complementar, se as respostas geradas citam esses trechos e contêm as informações esperadas. A execução preliminar, de setembro de 2026, usou a base inicial e um conjunto de 25 perguntas elaborado com ela (Apêndice A) e media apenas a presença de um trecho ideal entre as fontes da resposta e o número de recusas (Seção 5.1.1). Com a substituição da base, esse conjunto perdeu a referência e foi substituído pelo descrito a seguir, usado em outubro de 2026.
 
 ### 3.5.1 Conjunto de referência e métricas
 
@@ -592,37 +583,7 @@ Esta seção apresenta a estrutura da avaliação comparativa, que ainda não fo
 
 A avaliação comparativa responde à QP3, investigando como participantes avaliam respostas a perguntas sobre hanseníase produzidas em dois cenários: no Cenário A, pelo NexoHansen, com recuperação de trechos da base de conhecimento, indicação das fontes e aplicação das regras de segurança; no Cenário B, por um modelo de linguagem sem acesso ao mecanismo de recuperação do Cenário A. A avaliação mede a percepção dos participantes e não se destina a demonstrar eficácia clínica, segurança assistencial ou superioridade em relação a profissionais de saúde.
 
-Para que a comparação seja interpretável, a diferença entre os cenários deve residir, tanto quanto possível, no uso da recuperação e dos mecanismos associados, e não em fatores alheios ao objeto do estudo. Para isso, os seguintes elementos precisam ser definidos antes da coleta:
-
-a) mecanismo do Cenário B: a tela de comparação atual produz a resposta sem RAG por uma simulação no navegador, sem consultar nenhum modelo de linguagem (Seção 4.7); essa simulação não pode ser usada como Cenário B e deverá ser substituída por chamadas reais a um modelo de linguagem, com registro das configurações;
-
-b) modelo do Cenário B: o mesmo modelo gerador do Cenário A, sem recuperação, isola o efeito da recuperação e da camada de segurança, enquanto um assistente de propósito geral aproxima a comparação do uso cotidiano dessas ferramentas, com menor controle sobre as diferenças entre os cenários;
-
-c) instruções ao modelo do Cenário B: conteúdo do *prompt*, idioma, extensão esperada das respostas e eventual menção ao perfil de profissional de saúde;
-
-d) apresentação das respostas: fontes e nota de segurança podem revelar o Cenário A ao participante, mas a indicação de fontes é parte do que se pretende avaliar, o que exige decidir entre um formato neutro e o formato de cada sistema;
-
-e) cegamento, ordem e desenho: se os participantes saberão qual cenário produziu cada resposta; como será definida a ordem de exposição, por exemplo por alternância ou sorteio; e se cada participante avaliará respostas dos dois cenários para as mesmas perguntas ou se cada cenário será avaliado por grupos distintos;
-
-f) correções prévias no Cenário A: os acionamentos indevidos das regras de segurança e da classificação de intenção identificados na avaliação preliminar foram corrigidos (Seção 4.9) e são verificados pelas perguntas de regressão do conjunto de referência; outras falhas observadas antes da coleta deverão ser corrigidas ou controladas na seleção das perguntas.
-
-[PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: decisões adotadas para cada item acima, com justificativa.] O Quadro 6 apresenta os parâmetros que deverão ser registrados para cada cenário, de modo a permitir a reprodução das condições.
-
-**Quadro 6 – Parâmetros a registrar para cada cenário de avaliação**
-
-| Parâmetro | Cenário A (com RAG) | Cenário B (sem RAG) |
-|---|---|---|
-| Versão do sistema (*commit* do repositório) | [PREENCHER] | [PREENCHER] |
-| Modelo de linguagem e versão | [PREENCHER] (padrão atual: `gpt-6-luna`) | [PREENCHER] |
-| Temperatura e demais parâmetros de geração | [PREENCHER] (padrão atual: temperatura 0,1, sem raciocínio) | [PREENCHER] |
-| *Prompt* de sistema | *Prompt* clínico do sistema (Seção 4.5.6) | [PREENCHER] |
-| Modelo de *embedding* | [PREENCHER] (padrão atual: `text-embedding-3-small`) | Não se aplica |
-| Versão da base de conhecimento | [PREENCHER] (atual: processada em 23 de outubro de 2026, com 328 trechos) | Não se aplica |
-| Parâmetros de recuperação (*top-K*, *top-N* e similaridade mínima) | [PREENCHER] (padrão atual: 20, 8 e 0,25) | Não se aplica |
-| Regras de segurança | Ativas (Seção 4.5.5) | [DEFINIR: ausentes ou equivalentes] |
-| Data e ambiente de geração das respostas | [PREENCHER] | [PREENCHER] |
-
-Fonte: Elaboração própria (2026).
+Para que a comparação seja interpretável, a diferença entre os cenários deve residir, tanto quanto possível, no uso da recuperação e dos mecanismos associados, e não em fatores alheios ao objeto do estudo. Antes da coleta, precisam ser definidos o mecanismo e o modelo do Cenário B, que não pode ser a simulação da tela de comparação atual (Seção 4.7), as instruções a esse modelo, a forma de apresentação das respostas, o cegamento, a ordem de exposição e o desenho, bem como eventuais correções no Cenário A. Essas decisões, com as alternativas consideradas, e os parâmetros a registrar para cada cenário (Quadro 13) estão no Apêndice E.
 
 ### 3.6.2 Participantes, perguntas e instrumento
 
@@ -632,30 +593,15 @@ As perguntas devem incluir situações em que se espera resposta fundamentada e 
 
 As respostas dos dois cenários deverão ser geradas antes da coleta, armazenadas e apresentadas a todos os participantes na mesma forma, pois modelos de linguagem podem responder de modo diferente à mesma pergunta. O componente de avaliação da interface (Seção 4.6) avalia apenas respostas do Cenário A geradas no momento da consulta e precisaria ser adaptado para apresentar respostas previamente geradas dos dois cenários. <mark>[PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: meio de aplicação, como formulário ou interface do próprio sistema; formato de apresentação das respostas; ordem de exposição; instruções fornecidas aos participantes; tempo estimado da sessão.]</mark>
 
-O instrumento deverá definir as dimensões avaliadas, a escala de resposta e os campos para comentários. As dimensões candidatas, derivadas da literatura discutida na Seção 2.6, estão no Quadro 7, e a estrutura prevista do instrumento, no Apêndice E. <mark>[PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: dimensões adotadas, com a definição operacional de cada uma; escala de resposta; questões abertas; validação prévia do instrumento, por exemplo em teste piloto.]</mark> A nota global de 0 a 10 que o sistema já registra para cada resposta (Seção 4.6.2) não substitui a avaliação por dimensões, mas pode compor o instrumento como avaliação geral de cada resposta. <mark>[DEFINIR COM O ORIENTADOR: uso da nota global de 0 a 10 registrada pelo sistema no instrumento de avaliação.]</mark>
-
-**Quadro 7 – Dimensões candidatas para o instrumento de avaliação**
-
-| Dimensão candidata | Pergunta orientadora | Referência |
-|---|---|---|
-| Correção factual | A resposta está de acordo com as orientações técnicas vigentes? | Singhal *et al.* (2023); Zakka *et al.* (2024) |
-| Completude | A resposta contempla os aspectos necessários à pergunta? | Zakka *et al.* (2024); Yang *et al.* (2026) |
-| Relevância | A resposta trata do que foi perguntado? | Es *et al.* (2024); Yang *et al.* (2026) |
-| Clareza | A resposta é compreensível para o público a que se destina? | Yang *et al.* (2026) |
-| Segurança e potencial de dano | A resposta poderia induzir conduta inadequada? | Singhal *et al.* (2023); Zakka *et al.* (2024) |
-| Adequação da recusa | Nos casos que exigem avaliação presencial, a recusa e a orientação são adequadas? | Política de segurança do sistema (Seção 4.5.5) |
-| Transparência das fontes | É possível identificar de onde vem a informação? | Lewis *et al.* (2020); Zakka *et al.* (2024) |
-| Confiança e utilidade percebidas | O participante confiaria na resposta e a consideraria útil? | [DEFINIR: referência a localizar, caso a dimensão seja adotada] |
-
-Fonte: Elaboração própria (2026), com base nas referências indicadas.
+O instrumento deverá definir as dimensões avaliadas, a escala de resposta e os campos para comentários; as dimensões candidatas, derivadas da literatura discutida na Seção 2.6, e a estrutura prevista do instrumento estão no Apêndice E. <mark>[PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: dimensões adotadas, com a definição operacional de cada uma; escala de resposta; questões abertas; validação prévia do instrumento, por exemplo em teste piloto.]</mark> A nota global de 0 a 10 que o sistema já registra para cada resposta (Seção 4.6.2) não substitui a avaliação por dimensões, mas pode compor o instrumento como avaliação geral de cada resposta. <mark>[DEFINIR COM O ORIENTADOR: uso da nota global de 0 a 10 registrada pelo sistema no instrumento de avaliação.]</mark>
 
 ### 3.6.3 Coleta, análise e aspectos éticos
 
-Cada participante deverá receber um código não identificável, e as avaliações deverão ser registradas em formato estruturado, com uma linha por participante, pergunta e cenário, vinculadas às condições do Quadro 6 e armazenadas com acesso restrito ao pesquisador e ao orientador. Se o próprio sistema registrar as avaliações, os nomes de usuário deverão ser códigos, sem nome, matrícula ou endereço de *e-mail*, e a correspondência entre código e pessoa, se necessária, deverá ser mantida fora do sistema. <mark>[PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: ferramenta de coleta; local e período de armazenamento; procedimento de exportação e de verificação de consistência; tratamento de respostas incompletas.]</mark>
+Cada participante deverá receber um código não identificável, e as avaliações deverão ser registradas em formato estruturado, com uma linha por participante, pergunta e cenário, vinculadas às condições do Quadro 13 e armazenadas com acesso restrito ao pesquisador e ao orientador. Se o próprio sistema registrar as avaliações, os nomes de usuário deverão ser códigos, sem nome, matrícula ou endereço de *e-mail*, e a correspondência entre código e pessoa, se necessária, deverá ser mantida fora do sistema. <mark>[PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: ferramenta de coleta; local e período de armazenamento; procedimento de exportação e de verificação de consistência; tratamento de respostas incompletas.]</mark>
 
 A análise deverá comparar os dois cenários por dimensão, com estatística descritiva adequada à escala adotada, examinar os resultados por pergunta e por tipo de situação, incluindo o tratamento dado às perguntas que exigem recusa, e analisar qualitativamente os comentários abertos. A escolha de testes estatísticos depende do desenho, da escala e do tamanho da amostra e deverá ser feita antes da coleta. <mark>[DEFINIR COM O ORIENTADOR: métodos estatísticos, nível de significância, se aplicável, e procedimento de análise qualitativa.]</mark>
 
-Por envolver participantes humanos e conteúdo relacionado à saúde, a avaliação deverá observar as Resoluções nº 466/2012 e nº 510/2016 do Conselho Nacional de Saúde (CNS) (Brasil, 2012; Brasil, 2016). A Resolução nº 510/2016 prevê, em seu artigo 1º, situações que não são registradas nem avaliadas pelo sistema formado pelos Comitês de Ética em Pesquisa (CEP) e pela Comissão Nacional de Ética em Pesquisa (CONEP), como a pesquisa de opinião pública com participantes não identificados; a CONEP esclarece, porém, que essa dispensa se aplica apenas quando todos os procedimentos do protocolo se enquadram nessas hipóteses (Brasil, 2022). Como o protocolo não está definido, a necessidade de submissão ao CEP deverá ser verificada antes de qualquer coleta. <mark>[VERIFICAR COM O ORIENTADOR E O CEP INSTITUCIONAL: enquadramento ético do estudo e procedimentos necessários.]</mark>
+Por envolver participantes humanos e conteúdo relacionado à saúde, a avaliação deverá observar as Resoluções nº 466/2012 e nº 510/2016 do Conselho Nacional de Saúde (CNS) (Brasil, 2012; Brasil, 2016). A Resolução nº 510/2016 prevê, em seu artigo 1º, situações que não são registradas nem avaliadas pelo sistema formado pelos Comitês de Ética em Pesquisa (CEP) e pela Comissão Nacional de Ética em Pesquisa (CONEP), como a pesquisa de opinião pública com participantes não identificados; a CONEP esclarece, porém, que essa dispensa se aplica apenas quando todos os procedimentos do protocolo se enquadram nessas hipóteses (Brasil, 2022a). Como o protocolo não está definido, a necessidade de submissão ao CEP deverá ser verificada antes de qualquer coleta. <mark>[VERIFICAR COM O ORIENTADOR E O CEP INSTITUCIONAL: enquadramento ético do estudo e procedimentos necessários.]</mark>
 
 Independentemente do enquadramento, o estudo deverá adotar participação voluntária, com possibilidade de desistência a qualquer momento; registro de consentimento, por meio de Termo de Consentimento Livre e Esclarecido (TCLE) ou instrumento equivalente; coleta mínima de dados pessoais e apresentação apenas de resultados agregados; e tratamento dos dados conforme a LGPD (Brasil, 2018). As perguntas e respostas não devem conter dados de pacientes. Se os participantes usarem o sistema, deverão ser informados de que as consultas são registradas e vinculadas ao usuário, de que as perguntas são enviadas a um serviço externo de modelo de linguagem e de que o banco de dados está em servidores nos Estados Unidos (Seção 4.2), situação regida pelas regras de transferência internacional de dados da LGPD (Brasil, 2018).
 
@@ -704,13 +650,13 @@ A validação 3 consiste na revisão por especialista, <mark>[NOME DA PESQUISADO
 
 # 4 DESENVOLVIMENTO DO SISTEMA
 
-Este capítulo descreve o sistema desenvolvido, denominado provisoriamente NexoHansen, conforme implementado no repositório do projeto em outubro de 2026. Essa versão resulta da reformulação motivada pela avaliação técnica preliminar (Seção 5.2.1), e a Seção 4.9 resume as alterações em relação à versão então avaliada.
+Este capítulo descreve o sistema desenvolvido, o NexoHansen, conforme implementado no repositório do projeto em outubro de 2026. O sistema é o primeiro resultado da pesquisa: atende aos objetivos específicos a, b e c, com a ressalva de que o conteúdo da base não foi revisado por profissional de saúde, e foi publicado na plataforma Vercel, com o banco de dados no serviço Neon (Seção 4.2). Essa versão resulta da reformulação motivada pela avaliação técnica preliminar (Seção 5.1.1), e a Seção 4.9 resume as alterações em relação à versão então avaliada.
 
 ## 4.1 REQUISITOS E PRINCÍPIOS DE PROJETO
 
-Os requisitos do sistema foram derivados do problema descrito no Capítulo 1 e da política de segurança clínica documentada no projeto. O Quadro 8 relaciona os requisitos funcionais (RF) e não funcionais (RNF) aos mecanismos que os implementam.
+Os requisitos do sistema foram derivados do problema descrito no Capítulo 1 e da política de segurança clínica documentada no projeto. O Quadro 6 relaciona os requisitos funcionais (RF) e não funcionais (RNF) aos mecanismos que os implementam.
 
-**Quadro 8 – Requisitos do sistema e mecanismos de implementação**
+**Quadro 6 – Requisitos do sistema e mecanismos de implementação**
 
 | Requisito | Mecanismo implementado | Componente principal |
 |---|---|---|
@@ -723,11 +669,11 @@ Os requisitos do sistema foram derivados do problema descrito no Capítulo 1 e d
 | RF07. Incorporar documentos oficiais à base | Processamento dos PDFs (extração por página, limpeza, localização das seções e fragmentação), metadados bibliográficos e indexação incremental com histórico | *Scripts* da base de conhecimento; `KnowledgeService` |
 | RF08. Permitir a inspeção da recuperação, da base e da avaliação | Rotas de busca, listagem e avaliação e painel interno | Módulos `retrieval`, `chunks` e `evaluation` |
 | RF09. Registrar a avaliação dos usuários sobre as respostas | Nota inteira de 0 a 10 e comentário opcional, vinculados ao usuário, à conversa e à resposta, com uma avaliação por usuário e resposta | Módulo `feedback`; componente de avaliação da interface |
-| RF10. Restringir o uso do sistema a usuários cadastrados | Login por usuário e senha, sessão em *cookie* e exigência de sessão nas rotas `/api`, exceto as de autenticação | Módulo `auth` |
+| RF10. Restringir o uso do sistema a usuários cadastrados | *Login* por usuário e senha, sessão em *cookie* e exigência de sessão nas rotas `/api`, exceto as de autenticação | Módulo `auth` |
 | RNF01. Funcionar sem serviços externos | Provedor local de *embeddings*, análise local da pergunta e resposta extrativa | `DeterministicEmbeddingsProvider`, `QueryAnalyzerService`, `ChatService` |
 | RNF02. Validar configurações e entradas | Esquemas de validação para variáveis de ambiente e requisições; restrições no banco de dados | `env.ts`; esquemas Zod; migrações |
 | RNF03. Ser testável sem infraestrutura | Serviços com dependências injetadas e testes com dublês em memória | `services.ts`; testes do servidor |
-| RNF04. Proteger credenciais e sessões | Senhas com *hash* scrypt e sal aleatório; *token* de sessão guardado apenas como *hash*; *cookie* HttpOnly; limite de tentativas de login | Módulo `auth` |
+| RNF04. Proteger credenciais e sessões | Senhas com *hash* scrypt e sal aleatório; *token* de sessão guardado apenas como *hash*; *cookie* HttpOnly; limite de tentativas de *login* | Módulo `auth` |
 
 Fonte: Elaboração própria (2026), com base no código-fonte do sistema.
 
@@ -737,7 +683,7 @@ Os requisitos RF10 e RNF04 e a forma atual do RF09 foram incorporados depois da 
 
 ## 4.2 ARQUITETURA GERAL
 
-O sistema segue uma arquitetura cliente-servidor em camadas, representada na Figura 2. A interface web comunica-se com a API do servidor por requisições HTTP com dados em JSON. O servidor é uma aplicação Express organizada em módulos de domínio (base de conhecimento, trechos, *embeddings*, recuperação, segurança, consulta, avaliação técnica e avaliação das respostas pelos usuários, ou *feedback*), cujas dependências são conectadas em um único ponto de composição, e precedidos por um módulo de autenticação que trata do login e verifica a sessão em cada requisição. O acesso aos dados combina o Prisma, nas operações relacionais, com consultas SQL diretas nas que dependem do pgvector e da busca textual. O banco de dados é o PostgreSQL com pgvector, executado em contêiner Docker no desenvolvimento e em serviço gerenciado na publicação. A API da OpenAI é uma dependência opcional, usada, quando há chave de acesso configurada, para gerar *embeddings*, interpretar as perguntas e redigir as respostas.
+O sistema segue uma arquitetura cliente-servidor em camadas, representada na Figura 2. A interface *web* comunica-se com a API do servidor por requisições HTTP com dados em JSON. O servidor é uma aplicação Express organizada em módulos de domínio (base de conhecimento, trechos, *embeddings*, recuperação, segurança, consulta, avaliação técnica e avaliação das respostas pelos usuários, ou *feedback*), cujas dependências são conectadas em um único ponto de composição, e precedidos por um módulo de autenticação que trata do *login* e verifica a sessão em cada requisição. O acesso aos dados combina o Prisma, nas operações relacionais, com consultas SQL diretas nas que dependem do pgvector e da busca textual. O banco de dados é o PostgreSQL com pgvector, executado em contêiner Docker no desenvolvimento e em serviço gerenciado na publicação. A API da OpenAI é uma dependência opcional, usada, quando há chave de acesso configurada, para gerar *embeddings*, interpretar as perguntas e redigir as respostas.
 
 **Figura 2 – Arquitetura geral do sistema**
 
@@ -745,7 +691,7 @@ O sistema segue uma arquitetura cliente-servidor em camadas, representada na Fig
 
 Fonte: Elaboração própria (2026).
 
-A API expõe rotas de autenticação (login, *logout* e sessão atual), de ingestão e indexação da base, de listagem de documentos e trechos, de busca sem geração (`POST /api/retrieval/search`), de consulta (`POST /api/chat/ask`), de execução da avaliação técnica e de registro das avaliações dos usuários (`POST /api/feedback`). Com exceção das rotas de autenticação e de `GET /health`, que verifica a disponibilidade da API, do banco de dados e da extensão pgvector, todas exigem uma sessão de login válida (Seção 4.6.1).
+A API expõe rotas de autenticação (*login*, *logout* e sessão atual), de ingestão e indexação da base, de listagem de documentos e trechos, de busca sem geração (`POST /api/retrieval/search`), de consulta (`POST /api/chat/ask`), de execução da avaliação técnica e de registro das avaliações dos usuários (`POST /api/feedback`). Com exceção das rotas de autenticação e de `GET /health`, que verifica a disponibilidade da API, do banco de dados e da extensão pgvector, todas exigem uma sessão de *login* válida (Seção 4.6.1).
 
 A interface e a API foram publicadas em outubro de 2026 como dois projetos na plataforma Vercel, com o banco de dados PostgreSQL com pgvector no serviço gerenciado Neon, em servidores localizados nos Estados Unidos. A interface repassa as requisições `/api` à API pelo mesmo endereço, o que permite usar o *cookie* de sessão sem compartilhá-lo entre domínios, e cada alteração incorporada ao ramo principal do repositório é publicada automaticamente.
 
@@ -799,19 +745,19 @@ As listas são combinadas pela fusão por posição recíproca (RRF, do inglês 
 
 <p align="center">s<sub>RRF</sub>(d) = Σ<sub>i</sub> w<sub>i</sub> / (k + r<sub>i</sub>(d)) &nbsp;&nbsp;&nbsp; (1)</p>
 
-Na equação, r<sub>i</sub>(d) é a posição do trecho d na lista i, k é uma constante igual a 60, e w<sub>i</sub> é o peso da lista: 1 para cada lista vetorial e, para a lista textual, metade do número de listas vetoriais, com mínimo de 1, para que as várias reformulações da mesma pergunta não anulem a correspondência exata de termos técnicos. A fusão usa a posição dos trechos, e não suas pontuações, porque a similaridade de cosseno e a pontuação textual estão em escalas diferentes: a soma ponderada dessas pontuações, adotada na versão anterior, tornava o resultado dependente do provedor de *embeddings* (Seção 5.2.1).
+Na equação, r<sub>i</sub>(d) é a posição do trecho d na lista i, k é uma constante igual a 60, e w<sub>i</sub> é o peso da lista: 1 para cada lista vetorial e, para a lista textual, metade do número de listas vetoriais, com mínimo de 1, para que as várias reformulações da mesma pergunta não anulem a correspondência exata de termos técnicos. A fusão usa a posição dos trechos, e não suas pontuações, porque a similaridade de cosseno e a pontuação textual estão em escalas diferentes: a soma ponderada dessas pontuações, adotada na versão anterior, tornava o resultado dependente do provedor de *embeddings* (Seção 5.1.1).
 
 O sistema possui dois provedores de *embeddings*: com chave de acesso, o `text-embedding-3-small` da OpenAI (OpenAI, 2024); sem ela, um provedor determinístico local, que normaliza o texto, descarta palavras com até dois caracteres, mapeia cada palavra para uma das 1.536 posições do vetor por uma função de dispersão (*hash*) e normaliza o resultado. Esse provedor permite executar e testar o sistema sem serviços externos, mas não captura relações semânticas: sua similaridade reflete apenas a sobreposição de palavras.
 
 ### 4.5.4 Verificação de evidência
 
-Considera-se que há evidência quando o trecho mais similar a alguma das consultas atinge similaridade de cosseno de ao menos 0,25 com os *embeddings* da OpenAI, ou de 0,08 com o provedor determinístico, ou quando algum trecho obtém pontuação textual de ao menos 0,1. Sem evidência, o sistema executa uma segunda busca, mais ampla, apenas com as palavras de conteúdo da pergunta e as expansões do glossário, antes de concluir pela insuficiência. Com evidência, são selecionados como contexto os oito primeiros trechos da fusão (*top-N*) que tenham algum apoio vetorial ou textual; sem ela, nenhum trecho é selecionado, e a camada de segurança aciona a recusa por evidência insuficiente. Os limiares foram definidos como valores iniciais e não foram calibrados sistematicamente; na avaliação técnica, nenhuma pergunta com resposta na base foi recusada por evidência insuficiente (Seção 5.2.2).
+Considera-se que há evidência quando o trecho mais similar a alguma das consultas atinge similaridade de cosseno de ao menos 0,25 com os *embeddings* da OpenAI, ou de 0,08 com o provedor determinístico, ou quando algum trecho obtém pontuação textual de ao menos 0,1. Sem evidência, o sistema executa uma segunda busca, mais ampla, apenas com as palavras de conteúdo da pergunta e as expansões do glossário, antes de concluir pela insuficiência. Com evidência, são selecionados como contexto os oito primeiros trechos da fusão (*top-N*) que tenham algum apoio vetorial ou textual; sem ela, nenhum trecho é selecionado, e a camada de segurança aciona a recusa por evidência insuficiente. Os limiares foram definidos como valores iniciais e não foram calibrados sistematicamente; na avaliação técnica, nenhuma pergunta com resposta na base foi recusada por evidência insuficiente (Seção 5.1.2).
 
 ### 4.5.5 Camada de segurança
 
-A camada de segurança avalia a pergunta antes da geração, com as regras aplicadas na ordem apresentada no Quadro 9. A primeira regra satisfeita determina a recusa, cuja mensagem é fixa e acompanhada do aviso de que o sistema não substitui a avaliação presencial; as mensagens completas estão no Apêndice C. As regras reconhecem expressões por palavras inteiras, sem acentos, como na classificação de intenção.
+A camada de segurança avalia a pergunta antes da geração, com as regras aplicadas na ordem apresentada no Quadro 7. A primeira regra satisfeita determina a recusa, cuja mensagem é fixa e acompanhada do aviso de que o sistema não substitui a avaliação presencial; as mensagens completas estão no Apêndice C. As regras reconhecem expressões por palavras inteiras, sem acentos, como na classificação de intenção.
 
-**Quadro 9 – Regras da camada de segurança**
+**Quadro 7 – Regras da camada de segurança**
 
 | Ordem | Situação | Condição de acionamento | Perfil |
 |---|---|---|---|
@@ -830,7 +776,7 @@ As recusas são reservadas aos pedidos que exigem avaliação individual. Pergun
 
 Quando a pergunta não é recusada e há chave de acesso configurada, o sistema envia ao modelo de linguagem um *prompt* de sistema e um *prompt* de usuário. O *prompt* de sistema define o papel do assistente e três grupos de regras. As regras de fontes determinam que a resposta use somente os trechos fornecidos, cite o número do trecho após cada afirmação que ele sustenta, combine trechos de documentos diferentes quando necessário, não use conhecimento externo para fatos clínicos, declare com precisão o que não foi encontrado, apresente as posições do Ministério da Saúde e da OMS quando divergirem, informando que no Brasil a referência para a prática é o protocolo do Ministério da Saúde, e traduza fielmente os trechos em inglês. As regras de formato pedem que a resposta comece respondendo diretamente à pergunta e use listas, tabelas e subtítulos quando facilitarem a leitura. As regras de segurança clínica proíbem confirmar o diagnóstico de um caso, prescrever para um paciente específico e recomendar iniciar, suspender ou alterar tratamentos, admitem doses apenas como os esquemas padronizados descritos nos trechos e exigem destaque para a avaliação presencial nas situações de risco. O *prompt* de usuário informa o perfil do usuário, as mensagens recentes da conversa, a pergunta original e a interpretada, os cuidados identificados pela camada de segurança e os trechos selecionados, numerados e acompanhados do documento, do âmbito (diretriz brasileira ou recomendação internacional), do idioma, do caminho de seções e das páginas.
 
-O modelo padrão, configurável, é o `gpt-6-luna`, com o raciocínio desligado e temperatura 0,1, escolhido na comparação descrita nas Seções 3.5.2 e 5.2.3. Como os modelos das famílias GPT-5 e GPT-6 recusam alguns parâmetros aceitos pelos anteriores, o cliente da API ajusta os parâmetros conforme a família do modelo. Se o modelo falhar, o sistema produz a resposta extrativa.
+O modelo padrão, configurável, é o `gpt-6-luna`, com o raciocínio desligado e temperatura 0,1, escolhido na comparação descrita nas Seções 3.5.2 e 5.1.3. Como os modelos das famílias GPT-5 e GPT-6 recusam alguns parâmetros aceitos pelos anteriores, o cliente da API ajusta os parâmetros conforme a família do modelo. Se o modelo falhar, o sistema produz a resposta extrativa.
 
 Recebida a resposta, o sistema remove eventual lista de referências escrita pelo modelo, descarta marcadores de citação que não correspondam a trechos fornecidos e renumera os demais pela ordem de aparição; as fontes da resposta passam a ser apenas os trechos citados. Cada citação é então verificada: a frase que cita um trecho deve compartilhar com ele ao menos três radicais de palavras, ou dois radicais e um número, ou, com *embeddings* semânticos, ter similaridade de cosseno de ao menos 0,35 com o trecho. A interface sinaliza as fontes não confirmadas e, se a resposta não contiver citações, apresenta os trechos consultados sem confirmação. A verificação aproxima a fundamentação da resposta, mas não confirma que a afirmação está correta.
 
@@ -848,35 +794,23 @@ A autenticação dos usuários e o registro da avaliação das respostas foram i
 
 O acesso é feito por nome de usuário e senha, com contas criadas pelo pesquisador por meio de um comando do projeto, sem cadastro pela interface nem recuperação de senha. As senhas são armazenadas apenas como *hash* calculado com a função scrypt, que encarece tentativas de descoberta por força bruta por exigir tempo de processamento e memória (Percival; Josefsson, 2016), com sal aleatório e comparação em tempo constante, e restrições no banco de dados impedem o armazenamento de uma senha fora do formato de *hash*.
 
-No login, o servidor gera um *token* aleatório de 32 *bytes*, entregue em um *cookie* HttpOnly, SameSite Lax e, em produção, Secure, restrito a conexões HTTPS; o banco de dados guarda apenas o *hash* SHA-256 do *token*, com expiração de oito horas por padrão. Todas as rotas sob `/api`, exceto as de autenticação, exigem uma sessão válida, e o usuário associado a uma consulta ou avaliação é sempre obtido da sessão, nunca de dados enviados pelo navegador. Após cinco tentativas de login malsucedidas em 15 minutos para a mesma origem e o mesmo nome de usuário, novas tentativas são recusadas, e as mensagens de erro não revelam se o usuário existe; esse controle, mantido na memória do servidor, vale separadamente para cada instância.
+No *login*, o servidor gera um *token* aleatório de 32 *bytes*, entregue em um *cookie* HttpOnly, SameSite Lax e, em produção, Secure, restrito a conexões HTTPS; o banco de dados guarda apenas o *hash* SHA-256 do *token*, com expiração de oito horas por padrão. Todas as rotas sob `/api`, exceto as de autenticação, exigem uma sessão válida, e o usuário associado a uma consulta ou avaliação é sempre obtido da sessão, nunca de dados enviados pelo navegador. Após cinco tentativas de *login* malsucedidas em 15 minutos para a mesma origem e o mesmo nome de usuário, novas tentativas são recusadas, e as mensagens de erro não revelam se o usuário existe; esse controle, mantido na memória do servidor, vale separadamente para cada instância.
 
 ### 4.6.2 Registro da avaliação das respostas
 
-Após cada resposta concluída, inclusive as recusas, a interface exibe um componente de avaliação (Figura 5) com escala de 0, a pior avaliação, a 10, a melhor, e um comentário opcional de até 1.000 caracteres; a avaliação pode ser dispensada e reaberta, e, se o envio falhar, a nota e o comentário são preservados para nova tentativa.
-
-**Figura 5 – Componente de avaliação de uma resposta, após a escolha da nota**
-
-![Componente de avaliação de uma resposta, após a escolha da nota](figuras/fig-avaliacao.png)
-
-Fonte: Elaboração própria (2026).
+Após cada resposta concluída, inclusive as recusas, a interface exibe um componente de avaliação com escala de 0, a pior avaliação, a 10, a melhor, e um comentário opcional de até 1.000 caracteres; a avaliação pode ser dispensada e reaberta, e, se o envio falhar, a nota e o comentário são preservados para nova tentativa.
 
 Cada avaliação é gravada com o usuário da sessão, a conversa e a resposta avaliada. Restrições na API e no banco de dados validam a faixa da nota e o tamanho do comentário, garantem que a resposta pertence à conversa e que a conversa é do próprio usuário, impedem que o mesmo usuário avalie duas vezes a mesma resposta e recusam a exclusão de conversas com avaliações, o que protege esses registros contra remoções acidentais.
 
 A escala de 0 a 10 substituiu a nota de 1 a 5 da versão anterior do módulo, e a migração que efetua a mudança é interrompida se encontrar avaliações no formato anterior, em vez de convertê-las ou removê-las. A nota é uma avaliação global da resposta; sua relação com as dimensões previstas para a avaliação comparativa é discutida na Seção 3.6.2.
 
-## 4.7 INTERFACE WEB
+## 4.7 INTERFACE *WEB*
 
-A interface web tem uma área pública e um painel interno. A área pública compreende a página inicial (Figura 6), que apresenta a finalidade do sistema, o método de construção das respostas, os limites de segurança e os documentos da base, com um exemplo de consulta identificado como ilustrativo; a tela de login; a gaveta de consulta; e a tela de comparação. Exceto a página inicial e o login, as telas exigem sessão: sem ela, a pessoa é conduzida ao login e, depois, devolvida ao ponto em que estava; ao sair, as conversas mantidas pela interface são descartadas, para que não fiquem visíveis a quem usar o mesmo navegador.
+A interface *web* tem uma área pública e um painel interno. A área pública compreende a página inicial, que apresenta a finalidade do sistema, o método de construção das respostas, os limites de segurança e os documentos da base, com um exemplo de consulta identificado como ilustrativo; a tela de *login*; a gaveta de consulta; e a tela de comparação. Exceto a página inicial e o *login*, as telas exigem sessão: sem ela, a pessoa é conduzida ao *login* e, depois, devolvida ao ponto em que estava; ao sair, as conversas mantidas pela interface são descartadas, para que não fiquem visíveis a quem usar o mesmo navegador.
 
-**Figura 6 – Página inicial do sistema**
+Na gaveta de consulta, acessível de qualquer página pública e com o perfil fixado como profissional de saúde, cada resposta exibe o estado da consulta (resposta ou recusa segura, com o motivo), a intenção identificada, o texto com marcadores numerados que remetem às fontes, uma nota de segurança com o risco clínico e a necessidade de avaliação presencial (Figura 5), a lista de fontes (Figura 6) e o componente de avaliação (Seção 4.6.2).
 
-![Página inicial do sistema](figuras/fig-inicio.png)
-
-Fonte: Elaboração própria (2026).
-
-Na gaveta de consulta, acessível de qualquer página pública e com o perfil fixado como profissional de saúde, cada resposta exibe o estado da consulta (resposta ou recusa segura, com o motivo), a intenção identificada, o texto com marcadores numerados que remetem às fontes, uma nota de segurança com o risco clínico e a necessidade de avaliação presencial (Figura 7), a lista de fontes (Figura 8) e o componente de avaliação (Seção 4.6.2).
-
-**Figura 7 – Resposta a uma consulta na gaveta, com citações numeradas e nota de segurança**
+**Figura 5 – Resposta a uma consulta na gaveta, com citações numeradas e nota de segurança**
 
 ![Resposta a uma consulta na gaveta, com citações numeradas e nota de segurança](figuras/fig-resposta.png)
 
@@ -884,7 +818,7 @@ Fonte: Elaboração própria (2026), com resposta gerada pelo sistema em 24 de o
 
 Cada fonte é apresentada como referência documental, com documento, instituição, ano, âmbito (diretriz brasileira ou recomendação internacional), seção e página impressa, uma ligação que abre o PDF oficial na página citada e a opção de exibir o trecho original; documentos em inglês e citações não confirmadas pela verificação automática (Seção 4.5.6) são sinalizados.
 
-**Figura 8 – Lista de fontes de uma resposta, com o trecho da primeira fonte exibido**
+**Figura 6 – Lista de fontes de uma resposta, com o trecho da primeira fonte exibido**
 
 ![Lista de fontes de uma resposta, com o trecho da primeira fonte exibido](figuras/fig-fontes.png)
 
@@ -892,44 +826,23 @@ Fonte: Elaboração própria (2026), com resposta gerada pelo sistema em 24 de o
 
 A tela de comparação apresenta, lado a lado, a resposta do NexoHansen e a de um modelo genérico, que, na versão atual, é produzida por uma simulação no próprio navegador, identificada como tal, sem consultar nenhum modelo de linguagem. A tela é, portanto, demonstrativa e não constitui o Cenário B da avaliação comparativa (Seção 3.6.1).
 
-O painel interno, acessível por endereço próprio, reúne ferramentas de inspeção: uma tela de consulta com seleção de perfil (profissional de saúde, paciente ou desenvolvedor); um explorador de recuperação, que executa apenas a busca, com escolha do modo (híbrido, vetorial ou textual), dos parâmetros *top-K* e *top-N* e de filtros por metadados, e exibe as pontuações de cada candidato (Figura 9); um navegador da base de conhecimento; e um painel de avaliação, que executa as perguntas de referência e apresenta os indicadores da Seção 3.5.
-
-**Figura 9 – Formulário do explorador de recuperação no painel interno**
-
-![Formulário do explorador de recuperação no painel interno](figuras/fig-explorador.png)
-
-Fonte: Elaboração própria (2026).
+O painel interno, acessível por endereço próprio, reúne ferramentas de inspeção: uma tela de consulta com seleção de perfil (profissional de saúde, paciente ou desenvolvedor); um explorador de recuperação, que executa apenas a busca, com escolha do modo (híbrido, vetorial ou textual), dos parâmetros *top-K* e *top-N* e de filtros por metadados, e exibe as pontuações de cada candidato; um navegador da base de conhecimento; e um painel de avaliação, que executa as perguntas de referência e apresenta os indicadores da Seção 3.5.
 
 As telas restritas consultam a sessão na API antes de exibir o conteúdo, mas o controle de acesso efetivo é o da API (Seção 4.6.1). Não há perfis de acesso: todos os usuários cadastrados acessam também o painel interno e, por meio dele, as rotas de carga da base e de execução da avaliação técnica.
 
 ## 4.8 VERIFICAÇÃO DO SOFTWARE
 
-O sistema conta com 113 testes automatizados, escritos com Vitest: 93 no servidor e 20 na interface, agrupados conforme o Quadro 10. No servidor, os testes unitários usam dublês em memória para o repositório, o provedor de *embeddings* e o modelo de linguagem, e parte deles exercita a API por requisições HTTP; dez testes de integração são executados contra um PostgreSQL com as migrações do projeto aplicadas, quando um banco de testes é configurado. Na interface, os testes usam a Testing Library e simulam as respostas da API.
+O sistema conta com 113 testes automatizados, escritos com Vitest: 93 no servidor e 20 na interface, agrupados conforme o Quadro 21 (Apêndice L). No servidor, os testes unitários usam dublês em memória para o repositório, o provedor de *embeddings* e o modelo de linguagem, e parte deles exercita a API por requisições HTTP; dez testes de integração são executados contra um PostgreSQL com as migrações do projeto aplicadas, quando um banco de testes é configurado. Na interface, os testes usam a Testing Library e simulam as respostas da API.
 
-**Quadro 10 – Testes automatizados do servidor e da interface**
+Em 24 de outubro de 2026, os 113 testes, a análise estática e a verificação de tipos do servidor foram executados com sucesso; os dez testes de integração rodaram contra o PGlite, distribuição do PostgreSQL executada no próprio processo de teste, com as extensões pgvector e pgcrypto e as migrações do projeto aplicadas a um banco vazio. Na mesma data, o fluxo de *login* e consulta foi verificado em navegador, com a base oficial indexada e respostas geradas pelo modelo escolhido, situação registrada nas Figuras 5 e 6.
 
-| Camada | Grupo | Comportamentos verificados | Testes |
-|---|---|---|---|
-| Servidor | Esquemas, intenção e risco clínico | Metadados com valores padrão; ingestão de JSONL; intenção por palavras inteiras; risco muito alto para dose, gestação, criança, reação e talidomida | 4 |
-| Servidor | Segurança | Recusa sem evidência, fora do escopo, de prescrição para paciente específico (inclusive dose pelo peso) e de diagnóstico de caso; comparação por palavras inteiras, sem acentos; perguntas antes recusadas por subcadeias respondidas; respostas cautelosas sobre crianças, gestação e reações; maior restrição ao perfil de paciente | 10 |
-| Servidor | Recuperação, interpretação e fusão | Recuperação de trechos de diagnóstico e de tratamento; conteúdo das respostas (baciloscopia negativa, PQT em reação, talidomida e gestação); leitura da pergunta no domínio; saída do escopo; continuações; uso do modelo com alternativa local; fusão por posição recíproca | 12 |
-| Servidor | Citações, *prompt* e geração | Renumeração e descarte de citações inválidas; remoção da lista de fontes escrita pelo modelo; verificação por sobreposição de termos; referência documental com página e ligação; conteúdo do *prompt*; resposta sem citações e resposta extrativa; parâmetros por família de modelo | 12 |
-| Servidor | Processamento de documentos e avaliação | Limpeza das páginas; leitura do sumário e localização das seções; fragmentação por seção; metadados e textos de indexação; métricas da avaliação técnica e reconhecimento da declaração de lacuna | 11 |
-| Servidor | Autenticação, avaliações e API HTTP | Senhas com sal e formatos inválidos; recusas de login; expiração, *logout* e limite de tentativas; notas de 0 a 10 com comentário, vinculadas ao usuário, à conversa e à resposta, uma por usuário e resposta; rotas bloqueadas sem sessão; *cookie* HttpOnly; respostas de erro de validação, de conflito e de falha interna | 34 |
-| Servidor | Integração com PostgreSQL | Cadastro por SQL seguido de login; restrições de formato, de faixa da nota, de unicidade e de coerência entre resposta e conversa; bloqueio da exclusão em cascata; indexação incremental com páginas e histórico; busca textual sem acentos; vetores apenas do mesmo modelo e de documentos ativos | 10 |
-| Interface | Login, avaliação e fontes | Redirecionamento sem sessão, erros de credenciais, retorno à origem e sessão expirada; escala de 0 a 10, envio, falha, repetição, dispensa e reabertura da avaliação, exibida após cada resposta; referência documental, trecho original, avisos de documento em inglês e de citação não confirmada; subtítulos e tabelas com citações | 20 |
-
-Fonte: Elaboração própria (2026), com base nos arquivos de teste do servidor e da interface.
-
-Em 24 de outubro de 2026, os 113 testes, a análise estática e a verificação de tipos do servidor foram executados com sucesso; os dez testes de integração rodaram contra o PGlite, distribuição do PostgreSQL executada no próprio processo de teste, com as extensões pgvector e pgcrypto e as migrações do projeto aplicadas a um banco vazio. Na mesma data, o fluxo de login e consulta foi verificado em navegador, com a base oficial indexada e respostas geradas pelo modelo escolhido, situação registrada nas Figuras 7 e 8.
-
-A verificação tem limites: os dublês não reproduzem o comportamento dos provedores de *embeddings* e de geração, só exercitado pela avaliação técnica, e o PGlite não reproduz o ambiente de publicação. Duas falhas só apareceram na avaliação técnica e foram corrigidas, com testes, antes da escolha do modelo (Seção 5.2.3): os modelos das famílias GPT-5 e GPT-6 recusavam parâmetros enviados pelo cliente da API, o que faria toda resposta cair no modo extrativo sem aviso, e a verificação de citações ignorava marcadores escritos depois do ponto final. Antes disso, as buscas da primeira versão falhavam contra o banco de dados real porque selecionavam a coluna vetorial, que o Prisma não consegue converter, embora todos os testes passassem; a falha motivou os testes de integração.
+A verificação tem limites: os dublês não reproduzem o comportamento dos provedores de *embeddings* e de geração, só exercitado pela avaliação técnica, e o PGlite não reproduz o ambiente de publicação. Duas falhas só apareceram na avaliação técnica e foram corrigidas, com testes, antes da escolha do modelo (Seção 5.1.3): os modelos das famílias GPT-5 e GPT-6 recusavam parâmetros enviados pelo cliente da API, o que faria toda resposta cair no modo extrativo sem aviso, e a verificação de citações ignorava marcadores escritos depois do ponto final. Antes disso, as buscas da primeira versão falhavam contra o banco de dados real porque selecionavam a coluna vetorial, que o Prisma não consegue converter, embora todos os testes passassem; a falha motivou os testes de integração.
 
 ## 4.9 EVOLUÇÃO DO SISTEMA APÓS A AVALIAÇÃO PRELIMINAR
 
-A avaliação técnica preliminar (Seção 5.2.1) motivou o retorno às etapas de definição dos objetivos e de desenvolvimento (Seção 3.2). O Quadro 11 relaciona os problemas identificados às alterações descritas neste capítulo.
+A avaliação técnica preliminar (Seção 5.1.1) motivou o retorno às etapas de definição dos objetivos e de desenvolvimento (Seção 3.2). O Quadro 8 relaciona os problemas identificados às alterações descritas neste capítulo.
 
-**Quadro 11 – Problemas identificados na avaliação preliminar e alterações realizadas**
+**Quadro 8 – Problemas identificados na avaliação preliminar e alterações realizadas**
 
 | Problema identificado | Alteração realizada | Seção |
 |---|---|---|
@@ -945,21 +858,15 @@ A avaliação técnica preliminar (Seção 5.2.1) motivou o retorno às etapas d
 
 Fonte: Elaboração própria (2026).
 
-# 5 RESULTADOS
+# 5 RESULTADOS E DISCUSSÃO
 
-Este capítulo reúne quatro tipos de resultado, que não devem ser confundidos: o artefato desenvolvido (Seção 5.1); a avaliação técnica do *pipeline*, em execução preliminar e com a base oficial, incluindo a comparação de modelos geradores (Seção 5.2); a estrutura destinada aos resultados da avaliação comparativa, ainda não realizada (Seção 5.3); e os resultados preliminares da avaliação experimental com perguntas curadas (Seção 5.4).
+Este capítulo reúne os resultados das avaliações do sistema descrito no Capítulo 4 e sua discussão: a avaliação técnica do *pipeline*, em execução preliminar e com a base oficial, incluindo a comparação de modelos geradores (Seção 5.1); a avaliação comparativa, ainda não realizada (Seção 5.2); os resultados preliminares da avaliação experimental com perguntas curadas (Seção 5.3); e a discussão desses resultados em relação às questões de pesquisa, à literatura e às limitações do trabalho (Seção 5.4).
 
-## 5.1 ARTEFATO DESENVOLVIDO
+## 5.1 AVALIAÇÃO TÉCNICA
 
-O sistema desenvolvido atende, em sua versão atual, aos requisitos do Quadro 8: executa o *pipeline* completo de consulta (Seção 4.5), com seis regras de recusa e citações verificadas, sobre uma base de 328 trechos de cinco documentos oficiais; oferece interface de consulta, com fontes documentais e avaliação das respostas, e de inspeção (Seção 4.7); conta com 113 testes automatizados executados com sucesso (Seção 4.8); e foi publicado na plataforma Vercel, com o banco de dados no serviço Neon.
+A avaliação técnica foi executada em dois momentos: de forma preliminar, em setembro de 2026, com a base inicial e *embeddings* determinísticos (Seção 5.1.1), e em outubro de 2026, com a base oficial e *embeddings* semânticos, quando serviu também para escolher o modelo gerador (Seções 5.1.2 e 5.1.3).
 
-Em relação aos objetivos específicos, os objetivos a, b e c foram atendidos na versão atual, com a ressalva de que o conteúdo da base não foi revisado por profissional de saúde, e o objetivo d foi executado com a base oficial (Seção 5.2). A relação desses resultados com as questões de pesquisa é discutida na Seção 6.1.
-
-## 5.2 AVALIAÇÃO TÉCNICA
-
-A avaliação técnica foi executada em dois momentos: de forma preliminar, em setembro de 2026, com a base inicial e *embeddings* determinísticos (Seção 5.2.1), e em outubro de 2026, com a base oficial e *embeddings* semânticos, quando serviu também para escolher o modelo gerador (Seções 5.2.2 e 5.2.3).
-
-### 5.2.1 Execução preliminar
+### 5.1.1 Execução preliminar
 
 A avaliação técnica preliminar foi executada em 14 de setembro de 2026, em ambiente local, com o banco de dados PostgreSQL com pgvector, a base inicial de 15 trechos e o conjunto de 25 perguntas de referência (Apêndice A). Não havia chave de acesso à OpenAI configurada; foram utilizados, portanto, o provedor determinístico de *embeddings* e a geração extrativa. Os parâmetros eram os padrões do sistema à época: *top-K* igual a 12, *top-N* igual a 5 e limiar mínimo de relevância de 0,65. O resultado, registrado na documentação do projeto, está na Tabela 1.
 
@@ -974,32 +881,15 @@ A avaliação técnica preliminar foi executada em 14 de setembro de 2026, em am
 
 Fonte: Elaboração própria (2026), a partir do registro da execução de 14 de setembro de 2026.
 
-Todas as perguntas terminaram em recusa, e nenhuma resposta continha fontes. Na mesma sessão, o explorador de recuperação posicionava o trecho esperado em primeiro lugar para a pergunta sobre baciloscopia, com pontuação final próxima de 0,25 antes da reordenação, o que sugeria um problema na relação entre a escala das pontuações e o limiar, e não no ranqueamento. Como os resultados por pergunta dessa execução não foram armazenados, a hipótese foi examinada em 20 de outubro de 2026 pela reprodução das partes determinísticas do *pipeline* com o código compilado do sistema, sem uso do banco de dados; os resultados por pergunta estão no Apêndice D.
-
-A análise mostrou que três das 25 perguntas eram recusadas por regras específicas a partir do próprio texto (reação grave, gestação e prescrição), independentemente da recuperação, e que a similaridade vetorial entre cada pergunta e seu trecho ideal, com o provedor determinístico, variou de 0,000 a 0,428, com mediana de 0,227, embora o trecho ideal tenha sido o mais similar à pergunta, entre os 15 da base, em 16 das 25 perguntas. Para as 22 perguntas que dependem da regra de evidência, calculou-se a pontuação textual mínima que o trecho ideal precisaria obter para que a pontuação final, somada aos acréscimos de reordenação aplicáveis, atingisse o limiar de 0,65, ou de 0,45 nas perguntas de triagem (Tabela 2).
-
-**Tabela 2 – Pontuação textual mínima necessária para atingir o limiar de relevância**
-
-| Pontuação textual mínima necessária | Perguntas |
-|---|---|
-| Até 0,25 | 1 |
-| Acima de 0,25 até 0,50 | 1 |
-| Acima de 0,50 até 0,75 | 3 |
-| Acima de 0,75 até 1,00 | 4 |
-| Acima de 1,00 (inalcançável) | 13 |
-| Total de perguntas dependentes da regra de evidência | 22 |
-
-Fonte: Elaboração própria (2026), a partir da reprodução das partes determinísticas do sistema.
-
-Como a pontuação textual é limitada a 1, em 13 das 22 perguntas o limiar não poderia ser atingido pelo trecho ideal nem com a máxima correspondência textual, e nas demais exigiria que o trecho contivesse todos os termos significativos da pergunta, condição imposta pela função `plainto_tsquery`. O resultado da Tabela 1 decorre, portanto, da incompatibilidade entre o limiar configurado e a escala de pontuação do provedor determinístico, e não necessariamente de falhas no ranqueamento.
+Todas as perguntas terminaram em recusa, e nenhuma resposta continha fontes. Como os resultados por pergunta dessa execução não foram armazenados, as partes determinísticas do *pipeline* foram reproduzidas em 20 de outubro de 2026 com o código compilado do sistema (Apêndice D). A reprodução mostrou que três perguntas eram recusadas por regras específicas a partir do próprio texto (reação grave, gestação e prescrição) e que, em 13 das 22 perguntas restantes, o limiar não poderia ser atingido pelo trecho ideal nem com a máxima correspondência textual, embora esse trecho tenha sido o mais similar à pergunta, entre os 15 da base, em 16 das 25 perguntas. O resultado da Tabela 1 decorre, portanto, da incompatibilidade entre o limiar configurado e a escala de pontuação do provedor determinístico, e não necessariamente de falhas no ranqueamento.
 
 A avaliação preliminar mostrou que o mecanismo de segurança funcionou como projetado, recusando a resposta em vez de responder com trechos pouco relacionados; que o limiar mínimo e os pesos da busca híbrida dependiam da escala das pontuações do provedor de *embeddings*; e que o indicador adotado media o efeito conjunto da recuperação e do limiar, e não apenas a qualidade do ranqueamento. Esses resultados, somados às recusas indevidas identificadas na análise das regras de segurança, motivaram as alterações descritas na Seção 4.9.
 
-### 5.2.2 Avaliação com a base oficial
+### 5.1.2 Avaliação com a base oficial
 
-A avaliação com a base oficial foi executada em 24 de outubro de 2026, contra o banco de dados de produção, com a base indexada com o `text-embedding-3-small`, *top-K* igual a 20, *top-N* igual a 8 e similaridade mínima de 0,25, sobre o conjunto de 32 perguntas e com as métricas da Seção 3.5.1. Para situar o resultado, a versão avaliada na execução preliminar foi executada sobre o novo conjunto em 23 de outubro de 2026, com seus parâmetros originais e *embeddings* determinísticos, assim como a versão atual sem acesso à OpenAI. A Tabela 3 reúne os três resultados; a coluna da direita corresponde à configuração escolhida na Seção 5.2.3.
+A avaliação com a base oficial foi executada em 24 de outubro de 2026, contra o banco de dados de produção, com a base indexada com o `text-embedding-3-small`, *top-K* igual a 20, *top-N* igual a 8 e similaridade mínima de 0,25, sobre o conjunto de 32 perguntas e com as métricas da Seção 3.5.1. Para situar o resultado, a versão avaliada na execução preliminar foi executada sobre o novo conjunto em 23 de outubro de 2026, com seus parâmetros originais e *embeddings* determinísticos, assim como a versão atual sem acesso à OpenAI. A Tabela 2 reúne os três resultados; a coluna da direita corresponde à configuração escolhida na Seção 5.1.3.
 
-**Tabela 3 – Resultados no conjunto de referência atual, por versão do sistema**
+**Tabela 2 – Resultados no conjunto de referência atual, por versão do sistema**
 
 | Métrica | Versão preliminar, modo local | Versão atual, modo local | Versão atual, com *embeddings* e modelo da OpenAI |
 |---|---|---|---|
@@ -1015,13 +905,13 @@ Fonte: Elaboração própria (2026), a partir dos relatórios de avaliação de 
 
 A versão preliminar acertou o comportamento em 5 das 32 perguntas, todas recusas, e não respondeu a nenhuma pergunta com resposta na base. A versão atual sem acesso à OpenAI já localiza a evidência entre os cinco primeiros trechos em 84% das perguntas, o que indica que a maior parte do ganho decorre da base e da nova recuperação, e não apenas do provedor de *embeddings*; suas duas falhas de comportamento ocorrem nas perguntas sem resposta na base, que a resposta extrativa não consegue declarar. Com os *embeddings* e o modelo da OpenAI, todas as 32 perguntas tiveram o comportamento esperado, inclusive as cinco recusas previstas, as duas lacunas declaradas e as três perguntas de regressão, e a evidência esteve entre os trechos enviados ao modelo em todas as 25 que a possuem. Os resultados por pergunta estão no Apêndice G.
 
-A leitura das respostas da configuração escolhida complementa as métricas. As respostas começam pela resposta direta à pergunta, seguida dos detalhes em listas ou tabelas, com uma citação após cada afirmação (Figura 7). Nas perguntas de divergência, as duas posições foram apresentadas com as respectivas fontes: sobre o caso com um único nervo comprometido, a resposta indicou que a OMS recomenda a classificação multibacilar e que o protocolo brasileiro admite a paucibacilar quando a avaliação é feita por profissionais experientes, informando que no Brasil a referência é o protocolo do Ministério da Saúde; sobre a profilaxia de contatos, apresentou a dose única de rifampicina recomendada pela OMS e a oferta de BCG prevista no PCDT. A leitura revelou também um erro que as métricas não captaram: na continuação sobre o esquema da PQT-U para crianças, a resposta afirmou que os documentos não detalham o esquema para crianças com mais de 50 kg, embora o Quadro 1 do PCDT indique a PQT-U Adulto acima desse peso. No texto extraído do PDF, as linhas e colunas desse quadro aparecem separadas, e a cobertura de fatos-chave da resposta foi, ainda assim, de 100%, o que ilustra a limitação do processamento de tabelas (Seção 3.3.2) e o alcance das métricas automáticas, que não substituem a revisão das respostas por profissional de saúde.
+A leitura das respostas da configuração escolhida complementa as métricas. As respostas começam pela resposta direta à pergunta, seguida dos detalhes em listas ou tabelas, com uma citação após cada afirmação (Figura 5). Nas perguntas de divergência, as duas posições foram apresentadas com as respectivas fontes: sobre o caso com um único nervo comprometido, a resposta indicou que a OMS recomenda a classificação multibacilar e que o protocolo brasileiro admite a paucibacilar quando a avaliação é feita por profissionais experientes, informando que no Brasil a referência é o protocolo do Ministério da Saúde; sobre a profilaxia de contatos, apresentou a dose única de rifampicina recomendada pela OMS e a oferta de BCG prevista no PCDT. A leitura revelou também um erro que as métricas não captaram: na continuação sobre o esquema da PQT-U para crianças, a resposta afirmou que os documentos não detalham o esquema para crianças com mais de 50 kg, embora o Quadro 1 do PCDT indique a PQT-U Adulto acima desse peso. No texto extraído do PDF, as linhas e colunas desse quadro aparecem separadas, e a cobertura de fatos-chave da resposta foi, ainda assim, de 100%, o que ilustra a limitação do processamento de tabelas (Seção 3.3.2) e o alcance das métricas automáticas, que não substituem a revisão das respostas por profissional de saúde.
 
-### 5.2.3 Comparação de modelos e escolha do modelo gerador
+### 5.1.3 Comparação de modelos e escolha do modelo gerador
 
-A Tabela 4 apresenta as métricas da segunda execução de cada configuração descrita na Seção 3.5.2, com o mesmo código para todas, e a Tabela 5, o tempo, o tamanho das respostas e o custo medidos. Na primeira execução, os valores de cada métrica diferiram dos da segunda em no máximo 0,08.
+A Tabela 3 apresenta as métricas da segunda execução de cada configuração descrita na Seção 3.5.2, com o mesmo código para todas, e a Tabela 4, o tempo, o tamanho das respostas e o custo medidos. Na primeira execução, os valores de cada métrica diferiram dos da segunda em no máximo 0,08.
 
-**Tabela 4 – Resultados da comparação de modelos geradores no conjunto de referência**
+**Tabela 3 – Resultados da comparação de modelos geradores no conjunto de referência**
 
 | Modelo (raciocínio) | Comportamento correto | Revocação @5 | Precisão das citações | Citações verificadas | Fatos-chave |
 |---|---|---|---|---|---|
@@ -1034,7 +924,7 @@ A Tabela 4 apresenta as métricas da segunda execução de cada configuração d
 
 Fonte: Elaboração própria (2026), a partir dos relatórios de avaliação de 24 de outubro de 2026.
 
-**Tabela 5 – Tempo, tamanho das respostas e custo medidos por configuração**
+**Tabela 4 – Tempo, tamanho das respostas e custo medidos por configuração**
 
 | Modelo (raciocínio) | Preço de entrada e de saída (US$ por milhão de *tokens*) | Tamanho médio da resposta (caracteres) | Tempo mediano (s) | Custo por 1.000 perguntas (US$) | Variação do custo |
 |---|---|---|---|---|---|
@@ -1053,52 +943,18 @@ A apuração das métricas passou por duas correções, registradas no repositó
 
 Aplicado o critério da Seção 3.5.2, escolheu-se o `gpt-6-luna` com o raciocínio desligado: seu desempenho foi equivalente ao da configuração de referência em todas as métricas, com maior precisão das citações; seu custo, de US$ 0,54 por 1.000 perguntas, foi o menor entre as configurações e 41% inferior ao do `gpt-4o-mini`; e seu tempo mediano, de 7,3 segundos, ficou próximo do menor observado, de 7,2 segundos. O modelo passou a ser o padrão do sistema, e a escolha pode ser revista com a repetição da avaliação, uma vez que preços, disponibilidade e comportamento dos modelos podem mudar.
 
-## 5.3 RESULTADOS DA AVALIAÇÃO COMPARATIVA
+## 5.2 RESULTADOS DA AVALIAÇÃO COMPARATIVA
 
-Esta seção será redigida após a realização da avaliação comparativa descrita na Seção 3.6. Sua estrutura antecipa os elementos que deverão ser apresentados, sem antecipar resultados. Os dados de percepção dos participantes deverão ser interpretados como tais, e não como evidência de eficácia clínica ou de segurança assistencial.
-
-### 5.3.1 Execução da avaliação e participantes
-
-[PREENCHER APÓS A COLETA DOS DADOS: período e forma de aplicação; número de participantes convidados, que iniciaram e que concluíram a avaliação; ocorrências relevantes durante a coleta; perfil agregado dos participantes, conforme a Tabela 6.]
-
-**Tabela 6 – Caracterização agregada dos participantes**
-
-| Característica | Categoria | Participantes (n) | Participantes (%) |
-|---|---|---|---|
-| [PREENCHER APÓS A COLETA DOS DADOS: características previstas no protocolo, como formação, área de atuação, tempo de experiência e contato com a hanseníase] | — | — | — |
-
-Fonte: Dados da pesquisa (2026).
-
-### 5.3.2 Avaliações por dimensão e cenário
-
-[PREENCHER APÓS A COLETA DOS DADOS: síntese das avaliações de cada dimensão nos Cenários A e B, conforme a Tabela 7, e gráfico da distribuição das avaliações.] [ANALISAR APÓS A CONSOLIDAÇÃO DAS AVALIAÇÕES: diferenças observadas entre os cenários e resultados dos procedimentos estatísticos definidos no protocolo.]
-
-**Tabela 7 – Avaliações por dimensão e cenário**
-
-| Dimensão | Cenário A (com RAG) | Cenário B (sem RAG) | Diferença observada |
-|---|---|---|---|
-| [INSERIR TABELA COM OS RESULTADOS DA AVALIAÇÃO: uma linha por dimensão adotada no protocolo, com as medidas nele definidas] | — | — | — |
-
-Fonte: Dados da pesquisa (2026).
-
-[INSERIR GRÁFICO: distribuição das avaliações por dimensão e cenário, em formato adequado à escala adotada no protocolo.]
-
-### 5.3.3 Análise por pergunta e por tipo de situação
-
-[ANALISAR APÓS A CONSOLIDAÇÃO DAS AVALIAÇÕES: resultados por pergunta e por tipo de situação, isto é, resposta esperada, recusa esperada e fora do escopo; perguntas com maior divergência entre os cenários ou entre os participantes; casos em que o Cenário A recusou perguntas para as quais se esperava resposta, e o inverso.]
-
-### 5.3.4 Percepções qualitativas dos participantes
-
-[PREENCHER APÓS A COLETA DOS DADOS: categorias identificadas nos comentários abertos, com trechos representativos anonimizados, sugestões de melhoria e resultados divergentes.]
+Esta seção será redigida após a realização da avaliação comparativa descrita na Seção 3.6. Os dados de percepção dos participantes deverão ser interpretados como tais, e não como evidência de eficácia clínica ou de segurança assistencial. [PREENCHER APÓS A COLETA DOS DADOS: período e forma de aplicação, participantes convidados, que iniciaram e que concluíram a avaliação, e perfil agregado dos participantes; avaliações de cada dimensão nos Cenários A e B, com tabela, gráfico da distribuição e resultados dos procedimentos estatísticos definidos no protocolo; resultados por pergunta e por tipo de situação (resposta esperada, recusa esperada e fora do escopo), incluindo as recusas indevidas; categorias identificadas nos comentários abertos, com trechos representativos anonimizados.]
 
 
-## 5.4 RESULTADOS DA AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS
+## 5.3 RESULTADOS DA AVALIAÇÃO EXPERIMENTAL COM PERGUNTAS CURADAS
 
-Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. <mark>(resultados preliminares, sujeitos à validação 3)</mark> As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de 8,9 segundos (percentil 95 de 13,1 segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais, na Tabela 8, referem-se a 98 respostas de 49 perguntas, sem a T36. O resultado de cada pergunta está no Apêndice K.
+Esta seção apresenta os resultados das validações 1 e 2 da avaliação descrita na Seção 3.8. <mark>(resultados preliminares, sujeitos à validação 3)</mark> As 100 chamadas foram concluídas sem falhas técnicas, com latência mediana de 8,9 segundos (percentil 95 de 13,1 segundos), e nenhuma resposta foi recusada pelas regras de segurança. As médias principais, na Tabela 5, referem-se a 98 respostas de 49 perguntas, sem a T36. O resultado de cada pergunta está no Apêndice K.
 
 A construção das referências mostrou que o corpus responde integralmente a 37 perguntas, parcialmente a 9 e não responde a 4, contra a previsão de 42, 3 e 5 da curadoria; a cobertura de cada pergunta está no Apêndice H. A diferença decorre, sobretudo, de perguntas que pedem detalhes ausentes do corpus, como valores de desempenho do teste rápido, uma rotina diária de cuidado com os pés ou uma lista de sinais oculares de urgência, e da ausência das normas de 2026 na base (T08); a T48 foi classificada como parcial porque o PCDT orienta tomar a rifampicina em jejum sem conciliar essa orientação com a da clofazimina.
 
-**Tabela 8 – Métricas gerais das respostas na avaliação com perguntas curadas**
+**Tabela 5 – Métricas gerais das respostas na avaliação com perguntas curadas**
 
 | Métrica | Valor |
 |---|---|
@@ -1118,7 +974,7 @@ A construção das referências mostrou que o corpus responde integralmente a 37
 
 Fonte: Elaboração própria (2026). Nota: validações 1 e 2, automatizadas; 98 respostas de 49 perguntas, sem a T36.
 
-**Tabela 9 – Resultados por registro, origem, complexidade e cobertura das perguntas**
+**Tabela 6 – Resultados por registro, origem, complexidade e cobertura das perguntas**
 
 | Recorte | Respostas | Nota global (DP) | Acurácia | IC 95% | Alucinação |
 |---|---|---|---|---|---|
@@ -1135,19 +991,19 @@ Fonte: Elaboração própria (2026). Nota: validações 1 e 2, automatizadas; 98
 
 Fonte: Elaboração própria (2026). Nota: testes exploratórios — acurácia leigo × técnico, Fisher, p = 0,141; acurácia por origem, Fisher-Freeman-Halton, p = 0,320; nota global leigo × técnico, Mann-Whitney, p = 0,864; nota global por origem, Kruskal-Wallis, p = 0,115.
 
-**Figura 10 – Acurácia por tema, com intervalo de confiança de 95%**
+**Figura 7 – Acurácia por tema, com intervalo de confiança de 95%**
 
 ![Acurácia por tema, com intervalo de confiança de 95%](figuras/acuracia_por_tema.png)
 
 Fonte: Elaboração própria (2026). Resultados preliminares (validações 1 e 2).
 
-O tema tratamento concentrou as falhas (Figura 10): acurácia de 32%, com alucinação em 23% das respostas e alerta de segurança em 27%, em perguntas sobre esquemas de segunda linha, resistência medicamentosa e interações; entre os temas com mais respostas, diagnóstico (85%) e reações hansênicas (79%) tiveram os melhores resultados. Nos recortes da Tabela 9, as diferenças de acurácia e de nota global não foram significativas nos testes exploratórios. A adequação ao registro, porém, foi menor nas perguntas leigas, com média de 1,13, contra 1,96 nas técnicas, porque as respostas usaram a terminologia técnica dos documentos, coerente com o perfil de profissional de saúde fixado na consulta.
+O tema tratamento concentrou as falhas (Figura 7): acurácia de 32%, com alucinação em 23% das respostas e alerta de segurança em 27%, em perguntas sobre esquemas de segunda linha, resistência medicamentosa e interações; entre os temas com mais respostas, diagnóstico (85%) e reações hansênicas (79%) tiveram os melhores resultados. Nos recortes da Tabela 6, as diferenças de acurácia e de nota global não foram significativas nos testes exploratórios. A adequação ao registro, porém, foi menor nas perguntas leigas, com média de 1,13, contra 1,96 nas técnicas, porque as respostas usaram a terminologia técnica dos documentos, coerente com o perfil de profissional de saúde fixado na consulta.
 
 Quanto à abstenção, 100% das respostas às perguntas não respondíveis reconheceram a limitação sem inventar (n = 8), e a taxa de recusa indevida, isto é, de recusa ou declaração de lacuna diante do que o corpus cobre, foi de 3,3% (n = 90). Nas perguntas parcialmente cobertas, as falhas foram de três tipos: deixar de declarar o limite do corpus (T31 e uma execução da T08), acrescentar informação não documentada (T30) e recusar também a parte coberta (T48, nas duas execuções).
 
-Entre as duas execuções de cada pergunta, o veredito se manteve em 88% das 49 perguntas; 59% foram respondidas corretamente nas duas execuções, 71% em pelo menos uma e 29% em nenhuma. A diferença média entre as notas globais das duas execuções foi de 0,06, a similaridade de cosseno média entre as respostas, de 0,94, e 3 pares de respostas foram julgados contraditórios entre si (Figura 11).
+Entre as duas execuções de cada pergunta, o veredito se manteve em 88% das 49 perguntas; 59% foram respondidas corretamente nas duas execuções, 71% em pelo menos uma e 29% em nenhuma. A diferença média entre as notas globais das duas execuções foi de 0,06, a similaridade de cosseno média entre as respostas, de 0,94, e 3 pares de respostas foram julgados contraditórios entre si (Figura 8).
 
-**Figura 11 – Consistência entre as duas execuções de cada pergunta**
+**Figura 8 – Consistência entre as duas execuções de cada pergunta**
 
 ![Consistência entre as duas execuções de cada pergunta](figuras/consistencia_entre_rodadas.png)
 
@@ -1157,11 +1013,11 @@ Das 34 respostas incorretas, 15 foram reprovadas apenas pela cobertura dos ponto
 
 A validação 3 está em andamento. <mark>[Nº DE RESPOSTAS DE REFERÊNCIA REVISADAS E QUANTAS FORAM CORRIGIDAS]</mark> <mark>[Nº DE RESPOSTAS DA IA REVISADAS PELA ESPECIALISTA]</mark> <mark>[KAPPA E % DE CONCORDÂNCIA ENTRE VALIDAÇÃO 2 E VALIDAÇÃO 3 — gerado por consolidar.ts]</mark> <mark>[OBSERVAÇÕES DA ESPECIALISTA: principais divergências apontadas em relação à avaliação automatizada; pontos clínicos destacados; referências corrigidas e seus motivos.]</mark>
 
-# 6 DISCUSSÃO
+## 5.4 DISCUSSÃO
 
-Este capítulo relaciona os resultados às questões de pesquisa, à literatura e às limitações do trabalho. As partes que dependem da avaliação comparativa permanecem em aberto e indicam as questões que deverão ser examinadas após a coleta.
+Esta seção relaciona os resultados às questões de pesquisa, à literatura, ao projeto de sistemas RAG em saúde e às limitações do trabalho. As partes que dependem da avaliação comparativa permanecem em aberto e indicam as questões que deverão ser examinadas após a coleta.
 
-## 6.1 QUESTÕES DE PESQUISA
+### 5.4.1 Questões de pesquisa
 
 Em relação à QP1, as decisões de arquitetura que viabilizam a indicação da origem das respostas e a recusa de situações de risco são: a representação da base em trechos de documentos oficiais, com documento, seção e página; a citação de cada afirmação, com verificação automática e ligação para a página do documento original; o registro de cada consulta com trechos, pontuações e decisões; as regras de segurança aplicadas em código, antes da geração, e restritas aos pedidos que exigem avaliação individual; e a verificação de evidência como condição para responder. Na avaliação técnica com a base oficial, essas decisões resultaram em recusas apenas nos casos previstos, em respostas às perguntas legítimas antes recusadas e, na configuração escolhida, em citações confirmadas em 95% a 100% das fontes, conforme a execução. A forma como os usuários percebem as fontes e as recusas depende da avaliação comparativa.
 
@@ -1169,25 +1025,25 @@ Em relação à QP2, com *embeddings* semânticos e a configuração atual, o me
 
 Em relação à QP3, [ANALISAR APÓS A CONSOLIDAÇÃO DAS AVALIAÇÕES: resposta à QP3, indicando em quais dimensões houve diferenças entre os cenários, sua magnitude e as condições em que foram observadas, sem extrapolar para eficácia clínica.]
 
-## 6.2 RELAÇÃO COM A LITERATURA
+### 5.4.2 Relação com a literatura
 
 Os resultados convergem com a observação de Xiong *et al.* (2024) de que o desempenho de sistemas RAG em medicina depende fortemente da configuração da recuperação: na execução preliminar, a soma ponderada das pontuações e o limiar fixo levaram à recusa de todas as perguntas, enquanto a fusão por posição recíproca, que dispensa a calibração das escalas (Cormack; Clarke; Büttcher, 2009), e a base oficial levaram à localização da evidência na quase totalidade das perguntas; a troca do modelo gerador, entre seis configurações, alterou pouco a recuperação e o comportamento. Quanto ao predomínio de modelos de *embedding* orientados ao inglês (Arzideh *et al.*, 2026; Yang *et al.*, 2026), o modelo de uso geral adotado obteve revocação elevada com perguntas e documentos em português no conjunto avaliado, possivelmente com a contribuição da interpretação da pergunta, que gera consultas na terminologia dos documentos e uma consulta em inglês para o documento da OMS nesse idioma; a comparação com modelos de *embedding* treinados em textos clínicos em português não foi realizada.
 
 [ANALISAR APÓS A CONSOLIDAÇÃO DAS AVALIAÇÕES: relação entre os resultados da avaliação comparativa e os achados de Zakka *et al.* (2024), Xiong *et al.* (2024) e Xu *et al.* (2025) sobre o efeito da recuperação; comparação das dimensões avaliadas com as utilizadas por Singhal *et al.* (2023) e Zakka *et al.* (2024); discussão do tratamento dado à segurança, à luz das lacunas apontadas por Amugongo *et al.* (2025) e Yang *et al.* (2026).]
 
-## 6.3 IMPLICAÇÕES PARA O PROJETO DE SISTEMAS RAG EM SAÚDE
+### 5.4.3 Implicações para o projeto de sistemas RAG em saúde
 
 O desenvolvimento do sistema permite registrar observações de engenharia que independem da avaliação comparativa. A primeira é que limiares e pesos de recuperação não são transferíveis entre provedores de *embeddings*: valores definidos sem calibração podem fazer o sistema recusar todas as perguntas, como na avaliação preliminar, ou responder com base em trechos pouco relacionados, e combinar as buscas pela posição dos trechos, e não pela soma de pontuações em escalas diferentes, reduz essa dependência. A segunda é que regras de segurança implementadas em código são verificáveis por testes, mas exigem cuidado na correspondência de padrões, como mostraram os acionamentos indevidos por subcadeias; perguntas de regressão com frases comuns da língua, e não apenas os termos-alvo, verificam esse tipo de falha. A terceira é que testes com dublês em memória não substituem testes com o banco de dados e com os provedores reais, pois três falhas só apareceram fora deles (Seção 4.8). A quarta é que a rastreabilidade depende de dados de origem completos: a extração dos documentos com seção e página permitiu substituir os identificadores internos dos trechos por referências que o usuário pode conferir. A quinta é que dados de pesquisa coletados pelo próprio sistema exigem garantias de integridade semelhantes às dos registros de auditoria, para que uma avaliação não possa ser atribuída a outra pessoa, duplicada ou perdida (Seção 4.6.2).
 
-A sexta observação refere-se à escolha do modelo gerador. Em uma arquitetura em que a resposta se restringe aos trechos recuperados e a segurança é aplicada em código, antes da geração, o modelo responde pela interpretação da pergunta e pela redação, e não pela decisão sobre o que pode ser respondido; nessa condição, seis configurações de custos distintos tiveram desempenho equivalente, e a escolhida custou 41% menos que a de referência. A escolha deve, porém, ser verificada com um conjunto de avaliação próprio e repetida a cada troca, pois modelos com preços unitários próximos podem diferir no custo por pergunta pela extensão das respostas e do raciocínio, e modelos mais recentes recusavam parâmetros aceitos pelos anteriores. A sétima é que as métricas automáticas também precisam ser auditadas: duas falhas de apuração e um erro de conteúdo não captado pelas métricas só foram identificados na leitura das respostas (Seção 5.2).
+A sexta observação refere-se à escolha do modelo gerador. Em uma arquitetura em que a resposta se restringe aos trechos recuperados e a segurança é aplicada em código, antes da geração, o modelo responde pela interpretação da pergunta e pela redação, e não pela decisão sobre o que pode ser respondido; nessa condição, seis configurações de custos distintos tiveram desempenho equivalente, e a escolhida custou 41% menos que a de referência. A escolha deve, porém, ser verificada com um conjunto de avaliação próprio e repetida a cada troca, pois modelos com preços unitários próximos podem diferir no custo por pergunta pela extensão das respostas e do raciocínio, e modelos mais recentes recusavam parâmetros aceitos pelos anteriores. A sétima é que as métricas automáticas também precisam ser auditadas: duas falhas de apuração e um erro de conteúdo não captado pelas métricas só foram identificados na leitura das respostas (Seção 5.1).
 
 [ANALISAR APÓS A CONSOLIDAÇÃO DAS AVALIAÇÕES: implicações adicionais decorrentes da avaliação comparativa.]
 
-## 6.4 LIMITAÇÕES
+### 5.4.4 Limitações
 
 Identificam-se, nesta versão, as seguintes limitações:
 
-a) a base de conhecimento reúne cinco documentos oficiais, processados automaticamente e conferidos pelo desenvolvedor, sem revisão do conteúdo por profissional de saúde; tabelas e fluxogramas perdem a estrutura na extração, o que levou a ao menos uma resposta incorreta na avaliação técnica (Seção 5.2.2);
+a) a base de conhecimento reúne cinco documentos oficiais, processados automaticamente e conferidos pelo desenvolvedor, sem revisão do conteúdo por profissional de saúde; tabelas e fluxogramas perdem a estrutura na extração, o que levou a ao menos uma resposta incorreta na avaliação técnica (Seção 5.1.2);
 
 b) a classificação de intenção e as regras de segurança baseiam-se em padrões textuais, sujeitos a omissões diante de formulações não previstas, e os limiares de evidência, de similaridade mínima de 0,25 e de pontuação textual de 0,1, não foram calibrados sistematicamente;
 
@@ -1199,18 +1055,18 @@ e) os testes automatizados usam dublês para os provedores de *embeddings* e de 
 
 f) a tela de comparação utiliza uma simulação local no lugar de um modelo de linguagem sem recuperação, e a avaliação registrada pelo sistema é uma nota global de 0 a 10, sem as dimensões previstas para a avaliação comparativa, aplicável apenas a respostas geradas no momento da consulta;
 
-g) as perguntas são enviadas a um serviço externo, o banco de dados da publicação está localizado fora do Brasil e a interface não exibe aviso contra a inserção de dados pessoais nas perguntas; além disso, não há perfis de acesso, de modo que todos os usuários cadastrados acessam o painel interno e as rotas de carga da base e de execução da avaliação técnica, e o limite de tentativas de login vale para cada instância do servidor;
+g) as perguntas são enviadas a um serviço externo, o banco de dados da publicação está localizado fora do Brasil e a interface não exibe aviso contra a inserção de dados pessoais nas perguntas; além disso, não há perfis de acesso, de modo que todos os usuários cadastrados acessam o painel interno e as rotas de carga da base e de execução da avaliação técnica, e o limite de tentativas de *login* vale para cada instância do servidor;
 
 h) o sistema não foi validado clinicamente e não se destina ao uso assistencial.
 
 [PREENCHER APÓS A AVALIAÇÃO COMPARATIVA: limitações da avaliação com participantes, como o tamanho e a composição da amostra, o desenho adotado e as condições de aplicação.]
 
 
-## 6.5 DISCUSSÃO DA AVALIAÇÃO EXPERIMENTAL E AMEAÇAS À VALIDADE
+### 5.4.5 Discussão da avaliação experimental e ameaças à validade
 
-A avaliação experimental complementa a avaliação técnica (Seção 5.2) com perguntas que, em sua maioria, vêm de dúvidas publicadas e não foram elaboradas junto com a base. Os resultados preliminares indicam comportamento prudente diante do que o corpus não cobre, mas desempenho insuficiente para uso sem supervisão em perguntas sobre tratamento, nas quais se concentraram as alucinações e os alertas de segurança. A acurácia geral de 65%, frente à nota global média de 0,84, decorre do critério binário, que exige a cobertura de ao menos 60% dos pontos-chave: a maior parte das respostas incorretas é incompleta, e não errada.
+A avaliação experimental complementa a avaliação técnica (Seção 5.1) com perguntas que, em sua maioria, vêm de dúvidas publicadas e não foram elaboradas junto com a base. Os resultados preliminares indicam comportamento prudente diante do que o corpus não cobre, mas desempenho insuficiente para uso sem supervisão em perguntas sobre tratamento, nas quais se concentraram as alucinações e os alertas de segurança. A acurácia geral de 65%, frente à nota global média de 0,84, decorre do critério binário, que exige a cobertura de ao menos 60% dos pontos-chave: a maior parte das respostas incorretas é incompleta, e não errada.
 
-Três achados orientam a continuidade do desenvolvimento. O primeiro é que parte dos erros tem origem no processamento dos documentos, e não no modelo de linguagem: o rótulo de seção perdido na extração do PCDT levou o sistema a confundir os critérios de investigação de resistência primária e secundária, e as tabelas de esquemas terapêuticos continuam a ser um ponto frágil (Seção 5.2.2). O segundo é que o sistema responde em registro técnico mesmo a perguntas leigas, consequência do perfil fixo de profissional de saúde. O terceiro é a variação entre execuções: três pares de respostas se contradisseram, todos sobre o que os documentos contêm (duração dos esquemas de segunda linha, existência de esquemas para resistência e interações em pessoas com HIV), o que indica que a seleção de trechos varia entre execuções e afeta sobretudo as afirmações sobre a ausência de informação.
+Três achados orientam a continuidade do desenvolvimento. O primeiro é que parte dos erros tem origem no processamento dos documentos, e não no modelo de linguagem: o rótulo de seção perdido na extração do PCDT levou o sistema a confundir os critérios de investigação de resistência primária e secundária, e as tabelas de esquemas terapêuticos continuam a ser um ponto frágil (Seção 5.1.2). O segundo é que o sistema responde em registro técnico mesmo a perguntas leigas, consequência do perfil fixo de profissional de saúde. O terceiro é a variação entre execuções: três pares de respostas se contradisseram, todos sobre o que os documentos contêm (duração dos esquemas de segunda linha, existência de esquemas para resistência e interações em pessoas com HIV), o que indica que a seleção de trechos varia entre execuções e afeta sobretudo as afirmações sobre a ausência de informação.
 
 A avaliação experimental está sujeita às seguintes ameaças à validade:
 
@@ -1230,17 +1086,17 @@ g) a cobertura dos pontos-chave e a precisão das afirmações dependem da decom
 
 <mark>[OBSERVAÇÕES DA ESPECIALISTA: preencher após a validação 3 com a discussão das divergências entre a avaliação automatizada e o parecer da especialista e com os pontos clínicos destacados.]</mark>
 
-# 7 CONSIDERAÇÕES FINAIS
+# 6 CONSIDERAÇÕES FINAIS
 
 [ATUALIZAR APÓS A AVALIAÇÃO COMPARATIVA: as considerações a seguir refletem o estágio atual do trabalho e deverão ser revistas após a conclusão das avaliações.]
 
-Este trabalho teve como objetivo desenvolver um sistema de apoio informacional à decisão clínica em hanseníase baseado na arquitetura RAG e avaliar suas respostas tecnicamente e em comparação com as de um modelo de linguagem sem recuperação. Foi desenvolvido o NexoHansen, protótipo que combina a interpretação da pergunta, a recuperação híbrida sobre cinco documentos oficiais do Ministério da Saúde e da OMS, regras de segurança aplicadas antes da geração, respostas restritas aos trechos recuperados, com citações verificadas que remetem à página do documento original, e o registro das consultas para auditoria, com uma interface web de acesso autenticado em que cada resposta pode ser avaliada.
+Este trabalho teve como objetivo desenvolver um sistema de apoio informacional à decisão clínica em hanseníase baseado na arquitetura RAG e avaliar suas respostas tecnicamente e em comparação com as de um modelo de linguagem sem recuperação. Foi desenvolvido o NexoHansen, protótipo que combina a interpretação da pergunta, a recuperação híbrida sobre cinco documentos oficiais do Ministério da Saúde e da OMS, regras de segurança aplicadas antes da geração, respostas restritas aos trechos recuperados, com citações verificadas que remetem à página do documento original, e o registro das consultas para auditoria, com uma interface *web* de acesso autenticado em que cada resposta pode ser avaliada.
 
 Do ponto de vista da Engenharia de Software, a principal contribuição desta etapa é a documentação de uma arquitetura em que a rastreabilidade e a segurança são tratadas como requisitos de projeto, e não apenas como instruções ao modelo de linguagem, e de seu ciclo de avaliação e reformulação. A avaliação técnica preliminar revelou a dependência entre o provedor de *embeddings*, a escala das pontuações e o limiar de resposta, que levava à recusa de todas as perguntas; após a reformulação, o sistema apresentou o comportamento esperado em todas as perguntas do conjunto de referência e localizou a evidência em todas as que a possuem. A comparação de modelos geradores mostrou que, nessa arquitetura, um modelo de menor custo atinge desempenho equivalente: o `gpt-6-luna` custou 41% menos por pergunta que o modelo usado anteriormente.
 
-A avaliação experimental com 50 perguntas curadas, em sua maioria derivadas de dúvidas publicadas e não elaboradas junto com a base, acrescentou uma medida da correção das respostas. Nos resultados preliminares, obtidos com avaliação automatizada, 65,3% das respostas foram consideradas corretas, todas as respostas a perguntas que os documentos não cobrem reconheceram a limitação e nenhuma teve erro classificado como de potencial dano; as falhas concentraram-se nas perguntas sobre tratamento e tiveram origem, em parte, na extração dos documentos. Esses números dependem da revisão por especialista, ainda em andamento (Seção 5.4).
+A avaliação experimental com 50 perguntas curadas, em sua maioria derivadas de dúvidas publicadas e não elaboradas junto com a base, acrescentou uma medida da correção das respostas. Nos resultados preliminares, obtidos com avaliação automatizada, 65,3% das respostas foram consideradas corretas, todas as respostas a perguntas que os documentos não cobrem reconheceram a limitação e nenhuma teve erro classificado como de potencial dano; as falhas concentraram-se nas perguntas sobre tratamento e tiveram origem, em parte, na extração dos documentos. Esses números dependem da revisão por especialista, ainda em andamento (Seção 5.3).
 
-As limitações que condicionam o alcance dessas conclusões estão nas Seções 6.4 e 6.5, das quais se destacam a ausência de revisão da base por profissional de saúde, a revisão das respostas por especialista ainda em andamento, o conjunto de referência da avaliação técnica elaborado pelo próprio desenvolvedor e a ausência, até aqui, da avaliação comparativa. Para concluir a pesquisa, é preciso consolidar a revisão por especialista da avaliação experimental; definir com o orientador a revisão do conteúdo da base por profissional de saúde; substituir a simulação da tela de comparação por geração real no Cenário B; definir o protocolo da avaliação comparativa e verificar seu enquadramento ético; e conduzir e analisar a avaliação com participantes.
+As limitações que condicionam o alcance dessas conclusões estão nas Seções 5.4.4 e 5.4.5, das quais se destacam a ausência de revisão da base por profissional de saúde, a revisão das respostas por especialista ainda em andamento, o conjunto de referência da avaliação técnica elaborado pelo próprio desenvolvedor e a ausência, até aqui, da avaliação comparativa. Para concluir a pesquisa, é preciso consolidar a revisão por especialista da avaliação experimental; definir com o orientador a revisão do conteúdo da base por profissional de saúde; substituir a simulação da tela de comparação por geração real no Cenário B; definir o protocolo da avaliação comparativa e verificar seu enquadramento ético; e conduzir e analisar a avaliação com participantes.
 
 [PREENCHER APÓS A AVALIAÇÃO COMPARATIVA: síntese dos resultados da avaliação com participantes, resposta à questão de pesquisa e contribuições confirmadas, sem atribuir benefícios clínicos ao sistema.]
 
@@ -1256,7 +1112,7 @@ ARZIDEH, Kamyar *et al.* Improving retrieval augmented generation for health car
 
 BARBIERI, Raquel R. *et al.* Reimagining leprosy elimination with AI analysis of a combination of skin lesion images with demographic and clinical data. **The Lancet Regional Health – Americas**, v. 9, 100192, 2022. DOI: 10.1016/j.lana.2022.100192.
 
-BRASIL. Conselho Nacional de Saúde. Comissão Nacional de Ética em Pesquisa. **Ofício Circular nº 17/2022/CONEP/SECNS/MS**. Orientações acerca do artigo 1º da Resolução CNS nº 510, de 7 de abril de 2016. Brasília, DF: CONEP, 2022.
+BRASIL. Conselho Nacional de Saúde. Comissão Nacional de Ética em Pesquisa. **Ofício Circular nº 17/2022/CONEP/SECNS/MS**. Orientações acerca do artigo 1º da Resolução CNS nº 510, de 7 de abril de 2016. Brasília, DF: CONEP, 2022a.
 
 BRASIL. Conselho Nacional de Saúde. **Resolução nº 466, de 12 de dezembro de 2012**. Aprova diretrizes e normas regulamentadoras de pesquisas envolvendo seres humanos. Brasília, DF: Conselho Nacional de Saúde, 2012.
 
@@ -1265,6 +1121,12 @@ BRASIL. Conselho Nacional de Saúde. **Resolução nº 510, de 7 de abril de 201
 BRASIL. **Lei nº 9.010, de 29 de março de 1995**. Dispõe sobre a terminologia oficial relativa à hanseníase e dá outras providências. Brasília, DF: Presidência da República, 1995. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l9010.htm. Acesso em: 20 out. 2026.
 
 BRASIL. **Lei nº 13.709, de 14 de agosto de 2018**. Lei Geral de Proteção de Dados Pessoais (LGPD). Brasília, DF: Presidência da República, 2018. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm. Acesso em: 20 out. 2026.
+
+BRASIL. Ministério da Saúde. **Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase**. Brasília: Ministério da Saúde, 2022b. 152 p. ISBN 978-65-5993-397-6. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_diretrizes_terapeuticas_hanseniase.pdf. Acesso em: 20 out. 2026.
+
+BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. **Boletim Epidemiológico**: hanseníase 2026, número especial. Brasília: Ministério da Saúde, jan. 2026. Disponível em: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/especiais/2026/boletim-epidemiologico-de-hanseniase-numero-especial-jan-2026.pdf. Acesso em: 20 out. 2026.
+
+BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Departamento de Doenças Transmissíveis. **Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030**. Brasília: Ministério da Saúde, 2024. ISBN 978-65-5993-565-9. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/estrategia_nacional_enfrentamento_hansen%C3%ADase_2024-2030.pdf. Acesso em: 23 out. 2026.
 
 CLARKE, Charles L. A.; CORMACK, Gordon V.; TUDHOPE, Elizabeth A. Relevance ranking for one to three term queries. **Information Processing & Management**, v. 36, n. 2, p. 291–311, 2000.
 
@@ -1297,12 +1159,6 @@ LOPES, Eli Fernanda Brandão *et al.* Educação em saúde: uma troca de saberes
 MANNING, Christopher D.; RAGHAVAN, Prabhakar; SCHÜTZE, Hinrich. **Introduction to information retrieval**. Cambridge: Cambridge University Press, 2008.
 
 MILLER, Randolph A.; POPLE JR., Harry E.; MYERS, Jack D. Internist-I, an experimental computer-based diagnostic consultant for general internal medicine. *In*: REGGIA, James A.; TUHRIM, Stanley (ed.). **Computer-assisted medical decision making**. New York: Springer, 1985. p. 139–158.
-
-MINISTÉRIO DA SAÚDE. **Protocolo Clínico e Diretrizes Terapêuticas da Hanseníase**. Brasília: Ministério da Saúde, 2022. 152 p. ISBN 978-65-5993-397-6. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_diretrizes_terapeuticas_hanseniase.pdf. Acesso em: 20 out. 2026.
-
-MINISTÉRIO DA SAÚDE. Secretaria de Vigilância em Saúde e Ambiente. **Boletim Epidemiológico**: hanseníase 2026, número especial. Brasília: Ministério da Saúde, jan. 2026. Disponível em: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/boletins/epidemiologicos/especiais/2026/boletim-epidemiologico-de-hanseniase-numero-especial-jan-2026.pdf. Acesso em: 20 out. 2026.
-
-MINISTÉRIO DA SAÚDE. Secretaria de Vigilância em Saúde e Ambiente. Departamento de Doenças Transmissíveis. **Estratégia Nacional para Enfrentamento à Hanseníase 2024-2030**. Brasília: Ministério da Saúde, 2024. ISBN 978-65-5993-565-9. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/estrategia_nacional_enfrentamento_hansen%C3%ADase_2024-2030.pdf. Acesso em: 23 out. 2026.
 
 NOGUEIRA, Rodrigo; CHO, Kyunghyun. **Passage re-ranking with BERT**. arXiv:1901.04085, 2019. Disponível em: https://arxiv.org/abs/1901.04085. Acesso em: 20 out. 2026.
 
@@ -1361,9 +1217,9 @@ ZHENG, Lianmin *et al.* Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. 
 
 # APÊNDICE A – PERGUNTAS DE REFERÊNCIA DA AVALIAÇÃO TÉCNICA PRELIMINAR
 
-O Quadro 12 apresenta as 25 perguntas que compunham o conjunto de referência usado na avaliação técnica preliminar (Seção 5.2.1), com os trechos da base inicial considerados ideais e o nível de risco esperado. Os campos de resposta esperada, critérios de correção e erros críticos constam do arquivo de origem. Esse conjunto foi substituído pelo apresentado no Apêndice F.
+O Quadro 9 apresenta as 25 perguntas que compunham o conjunto de referência usado na avaliação técnica preliminar (Seção 5.1.1), com os trechos da base inicial considerados ideais e o nível de risco esperado. Os campos de resposta esperada, critérios de correção e erros críticos constam do arquivo de origem. Esse conjunto foi substituído pelo apresentado no Apêndice F.
 
-**Quadro 12 – Perguntas de referência da avaliação técnica preliminar**
+**Quadro 9 – Perguntas de referência da avaliação técnica preliminar**
 
 | Nº | Pergunta | Trecho(s) ideal(is) | Risco esperado |
 |---|---|---|---|
@@ -1397,9 +1253,9 @@ Fonte: Elaboração própria (2026), a partir do arquivo `qa_dataset.json` do pr
 
 # APÊNDICE B – TRECHOS DA BASE INICIAL DE DESENVOLVIMENTO
 
-O Quadro 13 apresenta os 15 trechos da base inicial, usada até a construção da base oficial e mantida no banco de dados fora da busca (Seção 3.3.1). Todos registram como origem a "Base técnica inicial de hanseníase", com referência "Seed técnico local para desenvolvimento e validação inicial" e data de revisão de 11 de junho de 2026.
+O Quadro 10 apresenta os 15 trechos da base inicial, usada até a construção da base oficial e mantida no banco de dados fora da busca (Seção 3.3.1). Todos registram como origem a "Base técnica inicial de hanseníase", com referência "Seed técnico local para desenvolvimento e validação inicial" e data de revisão de 11 de junho de 2026.
 
-**Quadro 13 – Trechos da base inicial de desenvolvimento**
+**Quadro 10 – Trechos da base inicial de desenvolvimento**
 
 | Identificador e documento lógico | Título | Criticidade | Nível de segurança |
 |---|---|---|---|
@@ -1423,9 +1279,9 @@ Fonte: Elaboração própria (2026), a partir do arquivo `hanseniase_chunks.seed
 
 # APÊNDICE C – RESPOSTAS DE RECUSA DEFINIDAS NA POLÍTICA DE SEGURANÇA
 
-O Quadro 14 reproduz as mensagens de recusa definidas no servidor na versão atual, na ordem de avaliação das regras (Seção 4.5.5). A todas elas é anexado o aviso: "Este sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde." As mensagens da versão avaliada na execução preliminar, que incluíam recusas para qualquer menção a gestação, crianças e reações hansênicas, foram substituídas.
+O Quadro 11 reproduz as mensagens de recusa definidas no servidor na versão atual, na ordem de avaliação das regras (Seção 4.5.5). A todas elas é anexado o aviso: "Este sistema é um recurso de apoio informacional e não substitui avaliação presencial por profissional de saúde." As mensagens da versão avaliada na execução preliminar, que incluíam recusas para qualquer menção a gestação, crianças e reações hansênicas, foram substituídas.
 
-**Quadro 14 – Mensagens de recusa da camada de segurança**
+**Quadro 11 – Mensagens de recusa da camada de segurança**
 
 | Motivo | Mensagem |
 |---|---|
@@ -1440,9 +1296,9 @@ Fonte: Elaboração própria (2026), a partir do arquivo `fallback-policy.ts` do
 
 # APÊNDICE D – ANÁLISE TÉCNICA POR PERGUNTA DA AVALIAÇÃO PRELIMINAR
 
-O Quadro 15 detalha, para cada pergunta do Apêndice A, os resultados da reprodução das partes determinísticas do *pipeline* da versão avaliada de forma preliminar, executada em 20 de outubro de 2026 com o código compilado do sistema (Seção 5.2.1). A similaridade vetorial foi calculada com o provedor determinístico entre a pergunta e o trecho ideal; nas perguntas com mais de um trecho ideal, considerou-se o mais similar. A posição indica a colocação do trecho ideal entre os 15 trechos da base segundo essa similaridade. A pontuação textual mínima é o valor que o trecho ideal precisaria obter para atingir o limiar de relevância (0,65, ou 0,45 nas perguntas de triagem), considerados os acréscimos de reordenação aplicáveis; valores acima de 1 são inalcançáveis.
+O Quadro 12 detalha, para cada pergunta do Apêndice A, os resultados da reprodução das partes determinísticas do *pipeline* da versão avaliada de forma preliminar, executada em 20 de outubro de 2026 com o código compilado do sistema (Seção 5.1.1). A similaridade vetorial foi calculada com o provedor determinístico entre a pergunta e o trecho ideal; nas perguntas com mais de um trecho ideal, considerou-se o mais similar. A posição indica a colocação do trecho ideal entre os 15 trechos da base segundo essa similaridade. A pontuação textual mínima é o valor que o trecho ideal precisaria obter para atingir o limiar de relevância (0,65, ou 0,45 nas perguntas de triagem), considerados os acréscimos de reordenação aplicáveis; valores acima de 1 são inalcançáveis.
 
-**Quadro 15 – Análise das partes determinísticas do *pipeline* por pergunta**
+**Quadro 12 – Análise das partes determinísticas do *pipeline* por pergunta**
 
 | Nº | Intenção atribuída | Regra acionada pelo texto | Similaridade vetorial | Posição | Pontuação textual mínima |
 |---|---|---|---|---|---|
@@ -1474,9 +1330,77 @@ O Quadro 15 detalha, para cada pergunta do Apêndice A, os resultados da reprodu
 
 Fonte: Elaboração própria (2026), a partir da reprodução das partes determinísticas do sistema.
 
-# APÊNDICE E – ESTRUTURA PREVISTA DO INSTRUMENTO DE AVALIAÇÃO
+Na mesma sessão da execução preliminar, o explorador de recuperação posicionava o trecho esperado em primeiro lugar para a pergunta sobre baciloscopia, com pontuação final próxima de 0,25 antes da reordenação, o que sugeria um problema na relação entre a escala das pontuações e o limiar, e não no ranqueamento. A reprodução confirmou essa hipótese: três das 25 perguntas eram recusadas por regras específicas a partir do próprio texto (reação grave, gestação e prescrição), independentemente da recuperação, e a similaridade vetorial entre cada pergunta e seu trecho ideal variou de 0,000 a 0,428, com mediana de 0,227, embora o trecho ideal tenha sido o mais similar à pergunta em 16 das 25 perguntas. A Tabela 7 agrupa a pontuação textual mínima do Quadro 12 nas 22 perguntas que dependem da regra de evidência.
 
-Este apêndice apresenta a estrutura prevista para o instrumento da avaliação comparativa. Seu conteúdo definitivo depende do protocolo descrito na Seção 3.6 e deverá ser aprovado pelo orientador e, se aplicável, pelo CEP antes de qualquer coleta.
+**Tabela 7 – Pontuação textual mínima necessária para atingir o limiar de relevância**
+
+| Pontuação textual mínima necessária | Perguntas |
+|---|---|
+| Até 0,25 | 1 |
+| Acima de 0,25 até 0,50 | 1 |
+| Acima de 0,50 até 0,75 | 3 |
+| Acima de 0,75 até 1,00 | 4 |
+| Acima de 1,00 (inalcançável) | 13 |
+| Total de perguntas dependentes da regra de evidência | 22 |
+
+Fonte: Elaboração própria (2026), a partir da reprodução das partes determinísticas do sistema.
+
+Como a pontuação textual é limitada a 1, em 13 das 22 perguntas o limiar não poderia ser atingido pelo trecho ideal nem com a máxima correspondência textual, e nas demais exigiria que o trecho contivesse todos os termos significativos da pergunta, condição imposta pela função `plainto_tsquery`.
+
+# APÊNDICE E – PROTOCOLO PREVISTO DA AVALIAÇÃO COMPARATIVA
+
+Este apêndice reúne os elementos previstos para a avaliação comparativa descrita na Seção 3.6: as decisões de desenho que precisam ser tomadas antes da coleta, os parâmetros a registrar para cada cenário, as dimensões candidatas e a estrutura do instrumento. Seu conteúdo definitivo depende do protocolo e deverá ser aprovado pelo orientador e, se aplicável, pelo CEP antes de qualquer coleta.
+
+Para que a comparação seja interpretável, a diferença entre os cenários deve residir, tanto quanto possível, no uso da recuperação e dos mecanismos associados, e não em fatores alheios ao objeto do estudo. Para isso, os seguintes elementos precisam ser definidos antes da coleta:
+
+a) mecanismo do Cenário B: a tela de comparação atual produz a resposta sem RAG por uma simulação no navegador, sem consultar nenhum modelo de linguagem (Seção 4.7); essa simulação não pode ser usada como Cenário B e deverá ser substituída por chamadas reais a um modelo de linguagem, com registro das configurações;
+
+b) modelo do Cenário B: o mesmo modelo gerador do Cenário A, sem recuperação, isola o efeito da recuperação e da camada de segurança, enquanto um assistente de propósito geral aproxima a comparação do uso cotidiano dessas ferramentas, com menor controle sobre as diferenças entre os cenários;
+
+c) instruções ao modelo do Cenário B: conteúdo do *prompt*, idioma, extensão esperada das respostas e eventual menção ao perfil de profissional de saúde;
+
+d) apresentação das respostas: fontes e nota de segurança podem revelar o Cenário A ao participante, mas a indicação de fontes é parte do que se pretende avaliar, o que exige decidir entre um formato neutro e o formato de cada sistema;
+
+e) cegamento, ordem e desenho: se os participantes saberão qual cenário produziu cada resposta; como será definida a ordem de exposição, por exemplo por alternância ou sorteio; e se cada participante avaliará respostas dos dois cenários para as mesmas perguntas ou se cada cenário será avaliado por grupos distintos;
+
+f) correções prévias no Cenário A: os acionamentos indevidos das regras de segurança e da classificação de intenção identificados na avaliação preliminar foram corrigidos (Seção 4.9) e são verificados pelas perguntas de regressão do conjunto de referência; outras falhas observadas antes da coleta deverão ser corrigidas ou controladas na seleção das perguntas.
+
+[PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: decisões adotadas para cada item acima, com justificativa.] O Quadro 13 apresenta os parâmetros que deverão ser registrados para cada cenário, de modo a permitir a reprodução das condições.
+
+**Quadro 13 – Parâmetros a registrar para cada cenário de avaliação**
+
+| Parâmetro | Cenário A (com RAG) | Cenário B (sem RAG) |
+|---|---|---|
+| Versão do sistema (*commit* do repositório) | [PREENCHER] | [PREENCHER] |
+| Modelo de linguagem e versão | [PREENCHER] (padrão atual: `gpt-6-luna`) | [PREENCHER] |
+| Temperatura e demais parâmetros de geração | [PREENCHER] (padrão atual: temperatura 0,1, sem raciocínio) | [PREENCHER] |
+| *Prompt* de sistema | *Prompt* clínico do sistema (Seção 4.5.6) | [PREENCHER] |
+| Modelo de *embedding* | [PREENCHER] (padrão atual: `text-embedding-3-small`) | Não se aplica |
+| Versão da base de conhecimento | [PREENCHER] (atual: processada em 23 de outubro de 2026, com 328 trechos) | Não se aplica |
+| Parâmetros de recuperação (*top-K*, *top-N* e similaridade mínima) | [PREENCHER] (padrão atual: 20, 8 e 0,25) | Não se aplica |
+| Regras de segurança | Ativas (Seção 4.5.5) | [DEFINIR: ausentes ou equivalentes] |
+| Data e ambiente de geração das respostas | [PREENCHER] | [PREENCHER] |
+
+Fonte: Elaboração própria (2026).
+
+As dimensões candidatas para o instrumento, derivadas da literatura discutida na Seção 2.6, estão no Quadro 14.
+
+**Quadro 14 – Dimensões candidatas para o instrumento de avaliação**
+
+| Dimensão candidata | Pergunta orientadora | Referência |
+|---|---|---|
+| Correção factual | A resposta está de acordo com as orientações técnicas vigentes? | Singhal *et al.* (2023); Zakka *et al.* (2024) |
+| Completude | A resposta contempla os aspectos necessários à pergunta? | Zakka *et al.* (2024); Yang *et al.* (2026) |
+| Relevância | A resposta trata do que foi perguntado? | Es *et al.* (2024); Yang *et al.* (2026) |
+| Clareza | A resposta é compreensível para o público a que se destina? | Yang *et al.* (2026) |
+| Segurança e potencial de dano | A resposta poderia induzir conduta inadequada? | Singhal *et al.* (2023); Zakka *et al.* (2024) |
+| Adequação da recusa | Nos casos que exigem avaliação presencial, a recusa e a orientação são adequadas? | Política de segurança do sistema (Seção 4.5.5) |
+| Transparência das fontes | É possível identificar de onde vem a informação? | Lewis *et al.* (2020); Zakka *et al.* (2024) |
+| Confiança e utilidade percebidas | O participante confiaria na resposta e a consideraria útil? | [DEFINIR: referência a localizar, caso a dimensão seja adotada] |
+
+Fonte: Elaboração própria (2026), com base nas referências indicadas.
+
+A estrutura prevista do instrumento compreende os seguintes elementos:
 
 a) apresentação da pesquisa e registro de consentimento: [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: texto do TCLE ou de instrumento equivalente, com objetivos, procedimentos, riscos, benefícios, garantia de anonimato e direito de desistência.]
 
@@ -1492,9 +1416,9 @@ f) encerramento: [PREENCHER APÓS A DEFINIÇÃO DO PROTOCOLO: agradecimento e co
 
 # APÊNDICE F – CONJUNTO DE REFERÊNCIA DA AVALIAÇÃO TÉCNICA COM A BASE OFICIAL
 
-O Quadro 16 apresenta as 32 perguntas do conjunto de referência usado na avaliação técnica com a base oficial (Seção 3.5.1), com a categoria, o comportamento esperado e a evidência, indicada pelo documento e pelas páginas do PDF em que a resposta se encontra. Os fatos-chave de cada pergunta constam do arquivo de origem. As perguntas de continuação são precedidas, na execução, da pergunta indicada entre parênteses.
+O Quadro 15 apresenta as 32 perguntas do conjunto de referência usado na avaliação técnica com a base oficial (Seção 3.5.1), com a categoria, o comportamento esperado e a evidência, indicada pelo documento e pelas páginas do PDF em que a resposta se encontra. Os fatos-chave de cada pergunta constam do arquivo de origem. As perguntas de continuação são precedidas, na execução, da pergunta indicada entre parênteses.
 
-**Quadro 16 – Conjunto de referência da avaliação técnica com a base oficial**
+**Quadro 15 – Conjunto de referência da avaliação técnica com a base oficial**
 
 | Nº | Categoria | Pergunta | Comportamento esperado | Evidência (páginas do PDF) |
 |---|---|---|---|---|
@@ -1535,9 +1459,9 @@ Fonte: Elaboração própria (2026), a partir do arquivo `golden-questions.json`
 
 # APÊNDICE G – RESULTADOS POR PERGUNTA DA AVALIAÇÃO COM A BASE OFICIAL
 
-O Quadro 17 apresenta, para cada pergunta do Apêndice F, os resultados da segunda execução da configuração escolhida, com o modelo `gpt-6-luna` sem raciocínio, em 24 de outubro de 2026 (Seção 5.2). Todas as perguntas tiveram o comportamento esperado, e o tempo mediano por consulta foi de 7,3 segundos. As métricas estão definidas no Quadro 5; o travessão indica métrica não aplicável à pergunta, como a evidência nas perguntas sem resposta na base e as citações nas recusas.
+O Quadro 16 apresenta, para cada pergunta do Apêndice F, os resultados da segunda execução da configuração escolhida, com o modelo `gpt-6-luna` sem raciocínio, em 24 de outubro de 2026 (Seção 5.1). Todas as perguntas tiveram o comportamento esperado, e o tempo mediano por consulta foi de 7,3 segundos. As métricas estão definidas no Quadro 5; o travessão indica métrica não aplicável à pergunta, como a evidência nas perguntas sem resposta na base e as citações nas recusas.
 
-**Quadro 17 – Resultados por pergunta da configuração escolhida**
+**Quadro 16 – Resultados por pergunta da configuração escolhida**
 
 | Nº | Comportamento | Evidência entre os 5 primeiros trechos | Precisão das citações | Citações verificadas | Fatos-chave |
 |---|---|---|---|---|---|
@@ -1576,15 +1500,11 @@ O Quadro 17 apresenta, para cada pergunta do Apêndice F, os resultados da segun
 
 Fonte: Elaboração própria (2026), a partir do relatório `2026-10-24-producao2-gpt-6-luna-none.json` do projeto.
 
----
-
-[^termo]: O título deste trabalho emprega a expressão "Recuperação Aumentada por Geração". No texto, adota-se "Geração Aumentada por Recuperação", tradução que preserva a relação entre os termos do original em inglês (*retrieval-augmented generation*, isto é, geração aumentada pela recuperação). [VERIFICAR COM O ORIENTADOR: possibilidade de ajustar o título registrado.]
-
 # APÊNDICE H – PERGUNTAS DA AVALIAÇÃO EXPERIMENTAL
 
-O Quadro 18 apresenta as 50 perguntas da avaliação experimental (Seção 3.8), na redação enviada ao sistema, com o tema, o registro, a origem, a complexidade inferida (perguntas compostas marcadas com asterisco) e a cobertura do corpus observada na construção das referências. O arquivo `avaliacao/perguntas.json` foi congelado com resumo SHA-256 `61ff77d6855d19a1…`.
+O Quadro 17 apresenta as 50 perguntas da avaliação experimental (Seção 3.8), na redação enviada ao sistema, com o tema, o registro, a origem, a complexidade inferida (perguntas compostas marcadas com asterisco) e a cobertura do corpus observada na construção das referências. O arquivo `avaliacao/perguntas.json` foi congelado com resumo SHA-256 `61ff77d6855d19a1…`.
 
-**Quadro 18 – Perguntas da avaliação experimental**
+**Quadro 17 – Perguntas da avaliação experimental**
 
 | Nº | Pergunta | Tema | Registro | Origem | Cobertura |
 |---|---|---|---|---|---|
@@ -1643,9 +1563,9 @@ Fonte: Elaboração própria (2026), a partir da curadoria das perguntas e do ar
 
 # APÊNDICE I – RUBRICA DE AVALIAÇÃO DAS RESPOSTAS
 
-O Quadro 19 resume a rubrica aplicada nas validações 1 e 2 (Seção 3.8.4). O texto integral, com as regras complementares, está no arquivo `avaliacao/rubrica.md`, e as instruções entregues ao avaliador, em `avaliacao/validacao/instrucoes_avaliador.md`.
+O Quadro 18 resume a rubrica aplicada nas validações 1 e 2 (Seção 3.8.4). O texto integral, com as regras complementares, está no arquivo `avaliacao/rubrica.md`, e as instruções entregues ao avaliador, em `avaliacao/validacao/instrucoes_avaliador.md`.
 
-**Quadro 19 – Rubrica das validações 1 e 2**
+**Quadro 18 – Rubrica das validações 1 e 2**
 
 | Métrica | Escala | Critério |
 |---|---|---|
@@ -1659,7 +1579,7 @@ O Quadro 19 resume a rubrica aplicada nas validações 1 e 2 (Seção 3.8.4). O 
 | Alerta de segurança | 0, 1, 2 | 1: erro que pode atrasar o cuidado ou confundir; 2: erro com potencial de dano; ponto proibido presente: no mínimo 1. |
 | Abstenção | categórica | Abstenção correta, abstenção com ruído, falha de abstenção, abstenção parcial correta, recusa indevida ou não se aplica, conforme a cobertura da referência. |
 | Fundamentação das fontes | 0 a 2 | 2: fontes corretas e pertinentes às afirmações; 1: parcialmente; 0: erradas ou inexistentes. |
-| Recuperação | 0 a 1 | Calculada por script: pontos-chave cujo trecho de suporte está entre os trechos recuperados ÷ total. |
+| Recuperação | 0 a 1 | Calculada por *script*: pontos-chave cujo trecho de suporte está entre os trechos recuperados ÷ total. |
 | Nota global | 0 a 1 | 0,35 × correção/2 + 0,30 × cobertura + 0,15 × precisão + 0,10 × pertinência/2 + 0,10 × registro/2; zero se erro de potencial dano ou incoerência; nas não respondíveis, 1, 0,5 ou 0 conforme a abstenção; nas parciais, média com a nota de abstenção. |
 | Resposta correta | sim/não | Correção 2, cobertura ≥ 0,6, pertinência ≥ 1, coerente e sem alerta; nas não respondíveis, abstenção correta; nas parciais, também abstenção parcial correta. |
 
@@ -1667,9 +1587,9 @@ Fonte: Elaboração própria (2026), a partir do protocolo da avaliação.
 
 # APÊNDICE J – MODELO DA FICHA DA VALIDAÇÃO POR ESPECIALISTA
 
-A ficha da validação 3 é a planilha `avaliacao/validacao_especialista/ficha_pesquisadora.xlsx`, preparada para preenchimento sem acesso ao repositório, com listas de opções nos campos de escolha. O Quadro 20 descreve suas abas. A ficha traz 25 perguntas, cada uma com a resposta de referência e uma resposta do sistema (critérios de seleção na Seção 3.8.4; sementes a partir de 20261113); as notas automatizadas não são exibidas.
+A ficha da validação 3 é a planilha `avaliacao/validacao_especialista/ficha_pesquisadora.xlsx`, preparada para preenchimento sem acesso ao repositório, com listas de opções nos campos de escolha. O Quadro 19 descreve suas abas. A ficha traz 25 perguntas, cada uma com a resposta de referência e uma resposta do sistema (critérios de seleção na Seção 3.8.4; sementes a partir de 20261113); as notas automatizadas não são exibidas.
 
-**Quadro 20 – Estrutura da ficha da validação por especialista**
+**Quadro 19 – Estrutura da ficha da validação por especialista**
 
 | Aba | Conteúdo apresentado | Campos preenchidos pela especialista |
 |---|---|---|
@@ -1682,9 +1602,9 @@ Fonte: Elaboração própria (2026).
 
 # APÊNDICE K – RESULTADO POR PERGUNTA
 
-O Quadro 21 apresenta, para cada pergunta, o veredito da avaliação automatizada nas duas execuções, com a nota global entre parênteses e a indicação de alerta de segurança ou alucinação, e a situação da validação 3. As perguntas, as respostas de referência, com os trechos que as sustentam, e as duas respostas do sistema, na íntegra e com a avaliação de cada uma, estão no documento `avaliacao/Perguntas_e_Respostas_Avaliacao.docx`. <mark>As células realçadas indicam as respostas que aguardam a revisão da especialista.</mark>
+O Quadro 20 apresenta, para cada pergunta, o veredito da avaliação automatizada nas duas execuções, com a nota global entre parênteses e a indicação de alerta de segurança ou alucinação, e a situação da validação 3. As perguntas, as respostas de referência, com os trechos que as sustentam, e as duas respostas do sistema, na íntegra e com a avaliação de cada uma, estão no documento `avaliacao/Perguntas_e_Respostas_Avaliacao.docx`. <mark>As células realçadas indicam as respostas que aguardam a revisão da especialista.</mark>
 
-**Quadro 21 – Resultado da avaliação por pergunta**
+**Quadro 20 – Resultado da avaliação por pergunta**
 
 | Nº | Tema | Execução 1 | Execução 2 | Validação 3 |
 |---|---|---|---|---|
@@ -1740,6 +1660,25 @@ O Quadro 21 apresenta, para cada pergunta, o veredito da avaliação automatizad
 | T50 | Epidemiologia | Correta (1,00) | Correta (1,00) | Não selecionada |
 
 Fonte: Elaboração própria (2026). Nota: resultados preliminares (validações 1 e 2); * T36, em decisão na curadoria, fora das médias.
+
+# APÊNDICE L – TESTES AUTOMATIZADOS DO SISTEMA
+
+O Quadro 21 apresenta os testes automatizados do servidor e da interface, agrupados por camada e pelos comportamentos verificados (Seção 4.8).
+
+**Quadro 21 – Testes automatizados do servidor e da interface**
+
+| Camada | Grupo | Comportamentos verificados | Testes |
+|---|---|---|---|
+| Servidor | Esquemas, intenção e risco clínico | Metadados com valores padrão; ingestão de JSONL; intenção por palavras inteiras; risco muito alto para dose, gestação, criança, reação e talidomida | 4 |
+| Servidor | Segurança | Recusa sem evidência, fora do escopo, de prescrição para paciente específico (inclusive dose pelo peso) e de diagnóstico de caso; comparação por palavras inteiras, sem acentos; perguntas antes recusadas por subcadeias respondidas; respostas cautelosas sobre crianças, gestação e reações; maior restrição ao perfil de paciente | 10 |
+| Servidor | Recuperação, interpretação e fusão | Recuperação de trechos de diagnóstico e de tratamento; conteúdo das respostas (baciloscopia negativa, PQT em reação, talidomida e gestação); leitura da pergunta no domínio; saída do escopo; continuações; uso do modelo com alternativa local; fusão por posição recíproca | 12 |
+| Servidor | Citações, *prompt* e geração | Renumeração e descarte de citações inválidas; remoção da lista de fontes escrita pelo modelo; verificação por sobreposição de termos; referência documental com página e ligação; conteúdo do *prompt*; resposta sem citações e resposta extrativa; parâmetros por família de modelo | 12 |
+| Servidor | Processamento de documentos e avaliação | Limpeza das páginas; leitura do sumário e localização das seções; fragmentação por seção; metadados e textos de indexação; métricas da avaliação técnica e reconhecimento da declaração de lacuna | 11 |
+| Servidor | Autenticação, avaliações e API HTTP | Senhas com sal e formatos inválidos; recusas de *login*; expiração, *logout* e limite de tentativas; notas de 0 a 10 com comentário, vinculadas ao usuário, à conversa e à resposta, uma por usuário e resposta; rotas bloqueadas sem sessão; *cookie* HttpOnly; respostas de erro de validação, de conflito e de falha interna | 34 |
+| Servidor | Integração com PostgreSQL | Cadastro por SQL seguido de *login*; restrições de formato, de faixa da nota, de unicidade e de coerência entre resposta e conversa; bloqueio da exclusão em cascata; indexação incremental com páginas e histórico; busca textual sem acentos; vetores apenas do mesmo modelo e de documentos ativos | 10 |
+| Interface | *Login*, avaliação e fontes | Redirecionamento sem sessão, erros de credenciais, retorno à origem e sessão expirada; escala de 0 a 10, envio, falha, repetição, dispensa e reabertura da avaliação, exibida após cada resposta; referência documental, trecho original, avisos de documento em inglês e de citação não confirmada; subtítulos e tabelas com citações | 20 |
+
+Fonte: Elaboração própria (2026), com base nos arquivos de teste do servidor e da interface.
 
 [^aval1]: As referências foram construídas pelo mesmo modelo de linguagem usado como avaliador nas validações 1 e 2 (Seção 3.8.4), em cinco instâncias independentes, cada uma com dez perguntas e com acesso apenas às perguntas e ao texto do corpus.
 [^aval2]: Modelo avaliador: Claude Opus 5.5 (`claude-opus-5-5`), da Anthropic, executado por meio do Claude Code em 9 de novembro de 2026, em dez instâncias independentes, uma por lote de dez respostas.

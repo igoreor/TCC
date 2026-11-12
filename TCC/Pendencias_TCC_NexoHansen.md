@@ -1,6 +1,6 @@
 # Pendências do TCC — NexoHansen
 
-Complemento da versão revisada `TCC_NexoHansen_Versao_Revisada.docx` (20/10/2026, atualizada em 23 e 24/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+Complemento da versão revisada, hoje `TCC_NexoHansen_Versao_Revisada.docx` (20/10/2026, atualizada em 23 e 24/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
 
 ## Atualização de 24/10/2026
 
@@ -58,7 +58,7 @@ Os pontos em aberto estão destacados em amarelo no DOCX. Para encontrá-los, us
 | `[ANALISAR ...]` | 5 | Após a consolidação das avaliações |
 | `[ATUALIZAR ...]` | 3 | Resumo, abstract e considerações finais, ao fim do trabalho |
 | `[VERIFICAR ...]` | 3 | Com o orientador ou com o CEP |
-| `[INSERIR ...]` | 2 | Tabela e gráfico da avaliação comparativa |
+| `[INSERIR ...]` | 0 | Reunidos no marcador único da Seção 5.2 (11/11/2026) |
 | `[REESCREVER ...]` | 2 | Dedicatória e agradecimentos |
 | `[OPCIONAL ...]` | 1 | Epígrafe |
 
@@ -75,21 +75,21 @@ Sem estes itens, a pesquisa não pode ser concluída. A lista está na ordem rec
 3. **Preparar o ambiente da nova avaliação técnica.** *Concluído.* Chave configurada no `backend/.env` (não versionado). Base reindexada com `text-embedding-3-small`. O IVFFlat foi trocado por HNSW.
 4. **Executar de novo a avaliação técnica.** *Concluído em 24/10/2026*, com 32 perguntas, seis configurações de modelo e duas execuções cada. Resultados por pergunta no Apêndice G e em `backend/knowledge-base/evaluation/results/`.
    - O limiar antigo foi substituído pela fusão por posição recíproca e pela similaridade mínima de 0,25.
-   - Pendente: calibrar os limiares de evidência, hoje registrado como limitação (Seção 6.4, item b).
+   - Pendente: calibrar os limiares de evidência, hoje registrado como limitação (Seção 5.4.4, item b).
 5. **Implementar o Cenário B real.** A tela `/comparacao` monta a resposta "genérica" por simulação no navegador. Ela precisa ser substituída por chamadas reais a um modelo de linguagem, com os parâmetros do Quadro 6 registrados. Onde fica: Seções 3.6.1 (item a) e 4.7.
-6. **Definir o protocolo da avaliação comparativa.** Envolve os itens a–f da Seção 3.6.1, as Seções 3.6.2 e 3.6.3, o Apêndice E e as medidas contra as ameaças da Seção 3.7.
+6. **Definir o protocolo da avaliação comparativa.** Envolve os itens a–f do Apêndice E (movidos da Seção 3.6.1 em 11/11/2026), as Seções 3.6.2 e 3.6.3, o restante do Apêndice E e as medidas contra as ameaças da Seção 3.7.
 7. **Verificar o enquadramento ético antes de qualquer coleta.** Isso deve ser feito com o orientador e o CEP da UPE, com base nas Resoluções CNS 466/2012 e 510/2016 e no Ofício Circular 17/2022/CONEP. Inclui preparar o TCLE ou instrumento equivalente. O texto não afirma dispensa nem aprovação.
 8. **Proteger os dados antes de expor o sistema a participantes.** A autenticação já foi implementada (Seção 4.6). Ainda falta:
    - um aviso, na interface, contra a inserção de dados pessoais;
    - informar que as perguntas ficam registradas e vinculadas ao usuário e que, no modo com chave, são enviadas a um serviço externo (LGPD);
    - informar também a transferência internacional de dados: o sistema foi publicado na Vercel, com o banco na Neon, em servidores nos Estados Unidos (Seção 3.6.3);
    - criar as contas dos participantes com códigos não identificáveis, sem nome nem *e-mail* (Seção 3.6.3);
-   - separar perfis de acesso: hoje, todo usuário cadastrado entra também no painel interno (`/dashboard`) e nas rotas de carga e de avaliação técnica (Seção 6.4, item g).
+   - separar perfis de acesso: hoje, todo usuário cadastrado entra também no painel interno (`/dashboard`) e nas rotas de carga e de avaliação técnica (Seção 5.4.4, item g).
 9. **Pedir a revisão externa das perguntas de avaliação.** As 32 perguntas do conjunto atual (Apêndice F) foram escritas pelo desenvolvedor, com conhecimento da base, o que favorece o Cenário A (Seção 3.6.2). A leitura das respostas mostrou um erro não captado pelas métricas (F02, tabela do PCDT), o que reforça a revisão por especialista.
 10. **Gerar e guardar as respostas dos dois cenários antes da coleta.** As respostas não devem ser geradas em tempo real durante a sessão (Seção 3.6.2). O componente de avaliação de 0 a 10 avalia apenas respostas geradas na hora e só do Cenário A. Se a interface do sistema for o meio de aplicação, ela precisa ser adaptada para apresentar respostas pré-geradas dos dois cenários.
 11. **Redigir os resultados depois da coleta.**
-    - Preencher as Seções 5.3, 6.1 (QP3), 6.2, 6.3, 6.4 e 7, o Resumo e o Abstract.
-    - Atualizar a Figura 1 e o Quadro 2. A fonte editável está em `figuras/editaveis/fig-etapas.svg`.
+    - Preencher a Seção 5.2 (marcador único), as Seções 5.4.1 (QP3), 5.4.2, 5.4.3 e 5.4.4, o Capítulo 6, o Resumo e o Abstract.
+    - Atualizar a Figura 1, que ainda indica a situação de cada etapa. O Quadro 2 já não tem a coluna de situação (comentário do orientador de 11/11/2026). A fonte editável da figura está em `figuras/editaveis/fig-etapas.svg`.
     - A captura da tela de comparação foi retirada na revisão de concisão (10/11/2026). Se a tela passar a gerar o Cenário B real, avaliar se uma captura nova acrescenta informação.
 
 ## 2. Decisões para o orientador
@@ -99,7 +99,7 @@ Sem estes itens, a pesquisa não pode ser concluída. A lista está na ordem rec
 - **Abordagem.** Definir se a pesquisa será quantitativa, qualitativa ou mista (Seção 3.1).
 - **Cenário B.** Escolher entre o mesmo modelo sem recuperação e um assistente de propósito geral. Definir também o formato de apresentação das respostas, o cegamento e o desenho (intra ou entre participantes).
 - **Análise.** Definir os métodos estatísticos, o nível de significância e o procedimento de análise qualitativa (Seção 3.6.3).
-- **Nota de 0 a 10.** Decidir se a nota global registrada pelo sistema entra no instrumento, por exemplo como avaliação geral ao lado das dimensões do Quadro 7 (Seção 3.6.2).
+- **Nota de 0 a 10.** Decidir se a nota global registrada pelo sistema entra no instrumento, por exemplo como avaliação geral ao lado das dimensões do Quadro 14, no Apêndice E (Seção 3.6.2).
 - **Revisões complementares.** Decidir sobre o uso de métricas automáticas (RAGAS) e sobre a revisão das respostas e da base por um profissional de saúde.
 - **Nomes.** Indicar o(a) coorientador(a) (o campo estava em branco no rascunho) e os membros da banca.
 - **Entrada do Ministério da Saúde.** A lista usa "MINISTÉRIO DA SAÚDE", como no TCC de exemplo. A NBR 6023:2018 indica a entrada pela jurisdição ("BRASIL. Ministério da Saúde"). Se essa forma for adotada, as citações passam a ser "(Brasil, 2022a)", "(Brasil, 2022b)" e assim por diante, porque já existem outras entradas "Brasil, 2022".
@@ -111,8 +111,8 @@ Sem estes itens, a pesquisa não pode ser concluída. A lista está na ordem rec
 ### 3.1 A conferir ou completar
 
 - As datas de acesso ("Acesso em: 20 out. 2026") devem ser atualizadas na versão final.
-- A afirmação de lacuna na Seção 2.7.1 ("na literatura consultada, não foram identificados…") pede uma busca estruturada e documentada, com bases, termos e período. Sem ela, é preciso manter a ressalva.
-- A dimensão "Confiança e utilidade percebidas" do Quadro 7 ainda não tem referência. É preciso localizar uma se ela for adotada.
+- A afirmação de lacuna na Introdução e na Seção 2.7.1 passou a "Até onde se tem conhecimento, não foram identificados…", por sugestão do orientador (11/11/2026). Uma busca estruturada e documentada, com bases, termos e período, continua opcional.
+- A dimensão "Confiança e utilidade percebidas" do Quadro 14 (Apêndice E) ainda não tem referência. É preciso localizar uma se ela for adotada.
 
 ### 3.2 Corrigidas em relação ao rascunho
 
@@ -173,10 +173,10 @@ Estas obras deixaram de ser citadas porque as seções foram reescritas ou conde
 
 As datas devem ser definidas com o orientador.
 
-1. Itens 1 a 4: concluídos em 24/10/2026; a QP2 está respondida na Seção 6.1.
+1. Itens 1 a 4: concluídos em 24/10/2026; a QP2 está respondida na Seção 5.4.1.
 2. Itens 5 a 9: Cenário B real, protocolo, ética, aviso de privacidade e revisão das perguntas e da base.
 3. Item 10: gerar as respostas. Em seguida, a coleta, que só deve começar depois do item 7.
-4. Item 11: análise e redação. Por último, atualizar o resumo, o abstract, a Figura 1 e o Quadro 2.
+4. Item 11: análise e redação. Por último, atualizar o resumo, o abstract e a Figura 1.
 
 ## 6. Como manter o documento
 
@@ -184,10 +184,6 @@ As datas devem ser definidas com o orientador.
 - **Legendas.** A numeração usa campos SEQ, mas as menções no texto ("Figura 4", "Quadro 9") são texto simples. Ao inserir uma figura ou um quadro novo, use Inserir legenda e revise as menções. Quando o TCC é regerado por `atualizar_tcc.ts`, as menções são renumeradas automaticamente se uma edição de `revisao_tcc/` remover uma ilustração.
 - **Google Docs.** O sumário pode ser atualizado no próprio Google Docs. As listas de figuras, quadros e tabelas podem virar texto fixo. Nesse caso, faça a revisão final no Word.
 - **Figuras.**
-  - As capturas de tela são as Figuras 5 a 9 (numeração após a revisão de concisão de 10/11/2026, que retirou as capturas do exemplo ilustrativo, da tela de login, da gaveta vazia e da tela de comparação; os arquivos continuam em `figuras/`).
-    - Figuras 6, 7 e 8: interface de 24/10/2026, com a base oficial.
-    - Figuras 5 e 9: interface de 23/10/2026, cujas telas não mudaram.
-    - A Figura 6 (página inicial) foi capturada sem login.
-  - As Figuras 7 e 8 mostram uma resposta real do `gpt-6-luna` à pergunta "Baciloscopia negativa exclui hanseníase?". Foram geradas em banco descartável (PGlite) com a base oficial indexada, com usuário de teste criado pelo procedimento manual.
-  - A Figura 5 mostra só o componente de avaliação, depois da escolha de uma nota, sem o texto da resposta.
+  - As capturas de tela são as Figuras 5 e 6 (interface de 24/10/2026, com a base oficial). A revisão de concisão de 10/11/2026 retirou as capturas do exemplo ilustrativo, da tela de login, da gaveta vazia e da tela de comparação; a revisão de 11/11/2026, as do componente de avaliação, da página inicial e do explorador de recuperação. Os arquivos continuam em `figuras/`.
+  - As Figuras 5 e 6 mostram uma resposta real do `gpt-6-luna` à pergunta "Baciloscopia negativa exclui hanseníase?". Foram geradas em banco descartável (PGlite) com a base oficial indexada, com usuário de teste criado pelo procedimento manual.
   - Os diagramas (Figuras 1 a 4) têm fonte editável em SVG na pasta `figuras/editaveis/`.

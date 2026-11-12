@@ -311,14 +311,16 @@ async function main() {
   console.log(`TCC atualizado: ${r.notas} notas, ${r.imagens} figuras, ${novasReferencias.length} referências`);
 
   // Revisões do texto, aplicadas em ordem sobre o texto já com as inserções: a acadêmica
-  // (edicoes.ts) e a de concisão (edicoes_concisao.ts), que parte do texto produzido pela primeira.
-  for (const nome of ['edicoes.ts', 'edicoes_concisao.ts']) {
+  // (edicoes.ts), a de concisão (edicoes_concisao.ts) e a dos comentários do orientador
+  // (edicoes_orientador.ts), cada uma sobre o texto produzido pelas anteriores. Esta última também
+  // exporta `ajustes` globais (renumeração das seções, citações, itálico), aplicados antes das edições.
+  for (const nome of ['edicoes.ts', 'edicoes_concisao.ts', 'edicoes_orientador.ts']) {
     const arquivoEdicoes = path.join(RAIZ, 'revisao_tcc', nome);
     if (!existsSync(arquivoEdicoes)) continue;
     // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const { edicoes } = require(arquivoEdicoes);
-    await aplicarRevisaoDocx(DOCX, edicoes);
-    aplicarRevisaoMarkdown(MD, edicoes);
+    const { edicoes, ajustes } = require(arquivoEdicoes);
+    await aplicarRevisaoDocx(DOCX, edicoes, '.', ajustes);
+    aplicarRevisaoMarkdown(MD, edicoes, ajustes);
     const ausentes = conferirMarkdown(MD, edicoes);
     if (ausentes.length) throw new Error(`${nome}: edições sem correspondência no .md: ${ausentes.join(', ')}`);
     console.log(`Revisão aplicada (${nome}): ${edicoes.length} edições`);

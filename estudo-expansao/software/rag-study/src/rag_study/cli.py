@@ -170,8 +170,11 @@ def _review_export(args) -> None:
     from .evaluation import load_records
     from .review import export_review, load_key_points, load_question_map
 
+    pass_b = None
+    if args.pass_b_sample:
+        pass_b = set(json.loads(Path(args.pass_b_sample).read_text(encoding="utf-8"))["sample"])
     counts = export_review(load_records(args.runs), load_question_map(args.questions),
-                           load_key_points(args.keypoints), args.corpus, args.repetition, args.seed, args.out)
+                           load_key_points(args.keypoints), args.corpus, args.repetition, args.seed, args.out, pass_b)
     print(json.dumps(counts))
 
 
@@ -400,6 +403,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--repetition", type=int, default=0)
     p.add_argument("--seed", type=int, required=True)
     p.add_argument("--out", required=True)
+    p.add_argument("--pass-b-sample", help="JSON com a amostra de perguntas da passagem B (campo 'sample')")
     p.set_defaults(func=_review_export)
 
     p = sub.add_parser("review-import", help="junta as planilhas preenchidas à chave oculta")

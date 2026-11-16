@@ -115,8 +115,12 @@ def _expected_behaviour(question: dict[str, Any]) -> str:
 
 def export_review(records: list[dict[str, Any]], questions: dict[str, dict[str, Any]],
                   key_points: dict[str, list[str]], corpus_dir: str | Path, repetition: int, seed: int,
-                  out_dir: str | Path) -> dict[str, int]:
-    """Write ``pass-a.csv``, ``pass-b.csv`` and ``review-key.csv`` (kept from the reviewer)."""
+                  out_dir: str | Path, pass_b_questions: set[str] | None = None) -> dict[str, int]:
+    """Write ``pass-a.csv``, ``pass-b.csv`` and ``review-key.csv`` (kept from the reviewer).
+
+    ``pass_b_questions`` restricts pass B to a pre-drawn sample of questions
+    (protocol v0.4, section 8: 50% of the questions, drawn before stage 2);
+    pass A always covers every answer."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=False)
     chunks = {chunk["chunk_id"]: chunk for chunk in load_chunks(corpus_dir)}
@@ -132,7 +136,8 @@ def export_review(records: list[dict[str, Any]], questions: dict[str, dict[str, 
     rng = random.Random(seed)
     order_a = selected[:]
     rng.shuffle(order_a)
-    order_b = [r for r in selected if r.get("rag_enabled")]
+    order_b = [r for r in selected if r.get("rag_enabled")
+               and (pass_b_questions is None or r["question_id"] in pass_b_questions)]
     rng.shuffle(order_b)
     ids = rng.sample(range(1000, 10000), len(order_a) + len(order_b))
 

@@ -35,6 +35,7 @@ ALLOW = [
     "research/runs",
     "research/questions",
     "research/qrels",
+    "research/review",
     "research/sources/README.md",
     "research/demo-logs/README.md",
 ]
@@ -42,7 +43,7 @@ SKIP_PARTS = {"__pycache__", ".pytest_cache", ".venv", ".ruff_cache", ".mypy_cac
 SKIP_SUFFIXES = {".pyc", ".pyo"}
 BINARY_SUFFIXES = {".npy", ".pdf", ".png", ".jpg", ".xlsx"}
 # Arquivos da raiz de destino mantidos à mão, nunca apagados pela sincronização.
-OWN_FILES = {"README.md", ".gitattributes", ".gitignore"}
+OWN_FILES = {"README.md", ".gitattributes", ".gitignore", "LICENSE", "LICENSE-DADOS.md"}
 FORBIDDEN = [
     (re.compile(r"sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}"), "chave de API"),
     (re.compile(r"(?:OPENAI|ANTHROPIC)_API_KEY\s*=\s*['\"]?[A-Za-z0-9_-]{8,}"), "chave de API atribuída"),

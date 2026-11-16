@@ -11,7 +11,7 @@ A etapa 1 mediu quais trechos cada estratégia de busca trouxe. Para calcular Re
 | `pool-stage1-autor.csv` | Nathan | os 797 pares do pool: os 5 primeiros trechos de cada condição e braço, mais todos os trechos das seções-alvo de cada pergunta |
 | `pool-stage1-segundo.csv` | segundo anotador | os mesmos pares, só das 10 perguntas sorteadas (155 pares) (`second-rater-sample-v1.json`), sem os rótulos do autor |
 
-Os pares estão embaralhados e não dizem qual condição ou modelo trouxe cada trecho. Não tente adivinhar.
+Os pares estão agrupados por pergunta, para você ler a pergunta uma vez e julgar os trechos dela em sequência. Dentro de cada pergunta, a ordem é aleatória, e nada indica qual condição ou modelo trouxe cada trecho. Não tente adivinhar. (`pool-stage1-export.csv` é a exportação original, com os mesmos pares; não precisa abrir.)
 
 ## Como preencher
 

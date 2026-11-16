@@ -136,21 +136,21 @@ Os adaptadores de API continuam no harness para quem for replicar.
 
 - **Pool:** `rag-study pool --target-sections --depth 5`. Une o top-5 de todas as condições e braços das duas etapas (R0, R1, R2, R3 e a recuperação de R\* na etapa 2) aos trechos das seções-alvo. É cego e embaralhado por semente. A anotação pode começar logo após a etapa 1, e os pares novos da etapa 2 são anotados num pool complementar.
 - **Anotação:** rótulos 0/1/2 pelo guia v0.1, aplicados pelo autor.
-- **Segunda anotação:** independente, em 20% das perguntas sorteadas. Kappa com peso linear antes da adjudicação.
+- **Segunda anotação:** independente, nas 10 perguntas sorteadas em 16/11/2026 (`research/qrels/second-rater-sample-v1.json`, 155 pares). Kappa com peso linear antes da adjudicação. **Reserva (D45):** sem segunda pessoa até 27/11/2026, o autor reanota às cegas as mesmas 10 perguntas, com pelo menos 7 dias de intervalo, e a concordância intra-avaliador é relatada como limitação.
 - **Exclusão:** perguntas com nenhum trecho relevante saem das métricas do recuperador. Espera-se que sejam as não respondíveis; qualquer outra é relatada.
 
 ## 8. Revisão das respostas (D23, D25)
 
 - **Unidade:** repetição 0 de cada pergunta × braço × condição.
 - **Passagem A:** 50 × 2 × 3 = 300 respostas.
-- **Passagem B:** respostas R0 e R\* = 200, ou amostra de 50% sorteada por pergunta [decidir antes da etapa 2].
+- **Passagem B (D45):** respostas R0 e R\* de uma amostra de 50% das perguntas, sorteada antes da etapa 2 (25 perguntas, `research/review/pass-b-sample-v1.json`, semente 20261117): 100 respostas. Exportada com `review-export --pass-b-sample`.
 - **Cegamento:** sem modelo nem condição nas planilhas; citações removidas na passagem A; ordem aleatória por semente. É parcial (estilo e extensão), o que é declarado.
-- **Segundo revisor:** independente, nas 10 perguntas sorteadas (60 respostas A). Kappa quadrático para as escalas ordinais e simples para a falha crítica.
+- **Segundo revisor:** independente, nas mesmas 10 perguntas sorteadas (60 respostas A). Kappa quadrático para as escalas ordinais e simples para a falha crítica. **Reserva (D45):** a mesma regra intra-avaliador da segunda anotação.
 - **LLM julgador:** opcional, de família diferente do gerador avaliado e calibrado contra a amostra humana. Nunca é desfecho primário.
 
 ## 9. Desfechos
 
-### 9.1 Primários (D24, a confirmar com o orientador)
+### 9.1 Primários (D24, confirmados em 16/11/2026, D45)
 
 | Pergunta | Desfecho | População |
 |---|---|---|
@@ -250,20 +250,31 @@ No acesso pela assinatura, o "custo" é o consumo do limite do plano; o Claude C
 
 ## 16. Ética e privacidade
 
-São usados só documentos públicos e perguntas sem dados pessoais. As chamadas às APIs enviam a pergunta, o prompt e os trechos do PCDT (documento público); nenhum manuscrito, dado pessoal ou chave vai para arquivo do workspace. Revisores e anotadores não são sujeitos de pesquisa; atuam como avaliadores. Confirmar com o orientador se a instituição exige algum registro.
+São usados só documentos públicos e perguntas publicadas, sem dados pessoais. As chamadas aos modelos enviam a instrução, a pergunta e trechos de documentos públicos; nenhum manuscrito, dado pessoal ou chave vai para arquivo do workspace. Revisores e anotadores atuam como membros da equipe de pesquisa, julgando textos públicos; nenhum dado sobre eles é coletado além das iniciais que identificam cada avaliação, e a concordância mede a confiabilidade do instrumento. Por isso, o estudo não tem participantes de pesquisa e não foi submetido ao sistema CEP/Conep (D45). A participação é voluntária, com menção nos agradecimentos mediante consentimento.
 
 ## 17. Critérios antes da etapa 2
 
 - [x] D42 (só perguntas publicadas) aprovada pelo orientador; perguntas confirmadas pelo autor em bloco (D44).
-- [ ] Desfechos primários (D24) e famílias confirmados com o orientador.
+- [x] Desfechos primários (D24) e famílias confirmados (D45; o orientador pode rever).
 - [x] As 50 perguntas congeladas, com hash no `freeze-log.md` (16/11/2026). Pontos-chave: congelar antes da etapa 2 (D44).
 - [x] Smoke com os dois braços sem erro; D22 decidido (23/10/2026).
 - [ ] Etapa 1 concluída, F1 analisada e R\* registrado.
-- [ ] Revisores definidos; decisão sobre a passagem B completa ou amostral.
+- [x] Passagem B amostral decidida e sorteada (D45). [ ] Revisores definidos (reservas da D45 se não houver).
 - [x] Versões das CLIs fixadas até o fim da etapa 2 (Claude Code 2.1.323 e Codex 0.169.0-alpha.11.1, cópias em `software/tools`, D44).
 - [ ] Uso em lote confirmado com o administrador do plano Claude, se for institucional (D32).
 - [ ] Idealmente, este protocolo registrado (OSF ou anexo datado ao TCC).
 
 ## 18. Relação com o manuscrito
 
-O capítulo 3 das versões (4) e (5) do manuscrito segue a estrutura que a v0.3 sugeria: caracterização, desenho, base, recuperação, expansão, geração e modelos, perguntas, execução, avaliação da recuperação e das respostas, análise, reprodutibilidade, ameaças e ética. A versão (5) traz a seção 3.7 e o Quadro 8 conforme a seção 6 deste protocolo, marcados como pendentes de aprovação.
+O capítulo 3 das versões (4) a (7) do manuscrito segue a estrutura que a v0.3 sugeria: caracterização, desenho, base, recuperação, expansão, geração e modelos, perguntas, execução, avaliação da recuperação e das respostas, análise, reprodutibilidade, ameaças e ética. A partir da versão (6), a seção 3.7 e o Quadro 8 seguem a seção 6 deste protocolo, já aprovada.
+
+## Emenda 1 (16/11/2026, D45)
+
+Decisões tomadas pelo autor, por delegação ao agente, depois da etapa 1 e antes da etapa 2. Nenhuma altera o que a etapa 1 mediu:
+- desfechos primários D24 e instrução de resposta v2 (D39) confirmados;
+- passagem B amostral (seção 8), sorteada antes da etapa 2;
+- regras de reserva para a segunda anotação e a segunda revisão (seções 7 e 8);
+- texto de ética (seção 16);
+- planilhas de relevância agrupadas por pergunta, com ordem aleatória dentro de cada uma (o cegamento quanto à condição não muda).
+
+O orientador pode rever qualquer item antes da etapa 2.

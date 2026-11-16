@@ -72,3 +72,16 @@ def test_export_is_blind_and_import_rejoins(tmp_path, tiny_corpus):
     assert rows["r-d"]["condition_base"] == "D" and rows["r-d"]["kp_coverage"] == 1.0
     assert rows["r-d"]["faithfulness"] is None
     assert rows["r-r0"]["citation_support"] == 1
+
+
+def test_pass_b_can_be_restricted_to_a_drawn_sample(tmp_path, tiny_corpus):
+    records = [_record("D-OPENAI", False, "Doze meses.", "r-d"),
+               _record("R0-OPENAI", True, "Doze meses [chunk:tc-c0000].", "r-r0")]
+    other = [dict(r, question_id="test-002", run_id=r["run_id"] + "-2") for r in records]
+    questions = {qid: {"question_id": qid, "text": "Quanto dura?", "answerable_from_corpus": "sim"}
+                 for qid in ("test-001", "test-002")}
+    counts = export_review(records + other, questions, {}, tiny_corpus, 0, 3, tmp_path / "review",
+                           pass_b_questions={"test-002"})
+    assert counts == {"pass_a": 4, "pass_b": 1}  # pass A keeps every answer
+    key = read_table(tmp_path / "review" / "review-key.csv")
+    assert {row["run_id"] for row in key if row["review_id"].startswith("B")} == {"r-r0-2"}

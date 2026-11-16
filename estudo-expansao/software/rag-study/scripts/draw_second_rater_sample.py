@@ -1,4 +1,4 @@
-"""Sorteio pré-especificado das perguntas da segunda anotação e da segunda revisão.
+"""Sorteio pré-especificado de perguntas: segunda anotação e segunda revisão (10) e passagem B (25).
 
 Protocolo v0.4, seções 7 e 8: um segundo anotador rotula a relevância em 20% das
 perguntas, e um segundo revisor avalia as respostas de 10 perguntas sorteadas.

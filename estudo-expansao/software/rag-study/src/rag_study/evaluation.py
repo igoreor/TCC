@@ -132,7 +132,8 @@ def write_csv(rows: list[dict[str, Any]], path: str | Path) -> None:
 
 
 def export_pool(records: list[dict[str, Any]], questions: dict[str, str], corpus_dir: str | Path, depth: int,
-                seed: int, output_path: str | Path, extra_items: dict[str, list[str]] | None = None) -> int:
+                seed: int, output_path: str | Path, extra_items: dict[str, list[str]] | None = None,
+                exclude: set[tuple[str, str]] | None = None) -> int:
     """Union of the top-``depth`` chunks of every condition, deduplicated and
     shuffled, with no condition or model information (blind annotation).
 
@@ -151,6 +152,9 @@ def export_pool(records: list[dict[str, Any]], questions: dict[str, str], corpus
         if question_id in questions
         for chunk_id in chunk_ids
     })
+    if exclude:
+        # complementary pool (protocol v0.4, section 7): only pairs not labelled yet
+        pairs = [pair for pair in pairs if pair not in exclude]
     random.Random(seed).shuffle(pairs)
     # Spreadsheet-friendly (BOM + semicolon), like the authoring and review sheets:
     # Excel in Portuguese opens it directly; load_qrels reads it back either way.

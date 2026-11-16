@@ -1,6 +1,6 @@
 # Protocolo experimental v0.4
 
-**Status:** vigente desde 16/11/2026, quando o orientador aprovou a D42 (D44). Parte da v0.3 (mantida como histórico) e incorpora D35–D44 de `research/notes/decisions-log.md`. A mudança principal é a D42: o instrumento usa só perguntas publicadas, copiadas literalmente (seção 6). Também corrige pontos da v0.3 que já tinham sido decididos: limite de geração de 2.000 tokens (D22) e corte temporal (D38–D40). Métricas e testes estão definidos em `metrics-and-tests-v1.md`; a revisão das respostas, em `answer-review-rubric-v1.md`.
+**Status:** vigente desde 16/11/2026, quando o orientador aprovou a D42 (D44). Emenda 2 (D46, julgadores LLM) no fim do documento, pendente de aceite do orientador. Parte da v0.3 (mantida como histórico) e incorpora D35–D44 de `research/notes/decisions-log.md`. A mudança principal é a D42: o instrumento usa só perguntas publicadas, copiadas literalmente (seção 6). Também corrige pontos da v0.3 que já tinham sido decididos: limite de geração de 2.000 tokens (D22) e corte temporal (D38–D40). Métricas e testes estão definidos em `metrics-and-tests-v1.md`; a revisão das respostas, em `answer-review-rubric-v1.md`.
 
 Data: 16/11/2026 (v0.3: 22/10/2026). Autor do TCC: Nathan Dalbert Lopes dos Santos.
 
@@ -278,3 +278,19 @@ Decisões tomadas pelo autor, por delegação ao agente, depois da etapa 1 e ant
 - planilhas de relevância agrupadas por pergunta, com ordem aleatória dentro de cada uma (o cegamento quanto à condição não muda).
 
 O orientador pode rever qualquer item antes da etapa 2.
+
+## Emenda 2 (16/11/2026, D46): julgadores LLM no lugar da anotação e da revisão humanas
+
+Pedido do autor, depois da etapa 1 e antes de qualquer rótulo de relevância. Substitui, nas seções 7, 8 e 14, o trabalho humano pelos julgadores abaixo. As perguntas continuam as 50 publicadas e congeladas; nenhum modelo as escreveu.
+
+| Seção | Como era | Como fica |
+|---|---|---|
+| 7. Relevância | autor rotula o pool; segundo anotador em 10 perguntas | dois julgadores (Claude Opus 5.5 e GPT-6.1-sol, esforço médio) rotulam todos os pares, uma chamada por pergunta, com o guia de anotação como instrução. Rótulo final = média dos dois arredondada para baixo. A concordância entre os julgadores substitui a concordância entre anotadores |
+| 6 e 12. Pontos-chave | autor redige; revisor independente confere | Claude Opus 5.5 redige a partir dos trechos julgados relevantes; GPT-6.1-sol verifica cada ponto; o agente consolida e registra cada edição. Congelados antes da etapa 2, sem que nenhum julgador tenha visto respostas |
+| 8. Revisão das respostas | autor e segundo revisor, às cegas | julgador da outra família, às cegas, com a rubrica v1 adaptada aos cinco documentos e o material de referência (trechos julgados relevantes). Nas 10 perguntas da amostra do segundo avaliador, os dois julgadores avaliam todas as respostas (concordância entre julgadores) |
+| 8. "LLM julgador nunca é desfecho primário" | regra do protocolo | revogada. Os desfechos primários P1 e P2 passam a ser medidos contra rótulos de julgadores LLM, o que o TCC declara como a principal limitação |
+| 14. Esforço humano | cerca de 55 horas do autor | validação humana recomendada: 155 pares de relevância e 60 respostas das 10 perguntas sorteadas (cerca de 4 h 20 min). Se feita, relata-se a concordância humano × julgador; se não, a ausência de validação é declarada |
+
+Prompts: `software/rag-study/prompts/judge-*-v1.txt`. Configuração: `software/rag-study/config/judges/judges-v1.json`. Lotes: `research/runs/j1-relevance-stage1/` e seguintes. O orientador precisa aceitar esta emenda; se recusar, a anotação humana volta a valer, e os rótulos dos julgadores ficam como análise de sensibilidade.
+
+Execução da emenda (16/11/2026): relevância dos pools das etapas 1 e 2 (`j1`, `j5`), pontos-chave (`j2`, `j3`) e revisão (`j4`), todos concluídos. Duas adições à análise, feitas depois de ver os dados e declaradas como tais: a cobertura de pontos-chave com as 50 perguntas (sensibilidade) e a leitura da falha crítica e do suporte das citações só dentro de cada braço, porque a concordância entre os julgadores foi baixa nessas medidas (kappa 0,18 e 0,03). A F4 usa Holm sobre as 6 comparações (`research/analysis/stage2/F4.csv`).

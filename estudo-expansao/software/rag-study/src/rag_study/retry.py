@@ -11,7 +11,9 @@ FATAL_STATUS = {401, 403, 404}
 FATAL_MARKERS = ("insufficient_quota", "credit_balance", "credit balance", "billing",
                  # subscription CLIs: the usage window resets hours later, so the
                  # batch stops and is resumed with `run --continue-from`
-                 "usage limit", "hit your limit", "limit reached")
+                 "usage limit", "hit your limit", "limit reached",
+                 # Claude Code 2.1.x: "You've hit your 5-hour limit · resets 2:40pm"
+                 "5-hour limit", "weekly limit", "hit your 5-hour", "hit your weekly")
 
 
 class RetryExhausted(Exception):

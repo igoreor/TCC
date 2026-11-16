@@ -1,0 +1,7 @@
+arm,condition,n,mean_answer_words,n_answer_words,mean_has_citation,n_has_citation,mean_citation_validity,n_citation_validity,mean_n_cited_not_retrieved,n_n_cited_not_retrieved,mean_truncated,n_truncated,mean_refusal,n_refusal,mean_insufficiency_cue,n_insufficiency_cue,mean_output_tokens,n_output_tokens,mean_latency_ms,n_latency_ms,median_answer_words,median_latency_s
+claude_cli,D,50,285.96,50,,0,,0,,0,0.0,50,0.0,50,0.04,50,1432.7,50,14172.723,50,276.0,11.8
+claude_cli,R0,50,293.56,50,1.0,50,1.0,50,0.0,50,0.0,50,0.0,50,0.76,50,1101.7,50,9494.018,50,282.5,9.0
+claude_cli,R1,50,294.86,50,1.0,50,1.0,50,0.0,50,0.0,50,0.0,50,0.68,50,1209.06,50,13641.181,50,268.0,13.1
+codex_cli,D,50,198.64,50,,0,,0,,0,0.0,50,0.0,50,0.02,50,324.66,50,13913.045,50,181.0,12.3
+codex_cli,R0,50,185.58,50,1.0,50,1.0,50,0.0,50,0.0,50,0.0,50,0.5,50,363.4,50,11734.714,50,160.0,11.3
+codex_cli,R1,50,181.56,50,1.0,50,1.0,50,0.0,50,0.0,50,0.0,50,0.48,50,395.04,50,16764.013,50,164.5,16.2

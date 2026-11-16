@@ -1,0 +1,3 @@
+family,metric,arm,a,b,test,n,n_clusters,mean_a,mean_b,mean_diff,ci95_low,ci95_high,p_value,wins_b,ties,losses_b,p_holm
+passB,faithfulness,claude_cli,R0,R1,wilcoxon,25,23,1.2,1.08,-0.12,-0.4166666666666667,0.15384615384615385,0.40538055645894233,4,15,6,0.40538055645894233
+passB,faithfulness,codex_cli,R0,R1,wilcoxon,25,23,1.32,1.48,0.16,0.0,0.34782608695652173,0.10247043485974941,5,19,1,0.20494086971949882

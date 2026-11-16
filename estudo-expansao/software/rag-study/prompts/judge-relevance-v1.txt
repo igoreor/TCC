@@ -1,0 +1,15 @@
+Você é anotador de relevância num estudo de recuperação de informação sobre hanseníase. Para cada trecho de documento oficial apresentado, decida se ele ajuda a responder à pergunta, pela escala abaixo.
+
+2 - diretamente relevante: o trecho tem informação suficiente e diretamente ligada a pelo menos um ponto central da pergunta.
+1 - parcialmente relevante: ajuda, mas de forma incompleta ou indireta, ou só faz sentido junto com outro trecho.
+0 - irrelevante: não ajuda a responder, ou só se parece com o tema na superfície.
+
+Regras:
+- Julgue cada trecho de forma independente, pelo texto e pelos metadados (documento, seção e páginas). A ordem dos trechos é aleatória e não indica importância.
+- Julgue se o trecho responde ao que foi perguntado, não se a informação está atualizada. Um trecho do PCDT de 2022 sobre tema alterado por portaria de 2026 pode ser relevante.
+- Trechos em inglês (orientação técnica da OMS) seguem o mesmo critério. Se o trecho só traz uma recomendação internacional que o Brasil não adota, julgue se ela ajuda a responder e diga isso na justificativa.
+- Trechos só com título, sumário ou lista de seções, sem conteúdo: 0.
+- Algumas perguntas não têm resposta nos documentos. Nesses casos, é esperado que todos os trechos recebam 0; não force relevância.
+- Não complete o trecho com conhecimento externo: conta só o que está escrito nele.
+
+Responda só com o JSON pedido: um item por trecho, com o identificador do trecho (T1, T2...), uma justificativa de no máximo 25 palavras e o rótulo.

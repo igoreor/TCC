@@ -18,7 +18,8 @@ Atualizado em 16/11/2026. A versão anterior (03/10/2026, etapa E1) está resumi
   - Concordância por kappa (`agreement`).
   - Erros de conta interrompem o lote (D30).
   - Os comandos de perguntas, pool, `auto-metrics` e `review-export` foram executados de ponta a ponta sobre o lote simulado `e2-api-smoke/20261023T010256Z-dryrun`.
-- 75 testes offline (`python -m pytest -q`) em 22/10; 105 em 24/10; 110 em 16/11.
+- 75 testes offline (`python -m pytest -q`) em 22/10; 105 em 24/10; 110 em 16/11; 123 em 16/11, à noite.
+- **Novo (16/11, emenda 2, D46):** módulo `judging.py` e comandos `judge-relevance`, `judge-relevance-collect`, `judge-keypoints`, `keypoints-report`, `keypoints-build`, `judge-review` e `judge-review-collect` (julgadores LLM pelas CLIs fixadas, lotes imutáveis, retomada, saída JSON validada por esquema). Testes em `tests/test_judging.py`. Usados em todo o experimento (lotes `j1` a `j5`).
 - **Novo (16/11):** comando `subgroups` (análise exploratória por subgrupo: diferença pareada por subgrupo com IC por bootstrap, contraste entre dois subgrupos e diferença de diferenças nos pares de registro; sem valor-p). Serve à H5 (leigo × técnico), ao perfil de quem perguntou (`--group-by source_name --map "BVS APS=profissional;*=institucional"`) e à categoria. Testes em `tests/test_subgroups.py`.
 - Caminho até o congelamento conferido com a planilha v4 (D42): `questions-build` e `questions-check` sem erro de formato; os erros restantes são os campos do autor. Roteiro: `research/protocol/roteiro-congelamento-e-execucao-v1.md`.
 

@@ -1,0 +1,798 @@
+﻿pool_item;question_id;item_id;section;pages;relevance;rel_claude;rel_gpt;annotator_id;annotation_round;notes
+8;test-001;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;2;2;2;llm-claude+gpt;final-llm;
+754;test-001;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;1;1;1;llm-claude+gpt;final-llm;
+677;test-001;pcdt2022-v1-c0066-ad5704aa;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;48-48;0;0;0;llm-claude+gpt;final-llm;
+174;test-001;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+784;test-001;pcdt2022-v1-c0065-63543d95;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;47-48;0;0;0;llm-claude+gpt;final-llm;
+730;test-001;pcdt2022-v1-c0031-0a7fd5e2;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.2 Hanseníase virchowiana;32-32;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+69;test-001;pcdt2022-v1-c0033-7c0d05f4;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.4 Hanseníase indeterminada;33-33;2;2;2;llm-claude+gpt;final-llm;
+663;test-001;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;2;2;2;llm-claude+gpt;final-llm;
+580;test-002;pcdt2022-v1-c0030-7dcaad01;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.2 Hanseníase virchowiana;31-32;2;2;2;llm-claude+gpt;final-llm;
+140;test-002;pcdt2022-v1-c0015-24baa600;5 ASPECTOS IMUNOLÓGICOS;25-25;0;0;0;llm-claude+gpt;final-llm;
+454;test-002;pcdt2022-v1-c0033-7c0d05f4;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.4 Hanseníase indeterminada;33-33;2;2;2;llm-claude+gpt;final-llm;
+183;test-002;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;1;1;1;llm-claude+gpt;final-llm;
+423;test-002;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;1;llm-claude+gpt;final-llm;
+697;test-002;pcdt2022-v1-c0051-ac146bd8;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.1 Neurite aguda;41-41;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+387;test-002;pcdt2022-v1-c0025-ca36ff12;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas;29-29;0;0;0;llm-claude+gpt;final-llm;
+187;test-002;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;2;2;2;llm-claude+gpt;final-llm;
+408;test-002;pcdt2022-v1-c0023-df74c0fe;6 ASPECTOS CLÍNICOS > 6.3 Classificação operacional;28-29;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+451;test-002;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;2;2;2;llm-claude+gpt;final-llm;
+680;test-002;pcdt2022-v1-c0003-336d88c2;1 Introdução;17-17;0;0;0;llm-claude+gpt;final-llm;
+439;test-002;pcdt2022-v1-c0045-9a68c2b7;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas;39-39;2;2;2;llm-claude+gpt;final-llm;
+571;test-002;pcdt2022-v1-c0053-5bbfa2a6;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.2 Neurite silenciosa;41-42;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+788;test-002;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;1;1;1;llm-claude+gpt;final-llm;
+502;test-002;pcdt2022-v1-c0038-2d3647e0;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas;35-36;1;1;1;llm-claude+gpt;final-llm;
+411;test-002;pcdt2022-v1-c0032-09c84ff8;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.3 Hanseníase dimorfa;32-33;2;2;2;llm-claude+gpt;final-llm;
+703;test-002;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+137;test-002;pcdt2022-v1-c0005-7909acf0;1 Introdução;17-18;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+374;test-003;pcdt2022-v1-c0079-1a3f7912;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR);52-52;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+193;test-003;pcdt2022-v1-c0067-ec4fc3b5;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;48-48;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+491;test-003;pcdt2022-v1-c0015-24baa600;5 ASPECTOS IMUNOLÓGICOS;25-25;0;0;0;llm-claude+gpt;final-llm;
+77;test-003;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;2;2;2;llm-claude+gpt;final-llm;
+314;test-003;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;2;2;2;llm-claude+gpt;final-llm;
+617;test-003;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;2;2;2;llm-claude+gpt;final-llm;
+675;test-003;portaria51-2026-v1-c0000-8629da6f;Portaria SCTIE/MS nº 51, de 31 de julho de 2026 (DOU nº 145, Seção 1, p. 74, 04/08/2026);1-1;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+699;test-003;pcdt2022-v1-c0023-df74c0fe;6 ASPECTOS CLÍNICOS > 6.3 Classificação operacional;28-29;1;1;1;llm-claude+gpt;final-llm;
+576;test-003;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+767;test-003;pcdt2022-v1-c0078-18c73694;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR);52-52;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+425;test-003;pcdt2022-v1-c0065-63543d95;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;47-48;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+648;test-003;pcdt2022-v1-c0077-749c2fec;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR);52-52;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+404;test-003;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;1;1;1;llm-claude+gpt;final-llm;
+551;test-003;pcdt2022-v1-c0076-9d172654;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR);51-52;1;0;2;llm-claude+gpt;final-llm;divergência 0x2
+239;test-003;portaria51-2026-v1-c0001-1e54ebeb;Portaria SCTIE/MS nº 51, de 31 de julho de 2026 (DOU nº 145, Seção 1, p. 74, 04/08/2026);1-1;0;0;0;llm-claude+gpt;final-llm;
+131;test-003;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+192;test-004;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;1;1;1;llm-claude+gpt;final-llm;
+124;test-004;pcdt2022-v1-c0033-7c0d05f4;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.4 Hanseníase indeterminada;33-33;1;1;1;llm-claude+gpt;final-llm;
+372;test-004;pcdt2022-v1-c0030-7dcaad01;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.2 Hanseníase virchowiana;31-32;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+13;test-004;pcdt2022-v1-c0053-5bbfa2a6;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.2 Neurite silenciosa;41-42;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+1;test-004;pcdt2022-v1-c0066-ad5704aa;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;48-48;0;0;0;llm-claude+gpt;final-llm;
+652;test-004;pcdt2022-v1-c0052-3e4255b8;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.1 Neurite aguda;41-41;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+260;test-004;pcdt2022-v1-c0060-0e4ffc15;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);46-46;0;0;0;llm-claude+gpt;final-llm;
+366;test-004;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+277;test-004;pcdt2022-v1-c0065-63543d95;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;47-48;0;0;0;llm-claude+gpt;final-llm;
+641;test-004;pcdt2022-v1-c0049-5cffe2f9;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.1 Neuropatia periférica;40-40;0;0;0;llm-claude+gpt;final-llm;
+688;test-004;pcdt2022-v1-c0067-ec4fc3b5;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;48-48;0;0;0;llm-claude+gpt;final-llm;
+23;test-004;pcdt2022-v1-c0061-db59e6a2;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);46-46;1;1;1;llm-claude+gpt;final-llm;
+17;test-004;pcdt2022-v1-c0062-267fcf5f;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR);46-47;0;0;0;llm-claude+gpt;final-llm;
+390;test-004;pcdt2022-v1-c0059-67d53964;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);45-46;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+268;test-004;pcdt2022-v1-c0031-0a7fd5e2;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.2 Hanseníase virchowiana;32-32;0;0;0;llm-claude+gpt;final-llm;
+464;test-004;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;0;0;0;llm-claude+gpt;final-llm;
+270;test-005;pcdt2022-v1-c0074-dba699c9;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.6 Teste rápido imunocromatográfico para detecção de anticorpos IgM contra o M. leprae;50-51;0;0;0;llm-claude+gpt;final-llm;
+248;test-005;pcdt2022-v1-c0061-db59e6a2;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);46-46;0;0;0;llm-claude+gpt;final-llm;
+540;test-005;pcdt2022-v1-c0067-ec4fc3b5;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;48-48;0;0;0;llm-claude+gpt;final-llm;
+570;test-005;pcdt2022-v1-c0060-0e4ffc15;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);46-46;0;0;0;llm-claude+gpt;final-llm;
+618;test-005;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;0;0;0;llm-claude+gpt;final-llm;
+78;test-005;pcdt2022-v1-c0059-67d53964;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);45-46;1;1;1;llm-claude+gpt;final-llm;
+552;test-005;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;1;1;1;llm-claude+gpt;final-llm;
+623;test-005;pcdt2022-v1-c0065-63543d95;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;47-48;0;0;0;llm-claude+gpt;final-llm;
+704;test-005;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;0;0;0;llm-claude+gpt;final-llm;
+614;test-005;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+369;test-005;pcdt2022-v1-c0075-6d6c8cb4;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.6 Teste rápido imunocromatográfico para detecção de anticorpos IgM contra o M. leprae;51-51;0;0;0;llm-claude+gpt;final-llm;
+702;test-006;pcdt2022-v1-c0023-df74c0fe;6 ASPECTOS CLÍNICOS > 6.3 Classificação operacional;28-29;0;0;0;llm-claude+gpt;final-llm;
+154;test-006;pcdt2022-v1-c0063-362594cf;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR);47-47;1;1;1;llm-claude+gpt;final-llm;
+90;test-006;pcdt2022-v1-c0065-63543d95;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;47-48;0;0;0;llm-claude+gpt;final-llm;
+259;test-006;pcdt2022-v1-c0066-ad5704aa;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;48-48;0;0;0;llm-claude+gpt;final-llm;
+445;test-006;pcdt2022-v1-c0062-267fcf5f;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR);46-47;2;2;2;llm-claude+gpt;final-llm;
+11;test-006;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;0;0;0;llm-claude+gpt;final-llm;
+494;test-006;pcdt2022-v1-c0031-0a7fd5e2;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.2 Hanseníase virchowiana;32-32;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+654;test-006;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;0;0;0;llm-claude+gpt;final-llm;
+199;test-006;pcdt2022-v1-c0004-3ffc63c0;1 Introdução;17-17;0;0;0;llm-claude+gpt;final-llm;
+415;test-006;pcdt2022-v1-c0064-63aeb327;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.2 Baciloscopia direta para bacilos álcool-ácido resistentes (BAAR);47-47;1;1;1;llm-claude+gpt;final-llm;
+674;test-006;pcdt2022-v1-c0034-a414f235;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.4 Hanseníase indeterminada;33-34;0;0;0;llm-claude+gpt;final-llm;
+203;test-006;pcdt2022-v1-c0029-ccc50c4b;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.2 Hanseníase virchowiana;31-31;0;0;0;llm-claude+gpt;final-llm;
+214;test-007;pcdt2022-v1-c0088-828174c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+105;test-007;pcdt2022-v1-c0093-f93ace06;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;61-61;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+266;test-007;pcdt2022-v1-c0089-4191ee96;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+367;test-007;pcdt2022-v1-c0083-11c86568;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-57;0;0;0;llm-claude+gpt;final-llm;
+76;test-007;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+634;test-007;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+449;test-007;pcdt2022-v1-c0087-29ba5db4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-59;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+736;test-007;pcdt2022-v1-c0080-e948c14f;8 CRITÉRIOS DE INCLUSÃO;53-53;0;0;0;llm-claude+gpt;final-llm;
+73;test-007;pcdt2022-v1-c0149-f8396d6c;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação;83-83;0;0;0;llm-claude+gpt;final-llm;
+668;test-007;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;0;0;0;llm-claude+gpt;final-llm;
+370;test-007;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;1;1;1;llm-claude+gpt;final-llm;
+180;test-007;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+396;test-007;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+413;test-007;pcdt2022-v1-c0091-c7387247;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-60;2;2;2;llm-claude+gpt;final-llm;
+456;test-007;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+517;test-007;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;0;0;0;llm-claude+gpt;final-llm;
+40;test-008;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+365;test-008;pcdt2022-v1-c0141-d23244d8;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.1 Tratamento farmacológico de 2ª linha para casos de reações adversas à rifampicina;79-79;0;0;0;llm-claude+gpt;final-llm;
+562;test-008;pcdt2022-v1-c0143-a60c3125;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.3 Tratamento farmacológico de 2ª linha para casos de reações adversas à clofazimina;80-80;1;1;1;llm-claude+gpt;final-llm;
+662;test-008;pcdt2022-v1-c0093-f93ace06;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;61-61;0;0;0;llm-claude+gpt;final-llm;
+520;test-008;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+65;test-008;pcdt2022-v1-c0130-fcc38bd2;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;75-76;0;0;0;llm-claude+gpt;final-llm;
+196;test-008;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+306;test-008;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;0;llm-claude+gpt;final-llm;
+27;test-008;pcdt2022-v1-c0083-11c86568;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-57;2;2;2;llm-claude+gpt;final-llm;
+410;test-008;pcdt2022-v1-c0139-65f4a5b1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U;78-78;0;0;0;llm-claude+gpt;final-llm;
+627;test-008;pcdt2022-v1-c0124-1b1508b3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;73-74;0;0;0;llm-claude+gpt;final-llm;
+235;test-008;pcdt2022-v1-c0088-828174c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+103;test-008;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+610;test-008;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+479;test-008;pcdt2022-v1-c0091-c7387247;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-60;0;0;0;llm-claude+gpt;final-llm;
+646;test-008;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+471;test-008;pcdt2022-v1-c0087-29ba5db4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-59;0;0;0;llm-claude+gpt;final-llm;
+309;test-008;pcdt2022-v1-c0089-4191ee96;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;1;1;1;llm-claude+gpt;final-llm;
+38;test-009;pcdt2022-v1-c0142-63b319f5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.2 Tratamento farmacológico de 2ª linha para casos de reações adversas à dapsona;79-80;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+321;test-009;pcdt2022-v1-c0088-828174c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+159;test-009;pcdt2022-v1-c0087-29ba5db4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-59;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+80;test-009;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;1;1;1;llm-claude+gpt;final-llm;
+224;test-009;pcdt2022-v1-c0093-f93ace06;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;61-61;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+728;test-009;pcdt2022-v1-c0089-4191ee96;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;2;2;2;llm-claude+gpt;final-llm;
+717;test-009;pcdt2022-v1-c0091-c7387247;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-60;2;2;2;llm-claude+gpt;final-llm;
+21;test-009;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+739;test-009;pcdt2022-v1-c0083-11c86568;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-57;0;0;0;llm-claude+gpt;final-llm;
+469;test-009;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;1;1;1;llm-claude+gpt;final-llm;
+760;test-009;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+82;test-009;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+672;test-009;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+681;test-009;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;1;1;1;llm-claude+gpt;final-llm;
+3;test-009;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;2;2;2;llm-claude+gpt;final-llm;
+294;test-010;pcdt2022-v1-c0143-a60c3125;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.3 Tratamento farmacológico de 2ª linha para casos de reações adversas à clofazimina;80-80;0;0;0;llm-claude+gpt;final-llm;
+561;test-010;pcdt2022-v1-c0124-1b1508b3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;73-74;2;2;2;llm-claude+gpt;final-llm;
+548;test-010;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+64;test-010;pcdt2022-v1-c0134-6026fff9;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;76-77;0;0;0;llm-claude+gpt;final-llm;
+593;test-010;pcdt2022-v1-c0130-fcc38bd2;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;75-76;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+264;test-010;pcdt2022-v1-c0127-77a84abb;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;74-74;0;0;0;llm-claude+gpt;final-llm;
+206;test-010;pcdt2022-v1-c0137-8c735656;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-78;0;0;0;llm-claude+gpt;final-llm;
+602;test-010;pcdt2022-v1-c0135-f36775eb;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-77;0;0;0;llm-claude+gpt;final-llm;
+350;test-010;pcdt2022-v1-c0136-f1cbf015;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-77;0;0;0;llm-claude+gpt;final-llm;
+273;test-010;pcdt2022-v1-c0131-a9e52018;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;76-76;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+145;test-010;pcdt2022-v1-c0132-728c5490;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;76-76;0;0;0;llm-claude+gpt;final-llm;
+420;test-010;pcdt2022-v1-c0205-65670f53;18 ESCLARECIMENTOS E RESPONSABILIDADES;113-113;0;0;0;llm-claude+gpt;final-llm;
+642;test-010;pcdt2022-v1-c0129-fe45b9c1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;75-75;0;0;0;llm-claude+gpt;final-llm;
+745;test-010;pcdt2022-v1-c0128-64689d1d;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;74-75;0;0;0;llm-claude+gpt;final-llm;
+190;test-010;pcdt2022-v1-c0126-a1ba5e59;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;74-74;1;1;1;llm-claude+gpt;final-llm;
+84;test-010;pcdt2022-v1-c0083-11c86568;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-57;0;0;0;llm-claude+gpt;final-llm;
+281;test-010;pcdt2022-v1-c0139-65f4a5b1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U;78-78;2;2;2;llm-claude+gpt;final-llm;
+455;test-010;pcdt2022-v1-c0138-a3bba60e;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;78-78;0;0;0;llm-claude+gpt;final-llm;
+210;test-010;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;0;0;0;llm-claude+gpt;final-llm;
+440;test-010;pcdt2022-v1-c0133-a53aefdd;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;76-77;0;0;0;llm-claude+gpt;final-llm;
+359;test-010;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+510;test-010;pcdt2022-v1-c0089-4191ee96;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+112;test-010;pcdt2022-v1-c0125-11d8a50b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;73-74;2;2;2;llm-claude+gpt;final-llm;
+33;test-010;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+477;test-010;pcdt2022-v1-c0084-f485f222;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-58;0;0;0;llm-claude+gpt;final-llm;
+250;test-011;pcdt2022-v1-c0140-b04eb966;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U;78-78;2;2;2;llm-claude+gpt;final-llm;
+49;test-011;pcdt2022-v1-c0129-fe45b9c1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;75-75;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+458;test-011;pcdt2022-v1-c0128-64689d1d;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;74-75;1;1;1;llm-claude+gpt;final-llm;
+616;test-011;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+748;test-011;pcdt2022-v1-c0126-a1ba5e59;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;74-74;2;2;2;llm-claude+gpt;final-llm;
+6;test-011;pcdt2022-v1-c0144-95edf172;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.3 Tratamento farmacológico de 2ª linha para casos de reações adversas à clofazimina;80-81;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+509;test-011;pcdt2022-v1-c0132-728c5490;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;76-76;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+263;test-011;pcdt2022-v1-c0133-a53aefdd;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;76-77;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+257;test-011;pcdt2022-v1-c0139-65f4a5b1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U;78-78;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+738;test-011;pcdt2022-v1-c0134-6026fff9;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;76-77;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+542;test-011;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+150;test-011;pcdt2022-v1-c0124-1b1508b3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;73-74;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+256;test-011;pcdt2022-v1-c0127-77a84abb;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;74-74;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+599;test-011;pcdt2022-v1-c0138-a3bba60e;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;78-78;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+339;test-011;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;0;0;0;llm-claude+gpt;final-llm;
+513;test-011;portaria47-2026-v1-c0001-63226097;Portaria SCTIE/MS nº 47, de 20 de julho de 2026 (DOU nº 135, Seção 1, p. 167, 21/07/2026);1-1;0;0;0;llm-claude+gpt;final-llm;
+296;test-011;pcdt2022-v1-c0142-63b319f5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.2 Tratamento farmacológico de 2ª linha para casos de reações adversas à dapsona;79-80;2;2;2;llm-claude+gpt;final-llm;
+620;test-011;pcdt2022-v1-c0125-11d8a50b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;73-74;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+46;test-011;pcdt2022-v1-c0135-f36775eb;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-77;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+505;test-011;portaria47-2026-v1-c0000-759e68b3;Portaria SCTIE/MS nº 47, de 20 de julho de 2026 (DOU nº 135, Seção 1, p. 167, 21/07/2026);1-1;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+219;test-011;pcdt2022-v1-c0131-a9e52018;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;76-76;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+170;test-011;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+573;test-011;pcdt2022-v1-c0130-fcc38bd2;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;75-76;1;1;1;llm-claude+gpt;final-llm;
+360;test-011;pcdt2022-v1-c0143-a60c3125;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.3 Tratamento farmacológico de 2ª linha para casos de reações adversas à clofazimina;80-80;2;2;2;llm-claude+gpt;final-llm;
+158;test-011;pcdt2022-v1-c0137-8c735656;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-78;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+362;test-011;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+14;test-011;pcdt2022-v1-c0141-d23244d8;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.1 Tratamento farmacológico de 2ª linha para casos de reações adversas à rifampicina;79-79;2;2;2;llm-claude+gpt;final-llm;
+111;test-011;pcdt2022-v1-c0136-f1cbf015;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-77;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+727;test-012;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;0;0;llm-claude+gpt;final-llm;
+786;test-012;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;0;0;0;llm-claude+gpt;final-llm;
+500;test-012;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;0;llm-claude+gpt;final-llm;
+328;test-012;pcdt2022-v1-c0191-c58ce268;12 CASOS ESPECIAIS > 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha;101-101;0;0;0;llm-claude+gpt;final-llm;
+307;test-012;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;0;0;0;llm-claude+gpt;final-llm;
+589;test-012;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;0;0;0;llm-claude+gpt;final-llm;
+528;test-012;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+757;test-012;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+331;test-012;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+385;test-012;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+377;test-012;pcdt2022-v1-c0080-e948c14f;8 CRITÉRIOS DE INCLUSÃO;53-53;0;0;0;llm-claude+gpt;final-llm;
+747;test-012;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;0;llm-claude+gpt;final-llm;
+317;test-012;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+565;test-012;pcdt2022-v1-c0205-65670f53;18 ESCLARECIMENTOS E RESPONSABILIDADES;113-113;0;0;0;llm-claude+gpt;final-llm;
+269;test-012;pcdt2022-v1-c0087-29ba5db4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-59;0;0;0;llm-claude+gpt;final-llm;
+157;test-012;pcdt2022-v1-c0081-624b1299;9 CRITÉRIOS DE EXCLUSÃO;55-55;0;0;0;llm-claude+gpt;final-llm;
+169;test-012;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+416;test-012;pcdt2022-v1-c0181-1e61cb27;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase;97-97;0;0;0;llm-claude+gpt;final-llm;
+126;test-013;pcdt2022-v1-c0137-8c735656;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-78;0;0;0;llm-claude+gpt;final-llm;
+735;test-013;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;0;0;0;llm-claude+gpt;final-llm;
+60;test-013;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+393;test-013;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+484;test-013;pcdt2022-v1-c0180-fda85db3;11 RESISTÊNCIA DO M. leprae A ANTIMICROBIANOS > 11.5 Monitoramento do tratamento em casos de resistência medicamentosa;95-95;0;0;0;llm-claude+gpt;final-llm;
+483;test-013;pcdt2022-v1-c0138-a3bba60e;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;78-78;0;0;0;llm-claude+gpt;final-llm;
+758;test-013;pcdt2022-v1-c0106-ad6078dc;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.2 Clofazimina;66-66;1;1;1;llm-claude+gpt;final-llm;
+165;test-013;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;0;0;llm-claude+gpt;final-llm;
+796;test-013;who2023-v1-c0086-b8250f6d;7. Criteria for Verification > 7.3 Surveillance > 7.3.5 Surveillance of adverse drug reactions;47-49;0;0;0;llm-claude+gpt;final-llm;
+245;test-013;pcdt2022-v1-c0088-828174c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;0;llm-claude+gpt;final-llm;
+797;test-013;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;0;0;0;llm-claude+gpt;final-llm;
+639;test-013;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;0;0;0;llm-claude+gpt;final-llm;
+692;test-013;pcdt2022-v1-c0113-353ac67e;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.6 Prednisona;68-69;0;0;0;llm-claude+gpt;final-llm;
+752;test-013;pcdt2022-v1-c0205-65670f53;18 ESCLARECIMENTOS E RESPONSABILIDADES;113-113;0;0;0;llm-claude+gpt;final-llm;
+178;test-013;pcdt2022-v1-c0202-a480d368;16 GESTÃO, REGULAÇÃO E CONTROLE;109-110;0;0;0;llm-claude+gpt;final-llm;
+215;test-013;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+733;test-013;pcdt2022-v1-c0191-c58ce268;12 CASOS ESPECIAIS > 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha;101-101;0;0;0;llm-claude+gpt;final-llm;
+207;test-013;pcdt2022-v1-c0201-7b6e4319;16 GESTÃO, REGULAÇÃO E CONTROLE;109-109;0;0;0;llm-claude+gpt;final-llm;
+258;test-013;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+644;test-014;pcdt2022-v1-c0152-6d473e0c;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.5 Profissionais de saúde;83-84;0;0;0;llm-claude+gpt;final-llm;
+133;test-014;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;0;0;0;llm-claude+gpt;final-llm;
+305;test-014;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+394;test-014;pcdt2022-v1-c0163-5bef7aa6;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.3 Autocuidado;87-87;0;0;0;llm-claude+gpt;final-llm;
+417;test-014;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+766;test-014;pcdt2022-v1-c0113-353ac67e;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.6 Prednisona;68-69;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+530;test-014;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+36;test-014;pcdt2022-v1-c0202-a480d368;16 GESTÃO, REGULAÇÃO E CONTROLE;109-110;0;0;0;llm-claude+gpt;final-llm;
+756;test-014;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;0;0;0;llm-claude+gpt;final-llm;
+598;test-014;pcdt2022-v1-c0102-f646993e;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.4 Medicamentos;65-65;0;0;0;llm-claude+gpt;final-llm;
+135;test-014;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;0;0;0;llm-claude+gpt;final-llm;
+220;test-014;pcdt2022-v1-c0106-ad6078dc;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.2 Clofazimina;66-66;1;1;1;llm-claude+gpt;final-llm;
+583;test-014;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;0;llm-claude+gpt;final-llm;
+400;test-014;pcdt2022-v1-c0205-65670f53;18 ESCLARECIMENTOS E RESPONSABILIDADES;113-113;0;0;0;llm-claude+gpt;final-llm;
+288;test-014;pcdt2022-v1-c0091-c7387247;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-60;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+707;test-014;who2023-v1-c0005-7e2ccf5b;Glossary > Prophylaxis;11-11;0;0;0;llm-claude+gpt;final-llm;
+100;test-014;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+720;test-015;pcdt2022-v1-c0163-5bef7aa6;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.3 Autocuidado;87-87;0;0;0;llm-claude+gpt;final-llm;
+71;test-015;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+657;test-015;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;0;llm-claude+gpt;final-llm;
+57;test-015;pcdt2022-v1-c0128-64689d1d;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;74-75;0;0;0;llm-claude+gpt;final-llm;
+465;test-015;pcdt2022-v1-c0141-d23244d8;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.1 Tratamento farmacológico de 2ª linha para casos de reações adversas à rifampicina;79-79;0;0;0;llm-claude+gpt;final-llm;
+578;test-015;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+51;test-015;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+776;test-015;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;0;0;0;llm-claude+gpt;final-llm;
+461;test-015;estrategia2024-v1-c0048-39d79e0f;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;41-42;0;0;0;llm-claude+gpt;final-llm;
+442;test-015;pcdt2022-v1-c0197-d6adfec6;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;106-106;0;0;0;llm-claude+gpt;final-llm;
+226;test-015;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+695;test-015;pcdt2022-v1-c0142-63b319f5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.2 Tratamento farmacológico de 2ª linha para casos de reações adversas à dapsona;79-80;0;0;0;llm-claude+gpt;final-llm;
+590;test-015;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;0;0;0;llm-claude+gpt;final-llm;
+50;test-015;pcdt2022-v1-c0205-65670f53;18 ESCLARECIMENTOS E RESPONSABILIDADES;113-113;0;0;0;llm-claude+gpt;final-llm;
+741;test-015;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;0;0;0;llm-claude+gpt;final-llm;
+498;test-015;pcdt2022-v1-c0143-a60c3125;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.3 Tratamento farmacológico de 2ª linha para casos de reações adversas à clofazimina;80-80;0;0;0;llm-claude+gpt;final-llm;
+244;test-015;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+282;test-016;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+83;test-016;pcdt2022-v1-c0102-f646993e;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.4 Medicamentos;65-65;0;0;0;llm-claude+gpt;final-llm;
+744;test-016;pcdt2022-v1-c0080-e948c14f;8 CRITÉRIOS DE INCLUSÃO;53-53;0;0;0;llm-claude+gpt;final-llm;
+58;test-016;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+93;test-016;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+524;test-016;pcdt2022-v1-c0197-d6adfec6;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;106-106;0;0;0;llm-claude+gpt;final-llm;
+188;test-016;pcdt2022-v1-c0202-a480d368;16 GESTÃO, REGULAÇÃO E CONTROLE;109-110;0;0;0;llm-claude+gpt;final-llm;
+435;test-016;who2023-v1-c0005-7e2ccf5b;Glossary > Prophylaxis;11-11;0;0;0;llm-claude+gpt;final-llm;
+769;test-016;pcdt2022-v1-c0101-c714381f;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.3 Tratamento farmacológico das reações hansênicas em crianças > 10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças;64-64;0;0;0;llm-claude+gpt;final-llm;
+462;test-016;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;0;0;0;llm-claude+gpt;final-llm;
+152;test-016;pcdt2022-v1-c0120-83b9d2d6;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.8 Talidomida;71-71;0;0;0;llm-claude+gpt;final-llm;
+304;test-016;pcdt2022-v1-c0023-df74c0fe;6 ASPECTOS CLÍNICOS > 6.3 Classificação operacional;28-29;0;0;0;llm-claude+gpt;final-llm;
+9;test-016;pcdt2022-v1-c0125-11d8a50b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;73-74;0;0;0;llm-claude+gpt;final-llm;
+636;test-016;pcdt2022-v1-c0087-29ba5db4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-59;0;0;0;llm-claude+gpt;final-llm;
+650;test-016;pcdt2022-v1-c0205-65670f53;18 ESCLARECIMENTOS E RESPONSABILIDADES;113-113;0;0;0;llm-claude+gpt;final-llm;
+499;test-016;pcdt2022-v1-c0137-8c735656;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-78;0;0;0;llm-claude+gpt;final-llm;
+553;test-016;pcdt2022-v1-c0180-fda85db3;11 RESISTÊNCIA DO M. leprae A ANTIMICROBIANOS > 11.5 Monitoramento do tratamento em casos de resistência medicamentosa;95-95;0;0;0;llm-claude+gpt;final-llm;
+267;test-016;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;0;0;llm-claude+gpt;final-llm;
+172;test-016;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+302;test-016;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;0;0;0;llm-claude+gpt;final-llm;
+329;test-017;pcdt2022-v1-c0119-e9a6cf9c;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.8 Talidomida;71-71;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+255;test-017;pcdt2022-v1-c0101-c714381f;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.3 Tratamento farmacológico das reações hansênicas em crianças > 10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças;64-64;2;2;2;llm-claude+gpt;final-llm;
+424;test-017;pcdt2022-v1-c0042-6ff7801f;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-38;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+179;test-017;pcdt2022-v1-c0121-20874ca4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.8 Talidomida;71-72;2;2;2;llm-claude+gpt;final-llm;
+631;test-017;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+323;test-017;pcdt2022-v1-c0122-08938e97;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.8 Talidomida;72-72;2;2;2;llm-claude+gpt;final-llm;
+173;test-017;pcdt2022-v1-c0120-83b9d2d6;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.8 Talidomida;71-71;2;2;2;llm-claude+gpt;final-llm;
+15;test-017;pcdt2022-v1-c0118-d1c71cb0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.8 Talidomida;70-71;0;0;0;llm-claude+gpt;final-llm;
+233;test-017;pcdt2022-v1-c0098-99da5258;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;2;2;2;llm-claude+gpt;final-llm;
+550;test-017;pcdt2022-v1-c0099-f6ff5cf7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+110;test-017;pcdt2022-v1-c0129-fe45b9c1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;75-75;2;2;2;llm-claude+gpt;final-llm;
+182;test-017;pcdt2022-v1-c0185-0e1309ed;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase > 12.1.3 Episódios reacionais durante a gestação;98-98;2;2;2;llm-claude+gpt;final-llm;
+155;test-017;pcdt2022-v1-c0043-438645e9;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);38-38;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+218;test-017;pcdt2022-v1-c0117-98c3b0dd;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.8 Talidomida;70-70;0;0;0;llm-claude+gpt;final-llm;
+342;test-017;pcdt2022-v1-c0116-224d354d;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.8 Talidomida;70-70;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+481;test-017;pcdt2022-v1-c0041-5111b1cb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-37;0;0;0;llm-claude+gpt;final-llm;
+584;test-017;pcdt2022-v1-c0202-a480d368;16 GESTÃO, REGULAÇÃO E CONTROLE;109-110;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+363;test-018;pcdt2022-v1-c0041-5111b1cb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-37;0;0;0;llm-claude+gpt;final-llm;
+594;test-018;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+252;test-018;pcdt2022-v1-c0042-6ff7801f;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-38;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+151;test-018;pcdt2022-v1-c0137-8c735656;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;77-78;0;0;0;llm-claude+gpt;final-llm;
+723;test-018;pcdt2022-v1-c0098-99da5258;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+122;test-018;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+290;test-018;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+615;test-018;pcdt2022-v1-c0099-f6ff5cf7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;1;1;1;llm-claude+gpt;final-llm;
+230;test-018;pcdt2022-v1-c0043-438645e9;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);38-38;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+143;test-018;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;1;1;1;llm-claude+gpt;final-llm;
+284;test-019;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;2;2;2;llm-claude+gpt;final-llm;
+468;test-019;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+375;test-019;pcdt2022-v1-c0149-f8396d6c;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação;83-83;0;0;0;llm-claude+gpt;final-llm;
+619;test-019;pcdt2022-v1-c0038-2d3647e0;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas;35-36;1;1;1;llm-claude+gpt;final-llm;
+26;test-019;pcdt2022-v1-c0161-e2a91d8b;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.2 Direcionando uma intervenção;86-87;0;0;0;llm-claude+gpt;final-llm;
+275;test-019;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;0;0;0;llm-claude+gpt;final-llm;
+582;test-019;pcdt2022-v1-c0023-df74c0fe;6 ASPECTOS CLÍNICOS > 6.3 Classificação operacional;28-29;0;0;0;llm-claude+gpt;final-llm;
+724;test-019;who2023-v1-c0004-f4432725;Glossary > Leprosy case;11-11;0;0;0;llm-claude+gpt;final-llm;
+441;test-019;pcdt2022-v1-c0065-63543d95;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;47-48;0;0;0;llm-claude+gpt;final-llm;
+216;test-019;who2023-v1-c0074-b2ce3128;7. Criteria for Verification > 7.2 Programme implementation > 7.2.4. Implementation of the leprosy care package;43-44;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+378;test-019;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;0;0;0;llm-claude+gpt;final-llm;
+546;test-019;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;2;2;2;llm-claude+gpt;final-llm;
+94;test-019;pcdt2022-v1-c0031-0a7fd5e2;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.2 Hanseníase virchowiana;32-32;0;0;0;llm-claude+gpt;final-llm;
+525;test-019;pcdt2022-v1-c0043-438645e9;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);38-38;1;1;1;llm-claude+gpt;final-llm;
+107;test-019;pcdt2022-v1-c0166-4134bc38;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados;88-89;0;0;0;llm-claude+gpt;final-llm;
+166;test-019;pcdt2022-v1-c0098-99da5258;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;1;1;1;llm-claude+gpt;final-llm;
+35;test-019;pcdt2022-v1-c0039-ada0aa84;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-36;2;2;2;llm-claude+gpt;final-llm;
+56;test-019;pcdt2022-v1-c0040-dc1b7096;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-37;2;2;2;llm-claude+gpt;final-llm;
+712;test-019;pcdt2022-v1-c0042-6ff7801f;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-38;1;1;1;llm-claude+gpt;final-llm;
+694;test-019;pcdt2022-v1-c0164-df302f40;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos;88-88;0;0;0;llm-claude+gpt;final-llm;
+61;test-019;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+373;test-019;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+353;test-019;pcdt2022-v1-c0041-5111b1cb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-37;1;1;1;llm-claude+gpt;final-llm;
+678;test-019;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+336;test-019;pcdt2022-v1-c0027-45ff5ff5;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.1 Hanseníase tuberculoide;30-30;0;0;0;llm-claude+gpt;final-llm;
+605;test-020;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;1;1;1;llm-claude+gpt;final-llm;
+287;test-020;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;0;0;0;llm-claude+gpt;final-llm;
+234;test-020;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;1;1;1;llm-claude+gpt;final-llm;
+87;test-020;pcdt2022-v1-c0040-dc1b7096;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-37;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+622;test-020;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;2;2;2;llm-claude+gpt;final-llm;
+349;test-020;pcdt2022-v1-c0197-d6adfec6;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;106-106;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+52;test-020;pcdt2022-v1-c0098-99da5258;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;1;1;1;llm-claude+gpt;final-llm;
+347;test-020;pcdt2022-v1-c0042-6ff7801f;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-38;1;1;1;llm-claude+gpt;final-llm;
+422;test-020;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+463;test-020;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+655;test-020;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;0;0;0;llm-claude+gpt;final-llm;
+693;test-020;pcdt2022-v1-c0038-2d3647e0;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas;35-36;1;1;1;llm-claude+gpt;final-llm;
+790;test-020;pcdt2022-v1-c0039-ada0aa84;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-36;1;1;1;llm-claude+gpt;final-llm;
+39;test-020;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;2;2;2;llm-claude+gpt;final-llm;
+283;test-020;pcdt2022-v1-c0043-438645e9;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);38-38;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+197;test-020;pcdt2022-v1-c0044-cde33ffb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.3 Fatores associados ou precipitantes das reações hansênicas;39-39;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+7;test-020;pcdt2022-v1-c0099-f6ff5cf7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;1;1;1;llm-claude+gpt;final-llm;
+566;test-021;pcdt2022-v1-c0042-6ff7801f;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-38;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+142;test-021;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+793;test-021;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;0;0;0;llm-claude+gpt;final-llm;
+624;test-021;pcdt2022-v1-c0043-438645e9;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);38-38;0;0;0;llm-claude+gpt;final-llm;
+514;test-021;pcdt2022-v1-c0045-9a68c2b7;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas;39-39;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+383;test-021;pcdt2022-v1-c0018-190b556c;5 ASPECTOS IMUNOLÓGICOS;26-26;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+141;test-021;pcdt2022-v1-c0040-dc1b7096;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-37;2;2;2;llm-claude+gpt;final-llm;
+459;test-021;pcdt2022-v1-c0052-3e4255b8;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.1 Neurite aguda;41-41;1;1;1;llm-claude+gpt;final-llm;
+429;test-021;pcdt2022-v1-c0041-5111b1cb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-37;2;2;2;llm-claude+gpt;final-llm;
+380;test-021;pcdt2022-v1-c0025-ca36ff12;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas;29-29;0;0;0;llm-claude+gpt;final-llm;
+262;test-021;pcdt2022-v1-c0038-2d3647e0;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas;35-36;2;2;2;llm-claude+gpt;final-llm;
+368;test-021;pcdt2022-v1-c0044-cde33ffb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.3 Fatores associados ou precipitantes das reações hansênicas;39-39;0;0;0;llm-claude+gpt;final-llm;
+426;test-021;pcdt2022-v1-c0039-ada0aa84;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-36;2;2;2;llm-claude+gpt;final-llm;
+343;test-022;pcdt2022-v1-c0099-f6ff5cf7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;2;2;2;llm-claude+gpt;final-llm;
+280;test-022;pcdt2022-v1-c0098-99da5258;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;2;2;2;llm-claude+gpt;final-llm;
+312;test-022;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+308;test-022;pcdt2022-v1-c0139-65f4a5b1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U;78-78;0;0;0;llm-claude+gpt;final-llm;
+592;test-022;pcdt2022-v1-c0044-cde33ffb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.3 Fatores associados ou precipitantes das reações hansênicas;39-39;0;0;0;llm-claude+gpt;final-llm;
+586;test-022;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;2;2;2;llm-claude+gpt;final-llm;
+53;test-022;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+626;test-022;pcdt2022-v1-c0130-fcc38bd2;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;75-76;0;0;0;llm-claude+gpt;final-llm;
+653;test-022;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+597;test-022;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+771;test-022;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;2;2;2;llm-claude+gpt;final-llm;
+322;test-022;pcdt2022-v1-c0041-5111b1cb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);37-37;0;0;0;llm-claude+gpt;final-llm;
+4;test-022;pcdt2022-v1-c0124-1b1508b3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;73-74;0;0;0;llm-claude+gpt;final-llm;
+136;test-022;pcdt2022-v1-c0038-2d3647e0;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas;35-36;0;0;0;llm-claude+gpt;final-llm;
+43;test-022;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+22;test-022;pcdt2022-v1-c0043-438645e9;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);38-38;2;2;2;llm-claude+gpt;final-llm;
+581;test-023;pcdt2022-v1-c0043-438645e9;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.2 Reação hansênica tipo 2 (eritema nodoso hansênico);38-38;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+299;test-023;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;2;2;2;llm-claude+gpt;final-llm;
+497;test-023;pcdt2022-v1-c0098-99da5258;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;2;2;2;llm-claude+gpt;final-llm;
+466;test-023;pcdt2022-v1-c0044-cde33ffb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.3 Fatores associados ou precipitantes das reações hansênicas;39-39;0;0;0;llm-claude+gpt;final-llm;
+651;test-023;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;2;2;2;llm-claude+gpt;final-llm;
+433;test-023;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+778;test-023;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+539;test-023;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+683;test-023;pcdt2022-v1-c0099-f6ff5cf7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.2 Tratamento farmacológico da reação hansênica tipo 2 ou eritema nodoso hansênico;63-63;2;2;2;llm-claude+gpt;final-llm;
+251;test-023;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+519;test-023;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+315;test-023;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+147;test-023;pcdt2022-v1-c0038-2d3647e0;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas;35-36;0;0;0;llm-claude+gpt;final-llm;
+85;test-023;pcdt2022-v1-c0039-ada0aa84;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-36;0;0;0;llm-claude+gpt;final-llm;
+607;test-024;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;1;1;1;llm-claude+gpt;final-llm;
+241;test-024;pcdt2022-v1-c0051-ac146bd8;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.1 Neurite aguda;41-41;1;1;1;llm-claude+gpt;final-llm;
+711;test-024;pcdt2022-v1-c0049-5cffe2f9;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.1 Neuropatia periférica;40-40;0;0;0;llm-claude+gpt;final-llm;
+402;test-024;pcdt2022-v1-c0048-06bffef7;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.1 Neuropatia periférica;40-40;2;2;2;llm-claude+gpt;final-llm;
+354;test-024;pcdt2022-v1-c0037-833ce99b;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.5 Hanseníase neural pura (ou neurítica primária);35-35;0;0;0;llm-claude+gpt;final-llm;
+194;test-024;pcdt2022-v1-c0036-888d722e;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.5 Hanseníase neural pura (ou neurítica primária);34-35;2;2;2;llm-claude+gpt;final-llm;
+448;test-024;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+395;test-024;pcdt2022-v1-c0053-5bbfa2a6;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.2 Neurite silenciosa;41-42;0;0;0;llm-claude+gpt;final-llm;
+247;test-024;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+261;test-024;pcdt2022-v1-c0035-9118a2df;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.5 Hanseníase neural pura (ou neurítica primária);34-34;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+20;test-024;pcdt2022-v1-c0045-9a68c2b7;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas;39-39;0;0;0;llm-claude+gpt;final-llm;
+669;test-024;pcdt2022-v1-c0047-74482cc6;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.1 Neuropatia periférica;40-40;2;2;2;llm-claude+gpt;final-llm;
+81;test-025;pcdt2022-v1-c0070-092e0b36;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.5 Eletroneuromiograma;49-49;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+719;test-025;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;1;1;1;llm-claude+gpt;final-llm;
+418;test-025;pcdt2022-v1-c0035-9118a2df;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.5 Hanseníase neural pura (ou neurítica primária);34-34;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+686;test-025;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+763;test-025;pcdt2022-v1-c0162-3d0fc161;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.2 Prevenção de incapacidades físicas;87-87;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+611;test-025;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;1;llm-claude+gpt;final-llm;
+223;test-025;pcdt2022-v1-c0051-ac146bd8;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.1 Neurite aguda;41-41;2;2;2;llm-claude+gpt;final-llm;
+595;test-025;pcdt2022-v1-c0052-3e4255b8;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.1 Neurite aguda;41-41;2;2;2;llm-claude+gpt;final-llm;
+740;test-025;pcdt2022-v1-c0049-5cffe2f9;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.1 Neuropatia periférica;40-40;2;2;2;llm-claude+gpt;final-llm;
+32;test-025;pcdt2022-v1-c0061-db59e6a2;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);46-46;2;2;2;llm-claude+gpt;final-llm;
+751;test-025;pcdt2022-v1-c0053-5bbfa2a6;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.2 Neurite silenciosa;41-42;2;2;2;llm-claude+gpt;final-llm;
+518;test-025;pcdt2022-v1-c0060-0e4ffc15;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);46-46;2;2;2;llm-claude+gpt;final-llm;
+443;test-025;pcdt2022-v1-c0037-833ce99b;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.5 Hanseníase neural pura (ou neurítica primária);35-35;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+31;test-025;pcdt2022-v1-c0059-67d53964;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.1 Avaliação Neurológica Simplificada (ANS);45-46;2;2;2;llm-claude+gpt;final-llm;
+710;test-025;pcdt2022-v1-c0068-1e84046c;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.3 Histopatologia;48-49;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+66;test-026;pcdt2022-v1-c0035-9118a2df;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.5 Hanseníase neural pura (ou neurítica primária);34-34;1;1;1;llm-claude+gpt;final-llm;
+386;test-026;pcdt2022-v1-c0052-3e4255b8;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.1 Neurite aguda;41-41;2;2;2;llm-claude+gpt;final-llm;
+701;test-026;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;1;1;1;llm-claude+gpt;final-llm;
+601;test-026;pcdt2022-v1-c0051-ac146bd8;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.1 Neurite aguda;41-41;2;2;2;llm-claude+gpt;final-llm;
+794;test-026;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+171;test-026;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;0;llm-claude+gpt;final-llm;
+660;test-026;pcdt2022-v1-c0097-bb9a52e3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;63-63;1;1;1;llm-claude+gpt;final-llm;
+556;test-026;pcdt2022-v1-c0053-5bbfa2a6;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.2 Neurite silenciosa;41-42;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+138;test-026;pcdt2022-v1-c0057-07bb53e6;6 ASPECTOS CLÍNICOS > 6.7 Manifestações oculares;43-43;0;0;0;llm-claude+gpt;final-llm;
+632;test-026;pcdt2022-v1-c0023-df74c0fe;6 ASPECTOS CLÍNICOS > 6.3 Classificação operacional;28-29;0;0;0;llm-claude+gpt;final-llm;
+286;test-026;pcdt2022-v1-c0045-9a68c2b7;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas;39-39;1;1;1;llm-claude+gpt;final-llm;
+544;test-026;pcdt2022-v1-c0166-4134bc38;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.5 Cuidado com as lesões traumáticas e neuropáticas – adaptação de calçados;88-89;0;0;0;llm-claude+gpt;final-llm;
+41;test-026;pcdt2022-v1-c0055-a089e41c;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.3 Dor neuropática;42-43;1;1;1;llm-claude+gpt;final-llm;
+340;test-026;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+295;test-026;pcdt2022-v1-c0151-f49b2603;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.5 Profissionais de saúde;83-84;0;0;0;llm-claude+gpt;final-llm;
+729;test-026;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+501;test-026;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;1;1;1;llm-claude+gpt;final-llm;
+168;test-026;pcdt2022-v1-c0040-dc1b7096;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-37;2;2;2;llm-claude+gpt;final-llm;
+568;test-026;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+59;test-027;pcdt2022-v1-c0163-5bef7aa6;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.3 Autocuidado;87-87;0;0;0;llm-claude+gpt;final-llm;
+434;test-027;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+450;test-027;pcdt2022-v1-c0149-f8396d6c;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação;83-83;0;0;0;llm-claude+gpt;final-llm;
+358;test-027;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;0;0;0;llm-claude+gpt;final-llm;
+549;test-027;pcdt2022-v1-c0162-3d0fc161;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.2 Prevenção de incapacidades físicas;87-87;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+579;test-027;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+236;test-027;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;0;llm-claude+gpt;final-llm;
+361;test-027;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;0;0;0;llm-claude+gpt;final-llm;
+177;test-027;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;0;llm-claude+gpt;final-llm;
+88;test-027;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+721;test-027;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+682;test-027;pcdt2022-v1-c0164-df302f40;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.4 Cuidado com as lesões traumáticas e neuropáticas – curativos;88-88;1;1;1;llm-claude+gpt;final-llm;
+98;test-027;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+773;test-028;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+153;test-028;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+191;test-028;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;2;2;2;llm-claude+gpt;final-llm;
+430;test-028;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;1;1;1;llm-claude+gpt;final-llm;
+764;test-028;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;1;1;1;llm-claude+gpt;final-llm;
+303;test-028;pcdt2022-v1-c0033-7c0d05f4;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.4 Hanseníase indeterminada;33-33;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+222;test-028;pcdt2022-v1-c0186-2672d33a;12 CASOS ESPECIAIS > 12.2 Hanseníase em menores de 15 anos de idade;98-99;2;2;2;llm-claude+gpt;final-llm;
+72;test-029;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+240;test-029;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;0;0;0;llm-claude+gpt;final-llm;
+25;test-029;pcdt2022-v1-c0186-2672d33a;12 CASOS ESPECIAIS > 12.2 Hanseníase em menores de 15 anos de idade;98-99;0;0;0;llm-claude+gpt;final-llm;
+762;test-029;pcdt2022-v1-c0101-c714381f;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.3 Tratamento farmacológico das reações hansênicas em crianças > 10.1.3.2 Tratamento farmacológico da reação hansênica tipo 2 em crianças;64-64;0;0;0;llm-claude+gpt;final-llm;
+734;test-029;pcdt2022-v1-c0089-4191ee96;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;1;1;1;llm-claude+gpt;final-llm;
+121;test-029;pcdt2022-v1-c0083-11c86568;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-57;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+507;test-029;pcdt2022-v1-c0093-f93ace06;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;61-61;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+278;test-029;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;2;2;2;llm-claude+gpt;final-llm;
+487;test-029;pcdt2022-v1-c0100-4e2fa6c4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.3 Tratamento farmacológico das reações hansênicas em crianças > 10.1.3.1 Tratamento farmacológico da reação hansênica tipo 1 em crianças;64-64;0;0;0;llm-claude+gpt;final-llm;
+613;test-029;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+567;test-029;pcdt2022-v1-c0091-c7387247;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-60;2;2;2;llm-claude+gpt;final-llm;
+186;test-029;pcdt2022-v1-c0087-29ba5db4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-59;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+628;test-029;pcdt2022-v1-c0088-828174c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+391;test-029;estrategia2024-v1-c0057-c5d06ab9;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;46-47;0;0;0;llm-claude+gpt;final-llm;
+101;test-029;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+488;test-029;pcdt2022-v1-c0203-c441b233;17 INDICADORES DE IMPLEMENTAÇÃO > 17.1 Indicadores de monitoramento do controle da hanseníase enquanto problema de saúde pública;111-111;0;0;0;llm-claude+gpt;final-llm;
+181;test-029;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+587;test-029;estrategia2024-v1-c0021-4d57b86c;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030;21-23;0;0;0;llm-claude+gpt;final-llm;
+474;test-029;pcdt2022-v1-c0102-f646993e;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.4 Medicamentos;65-65;1;1;1;llm-claude+gpt;final-llm;
+496;test-029;estrategia2024-v1-c0056-dfd823aa;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;46-46;0;0;0;llm-claude+gpt;final-llm;
+297;test-030;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+75;test-030;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+645;test-030;pcdt2022-v1-c0105-08c91036;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.2 Clofazimina;66-66;0;0;0;llm-claude+gpt;final-llm;
+44;test-030;pcdt2022-v1-c0184-f054ff6b;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase > 12.1.3 Episódios reacionais durante a gestação;98-98;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+325;test-030;pcdt2022-v1-c0106-ad6078dc;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.2 Clofazimina;66-66;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+716;test-030;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+759;test-030;pcdt2022-v1-c0104-1f5853b3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.5 Informações sobre os medicamentos > 10.1.5.2 Clofazimina;66-66;0;0;0;llm-claude+gpt;final-llm;
+545;test-030;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;0;0;0;llm-claude+gpt;final-llm;
+447;test-030;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;0;llm-claude+gpt;final-llm;
+659;test-030;pcdt2022-v1-c0183-42c2e43b;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase > 12.1.2 Amamentação;98-98;2;2;2;llm-claude+gpt;final-llm;
+176;test-030;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+189;test-030;pcdt2022-v1-c0182-dbd3d5c6;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase > 12.1.1 Concepção;97-97;0;0;0;llm-claude+gpt;final-llm;
+355;test-030;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+291;test-030;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+99;test-030;pcdt2022-v1-c0181-1e61cb27;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase;97-97;1;1;1;llm-claude+gpt;final-llm;
+538;test-031;pcdt2022-v1-c0182-dbd3d5c6;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase > 12.1.1 Concepção;97-97;0;0;0;llm-claude+gpt;final-llm;
+68;test-031;pcdt2022-v1-c0088-828174c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;0;llm-claude+gpt;final-llm;
+536;test-031;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+475;test-031;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;0;0;0;llm-claude+gpt;final-llm;
+204;test-031;pcdt2022-v1-c0093-f93ace06;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;61-61;0;0;0;llm-claude+gpt;final-llm;
+311;test-031;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+750;test-031;pcdt2022-v1-c0124-1b1508b3;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.6 Eventos adversos e interações medicamentosas;73-74;0;0;0;llm-claude+gpt;final-llm;
+406;test-031;pcdt2022-v1-c0187-eb251aff;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-99;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+399;test-031;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;2;2;2;llm-claude+gpt;final-llm;
+557;test-031;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;0;0;llm-claude+gpt;final-llm;
+706;test-031;pcdt2022-v1-c0191-c58ce268;12 CASOS ESPECIAIS > 12.5 Indivíduos com dificuldade de adesão ao esquema farmacológico de primeira linha;101-101;0;0;0;llm-claude+gpt;final-llm;
+30;test-031;pcdt2022-v1-c0089-4191ee96;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;0;llm-claude+gpt;final-llm;
+457;test-031;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+130;test-031;pcdt2022-v1-c0083-11c86568;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-57;0;0;0;llm-claude+gpt;final-llm;
+334;test-031;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+18;test-031;pcdt2022-v1-c0084-f485f222;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-58;0;0;0;llm-claude+gpt;final-llm;
+625;test-032;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;0;0;0;llm-claude+gpt;final-llm;
+120;test-032;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;1;1;1;llm-claude+gpt;final-llm;
+732;test-032;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;1;1;1;llm-claude+gpt;final-llm;
+473;test-032;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+638;test-032;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+74;test-032;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;0;0;0;llm-claude+gpt;final-llm;
+630;test-032;pcdt2022-v1-c0197-d6adfec6;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;106-106;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+476;test-032;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;1;1;1;llm-claude+gpt;final-llm;
+787;test-032;pcdt2022-v1-c0205-65670f53;18 ESCLARECIMENTOS E RESPONSABILIDADES;113-113;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+407;test-032;pcdt2022-v1-c0160-29bf6c61;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;1;1;1;llm-claude+gpt;final-llm;
+276;test-032;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;2;2;2;llm-claude+gpt;final-llm;
+792;test-032;pcdt2022-v1-c0198-54e841f3;14 MONITORAMENTO > 14.1.3 A caderneta de saúde da pessoa acometida pela hanseníase;106-106;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+335;test-032;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+781;test-032;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+249;test-032;pcdt2022-v1-c0151-f49b2603;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.5 Profissionais de saúde;83-84;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+42;test-032;pcdt2022-v1-c0080-e948c14f;8 CRITÉRIOS DE INCLUSÃO;53-53;0;0;0;llm-claude+gpt;final-llm;
+213;test-033;estrategia2024-v1-c0048-39d79e0f;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;41-42;1;1;1;llm-claude+gpt;final-llm;
+132;test-033;pcdt2022-v1-c0197-d6adfec6;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;106-106;2;2;2;llm-claude+gpt;final-llm;
+409;test-033;pcdt2022-v1-c0088-828174c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;1;1;1;llm-claude+gpt;final-llm;
+612;test-033;pcdt2022-v1-c0093-f93ace06;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;61-61;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+419;test-033;pcdt2022-v1-c0200-40d85b83;15 RESULTADOS ESPERADOS;107-108;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+161;test-033;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+292;test-033;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;2;2;2;llm-claude+gpt;final-llm;
+285;test-033;pcdt2022-v1-c0205-65670f53;18 ESCLARECIMENTOS E RESPONSABILIDADES;113-113;0;0;0;llm-claude+gpt;final-llm;
+656;test-033;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+527;test-033;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;2;2;2;llm-claude+gpt;final-llm;
+503;test-033;pcdt2022-v1-c0094-50dc65c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas;62-62;2;2;2;llm-claude+gpt;final-llm;
+673;test-033;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+453;test-033;pcdt2022-v1-c0089-4191ee96;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+34;test-033;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+633;test-034;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+344;test-034;pcdt2022-v1-c0197-d6adfec6;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;106-106;1;1;1;llm-claude+gpt;final-llm;
+209;test-034;who2023-v1-c0007-4e8d867b;Glossary > Secondary case;11-11;0;0;0;llm-claude+gpt;final-llm;
+478;test-034;who2023-v1-c0006-f0658c2a;Glossary > of leprosy Re-emergence;11-11;0;0;0;llm-claude+gpt;final-llm;
+79;test-034;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+146;test-034;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+489;test-034;pcdt2022-v1-c0204-d44f7315;17 INDICADORES DE IMPLEMENTAÇÃO > 17.2 Indicadores de avaliação da qualidade dos serviços de hanseníase;111-112;0;0;0;llm-claude+gpt;final-llm;
+708;test-034;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+782;test-034;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+564;test-034;pcdt2022-v1-c0039-ada0aa84;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.1 Reação hansênica tipo 1 (reação reversa);36-36;1;1;1;llm-claude+gpt;final-llm;
+243;test-034;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+482;test-034;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+104;test-034;pcdt2022-v1-c0025-ca36ff12;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas;29-29;0;0;0;llm-claude+gpt;final-llm;
+128;test-035;pcdt2022-v1-c0095-962d82b7;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-62;0;0;0;llm-claude+gpt;final-llm;
+341;test-035;pcdt2022-v1-c0093-f93ace06;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;61-61;0;0;0;llm-claude+gpt;final-llm;
+577;test-035;estrategia2024-v1-c0048-39d79e0f;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;41-42;0;0;0;llm-claude+gpt;final-llm;
+715;test-035;pcdt2022-v1-c0201-7b6e4319;16 GESTÃO, REGULAÇÃO E CONTROLE;109-109;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+97;test-035;estrategia2024-v1-c0049-c8cf0fd4;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;42-43;0;0;0;llm-claude+gpt;final-llm;
+163;test-035;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+490;test-035;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;0;llm-claude+gpt;final-llm;
+229;test-035;pcdt2022-v1-c0091-c7387247;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-60;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+338;test-035;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;1;1;1;llm-claude+gpt;final-llm;
+428;test-035;pcdt2022-v1-c0087-29ba5db4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-59;0;0;0;llm-claude+gpt;final-llm;
+438;test-035;pcdt2022-v1-c0085-a5ccf38b;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;58-58;0;0;0;llm-claude+gpt;final-llm;
+392;test-035;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+743;test-035;estrategia2024-v1-c0047-39737534;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;41-41;0;0;0;llm-claude+gpt;final-llm;
+742;test-035;pcdt2022-v1-c0163-5bef7aa6;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.3 Autocuidado;87-87;0;0;0;llm-claude+gpt;final-llm;
+330;test-035;pcdt2022-v1-c0089-4191ee96;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+289;test-035;pcdt2022-v1-c0194-4e1699e2;13 INVESTIGAÇÃO DE CONTATOS > 13.1.1 Imunoprofilaxia e monitoramento de contatos;103-104;0;0;0;llm-claude+gpt;final-llm;
+164;test-035;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+436;test-035;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;1;1;1;llm-claude+gpt;final-llm;
+493;test-035;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+403;test-035;pcdt2022-v1-c0088-828174c0;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-59;0;0;0;llm-claude+gpt;final-llm;
+775;test-036;pcdt2022-v1-c0156-5156d3b3;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.6 Suporte psicossocial > 10.2.1.6.1 Acolhimento;85-85;0;0;0;llm-claude+gpt;final-llm;
+217;test-036;pcdt2022-v1-c0160-29bf6c61;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;0;llm-claude+gpt;final-llm;
+664;test-036;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+554;test-036;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+635;test-036;pcdt2022-v1-c0155-a13c41ac;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.6 Suporte psicossocial;84-85;0;0;0;llm-claude+gpt;final-llm;
+162;test-036;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;0;0;0;llm-claude+gpt;final-llm;
+772;test-036;pcdt2022-v1-c0150-67bb2e7e;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação;83-83;0;0;0;llm-claude+gpt;final-llm;
+313;test-036;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;1;1;1;llm-claude+gpt;final-llm;
+212;test-036;pcdt2022-v1-c0080-e948c14f;8 CRITÉRIOS DE INCLUSÃO;53-53;0;0;0;llm-claude+gpt;final-llm;
+421;test-036;pcdt2022-v1-c0151-f49b2603;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.5 Profissionais de saúde;83-84;2;2;2;llm-claude+gpt;final-llm;
+221;test-036;pcdt2022-v1-c0161-e2a91d8b;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.2 Direcionando uma intervenção;86-87;0;0;0;llm-claude+gpt;final-llm;
+770;test-036;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+608;test-036;estrategia2024-v1-c0045-e64b4d62;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;39-40;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+106;test-036;estrategia2024-v1-c0044-3318c4ac;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;39-39;1;1;1;llm-claude+gpt;final-llm;
+160;test-036;pcdt2022-v1-c0157-a80687be;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.6 Suporte psicossocial > 10.2.1.6.1 Acolhimento;85-85;0;0;0;llm-claude+gpt;final-llm;
+148;test-036;pcdt2022-v1-c0194-4e1699e2;13 INVESTIGAÇÃO DE CONTATOS > 13.1.1 Imunoprofilaxia e monitoramento de contatos;103-104;2;2;2;llm-claude+gpt;final-llm;
+558;test-036;pcdt2022-v1-c0193-fd71eb6c;13 INVESTIGAÇÃO DE CONTATOS;103-103;2;2;2;llm-claude+gpt;final-llm;
+320;test-036;estrategia2024-v1-c0046-6c78c357;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;40-41;0;0;0;llm-claude+gpt;final-llm;
+789;test-037;pcdt2022-v1-c0080-e948c14f;8 CRITÉRIOS DE INCLUSÃO;53-53;0;0;0;llm-claude+gpt;final-llm;
+765;test-037;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;0;0;0;llm-claude+gpt;final-llm;
+414;test-037;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;0;llm-claude+gpt;final-llm;
+460;test-037;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+123;test-037;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+534;test-037;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;0;0;0;llm-claude+gpt;final-llm;
+333;test-037;estrategia2024-v1-c0044-3318c4ac;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;39-39;1;1;1;llm-claude+gpt;final-llm;
+12;test-037;pcdt2022-v1-c0194-4e1699e2;13 INVESTIGAÇÃO DE CONTATOS > 13.1.1 Imunoprofilaxia e monitoramento de contatos;103-104;2;2;2;llm-claude+gpt;final-llm;
+357;test-037;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+351;test-037;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+114;test-037;pcdt2022-v1-c0201-7b6e4319;16 GESTÃO, REGULAÇÃO E CONTROLE;109-109;0;0;0;llm-claude+gpt;final-llm;
+62;test-037;pcdt2022-v1-c0193-fd71eb6c;13 INVESTIGAÇÃO DE CONTATOS;103-103;2;2;2;llm-claude+gpt;final-llm;
+755;test-037;pcdt2022-v1-c0195-44904505;14 MONITORAMENTO > 14.1.1 Monitoramento durante o tratamento farmacológico com PQT-U;105-105;0;0;0;llm-claude+gpt;final-llm;
+600;test-038;pcdt2022-v1-c0003-336d88c2;1 Introdução;17-17;0;0;0;llm-claude+gpt;final-llm;
+45;test-038;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+156;test-038;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+661;test-038;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;1;1;1;llm-claude+gpt;final-llm;
+356;test-038;pcdt2022-v1-c0200-40d85b83;15 RESULTADOS ESPERADOS;107-108;0;0;0;llm-claude+gpt;final-llm;
+737;test-038;pcdt2022-v1-c0162-3d0fc161;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.2 Prevenção de incapacidades físicas;87-87;0;0;0;llm-claude+gpt;final-llm;
+685;test-038;pcdt2022-v1-c0004-3ffc63c0;1 Introdução;17-17;0;0;0;llm-claude+gpt;final-llm;
+371;test-038;pcdt2022-v1-c0194-4e1699e2;13 INVESTIGAÇÃO DE CONTATOS > 13.1.1 Imunoprofilaxia e monitoramento de contatos;103-104;2;2;2;llm-claude+gpt;final-llm;
+575;test-038;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;0;0;0;llm-claude+gpt;final-llm;
+327;test-038;pcdt2022-v1-c0181-1e61cb27;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase;97-97;0;0;0;llm-claude+gpt;final-llm;
+679;test-038;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;0;llm-claude+gpt;final-llm;
+346;test-038;pcdt2022-v1-c0183-42c2e43b;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase > 12.1.2 Amamentação;98-98;0;0;0;llm-claude+gpt;final-llm;
+47;test-038;pcdt2022-v1-c0015-24baa600;5 ASPECTOS IMUNOLÓGICOS;25-25;0;0;0;llm-claude+gpt;final-llm;
+427;test-038;pcdt2022-v1-c0083-11c86568;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-57;0;0;0;llm-claude+gpt;final-llm;
+572;test-039;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+437;test-039;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+265;test-039;pcdt2022-v1-c0200-40d85b83;15 RESULTADOS ESPERADOS;107-108;0;0;0;llm-claude+gpt;final-llm;
+523;test-039;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;0;llm-claude+gpt;final-llm;
+319;test-039;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;0;0;0;llm-claude+gpt;final-llm;
+149;test-039;pcdt2022-v1-c0183-42c2e43b;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase > 12.1.2 Amamentação;98-98;0;0;0;llm-claude+gpt;final-llm;
+696;test-039;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+379;test-039;pcdt2022-v1-c0194-4e1699e2;13 INVESTIGAÇÃO DE CONTATOS > 13.1.1 Imunoprofilaxia e monitoramento de contatos;103-104;2;2;2;llm-claude+gpt;final-llm;
+67;test-039;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+516;test-039;estrategia2024-v1-c0061-ec99d868;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;49-49;0;0;0;llm-claude+gpt;final-llm;
+480;test-039;estrategia2024-v1-c0039-2c3fd9e5;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;35-36;0;0;0;llm-claude+gpt;final-llm;
+228;test-039;pcdt2022-v1-c0162-3d0fc161;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.2 Prevenção de incapacidades físicas;87-87;0;0;0;llm-claude+gpt;final-llm;
+91;test-039;pcdt2022-v1-c0015-24baa600;5 ASPECTOS IMUNOLÓGICOS;25-25;0;0;0;llm-claude+gpt;final-llm;
+117;test-040;pcdt2022-v1-c0008-f44b03da;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+109;test-040;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;0;0;0;llm-claude+gpt;final-llm;
+596;test-040;estrategia2024-v1-c0057-c5d06ab9;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;46-47;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+649;test-040;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+175;test-040;pcdt2022-v1-c0080-e948c14f;8 CRITÉRIOS DE INCLUSÃO;53-53;0;0;0;llm-claude+gpt;final-llm;
+337;test-040;pcdt2022-v1-c0044-cde33ffb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.3 Fatores associados ou precipitantes das reações hansênicas;39-39;0;0;0;llm-claude+gpt;final-llm;
+709;test-040;pcdt2022-v1-c0186-2672d33a;12 CASOS ESPECIAIS > 12.2 Hanseníase em menores de 15 anos de idade;98-99;1;1;1;llm-claude+gpt;final-llm;
+293;test-040;pcdt2022-v1-c0194-4e1699e2;13 INVESTIGAÇÃO DE CONTATOS > 13.1.1 Imunoprofilaxia e monitoramento de contatos;103-104;2;2;2;llm-claude+gpt;final-llm;
+384;test-040;estrategia2024-v1-c0058-97f0df94;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;47-48;0;0;0;llm-claude+gpt;final-llm;
+129;test-040;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+535;test-040;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+211;test-040;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+569;test-040;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;0;0;0;llm-claude+gpt;final-llm;
+432;test-040;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+467;test-040;pcdt2022-v1-c0181-1e61cb27;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase;97-97;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+108;test-040;estrategia2024-v1-c0061-ec99d868;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;49-49;0;0;0;llm-claude+gpt;final-llm;
+725;test-040;pcdt2022-v1-c0193-fd71eb6c;13 INVESTIGAÇÃO DE CONTATOS;103-103;2;2;2;llm-claude+gpt;final-llm;
+591;test-041;pcdt2022-v1-c0194-4e1699e2;13 INVESTIGAÇÃO DE CONTATOS > 13.1.1 Imunoprofilaxia e monitoramento de contatos;103-104;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+795;test-041;pcdt2022-v1-c0182-dbd3d5c6;12 CASOS ESPECIAIS > 12.1 Mães e filhos com hanseníase > 12.1.1 Concepção;97-97;0;0;0;llm-claude+gpt;final-llm;
+529;test-041;pcdt2022-v1-c0083-11c86568;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-57;0;0;0;llm-claude+gpt;final-llm;
+780;test-041;pcdt2022-v1-c0021-decc52b9;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;28-28;0;0;0;llm-claude+gpt;final-llm;
+722;test-041;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+515;test-041;who2023-v1-c0005-7e2ccf5b;Glossary > Prophylaxis;11-11;1;1;1;llm-claude+gpt;final-llm;
+629;test-041;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+205;test-041;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;0;llm-claude+gpt;final-llm;
+714;test-041;pcdt2022-v1-c0186-2672d33a;12 CASOS ESPECIAIS > 12.2 Hanseníase em menores de 15 anos de idade;98-99;0;0;0;llm-claude+gpt;final-llm;
+541;test-041;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;0;llm-claude+gpt;final-llm;
+637;test-041;who2023-v1-c0076-431493cc;7. Criteria for Verification > 7.2 Programme implementation > 7.2.6 Post-exposure prophylaxis;44-44;2;2;2;llm-claude+gpt;final-llm;
+504;test-041;pcdt2022-v1-c0167-b9260a7d;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.6 Intervenções cirúrgicas preventivas e reabilitadoras;89-89;0;0;0;llm-claude+gpt;final-llm;
+452;test-041;pcdt2022-v1-c0086-8b040fa4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-58;0;0;0;llm-claude+gpt;final-llm;
+326;test-041;pcdt2022-v1-c0092-9e55a28a;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;60-61;0;0;0;llm-claude+gpt;final-llm;
+232;test-041;pcdt2022-v1-c0084-f485f222;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico;57-58;0;0;0;llm-claude+gpt;final-llm;
+253;test-041;pcdt2022-v1-c0193-fd71eb6c;13 INVESTIGAÇÃO DE CONTATOS;103-103;0;0;0;llm-claude+gpt;final-llm;
+671;test-042;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+332;test-042;pcdt2022-v1-c0082-a53a6aef;10 ABORDAGEM TERAPÊUTICA;57-57;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+125;test-042;pcdt2022-v1-c0161-e2a91d8b;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.2 Direcionando uma intervenção;86-87;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+761;test-042;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+272;test-042;pcdt2022-v1-c0163-5bef7aa6;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.3 Autocuidado;87-87;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+791;test-042;pcdt2022-v1-c0151-f49b2603;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.5 Profissionais de saúde;83-84;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+532;test-042;pcdt2022-v1-c0149-f8396d6c;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação;83-83;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+381;test-042;pcdt2022-v1-c0044-cde33ffb;6 ASPECTOS CLÍNICOS > 6.5 Reações hansênicas > 6.5.3 Fatores associados ou precipitantes das reações hansênicas;39-39;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+63;test-042;pcdt2022-v1-c0157-a80687be;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.6 Suporte psicossocial > 10.2.1.6.1 Acolhimento;85-85;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+397;test-042;estrategia2024-v1-c0049-c8cf0fd4;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;42-43;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+310;test-043;pcdt2022-v1-c0161-e2a91d8b;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.2 Direcionando uma intervenção;86-87;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+470;test-043;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+446;test-043;pcdt2022-v1-c0145-f1dd6115;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.1 Estigma e discriminação na hanseníase;81-81;1;1;1;llm-claude+gpt;final-llm;
+345;test-043;pcdt2022-v1-c0149-f8396d6c;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação;83-83;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+227;test-043;pcdt2022-v1-c0159-6583964a;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.1 Apoio de pares e grupos;86-86;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+113;test-043;pcdt2022-v1-c0144-95edf172;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U > 10.1.7.3 Tratamento farmacológico de 2ª linha para casos de reações adversas à clofazimina;80-81;2;2;2;llm-claude+gpt;final-llm;
+687;test-044;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;0;0;0;llm-claude+gpt;final-llm;
+621;test-044;pcdt2022-v1-c0005-7909acf0;1 Introdução;17-18;2;2;2;llm-claude+gpt;final-llm;
+495;test-044;pcdt2022-v1-c0008-f44b03da;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+563;test-044;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+139;test-044;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;0;0;0;llm-claude+gpt;final-llm;
+492;test-044;pcdt2022-v1-c0003-336d88c2;1 Introdução;17-17;0;0;0;llm-claude+gpt;final-llm;
+588;test-044;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;1;1;1;llm-claude+gpt;final-llm;
+298;test-044;pcdt2022-v1-c0004-3ffc63c0;1 Introdução;17-17;2;2;2;llm-claude+gpt;final-llm;
+512;test-044;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;0;llm-claude+gpt;final-llm;
+271;test-044;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+202;test-044;pcdt2022-v1-c0015-24baa600;5 ASPECTOS IMUNOLÓGICOS;25-25;1;1;1;llm-claude+gpt;final-llm;
+609;test-045;pcdt2022-v1-c0005-7909acf0;1 Introdução;17-18;2;2;2;llm-claude+gpt;final-llm;
+300;test-045;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+666;test-045;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;0;0;0;llm-claude+gpt;final-llm;
+376;test-045;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+412;test-045;pcdt2022-v1-c0015-24baa600;5 ASPECTOS IMUNOLÓGICOS;25-25;0;0;0;llm-claude+gpt;final-llm;
+2;test-045;pcdt2022-v1-c0008-f44b03da;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+667;test-045;pcdt2022-v1-c0033-7c0d05f4;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.4 Hanseníase indeterminada;33-33;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+522;test-045;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+603;test-045;pcdt2022-v1-c0022-956bbe09;6 ASPECTOS CLÍNICOS > 6.2 Definição de caso;28-28;0;0;0;llm-claude+gpt;final-llm;
+543;test-045;pcdt2022-v1-c0003-336d88c2;1 Introdução;17-17;1;1;1;llm-claude+gpt;final-llm;
+526;test-045;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+16;test-045;pcdt2022-v1-c0087-29ba5db4;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;58-59;0;0;0;llm-claude+gpt;final-llm;
+200;test-045;pcdt2022-v1-c0004-3ffc63c0;1 Introdução;17-17;0;0;0;llm-claude+gpt;final-llm;
+401;test-045;pcdt2022-v1-c0176-d1147272;11 RESISTÊNCIA DO M. leprae A ANTIMICROBIANOS > 11.2 Critério para investigação da resistência primária do M. leprae a antimicrobianos;92-93;0;0;0;llm-claude+gpt;final-llm;
+785;test-046;pcdt2022-v1-c0017-7a2d7272;5 ASPECTOS IMUNOLÓGICOS;26-26;2;2;2;llm-claude+gpt;final-llm;
+547;test-046;pcdt2022-v1-c0004-3ffc63c0;1 Introdução;17-17;1;1;1;llm-claude+gpt;final-llm;
+92;test-046;pcdt2022-v1-c0193-fd71eb6c;13 INVESTIGAÇÃO DE CONTATOS;103-103;1;1;1;llm-claude+gpt;final-llm;
+102;test-046;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;0;0;0;llm-claude+gpt;final-llm;
+118;test-046;pcdt2022-v1-c0005-7909acf0;1 Introdução;17-18;1;1;1;llm-claude+gpt;final-llm;
+301;test-046;pcdt2022-v1-c0018-190b556c;5 ASPECTOS IMUNOLÓGICOS;26-26;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+700;test-046;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+533;test-046;pcdt2022-v1-c0015-24baa600;5 ASPECTOS IMUNOLÓGICOS;25-25;2;2;2;llm-claude+gpt;final-llm;
+198;test-046;pcdt2022-v1-c0016-9dc0d2d7;5 ASPECTOS IMUNOLÓGICOS;25-26;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+242;test-046;pcdt2022-v1-c0003-336d88c2;1 Introdução;17-17;0;0;0;llm-claude+gpt;final-llm;
+405;test-047;estrategia2024-v1-c0012-aacbfd68;Contexto geral > DADOS EPIDEMIOLÓGICOS > No Brasil;15-16;0;0;0;llm-claude+gpt;final-llm;
+665;test-047;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+606;test-047;estrategia2024-v1-c0022-2d5ce183;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030;23-23;0;0;0;llm-claude+gpt;final-llm;
+684;test-047;estrategia2024-v1-c0013-53c9e10d;Contexto geral > DADOS EPIDEMIOLÓGICOS > No Brasil;16-17;0;0;0;llm-claude+gpt;final-llm;
+208;test-047;estrategia2024-v1-c0020-decb88f1;Contexto geral > ESTRATÉGIA GLOBAL;20-20;1;1;1;llm-claude+gpt;final-llm;
+555;test-047;estrategia2024-v1-c0018-486a671f;Contexto geral > ESTRATÉGIA GLOBAL;19-19;1;1;1;llm-claude+gpt;final-llm;
+560;test-047;who2023-v1-c0026-25fdab4f;4. Concepts and definitions > 4.1 Generic Framework for control, elimination and eradication of neglected tropical diseases (adapted for leprosy) > 4.1.2 Elimination as a public health problem (a term related to both infection and disease);23-23;2;2;2;llm-claude+gpt;final-llm;
+658;test-047;estrategia2024-v1-c0015-3afefff7;Contexto geral > DADOS EPIDEMIOLÓGICOS > No Brasil;17-18;0;0;0;llm-claude+gpt;final-llm;
+718;test-047;pcdt2022-v1-c0001-b2106a64;APRESENTAÇÃO;15-15;0;0;0;llm-claude+gpt;final-llm;
+127;test-047;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;0;0;0;llm-claude+gpt;final-llm;
+676;test-047;estrategia2024-v1-c0017-4ac32740;Contexto geral > ESTRATÉGIA GLOBAL;18-18;1;1;1;llm-claude+gpt;final-llm;
+521;test-047;estrategia2024-v1-c0011-642f8aa6;Contexto geral > DADOS EPIDEMIOLÓGICOS > No Brasil;15-15;0;0;0;llm-claude+gpt;final-llm;
+185;test-047;pcdt2022-v1-c0203-c441b233;17 INDICADORES DE IMPLEMENTAÇÃO > 17.1 Indicadores de monitoramento do controle da hanseníase enquanto problema de saúde pública;111-111;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+348;test-047;pcdt2022-v1-c0003-336d88c2;1 Introdução;17-17;0;0;0;llm-claude+gpt;final-llm;
+318;test-047;estrategia2024-v1-c0014-d28cbdac;Contexto geral > DADOS EPIDEMIOLÓGICOS > No Brasil;17-17;0;0;0;llm-claude+gpt;final-llm;
+705;test-048;estrategia2024-v1-c0034-0de1605e;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;32-33;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+768;test-048;estrategia2024-v1-c0000-003f0196;Apresentação;10-10;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+604;test-048;estrategia2024-v1-c0004-2ff0b570;Apresentação;11-11;2;2;2;llm-claude+gpt;final-llm;
+647;test-048;estrategia2024-v1-c0028-17e9553c;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > METAS > META 4 Dar providência a 100% das manifestações sobre práticas discriminatórias em hanseníase registradas nas Ouvidorias do SUS;27-27;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+279;test-048;estrategia2024-v1-c0011-642f8aa6;Contexto geral > DADOS EPIDEMIOLÓGICOS > No Brasil;15-15;0;0;0;llm-claude+gpt;final-llm;
+115;test-048;estrategia2024-v1-c0027-e7f3c2ed;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > METAS > META 3 Reduzir em 20% o número absoluto de casos novos com GIF2 no momento do diagnóstico de hanseníase até 2030;26-26;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+749;test-048;estrategia2024-v1-c0021-4d57b86c;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030;21-23;2;2;2;llm-claude+gpt;final-llm;
+254;test-048;estrategia2024-v1-c0006-6f1590fc;Contexto geral;12-13;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+713;test-048;estrategia2024-v1-c0032-d7ee856f;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > DEFINIÇÃO DAS AÇÕES ESTRATÉGICAS > Pilares;30-32;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+37;test-048;estrategia2024-v1-c0035-6f25b197;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;33-34;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+96;test-048;estrategia2024-v1-c0030-534078a5;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > DEFINIÇÃO DAS AÇÕES ESTRATÉGICAS > Alicerces;27-29;2;2;2;llm-claude+gpt;final-llm;
+531;test-048;estrategia2024-v1-c0026-1e74a295;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > METAS > META 2 Eliminação da doença em 75% dos municípios até 2030;25-25;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+144;test-048;estrategia2024-v1-c0029-273a4c7b;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > DEFINIÇÃO DAS AÇÕES ESTRATÉGICAS;27-27;1;1;1;llm-claude+gpt;final-llm;
+246;test-048;estrategia2024-v1-c0033-4cfef549;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > DEFINIÇÃO DAS AÇÕES ESTRATÉGICAS > Pilares;31-32;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+485;test-048;pcdt2022-v1-c0203-c441b233;17 INDICADORES DE IMPLEMENTAÇÃO > 17.1 Indicadores de monitoramento do controle da hanseníase enquanto problema de saúde pública;111-111;1;1;1;llm-claude+gpt;final-llm;
+559;test-048;estrategia2024-v1-c0031-6e936d51;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > DEFINIÇÃO DAS AÇÕES ESTRATÉGICAS > Pilares;29-30;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+324;test-048;estrategia2024-v1-c0025-4ac6c8d5;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > METAS > META 1 Interrupção da transmissão em 99% dos municípios até 2030;24-24;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+389;test-048;estrategia2024-v1-c0003-c61dc849;Apresentação;11-11;2;2;2;llm-claude+gpt;final-llm;
+388;test-048;estrategia2024-v1-c0065-673e3a45;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > PRÓXIMOS PASSOS;52-52;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+698;test-048;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+726;test-048;estrategia2024-v1-c0024-380d70a7;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > METAS > META 1 Interrupção da transmissão em 99% dos municípios até 2030;24-24;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+746;test-048;estrategia2024-v1-c0064-998dd875;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > PRÓXIMOS PASSOS;52-52;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+274;test-049;pcdt2022-v1-c0006-aab026b9;1 Introdução;18-18;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+116;test-049;estrategia2024-v1-c0060-8e50ee1a;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;48-49;2;2;2;llm-claude+gpt;final-llm;
+5;test-049;estrategia2024-v1-c0057-c5d06ab9;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;46-47;2;2;2;llm-claude+gpt;final-llm;
+585;test-049;estrategia2024-v1-c0004-2ff0b570;Apresentação;11-11;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+29;test-049;pcdt2022-v1-c0001-b2106a64;APRESENTAÇÃO;15-15;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+364;test-049;estrategia2024-v1-c0055-887399d8;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;45-46;2;2;2;llm-claude+gpt;final-llm;
+225;test-049;estrategia2024-v1-c0053-c3ceefbb;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;44-45;2;2;2;llm-claude+gpt;final-llm;
+167;test-049;estrategia2024-v1-c0020-decb88f1;Contexto geral > ESTRATÉGIA GLOBAL;20-20;0;0;0;llm-claude+gpt;final-llm;
+201;test-049;estrategia2024-v1-c0052-7e0fc762;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;43-43;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+382;test-049;estrategia2024-v1-c0056-dfd823aa;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;46-46;2;2;2;llm-claude+gpt;final-llm;
+231;test-049;estrategia2024-v1-c0026-1e74a295;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > METAS > META 2 Eliminação da doença em 75% dos municípios até 2030;25-25;0;0;0;llm-claude+gpt;final-llm;
+95;test-049;estrategia2024-v1-c0059-9b871a4d;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;48-48;2;2;2;llm-claude+gpt;final-llm;
+352;test-049;estrategia2024-v1-c0044-3318c4ac;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;39-39;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+472;test-049;estrategia2024-v1-c0058-97f0df94;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;47-48;2;2;2;llm-claude+gpt;final-llm;
+444;test-049;estrategia2024-v1-c0054-2dfea22b;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;45-45;2;2;2;llm-claude+gpt;final-llm;
+86;test-049;estrategia2024-v1-c0019-f9ee75d5;Contexto geral > ESTRATÉGIA GLOBAL;19-20;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+398;test-049;pcdt2022-v1-c0020-b86f60cd;6 ASPECTOS CLÍNICOS > 6.1 Suspeição diagnóstica;27-27;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+506;test-049;estrategia2024-v1-c0006-6f1590fc;Contexto geral;12-13;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+195;test-049;pcdt2022-v1-c0019-cb147a60;6 ASPECTOS CLÍNICOS;27-27;0;0;0;llm-claude+gpt;final-llm;
+70;test-049;estrategia2024-v1-c0034-0de1605e;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;32-33;2;2;2;llm-claude+gpt;final-llm;
+316;test-049;estrategia2024-v1-c0024-380d70a7;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > METAS > META 1 Interrupção da transmissão em 99% dos municípios até 2030;24-24;0;0;0;llm-claude+gpt;final-llm;
+574;test-049;estrategia2024-v1-c0035-6f25b197;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;33-34;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+511;test-049;estrategia2024-v1-c0061-ec99d868;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;49-49;2;2;2;llm-claude+gpt;final-llm;
+774;test-050;estrategia2024-v1-c0046-6c78c357;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;40-41;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+134;test-050;estrategia2024-v1-c0049-c8cf0fd4;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;42-43;0;0;0;llm-claude+gpt;final-llm;
+89;test-050;estrategia2024-v1-c0006-6f1590fc;Contexto geral;12-13;0;0;0;llm-claude+gpt;final-llm;
+24;test-050;estrategia2024-v1-c0036-6e289461;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;34-34;0;0;0;llm-claude+gpt;final-llm;
+237;test-050;estrategia2024-v1-c0034-0de1605e;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;32-33;0;0;0;llm-claude+gpt;final-llm;
+690;test-050;pcdt2022-v1-c0157-a80687be;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.6 Suporte psicossocial > 10.2.1.6.1 Acolhimento;85-85;2;2;2;llm-claude+gpt;final-llm;
+753;test-050;estrategia2024-v1-c0048-39d79e0f;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;41-42;0;0;0;llm-claude+gpt;final-llm;
+10;test-050;estrategia2024-v1-c0055-887399d8;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;45-46;0;0;0;llm-claude+gpt;final-llm;
+19;test-050;estrategia2024-v1-c0052-7e0fc762;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;43-43;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+537;test-050;estrategia2024-v1-c0060-8e50ee1a;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;48-49;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+779;test-050;estrategia2024-v1-c0054-2dfea22b;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;45-45;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+184;test-050;pcdt2022-v1-c0001-b2106a64;APRESENTAÇÃO;15-15;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+54;test-050;pcdt2022-v1-c0158-cf27d2b6;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.6 Suporte psicossocial > 10.2.1.6.1 Acolhimento;85-86;0;0;0;llm-claude+gpt;final-llm;
+119;test-050;pcdt2022-v1-c0156-5156d3b3;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.6 Suporte psicossocial > 10.2.1.6.1 Acolhimento;85-85;2;2;2;llm-claude+gpt;final-llm;
+508;test-050;estrategia2024-v1-c0040-0d2925e3;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;36-37;0;0;0;llm-claude+gpt;final-llm;
+783;test-050;estrategia2024-v1-c0043-0277952a;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;38-39;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+48;test-050;estrategia2024-v1-c0038-934cad45;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;35-35;0;0;0;llm-claude+gpt;final-llm;
+431;test-050;estrategia2024-v1-c0061-ec99d868;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS POR GRUPOS DE MUNICÍPIOS;49-49;1;1;2;llm-claude+gpt;final-llm;divergência 1x2
+28;test-050;estrategia2024-v1-c0037-b66154fe;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;34-35;0;0;0;llm-claude+gpt;final-llm;
+486;test-050;estrategia2024-v1-c0050-86942016;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;42-43;0;0;0;llm-claude+gpt;final-llm;
+238;test-050;estrategia2024-v1-c0039-2c3fd9e5;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;35-36;0;0;0;llm-claude+gpt;final-llm;
+643;test-050;estrategia2024-v1-c0035-6f25b197;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;33-34;0;0;0;llm-claude+gpt;final-llm;
+777;test-050;estrategia2024-v1-c0045-e64b4d62;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;39-40;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+670;test-050;estrategia2024-v1-c0041-1090fa0a;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;36-38;0;0;0;llm-claude+gpt;final-llm;
+691;test-050;estrategia2024-v1-c0042-ca2b845d;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;38-38;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+640;test-050;estrategia2024-v1-c0051-2eb0f3fb;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;43-43;0;0;0;llm-claude+gpt;final-llm;
+55;test-050;pcdt2022-v1-c0198-54e841f3;14 MONITORAMENTO > 14.1.3 A caderneta de saúde da pessoa acometida pela hanseníase;106-106;0;0;0;llm-claude+gpt;final-llm;
+731;test-050;estrategia2024-v1-c0044-3318c4ac;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;39-39;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+689;test-050;estrategia2024-v1-c0047-39737534;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;41-41;0;0;0;llm-claude+gpt;final-llm;

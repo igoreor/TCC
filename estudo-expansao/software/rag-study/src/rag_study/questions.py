@@ -9,6 +9,7 @@ module never generates question content (D15).
 from __future__ import annotations
 
 import csv
+import io
 import hashlib
 import json
 import re
@@ -69,7 +70,9 @@ def read_table(path: str | Path) -> list[dict[str, str]]:
         text = Path(path).read_text(encoding="cp1252")
     first_line = text.splitlines()[0] if text else ""
     delimiter = ";" if first_line.count(";") > first_line.count(",") else ","
-    return [dict(row) for row in csv.DictReader(text.splitlines(), delimiter=delimiter)]
+    # StringIO keeps line breaks inside quoted cells (answers, numbered key points);
+    # text.splitlines() would glue those lines together.
+    return [dict(row) for row in csv.DictReader(io.StringIO(text, newline=""), delimiter=delimiter)]
 
 
 def write_sheet(rows: list[dict[str, Any]], path: str | Path, columns: list[str]) -> None:

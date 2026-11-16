@@ -1,0 +1,56 @@
+{
+  "task": "j1-relevance-stage1",
+  "batch_id": "20261116T171143Z",
+  "started_utc": "2026-11-16T17:11:43.973648+00:00",
+  "system_prompt_sha256": "697556b270d3c85922cd64485b1d0c87e200c41c0aa294ca1c8a43b319402611",
+  "schema_sha256": "d919d6890900dad5a5ae033077e1c695b6d86dd2744453ff3d7dcb2213d277b1",
+  "judges": {
+    "claude": {
+      "provider": "claude_cli",
+      "model": "claude-opus-5-5",
+      "parameters": {
+        "access": "claude-code-cli-subscription",
+        "cli_version": "2.1.323 (Claude Code)",
+        "effort": "medium",
+        "system_prompt": "replaced",
+        "tools": "none",
+        "temperature": "not_sent",
+        "refusal_fallback": false,
+        "env:CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+        "env:CLAUDE_CODE_DISABLE_CLAUDE_MDS": "1",
+        "env:CLAUDE_CODE_DISABLE_GIT_INSTRUCTIONS": "1"
+      }
+    },
+    "gpt": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "parameters": {
+        "access": "codex-cli-chatgpt-plan",
+        "cli_version": "codex-cli 0.169.0-alpha.11.1",
+        "reasoning_effort": "medium",
+        "verbosity": "medium",
+        "system_prompt": "replaced (model_instructions_file, developer message)",
+        "tools": "none",
+        "temperature": "not_sent",
+        "service_tier": "default",
+        "catalog_sha256": "3257caee6a1acb1f8310eace5d483ec70dd42bf6007eb401e729f417845c12be"
+      }
+    }
+  },
+  "n_jobs": 100,
+  "n_pending": 100,
+  "n_done_before": 0,
+  "continue_from": [],
+  "workers": 6,
+  "max_output_tokens": 8000,
+  "judges_config_sha256": "652b0cbf08ae1a9bdd0c1de39a1b81c1ba187eddea91455c8b4cf146266a8af2",
+  "prompt": "judge-relevance-v1.txt",
+  "finished_utc": "2026-11-16T17:20:34.538576+00:00",
+  "counts": {
+    "success": 50,
+    "failed": 50,
+    "skipped": 0
+  },
+  "aborted": false,
+  "raw_sha256": "9f5999bad443a1cb9f84fbe9f6ff52948faabed9494e85b11c3dc27413261de3"
+}

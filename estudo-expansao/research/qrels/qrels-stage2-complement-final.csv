@@ -1,0 +1,25 @@
+﻿pool_item;question_id;item_id;section;pages;relevance;rel_claude;rel_gpt;annotator_id;annotation_round;notes
+1;test-035;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;0;0;0;llm-claude+gpt;final-llm;
+2;test-039;pcdt2022-v1-c0176-d1147272;11 RESISTÊNCIA DO M. leprae A ANTIMICROBIANOS > 11.2 Critério para investigação da resistência primária do M. leprae a antimicrobianos;92-93;0;0;0;llm-claude+gpt;final-llm;
+3;test-034;pcdt2022-v1-c0007-6d95a99d;1 Introdução;18-18;0;0;0;llm-claude+gpt;final-llm;
+4;test-012;pcdt2022-v1-c0139-65f4a5b1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U;78-78;0;0;0;llm-claude+gpt;final-llm;
+5;test-034;pcdt2022-v1-c0199-ce6db5bd;15 RESULTADOS ESPERADOS;107-107;0;0;0;llm-claude+gpt;final-llm;
+6;test-015;pcdt2022-v1-c0096-7f1a54ae;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.2 Tratamento farmacológico das reações hansênicas > 10.1.2.1 Tratamento farmacológico da reação hansênica tipo 1 ou reação reversa;62-63;0;0;0;llm-claude+gpt;final-llm;
+7;test-006;pcdt2022-v1-c0077-749c2fec;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR);52-52;0;0;0;llm-claude+gpt;final-llm;
+8;test-020;pcdt2022-v1-c0188-8f1d9c40;12 CASOS ESPECIAIS > 12.3 Imunossupressão e hanseníase;99-100;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+9;test-037;pcdt2022-v1-c0163-5bef7aa6;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.3 Autocuidado;87-87;0;0;0;llm-claude+gpt;final-llm;
+10;test-005;pcdt2022-v1-c0073-7f80ebfc;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.6 Teste rápido imunocromatográfico para detecção de anticorpos IgM contra o M. leprae;50-51;0;0;0;llm-claude+gpt;final-llm;
+11;test-050;estrategia2024-v1-c0000-003f0196;Apresentação;10-10;0;0;0;llm-claude+gpt;final-llm;
+12;test-033;pcdt2022-v1-c0090-965f10e5;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.1 Tratamento farmacológico da infecção pelo M. leprae com poliquimioterapia;59-60;0;0;0;llm-claude+gpt;final-llm;
+13;test-043;estrategia2024-v1-c0005-d9dbdb3e;Contexto geral;12-12;1;1;1;llm-claude+gpt;final-llm;
+14;test-031;pcdt2022-v1-c0139-65f4a5b1;10 ABORDAGEM TERAPÊUTICA > 10.1 Tratamento farmacológico > 10.1.7 Tratamento farmacológico de 2ª linha em caso de reações adversas aos componentes da PQT-U;78-78;0;0;0;llm-claude+gpt;final-llm;
+15;test-036;pcdt2022-v1-c0163-5bef7aa6;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.3 Autocuidado;87-87;0;0;1;llm-claude+gpt;final-llm;divergência 0x1
+16;test-041;pcdt2022-v1-c0176-d1147272;11 RESISTÊNCIA DO M. leprae A ANTIMICROBIANOS > 11.2 Critério para investigação da resistência primária do M. leprae a antimicrobianos;92-93;0;0;0;llm-claude+gpt;final-llm;
+17;test-032;estrategia2024-v1-c0048-39d79e0f;Estratégia Nacional para Enfrentamento à Hanseníase: 2024-2030 > AÇÕES ESTRATÉGICAS GERAIS;41-42;1;1;1;llm-claude+gpt;final-llm;
+18;test-013;pcdt2022-v1-c0196-68c746f2;14 MONITORAMENTO > 14.1.2 Monitoramento após o tratamento farmacológico com PQT-U;105-106;0;0;0;llm-claude+gpt;final-llm;
+19;test-001;pcdt2022-v1-c0029-ccc50c4b;6 ASPECTOS CLÍNICOS > 6.4 Formas clínicas > 6.4.2 Hanseníase virchowiana;31-31;0;1;0;llm-claude+gpt;final-llm;divergência 1x0
+20;test-001;pcdt2022-v1-c0053-5bbfa2a6;6 ASPECTOS CLÍNICOS > 6.6 Manifestações neurológicas > 6.6.2 Neurite > 6.6.2.2 Neurite silenciosa;41-42;0;0;0;llm-claude+gpt;final-llm;
+21;test-004;pcdt2022-v1-c0078-18c73694;7 EXAMES DE APOIO AO DIAGNÓSTICO > 7.7 Teste de biologia molecular para detecção de M. leprae em biópsia de pele ou nervo (qPCR);52-52;0;0;0;llm-claude+gpt;final-llm;
+22;test-026;pcdt2022-v1-c0161-e2a91d8b;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.7 Intervenções em nível coletivo > 10.2.1.7.2 Direcionando uma intervenção;86-87;0;0;0;llm-claude+gpt;final-llm;
+23;test-012;pcdt2022-v1-c0149-f8396d6c;10 ABORDAGEM TERAPÊUTICA > 10.2 Tratamento não farmacológico > 10.2.1 Abordagem psicossocial > 10.2.1.4 Estratégias para enfrentamento ao estigma e discriminação;83-83;0;0;0;llm-claude+gpt;final-llm;
+24;test-040;pcdt2022-v1-c0058-295e4eb2;7 EXAMES DE APOIO AO DIAGNÓSTICO;45-45;0;0;0;llm-claude+gpt;final-llm;

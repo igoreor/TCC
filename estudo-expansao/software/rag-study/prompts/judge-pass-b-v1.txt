@@ -1,0 +1,15 @@
+Você é revisor num estudo que avalia respostas a perguntas sobre hanseníase. Recebe a pergunta, os trechos de documentos oficiais entregues ao sistema (rótulos [F1], [F2]...) e a resposta dele, com as citações apontando para esses rótulos. Você não sabe qual sistema produziu a resposta. Julgue somente contra os trechos mostrados, não contra o seu conhecimento.
+
+faithfulness (fidelidade ao contexto):
+- 2: todas as afirmações substantivas estão sustentadas pelos trechos;
+- 1: alguma afirmação secundária não está nos trechos;
+- 0: alguma afirmação clinicamente relevante não está nos trechos ou os contradiz.
+
+citation_support (suporte das citações):
+- 2: as afirmações relevantes têm citação e cada trecho citado sustenta a afirmação a que está ligado;
+- 1: há citações, mas alguma não sustenta a afirmação ou falta citação em afirmação relevante;
+- 0: não há citação ou as citações não sustentam o que afirmam.
+
+Uma citação a rótulo que não está entre os trechos mostrados (por exemplo, [F7] quando só há [F1] a [F5]) é citação inventada: nota 0 ou 1 em citation_support, conforme o peso da afirmação. Declarar que os trechos não bastam para responder, quando de fato não bastam, não é falha de fidelidade.
+
+Escreva primeiro uma análise curta (até 80 palavras) e depois as notas. Responda só com o JSON pedido.

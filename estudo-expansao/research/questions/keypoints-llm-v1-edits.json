@@ -1,0 +1,43 @@
+{
+  "_sobre": "Consolidação dos pontos-chave (emenda 2, D46), feita pelo agente em 16/11/2026 sobre o rascunho j2-keypoints-draft/20261116T175143Z (Claude Opus 5.5) e a verificação j3-keypoints-verify/20261116T175350Z (GPT-6.1-sol). Regras: (1) ponto julgado acessório (essencial=nao) sai, se a contagem mínima permitir; (2) ponto parcialmente sustentado é reescrito para ficar fiel ao trecho; (3) ponto sustentado e essencial, mas não atômico, fica como está (limitação declarada); (4) pontos que a verificação considerou faltando não entram, exceto quando o guia do autor os exige (T11, Portaria 47/2026). A numeração em replace e drop é a do rascunho.",
+  "P01": {"drop": [3], "reason": "ponto 3 acessório (forma indeterminada), segundo a verificação"},
+  "P04": {"drop": [3], "reason": "ponto 3 acessório (critérios de idade da BCG), segundo a verificação"},
+  "T07": {"replace": {"3": {"texto": "O prazo de até 18 meses serve para completar as 12 doses supervisionadas; ele não aumenta o número de doses"}}, "reason": "ponto 3 parcialmente sustentado; reescrito sem a afirmação sobre extensão além de 12 meses"},
+  "T08": {"drop": [3], "reason": "ponto 3 acessório (taxas de cura e recidiva)"},
+  "T09": {"drop": [3], "reason": "ponto 3 acessório (não extensão além de 12 meses)"},
+  "T10": {"replace": {"1": {"texto": "A dapsona é o medicamento da PQT mais associado a reações adversas, especialmente hematológicas, como a hemólise"}}, "drop": [3], "reason": "ponto 1 parcialmente sustentado (anemia é rara); ponto 3 acessório (hepatotoxicidade rara da rifampicina)"},
+  "T11": {"replace": {
+      "3": {"texto": "Na reação adversa à rifampicina, o esquema de segunda linha é clofazimina + ofloxacino + minociclina por 6 meses (PB e MB); nos casos MB, seguem-se mais 18 meses de clofazimina + ofloxacino ou minociclina"},
+      "4": {"texto": "Na reação adversa à dapsona, o esquema é rifampicina + clofazimina + ofloxacino ou minociclina, por 6 meses na PB e 12 meses na MB"},
+      "5": {"texto": "Na reação adversa à clofazimina, o esquema é rifampicina + dapsona + ofloxacino, por 6 meses na PB e 12 meses na MB"},
+      "6": {"texto": "A Portaria SCTIE/MS nº 47/2026 ampliou o uso da claritromicina como esquema de segunda linha para adultos e crianças com reação adversa ao tratamento de primeira linha", "trechos": ["portaria47-2026-v1-c0000-759e68b3"]}},
+    "reason": "pontos 3 a 5 parcialmente sustentados (doses misturadas entre etapas); reescritos com a composição e a duração. O guia do autor exige que a T11 siga a Portaria 47/2026: o ponto da claritromicina substitui o da notificação, que a verificação não marcou como essencial para a conduta"},
+  "T17": {"replace": {
+      "5": {"texto": "A talidomida é proibida em gestantes, por causa do efeito teratogênico, e em mulheres que estejam amamentando"},
+      "6": {"texto": "Em mulheres com potencial reprodutivo, a talidomida só é usada em situações excepcionais e exige dois métodos contraceptivos ao mesmo tempo (pelo menos um de alta eficácia) e teste de gravidez feito até 24 horas antes do início e de cada dispensação"}},
+    "reason": "pontos 5 e 6 parcialmente sustentados; reescritos conforme os trechos"},
+  "T18": {"replace": {"2": {"texto": "Quem recebe alta por cura durante episódios reacionais deve continuar com consultas regulares na UBS, para tratamento e monitoramento por avaliação neurológica simplificada (ANS), enquanto persistirem as reações"}}, "reason": "ponto 2 parcialmente sustentado (prazo de cinco anos é estimativa); reescrito"},
+  "T20": {"replace": {
+      "2": {"texto": "As reações após a alta são tratadas com imunomoduladores e anti-inflamatórios: corticosteroides na reação tipo 1 e, preferencialmente, talidomida na reação tipo 2"},
+      "3": {"texto": "Quem recebe alta por cura durante episódios reacionais continua com consultas regulares na UBS, onde é medicado e monitorado por avaliação neurológica simplificada (ANS) enquanto persistirem as reações"}},
+    "reason": "pontos 2 e 3 parcialmente sustentados; reescritos conforme os trechos"},
+  "T25": {"replace": {"4": {"texto": "A ANS permite acompanhar a função dos nervos periféricos durante e após o tratamento e é parâmetro importante para avaliar o tratamento das neurites"}}, "reason": "ponto 4 parcialmente sustentado; reescrito"},
+  "T27": {"replace": {"1": {"texto": "Os documentos tratam de úlceras traumáticas e neuropáticas associadas à hanseníase, e não de escaras de decúbito"}}, "drop": [2, 3], "reason": "ponto 1 parcialmente sustentado; pontos 2 e 3 acessórios (curativos de úlceras neuropáticas, não de escaras)"},
+  "T28": {"replace": {"1": {"texto": "Deve-se suspeitar de hanseníase diante de qualquer um destes sinais: manchas hipocrômicas ou avermelhadas; perda ou diminuição da sensibilidade em manchas da pele; dormência ou formigamento de mãos ou pés; dor ou hipersensibilidade em nervos; edema ou nódulos na face ou nos lóbulos auriculares; ferimentos ou queimaduras indolores nas mãos ou pés"}}, "reason": "ponto 1 parcialmente sustentado (lista incompleta); reescrito com a lista do trecho"},
+  "T29": {"drop": [6], "reason": "ponto 6 acessório (apresentação da rifampicina em suspensão)"},
+  "T30": {"drop": [4, 5], "reason": "pontos 4 e 5 acessórios (pigmentação pela clofazimina; prednisona)"},
+  "T31": {"drop": [2], "reason": "ponto 2 acessório (coinfecção pelo HIV)"},
+  "T33": {"replace": {"5": {"texto": "Se lesões de pele persistirem após a PQT-U a ponto de gerar dúvida sobre a resposta ao tratamento, deve-se investigar resistência medicamentosa; só os casos com resistência comprovada recebem novo ciclo, com esquema de segunda linha"}}, "reason": "ponto 5 parcialmente sustentado; reescrito sem a parte sobre extensão da PQT-U"},
+  "T34": {"replace": {"3": {"texto": "A reação tipo 1 pode ocorrer após a antibioticoterapia, com piora abrupta das lesões preexistentes e lesões aparentemente novas, porque a resposta imune pode se dirigir contra bacilos mortos ou fragmentos bacilares persistentes"}}, "drop": [2, 5], "reason": "ponto 3 parcialmente sustentado; pontos 2 e 5 acessórios"},
+  "T35": {"drop": [3], "reason": "ponto 3 acessório (papel da dose supervisionada)"},
+  "T40": {"replace": {
+      "2": {"texto": "O contato deve passar por exame de toda a superfície da pele, sob boa iluminação, com testes de sensibilidade, e por avaliação neurológica com palpação dos nervos periféricos e testes de sensibilidade e força muscular"},
+      "6": {"texto": "Todos os menores de 15 anos registrados como contatos de casos notificados nos últimos cinco anos devem ser avaliados por exame clínico criterioso"}},
+    "reason": "pontos 2 e 6 parcialmente sustentados; reescritos conforme os trechos"},
+  "T41": {"drop": [3], "reason": "ponto 3 acessório (SDR-PEP combinada ao exame de contatos)"},
+  "T42": {"drop": [2], "reason": "ponto 2 parcialmente sustentado e acessório"},
+  "T46": {"drop": [2], "reason": "ponto 2 acessório (explicação imunológica)"},
+  "T47": {"replace": {"2": {"texto": "A meta de eliminação da hanseníase como problema de saúde pública, aprovada pela Assembleia Mundial da Saúde em 1991, era reduzir a prevalência registrada para menos de 1 caso por 10.000 habitantes em nível global até 2000"}}, "reason": "ponto 2 parcialmente sustentado (faltava o contexto da meta de 1991); reescrito"},
+  "T49": {"drop": [2], "reason": "ponto 2 acessório (grupos de municípios)"},
+  "T50": {"replace": {"3": {"texto": "Os agentes comunitários de saúde devem ser capacitados em boas práticas de abordagem aos contatos e à comunidade, priorizando as áreas de risco"}}, "reason": "ponto 3 parcialmente sustentado; reescrito"}
+}

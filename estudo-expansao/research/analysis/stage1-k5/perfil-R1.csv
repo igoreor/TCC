@@ -1,0 +1,11 @@
+metric,group_by,arm,a,b,kind,group,n,n_clusters,mean_diff,ci95_low,ci95_high
+recall_at_k,source_name,claude_cli,R0,R1,subgroup,institucional,29,27,-0.03117686910790359,-0.13802062135395468,0.0625999000999001
+recall_at_k,source_name,claude_cli,R0,R1,subgroup,profissional,18,18,0.13346560846560848,-0.016534391534391527,0.3029100529100529
+recall_at_k,source_name,claude_cli,R0,R1,contrast,profissional - institucional,47,,0.16464247757351208,-0.01641839641839641,0.360754471865583
+recall_at_k,source_name,claude_cli,R0,R1,pair,P03 (test-037 - test-036),2,1,-0.5833333333333333,,
+recall_at_k,source_name,claude_cli,R0,R1,pair,P04 (test-039 - test-038),2,1,0.0,,
+recall_at_k,source_name,codex_cli,R0,R1,subgroup,institucional,29,27,-0.0632864262174607,-0.15316043083900227,0.004794488665456403
+recall_at_k,source_name,codex_cli,R0,R1,subgroup,profissional,18,18,0.03571428571428571,-0.05555555555555555,0.16666666666666666
+recall_at_k,source_name,codex_cli,R0,R1,contrast,profissional - institucional,47,,0.09900071193174641,-0.02064047064047064,0.2521701388888889
+recall_at_k,source_name,codex_cli,R0,R1,pair,P03 (test-037 - test-036),2,1,-0.4166666666666667,,
+recall_at_k,source_name,codex_cli,R0,R1,pair,P04 (test-039 - test-038),2,1,0.0,,

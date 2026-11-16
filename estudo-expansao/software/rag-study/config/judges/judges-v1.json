@@ -1,0 +1,36 @@
+{
+  "judges_id": "judges-v1",
+  "description": "Julgadores LLM da emenda 2 (D46, 16/11/2026): relevância do pool, rascunho e verificação dos pontos-chave e revisão cega das respostas. Acesso pelas assinaturas (D31), com as mesmas CLIs fixadas da etapa 1. Esforço médio, acima do esforço baixo dos braços. Na revisão das respostas, cada resposta é julgada pelo modelo da outra família (protocolo v0.4, seção 8).",
+  "judges": {
+    "claude": {
+      "provider": "claude_cli",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "executable": "software/tools/claude-code-2.1.323/claude.exe",
+      "timeout_s": 900
+    },
+    "gpt": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "verbosity": "medium",
+      "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json",
+      "executable": "software/tools/codex-0.169.0-alpha.11.1/codex.exe",
+      "timeout_s": 900
+    }
+  },
+  "cross_family": {
+    "claude_cli": "gpt",
+    "codex_cli": "claude"
+  },
+  "prompts_dir": "software/rag-study/prompts",
+  "prompts": {
+    "relevance": "judge-relevance-v1.txt",
+    "keypoints_draft": "judge-keypoints-draft-v1.txt",
+    "keypoints_verify": "judge-keypoints-verify-v1.txt",
+    "pass_a": "judge-pass-a-v1.txt",
+    "pass_b": "judge-pass-b-v1.txt"
+  },
+  "max_output_tokens": 8000,
+  "max_attempts": 3
+}

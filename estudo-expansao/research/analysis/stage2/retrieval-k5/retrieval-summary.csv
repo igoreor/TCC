@@ -1,0 +1,5 @@
+condition,expander_model,n,n_questions,fallback_runs,mean_precision_at_k,mean_recall_at_k,mean_rr_at_k,mean_ndcg_at_k,mean_hit_at_k,mean_judged_at_k
+R0-CLAUDE_CLI,,50,50,0,0.472,0.4347,0.7123,0.5182,0.82,1.0
+R0-CODEX_CLI,,50,50,0,0.472,0.4347,0.7123,0.5182,0.82,1.0
+R1-CLAUDE_CLI,claude-sonnet-5-5,50,50,0,0.528,0.4509,0.8033,0.6007,0.86,1.0
+R1-CODEX_CLI,gpt-6.1-sol,50,50,0,0.444,0.4005,0.7367,0.4968,0.84,1.0

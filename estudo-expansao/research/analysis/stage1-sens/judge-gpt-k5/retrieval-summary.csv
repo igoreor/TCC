@@ -1,0 +1,8 @@
+condition,expander_model,n,n_questions,fallback_runs,mean_precision_at_k,mean_recall_at_k,mean_rr_at_k,mean_ndcg_at_k,mean_hit_at_k,mean_judged_at_k
+R0-RETRIEVAL-NONE,,50,50,0,0.56,0.4036,0.764,0.5657,0.86,1.0
+R1-RETRIEVAL-CLAUDE_CLI,claude-sonnet-5-5,50,50,0,0.632,0.4242,0.848,0.6542,0.9,1.0
+R1-RETRIEVAL-CODEX_CLI,gpt-6.1-sol,50,50,0,0.576,0.3939,0.7967,0.5604,0.86,1.0
+R2-RETRIEVAL-CLAUDE_CLI,claude-sonnet-5-5,50,50,0,0.632,0.4399,0.864,0.6423,0.9,1.0
+R2-RETRIEVAL-CODEX_CLI,gpt-6.1-sol,50,50,0,0.472,0.3121,0.695,0.4763,0.8,1.0
+R3-RETRIEVAL-CLAUDE_CLI,claude-sonnet-5-5,50,50,0,0.66,0.4465,0.8283,0.6581,0.88,1.0
+R3-RETRIEVAL-CODEX_CLI,gpt-6.1-sol,50,50,0,0.524,0.353,0.7217,0.5131,0.82,1.0

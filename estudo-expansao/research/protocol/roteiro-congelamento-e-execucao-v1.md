@@ -73,7 +73,7 @@ São 300 expansões (50 perguntas × 3 estratégias × 2 expansores). Registrar 
 ```powershell
 & $R --root . eval-retrieval --runs research/runs/e3-stage1-test-retrieval/<lote>/raw.jsonl --qrels <qrels.csv> --k 5 --out research/analysis/stage1-k5
 & $R --root . compare --table research/analysis/stage1-k5/retrieval-per-question.csv --metric recall_at_k `
-    --comparisons R0:R1,R0:R2,R0:R3 --arms openai,anthropic --test permutation --family F1 `
+    --comparisons R0:R1,R0:R2,R0:R3 --arms claude_cli,codex_cli --test permutation --family F1 `
     --questions research/questions/test-v1.jsonl --exclude-no-relevant --out research/analysis/stage1-k5/F1.csv
 & $R --root . select-strategy --table research/analysis/stage1-k5/retrieval-per-question.csv --out research/analysis/stage1-k5/select-strategy.json
 ```
@@ -81,6 +81,36 @@ São 300 expansões (50 perguntas × 3 estratégias × 2 expansores). Registrar 
 - F5 (secundária): o mesmo `compare` com `--metric rr_at_k`, `ndcg_at_k` e `precision_at_k`, família F5.
 - Sensibilidades: `eval-retrieval --k 10` (limite inferior) e relevância estrita, conforme o protocolo.
 - Registrar R\* no `freeze-log.md` e substituir `R_ESCOLHIDA` em `e4-stage2-test-full.json` **antes** da etapa 2.
+
+### Emenda 2 (D46): julgadores LLM no lugar da anotação humana
+
+Executado em 16/11/2026. Os braços se chamam `claude_cli` e `codex_cli` nas tabelas (nome do provedor).
+
+```powershell
+# relevância: dois julgadores, uma chamada por pergunta (lote em research/runs/j1-relevance-stage1/)
+& $R --root . judge-relevance --pool research/qrels/pool-stage1-autor.csv --workers 6 --allow-api
+# se o limite do plano interromper: o mesmo comando com --continue-from <lote(s) anterior(es)>
+& $R --root . judge-relevance-collect --pool research/qrels/pool-stage1-autor.csv --batches <lotes> --name qrels-stage1
+# pontos-chave: rascunho (Claude) e verificação (GPT)
+& $R --root . judge-keypoints --questions research/questions/test-v1.jsonl --qrels research/qrels/qrels-stage1-final.csv `
+    --sheet research/questions/authoring-sheet-v4.csv --judge claude --allow-api
+& $R --root . judge-keypoints --task j3-keypoints-verify --questions research/questions/test-v1.jsonl `
+    --sheet research/questions/authoring-sheet-v4.csv --judge gpt --verify-drafts <lote do rascunho> --allow-api
+& $R --root . keypoints-report --questions research/questions/test-v1.jsonl --drafts <rascunho> --verifications <verificação> --out research/questions/keypoints-llm-v1-report.md
+& $R --root . keypoints-build --drafts <rascunho> --edits research/questions/keypoints-llm-v1-edits.json `
+    --out research/questions/test-v1-keypoints.csv --provenance research/questions/test-v1-keypoints-provenance.csv
+```
+
+Depois da etapa 2: pool complementar só com os pares novos (`pool ... --exclude research/qrels/qrels-stage1-final.csv`), `judge-relevance` nele, e a revisão:
+
+```powershell
+& $R --root . judge-review --review-dir research/review/stage2 --qrels <qrels finais das duas etapas> `
+    --calibration-sample research/qrels/second-rater-sample-v1.json --workers 6 --allow-api
+& $R --root . judge-review-collect --review-dir research/review/stage2 --batches <lotes A e B> `
+    --calibration-sample research/qrels/second-rater-sample-v1.json --out-dir research/review/stage2-llm
+& $R --root . review-import --pass-a research/review/stage2-llm/pass-a.csv --pass-b research/review/stage2-llm/pass-b.csv `
+    --key research/review/stage2/review-key.csv --out research/analysis/stage2/review-per-answer.csv
+```
 
 ## Fase 3 — etapa 2 (resposta completa, executada uma vez)
 
@@ -111,9 +141,11 @@ Cerca de 400 chamadas. Depois, pool complementar só com os trechos de R\* ainda
 
 | Família | Comando |
 |---|---|
-| F2 (primária) | `compare --table research/analysis/stage2/review-per-answer.csv --metric kp_coverage --comparisons D:R0 --arms openai,anthropic --test permutation --family F2 --questions research/questions/test-v1.jsonl --only-questions research/questions/test-v1.jsonl --answerable sim,parcial` |
+| F2 (primária) | `compare --table research/analysis/stage2/review-per-answer.csv --metric kp_coverage --comparisons D:R0 --arms claude_cli,codex_cli --test permutation --family F2 --questions research/questions/test-v1.jsonl --only-questions research/questions/test-v1.jsonl --answerable sim,parcial` |
 | F3 | `compare ... --metric critical_failure --comparisons D:R0,R0:<R*> --test mcnemar --family F3` |
 | F4 (exploratória em R\*) | `compare ... --metric correctness --comparisons D:R0,R0:<R*> --test wilcoxon --family F4` e `--metric kp_coverage --comparisons R0:<R*> --test permutation` |
+
+Executado em 16/11/2026 (emenda 2) com `bash software/rag-study/scripts/stage2_analysis.sh research/runs/j4-review-stage2-pass-a/20261116T190836Z research/runs/j4-review-stage2-pass-b/20261116T192153Z`. O script coleta os julgamentos (`judge-review-collect`), junta à chave (`review-import`, sem `--reviewer`, porque cada braço tem o seu julgador), calcula a concordância entre os julgadores e roda F2, F3, F4, a passagem B, a sensibilidade com as 50 perguntas e os subgrupos. A F4 sai em duas tabelas; o Holm sobre as 6 comparações está em `research/analysis/stage2/F4.csv`. Resumo: `research/analysis/stage2/README.md`.
 
 ### Exploratórias por subgrupo (comando `subgroups`, criado em 16/11/2026)
 
@@ -122,11 +154,11 @@ Diferença pareada B − A dentro de cada subgrupo, com IC por bootstrap; não c
 ```powershell
 # H5 na etapa 1: ganho de R* sobre R0 em leigas x técnicas e nos 4 pares de registro
 & $R --root . subgroups --table research/analysis/stage1-k5/retrieval-per-question.csv --metric recall_at_k --comparison R0:<R*> `
-    --arms openai,anthropic --questions research/questions/test-v1.jsonl --group-by register --contrast leigo:técnico `
+    --arms claude_cli,codex_cli --questions research/questions/test-v1.jsonl --group-by register --contrast leigo:técnico `
     --exclude-no-relevant --out research/analysis/stage1-k5/H5-register.csv
 # perfil de quem perguntou: Segunda Opinião Formativa x material institucional
 & $R --root . subgroups --table research/analysis/stage1-k5/retrieval-per-question.csv --metric recall_at_k --comparison R0:<R*> `
-    --arms openai,anthropic --questions research/questions/test-v1.jsonl --group-by source_name `
+    --arms claude_cli,codex_cli --questions research/questions/test-v1.jsonl --group-by source_name `
     --map "BVS APS=profissional;*=institucional" --contrast profissional:institucional --exclude-no-relevant `
     --out research/analysis/stage1-k5/perfil.csv
 # categoria

@@ -78,7 +78,13 @@ def _pool(args) -> None:
 
         chunks = load_chunks(args.corpus)
         extra = {qid: resolve_sections(chunks, codes)["chunk_ids"] for qid, codes in targets.items() if codes}
-    count = export_pool(load_records(args.runs), questions, args.corpus, args.depth, args.seed, args.out, extra)
+    exclude = None
+    if args.exclude:
+        from .questions import read_table
+
+        exclude = {(row["question_id"], row["item_id"]) for path in args.exclude for row in read_table(path)}
+    count = export_pool(load_records(args.runs), questions, args.corpus, args.depth, args.seed, args.out, extra,
+                        exclude)
     print(f"{count} pares pergunta-trecho exportados para {args.out}")
 
 
@@ -285,6 +291,164 @@ def _new_file(path: str) -> str:
     return path
 
 
+def _judge_setup(args, names):
+    from .judging import build_judges, load_judges_config
+
+    if not args.allow_api:
+        raise SystemExit("chamadas aos julgadores exigem --allow-api (assinaturas, D31)")
+    config = load_judges_config(args.judges_config, args.root)
+    return config, build_judges(config, names)
+
+
+def _chunk_map(corpus: str) -> dict:
+    from .corpus import load_chunks
+
+    return {chunk["chunk_id"]: chunk for chunk in load_chunks(corpus)}
+
+
+def _judge_run(args, task_key, jobs, providers, config, schema, validate) -> None:
+    from .judging import judge_prompt, run_jobs
+
+    out = run_jobs(args.task, jobs, providers, judge_prompt(config, task_key), schema, validate, args.out_root,
+                   workers=args.workers, max_output_tokens=config.get("max_output_tokens", 8000),
+                   max_attempts=config.get("max_attempts", 3), continue_from=args.continue_from or [],
+                   manifest_extra={"judges_config_sha256": config["_sha256"], "prompt": config["prompts"][task_key]})
+    manifest = json.loads((out / "run-manifest.json").read_text(encoding="utf-8"))
+    print(json.dumps({"batch": str(out), **manifest["counts"], "aborted": manifest["aborted"]}, ensure_ascii=False))
+    if manifest["aborted"] or manifest["counts"]["failed"]:
+        sys.exit(2)
+
+
+def _judge_relevance(args) -> None:
+    from .judging import RELEVANCE_SCHEMA, relevance_jobs, validate_relevance
+    from .questions import read_table
+
+    names = args.judge.split(",")
+    config, providers = _judge_setup(args, names)
+    only = set(args.only_questions.split(",")) if args.only_questions else None
+    jobs = relevance_jobs(read_table(args.pool), _chunk_map(args.corpus), names, only)
+    _judge_run(args, "relevance", jobs, providers, config, RELEVANCE_SCHEMA, validate_relevance)
+
+
+def _judge_relevance_collect(args) -> None:
+    from .analysis import cohen_kappa
+    from .judging import load_judges_config, load_outputs, relevance_by_judge, relevance_tables, write_semicolon_csv
+    from .questions import read_table
+
+    config = load_judges_config(args.judges_config, args.root)
+    models = {name: spec["model"] for name, spec in config["judges"].items()}
+    pool = read_table(args.pool)
+    labels = relevance_by_judge(load_outputs(args.batches))
+    per_judge, final = relevance_tables(pool, labels, models)
+    out = Path(args.out_dir)
+    for judge, rows in per_judge.items():
+        write_semicolon_csv(rows, out / f"{args.name}-llm-{judge}.csv")
+    write_semicolon_csv(final, out / f"{args.name}-final.csv")
+    summary = {"pairs": len(final), "labelled": {j: len(r) for j, r in per_judge.items()},
+               "final_distribution": {g: sum(1 for r in final if r["relevance"] == g) for g in (0, 1, 2)}}
+    judges = sorted(per_judge)
+    if len(judges) == 2:
+        both = [r for r in final if r[f"rel_{judges[0]}"] != "" and r[f"rel_{judges[1]}"] != ""]
+        a = [str(r[f"rel_{judges[0]}"]) for r in both]
+        b = [str(r[f"rel_{judges[1]}"]) for r in both]
+        summary["agreement"] = {
+            "n": len(both), "percent": sum(x == y for x, y in zip(a, b)) / len(both),
+            "kappa_linear": cohen_kappa(a, b, ["0", "1", "2"], "linear"),
+            "kappa_binary_ge1": cohen_kappa([int(x) > 0 for x in a], [int(y) > 0 for y in b], [False, True]),
+            "divergence_0x2": sum(1 for x, y in zip(a, b) if {x, y} == {"0", "2"}),
+        }
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+
+
+def _design_notes(sheet) -> dict:
+    from .questions import read_table
+
+    if not sheet:
+        return {}
+    return {row["question_id"]: row.get("design_note", "") for row in read_table(sheet)}
+
+
+def _judge_keypoints(args) -> None:
+    from .judging import (KEYPOINTS_SCHEMA, VERIFY_SCHEMA, keypoint_draft_jobs, keypoint_verify_jobs, load_outputs,
+                          validate_keypoints, validate_verify)
+    from .questions import load_question_file, read_table
+
+    config, providers = _judge_setup(args, [args.judge])
+    questions = load_question_file(args.questions)
+    chunks = _chunk_map(args.corpus)
+    notes = _design_notes(args.sheet)
+    if args.verify_drafts:
+        drafts = {job_id: record for (job_id, _), record in load_outputs(args.verify_drafts).items()}
+        jobs = keypoint_verify_jobs(drafts, questions, chunks, args.judge, notes)
+        _judge_run(args, "keypoints_verify", jobs, providers, config, VERIFY_SCHEMA, validate_verify)
+    else:
+        jobs = keypoint_draft_jobs(questions, read_table(args.qrels), chunks, args.judge, notes)
+        _judge_run(args, "keypoints_draft", jobs, providers, config, KEYPOINTS_SCHEMA, validate_keypoints)
+
+
+def _keypoints_report(args) -> None:
+    from .judging import keypoints_report, load_outputs
+    from .questions import load_question_file
+
+    drafts = {job_id: record for (job_id, _), record in load_outputs(args.drafts).items()}
+    checks = {job_id: record for (job_id, _), record in load_outputs(args.verifications).items()}
+    Path(_new_file(args.out)).write_text(keypoints_report(drafts, checks, load_question_file(args.questions)),
+                                         encoding="utf-8")
+    print(args.out)
+
+
+def _keypoints_build(args) -> None:
+    import csv as _csv
+
+    from .judging import build_keypoints, load_outputs
+
+    drafts = {job_id: record for (job_id, _), record in load_outputs(args.drafts).items()}
+    edits = json.loads(Path(args.edits).read_text(encoding="utf-8")) if args.edits else {}
+    edits = {key: value for key, value in edits.items() if not key.startswith("_")}
+    rows, provenance = build_keypoints(drafts, edits, _chunk_map(args.corpus))
+    with open(_new_file(args.out), "w", encoding="utf-8", newline="") as handle:
+        writer = _csv.DictWriter(handle, fieldnames=["question_id", "key_point_n", "key_point"])
+        writer.writeheader()
+        writer.writerows(sorted(rows, key=lambda r: (r["question_id"], r["key_point_n"])))
+    with open(_new_file(args.provenance), "w", encoding="utf-8", newline="") as handle:
+        writer = _csv.DictWriter(handle, fieldnames=list(provenance[0]))
+        writer.writeheader()
+        writer.writerows(sorted(provenance, key=lambda r: (r["question_id"], r["key_point_n"])))
+    print(json.dumps({"questions": len({r["question_id"] for r in rows}), "key_points": len(rows)}))
+
+
+def _calibration(path) -> set:
+    if not path:
+        return set()
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    return set(data.get("sample") or data.get("questions") or [])
+
+
+def _judge_review(args) -> None:
+    from .evaluation import load_qrels
+    from .judging import PASS_A_SCHEMA, PASS_B_SCHEMA, review_jobs, validate_review
+
+    names = ["claude", "gpt"]
+    config, providers = _judge_setup(args, names)
+    jobs = review_jobs(args.review_dir, load_qrels(args.qrels), _chunk_map(args.corpus), config["cross_family"],
+                       _calibration(args.calibration_sample), names, args.passes)
+    for review_pass, schema in (("A", PASS_A_SCHEMA), ("B", PASS_B_SCHEMA)):
+        subset = [job for job in jobs if job.meta["pass"] == review_pass]
+        if subset:
+            args_pass = argparse.Namespace(**{**vars(args), "task": f"{args.task}-pass-{review_pass.lower()}"})
+            _judge_run(args_pass, f"pass_{review_pass.lower()}", subset, providers, config, schema, validate_review)
+
+
+def _judge_review_collect(args) -> None:
+    from .judging import load_judges_config, load_outputs, review_sheets, write_review_sheets
+
+    config = load_judges_config(args.judges_config, args.root)
+    models = {name: spec["model"] for name, spec in config["judges"].items()}
+    sheets = review_sheets(args.review_dir, load_outputs(args.batches), config["cross_family"], models,
+                           _calibration(args.calibration_sample))
+    print(json.dumps(write_review_sheets(sheets, args.out_dir)))
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(prog="rag-study")
     parser.add_argument("--root", default=".", help="raiz do workspace; caminhos das configs são relativos a ela")
@@ -331,6 +495,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--seed", type=int, required=True)
     p.add_argument("--target-sections", action="store_true",
                    help="inclui todos os trechos das seções-alvo de cada pergunta (protocolo v0.3)")
+    p.add_argument("--exclude", nargs="*", help="tabelas com pares já rotulados (pool complementar)")
     p.add_argument("--out", required=True)
     p.set_defaults(func=_pool)
 
@@ -463,6 +628,70 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--weights", choices=["linear", "quadratic"])
     p.add_argument("--categories", help="ordem das categorias (obrigatória para escalas ordinais)")
     p.set_defaults(func=_agreement)
+
+    def judge_common(p, task):
+        p.add_argument("--judges-config", default="software/rag-study/config/judges/judges-v1.json")
+        p.add_argument("--corpus", default="research/corpus/hanseniase-v2")
+        p.add_argument("--task", default=task, help="pasta do lote em research/runs")
+        p.add_argument("--out-root", default="research/runs")
+        p.add_argument("--workers", type=int, default=4)
+        p.add_argument("--continue-from", nargs="*", help="lotes anteriores; julgamentos bem-sucedidos não se repetem")
+        p.add_argument("--allow-api", action="store_true")
+
+    p = sub.add_parser("judge-relevance", help="emenda 2 (D46): rótulos de relevância por julgadores LLM")
+    judge_common(p, "j1-relevance-stage1")
+    p.add_argument("--pool", required=True)
+    p.add_argument("--judge", default="claude,gpt")
+    p.add_argument("--only-questions", help="lista de question_id separada por vírgula (teste)")
+    p.set_defaults(func=_judge_relevance)
+
+    p = sub.add_parser("judge-relevance-collect", help="tabelas por julgador e rótulo final (média arredondada para baixo)")
+    p.add_argument("--judges-config", default="software/rag-study/config/judges/judges-v1.json")
+    p.add_argument("--pool", required=True)
+    p.add_argument("--batches", nargs="+", required=True)
+    p.add_argument("--out-dir", default="research/qrels")
+    p.add_argument("--name", required=True, help="prefixo dos arquivos, ex.: qrels-stage1")
+    p.set_defaults(func=_judge_relevance_collect)
+
+    p = sub.add_parser("judge-keypoints", help="emenda 2 (D46): rascunho (ou verificação) dos pontos-chave")
+    judge_common(p, "j2-keypoints-draft")
+    p.add_argument("--questions", required=True)
+    p.add_argument("--qrels", help="rótulos finais (rascunho)")
+    p.add_argument("--sheet", help="planilha de autoria, para a nota de desenho das parciais e não respondíveis")
+    p.add_argument("--judge", default="claude")
+    p.add_argument("--verify-drafts", nargs="*", help="lotes de rascunho a verificar (modo verificação)")
+    p.set_defaults(func=_judge_keypoints)
+
+    p = sub.add_parser("keypoints-report", help="relatório do rascunho com a verificação, para consolidação")
+    p.add_argument("--questions", required=True)
+    p.add_argument("--drafts", nargs="+", required=True)
+    p.add_argument("--verifications", nargs="+", required=True)
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=_keypoints_report)
+
+    p = sub.add_parser("keypoints-build", help="aplica as edições de consolidação e grava os pontos-chave")
+    p.add_argument("--drafts", nargs="+", required=True)
+    p.add_argument("--edits")
+    p.add_argument("--corpus", default="research/corpus/hanseniase-v2")
+    p.add_argument("--out", required=True)
+    p.add_argument("--provenance", required=True)
+    p.set_defaults(func=_keypoints_build)
+
+    p = sub.add_parser("judge-review", help="emenda 2 (D46): revisão cega das respostas por julgador da outra família")
+    judge_common(p, "j4-review-stage2")
+    p.add_argument("--review-dir", required=True)
+    p.add_argument("--qrels", required=True)
+    p.add_argument("--calibration-sample", help="JSON com as perguntas julgadas pelos dois julgadores")
+    p.add_argument("--passes", default="AB")
+    p.set_defaults(func=_judge_review)
+
+    p = sub.add_parser("judge-review-collect", help="planilhas A e B preenchidas pelos julgadores")
+    p.add_argument("--judges-config", default="software/rag-study/config/judges/judges-v1.json")
+    p.add_argument("--review-dir", required=True)
+    p.add_argument("--batches", nargs="+", required=True)
+    p.add_argument("--calibration-sample")
+    p.add_argument("--out-dir", required=True)
+    p.set_defaults(func=_judge_review_collect)
 
     args = parser.parse_args(argv)
     if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":

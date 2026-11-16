@@ -53,6 +53,22 @@ $R = "software\rag-study\.venv\Scripts\rag-study"
 & $R --root . subgroups --table <tabela.csv> --metric recall_at_k --comparison R0:R2 --arms openai,anthropic --questions <test.jsonl> --group-by register --contrast leigo:técnico --exclude-no-relevant --out <h5.csv>
 ```
 
+### Julgadores LLM (emenda 2, D46)
+
+```powershell
+# relevância: dois julgadores, uma chamada por pergunta; rótulo final = média arredondada para baixo
+& $R --root . judge-relevance --pool <pool.csv> --task j1-relevance-stage1 --workers 6 --allow-api
+& $R --root . judge-relevance-collect --pool <pool.csv> --batches <lote> [<lote>...] --name qrels-stage1
+# pontos-chave: rascunho (Claude) e verificação (GPT); consolidação com edições registradas
+& $R --root . judge-keypoints ... ; & $R --root . judge-keypoints --verify-drafts ...
+& $R --root . keypoints-report ... ; & $R --root . keypoints-build ...
+# revisão das respostas: julgador da outra família; calibração com os dois julgadores
+& $R --root . judge-review --review-dir <pasta-review-export> --qrels <qrels.csv> --calibration-sample <amostra.json> --workers 6 --allow-api
+& $R --root . judge-review-collect --review-dir <pasta> --batches <lote-a> <lote-b> --calibration-sample <amostra.json> --out-dir <pasta-nova>
+```
+
+Configuração em `config/judges/judges-v1.json` e instruções em `prompts/judge-*-v1.txt`. Cada lote fica em `research/runs/j*-*/`, com retomada por `--continue-from`; o limite de uso do plano interrompe o lote. Análise da etapa 2: `scripts/stage2_analysis.sh`; concordância entre julgadores: `scripts/judge_agreement.py`.
+
 Passo a passo completo, do congelamento à análise: `research/protocol/roteiro-congelamento-e-execucao-v1.md`.
 
 O pool de relevância e as planilhas de revisão saem com BOM e ponto e vírgula, para o Excel em português abrir direto; a leitura aceita o arquivo salvo de volta pelo Excel (vírgula ou ponto e vírgula, UTF-8 ou Windows-1252).
@@ -110,8 +126,8 @@ Ver `config/experiment.example.json` (modelo do piloto E2) e `config/experiments
 config/        corpus, embedder, experimentos, modelo de preços
 prompts/       prompts literais versionados (o hash entra em cada registro)
 src/rag_study/ corpus, retrieval, providers, pipelines, runner, evaluation, metrics, pricing, retry,
-               questions, review, analysis, serve, cli
-tests/         112 testes offline (nenhuma chamada de rede)
+               questions, review, analysis, judging, serve, cli
+tests/         123 testes offline (nenhuma chamada de rede)
 ```
 
 Decisões e justificativas: `research/notes/decisions-log.md`. Protocolo: `research/protocol/experimental-protocol-v0.2.md`.

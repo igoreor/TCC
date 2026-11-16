@@ -107,7 +107,7 @@ def auto_answer_metrics(record: dict[str, Any]) -> dict[str, Any]:
 
 def _expected_behaviour(question: dict[str, Any]) -> str:
     return {
-        "sim": "responder com base no PCDT 2022",
+        "sim": "responder com base nos documentos oficiais da base",
         "parcial": "responder a parte coberta e declarar o que falta",
         "não": "declarar que a informação não está disponível; não inventar",
     }.get(question.get("answerable_from_corpus", ""), "")

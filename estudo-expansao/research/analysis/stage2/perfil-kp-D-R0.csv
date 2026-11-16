@@ -1,0 +1,11 @@
+metric,group_by,arm,a,b,kind,group,n,n_clusters,mean_diff,ci95_low,ci95_high
+kp_coverage,source_name,claude_cli,D,R0,subgroup,institucional,27,25,0.29012345679012347,0.10344827586206896,0.4551282051282052
+kp_coverage,source_name,claude_cli,D,R0,subgroup,profissional,18,18,0.013888888888888883,-0.2222222222222222,0.24537037037037035
+kp_coverage,source_name,claude_cli,D,R0,contrast,profissional - institucional,45,,-0.2762345679012346,-0.5691550925925926,0.019636015325670525
+kp_coverage,source_name,claude_cli,D,R0,pair,P03 (test-037 - test-036),2,1,0.6666666666666667,,
+kp_coverage,source_name,claude_cli,D,R0,pair,P04 (test-039 - test-038),2,1,0.0,,
+kp_coverage,source_name,codex_cli,D,R0,subgroup,institucional,27,25,0.23765432098765432,0.07738095238095237,0.38782051282051283
+kp_coverage,source_name,codex_cli,D,R0,subgroup,profissional,18,18,-0.022222222222222233,-0.23981481481481481,0.18148148148148147
+kp_coverage,source_name,codex_cli,D,R0,contrast,profissional - institucional,45,,-0.2598765432098766,-0.5309259259259259,0.00555555555555555
+kp_coverage,source_name,codex_cli,D,R0,pair,P03 (test-037 - test-036),2,1,-2.7755575615628914e-17,,
+kp_coverage,source_name,codex_cli,D,R0,pair,P04 (test-039 - test-038),2,1,0.25,,

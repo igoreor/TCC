@@ -1,0 +1,40 @@
+{
+  "task": "j3-keypoints-verify",
+  "batch_id": "20261116T175350Z",
+  "started_utc": "2026-11-16T17:53:50.547413+00:00",
+  "system_prompt_sha256": "2d1aa290b424fcd9ccd8a8266cfc56c31198c2d801942c2d9e2a965c95a16834",
+  "schema_sha256": "9e32e724fd77177c01c3dc7c98fd0d26fa7cee248998c222606ffac255a1361b",
+  "judges": {
+    "gpt": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "parameters": {
+        "access": "codex-cli-chatgpt-plan",
+        "cli_version": "codex-cli 0.169.0-alpha.11.1",
+        "reasoning_effort": "medium",
+        "verbosity": "medium",
+        "system_prompt": "replaced (model_instructions_file, developer message)",
+        "tools": "none",
+        "temperature": "not_sent",
+        "service_tier": "default",
+        "catalog_sha256": "3257caee6a1acb1f8310eace5d483ec70dd42bf6007eb401e729f417845c12be"
+      }
+    }
+  },
+  "n_jobs": 46,
+  "n_pending": 46,
+  "n_done_before": 0,
+  "continue_from": [],
+  "workers": 4,
+  "max_output_tokens": 8000,
+  "judges_config_sha256": "652b0cbf08ae1a9bdd0c1de39a1b81c1ba187eddea91455c8b4cf146266a8af2",
+  "prompt": "judge-keypoints-verify-v1.txt",
+  "finished_utc": "2026-11-16T17:57:22.578491+00:00",
+  "counts": {
+    "success": 46,
+    "failed": 0,
+    "skipped": 0
+  },
+  "aborted": false,
+  "raw_sha256": "a6d484e7e41c44f895894e5a8c3ec947c0f9a78fe207cb0e1e8c2fe412f17299"
+}

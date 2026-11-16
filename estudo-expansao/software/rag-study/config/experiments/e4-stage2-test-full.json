@@ -1,6 +1,6 @@
 {
   "experiment_id": "e4-stage2-test-full",
-  "description": "Etapa 2 (D19): sem RAG (D) x RAG (R0) x RAG com a expansão escolhida na etapa 1, nas 50 perguntas de teste, GPT e Claude. Substituir R_ESCOLHIDA pelo código registrado em select-strategy (R1, R2 ou R3) e confirmar max_output_tokens após o smoke real (D22). Executar uma única vez. Acesso pela assinatura (D31): braço Claude via Claude Code CLI; braço GPT via Codex CLI (plano ChatGPT). Corpus hanseniase-v2 (D38) e prompt de resposta RAG v2 (D39).",
+  "description": "Etapa 2 (D19): sem RAG (D) x RAG (R0) x RAG com a expansão escolhida na etapa 1, nas 50 perguntas de teste, GPT e Claude. R* = R1 (reescrita clínica), escolhido em 16/11/2026 pela regra pré-especificada (select-strategy sobre os rótulos dos julgadores LLM, D46; research/analysis/stage1-k5/select-strategy.json). Executar uma única vez. Acesso pela assinatura (D31): braço Claude via Claude Code CLI; braço GPT via Codex CLI (plano ChatGPT). Corpus hanseniase-v2 (D38) e prompt de resposta RAG v2 (D39).",
   "mode": "full",
   "questions": "research/questions/test-v1.jsonl",
   "splits": [
@@ -58,7 +58,7 @@
   "conditions": [
     "D",
     "R0",
-    "R_ESCOLHIDA"
+    "R1"
   ],
   "repetitions": 1,
   "seed": 20261115

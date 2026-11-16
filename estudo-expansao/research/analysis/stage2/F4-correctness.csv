@@ -1,0 +1,5 @@
+family,metric,arm,a,b,test,n,n_clusters,mean_a,mean_b,mean_diff,ci95_low,ci95_high,p_value,wins_b,ties,losses_b,p_holm
+F4,correctness,claude_cli,D,R0,wilcoxon,50,46,2.08,2.7,0.62,0.28,0.9411764705882353,0.0012741111590924587,29,14,7,0.005096444636369835
+F4,correctness,claude_cli,R0,R1,wilcoxon,50,46,2.7,2.78,0.08,-0.14285714285714285,0.32,0.5494418073483158,10,31,9,1.0
+F4,correctness,codex_cli,D,R0,wilcoxon,50,46,2.48,3.0,0.52,0.19230769230769232,0.84,0.005519335926752737,29,11,10,0.016558007780258212
+F4,correctness,codex_cli,R0,R1,wilcoxon,50,46,3.0,2.98,-0.02,-0.1836734693877551,0.14,0.8127423725657857,5,39,6,1.0

@@ -36,6 +36,7 @@ ALLOW = [
     "research/questions",
     "research/qrels",
     "research/review",
+    "research/analysis",
     "research/sources/README.md",
     "research/demo-logs/README.md",
 ]

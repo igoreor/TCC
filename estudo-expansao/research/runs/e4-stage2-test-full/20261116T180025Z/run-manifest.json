@@ -1,0 +1,188 @@
+{
+  "experiment_id": "e4-stage2-test-full",
+  "batch_id": "20261116T180025Z",
+  "status": "completed",
+  "dry_run": false,
+  "started_utc": "2026-11-16T18:00:25+00:00",
+  "config_path": "software/rag-study/config/experiments/e4-stage2-test-full.json",
+  "config_sha256": "eaebf3992bec62d8d5699fe72ba27b37bd4ac156ce702137a7f1b5a16c56414a",
+  "config": {
+    "experiment_id": "e4-stage2-test-full",
+    "description": "Etapa 2 (D19): sem RAG (D) x RAG (R0) x RAG com a expansão escolhida na etapa 1, nas 50 perguntas de teste, GPT e Claude. R* = R1 (reescrita clínica), escolhido em 16/11/2026 pela regra pré-especificada (select-strategy sobre os rótulos dos julgadores LLM, D46; research/analysis/stage1-k5/select-strategy.json). Executar uma única vez. Acesso pela assinatura (D31): braço Claude via Claude Code CLI; braço GPT via Codex CLI (plano ChatGPT). Corpus hanseniase-v2 (D38) e prompt de resposta RAG v2 (D39).",
+    "mode": "full",
+    "questions": "research/questions/test-v1.jsonl",
+    "splits": [
+      "test"
+    ],
+    "corpus_dir": "research/corpus/hanseniase-v2",
+    "index_dir": "research/corpus/hanseniase-v2/index-bge-m3",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "device": "cpu",
+      "batch_size": 16
+    },
+    "prompts_dir": "software/rag-study/prompts",
+    "prompts": {
+      "direct_answer": "direct-answer-system-v1.txt",
+      "rag_answer": "rag-answer-system-v2.txt",
+      "expansion_system": "common-expansion-system-v1.txt",
+      "rewrite": "rewrite-clinical-v1.txt",
+      "keywords": "keywords-v1.txt",
+      "pseudo_document": "pseudo-document-v1.txt"
+    },
+    "max_attempts": 3,
+    "pricing": null,
+    "output_root": "research/runs",
+    "k": 5,
+    "generation": {
+      "max_output_tokens": 2000
+    },
+    "expansion": {
+      "max_output_tokens": 400,
+      "structured_output": false
+    },
+    "models": {
+      "openai": {
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "low",
+        "verbosity": "medium",
+        "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json",
+        "executable": "software/tools/codex-0.169.0-alpha.11.1/codex.exe"
+      },
+      "anthropic": {
+        "provider": "claude_cli",
+        "model": "claude-sonnet-5-5",
+        "effort": "low",
+        "executable": "software/tools/claude-code-2.1.323/claude.exe"
+      }
+    },
+    "arms": [
+      "openai",
+      "anthropic"
+    ],
+    "conditions": [
+      "D",
+      "R0",
+      "R1"
+    ],
+    "repetitions": 1,
+    "seed": 20261115
+  },
+  "software": {
+    "package_version": "0.2.0",
+    "source_sha256": "0f3bd8960181bd0af87b87707c9f068d950a8ba2c9013b974ea6b0197e53e6cb"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.5.3",
+      "pymupdf": "1.28.2",
+      "sentence-transformers": "6.1.0",
+      "torch": "2.14.1",
+      "transformers": "5.18.0",
+      "openai": "3.24.0",
+      "anthropic": "1.11.0"
+    },
+    "uv_lock_sha256": "23b3243b5f06fa3cf920312610c3d70fcccc596f81bf756fd2801b64db43cdc6"
+  },
+  "corpus_snapshot_sha256": "4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663",
+  "index": {
+    "index_id": "hanseniase-v2-bge-m3",
+    "created_utc": "2026-10-23T20:34:27+00:00",
+    "corpus_id": "hanseniase-v2",
+    "corpus_snapshot_sha256": "4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663",
+    "text_field": "embed_text",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimension": 1024,
+      "max_seq_length": 8192,
+      "normalize": true,
+      "device": "cpu",
+      "batch_size": 16,
+      "sentence_transformers_version": "6.1.0",
+      "torch_version": "2.14.1+cpu"
+    },
+    "similarity": "cosine (inner product of L2-normalized vectors)",
+    "search": "exact brute-force; ties broken by corpus order",
+    "n_vectors": 391,
+    "dimension": 1024,
+    "embeddings_sha256": "94746b0a22da314f687a8f3f0f8586f2cd276aacd7a61df384bfe5ccb2830e38",
+    "build_seconds": 321.16,
+    "platform": {
+      "python": "3.12.10",
+      "machine": "AMD64",
+      "system": "Windows"
+    }
+  },
+  "prompts": {
+    "direct_answer": {
+      "prompt_id": "direct-answer-system-v1",
+      "sha256": "02f60cb25119bdfd27a0a3c9156846d4dd06ee730a4f8e5a070dcd419a96a700"
+    },
+    "rag_answer": {
+      "prompt_id": "rag-answer-system-v2",
+      "sha256": "f749552b58320a91c98df39d5b6834eaa9a6f40161681b3b8113640dce53d9b5"
+    },
+    "expansion_system": {
+      "prompt_id": "common-expansion-system-v1",
+      "sha256": "8beb6bc984f096334b36616bb8b7078e7a252232d4513f21ddec7d854c822407"
+    },
+    "rewrite": {
+      "prompt_id": "rewrite-clinical-v1",
+      "sha256": "68d1bcd7df3df60be64f406c4ff0951661682e213817df406e341799b1d57b06"
+    },
+    "keywords": {
+      "prompt_id": "keywords-v1",
+      "sha256": "5fa20d1068fb1159d09211357d355fd536988cd20967507d1426c73e94354234"
+    },
+    "pseudo_document": {
+      "prompt_id": "pseudo-document-v1",
+      "sha256": "09b8817b3eea3cce4c38d1c8004bc384bc6fb0eeb8998c6e013e9125c608d831"
+    }
+  },
+  "price_table": null,
+  "units": [
+    {
+      "condition": "D-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R0-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R1-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "D-CLAUDE_CLI",
+      "arm": "anthropic"
+    },
+    {
+      "condition": "R0-CLAUDE_CLI",
+      "arm": "anthropic"
+    },
+    {
+      "condition": "R1-CLAUDE_CLI",
+      "arm": "anthropic"
+    }
+  ],
+  "n_questions": 50,
+  "questions_sha256": "138408692edc58e464a36355d5276084e20a3a9a4badaa5f554770e890a41117",
+  "repetitions": 1,
+  "seed": 20261115,
+  "continues": [],
+  "finished_utc": "2026-11-16T19:06:52+00:00",
+  "n_records": 300,
+  "n_skipped_already_done": 0,
+  "record_status_counts": {
+    "success": 300
+  },
+  "raw_sha256": "08ddb9e5ed30520e38def578c37043272b7d08d71a5998aadc85dadfcc1f3f64"
+}

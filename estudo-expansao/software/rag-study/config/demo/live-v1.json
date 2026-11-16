@@ -59,6 +59,11 @@
   ],
   "result_batches": [
     {
+      "path": "research/runs/e4-stage2-test-full/20261116T180025Z",
+      "label": "Etapa 2: respostas sem RAG, com RAG e com RAG após a reescrita (R1), Claude e GPT",
+      "note": "Dados do experimento (16/11/2026): 50 perguntas de teste, 300 respostas. A avaliação das respostas está em research/analysis/stage2."
+    },
+    {
       "path": "research/runs/e2-cli-smoke-claude/20261023T015057Z",
       "label": "Teste funcional: Claude Sonnet 5.5 pela assinatura (corpus PCDT 2022)",
       "note": "5 perguntas smoke (teste funcional), sem valor analítico. Pergunta enviada com quebras CRLF (ver research/runs/README.md)."

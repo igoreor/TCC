@@ -1,0 +1,67 @@
+{
+  "experiment_id": "e5-cli-smoke-pinned",
+  "description": "Teste funcional antes das etapas 1 e 2, com as CLIs fixadas em 16/11/2026 (Claude Code 2.1.323 e Codex 0.169.0-alpha.11.1, cópias em software/tools). Mesmos parâmetros da etapa 2 (corpus hanseniase-v2, prompt RAG v2, k=5, 2.000 tokens), com as 5 perguntas smoke e as 5 condições, nos dois braços. Sem valor analítico.",
+  "mode": "full",
+  "questions": "research/questions/smoke-v0-pilot5.jsonl",
+  "splits": [
+    "smoke"
+  ],
+  "corpus_dir": "research/corpus/hanseniase-v2",
+  "index_dir": "research/corpus/hanseniase-v2/index-bge-m3",
+  "embedder": {
+    "type": "sentence-transformers",
+    "model_id": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "device": "cpu",
+    "batch_size": 16
+  },
+  "prompts_dir": "software/rag-study/prompts",
+  "prompts": {
+    "direct_answer": "direct-answer-system-v1.txt",
+    "rag_answer": "rag-answer-system-v2.txt",
+    "expansion_system": "common-expansion-system-v1.txt",
+    "rewrite": "rewrite-clinical-v1.txt",
+    "keywords": "keywords-v1.txt",
+    "pseudo_document": "pseudo-document-v1.txt"
+  },
+  "max_attempts": 3,
+  "pricing": null,
+  "output_root": "research/runs",
+  "k": 5,
+  "generation": {
+    "max_output_tokens": 2000
+  },
+  "expansion": {
+    "max_output_tokens": 400,
+    "structured_output": false
+  },
+  "models": {
+    "openai": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "verbosity": "medium",
+      "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json",
+      "executable": "software/tools/codex-0.169.0-alpha.11.1/codex.exe"
+    },
+    "anthropic": {
+      "provider": "claude_cli",
+      "model": "claude-sonnet-5-5",
+      "effort": "low",
+      "executable": "software/tools/claude-code-2.1.323/claude.exe"
+    }
+  },
+  "arms": [
+    "openai",
+    "anthropic"
+  ],
+  "conditions": [
+    "D",
+    "R0",
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "repetitions": 1,
+  "seed": 20261116
+}

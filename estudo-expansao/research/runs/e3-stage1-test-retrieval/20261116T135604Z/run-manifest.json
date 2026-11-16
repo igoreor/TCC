@@ -1,0 +1,193 @@
+{
+  "experiment_id": "e3-stage1-test-retrieval",
+  "batch_id": "20261116T135604Z",
+  "status": "completed",
+  "dry_run": false,
+  "started_utc": "2026-11-16T13:56:04+00:00",
+  "config_path": "software/rag-study/config/experiments/e3-stage1-test-retrieval.json",
+  "config_sha256": "a2ff39e7687dcf2abac95915e7247d076f545d93410bd513a5dcf939135be7d3",
+  "config": {
+    "experiment_id": "e3-stage1-test-retrieval",
+    "description": "Etapa 1 (D19, D34): só expansão e busca, nas 50 perguntas de teste. R0 x R1 x R2 x R3, expansores GPT e Claude pela assinatura (D31), 1 repetição (D32). k=10 para a sensibilidade Recall@10; desfecho P1 em @5 (família F1, 6 comparações com Holm). A melhor estratégia por select-strategy (D27) segue para a etapa 2. Executar só após o congelamento das perguntas. Corpus hanseniase-v2 (D38) e prompt de resposta RAG v2 (D39).",
+    "mode": "retrieval",
+    "questions": "research/questions/test-v1.jsonl",
+    "splits": [
+      "test"
+    ],
+    "corpus_dir": "research/corpus/hanseniase-v2",
+    "index_dir": "research/corpus/hanseniase-v2/index-bge-m3",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "device": "cpu",
+      "batch_size": 16
+    },
+    "prompts_dir": "software/rag-study/prompts",
+    "prompts": {
+      "direct_answer": "direct-answer-system-v1.txt",
+      "rag_answer": "rag-answer-system-v2.txt",
+      "expansion_system": "common-expansion-system-v1.txt",
+      "rewrite": "rewrite-clinical-v1.txt",
+      "keywords": "keywords-v1.txt",
+      "pseudo_document": "pseudo-document-v1.txt"
+    },
+    "max_attempts": 3,
+    "pricing": null,
+    "output_root": "research/runs",
+    "k": 10,
+    "generation": {
+      "max_output_tokens": 2000
+    },
+    "expansion": {
+      "max_output_tokens": 400,
+      "structured_output": false
+    },
+    "models": {
+      "openai": {
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "low",
+        "verbosity": "medium",
+        "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json",
+        "executable": "software/tools/codex-0.169.0-alpha.11.1/codex.exe"
+      },
+      "anthropic": {
+        "provider": "claude_cli",
+        "model": "claude-sonnet-5-5",
+        "effort": "low",
+        "executable": "software/tools/claude-code-2.1.323/claude.exe"
+      }
+    },
+    "arms": [
+      "openai",
+      "anthropic"
+    ],
+    "conditions": [
+      "R0",
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "repetitions": 1,
+    "seed": 20261101
+  },
+  "software": {
+    "package_version": "0.2.0",
+    "source_sha256": "2082b35d00e7e740426b59fbfa705dc0a70b9e0f7fa42b2c8dbcebe3c96a6952"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.5.3",
+      "pymupdf": "1.28.2",
+      "sentence-transformers": "6.1.0",
+      "torch": "2.14.1",
+      "transformers": "5.18.0",
+      "openai": "3.24.0",
+      "anthropic": "1.11.0"
+    },
+    "uv_lock_sha256": "23b3243b5f06fa3cf920312610c3d70fcccc596f81bf756fd2801b64db43cdc6"
+  },
+  "corpus_snapshot_sha256": "4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663",
+  "index": {
+    "index_id": "hanseniase-v2-bge-m3",
+    "created_utc": "2026-10-23T20:34:27+00:00",
+    "corpus_id": "hanseniase-v2",
+    "corpus_snapshot_sha256": "4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663",
+    "text_field": "embed_text",
+    "embedder": {
+      "type": "sentence-transformers",
+      "model_id": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimension": 1024,
+      "max_seq_length": 8192,
+      "normalize": true,
+      "device": "cpu",
+      "batch_size": 16,
+      "sentence_transformers_version": "6.1.0",
+      "torch_version": "2.14.1+cpu"
+    },
+    "similarity": "cosine (inner product of L2-normalized vectors)",
+    "search": "exact brute-force; ties broken by corpus order",
+    "n_vectors": 391,
+    "dimension": 1024,
+    "embeddings_sha256": "94746b0a22da314f687a8f3f0f8586f2cd276aacd7a61df384bfe5ccb2830e38",
+    "build_seconds": 321.16,
+    "platform": {
+      "python": "3.12.10",
+      "machine": "AMD64",
+      "system": "Windows"
+    }
+  },
+  "prompts": {
+    "direct_answer": {
+      "prompt_id": "direct-answer-system-v1",
+      "sha256": "02f60cb25119bdfd27a0a3c9156846d4dd06ee730a4f8e5a070dcd419a96a700"
+    },
+    "rag_answer": {
+      "prompt_id": "rag-answer-system-v2",
+      "sha256": "f749552b58320a91c98df39d5b6834eaa9a6f40161681b3b8113640dce53d9b5"
+    },
+    "expansion_system": {
+      "prompt_id": "common-expansion-system-v1",
+      "sha256": "8beb6bc984f096334b36616bb8b7078e7a252232d4513f21ddec7d854c822407"
+    },
+    "rewrite": {
+      "prompt_id": "rewrite-clinical-v1",
+      "sha256": "68d1bcd7df3df60be64f406c4ff0951661682e213817df406e341799b1d57b06"
+    },
+    "keywords": {
+      "prompt_id": "keywords-v1",
+      "sha256": "5fa20d1068fb1159d09211357d355fd536988cd20967507d1426c73e94354234"
+    },
+    "pseudo_document": {
+      "prompt_id": "pseudo-document-v1",
+      "sha256": "09b8817b3eea3cce4c38d1c8004bc384bc6fb0eeb8998c6e013e9125c608d831"
+    }
+  },
+  "price_table": null,
+  "units": [
+    {
+      "condition": "R0-RETRIEVAL-NONE",
+      "arm": null
+    },
+    {
+      "condition": "R1-RETRIEVAL-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R2-RETRIEVAL-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R3-RETRIEVAL-CODEX_CLI",
+      "arm": "openai"
+    },
+    {
+      "condition": "R1-RETRIEVAL-CLAUDE_CLI",
+      "arm": "anthropic"
+    },
+    {
+      "condition": "R2-RETRIEVAL-CLAUDE_CLI",
+      "arm": "anthropic"
+    },
+    {
+      "condition": "R3-RETRIEVAL-CLAUDE_CLI",
+      "arm": "anthropic"
+    }
+  ],
+  "n_questions": 50,
+  "questions_sha256": "138408692edc58e464a36355d5276084e20a3a9a4badaa5f554770e890a41117",
+  "repetitions": 1,
+  "seed": 20261101,
+  "continues": [],
+  "finished_utc": "2026-11-16T14:23:20+00:00",
+  "n_records": 350,
+  "n_skipped_already_done": 0,
+  "record_status_counts": {
+    "success": 350
+  },
+  "raw_sha256": "21d3d4c20c6db395721d074b1d7eb5c92c044b2feb8b267ff1bade837d345ec5"
+}

@@ -228,6 +228,37 @@ def _compare(args) -> None:
     print(json.dumps(results, ensure_ascii=False, indent=2))
 
 
+def _subgroups(args) -> None:
+    from .analysis import group_labels, subgroup_effects, unit_means
+    from .evaluation import write_csv
+    from .review import load_question_map
+
+    questions = load_question_map(args.questions)
+    prefix_map = None
+    if args.map:
+        prefix_map = [tuple(part.split("=", 1)) for part in args.map.split(";") if part.strip()]
+        if any(len(item) != 2 for item in prefix_map):
+            raise SystemExit("--map usa o formato 'PREFIXO=rótulo;*=rótulo'")
+    groups = group_labels(questions, args.group_by, prefix_map)
+    clusters = {qid: item.get("need_group") or qid for qid, item in questions.items()}
+    rows = _read_rows(args.table)
+    if args.exclude_no_relevant:
+        rows = _with_relevant(rows)
+    if args.answerable:
+        allowed = {qid for qid, item in questions.items()
+                   if item.get("answerable_from_corpus") in set(args.answerable.split(","))}
+        rows = [row for row in rows if row["question_id"] in allowed]
+    a, b = args.comparison.split(":")
+    contrast = tuple(args.contrast.split(":")) if args.contrast else None
+    means = unit_means(rows, args.metric)
+    results = []
+    for arm in args.arms.split(","):
+        for result in subgroup_effects(means, arm, a, b, groups, clusters, contrast, args.n_boot, args.seed):
+            results.append({"metric": args.metric, "group_by": args.group_by, **result})
+    write_csv(results, _new_file(args.out))
+    print(json.dumps(results, ensure_ascii=False, indent=2))
+
+
 def _agreement(args) -> None:
     from .analysis import cohen_kappa
 
@@ -402,6 +433,23 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--seed", type=int, default=20261022)
     p.add_argument("--out", required=True)
     p.set_defaults(func=_compare)
+
+    p = sub.add_parser("subgroups", help="exploratória: diferença pareada por subgrupo (H5, categoria, perfil)")
+    p.add_argument("--table", required=True)
+    p.add_argument("--metric", required=True)
+    p.add_argument("--comparison", required=True, help="par A:B; diferença = B - A")
+    p.add_argument("--arms", required=True, help="braços separados por vírgula")
+    p.add_argument("--questions", nargs="+", required=True, help="JSONL das perguntas congeladas")
+    p.add_argument("--group-by", required=True, help="campo das perguntas: register, category, source_name...")
+    p.add_argument("--map", help="rótulos por prefixo do valor, ex.: 'BVS APS=profissional;*=institucional'")
+    p.add_argument("--contrast", help="dois subgrupos G1:G2; estima G1 - G2 e as diferenças nos pares")
+    p.add_argument("--exclude-no-relevant", action="store_true",
+                   help="exclui perguntas sem trecho relevante (obrigatório para métricas do recuperador)")
+    p.add_argument("--answerable", help="filtra por respondibilidade, ex.: sim,parcial")
+    p.add_argument("--n-boot", type=int, default=10000)
+    p.add_argument("--seed", type=int, default=20261022)
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=_subgroups)
 
     p = sub.add_parser("agreement", help="concordância entre dois avaliadores (kappa de Cohen)")
     p.add_argument("--first", required=True)

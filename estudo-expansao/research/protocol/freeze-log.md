@@ -5,10 +5,12 @@ Cada linha fixa um artefato antes de ser usado numa execução. Depois de congel
 | Data | Artefato | Arquivo | SHA-256 | Responsável | Observação |
 |---|---|---|---|---|---|
 | 2026-10-23 | Corpus | `research/corpus/hanseniase-v2/chunks.jsonl` | `4c88c18d9b5b4dc338f157857a8b56a1a23ed0721196de301a13ec891e211663` | agente | construído e congelado (D38); índice `94746b0a…` |
-| | Matriz das perguntas | `research/questions/blueprint-v3.csv` | _calcular ao congelar_ | | 50 vagas (D20, D29, D34, D40) |
-| | Perguntas | `research/questions/test-v1.jsonl` | | | congelar **antes** da etapa 1 |
-| | Pontos-chave | `research/questions/test-v1-keypoints.csv` | | | |
+| 2026-11-16 | Matriz das perguntas | `research/questions/blueprint-v4.csv` | `79562b35b21748d5f2e7a42d746ba46fcc6887d5b8f172c9a214ca8c5bd20a07` | agente | 50 vagas da D42, aprovada pelo orientador (D44). A v3 não foi usada |
+| 2026-11-16 | Perguntas | `research/questions/test-v1.jsonl` | `138408692edc58e464a36355d5276084e20a3a9a4badaa5f554770e890a41117` | autor (confirmação em bloco) e agente | 50 perguntas publicadas e literais, geradas de `authoring-sheet-v4.csv` por `questions-build --version v1`; `questions-check` com 0 erros e 56 avisos (50 sem revisor, 5 sequências de 5 a 7 palavras iguais à base, 1 jargão). **Desvio (D44):** congeladas antes da revisão independente e dos pontos-chave. Se a revisão trocar alguma pergunta, gera-se `test-v2` e a etapa 1 é refeita só para ela |
+| | Pontos-chave | `research/questions/test-v1-keypoints.csv` | | | escritos pelo autor (D15); congelar **antes** da etapa 2, depois da revisão independente |
+| 2026-11-16 | Amostra da segunda anotação e da segunda revisão | `research/qrels/second-rater-sample-v1.json` | sorteio com semente 20261116 sobre `test-v1.jsonl` | agente | 10 de 50 perguntas (20%), sorteadas antes de qualquer resultado: test-001, 014, 021, 022, 026, 033, 037, 041, 042 e 050. O mesmo sorteio serve à relevância (seção 7) e às respostas (seção 8). Script: `scripts/draw_second_rater_sample.py` |
+| 2026-11-16 | Pool cego de relevância da etapa 1 | `research/qrels/pool-stage1-autor.csv` (797 pares) e `pool-stage1-segundo.csv` (155 pares, 10 perguntas sorteadas) | `48c8bbe3…` e `aefdc3f4…` (vazios, antes de qualquer rótulo) | agente | gerados de `e3-stage1-test-retrieval/20261116T135604Z` por `pool --depth 5 --target-sections --seed 20261116` e `scripts/second_rater_pool.py`. Os rótulos ficam com o autor e o segundo anotador (D15) |
 | | Estratégia escolhida (R\*) | saída de `select-strategy` | | | preencher `R_ESCOLHIDA` em `e4-stage2-test-full.json` |
-| | Configuração da etapa 1 | `software/rag-study/config/experiments/e3-stage1-test-retrieval.json` | | | |
+| 2026-11-16 | Configuração da etapa 1 | `software/rag-study/config/experiments/e3-stage1-test-retrieval.json` | `bdef1c8c5afbcec1fc7f1630132459629cced6a68fd077fd51205b5f8dfe2b53` | agente | CLIs fixadas em `software/tools` (Claude Code 2.1.323, Codex 0.169.0-alpha.11.1; D44); expansões validadas no smoke `e5-cli-smoke-pinned` |
 | | Configuração da etapa 2 | `software/rag-study/config/experiments/e4-stage2-test-full.json` | | | executar uma única vez |
 | | Tabela de preços | `software/rag-study/config/pricing-2026-10-22.json` | | | trocar por tabela do dia, se os preços mudarem |

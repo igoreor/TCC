@@ -177,6 +177,105 @@ def compare_family(rows: Iterable[Mapping[str, Any]], metric: str, comparisons: 
     return results
 
 
+def group_labels(questions: Mapping[str, Mapping[str, Any]], field: str,
+                 prefix_map: Sequence[tuple[str, str]] | None = None) -> dict[str, str]:
+    """Subgroup label of each question, from one field of the questions file.
+
+    ``prefix_map`` relabels values by prefix, in order (``"*"`` matches any
+    value), e.g. ``[("BVS APS", "profissional"), ("*", "institucional")]``
+    groups questions by who asked them (protocol v0.4, section 10)."""
+    labels = {}
+    for qid, item in questions.items():
+        value = str(item.get(field) or "")
+        if prefix_map:
+            for prefix, label in prefix_map:
+                if prefix == "*" or value.startswith(prefix):
+                    value = label
+                    break
+        if value:
+            labels[qid] = value
+    return labels
+
+
+def _cluster_means_ci(diffs_by_cluster: Mapping[str, list[float]], n_boot: int, rng: random.Random,
+                      alpha: float = 0.05) -> tuple[list[float], tuple[float, float]]:
+    groups = list(diffs_by_cluster.values())
+    stats = []
+    for _ in range(n_boot):
+        sample = [value for _ in groups for value in rng.choice(groups)]
+        stats.append(sum(sample) / len(sample))
+    ordered = sorted(stats)
+    low = ordered[max(0, math.floor((alpha / 2) * n_boot))]
+    high = ordered[min(n_boot - 1, math.ceil((1 - alpha / 2) * n_boot) - 1)]
+    return stats, (low, high)
+
+
+def subgroup_effects(means: Mapping[tuple[str, str, str], float], arm: str, a: str, b: str,
+                     groups: Mapping[str, str], clusters: Mapping[str, str] | None = None,
+                     contrast: tuple[str, str] | None = None, n_boot: int = 10000,
+                     seed: int = 20261022) -> list[dict[str, Any]]:
+    """Exploratory effect modification of the paired difference ``b - a``.
+
+    Rows of ``kind``:
+    - ``subgroup``: mean difference inside each subgroup, CI by bootstrap over
+      clusters (need groups) restricted to the subgroup;
+    - ``contrast``: difference between the mean differences of two subgroups
+      (``contrast[0] - contrast[1]``), CI by stratified bootstrap (clusters are
+      resampled independently inside each subgroup). Questions of a planned
+      register pair fall in different subgroups, so this contrast ignores the
+      pairing; the pairs are reported separately;
+    - ``pair``: for each cluster with exactly one question in each contrast
+      subgroup, the difference of differences (H5 in the register pairs).
+      With few pairs it is descriptive: no CI is computed.
+    No p-values: these analyses are exploratory (protocol v0.4, section 10)."""
+    pairs = paired_values(means, arm, a, b)
+    if not pairs:
+        raise ValueError(f"nenhuma pergunta com {a} e {b} no braço {arm}")
+    clusters = clusters or {}
+    rng = random.Random(seed)
+    base = {"arm": arm, "a": a, "b": b}
+    by_group: dict[str, dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
+    diff_of: dict[str, float] = {}
+    for question, va, vb in pairs:
+        group = groups.get(question)
+        if group is None:
+            continue
+        diff_of[question] = vb - va
+        by_group[group][clusters.get(question, question)].append(vb - va)
+
+    results, boot = [], {}
+    for group in sorted(by_group):
+        values = [d for items in by_group[group].values() for d in items]
+        boot[group], (low, high) = _cluster_means_ci(by_group[group], n_boot, rng)
+        results.append({**base, "kind": "subgroup", "group": group, "n": len(values),
+                        "n_clusters": len(by_group[group]), "mean_diff": mean(values),
+                        "ci95_low": low, "ci95_high": high})
+    if contrast:
+        first, second = contrast
+        missing = [g for g in contrast if g not in by_group]
+        if missing:
+            raise ValueError(f"subgrupo sem perguntas pareadas: {', '.join(missing)}")
+        estimate = (mean(d for items in by_group[first].values() for d in items)
+                    - mean(d for items in by_group[second].values() for d in items))
+        differences = sorted(x - y for x, y in zip(boot[first], boot[second]))
+        low = differences[max(0, math.floor(0.025 * n_boot))]
+        high = differences[min(n_boot - 1, math.ceil(0.975 * n_boot) - 1)]
+        results.append({**base, "kind": "contrast", "group": f"{first} - {second}",
+                        "n": len(diff_of), "n_clusters": None, "mean_diff": estimate,
+                        "ci95_low": low, "ci95_high": high})
+        members: dict[str, dict[str, list[str]]] = defaultdict(lambda: defaultdict(list))
+        for question in diff_of:
+            members[clusters.get(question, question)][groups[question]].append(question)
+        for cluster in sorted(members):
+            side = members[cluster]
+            if len(side.get(first, [])) == 1 and len(side.get(second, [])) == 1:
+                q1, q2 = side[first][0], side[second][0]
+                results.append({**base, "kind": "pair", "group": f"{cluster} ({q1} - {q2})", "n": 2,
+                                "n_clusters": 1, "mean_diff": diff_of[q1] - diff_of[q2],
+                                "ci95_low": None, "ci95_high": None})
+    return results
+
+
 def cohen_kappa(first: Sequence[Any], second: Sequence[Any], categories: Sequence[Any] | None = None,
                 weights: str | None = None) -> float:
     """Cohen's kappa; ``weights`` = None, "linear" or "quadratic" for ordinal scales."""

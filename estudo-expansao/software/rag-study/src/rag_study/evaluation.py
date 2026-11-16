@@ -55,19 +55,20 @@ def load_qrels(path: str | Path, annotation_round: str | None = None) -> dict[st
     Exactly one label per (question, item) is required; filter by
     ``annotation_round`` when the file holds several rounds.
     """
+    from .questions import read_table  # accepts the pool as re-saved by Excel (semicolon, BOM, Windows-1252)
+
     qrels: dict[str, dict[str, int]] = defaultdict(dict)
-    with open(path, encoding="utf-8", newline="") as handle:
-        for row in csv.DictReader(handle):
-            if annotation_round is not None and row.get("annotation_round") != annotation_round:
-                continue
-            if row["relevance"].strip() == "":
-                continue
-            grade = int(row["relevance"])
-            if grade not in (0, 1, 2):
-                raise ValueError(f"relevance must be 0, 1 or 2: {row}")
-            if row["item_id"] in qrels[row["question_id"]]:
-                raise ValueError(f"duplicate label for {row['question_id']} / {row['item_id']}")
-            qrels[row["question_id"]][row["item_id"]] = grade
+    for row in read_table(path):
+        if annotation_round is not None and row.get("annotation_round") != annotation_round:
+            continue
+        if row["relevance"].strip() == "":
+            continue
+        grade = int(row["relevance"])
+        if grade not in (0, 1, 2):
+            raise ValueError(f"relevance must be 0, 1 or 2: {row}")
+        if row["item_id"] in qrels[row["question_id"]]:
+            raise ValueError(f"duplicate label for {row['question_id']} / {row['item_id']}")
+        qrels[row["question_id"]][row["item_id"]] = grade
     return dict(qrels)
 
 
@@ -151,8 +152,10 @@ def export_pool(records: list[dict[str, Any]], questions: dict[str, str], corpus
         for chunk_id in chunk_ids
     })
     random.Random(seed).shuffle(pairs)
-    with open(output_path, "w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=POOL_COLUMNS)
+    # Spreadsheet-friendly (BOM + semicolon), like the authoring and review sheets:
+    # Excel in Portuguese opens it directly; load_qrels reads it back either way.
+    with open(output_path, "w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=POOL_COLUMNS, delimiter=";")
         writer.writeheader()
         for number, (question_id, chunk_id) in enumerate(pairs, start=1):
             chunk = chunks[chunk_id]

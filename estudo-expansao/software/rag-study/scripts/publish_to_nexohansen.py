@@ -34,6 +34,7 @@ ALLOW = [
     "research/corpus",
     "research/runs",
     "research/questions",
+    "research/qrels",
     "research/sources/README.md",
     "research/demo-logs/README.md",
 ]

@@ -147,10 +147,17 @@ class Experiment:
     def _provider(self, arm: str):
         if self.dry_run:
             return FakeProvider(name=f"fake{arm}", model=f"fake-{arm}-v1")
+        return build_provider(self.provider_spec(arm))
+
+    def provider_spec(self, arm: str) -> dict[str, Any]:
+        """Model spec with paths resolved against the workspace root, like every
+        config path: the Codex catalog and a pinned CLI ``executable`` (the CLIs
+        run in an empty temporary folder, so a relative path would not resolve)."""
         spec = dict(self.config["models"][arm])
-        if "catalog" in spec:  # Codex model catalog, relative to the workspace root like every config path
-            spec["catalog"] = str(self.path(spec["catalog"]))
-        return build_provider(spec)
+        for key in ("catalog", "executable"):
+            if spec.get(key):
+                spec[key] = str(self.path(spec[key]))
+        return spec
 
     def build_units(self, retriever, logger, cost_fn) -> list[Unit]:
         cfg = self.config

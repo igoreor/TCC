@@ -1,6 +1,6 @@
 # Estado da implementação
 
-Atualizado em 22/10/2026. A versão anterior (03/10/2026, etapa E1) está resumida no fim.
+Atualizado em 16/11/2026. A versão anterior (03/10/2026, etapa E1) está resumida no fim.
 
 ## Funciona (executado e verificado nesta máquina)
 
@@ -18,7 +18,9 @@ Atualizado em 22/10/2026. A versão anterior (03/10/2026, etapa E1) está resumi
   - Concordância por kappa (`agreement`).
   - Erros de conta interrompem o lote (D30).
   - Os comandos de perguntas, pool, `auto-metrics` e `review-export` foram executados de ponta a ponta sobre o lote simulado `e2-api-smoke/20261023T010256Z-dryrun`.
-- 75 testes offline (`python -m pytest -q`) em 22/10; 105 em 24/10.
+- 75 testes offline (`python -m pytest -q`) em 22/10; 105 em 24/10; 110 em 16/11.
+- **Novo (16/11):** comando `subgroups` (análise exploratória por subgrupo: diferença pareada por subgrupo com IC por bootstrap, contraste entre dois subgrupos e diferença de diferenças nos pares de registro; sem valor-p). Serve à H5 (leigo × técnico), ao perfil de quem perguntou (`--group-by source_name --map "BVS APS=profissional;*=institucional"`) e à categoria. Testes em `tests/test_subgroups.py`.
+- Caminho até o congelamento conferido com a planilha v4 (D42): `questions-build` e `questions-check` sem erro de formato; os erros restantes são os campos do autor. Roteiro: `research/protocol/roteiro-congelamento-e-execucao-v1.md`.
 
 ## Acesso pela assinatura (D31): funciona nos dois braços
 
@@ -52,11 +54,19 @@ Atualizado em 22/10/2026. A versão anterior (03/10/2026, etapa E1) está resumi
 
 - `e2-api-smoke/20261023T010315Z` (`gpt-6.1-sol` pela API): todas as chamadas devolveram `429 insufficient_quota`, sem custo. O autor optou pela assinatura (D31). Os adaptadores `openai`/`anthropic` continuam no harness para replicação.
 
-## Falta
-- Perguntas `dev` e `test` escritas pelo autor, revisadas e congeladas.
-- Etapa 1, qrels do dev e `select-strategy`; etapa 2; qrels do teste; revisão humana; análise.
-- (Opcional) LLM julgador calibrado contra a amostra humana.
-- (Opcional, depende do Igor) exportar o corpus para o NexoHansen como interface de demonstração (D18).
+## Etapa 1 (16/11/2026, D44)
+
+- Perguntas congeladas: `research/questions/test-v1.jsonl` (50 publicadas, D42).
+- CLIs fixadas em `software/tools` e validadas no smoke `e5-cli-smoke-pinned` (50/50).
+- Etapa 1 executada (`e3-stage1-test-retrieval`); lote e números em `research/runs/README.md`.
+- Pool cego de relevância e planilha do segundo anotador em `research/qrels/`.
+
+## Falta (cada item depende de pessoas, D15)
+
+- Rótulos de relevância do autor e do segundo anotador; depois, `agreement`, adjudicação, `eval-retrieval`, F1 e `select-strategy`.
+- Pontos-chave do autor e revisão independente; congelar `test-v1-keypoints.csv` antes da etapa 2.
+- Etapa 2 (`e4-stage2-test-full`, com R\* preenchido), revisão cega A/B, `review-import`, `agreement` e análise.
+- (Opcional) LLM julgador de outra família, calibrado contra a amostra humana.
 
 ## Histórico: estado em 03/10/2026 (E1)
 

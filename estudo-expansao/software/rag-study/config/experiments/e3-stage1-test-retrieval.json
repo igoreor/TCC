@@ -41,12 +41,14 @@
       "model": "gpt-6.1-sol",
       "reasoning_effort": "low",
       "verbosity": "medium",
-      "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json"
+      "catalog": "software/rag-study/config/codex/catalog-gpt-6.1-sol-direct.json",
+      "executable": "software/tools/codex-0.169.0-alpha.11.1/codex.exe"
     },
     "anthropic": {
       "provider": "claude_cli",
       "model": "claude-sonnet-5-5",
-      "effort": "low"
+      "effort": "low",
+      "executable": "software/tools/claude-code-2.1.323/claude.exe"
     }
   },
   "arms": [

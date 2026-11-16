@@ -1,19 +1,30 @@
 # Validação
 
-## Histórico
-
-- **03/10/2026 (Codex):** os arquivos foram criados, mas a suíte não rodou por falha do sandbox (`apply deny-read ACLs`).
-- **03/10/2026 (Claude Code):** a suíte original rodou com 8 testes aprovados.
-- **03/10/2026 (Claude Code, E1):** o harness foi reescrito e ampliado; a suíte atual tem **50 testes aprovados**:
+## Suíte offline
 
 ```powershell
 cd C:\TCC\software\rag-study
 .venv\Scripts\python -m pytest -q
 ```
 
-Verificações de ponta a ponta da E1: ver `IMPLEMENTATION_STATUS.md` e `research/runs/README.md`.
+| Data | Testes | Observação |
+|---|---|---|
+| 03/10/2026 (Codex) | — | suíte não rodou por falha do sandbox (`apply deny-read ACLs`) |
+| 03/10/2026 (Claude Code) | 8 | suíte original |
+| 03/10/2026 (E1) | 50 | harness reescrito |
+| 22/10/2026 | 75 | perguntas, revisão, análise |
+| 24/10/2026 | 105 | serviço da tela do estudo (D41) |
+| 16/11/2026 | 112 | `subgroups`, `executable` fixado relativo à raiz, pool e qrels no formato do Excel |
+
+Verificações de ponta a ponta: `IMPLEMENTATION_STATUS.md` e `research/runs/README.md`.
+
+## Validado com chamadas reais
+
+Acesso pela assinatura (D31):
+- `e2-cli-smoke-claude` e `e2-cli-smoke-gpt` (23/10/2026, Claude Code 2.1.126 e Codex 0.162);
+- `e5-cli-smoke-pinned` (16/11/2026, CLIs fixadas em `software/tools`).
 
 ## Ainda não validado
 
-- Chamadas reais às APIs OpenAI e Anthropic, incluindo a aceitação de `text.format`/`output_config.format` com os modelos escolhidos, o comportamento de `effort`/`reasoning` e o consumo de tokens de raciocínio dentro dos limites de saída. Primeiro passo do piloto E2: 1 pergunta `dev` × todas as condições, com `--allow-api`, e inspeção manual do `raw.jsonl`.
+- APIs pagas da OpenAI e da Anthropic: o único teste (`e2-api-smoke`) falhou por falta de crédito. Os adaptadores ficam para replicação; o experimento usa as assinaturas.
 - Reprodutibilidade dos embeddings em outra máquina.

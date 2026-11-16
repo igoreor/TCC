@@ -49,7 +49,13 @@ $R = "software\rag-study\.venv\Scripts\rag-study"
 # análise pareada por família, com Holm; concordância entre avaliadores
 & $R --root . compare --table <tabela.csv> --metric recall_at_k --comparisons R0:R2 --arms openai,anthropic --test permutation --family F1 --questions <test.jsonl> --exclude-no-relevant --out <f1.csv>
 & $R --root . agreement --first <a.csv> --second <b.csv> --on question_id,item_id --column relevance --weights linear --categories 0,1,2
+# exploratória por subgrupo (16/11/2026): H5 leigo x técnico, perfil de quem perguntou, categoria; sem valor-p
+& $R --root . subgroups --table <tabela.csv> --metric recall_at_k --comparison R0:R2 --arms openai,anthropic --questions <test.jsonl> --group-by register --contrast leigo:técnico --exclude-no-relevant --out <h5.csv>
 ```
+
+Passo a passo completo, do congelamento à análise: `research/protocol/roteiro-congelamento-e-execucao-v1.md`.
+
+O pool de relevância e as planilhas de revisão saem com BOM e ponto e vírgula, para o Excel em português abrir direto; a leitura aceita o arquivo salvo de volta pelo Excel (vírgula ou ponto e vírgula, UTF-8 ou Windows-1252).
 
 Nenhum comando de análise sobrescreve arquivos existentes. Definições das métricas e dos testes: `research/protocol/metrics-and-tests-v1.md`.
 
@@ -82,6 +88,7 @@ Ver `config/experiment.example.json` (modelo do piloto E2) e `config/experiments
 - `conditions`: subconjunto de `D, R0, R1, R2, R3`.
 - `k`, `generation.max_output_tokens` e `expansion.max_output_tokens` são iguais para todas as condições do braço.
 - `pricing`: tabela copiada das páginas oficiais na data da execução (`config/pricing.template.json`). Sem ela, o custo fica nulo.
+- `executable` (provedores `claude_cli` e `codex_cli`): caminho da CLI fixada, relativo à raiz do workspace. As etapas 1 e 2 usam as cópias de `software/tools` (D44), para que a atualização automática não troque a versão entre as etapas.
 
 ## Garantias implementadas
 
@@ -102,8 +109,9 @@ Ver `config/experiment.example.json` (modelo do piloto E2) e `config/experiments
 ```text
 config/        corpus, embedder, experimentos, modelo de preços
 prompts/       prompts literais versionados (o hash entra em cada registro)
-src/rag_study/ corpus, retrieval, providers, pipelines, runner, evaluation, metrics, pricing, retry, cli
-tests/         50 testes offline (nenhuma chamada de rede)
+src/rag_study/ corpus, retrieval, providers, pipelines, runner, evaluation, metrics, pricing, retry,
+               questions, review, analysis, serve, cli
+tests/         112 testes offline (nenhuma chamada de rede)
 ```
 
 Decisões e justificativas: `research/notes/decisions-log.md`. Protocolo: `research/protocol/experimental-protocol-v0.2.md`.

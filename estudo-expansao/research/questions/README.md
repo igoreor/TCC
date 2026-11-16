@@ -18,8 +18,11 @@ Perguntas `dev` e `test`, respostas de referência e rótulos de relevância **n
 | `curation-v2.md` | — | curadoria das candidatas publicadas: tabela consolidada das 50 vagas e detalhe por candidata (D36) |
 | `curation-v2-summary.csv` e `curation-v2-by-candidate.csv` | — | mesmos dados em planilha |
 | `blueprint-v3.csv`, `authoring-sheet-v3.csv`, `reading-pack-v3.md`, `candidates-by-slot-v3.csv`, `curation-v3*.{md,csv}`, `na-check-v3.md` | — | **versão atual** (corpus `hanseniase-v2`, D38-D40). A v2 fica como histórico |
+| `selection-v4.md`, `blueprint-v4.csv`, `authoring-sheet-v4.csv`, `reading-pack-v4.md`, `na-check-v4.md`, `na-check-queries-v4.csv` | — | **versão atual (D42, aprovada pelo orientador em 16/11/2026, D44)**: 50 perguntas publicadas literais, selecionadas pelo agente e confirmadas pelo autor. Substitui a v3 |
+| `GUIA-AUTOR-v4.md` | — | o que o autor preenche na planilha v4 (confirmação e pontos-chave), com os pares, as parciais e as não respondíveis (16/11/2026) |
 | `authoring-sheet-v2.csv` | — | planilha de redação gerada da matriz v2 (`questions-sheet`); o autor preenche texto e pontos-chave. Guia: `AUTHORING-GUIDE.md` |
-| `test-v1.jsonl` e `test-v1-keypoints.csv` | `test` | a gerar por `questions-build`: as 50 perguntas, congeladas antes da etapa 1 e usadas nas duas etapas |
+| `test-v1.jsonl` | `test` | **congelado em 16/11/2026** (SHA-256 `13840869…`, `freeze-log.md`): as 50 perguntas da v4, geradas por `questions-build --version v1`, usadas nas duas etapas |
+| `test-v1-keypoints.csv` | `test` | a gerar quando o autor escrever os pontos-chave; congelar antes da etapa 2 (D44) |
 
 ## Esquema (uma pergunta por linha, JSON)
 

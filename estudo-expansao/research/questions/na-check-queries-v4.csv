@@ -1,0 +1,9 @@
+id,slot_id,text,terms_en
+EXT124,T12,Durante o tratamento há alguma restrição alimentar a ser seguida?,diet food restriction treatment
+EXT125,T13,"No dia da tomada da dose supervisionada, o paciente deverá estar em jejum?",fasting supervised dose
+EXT126,T14,Qual o melhor horário para tomar o remédio em casa?,best time take medicine
+EXT127,T15,"Se o paciente esquecer de tomar o remédio um dia, deverá tomar duas doses auto-administradas no dia seguinte?",missed dose double dose
+EXT129,T16,É preciso guardar o remédio na geladeira?,store medicine refrigerator
+EXT018,T27,Em pacientes adultos com sequelas de hanseníase que apresentam escaras de decúbito o tratamento para estas escaras é o convencional?,pressure ulcer bedsore wound care
+EXT031,T35,"Qual o procedimento para paciente com hanseníase que deixou de realizar a dose supervisionada em determinado mês, seguindo o tratamento apenas com dose auto administrada?",missed supervised dose blister pack restart
+EXT008,T42,Quais cuidados a Equipe de Saúde Bucal deve ter no atendimento a pacientes com hanseníase sem adesão ao tratamento?,dental care oral health protective equipment

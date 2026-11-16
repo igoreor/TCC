@@ -61,8 +61,12 @@ QUESTION_FIELDS = ["question_id", "text", "split", "slot_id", "need_group", "cat
 
 def read_table(path: str | Path) -> list[dict[str, str]]:
     """Read a CSV written by this package or re-saved by Excel/LibreOffice
-    (UTF-8 with or without BOM, comma or semicolon)."""
-    text = Path(path).read_text(encoding="utf-8-sig")
+    (UTF-8 with or without BOM, comma or semicolon). A file saved by Excel as
+    plain "CSV" (Windows-1252) is read as such instead of failing."""
+    try:
+        text = Path(path).read_text(encoding="utf-8-sig")
+    except UnicodeDecodeError:
+        text = Path(path).read_text(encoding="cp1252")
     first_line = text.splitlines()[0] if text else ""
     delimiter = ";" if first_line.count(";") > first_line.count(",") else ","
     return [dict(row) for row in csv.DictReader(text.splitlines(), delimiter=delimiter)]
@@ -345,9 +349,9 @@ def check_questions(question_paths: list[str | Path], blueprint: list[dict[str, 
             qid, run = item["question_id"], overlap.longest_run(item["text"])
             overlap_report[qid] = run
             if run >= COPIED_RUN_ERROR and item.get("origin") not in {"real"}:
-                errors.append(f"{qid}: {run} palavras seguidas copiadas de um trecho do PCDT")
+                errors.append(f"{qid}: {run} palavras seguidas copiadas de um trecho da base")
             elif run >= COPIED_RUN_WARNING:
-                warnings.append(f"{qid}: {run} palavras seguidas iguais a um trecho do PCDT; reformular?")
+                warnings.append(f"{qid}: {run} palavras seguidas iguais a um trecho da base; reformular?")
             heading = overlap.copied_heading(item["text"])
             if heading:
                 warnings.append(f"{qid}: reproduz o título de seção '{heading}'")
@@ -557,7 +561,8 @@ def unanswerability_report(chunks: list[dict[str, Any]], queries: list[dict[str,
     query and tick whether any of them answers it."""
     index = LexicalIndex(chunks)
     lines = ["# Verificação das perguntas não respondíveis e parciais", "",
-             "Busca lexical BM25 sobre o corpus `pcdt2022-v1` (independente do recuperador do experimento). "
+             f"Busca lexical BM25 sobre o corpus congelado ({len(chunks)} trechos de "
+             f"{len({chunk.get('document_id') for chunk in chunks})} documento(s); independente do recuperador do experimento). "
              "Para cada pergunta, leia os trechos e marque se algum responde, total ou parcialmente. "
              "A busca é lexical e não atravessa idiomas: para o documento da OMS (inglês), informe termos em inglês "
              "na coluna terms_en. "

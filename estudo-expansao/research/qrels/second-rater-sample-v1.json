@@ -1,0 +1,20 @@
+{
+  "questions_file": "research/questions/test-v1.jsonl",
+  "questions_sha256": "138408692edc58e464a36355d5276084e20a3a9a4badaa5f554770e890a41117",
+  "population": 50,
+  "n": 10,
+  "seed": 20261116,
+  "method": "random.Random(seed).sample(sorted(ids), n)",
+  "sample": [
+    "test-001",
+    "test-014",
+    "test-021",
+    "test-022",
+    "test-026",
+    "test-033",
+    "test-037",
+    "test-041",
+    "test-042",
+    "test-050"
+  ]
+}

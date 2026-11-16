@@ -107,3 +107,37 @@ def test_duplicate_qrels_are_rejected(tmp_path):
     path.write_text("question_id,item_id,relevance\nq1,c1,1\nq1,c1,2\n", encoding="utf-8")
     with pytest.raises(ValueError, match="duplicate"):
         load_qrels(path)
+
+
+def test_provider_spec_resolves_pinned_paths_against_root(tmp_path):
+    import json as _json
+    from pathlib import Path as _Path
+
+    from rag_study.runner import Experiment
+
+    config = tmp_path / "exp.json"
+    config.write_text(_json.dumps({"models": {
+        "anthropic": {"provider": "claude_cli", "model": "m", "executable": "software/tools/claude/claude.exe"},
+        "openai": {"provider": "codex_cli", "model": "g", "catalog": "cfg/catalog.json",
+                   "executable": str(tmp_path / "abs" / "codex.exe")},
+    }}), encoding="utf-8")
+    experiment = Experiment(config, root=tmp_path / "ws")
+    claude = experiment.provider_spec("anthropic")
+    assert _Path(claude["executable"]) == tmp_path / "ws" / "software" / "tools" / "claude" / "claude.exe"
+    codex = experiment.provider_spec("openai")
+    assert _Path(codex["catalog"]) == tmp_path / "ws" / "cfg" / "catalog.json"
+    assert _Path(codex["executable"]) == tmp_path / "abs" / "codex.exe"  # absolute paths are kept
+    assert experiment.config["models"]["anthropic"]["executable"] == "software/tools/claude/claude.exe"
+
+
+def test_qrels_accept_excel_resaved_pool(tmp_path):
+    # Pool re-saved by Excel in Portuguese: BOM + semicolon (CSV UTF-8) or Windows-1252 (plain CSV).
+    header = "pool_item;question_id;question_text;item_id;relevance;annotator_id;annotation_round;notes\n"
+    body = "1;q1;Hanseníase tem cura?;c1;2;NDLS;final;\n2;q1;Hanseníase tem cura?;c2;;;;\n3;q2;Mancha dormente?;c1;0;NDLS;final;\n"
+    utf8 = tmp_path / "pool-utf8.csv"
+    utf8.write_text(header + body, encoding="utf-8-sig")
+    ansi = tmp_path / "pool-ansi.csv"
+    ansi.write_text(header + body, encoding="cp1252")
+    expected = {"q1": {"c1": 2}, "q2": {"c1": 0}}
+    assert load_qrels(utf8) == expected
+    assert load_qrels(ansi) == expected

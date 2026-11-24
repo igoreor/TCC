@@ -1,6 +1,6 @@
 # Alterações no TCC — avaliação experimental com 50 perguntas
 
-Arquivos alterados: `TCC/TCC NexoHansen - Versão Final 11 do 11.docx` e `TCC/TCC NexoHansen - Versão Final 11 do 11.md`. Depois das inserções e das revisões acadêmica, de concisão e dos comentários do orientador, o .docx tem 116 páginas (69 de texto principal).
+Arquivos alterados: `TCC/TCC - Versão 19-11-2026.docx` e `TCC/TCC - Versão 19-11-2026.md`. Depois das inserções e das revisões acadêmica, de concisão e dos comentários do orientador, o .docx tem 98 páginas (57 de texto principal).
 
 Backups anteriores à edição:
 
@@ -12,12 +12,12 @@ As inserções são geradas por `avaliacao/tcc/atualizar_tcc.ts`, que sempre par
 ```bash
 cd backend
 npx tsx ../avaliacao/tcc/atualizar_tcc.ts
-powershell -File ../avaliacao/tcc/word_atualizar.ps1 -Docx "../TCC/TCC NexoHansen - Versão Final 11 do 11.docx"
+powershell -File ../avaliacao/tcc/word_atualizar.ps1 -Docx "../TCC/TCC - Versão 19-11-2026.docx"
 ```
 
 O segundo comando atualiza o sumário, as listas e a numeração no Word. Como o script parte sempre dos backups, **qualquer edição manual feita no .docx depois disso é sobrescrita**. Antes de editar o .docx à mão, decida se o script ainda será usado. Os textos de interpretação ficam em `avaliacao/tcc/achados.json`.
 
-A avaliação experimental só fez inserções. Depois dela, `atualizar_tcc.ts` aplica as 33 edições da revisão acadêmica de 09/11/2026 (`revisao_tcc/edicoes.ts`), que alteram o Capítulo 2 e trechos de coerência dos Capítulos 1, 3, 5 e 7, do Resumo e do Abstract; ver `revisao_tcc/06_RELATORIO_FINAL.md`. Em seguida, aplica as edições da revisão de concisão de 10/11/2026 (`revisao_tcc/edicoes_concisao.ts`), que enxugam todos os capítulos, retiram quatro capturas de tela, dois quadros e uma tabela e renumeram as remissões; ver `revisao_tcc/RELATORIO_OTIMIZACAO_TCC.md`. Por fim, aplica as edições dos comentários do orientador de 11/11/2026 (`revisao_tcc/edicoes_orientador.ts`), que reestruturam os Capítulos 5 a 7 (a Discussão passa a ser a Seção 5.4 e as Considerações Finais, o Capítulo 6), corrigem o título e as citações do Ministério da Saúde e levam mais conteúdo para os apêndices; ver `revisao_tcc/RELATORIO_COMENTARIOS_ORIENTADOR.md`. Os números de seção e de ilustração abaixo já são os da versão final.
+A avaliação experimental só fez inserções. Depois dela, `atualizar_tcc.ts` aplica as 33 edições da revisão acadêmica de 09/11/2026 (`revisao_tcc/edicoes.ts`), que alteram o Capítulo 2 e trechos de coerência dos Capítulos 1, 3, 5 e 7, do Resumo e do Abstract; ver `revisao_tcc/06_RELATORIO_FINAL.md`. Em seguida, aplica as edições da revisão de concisão de 10/11/2026 (`revisao_tcc/edicoes_concisao.ts`), que enxugam todos os capítulos, retiram quatro capturas de tela, dois quadros e uma tabela e renumeram as remissões; ver `revisao_tcc/RELATORIO_OTIMIZACAO_TCC.md`. Por fim, aplica as edições dos comentários do orientador de 11/11/2026 (`revisao_tcc/edicoes_orientador.ts`), que reestruturam os Capítulos 5 a 7 (a Discussão passa a ser a Seção 5.4 e as Considerações Finais, o Capítulo 6), corrigem o título e as citações do Ministério da Saúde e levam mais conteúdo para os apêndices; ver `revisao_tcc/RELATORIO_COMENTARIOS_ORIENTADOR.md`. Depois, `revisao_tcc/edicoes_agradecimentos.ts` põe os agradecimentos redigidos pelo autor no lugar do marcador de reescrita. Por último, `revisao_tcc/edicoes_final.ts` aplica a revisão final de 19/11/2026: retira a avaliação comparativa e a validação por especialista, passa o documento a Times New Roman e renumera as seções (a avaliação experimental passa a 3.6 e 5.2, e a discussão, a 5.3.4) e os apêndices (H a K passam a G a I); ver `revisao_tcc/RELATORIO_REVISAO_FINAL.md`. As seções, os apêndices e as marcações descritos abaixo são os de antes dessa revisão. Os números de seção e de ilustração abaixo já são os da versão final.
 
 ## Seções inseridas
 

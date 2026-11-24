@@ -18,7 +18,9 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const resumo = JSON.parse(readFileSync(path.join(__dirname, 'resultados', 'metricas.json'), 'utf8'));
 const consolidacaoArq = path.join(__dirname, 'validacao_especialista', 'consolidacao.json');
 const consolidacao = existsSync(consolidacaoArq) ? JSON.parse(readFileSync(consolidacaoArq, 'utf8')) : null;
-const sufixo = consolidacao ? '' : ' (resultados preliminares)';
+// A validação por especialista saiu do trabalho (orientador, 19/11/2026): os gráficos não levam mais a
+// indicação de resultados preliminares.
+const sufixo = '';
 
 /** Barras horizontais de acurácia com IC de 95% de Wilson. */
 function barrasAcuracia(titulo: string, grupos: Record<string, any>, rotulos: Record<string, string> = {}) {

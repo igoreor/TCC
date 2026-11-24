@@ -1,6 +1,10 @@
 # Pendências do TCC — NexoHansen
 
-Complemento da versão revisada, hoje `TCC NexoHansen - Versão Final 11 do 11.docx` (20/10/2026, atualizada em 23 e 24/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+Complemento da versão revisada, hoje `TCC - Versão 19-11-2026.docx` (20/10/2026, atualizada em 23 e 24/10/2026). Lista o que falta para concluir a pesquisa, em ordem de prioridade.
+
+## Atualização de 19/11/2026
+
+A revisão final retirou do trabalho a avaliação comparativa com participantes e a validação por especialista, conforme os comentários do orientador; ver `revisao_tcc/RELATORIO_REVISAO_FINAL.md`. Os bloqueantes e os itens a seguir que tratam dessas duas avaliações deixaram de se aplicar; elas passaram a limitação e trabalho futuro. O documento passou a Times New Roman, e não há mais marcações em amarelo. Restam, para preencher à mão, a ficha catalográfica, enviada pela biblioteca, e os nomes da banca.
 
 ## Atualização de 24/10/2026
 
@@ -49,7 +53,7 @@ O texto foi atualizado para refletir o login e a avaliação das respostas, impl
 
 ## Marcadores no documento
 
-Os pontos em aberto estão destacados em amarelo no DOCX. Para encontrá-los, use Localizar (Ctrl+L no Word) com o início do marcador, por exemplo `[PREENCHER`.
+Desde 19/11/2026, o documento não tem marcadores. A tabela abaixo registra a situação anterior.
 
 | Marcador | Qtd. | Quando resolver |
 |---|---|---|
@@ -59,7 +63,7 @@ Os pontos em aberto estão destacados em amarelo no DOCX. Para encontrá-los, us
 | `[ATUALIZAR ...]` | 3 | Resumo, abstract e considerações finais, ao fim do trabalho |
 | `[VERIFICAR ...]` | 3 | Com o orientador ou com o CEP |
 | `[INSERIR ...]` | 0 | Reunidos no marcador único da Seção 5.2 (11/11/2026) |
-| `[REESCREVER ...]` | 2 | Dedicatória e agradecimentos |
+| `[REESCREVER ...]` | 1 | Dedicatória (os agradecimentos foram redigidos pelo autor em 16/11/2026) |
 | `[OPCIONAL ...]` | 1 | Epígrafe |
 
 ---
@@ -158,7 +162,7 @@ Estas obras deixaram de ser citadas porque as seções foram reescritas ou conde
 - **LGPD.** O rascunho afirmava que a interface orientaria a anonimização. Não há aviso. A autenticação foi implementada em 22/10/2026.
 - **Resultados.** O rascunho afirmava que as respostas seriam mais precisas que as de modelos sem RAG. Não há evidência disso antes da avaliação comparativa.
 - **Palavras-chave.** Havia uma segunda linha de palavras-chave do TCC de exemplo ("prognóstico; GIF; aprendizado de máquina"). Ela foi removida.
-- **Elementos pré-textuais.** A dedicatória, os agradecimentos e a epígrafe reproduzem os do TCC de exemplo e estão marcados para reescrita, por risco de plágio. O nome da madrinha aparece como "Syanra" na dedicatória e "Synara" nos agradecimentos.
+- **Elementos pré-textuais.** A dedicatória e a epígrafe reproduzem as do TCC de exemplo e estão marcadas para reescrita, por risco de plágio. Os agradecimentos foram redigidos pelo autor em 16/11/2026 (`revisao_tcc/edicoes_agradecimentos.ts`); a grafia de alguns nomes ainda será conferida, e o nome da madrinha aparece como "Syanra" na dedicatória e "Sinara" nos agradecimentos.
 
 ### 4.2 No código e na documentação do repositório (não corrigidas)
 

@@ -11,7 +11,8 @@ export type Bloco =
   | { tipo: 'paragrafo'; texto: string }
   | { tipo: 'alineas'; itens: string[] }
   | { tipo: 'tabela'; especie: 'Tabela' | 'Quadro'; legenda: string; cabecalho: string[]; linhas: string[][]; fonte: string; larguras?: number[] }
-  | { tipo: 'figura'; legenda: string; arquivo: string; larguraCm: number; fonte: string };
+  | { tipo: 'figura'; legenda: string; arquivo: string; larguraCm: number; fonte: string }
+  | { tipo: 'referencia'; texto: string };
 
 const LARGURA_TEXTO = 9071; // twips (16 cm)
 const EMU_POR_CM = 360000;
@@ -139,6 +140,8 @@ export function blocosParaXml(blocos: Bloco[], ctx: Contexto, lerImagem: (arquiv
           return titulo('Ttulo3', b.texto, ctx);
         case 'paragrafo':
           return paragrafo('Corpo', runs(b.texto, ctx));
+        case 'referencia':
+          return paragrafo('Referencia', runs(b.texto, ctx));
         case 'alineas':
           return b.itens
             .map((item, i) => paragrafo('Alinea', `<w:r><w:t>${String.fromCharCode(97 + i)})</w:t></w:r><w:r><w:tab/></w:r>${runs(item, ctx)}`))
@@ -182,6 +185,7 @@ export function blocosParaMarkdown(blocos: Bloco[], numeros: { Tabela: number; Q
       case 'titulo3':
         return `### ${mdTexto(b.texto, notas)}`;
       case 'paragrafo':
+      case 'referencia':
         return mdTexto(b.texto, notas);
       case 'alineas':
         return b.itens.map((item, i) => `${String.fromCharCode(97 + i)}) ${mdTexto(item, notas)}`).join('\n\n');

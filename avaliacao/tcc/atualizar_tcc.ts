@@ -11,8 +11,8 @@ import { calcularPorResposta, carregarDados, EXCLUIDA_DAS_MEDIAS } from '../metr
 
 const AVAL = path.resolve(__dirname, '..');
 const RAIZ = path.resolve(AVAL, '..');
-const DOCX = path.join(RAIZ, 'TCC', 'TCC NexoHansen - Versão Final 11 do 11.docx');
-const MD = path.join(RAIZ, 'TCC', 'TCC NexoHansen - Versão Final 11 do 11.md');
+const DOCX = path.join(RAIZ, 'TCC', 'TCC - Versão 19-11-2026.docx');
+const MD = path.join(RAIZ, 'TCC', 'TCC - Versão 19-11-2026.md');
 const ler = (a: string) => JSON.parse(readFileSync(path.join(AVAL, a), 'utf8'));
 
 const m = ler('resultados/metricas.json');
@@ -291,10 +291,10 @@ const novasReferencias = [
 ];
 
 async function main() {
-  const backupDocx = DOCX.replace(/\.docx$/, '_antes_avaliacao.docx');
-  if (!existsSync(backupDocx)) copyFileSync(DOCX, backupDocx);
-  const backupMd = MD.replace(/\.md$/, '_antes_avaliacao.md');
-  if (!existsSync(backupMd)) copyFileSync(MD, backupMd);
+  // As cópias anteriores à avaliação têm nome fixo, independente do nome dado à versão final.
+  const backupDocx = path.join(RAIZ, 'TCC', 'TCC_NexoHansen_Versao_Revisada_antes_avaliacao.docx');
+  const backupMd = path.join(RAIZ, 'TCC', 'TCC_NexoHansen_Versao_Revisada_antes_avaliacao.md');
+  if (!existsSync(backupDocx) || !existsSync(backupMd)) throw new Error('cópias anteriores à avaliação não encontradas em TCC/');
   // Parte sempre da cópia anterior à avaliação, para que a atualização possa ser refeita.
   copyFileSync(backupDocx, DOCX);
   copyFileSync(backupMd, MD);
@@ -311,10 +311,11 @@ async function main() {
   console.log(`TCC atualizado: ${r.notas} notas, ${r.imagens} figuras, ${novasReferencias.length} referências`);
 
   // Revisões do texto, aplicadas em ordem sobre o texto já com as inserções: a acadêmica
-  // (edicoes.ts), a de concisão (edicoes_concisao.ts) e a dos comentários do orientador
-  // (edicoes_orientador.ts), cada uma sobre o texto produzido pelas anteriores. Esta última também
+  // (edicoes.ts), a de concisão (edicoes_concisao.ts), a dos comentários do orientador
+  // (edicoes_orientador.ts) e os agradecimentos (edicoes_agradecimentos.ts), cada uma sobre o texto
+  // produzido pelas anteriores. A dos comentários do orientador também
   // exporta `ajustes` globais (renumeração das seções, citações, itálico), aplicados antes das edições.
-  for (const nome of ['edicoes.ts', 'edicoes_concisao.ts', 'edicoes_orientador.ts']) {
+  for (const nome of ['edicoes.ts', 'edicoes_concisao.ts', 'edicoes_orientador.ts', 'edicoes_agradecimentos.ts', 'edicoes_final.ts']) {
     const arquivoEdicoes = path.join(RAIZ, 'revisao_tcc', nome);
     if (!existsSync(arquivoEdicoes)) continue;
     // eslint-disable-next-line @typescript-eslint/no-require-imports

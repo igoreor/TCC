@@ -12,44 +12,76 @@ import { Bloco, blocosParaMarkdown, blocosParaXml, Contexto, runs } from './docx
 // iniciadas por #), já que as entradas do sumário começam com o mesmo texto. Com `nivel`, o título
 // substituído passa a esse nível (estilo Ttulo1–3 no .docx; #, ## ou ### no .md).
 // `mover` leva um parágrafo, com seu estilo, para depois de outro; `inserir_no_fim` acrescenta blocos
-// ao fim do documento (no .md, antes das definições de notas de rodapé).
+// ao fim do documento (no .md, antes das definições de notas de rodapé). `remover_trecho` remove do
+// título `de` (inclusive) até o título `ate` (exclusive), com tudo o que houver entre eles, inclusive
+// tabelas e figuras. `substituir_imagem` troca a imagem da figura cuja legenda termina com `legenda`
+// pelo PNG `arquivo`, mantendo a largura e ajustando a altura à proporção da nova imagem.
 export type Edicao = { id: string; secao: string; motivo: string } & (
   | { tipo: 'substituir'; antes: string; depois: string; titulo?: boolean; nivel?: 1 | 2 | 3; md?: { antes: string; depois: string } }
-  | { tipo: 'remover'; antes: string; titulo?: boolean }
+  | { tipo: 'remover'; antes: string; titulo?: boolean; docxParagrafos?: number }
+  | { tipo: 'remover_linha'; antes: string }
   | { tipo: 'inserir_depois'; antes: string; blocos: Bloco[] }
   | { tipo: 'inserir_no_fim'; blocos: Bloco[] }
   | { tipo: 'mover'; antes: string; depoisDe: string }
   | { tipo: 'substituir_tabela'; legenda: string; bloco: Extract<Bloco, { tipo: 'tabela' }> }
   | { tipo: 'remover_ilustracao'; legenda: string }
+  | { tipo: 'remover_trecho'; de: string; ate: string }
+  | { tipo: 'substituir_imagem'; legenda: string; arquivo: string }
 );
 
 /**
  * Ajustes aplicados ao texto existente antes das edições, em todo o documento:
  * - `remissoesSecoes`: renumera as remissões "Seção X" e "Seções X e Y" (fora dos títulos); um número
- *   mapeado para null indica seção removida, e a remissão a ela interrompe a aplicação;
+ *   mapeado para null indica seção removida, e a remissão a ela que restar depois das edições
+ *   interrompe a aplicação;
  * - `trocas`: substituições literais dentro de cada trecho de texto, exceto nos parágrafos que contêm
  *   alguma das expressões de `exceto`;
  * - `italico`: palavras estrangeiras postas em itálico onde aparecem sem formatação, do Capítulo 1 às
- *   Referências (exclusive) e nos apêndices, fora de títulos, legendas e código.
+ *   Referências (exclusive) e nos apêndices, fora de títulos, legendas e código;
+ * - `fonte`: troca a família tipográfica em estilos, texto, notas, cabeçalhos e rodapés; as fontes do
+ *   tema (usadas pelo sumário e pelas listas) passam à nova família;
+ * - `semNegrito` e `negrito`: estilos de parágrafo (por exemplo, Ttulo2 e Ttulo3) que deixam de ser,
+ *   ou passam a ser, negritados.
  * As edições seguintes devem, portanto, escrever as remissões a seções já na numeração nova.
  */
 export type Ajustes = {
   remissoesSecoes?: Record<string, string | null>;
   trocas?: { de: string; para: string; exceto?: string[] }[];
   italico?: string[];
+  fonte?: { de: string; para: string };
+  semNegrito?: string[];
+  negrito?: string[];
 };
 
 const REMISSAO_SECAO = /\b(Seç(?:ão|ões)|seç(?:ão|ões)) (\d+(?:\.\d+)*(?:(?:, | e )\d+(?:\.\d+)*)*)/g;
-function renumerarSecoes(texto: string, mapa: Record<string, string | null>, onde: string) {
+const SECAO_REMOVIDA = '⟦seção removida ';
+function renumerarSecoes(texto: string, mapa: Record<string, string | null>) {
   return texto.replace(REMISSAO_SECAO, (_t, palavra: string, numeros: string) => {
     const novos = numeros.replace(/\d+(?:\.\d+)*/g, (n) => {
       if (!(n in mapa)) return n;
       const novo = mapa[n];
-      if (novo === null) throw new Error(`remissão à Seção ${n}, removida pela revisão (${onde}): "${texto.slice(0, 80)}"`);
-      return novo;
+      // A remissão pode estar num trecho que as edições ainda vão remover; a conferência é feita depois.
+      return novo === null ? `${SECAO_REMOVIDA}${n}⟧` : novo;
     });
     return `${palavra} ${novos}`;
   });
+}
+function conferirSecoesRemovidas(texto: string, onde: string) {
+  const i = texto.indexOf(SECAO_REMOVIDA);
+  if (i >= 0) throw new Error(`remissão a seção removida pela revisão (${onde}): "…${texto.slice(Math.max(0, i - 120), i + 40).replace(/<[^>]+>/g, '')}…"`);
+}
+
+/** Largura e altura de um PNG, lidas do cabeçalho IHDR. */
+function dimensoesPng(png: Buffer) {
+  if (png.readUInt32BE(12) !== 0x49484452) throw new Error('arquivo não é PNG');
+  return { largura: png.readUInt32BE(16), altura: png.readUInt32BE(20) };
+}
+
+const TEMA_FONTE = /<w:rFonts\b[^>]*w:(?:ascii|hAnsi|eastAsia|cs)Theme="[^"]*"[^>]*\/>/g;
+function trocarFonte(xml: string, de: string, para: string) {
+  return xml
+    .replace(new RegExp(`(w:(?:ascii|hAnsi|eastAsia|cs)=")${escRe(de)}(")`, 'g'), `$1${para}$2`)
+    .replace(TEMA_FONTE, `<w:rFonts w:ascii="${para}" w:eastAsia="${para}" w:hAnsi="${para}" w:cs="${para}"/>`);
 }
 const escRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const reItalico = (palavras: string[]) => new RegExp(`(?<![\\p{L}\\p{N}_-])(${palavras.map(escRe).join('|')})(?![\\p{L}\\p{N}_-])`, 'gu');
@@ -148,7 +180,7 @@ function ajustarDocx(doc: string, ajustes: Ajustes) {
     }
     let q = p.replace(/(<w:t(?: [^>]*)?>)([^<]*)(<\/w:t>)/g, (_m, a: string, t: string, b: string) => {
       let novo = trocar(t, texto, ajustes);
-      if (ajustes.remissoesSecoes) novo = renumerarSecoes(novo, ajustes.remissoesSecoes, '.docx');
+      if (ajustes.remissoesSecoes) novo = renumerarSecoes(novo, ajustes.remissoesSecoes);
       return a + novo + b;
     });
     if (italico && regiao && !/w:pStyle w:val="Referencia"/.test(p)) {
@@ -183,11 +215,14 @@ export async function aplicarRevisaoDocx(arquivo: string, edicoes: Edicao[], pas
   if (ajustes) doc = ajustarDocx(doc, ajustes);
   const legendasAntes = legendasDocx(doc);
   const renomeadas = new Map<string, string>();
-  const maior = (re: RegExp) => Math.max(0, ...[...doc.matchAll(re)].map((m) => Number(m[1])));
+  const maior = (re: RegExp, xml = doc) => Math.max(0, ...[...xml.matchAll(re)].map((m) => Number(m[1])));
   let bookmark = maior(/<w:bookmarkStart w:id="(\d+)"/g) + 5000;
+  const notasXml = zip.file('word/footnotes.xml');
+  let nota = notasXml ? maior(/<w:footnote [^>]*w:id="(\d+)"/g, await notasXml.async('string')) : 0;
   const ctx: Contexto = {
     proximaNota: () => {
-      throw new Error('notas de rodapé não são suportadas nas edições de revisão');
+      if (!notasXml) throw new Error('o documento não tem notas de rodapé (word/footnotes.xml)');
+      return (nota += 1);
     },
     notas: [],
     imagens: [],
@@ -220,6 +255,33 @@ export async function aplicarRevisaoDocx(arquivo: string, edicoes: Edicao[], pas
       doc = doc.slice(0, legendas[0].inicio) + doc.slice(fonte.fim);
       continue;
     }
+    if (e.tipo === 'remover_trecho') {
+      const de = localizar(doc, e.de, e.id, true);
+      const ate = localizar(doc, e.ate, e.id, true);
+      if (ate.inicio <= de.inicio) throw new Error(`[${e.id}] o título final precede o inicial`);
+      doc = doc.slice(0, de.inicio) + doc.slice(ate.inicio);
+      continue;
+    }
+    if (e.tipo === 'substituir_imagem') {
+      const legendas = paragrafos(doc).filter((p) => /w:pStyle w:val="LegendaFigura"/.test(p.xml) && normalizar(plano(p.xml)).endsWith(normalizar(e.legenda)));
+      if (legendas.length !== 1) throw new Error(`[${e.id}] legenda de figura não encontrada ou repetida: ${e.legenda}`);
+      const ini = doc.indexOf('<w:drawing>', legendas[0].fim);
+      const fim = doc.indexOf('</w:drawing>', ini);
+      if (ini < 0 || fim < 0) throw new Error(`[${e.id}] imagem não encontrada após a legenda`);
+      let desenho = doc.slice(ini, fim);
+      const rId = desenho.match(/r:embed="([^"]+)"/)![1];
+      const rels = await zip.file('word/_rels/document.xml.rels')!.async('string');
+      const alvo = rels.match(new RegExp(`Id="${rId}"[^>]*Target="([^"]+)"|Target="([^"]+)"[^>]*Id="${rId}"`));
+      if (!alvo) throw new Error(`[${e.id}] relação ${rId} não encontrada`);
+      const png = readFileSync(e.arquivo);
+      const { largura, altura } = dimensoesPng(png);
+      zip.file(`word/${alvo[1] ?? alvo[2]}`, png);
+      const cx = Number(desenho.match(/<wp:extent cx="(\d+)"/)![1]);
+      const cy = Math.round((cx * altura) / largura);
+      desenho = desenho.replace(/(<wp:extent cx="\d+" cy=")\d+(")/, `$1${cy}$2`).replace(/(<a:ext cx="\d+" cy=")\d+(")/, `$1${cy}$2`);
+      doc = doc.slice(0, ini) + desenho + doc.slice(fim);
+      continue;
+    }
     if (e.tipo === 'inserir_no_fim') {
       // Antes das propriedades da última seção, filhas diretas de w:body.
       const fim = doc.lastIndexOf('<w:sectPr');
@@ -233,7 +295,17 @@ export async function aplicarRevisaoDocx(arquivo: string, edicoes: Edicao[], pas
       const q = localizar(doc, e.depoisDe, e.id);
       doc = doc.slice(0, q.fim) + p.xml + doc.slice(q.fim);
     } else if (e.tipo === 'remover') {
-      doc = doc.slice(0, p.inicio) + doc.slice(p.fim);
+      // Com `docxParagrafos`, remove também os parágrafos seguintes (por exemplo, a linha de assinatura
+      // que acompanha um nome na folha de aprovação); no .md, só a linha localizada.
+      const todos = paragrafos(doc);
+      const ultimo = todos[todos.findIndex((q) => q.inicio === p.inicio) + (e.docxParagrafos ?? 1) - 1];
+      doc = doc.slice(0, p.inicio) + doc.slice(ultimo.fim);
+    } else if (e.tipo === 'remover_linha') {
+      // Remove a linha da tabela (w:tr) que contém o parágrafo localizado.
+      // A abertura da linha é <w:tr> ou <w:tr ...>; não confundir com <w:trPr>, <w:trHeight> etc.
+      const tr = Math.max(...[...doc.slice(0, p.inicio).matchAll(/<w:tr[ >]/g)].map((m) => m.index!), -1);
+      if (tr < 0 || doc.lastIndexOf('</w:tr>', p.inicio) > tr) throw new Error(`[${e.id}] o parágrafo não está numa linha de tabela`);
+      doc = doc.slice(0, tr) + doc.slice(doc.indexOf('</w:tr>', p.fim) + '</w:tr>'.length);
     } else if (e.tipo === 'substituir') {
       const abertura = p.xml.match(/^<w:p[^>]*>/)![0];
       let pPr = p.xml.match(/<w:pPr>[\s\S]*?<\/w:pPr>|<w:pPr\/>/)?.[0] ?? '';
@@ -259,12 +331,40 @@ export async function aplicarRevisaoDocx(arquivo: string, edicoes: Edicao[], pas
         : p.replace(/(<w:t(?: [^>]*)?>)([^<]*)(<\/w:t>)/g, (_m, a: string, t: string, b: string) => a + renumerar(t, mapa, '.docx') + b)
     );
   }
-  // Notas de rodapé cujo parágrafo foi substituído deixam de ser referenciadas; são removidas.
-  const notasXml = zip.file('word/footnotes.xml');
+  conferirSecoesRemovidas(doc, '.docx');
+  // Notas de rodapé cujo parágrafo foi substituído deixam de ser referenciadas; são removidas. As
+  // notas novas, escritas nas edições, são acrescentadas ao fim.
   if (notasXml) {
     const usadas = new Set([...doc.matchAll(/<w:footnoteReference w:id="(\d+)"/g)].map((m) => m[1]));
-    const notas = await notasXml.async('string');
+    const notas = (await notasXml.async('string')).replace('</w:footnotes>', `${ctx.notas.join('')}</w:footnotes>`);
     zip.file('word/footnotes.xml', notas.replace(/<w:footnote (?![^>]*w:type=)[^>]*w:id="(\d+)"[^>]*>[\s\S]*?<\/w:footnote>/g, (n, id: string) => (usadas.has(id) ? n : '')));
+  }
+  if (ajustes?.fonte) {
+    const { de, para } = ajustes.fonte;
+    doc = trocarFonte(doc, de, para);
+    for (const nome of Object.keys(zip.files).filter((n) => /^word\/(styles|footnotes|numbering|header\d*|footer\d*)\.xml$/.test(n))) {
+      zip.file(nome, trocarFonte(await zip.file(nome)!.async('string'), de, para));
+    }
+    const tema = zip.file('word/theme/theme1.xml');
+    if (tema) zip.file('word/theme/theme1.xml', (await tema.async('string')).replace(/(<a:(?:major|minor)Font><a:latin typeface=")[^"]*(")/g, `$1${para}$2`));
+  }
+  if (ajustes?.semNegrito?.length || ajustes?.negrito?.length) {
+    let estilos = await zip.file('word/styles.xml')!.async('string');
+    const alterarEstilo = (id: string, f: (corpo: string) => string) => {
+      const re = new RegExp(`(<w:style [^>]*w:styleId="${id}"[^>]*>)([\\s\\S]*?)(</w:style>)`);
+      if (!re.test(estilos)) throw new Error(`estilo não encontrado: ${id}`);
+      estilos = estilos.replace(re, (_m, a: string, corpo: string, b: string) => a + f(corpo) + b);
+    };
+    for (const id of ajustes.semNegrito ?? []) alterarEstilo(id, (corpo) => corpo.replace(/<w:b(?:Cs)?\/>/g, ''));
+    for (const id of ajustes.negrito ?? []) {
+      // <w:b/> e <w:bCs/> vêm depois de rStyle e rFonts na ordem do esquema.
+      alterarEstilo(id, (corpo) => {
+        if (/<w:b\/>/.test(corpo)) return corpo;
+        if (!/<w:rPr>/.test(corpo)) return `${corpo}<w:rPr><w:b/><w:bCs/></w:rPr>`;
+        return corpo.replace(/<w:rPr>((?:<w:(?:rStyle|rFonts)\b[^>]*\/>)*)/, '<w:rPr>$1<w:b/><w:bCs/>');
+      });
+    }
+    zip.file('word/styles.xml', estilos);
   }
   zip.file('word/document.xml', doc);
   writeFileSync(arquivo, await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE' }));
@@ -278,7 +378,7 @@ function ajustarMarkdown(linhas: string[], ajustes: Ajustes) {
     if (i > inicioSumario && /^# /.test(l)) regiao = /^# (1 INTRODUÇÃO|APÊNDICE )/.test(l) || (regiao && l !== '# REFERÊNCIAS');
     let q = trocar(l, planoMd(l), ajustes);
     if (i <= inicioSumario || /^#/.test(l)) return q;
-    if (ajustes.remissoesSecoes) q = renumerarSecoes(q, ajustes.remissoesSecoes, '.md');
+    if (ajustes.remissoesSecoes) q = renumerarSecoes(q, ajustes.remissoesSecoes);
     if (italico && regiao && !/^!\[|^\[\^/.test(q)) {
       // Só o texto fora de itálico, negrito, código, realce de marcação e endereços.
       q = q
@@ -297,12 +397,27 @@ export function aplicarRevisaoMarkdown(arquivo: string, edicoes: Edicao[], ajust
   if (ajustes) linhas = ajustarMarkdown(linhas, ajustes);
   const legendasAntes = legendasMd(linhas);
   const renomeadas = new Map<string, string>();
-  const paragrafoMd = (texto: string) => blocosParaMarkdown([{ tipo: 'paragrafo', texto }], { Tabela: 0, Quadro: 0, Figura: 0 }).texto;
+  // Notas de rodapé das edições: cada chamada a blocosParaMarkdown numera as suas como [^avalN]; aqui
+  // elas recebem nomes únicos ([^revN]), e as definições vão para o fim do arquivo.
+  let notaMd = Math.max(0, ...[...original.matchAll(/^\[\^rev(\d+)\]: /gm)].map((m) => Number(m[1])));
+  const novasNotas: string[] = [];
+  const md = (blocos: Bloco[], numeros = { Tabela: 0, Quadro: 0, Figura: 0 }) => {
+    const r = blocosParaMarkdown(blocos, numeros);
+    const nomes = new Map<string, string>();
+    for (const def of r.notas) {
+      const [, id, corpo] = def.match(/^\[\^(\w+)\]: ([\s\S]*)$/)!;
+      nomes.set(id, `rev${(notaMd += 1)}`);
+      novasNotas.push(`[^${nomes.get(id)}]: ${corpo}`);
+    }
+    return r.texto.replace(/\[\^(aval\d+)\]/g, (t, id: string) => (nomes.has(id) ? `[^${nomes.get(id)}]` : t));
+  };
+  const paragrafoMd = (texto: string) => md([{ tipo: 'paragrafo', texto }]);
   const localizarMd = (antes: string, id: string, titulo = false) => {
     const alvo = normalizar(antes);
     const idx = linhas.flatMap((l, i) => {
       if (titulo && !/^#{1,3} /.test(l)) return [];
-      return normalizar(planoMd(titulo ? l.replace(/^#+ /, '') : l)).startsWith(alvo) ? [i] : [];
+      // Linhas de citação em bloco (folha de rosto e epígrafe) são comparadas sem o "> " inicial.
+      return normalizar(planoMd(titulo ? l.replace(/^#+ /, '') : l.replace(/^> ?/, ''))).startsWith(alvo) ? [i] : [];
     });
     if (idx.length !== 1) throw new Error(`[${id}] .md: ${idx.length} linhas começam com: "${antes.slice(0, 70)}"`);
     return idx[0];
@@ -315,7 +430,7 @@ export function aplicarRevisaoMarkdown(arquivo: string, edicoes: Edicao[], ajust
       const j = linhas.findIndex((l, k) => k > i && /^Fonte:/.test(l));
       const numeros = { Tabela: 0, Quadro: 0, Figura: 0 };
       numeros[e.bloco.especie] = linhas.slice(0, i).filter((l) => new RegExp(`^\\*\\*${e.bloco.especie} \\d+ – `).test(l)).length;
-      linhas.splice(i, j - i + 1, ...blocosParaMarkdown([e.bloco], numeros).texto.split('\n'));
+      linhas.splice(i, j - i + 1, ...md([e.bloco], numeros).split('\n'));
       continue;
     }
     if (e.tipo === 'substituir' && e.md) {
@@ -335,7 +450,23 @@ export function aplicarRevisaoMarkdown(arquivo: string, edicoes: Edicao[], ajust
       // Antes das definições de notas de rodapé que fecham o arquivo, se houver.
       let k = linhas.length;
       while (k > 0 && (/^\[\^\w+\]: /.test(linhas[k - 1]) || linhas[k - 1] === '')) k--;
-      linhas.splice(k, 0, '', ...blocosParaMarkdown(e.blocos, { Tabela: 0, Quadro: 0, Figura: 0 }).texto.split('\n'));
+      linhas.splice(k, 0, '', ...md(e.blocos).split('\n'));
+      continue;
+    }
+    if (e.tipo === 'remover_trecho') {
+      const i = localizarMd(e.de, e.id, true);
+      const j = localizarMd(e.ate, e.id, true);
+      if (j <= i) throw new Error(`[${e.id}] .md: o título final precede o inicial`);
+      linhas.splice(i, j - i);
+      continue;
+    }
+    // No .md, a figura remete ao arquivo em figuras/, substituído junto com a imagem do .docx.
+    if (e.tipo === 'substituir_imagem') continue;
+    if (e.tipo === 'remover_linha') {
+      const re = new RegExp(`^\\| ${escRe(e.antes)} \\|`);
+      const idx = linhas.flatMap((l, k) => (re.test(l) ? [k] : []));
+      if (idx.length !== 1) throw new Error(`[${e.id}] .md: ${idx.length} linhas de tabela começam com: "${e.antes}"`);
+      linhas.splice(idx[0], 1);
       continue;
     }
     const titulo = 'titulo' in e && !!e.titulo;
@@ -352,24 +483,27 @@ export function aplicarRevisaoMarkdown(arquivo: string, edicoes: Edicao[], ajust
       const prefixo = titulo ? (e.nivel ? `${'#'.repeat(e.nivel)} ` : linhas[i].match(/^#+ /)![0]) : '';
       linhas[i] = titulo ? `${prefixo}${e.depois}` : paragrafoMd(e.depois);
     } else {
-      linhas.splice(i + 1, 0, '', ...blocosParaMarkdown(e.blocos, { Tabela: 0, Quadro: 0, Figura: 0 }).texto.split('\n'));
+      linhas.splice(i + 1, 0, '', ...md(e.blocos).split('\n'));
     }
   }
+  if (novasNotas.length) linhas.push('', ...novasNotas.flatMap((n) => [n, '']));
+  conferirSecoesRemovidas(linhas.join('\n'), '.md');
   const mapa = mapaRenumeracao(legendasAntes, legendasMd(linhas), renomeadas);
   if (mapa) {
     // As legendas e as listas de ilustrações são refeitas por normalizarMarkdown.
     const inicio = linhas.indexOf('# SUMÁRIO');
     linhas = linhas.map((l, i) => (i <= inicio || LINHA_LEGENDA.test(l) ? l : renumerar(l, mapa, '.md')));
   }
-  const md = linhas.join('\n');
-  writeFileSync(arquivo, crlf ? md.replace(/\n/g, '\r\n') : md);
+  const saida = linhas.join('\n');
+  writeFileSync(arquivo, crlf ? saida.replace(/\n/g, '\r\n') : saida);
 }
 
 /** Confere que o texto final de cada substituição aparece no .md (sem marcação). */
 export function conferirMarkdown(arquivo: string, edicoes: Edicao[]) {
   // Os números das remissões a ilustrações podem ter sido renumerados; a comparação os ignora.
   const semNumeros = (s: string) => s.replace(REMISSAO, '$1$2 #');
-  const md = semNumeros(normalizar(planoMd(readFileSync(arquivo, 'utf8'))));
+  // As chamadas de nota ([^revN]) não fazem parte do texto das edições ({{...}}).
+  const md = semNumeros(normalizar(planoMd(readFileSync(arquivo, 'utf8').replace(/\[\^\w+\](?!:)/g, ''))));
   return edicoes.filter((e) => e.tipo === 'substituir' && !e.md && !md.includes(semNumeros(normalizar(planoMarcado(e.depois))))).map((e) => e.id);
 }
 
